@@ -1,0 +1,464 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "text": "Which task would you enjoy more?",
+        "optionA": {
+          "text": "Building a robot kit",
+          "code": "R",
+          "hint": "Hands-on construction"
+        },
+        "optionB": {
+          "text": "Analyzing patterns in stock market data",
+          "code": "I",
+          "hint": "Data investigation"
+        }
+      },
+      {
+        "id": 2,
+        "text": "Choose your preferred activity:",
+        "optionA": {
+          "text": "Creating digital artwork for a game",
+          "code": "A",
+          "hint": "Visual design"
+        },
+        "optionB": {
+          "text": "Tutoring classmates in math",
+          "code": "S",
+          "hint": "Academic support"
+        }
+      },
+      {
+        "id": 3,
+        "text": "Which would you rather do?",
+        "optionA": {
+          "text": "Starting an online business",
+          "code": "E",
+          "hint": "Entrepreneurship"
+        },
+        "optionB": {
+          "text": "Organizing school records database",
+          "code": "C",
+          "hint": "Data management"
+        }
+      },
+      {
+        "id": 4,
+        "text": "Pick your preferred project:",
+        "optionA": {
+          "text": "Repairing smartphone hardware",
+          "code": "R",
+          "hint": "Technical repair"
+        },
+        "optionB": {
+          "text": "Researching AI ethics",
+          "code": "I",
+          "hint": "Conceptual analysis"
+        }
+      },
+      {
+        "id": 5,
+        "text": "Which creative work appeals more?",
+        "optionA": {
+          "text": "Writing fantasy novel chapters",
+          "code": "A",
+          "hint": "Storytelling"
+        },
+        "optionB": {
+          "text": "Counseling peers through stress",
+          "code": "S",
+          "hint": "Emotional support"
+        }
+      },
+      {
+        "id": 6,
+        "text": "Choose your ideal internship:",
+        "optionA": {
+          "text": "Marketing products on social media",
+          "code": "E",
+          "hint": "Digital promotion"
+        },
+        "optionB": {
+          "text": "Processing financial transactions",
+          "code": "C",
+          "hint": "Systematic work"
+        }
+      },
+      {
+        "id": 7,
+        "text": "Which technical work interests you?",
+        "optionA": {
+          "text": "Installing home security systems",
+          "code": "R",
+          "hint": "Electronics setup"
+        },
+        "optionB": {
+          "text": "Developing climate prediction models",
+          "code": "I",
+          "hint": "Scientific programming"
+        }
+      },
+      {
+        "id": 8,
+        "text": "Which artistic activity excites you?",
+        "optionA": {
+          "text": "Designing streetwear fashion",
+          "code": "A",
+          "hint": "Creative expression"
+        },
+        "optionB": {
+          "text": "Coaching youth sports teams",
+          "code": "S",
+          "hint": "Athletic mentoring"
+        }
+      },
+      {
+        "id": 9,
+        "text": "Which business role suits you?",
+        "optionA": {
+          "text": "Pitching startup ideas to investors",
+          "code": "E",
+          "hint": "Persuasive presentation"
+        },
+        "optionB": {
+          "text": "Managing supply chain logistics",
+          "code": "C",
+          "hint": "Operational coordination"
+        }
+      },
+      {
+        "id": 10,
+        "text": "Which hands-on task appeals more?",
+        "optionA": {
+          "text": "Building sustainable furniture",
+          "code": "R",
+          "hint": "Woodworking craft"
+        },
+        "optionB": {
+          "text": "Studying marine biology specimens",
+          "code": "I",
+          "hint": "Scientific examination"
+        }
+      },
+      {
+        "id": 11,
+        "text": "Which creative project interests you?",
+        "optionA": {
+          "text": "Producing music tracks",
+          "code": "A",
+          "hint": "Audio production"
+        },
+        "optionB": {
+          "text": "Volunteering at community health camp",
+          "code": "S",
+          "hint": "Public service"
+        }
+      },
+      {
+        "id": 12,
+        "text": "Which office role fits you better?",
+        "optionA": {
+          "text": "Leading corporate negotiations",
+          "code": "E",
+          "hint": "Strategic discussion"
+        },
+        "optionB": {
+          "text": "Auditing company accounts",
+          "code": "C",
+          "hint": "Financial verification"
+        }
+      },
+      {
+        "id": 13,
+        "text": "Which technical challenge excites you?",
+        "optionA": {
+          "text": "Maintaining drone equipment",
+          "code": "R",
+          "hint": "Aerial tech maintenance"
+        },
+        "optionB": {
+          "text": "Researching quantum computing",
+          "code": "I",
+          "hint": "Advanced physics"
+        }
+      },
+      {
+        "id": 14,
+        "text": "Which helping role feels natural?",
+        "optionA": {
+          "text": "Teaching coding to kids",
+          "code": "S",
+          "hint": "Educational support"
+        },
+        "optionB": {
+          "text": "Designing museum exhibits",
+          "code": "A",
+          "hint": "Spatial design"
+        }
+      },
+      {
+        "id": 15,
+        "text": "Which professional task suits you?",
+        "optionA": {
+          "text": "Managing e-commerce store",
+          "code": "E",
+          "hint": "Online business"
+        },
+        "optionB": {
+          "text": "Optimizing database efficiency",
+          "code": "C",
+          "hint": "System improvement"
+        }
+      },
+      {
+        "id": 16,
+        "text": "Which outdoor work interests you?",
+        "optionA": {
+          "text": "Installing solar farm panels",
+          "code": "R",
+          "hint": "Renewable energy"
+        },
+        "optionB": {
+          "text": "Documenting wildlife behavior",
+          "code": "I",
+          "hint": "Field research"
+        }
+      },
+      {
+        "id": 17,
+        "text": "Which social service appeals more?",
+        "optionA": {
+          "text": "Helping refugees settle locally",
+          "code": "S",
+          "hint": "Community integration"
+        },
+        "optionB": {
+          "text": "Creating public space murals",
+          "code": "A",
+          "hint": "Urban art"
+        }
+      },
+      {
+        "id": 18,
+        "text": "Which organizational task fits you?",
+        "optionA": {
+          "text": "Planning corporate takeover",
+          "code": "E",
+          "hint": "Business strategy"
+        },
+        "optionB": {
+          "text": "Standardizing filing systems",
+          "code": "C",
+          "hint": "Process optimization"
+        }
+      },
+      {
+        "id": 19,
+        "text": "Which repair work would you prefer?",
+        "optionA": {
+          "text": "Fixing electric bicycles",
+          "code": "R",
+          "hint": "E-mobility tech"
+        },
+        "optionB": {
+          "text": "Studying virus mutations",
+          "code": "I",
+          "hint": "Microbiology research"
+        }
+      },
+      {
+        "id": 20,
+        "text": "Which educational role suits you?",
+        "optionA": {
+          "text": "Mentoring first-generation students",
+          "code": "S",
+          "hint": "Equity support"
+        },
+        "optionB": {
+          "text": "Illustrating science textbooks",
+          "code": "A",
+          "hint": "Educational visuals"
+        }
+      },
+      {
+        "id": 21,
+        "text": "Which data task interests you?",
+        "optionA": {
+          "text": "Analyzing consumer behavior trends",
+          "code": "I",
+          "hint": "Market research"
+        },
+        "optionB": {
+          "text": "Creating tax compliance reports",
+          "code": "C",
+          "hint": "Regulatory work"
+        }
+      },
+      {
+        "id": 22,
+        "text": "Which leadership role fits you?",
+        "optionA": {
+          "text": "Directing non-profit organization",
+          "code": "E",
+          "hint": "Social enterprise"
+        },
+        "optionB": {
+          "text": "Quality-checking manufacturing outputs",
+          "code": "C",
+          "hint": "Production standards"
+        }
+      },
+      {
+        "id": 23,
+        "text": "Which hands-on science excites you?",
+        "optionA": {
+          "text": "Assembling telescope components",
+          "code": "R",
+          "hint": "Precision instrumentation"
+        },
+        "optionB": {
+          "text": "Developing cancer treatment trials",
+          "code": "I",
+          "hint": "Medical research"
+        }
+      },
+      {
+        "id": 24,
+        "text": "Which community work appeals more?",
+        "optionA": {
+          "text": "Counseling at-risk youth",
+          "code": "S",
+          "hint": "Social work"
+        },
+        "optionB": {
+          "text": "Designing inclusive playgrounds",
+          "code": "A",
+          "hint": "Accessible design"
+        }
+      },
+      {
+        "id": 25,
+        "text": "Which technical analysis interests you?",
+        "optionA": {
+          "text": "Testing water purification systems",
+          "code": "I",
+          "hint": "Environmental science"
+        },
+        "optionB": {
+          "text": "Managing payroll systems",
+          "code": "C",
+          "hint": "Financial administration"
+        }
+      },
+      {
+        "id": 26,
+        "text": "Which construction project excites you?",
+        "optionA": {
+          "text": "Building disaster-resistant housing",
+          "code": "R",
+          "hint": "Structural engineering"
+        },
+        "optionB": {
+          "text": "Planning city recycling programs",
+          "code": "C",
+          "hint": "Environmental systems"
+        }
+      },
+      {
+        "id": 27,
+        "text": "Which creative service suits you?",
+        "optionA": {
+          "text": "Art therapy for trauma survivors",
+          "code": "S",
+          "hint": "Healing through art"
+        },
+        "optionB": {
+          "text": "Brand identity design for startups",
+          "code": "A",
+          "hint": "Commercial creativity"
+        }
+      },
+      {
+        "id": 28,
+        "text": "Which innovation role fits you?",
+        "optionA": {
+          "text": "Launching tech incubator program",
+          "code": "E",
+          "hint": "Entrepreneurial ecosystem"
+        },
+        "optionB": {
+          "text": "Developing cybersecurity protocols",
+          "code": "I",
+          "hint": "Digital protection"
+        }
+      },
+      {
+        "id": 29,
+        "text": "Which outdoor service appeals more?",
+        "optionA": {
+          "text": "Search-and-rescue operations",
+          "code": "R",
+          "hint": "Emergency response"
+        },
+        "optionB": {
+          "text": "Organizing community gardens",
+          "code": "S",
+          "hint": "Urban agriculture"
+        }
+      },
+      {
+        "id": 30,
+        "text": "Which strategic task interests you?",
+        "optionA": {
+          "text": "Negotiating international trade deals",
+          "code": "E",
+          "hint": "Global business"
+        },
+        "optionB": {
+          "text": "Creating corporate compliance manuals",
+          "code": "C",
+          "hint": "Regulatory guidance"
+        }
+      }
+    ],
+    "metadata": {
+      "dimensionCounts": {
+        "R": 10,
+        "I": 10,
+        "A": 10,
+        "S": 10,
+        "E": 10,
+        "C": 10
+      },
+      "pairDistribution": {
+        "RI": 2,
+        "RA": 2,
+        "RS": 2,
+        "RE": 2,
+        "RC": 2,
+        "IA": 2,
+        "IS": 2,
+        "IE": 2,
+        "IC": 2,
+        "AS": 2,
+        "AE": 2,
+        "AC": 2,
+        "SE": 2,
+        "SC": 2,
+        "EC": 2
+      },
+      "characteristics": {
+        "modernTechInclusion": 22,
+        "socialImpactFocus": 18,
+        "creativeFields": 12,
+        "entrepreneurialOptions": 10
+      },
+      "version": "1.1",
+      "targetAudience": "High school and college-bound students",
+      "ratingScale": {
+        "1": "Okay",
+        "2": "Like",
+        "3": "Love It"
+      }
+    }
+  }

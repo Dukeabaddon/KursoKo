@@ -1,0 +1,417 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2024-07-10",
+    "description": "Comprehensive course recommendations based on RIASEC personality types",
+    "totalCombinations": 15,
+    "dataSource": "Educational institutions, career counseling research, and industry analysis"
+  },
+  "riasecInfo": {
+    "R": {
+      "name": "Realistic",
+      "description": "Hands-on, practical, mechanical work",
+      "traits": ["Practical", "Hands-on", "Problem-solving", "Technical"],
+      "color": "red"
+    },
+    "I": {
+      "name": "Investigative",
+      "description": "Research, analysis, scientific thinking",
+      "traits": ["Analytical", "Research-oriented", "Logical", "Scientific"],
+      "color": "blue"
+    },
+    "A": {
+      "name": "Artistic",
+      "description": "Creative expression and innovation",
+      "traits": ["Creative", "Expressive", "Imaginative", "Original"],
+      "color": "purple"
+    },
+    "S": {
+      "name": "Social",
+      "description": "Helping, teaching, and working with people",
+      "traits": ["Helpful", "Caring", "Teaching", "Communicative"],
+      "color": "green"
+    },
+    "E": {
+      "name": "Enterprising",
+      "description": "Leadership, business, and persuasion",
+      "traits": ["Leadership", "Persuasive", "Ambitious", "Competitive"],
+      "color": "orange"
+    },
+    "C": {
+      "name": "Conventional",
+      "description": "Organization, data, and systematic work",
+      "traits": ["Organized", "Detail-oriented", "Systematic", "Efficient"],
+      "color": "gray"
+    }
+  },
+  "courseRecommendations": {
+    "RI": {
+      "name": "Realistic-Investigative",
+      "description": "Combines practical skills with analytical thinking",
+      "courses": [
+        {
+          "title": "Mechanical Engineering",
+          "description": "Design and build mechanical systems, engines, and machines",
+          "matchStrength": "Excellent",
+          "careerPaths": ["Mechanical Engineer", "Product Designer", "Manufacturing Engineer"],
+          "averageSalary": "$88,430",
+          "jobGrowth": "4%",
+          "skills": ["CAD Software", "Thermodynamics", "Materials Science", "Project Management"]
+        },
+        {
+          "title": "Aerospace Engineering", 
+          "description": "Develop aircraft, spacecraft, and related systems",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Robotics Technology",
+          "description": "Design and program robotic systems for various applications",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Biomedical Engineering",
+          "description": "Apply engineering principles to healthcare and medical devices",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "IR": {
+      "name": "Investigative-Realistic",
+      "description": "Research-focused with practical applications",
+      "courses": [
+        {
+          "title": "Computer Science",
+          "description": "Software development, algorithms, and computational problem-solving",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Civil Engineering",
+          "description": "Design and construct infrastructure like bridges and buildings",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Environmental Engineering",
+          "description": "Solve environmental problems through engineering solutions",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Geology",
+          "description": "Study Earth's structure, materials, and processes",
+          "matchStrength": "Good"
+        }
+      ]
+    },
+    "AI": {
+      "name": "Artistic-Investigative",
+      "description": "Creative expression with analytical depth",
+      "courses": [
+        {
+          "title": "Architecture",
+          "description": "Design buildings and spaces that are both functional and beautiful",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Game Design",
+          "description": "Create interactive entertainment experiences and virtual worlds",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Digital Media Arts",
+          "description": "Combine technology with creative visual storytelling",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "User Experience Design",
+          "description": "Research and design intuitive digital interfaces",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "IA": {
+      "name": "Investigative-Artistic", 
+      "description": "Research-driven creative work",
+      "courses": [
+        {
+          "title": "Graphic Design",
+          "description": "Visual communication through typography, imagery, and layout",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Film Production",
+          "description": "Create movies, documentaries, and video content",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Industrial Design",
+          "description": "Design products that are both functional and aesthetically pleasing",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Art History",
+          "description": "Study and analyze artistic movements and cultural significance",
+          "matchStrength": "Good"
+        }
+      ]
+    },
+    "AS": {
+      "name": "Artistic-Social",
+      "description": "Creative work focused on human connection",
+      "courses": [
+        {
+          "title": "Art Therapy",
+          "description": "Use creative expression to help people heal and grow",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Music Education",
+          "description": "Teach music and inspire others through musical expression",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Creative Writing",
+          "description": "Craft stories, poems, and narratives that connect with readers",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Theater Arts",
+          "description": "Perform, direct, and create live theatrical experiences",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "SA": {
+      "name": "Social-Artistic",
+      "description": "People-focused work with creative elements",
+      "courses": [
+        {
+          "title": "Counseling Psychology",
+          "description": "Help people overcome challenges and improve mental health",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Social Work",
+          "description": "Support individuals and communities in need",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Elementary Education",
+          "description": "Teach and nurture young learners in their formative years",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Communications",
+          "description": "Create compelling messages across various media platforms",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "SE": {
+      "name": "Social-Enterprising",
+      "description": "Leadership in people-centered organizations",
+      "courses": [
+        {
+          "title": "Human Resources Management",
+          "description": "Manage talent and create positive workplace cultures",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Public Administration",
+          "description": "Lead government agencies and public service organizations",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Nonprofit Management",
+          "description": "Run organizations focused on social impact and community service",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Healthcare Administration",
+          "description": "Manage hospitals and healthcare systems",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "ES": {
+      "name": "Enterprising-Social",
+      "description": "Business leadership with focus on people",
+      "courses": [
+        {
+          "title": "Business Administration",
+          "description": "Lead organizations and manage business operations",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Marketing",
+          "description": "Connect products and services with target audiences",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Sales Management",
+          "description": "Build relationships and drive revenue growth",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Event Management",
+          "description": "Plan and execute memorable experiences and gatherings",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "EC": {
+      "name": "Enterprising-Conventional",
+      "description": "Business leadership with systematic approach",
+      "courses": [
+        {
+          "title": "Finance",
+          "description": "Manage money, investments, and financial planning",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Accounting",
+          "description": "Track financial transactions and ensure fiscal responsibility",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Operations Management",
+          "description": "Optimize business processes and supply chains",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Project Management",
+          "description": "Lead teams to complete complex projects on time and budget",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "CE": {
+      "name": "Conventional-Enterprising",
+      "description": "Systematic work with business applications",
+      "courses": [
+        {
+          "title": "Information Systems",
+          "description": "Manage technology systems that support business operations",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Supply Chain Management",
+          "description": "Coordinate the flow of goods from suppliers to customers",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Quality Assurance",
+          "description": "Ensure products and services meet high standards",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Data Analytics",
+          "description": "Extract insights from data to inform business decisions",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "CR": {
+      "name": "Conventional-Realistic",
+      "description": "Systematic work with practical applications",
+      "courses": [
+        {
+          "title": "Construction Management",
+          "description": "Oversee building projects from planning to completion",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Surveying",
+          "description": "Measure and map land for construction and development",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Logistics",
+          "description": "Coordinate transportation and distribution of goods",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Manufacturing Technology",
+          "description": "Optimize production processes and quality control",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "RC": {
+      "name": "Realistic-Conventional",
+      "description": "Hands-on work with systematic approach",
+      "courses": [
+        {
+          "title": "Automotive Technology",
+          "description": "Repair and maintain vehicles and transportation systems",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Electronics Technology",
+          "description": "Install, maintain, and repair electronic systems",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "HVAC Technology",
+          "description": "Install and service heating, ventilation, and air conditioning systems",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Computer Networking",
+          "description": "Set up and maintain computer network infrastructure",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "RA": {
+      "name": "Realistic-Artistic",
+      "description": "Hands-on creative work",
+      "courses": [
+        {
+          "title": "Landscape Architecture",
+          "description": "Design outdoor spaces that are both beautiful and functional",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Culinary Arts",
+          "description": "Create delicious food experiences through cooking and presentation",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Fashion Design",
+          "description": "Create clothing and accessories that express style and function",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Photography",
+          "description": "Capture and create compelling visual stories through images",
+          "matchStrength": "Very Good"
+        }
+      ]
+    },
+    "AR": {
+      "name": "Artistic-Realistic",
+      "description": "Creative expression through practical skills",
+      "courses": [
+        {
+          "title": "Interior Design",
+          "description": "Create functional and beautiful indoor spaces",
+          "matchStrength": "Excellent"
+        },
+        {
+          "title": "Jewelry Design",
+          "description": "Craft unique accessories and decorative pieces",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Woodworking",
+          "description": "Create furniture and artistic pieces from wood",
+          "matchStrength": "Very Good"
+        },
+        {
+          "title": "Ceramics",
+          "description": "Shape clay into functional and artistic pottery",
+          "matchStrength": "Good"
+        }
+      ]
+    }
+  }
+}
