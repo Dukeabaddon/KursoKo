@@ -14,21 +14,6 @@ dist-ssr
 
 # Editor directories and files
 .vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
 # Project-specific folders to exclude
-.bmad-core/
-.cursor/
-.github/
-.kiro/
-docs/
-pokemon-cards-css/
 documentaion/
-Figma-Context-MCP/

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useFeedback } from '../utils/feedbackUtils'
+import { useFeedback } from '../../utils/feedbackUtils'
 
 /**
  * GamificationSystem Component

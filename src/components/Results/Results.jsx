@@ -1,6 +1,6 @@
-import { getPersonalityProfile } from '../utils/riasecScoring'
-import { getCourseRecommendations, getMatchStrengthColor } from '../utils/courseRecommendations'
-import CharacterCard from './CharacterCard'
+import { getPersonalityProfile } from '../../utils/riasecScoring'
+import { getCourseRecommendations, getMatchStrengthColor } from '../../utils/courseRecommendations'
+import CharacterCard from '../CharacterCard'
 
 function Results({ responses, onRetake, onHome }) {
   // Calculate RIASEC personality profile

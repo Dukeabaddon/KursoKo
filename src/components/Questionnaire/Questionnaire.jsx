@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import questionsData from '../data/questions.json'
+import questionsData from '../../data/questions.json'
 
 function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
