@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useCallback, useRef } from 'react'
 import { 
   HomePage, 
@@ -214,6 +215,13 @@ function App() {
         </main>
       </div>
     </ErrorBoundary>
+=======
+function App() {
+  return (
+    <div>
+      {/* Completely blank slate - homepage will be built from scratch */}
+    </div>
+>>>>>>> 9cd74d644a7b3628fe2387d5efea31215159eb3e
   )
 }
 
