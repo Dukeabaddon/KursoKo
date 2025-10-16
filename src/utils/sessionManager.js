@@ -141,6 +141,23 @@ export const recordSubmission = () => {
 };
 
 /**
+ * Gets the last submission timestamp
+ * 
+ * @returns {number|null} Timestamp or null
+ */
+export const getLastSubmitTime = () => {
+  try {
+    const lastSubmit = sessionStorage.getItem(LAST_SUBMIT_KEY);
+    if (!lastSubmit) return null;
+    
+    return parseInt(lastSubmit, 10);
+  } catch (error) {
+    console.error('Failed to get last submit time:', error);
+    return null;
+  }
+};
+
+/**
  * Gets session duration in milliseconds
  * 
  * @returns {number} Duration or 0

@@ -3,6 +3,8 @@
  * Defines security rules and data integrity checks
  */
 
+import { getSessionDuration, getLastSubmitTime, recordSubmission } from './sessionManager';
+
 export const VALIDATION_CONFIG = {
   // Questionnaire settings
   TOTAL_QUESTIONS: 60,
@@ -18,6 +20,60 @@ export const VALIDATION_CONFIG = {
 };
 
 /**
+ * Helpers extracted to reduce cyclomatic complexity in validateResponses
+ */
+const checkResponsesArray = (responses, errors) => {
+  if (!responses || !Array.isArray(responses)) {
+    errors.push('Responses must be an array');
+    return false;
+  }
+  return true;
+};
+
+const checkResponseCount = (responses, errors) => {
+  if (responses.length !== VALIDATION_CONFIG.TOTAL_QUESTIONS) {
+    errors.push(
+      `Expected ${VALIDATION_CONFIG.TOTAL_QUESTIONS} responses, got ${responses.length}`
+    );
+  }
+};
+
+const validateSingleResponse = (response, index, errors, seenIds) => {
+  const num = index + 1;
+  if (!response || typeof response !== 'object') {
+    errors.push(`Response ${num} is invalid`);
+    return;
+  }
+  if (!('questionId' in response)) {
+    errors.push(`Response ${num} missing questionId`);
+  }
+  if (!('score' in response)) {
+    errors.push(`Response ${num} missing score`);
+  }
+  const qId = response.questionId;
+  if (typeof qId !== 'number' || qId < 1 || qId > VALIDATION_CONFIG.TOTAL_QUESTIONS) {
+    errors.push(`Response ${num} has invalid questionId: ${qId}`);
+  }
+  if (seenIds.has(qId)) {
+    errors.push(`Duplicate questionId detected: ${qId}`);
+  }
+  seenIds.add(qId);
+  const [minScore, maxScore] = VALIDATION_CONFIG.VALID_SCORE_RANGE;
+  const score = response.score;
+  if (typeof score !== 'number' || score < minScore || score > maxScore) {
+    errors.push(
+      `Response ${num} has invalid score: ${score} (must be ${minScore}-${maxScore})`
+    );
+  }
+  if ('timestamp' in response) {
+    const ts = response.timestamp;
+    if (typeof ts !== 'number' || ts <= 0) {
+      errors.push(`Response ${num} has invalid timestamp`);
+    }
+  }
+}
+
+/**
  * Validates questionnaire responses structure and integrity
  * 
  * @param {Array} responses - Array of user responses
@@ -26,72 +82,17 @@ export const VALIDATION_CONFIG = {
 export const validateResponses = (responses) => {
   const errors = [];
 
-  // Check if responses exist
-  if (!responses || !Array.isArray(responses)) {
-    errors.push('Responses must be an array');
+  // Step 1: basic array and count checks
+  if (!checkResponsesArray(responses, errors)) {
     return { isValid: false, errors };
   }
+  checkResponseCount(responses, errors);
 
-  // Check response count
-  if (responses.length !== VALIDATION_CONFIG.TOTAL_QUESTIONS) {
-    errors.push(
-      `Expected ${VALIDATION_CONFIG.TOTAL_QUESTIONS} responses, got ${responses.length}`
-    );
-  }
-
-  // Validate each response
-  const questionIds = new Set();
-  
-  responses.forEach((response, index) => {
-    // Check response structure
-    if (!response || typeof response !== 'object') {
-      errors.push(`Response ${index + 1} is invalid`);
-      return;
-    }
-
-    // Check required fields
-    if (!response.hasOwnProperty('questionId')) {
-      errors.push(`Response ${index + 1} missing questionId`);
-    }
-
-    if (!response.hasOwnProperty('score')) {
-      errors.push(`Response ${index + 1} missing score`);
-    }
-
-    // Validate question ID
-    if (
-      typeof response.questionId !== 'number' ||
-      response.questionId < 1 ||
-      response.questionId > VALIDATION_CONFIG.TOTAL_QUESTIONS
-    ) {
-      errors.push(`Response ${index + 1} has invalid questionId: ${response.questionId}`);
-    }
-
-    // Check for duplicate question IDs
-    if (questionIds.has(response.questionId)) {
-      errors.push(`Duplicate questionId detected: ${response.questionId}`);
-    }
-    questionIds.add(response.questionId);
-
-    // Validate score range
-    const [minScore, maxScore] = VALIDATION_CONFIG.VALID_SCORE_RANGE;
-    if (
-      typeof response.score !== 'number' ||
-      response.score < minScore ||
-      response.score > maxScore
-    ) {
-      errors.push(
-        `Response ${index + 1} has invalid score: ${response.score} (must be ${minScore}-${maxScore})`
-      );
-    }
-
-    // Validate timestamp if present
-    if (response.timestamp) {
-      if (typeof response.timestamp !== 'number' || response.timestamp <= 0) {
-        errors.push(`Response ${index + 1} has invalid timestamp`);
-      }
-    }
-  });
+  // Step 2: detailed per-response validation
+  const seenIds = new Set();
+  responses.forEach((resp, idx) =>
+    validateSingleResponse(resp, idx, errors, seenIds)
+  );
 
   return {
     isValid: errors.length === 0,
@@ -174,6 +175,24 @@ export const sanitizeResponses = (responses) => {
 };
 
 /**
+ * Pre-validate session duration and submission interval.
+ * @param {Array} responses
+ * @returns {{ isValid: boolean, errors: string[] }}
+ */
+const preValidateSession = () => {
+  const errors = [];
+  const sessionAge = getSessionDuration();
+  if (sessionAge > VALIDATION_CONFIG.MAX_SESSION_DURATION) {
+    errors.push('Session expired. Please restart the assessment.');
+  }
+  const last = getLastSubmitTime();
+  if (last && Date.now() - last < VALIDATION_CONFIG.MIN_SUBMIT_INTERVAL) {
+    errors.push('Please wait a few seconds before resubmitting the questionnaire.');
+  }
+  return { isValid: errors.length === 0, errors };
+};
+
+/**
  * Complete validation pipeline
  * 
  * @param {Array} responses - User responses
@@ -182,30 +201,43 @@ export const sanitizeResponses = (responses) => {
 export const validateAndSanitize = (responses) => {
   const allErrors = [];
 
-  // Step 1: Structure validation
-  const structureValidation = validateResponses(responses);
-  if (!structureValidation.isValid) {
+  // Step 0: session and rate-limit enforcement
+  const sessionCheck = preValidateSession();
+  if (!sessionCheck.isValid) {
     return {
       isValid: false,
       sanitizedResponses: [],
-      errors: structureValidation.errors
+      errors: sessionCheck.errors
     };
   }
 
-  // Step 2: Timing validation (optional but recommended)
-  const timingValidation = validateResponseTiming(responses);
-  if (!timingValidation.isValid) {
-    allErrors.push(...timingValidation.errors);
-    // Don't fail - just warn
-    console.warn('Timing validation warnings:', timingValidation.errors);
-  }
+   // Step 1: Structure validation
+   const structureValidation = validateResponses(responses);
+   if (!structureValidation.isValid) {
+     return {
+       isValid: false,
+       sanitizedResponses: [],
+       errors: structureValidation.errors
+     };
+   }
 
-  // Step 3: Sanitize data
-  const sanitized = sanitizeResponses(responses);
+   // Step 2: Timing validation (optional but recommended)
+   const timingValidation = validateResponseTiming(responses);
+   if (!timingValidation.isValid) {
+     allErrors.push(...timingValidation.errors);
+     // Don't fail - just warn
+     console.warn('Timing validation warnings:', timingValidation.errors);
+   }
 
-  return {
-    isValid: true,
-    sanitizedResponses: sanitized,
-    errors: allErrors
-  };
-};
+   // Step 3: sanitize data (assign timestamps after validation)
+   const sanitized = sanitizeResponses(responses);
+  
+  // Record this submission for next interval check
+  recordSubmission();
+
+   return {
+     isValid: true,
+     sanitizedResponses: sanitized,
+     errors: allErrors
+   };
+ };

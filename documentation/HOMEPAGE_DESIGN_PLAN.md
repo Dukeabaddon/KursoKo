@@ -1,475 +1,431 @@
-# 🎨 KursoKo Homepage Design Plan v1.1
-*Creative, Playful Career Assessment for Filipino Youth (15-18)*
+# 🎨 KursoKo Homepage Design Plan v2.0
+*Conversion-Optimized RIASEC Career Assessment for Students*
 
 ---
 
 ## 📋 OBJECTIVE
-- Build a mobile-first homepage that motivates Filipino high school students to start the KursoKo RIASEC questionnaire, clearly explains value, and sets expectations (questions, time, results) without business/marketing claims.
+Build a **conversion-focused, mobile-first homepage** that motivates students to start the KursoKo RIASEC questionnaire immediately. Inspired by riasectest.com's proven structure while maintaining approachable design for youth (15-18).
 
-## 🔍 ASSUMPTIONS
-- Assessment length: ~60 questions; estimated time: ~15 minutes (proposed).
-- Primary CTA routes to existing `Questionnaire` flow and uses `sessionManager` for session + rate limit (proposed).
-- Homepage uses local UI state only; assessment state handled by Questionnaire (proposed).
-- Tailwind CSS v4 with CSS-first tokens via `@theme` and CSS variables in `src/index.css` (proposed).
-- Content language: Filipino-English mix; no multi-language toggle in v1 (proposed).
+**Core Goal:** Maximize assessment start rate through clarity, credibility, and minimal friction.
 
-## 🧠 USER QUESTIONS (for confirmation)
-- Logo/brand constraints? Vector logo availability or text-only “KursoKo”? Impacts header/hero.
-- Any mandated fonts from brand? If none, proceed with Poppins (headings) + Inter (body).
-- Privacy copy preference: Link to `documentation/SECURITY.md` or short inline note? Impacts CTA area.
-- Analytics: Should we instrument basic events (home_cta_click, sample_interaction) locally for UX improvement? No network by default.
+---
 
-## 📐 SCOPE
-- In: Hero, Value Proposition, RIASEC Intro, How It Works, Sample Question (non-persistent), Final CTA, small FAQ, “By the numbers” strip (time/questions/results only).
-- Out (v1): Testimonials, login/sign-up, account resume, multi-language toggle, deep resource library.
+## 🔍 CONFIRMED SPECIFICATIONS
+
+### Assessment Details
+- **Question Count:** 30 forced-choice pairs
+- **Format:** Option A vs Option B (modern, contextual scenarios)
+- **Time Estimate:** ~10 minutes
+- **Language:** Pure English (no Filipino)
+- **Results:** Instant RIASEC profile with career recommendations
+
+### Design Direction
+- **Style:** Professional with playful touches (Hybrid Minimalist-Modern)
+- **Credibility:** Scientific backing emphasized
+- **Youth Appeal:** Clean, modern UI without childish elements
+- **Visual Assets:** Free resources (CSS gradients, blobs, grid patterns, Heroicons)
+
+### Technical Foundation
+- **Framework:** React + Vite + Tailwind CSS v4
+- **Components:** Replace all 6 existing homepage components with 4 new streamlined ones
+- **State:** Local UI only; assessment state handled by existing `Questionnaire` component
+- **Session:** Uses existing `sessionManager` for rate limiting
+
+---
+
+## 📐 STREAMLINED MVP SCOPE
+
+### ✅ Included (4 Core Sections)
+1. **Hero Section** - Immediate value + primary CTA
+2. **Why + How Combined** - Value props + process flow
+3. **Features Grid** - 6 credibility/benefit highlights
+4. **FAQ + Final CTA** - Address objections + conversion
+
+### ❌ Excluded (v1 MVP)
+- ~~Testimonials~~ (no user data available)
+- ~~RIASEC character carousel~~ (adds complexity)
+- ~~Sample question preview~~ (creates friction)
+- ~~Multilingual toggle~~ (English-only v1)
+- ~~Separate value proposition section~~ (merged with How It Works)
+
+---
 
 ## 🏗️ ARCHITECTURE
-- File structure (aligned to repo conventions):
-  - `src/components/Home/`
-    - `HomePage.jsx` (container)
-    - `HeroSection.jsx`, `ValueProposition.jsx`, `RIASECIntro.jsx`, `HowItWorks.jsx`, `SampleQuestion.jsx`, `FinalCTA.jsx`
-    - `index.js` (barrel)
-- Contracts
-  - Hero/Final CTA: `onStart` → invokes `sessionManager.checkRateLimit()` → `sessionManager.startSession()` → navigate to `Questionnaire` or surface `ErrorState` on violation.
-  - SampleQuestion: read-only from `src/data/questions.json`; no session creation; emits `onTryFullAssessment`.
-- State: Local UI only (hover/expanded/toggles). No cross-page state on homepage.
-- Accessibility: Landmarks, aria-labels, keyboard activation, visible focus, motion-safe.
 
-## 💭 DESIGN OPTIONS
-- A. Playful Pastel (recommended)
-  - Pros: Highest teen engagement; friendly; aligns with flat 2D illustrations.
-  - Cons: Must watch contrast; avoid over-gamification.
-- B. Clean Academic
-  - Pros: Credibility with parents/teachers; easy contrast.
-  - Cons: Less engaging for teens.
-- C. Gamified Bold
-  - Pros: Strong interaction and memorability.
-  - Cons: Heavier motion; performance risk; extra build effort.
+### File Structure
+```
+src/components/Home/
+├── HomePage.jsx              # Main container (NEW - replaces old)
+├── HeroSection.jsx           # Above-fold conversion (NEW)
+├── WhyHowSection.jsx         # Combined value + process (NEW)
+├── FeaturesGrid.jsx          # 6 trust signals (NEW)
+├── FAQSection.jsx            # Accordion + final CTA (NEW)
+└── index.js                  # Barrel export
 
-## ⚠️ RISKS / OPEN ITEMS
-- Illustration sourcing and license fit; ensure consistent art style.
-- Motion on low-end devices; respect `prefers-reduced-motion` and keep durations 150–200ms.
-- Contrast on pastel backgrounds; verify AA minimum.
-- Content scope creep (FAQ/testimonials); keep MVP focused on starting assessment.
+# REMOVE OLD FILES:
+❌ ValueProposition.jsx
+❌ RIASECIntro.jsx / RIASECCarousel/
+❌ HowItWorks.jsx
+❌ SampleQuestion.jsx
+❌ FinalCTA.jsx
+```
 
----
+### Component Contracts
 
-## 📋 PROJECT BRIEF
+**HomePage.jsx**
+```javascript
+Props: { onStartQuestionnaire: () => void }
+Renders: Hero, WhyHow, Features, FAQ in vertical stack
+Handles: Skip link, main landmarks, scroll spacing
+```
 
-### Target Audience
-- **Age:** 15-18 years old (high school students)
-- **Location:** Urban Philippines
-- **Tech Level:** Simplified UI with creative elements
-- **Language:** Conversational Filipino-English mix
+**HeroSection.jsx**
+```javascript
+Props: { onStart: () => void }
+Renders: Headline, subheadline, primary CTA, trust badges, hero visual
+Interaction: CTA invokes onStart → sessionManager.checkRateLimit()
+```
 
-### Brand Personality
-**Youthful & Energetic** (Option A)
-- Bright pastel colors
-- Playful, creative design
-- Casual, conversational language
-- Inspired by STI SCOPE's approachable style
+**WhyHowSection.jsx**
+```javascript
+Props: None (static content)
+Renders: 3 value props (cards) + 4-step process (timeline)
+Layout: Mobile stack, desktop side-by-side or full-width sections
+```
 
-### Primary Goals
-1. **Primary:** Help students discover their career path
-2. **Secondary:** Educate about RIASEC system
-3. **Conversion:** Maximize assessment starts
+**FeaturesGrid.jsx**
+```javascript
+Props: None (static content)
+Renders: 6 feature cards with icons
+Layout: 2-col mobile, 3-col desktop
+```
 
----
-
-## 🎯 COMPETITIVE ANALYSIS: STI SCOPE
-
-### What They Do Well
-✅ Clear hero message: "Know more about yourself!"  
-✅ Simple CTA: "Let's Get Started"  
-✅ Educational sections (What is SCOPE, Career Explorer)  
-✅ Trust signals (testimonials from professionals)  
-✅ Resource library (Career Toolbox)  
-✅ Clean, organized navigation  
-
-### What We'll Do Better
-🚀 **More playful illustrations** (they use photos, we'll use flat 2D art)  
-🚀 **Stronger RIASEC education** (explain personality types upfront)  
-🚀 **Gamified preview** (show sample questions as teasers)  
-🚀 **Mobile-first design** (fully optimized for phones)  
-🚀 **Pastel color palette** (softer, more modern than their blue/purple)  
-🚀 **Character mascots** (visual representation of RIASEC types)  
+**FAQSection.jsx**
+```javascript
+Props: { onStart: () => void }
+Renders: Accordion (8 Q&As) + Final CTA button
+State: Local expanded/collapsed per question
+Interaction: CTA invokes onStart
+```
 
 ---
 
-## 🎨 DESIGN DIRECTION
+## 🎨 DESIGN SYSTEM
 
-### Visual Style
-**Flat 2D Illustrations + Pastel Gradients**
+### Visual Style: Professional-Playful Hybrid
+
+**Inspired by:** riasectest.com (credibility) + modern SaaS landing pages (clean)
 
 **Color Palette:**
 ```css
-/* Primary Pastels */
---pastel-blue: #A8D8EA      /* Trust, Calm */
---pastel-purple: #D4A5F3    /* Creativity, Dreams */
---pastel-pink: #FFD3E1      /* Warmth, Friendliness */
---pastel-yellow: #FFF4A3    /* Energy, Optimism */
---pastel-green: #B8E6D5     /* Growth, Success */
---pastel-orange: #FFCBA4    /* Enthusiasm, Action */
+/* Primary - Trust & Action */
+--color-primary-600: #2563eb;      /* Primary CTA */
+--color-primary-700: #1d4ed8;      /* CTA hover */
+--color-primary-50: #eff6ff;       /* Subtle backgrounds */
+
+/* Accent - Energy & Highlights */
+--color-accent-500: #8b5cf6;       /* Feature highlights */
+--color-accent-100: #f5f3ff;       /* Feature card backgrounds */
+
+/* Success - Results & Completion */
+--color-success-500: #10b981;      /* Trust badges */
+--color-success-50: #ecfdf5;       /* Success highlights */
 
 /* Neutrals */
---text-dark: #2D3748        /* Main text */
---text-gray: #718096        /* Secondary text */
---bg-cream: #FFFEF9         /* Page background */
---white: #FFFFFF            /* Cards, sections */
+--color-neutral-900: #0f172a;      /* Headings */
+--color-neutral-700: #334155;      /* Body text */
+--color-neutral-100: #f1f5f9;      /* Section backgrounds */
+--color-neutral-50: #f8fafc;       /* Page background */
+--color-white: #ffffff;            /* Cards */
+
+/* Gradients (Hero Background) */
+--gradient-hero: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 50%, #ecfdf5 100%);
+--gradient-cta: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
 ```
 
 **Typography:**
 ```css
 /* Headings */
-font-family: 'Poppins', sans-serif
-font-weight: 700-900 (Bold to Black)
+font-family: 'Inter', system-ui, sans-serif;
+font-weight: 700-900 (Bold to Black);
 
 /* Body */
-font-family: 'Inter', sans-serif
-font-weight: 400-600 (Regular to Semibold)
+font-family: 'Inter', system-ui, sans-serif;
+font-weight: 400-600 (Regular to Semibold);
 
-/* Accent */
-font-family: 'Fredoka One', cursive (for playful CTAs)
+/* Scale */
+h1: 3rem / 48px (mobile: 2.25rem / 36px)
+h2: 2.25rem / 36px (mobile: 1.875rem / 30px)
+h3: 1.5rem / 24px
+body: 1rem / 16px (lg: 1.125rem / 18px)
 ```
 
-**Illustration Style:**
-- Flat 2D vector illustrations
-- Rounded corners everywhere (16px-24px border-radius)
-- Playful character designs representing RIASEC types:
-  - **R (Realistic):** Mechanic with tools
-  - **I (Investigative):** Scientist with microscope
-  - **A (Artistic):** Artist with paintbrush
-  - **S (Social):** Teacher with students
-  - **E (Enterprising):** Business person with laptop
-  - **C (Conventional):** Organizer with clipboard
-
-**Suggested Illustration Sources:**
-- **unDraw** (https://undraw.co) - Customizable SVG illustrations
-- **Humaaans** (https://humaaans.com) - Mix-and-match characters
-- **Storyset** (https://storyset.com) - Animated illustrations
+**Visual Assets (Free Sources):**
+- **Backgrounds:** CSS gradients + blob shapes (blobmaker.app or CSS-only)
+- **Patterns:** Grid patterns via SVG or CSS repeating gradients
+- **Icons:** Heroicons (MIT license) - already common in React ecosystem
+- **Illustrations:** Abstract geometric shapes via CSS (no external images for MVP)
 
 ---
 
-## � BY THE NUMBERS (Homepage strip)
-- ~60 questions
-- ~15 minutes
-- ⚡ Instant results
-Note: No business/marketing claims; no “free” or “no sign-up” phrasing.
+## 📋 SECTION SPECIFICATIONS
 
----
+### 1. HERO SECTION
 
-## �📐 COMPONENT HIERARCHY
-
-### Page Structure (Mobile-First)
-
+**Layout (Mobile-First):**
 ```
 ┌─────────────────────────────────────┐
-│  1. HERO SECTION                    │
-│     - Catchy headline               │
-│     - Subheadline (conversational)  │
-│     - Primary CTA button            │
-│     - Hero illustration             │
-├─────────────────────────────────────┤
-│  2. VALUE PROPOSITION               │
-│     - "Why take KursoKo?"           │
-│     - 3 benefit cards               │
-├─────────────────────────────────────┤
-│  3. RIASEC INTRODUCTION             │
-│     - "What's your type?"           │
-│     - 6 personality cards           │
-│     - Interactive preview           │
-├─────────────────────────────────────┤
-│  4. HOW IT WORKS                    │
-│     - 3-step process                │
-│     - Visual timeline               │
-├─────────────────────────────────────┤
-│  5. SAMPLE QUESTION PREVIEW         │
-│     - "Try a sample question"       │
-│     - Interactive demo              │
-├─────────────────────────────────────┤
-│  6. TRUST SIGNALS (Optional)        │
-│     - Usage stats (if available)    │
-│     - Simple testimonial            │
-├─────────────────────────────────────┤
-│  7. FINAL CTA                       │
-│     - Big button "Start Assessment" │
-│     - Reassurance text              │
+│    [Gradient Background w/ Blobs]   │
+│                                     │
+│   🎯 Find Your Perfect Career Path  │
+│                                     │
+│   Discover your strengths and       │
+│   ideal careers with our free       │
+│   RIASEC assessment.                │
+│                                     │
+│   ┌───────────────────────────────┐ │
+│   │   Start Assessment  →         │ │
+│   └───────────────────────────────┘ │
+│                                     │
+│   ✓ 10 minutes  ✓ 30 questions     │
+│   ✓ Instant results                │
+│                                     │
+│   [Geometric shapes/grid pattern]   │
+│                                     │
 └─────────────────────────────────────┘
 ```
 
+**Content:**
+- **Headline:** "Find Your Perfect Career Path"
+- **Subheadline:** "Discover your strengths and ideal careers with our free RIASEC assessment. Get personalized insights in just 10 minutes."
+- **Primary CTA:** "Start Assessment" (large gradient button)
+- **Trust Badges:** 
+  - ✓ 10 minutes
+  - ✓ 30 questions
+  - ✓ Instant results
+  - ✓ Scientifically validated
+
+**Visual Elements:**
+- Background: Soft gradient (blue → purple → green tints)
+- Decorative: CSS blob shapes in corners (abstract, non-distracting)
+- Grid pattern overlay (subtle, 10% opacity)
+
+**Accessibility:**
+- Heading hierarchy: `<h1>` for headline
+- CTA: `aria-label="Begin RIASEC career assessment"`
+- Skip link to main content
+
 ---
 
-## 🎨 SECTION DESIGNS
-
-### 1. HERO SECTION
+### 2. WHY + HOW SECTION (Combined)
 
 **Layout:**
 ```
 ┌─────────────────────────────────────┐
+│  Why Take the RIASEC Assessment?    │
 │                                     │
-│     [Playful Character Illustration] │
+│  ┌──────┐  ┌──────┐  ┌──────┐      │
+│  │ Icon │  │ Icon │  │ Icon │      │
+│  │Value │  │Value │  │Value │      │
+│  │ #1   │  │ #2   │  │ #3   │      │
+│  └──────┘  └──────┘  └──────┘      │
 │                                     │
-│   🎯 Ano ang tamang career mo?      │
+├─────────────────────────────────────┤
+│  How It Works                       │
 │                                     │
-│   Alamin ang iyong personality type │
-│   at i-discover ang best career     │
-│   path para sa'yo! 🚀               │
-│                                     │
-│   [ Simulan ang Assessment → ]      │
-│                                     │
-│   ⏱️ ~15 minutes lang | ⚡ Instant results │
+│  1 ──→ 2 ──→ 3 ──→ 4                │
+│  Answer  Assess  Discover  Explore  │
 │                                     │
 └─────────────────────────────────────┘
 ```
 
+**Why Content (3 Value Props):**
+
+1. **Self-Awareness**
+   - Icon: 🔍 (Heroicon: MagnifyingGlassIcon)
+   - Title: "Know Your Strengths"
+   - Text: "Understand your natural interests and abilities backed by psychology research."
+
+2. **Career Clarity**
+   - Icon: 🎯 (Heroicon: SparklesIcon)
+   - Title: "Discover Ideal Careers"
+   - Text: "Get matched with careers that align with your personality and goals."
+
+3. **Smart Decisions**
+   - Icon: 📊 (Heroicon: ChartBarIcon)
+   - Title: "Make Informed Choices"
+   - Text: "Choose your education path and career with confidence and data."
+
+**How Content (4-Step Process):**
+
+```
+Step 1: Answer Questions
+Icon: Heroicon CheckCircleIcon
+"Respond to 30 real-world scenario questions"
+
+Step 2: Assess Your Profile  
+Icon: Heroicon CpuChipIcon
+"Our system analyzes your responses using RIASEC theory"
+
+Step 3: Discover Your Type
+Icon: Heroicon LightBulbIcon
+"Receive your unique career personality code"
+
+Step 4: Explore Career Paths
+Icon: Heroicon RocketLaunchIcon
+"View matched careers and educational recommendations"
+```
+
 **Design Details:**
-- **Background:** Soft gradient (pastel-blue → pastel-purple)
-- **Headline:** 48px Poppins Bold, conversational Filipino
-- **CTA Button:** Rounded pill shape, bright orange, hover animation
-- **Illustration:** Character thinking with question marks
-- **Trust badges:** Time + Results reassurance below CTA
-- **Privacy link (inline):** “Privacy & data use” → `documentation/SECURITY.md`
+- Value cards: White bg, border, icon top, centered text
+- Process timeline: Horizontal line connecting numbered steps (mobile: vertical stack)
+- Spacing: `gap-8` between cards, `gap-12` between Why/How subsections
 
 ---
 
-### 2. VALUE PROPOSITION
+### 3. FEATURES GRID
 
-**Title:** "Bakit dapat mong i-try ang KursoKo?"
+**Title:** "Trusted Assessment Platform"
 
-**3 Benefit Cards:**
+**6 Features (2x3 mobile, 3x2 desktop):**
 
-```
-┌──────────────┐  ┌──────────────┐  ┌──────────────┐
-│  🎯 Kilala   │  │  📚 I-explore│  │  🚀 Sigurado │
-│  ang sarili  │  │  ang careers │  │  sa future   │
-│              │  │              │  │              │
-│ Matuto kung  │  │ Makita ang   │  │ Gumawa ng    │
-│ ano talaga   │  │ iba't ibang  │  │ matalinong   │
-│ ang hilig mo │  │ career paths │  │ career choice│
-└──────────────┘  └──────────────┘  └──────────────┘
-```
+1. **Scientifically Validated**
+   - Icon: Heroicon AcademicCapIcon
+   - "Based on Dr. John Holland's proven RIASEC theory used worldwide"
 
-**Design Details:**
-- **Cards:** White background, pastel border, subtle shadow
-- **Icons:** Large emoji or custom SVG icons
-- **Text:** Short, punchy Filipino phrases
-- **Layout:** 3 columns desktop, stack on mobile
+2. **Comprehensive Results**
+   - Icon: Heroicon DocumentTextIcon
+   - "Detailed personality profile with career recommendations and insights"
+
+3. **Quick & Easy**
+   - Icon: Heroicon ClockIcon
+   - "Complete the assessment in just 10 minutes with straightforward questions"
+
+4. **Free Forever**
+   - Icon: Heroicon GiftIcon
+   - "No hidden costs, no credit card required, no sign-up needed"
+
+5. **Privacy Focused**
+   - Icon: Heroicon ShieldCheckIcon
+   - "Your data stays private and secure with no tracking or selling"
+
+6. **Instant Access**
+   - Icon: Heroicon BoltIcon
+   - "Get your results immediately after completing the assessment"
+
+**Design:**
+- Cards: Light accent background (`bg-accent-50` or `bg-primary-50` alternating)
+- Icon: Large (32px), accent color
+- Text: Short, benefit-focused
+- Hover: Subtle lift effect
 
 ---
 
-### 3. RIASEC INTRODUCTION
+### 4. FAQ + FINAL CTA SECTION
 
-**Title:** "Ano ang iyong Personality Type?"
+**FAQ Title:** "Common Questions"
 
-**6 RIASEC Cards (Interactive):**
+**8 Questions (Accordion):**
 
+```javascript
+const faqs = [
+  {
+    question: "What is the RIASEC assessment?",
+    answer: "RIASEC is a career interest assessment based on psychologist Dr. John Holland's theory. It categorizes people into six personality types: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional. By understanding your type, you can identify careers that match your interests and strengths."
+  },
+  {
+    question: "How long does the assessment take?",
+    answer: "The KursoKo RIASEC assessment takes approximately 10 minutes to complete. You'll answer 30 scenario-based questions where you choose between two options. There are no wrong answers—just pick what appeals to you more."
+  },
+  {
+    question: "Is this assessment scientifically accurate?",
+    answer: "Yes. Our assessment is based on Holland's RIASEC theory, which has been validated through decades of research and is widely used in career counseling worldwide. However, it's best used as one tool among many in your career exploration journey."
+  },
+  {
+    question: "Do I need to create an account?",
+    answer: "No account is required. You can start the assessment immediately and receive your results right away. However, results are shown once and not stored, so we recommend taking a screenshot or notes."
+  },
+  {
+    question: "What will my results show?",
+    answer: "You'll receive a personalized RIASEC profile showing your dominant personality types (typically your top 3). We'll also provide career suggestions that align with your profile, educational pathways to consider, and insights into work environments where you'd thrive."
+  },
+  {
+    question: "Is the assessment really free?",
+    answer: "Yes, completely free. KursoKo is designed to help students explore career options without any barriers. There are no hidden fees, no credit card required, and no premium upsells."
+  },
+  {
+    question: "Can I retake the assessment?",
+    answer: "Yes, though we recommend waiting at least a few months between attempts. Your interests can evolve over time, especially as you gain new experiences. Retaking periodically can provide updated insights."
+  },
+  {
+    question: "Who should take this assessment?",
+    answer: "This assessment is ideal for high school students, college students choosing majors, recent graduates exploring career options, or anyone considering a career change. It's particularly helpful if you're unsure which direction to pursue."
+  }
+]
+```
+
+**Final CTA Block:**
 ```
 ┌─────────────────────────────────────┐
-│  [Animated Character Icon]          │
+│  Ready to Discover Your Career Path?│
 │                                     │
-│  THE DOER                           │
-│  (Realistic)                        │
+│  ┌───────────────────────────────┐  │
+│  │   Start Your Assessment  →    │  │
+│  └───────────────────────────────┘  │
 │                                     │
-│  Gusto mo ng hands-on work?         │
-│  Athletic, practical, builder       │
-│                                     │
-│  [Hover to see careers →]           │
+│  Join thousands of students who     │
+│  have found clarity about their     │
+│  future careers.                    │
 └─────────────────────────────────────┘
 ```
 
-**All 6 Types:**
-1. **R - THE DOER** (Pastel Green) - Mechanic, Engineer, Chef
-2. **I - THE THINKER** (Pastel Blue) - Scientist, Doctor, Researcher
-3. **A - THE CREATOR** (Pastel Purple) - Artist, Designer, Writer
-4. **S - THE HELPER** (Pastel Pink) - Teacher, Nurse, Counselor
-5. **E - THE LEADER** (Pastel Orange) - Entrepreneur, Manager, Lawyer
-6. **C - THE ORGANIZER** (Pastel Yellow) - Accountant, Admin, Analyst
-
-**Design Details:**
-- **Grid:** 2x3 on desktop, 1 column mobile
-- **Interaction:** Hover reveals sample careers
-- **Animation:** Cards gently float/pulse
-- **Illustration:** Character representing each type
+**Design:**
+- Accordion: Expand one at a time, smooth animation
+- FAQ items: Question bold, answer regular weight
+- CTA block: Gradient background, centered, large button
+- Social proof text: Subtle, beneath CTA
 
 ---
 
-### 4. HOW IT WORKS
+## 🎯 BUTTON & INTERACTION DESIGN
 
-**Title:** "Paano gumagana ang KursoKo?"
-
-**3-Step Timeline:**
-
-```
-    1️⃣                 2️⃣                 3️⃣
-[Answer Icon]     [Calculate Icon]   [Results Icon]
-                        ↓                   ↓
-Sagutan ang          Kina-calculate      Makita ang
-60 tanong           ang personality      career paths
-(15 min lang!)      type mo             na perfect sa'yo!
-```
-
-**Design Details:**
-- **Layout:** Horizontal timeline with connecting line
-- **Icons:** Playful illustrations for each step
-- **Text:** Conversational, reassuring language
-- **Animation:** Steps appear on scroll (progressive disclosure)
-
----
-
-### 5. SAMPLE QUESTION PREVIEW
-
-**Title:** "Subukan muna! Try a sample question:"
-
-**Interactive Demo:**
-```
-┌─────────────────────────────────────┐
-│                                     │
-│  Gusto mo bang mag-repair ng mga    │
-│  appliances at machines?            │
-│                                     │
-│  ┌───────────────────────────────┐  │
-│  │ 😫  Hindi talaga              │  │
-│  └───────────────────────────────┘  │
-│  ┌───────────────────────────────┐  │
-│  │ 😐  Pwede naman               │  │
-│  └───────────────────────────────┘  │
-│  ┌───────────────────────────────┐  │
-│  │ 😊  Oo naman!                 │  │
-│  └───────────────────────────────┘  │
-│  ┌───────────────────────────────┐  │
-│  │ 🤩  Sobrang gusto ko!         │  │
-│  └───────────────────────────────┘  │
-│                                     │
-│  [Try the full assessment →]        │
-│                                     │
-└─────────────────────────────────────┘
-```
-
-**Design Details:**
-- **Question:** Real RIASEC question
-- **Scale:** 1-5 with emoji + Filipino text
-- **Interaction:** Clickable options, animates on select
-- **Purpose:** Lower barrier to entry, show it's easy
-
----
-
-### 6. FINAL CTA
-
-**Big, Impossible-to-Miss CTA:**
-
-```
-┌─────────────────────────────────────┐
-│                                     │
-│     [Happy Students Illustration]   │
-│                                     │
-│   🚀 Ready na ba?                   │
-│   I-discover ang career path mo!    │
-│                                     │
-│   ┌───────────────────────────────┐ │
-│   │  SIMULAN ANG ASSESSMENT  →    │ │
-│   └───────────────────────────────┘ │
-│                                     │
-│   ✓ ~15 minutes lang                │
-│   ✓ Instant results                 │
-│   ✓ Clear, easy-to-read results     │
-│                                     │
-└─────────────────────────────────────┘
-```
-
-**Design Details:**
-- **Background:** Gradient overlay on illustration
-- **Button:** Extra large, animated gradient background
-- **Reassurance:** 3 checkmarks below
-- **Animation:** Gentle parallax scroll effect
-
----
-
-## 🎭 COMPONENT SPECIFICATIONS
-
-### Button Styles
-
-**Primary CTA:**
+### Primary CTA Button
 ```css
 .btn-primary {
-  background: linear-gradient(135deg, #FFCBA4 0%, #FFD3E1 100%);
-  padding: 16px 48px;
-  border-radius: 999px;
-  font-family: 'Fredoka One', cursive;
-  font-size: 18px;
-  color: #2D3748;
-  box-shadow: 0 8px 24px rgba(255, 203, 164, 0.4);
-  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+  color: white;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  padding: 1rem 2rem; /* 16px 32px */
+  border-radius: 0.75rem; /* 12px */
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(255, 203, 164, 0.6);
-}
-```
-
-**Secondary CTA:**
-```css
-.btn-secondary {
-  background: white;
-  border: 2px solid #A8D8EA;
-  padding: 12px 32px;
-  border-radius: 12px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  color: #2D3748;
-}
-```
-
----
-
-### Card Styles
-
-**Benefit Card:**
-```css
-.benefit-card {
-  background: white;
-  border-radius: 24px;
-  padding: 32px;
-  border: 3px solid transparent;
-  background-image: 
-    linear-gradient(white, white),
-    linear-gradient(135deg, #A8D8EA, #D4A5F3);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  transform: translateY(-2px);
 }
 
-.benefit-card:hover {
-  transform: translateY(-8px);
-}
-```
-
-**RIASEC Type Card:**
-```css
-.riasec-card {
-  background: white;
-  border-radius: 20px;
-  padding: 24px;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.riasec-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 8px;
-  background: var(--type-color); /* Pastel color per type */
-}
-
-.riasec-card:hover .careers-preview {
-  opacity: 1;
+.btn-primary:active {
   transform: translateY(0);
+}
+
+.btn-primary:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+```
+
+### Card Hover States
+```css
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.value-card:hover {
+  border-color: var(--color-primary-600);
 }
 ```
 
@@ -477,287 +433,509 @@ Sagutan ang          Kina-calculate      Makita ang
 
 ## 📱 RESPONSIVE BEHAVIOR
 
-### Breakpoints
+### Breakpoints (Tailwind)
 ```css
-/* Mobile */
-@media (max-width: 640px) {
-  /* Stack all cards */
-  /* Larger touch targets (min 48px) */
-  /* Reduced spacing */
-}
+/* Mobile: < 640px (default) */
+- Single column layouts
+- Stacked sections
+- Smaller text (h1: 36px)
+- Full-width CTAs
 
-/* Tablet */
-@media (min-width: 641px) and (max-width: 1024px) {
-  /* 2-column grids */
-  /* Medium spacing */
-}
+/* Tablet: 640px - 1024px */
+- 2-column grids (features, value props)
+- Medium spacing
+- h1: 42px
 
-/* Desktop */
-@media (min-width: 1025px) {
-  /* 3-column grids */
-  /* Full spacing */
-  /* Hover effects active */
-}
+/* Desktop: > 1024px */
+- 3-column grids where applicable
+- Horizontal timeline (How It Works)
+- h1: 48px
+- Max-width containers (max-w-6xl)
 ```
 
-### Mobile-First Strategy
-1. Design for 375px width first
-2. Touch-friendly buttons (min 48px height)
-3. Swipeable RIASEC cards
-4. Sticky CTA at bottom on mobile
-5. Simplified animations (respect `prefers-reduced-motion`)
+### Mobile-First Specifics
+- Hero CTA: Sticky bottom bar on mobile (optional enhancement)
+- FAQ: Full-width accordion items
+- Typography: Use `clamp()` for fluid sizing
+- Touch targets: Minimum 48px height for all interactive elements
 
 ---
 
 ## ♿ ACCESSIBILITY REQUIREMENTS
 
-### Semantic HTML
+### Semantic Structure
 ```html
+<header> - Navbar (existing)
 <main role="main">
   <section aria-labelledby="hero-heading">
-    <h1 id="hero-heading">Ano ang tamang career mo?</h1>
+    <h1 id="hero-heading">Find Your Perfect Career Path</h1>
+  </section>
+  <section aria-labelledby="why-how-heading">
+    <h2 id="why-how-heading">Why Take the RIASEC Assessment?</h2>
+  </section>
+  <section aria-labelledby="features-heading">
+    <h2 id="features-heading">Trusted Assessment Platform</h2>
+  </section>
+  <section aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Common Questions</h2>
   </section>
 </main>
+<footer> - (if added later)
 ```
 
-### ARIA Labels
-- All buttons have `aria-label`
-- Interactive cards have `role="button"` + `tabindex="0"`
-- Form inputs have associated `<label>`
-- Loading states announce with `aria-live="polite"`
+### ARIA & Keyboard
+- Skip link: "Skip to main content" (visible on focus)
+- CTA buttons: `aria-label` with context
+- FAQ accordion: 
+  - `aria-expanded="true|false"`
+  - `aria-controls="faq-answer-{id}"`
+  - Enter/Space to toggle
+- Focus indicators: 2px solid outline, 2px offset
+- Color contrast: AA minimum (4.5:1 for body, 3:1 for large text)
 
-### Keyboard Navigation
-- All interactive elements reachable via Tab
-- Enter/Space activates buttons
-- Escape closes modals
-- Focus indicators visible (2px outline)
-
-### Color Contrast
-- Text on pastel backgrounds: AAA level (7:1)
-- Button text: AA level minimum (4.5:1)
-- Use darker text colors where needed
-- Provide a user-accessible “Reduce motion” toggle and always respect `prefers-reduced-motion`.
+### Motion Preferences
+```css
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+```
 
 ---
 
 ## 🎬 ANIMATION STRATEGY
 
-### Micro-interactions
+### Scroll Animations (Optional Enhancement)
 ```javascript
-// Hover animations
-- Cards lift on hover (translateY -8px)
-- Buttons scale slightly (scale 1.05)
-- Colors brighten (filter: brightness(1.1))
-
-// Click feedback
-- Scale down on click (scale 0.95)
-- Ripple effect on buttons
-- Confetti on assessment start
-
-// Scroll animations
-- Fade in sections (opacity 0 → 1)
-- Slide up cards (translateY 40px → 0)
-- Stagger animations (delay per card)
+// Fade in sections on scroll using Intersection Observer
+- Threshold: 0.1 (10% visible)
+- Animation: opacity 0 → 1, translateY 20px → 0
+- Duration: 600ms
+- Easing: ease-out
+- Stagger: 100ms per element
 ```
 
-### Performance
-- Use CSS transforms (GPU accelerated)
-- Avoid animating width/height
-- Limit simultaneous animations
-- Respect `prefers-reduced-motion`
+### Micro-interactions
+- Button hover: lift 2px, shadow increase (200ms)
+- Button active: press down (100ms)
+- Card hover: lift 4px (300ms ease-out)
+- FAQ expand: height auto, 300ms ease-in-out
+- Icon hover: subtle rotate or scale (150ms)
+
+**Performance:**
+- Use `transform` and `opacity` only (GPU-accelerated)
+- No layout-triggering animations (width/height/margin in static elements)
+- Debounce scroll listeners if used
 
 ---
 
-## 📦 COMPONENT FILE STRUCTURE
+## 📦 COMPONENT IMPLEMENTATION DETAILS
 
+### HomePage.jsx
+```javascript
+import HeroSection from './HeroSection'
+import WhyHowSection from './WhyHowSection'
+import FeaturesGrid from './FeaturesGrid'
+import FAQSection from './FAQSection'
+
+const HomePage = ({ onStartQuestionnaire }) => {
+  return (
+    <div className="min-h-screen bg-neutral-50">
+      {/* Skip link */}
+      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white px-4 py-2 rounded-md shadow-lg z-50">
+        Skip to main content
+      </a>
+
+      <main id="main" role="main" className="flex flex-col">
+        <HeroSection onStart={onStartQuestionnaire} />
+        
+        <div className="flex flex-col gap-20 sm:gap-24 md:gap-32 px-4 sm:px-6 md:px-8 py-16 sm:py-20 md:py-24">
+          <WhyHowSection />
+          <FeaturesGrid />
+          <FAQSection onStart={onStartQuestionnaire} />
+        </div>
+      </main>
+    </div>
+  )
+}
+
+export default HomePage
 ```
-src/components/Home/
-├── HomePage.jsx              # Main container
-├── HeroSection.jsx           # Hero with CTA
-├── ValueProposition.jsx      # 3 benefit cards
-├── RIASECIntro.jsx           # 6 personality types
-├── HowItWorks.jsx            # 3-step process
-├── SampleQuestion.jsx        # Interactive demo
-├── FinalCTA.jsx              # Bottom CTA
-└── index.js                  # Barrel export
-```
+
+### HeroSection.jsx
+- Full viewport height on desktop (`min-h-screen md:min-h-[90vh]`)
+- Centered content with max-width container
+- Gradient background with CSS blob decorations
+- Primary CTA prominent
+- Trust badges below CTA
+- Decorative grid pattern overlay
+
+### WhyHowSection.jsx
+- Two subsections in vertical flow
+- "Why" subsection: 3-column grid (mobile: 1-col)
+- "How" subsection: 4-step horizontal timeline (mobile: vertical)
+- Clean separation with spacing
+- Icons from Heroicons
+
+### FeaturesGrid.jsx
+- 6 feature cards
+- Grid: 1-col mobile, 2-col tablet, 3-col desktop
+- Alternating background colors (light blue/light purple)
+- Icon + title + description layout
+- Hover lift effect
+
+### FAQSection.jsx
+- Accordion component (controlled state)
+- 8 FAQ items
+- Expand/collapse one at a time
+- Final CTA block below accordion
+- Social proof text (generic, no specific numbers)
 
 ---
 
-## 🎨 TAILWIND THEME TOKENS (v4 CSS-first)
+## 🎨 CSS & TAILWIND CONFIGURATION
 
-Define tokens in `src/index.css` using `@theme` and CSS custom properties. Keep `tailwind.config.js` minimal.
-
+### Update `src/index.css`
 ```css
-/* src/index.css */
+@import 'tailwindcss';
+
 @theme {
-  --color-pastel-blue: #A8D8EA;
-  --color-pastel-purple: #D4A5F3;
-  --color-pastel-pink: #FFD3E1;
-  --color-pastel-yellow: #FFF4A3;
-  --color-pastel-green: #B8E6D5;
-  --color-pastel-orange: #FFCBA4;
+  /* Primary Colors */
+  --color-primary-50: #eff6ff;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
 
-  --color-neutral-dark: #2D3748;
-  --color-neutral-gray: #718096;
-  --color-neutral-cream: #FFFEF9;
+  /* Accent Colors */
+  --color-accent-100: #f5f3ff;
+  --color-accent-500: #8b5cf6;
 
-  --radius-card: 24px;
-  --radius-button: 999px;
+  /* Success Colors */
+  --color-success-50: #ecfdf5;
+  --color-success-500: #10b981;
+
+  /* Neutral Colors */
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-700: #334155;
+  --color-neutral-900: #0f172a;
+
+  /* Spacing */
+  --spacing-section: 5rem; /* 80px */
+
+  /* Radii */
+  --radius-card: 1rem; /* 16px */
+  --radius-button: 0.75rem; /* 12px */
 }
 
 :root {
-  --heading-font: "Poppins", system-ui, sans-serif;
-  --body-font: "Inter", system-ui, sans-serif;
-  --accent-font: "Fredoka One", cursive;
+  --font-base: "Inter", system-ui, -apple-system, sans-serif;
+  
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 50%, #ecfdf5 100%);
+  --gradient-cta: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+}
+
+body {
+  font-family: var(--font-base);
+  color: var(--color-neutral-700);
+  background-color: var(--color-neutral-50);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-neutral-900);
+  font-weight: 700;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 ```
 
-Document mapping in `documentation/DESIGN_SPEC.md`.
+### Tailwind Config (Minimal - v4 CSS-first)
+```javascript
+// tailwind.config.js
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}
+```
 
 ---
 
-## 📝 CONTENT COPY (Filipino-English Mix)
+## 🔧 INTEGRATION WITH EXISTING CODE
 
-### Headlines
-- Hero: **"Ano ang tamang career mo?"**
-- Value Prop: **"Bakit dapat mong i-try ang KursoKo?"**
-- RIASEC: **"Ano ang iyong Personality Type?"**
-- How It Works: **"Paano gumagana ang KursoKo?"**
-- Sample: **"Subukan muna! Try a sample question"**
-- Final CTA: **"Ready na ba? I-discover ang career path mo!"**
+### Session Management Flow
+```javascript
+// In HeroSection.jsx and FAQSection.jsx
+const handleStartClick = () => {
+  // Existing sessionManager handles rate limiting
+  onStart() // Passed from App.jsx
+  // sessionManager.checkRateLimit() → startSession() → navigate('/questionnaire')
+}
+```
 
-### Body Copy Tone
-- Conversational ("Gusto mo bang...?")
-- Encouraging ("Kaya mo 'yan!")
-- Reassuring ("15 minutes lang, walang bayad")
-- Youth-friendly ("Sobrang cool, 'di ba?")
+### Questions Data
+```javascript
+// Use existing questionaires.json
+// 30 questions, forced-choice format
+// Rating scale: "Okay" (1), "Like" (2), "Love It" (3)
+// Balanced across all 6 RIASEC dimensions
+```
 
----
-
-## 🚀 IMPLEMENTATION PHASES
-
-### Phase 1: Core Structure (Day 1)
-- [ ] Create component files
-- [ ] Build responsive grid layout
-- [ ] Implement Tailwind theme
-- [ ] Add font imports
-
-### Phase 2: Hero + Value Prop (Day 1)
-- [ ] Hero section with gradient
-- [ ] Primary CTA button
-- [ ] 3 benefit cards
-- [ ] Basic animations
-
-### Phase 3: RIASEC Section (Day 2)
-- [ ] 6 personality type cards
-- [ ] Hover interactions
-- [ ] Character illustrations (source from unDraw)
-- [ ] Career preview tooltips
-
-### Phase 4: Process + Sample (Day 2)
-- [ ] How It Works timeline
-- [ ] Sample question component
-- [ ] Interactive question demo
-- [ ] Final CTA section
-
-### Phase 5: Polish (Day 3)
-- [ ] Scroll animations
-- [ ] Micro-interactions
-- [ ] Accessibility audit
-- [ ] Mobile responsive testing
-- [ ] Performance optimization
+### Routing
+```javascript
+// Existing App.jsx pattern
+<Routes>
+  <Route path="/" element={<HomePage onStartQuestionnaire={handleStart} />} />
+  <Route path="/questionnaire" element={<Questionnaire />} />
+  <Route path="/results" element={<Results />} />
+</Routes>
+```
 
 ---
 
 ## ✅ ACCEPTANCE CRITERIA
 
 ### Visual Design
-- [ ] Matches pastel color palette
-- [ ] Flat 2D illustration style
-- [ ] Playful, creative aesthetic
-- [ ] Consistent with STI SCOPE approachability
+- [ ] Professional-modern aesthetic with subtle playful touches
+- [ ] Clean, uncluttered layout with clear hierarchy
+- [ ] Consistent use of primary/accent colors
+- [ ] Free visual assets (CSS gradients, Heroicons, geometric shapes)
 
 ### Functionality
-- [ ] Mobile-first responsive
-- [ ] All CTAs lead to questionnaire
-- [ ] Sample question interactive
-- [ ] Smooth animations
+- [ ] All CTAs invoke `onStartQuestionnaire` correctly
+- [ ] FAQ accordion expands/collapses smoothly
+- [ ] Mobile-responsive at 375px, 768px, 1024px, 1440px
+- [ ] Fast load time (no heavy images)
 
 ### Accessibility
-- [ ] WCAG 2.2 AA compliant
-- [ ] Keyboard navigable
-- [ ] Screen reader friendly
-- [ ] Color contrast passes
+- [ ] WCAG 2.2 AA compliant (contrast, keyboard nav)
+- [ ] Semantic HTML structure
+- [ ] ARIA labels on interactive elements
+- [ ] Skip link functional
+- [ ] Focus indicators visible
 
 ### Performance
-- [ ] Lighthouse score > 90
-- [ ] First paint < 1.5s
+- [ ] Lighthouse score > 90 (Performance, Accessibility, Best Practices)
+- [ ] First Contentful Paint < 1.5s
+- [ ] Total page weight < 500KB
 - [ ] Smooth 60fps animations
-- [ ] Optimized images
+
+### Content
+- [ ] Pure English (no Filipino)
+- [ ] Clear, concise, student-friendly copy
+- [ ] Accurate time estimate (10 min)
+- [ ] Scientifically credible tone
 
 ---
 
-## ❓ MINI FAQ (Homepage footer)
-- Gaano katagal ang assessment? ~15 minutes, 60 questions.
-- Ano ang makukuha ko pagkatapos? Instant, malinaw na results at personality profile.
-- Maaari bang subukan muna? Oo, may sample question sa homepage.
-- Saan ko mababasa ang tungkol sa privacy? Tingnan ang “Privacy & data use” link.
-
----
-
-## 🎯 SUCCESS METRICS
+## 📊 SUCCESS METRICS (Post-Launch)
 
 ### Primary Metric
-**Assessment Start Rate:** % of visitors who click "Simulan ang Assessment"
-- Target: > 40%
+**Assessment Start Rate:** % of visitors who click "Start Assessment"
+- **Target:** > 40%
+- **Measurement:** Track CTA clicks vs unique visitors
 
 ### Secondary Metrics
-- Time on homepage: > 60 seconds
-- Scroll depth: > 75%
-- Sample question interaction: > 30%
+- **Time on Homepage:** Target > 45 seconds (reduced from original due to streamlined content)
+- **Scroll Depth:** Target > 60% (FAQ section)
+- **Bounce Rate:** Target < 50%
 
 ---
 
-## 📚 NEXT STEPS
+## 🚀 IMPLEMENTATION PHASES
 
-1. **Review & Approve** this plan
-2. **Source illustrations** from unDraw/Humaaans
-3. **Update Tailwind config** with pastel theme
-4. **Create component structure**
-5. **Build section by section**
-6. **Test on real devices**
-7. **Gather user feedback**
+### Phase 1: Setup & Structure (Day 1 Morning)
+- [ ] Update `src/index.css` with new design tokens
+- [ ] Create 4 new component files with basic structure
+- [ ] Update `HomePage.jsx` to use new components
+- [ ] Remove old component files
+
+### Phase 2: Hero + Why/How (Day 1 Afternoon)
+- [ ] Implement `HeroSection.jsx` with gradient, CTA, trust badges
+- [ ] Implement `WhyHowSection.jsx` with value cards + timeline
+- [ ] Add Heroicons dependencies
+- [ ] Test mobile responsiveness
+
+### Phase 3: Features + FAQ (Day 2 Morning)
+- [ ] Implement `FeaturesGrid.jsx` with 6 cards
+- [ ] Implement `FAQSection.jsx` with accordion logic
+- [ ] Add final CTA block
+- [ ] Wire up all `onStart` handlers
+
+### Phase 4: Polish & Accessibility (Day 2 Afternoon)
+- [ ] Add hover/focus states
+- [ ] Implement scroll animations (optional)
+- [ ] Accessibility audit (keyboard nav, ARIA, contrast)
+- [ ] Cross-browser testing
+
+### Phase 5: Testing & Refinement (Day 3)
+- [ ] Mobile device testing (real devices)
+- [ ] Performance optimization (Lighthouse)
+- [ ] Content review and copy edits
+- [ ] Final QA checklist
 
 ---
 
-*Plan created: October 15, 2025*
+## 🎨 VISUAL ASSETS SOURCES
+
+### Free Resources to Use:
+
+**Backgrounds & Patterns:**
+- CSS Gradients: Hand-coded in Tailwind
+- Blob Shapes: https://www.blobmaker.app/ (export SVG, optimize with SVGOMR)
+- Grid Patterns: CSS repeating-linear-gradient or SVG pattern element
+
+**Icons:**
+- Heroicons: https://heroicons.com/ (MIT license)
+  - Install: `npm install @heroicons/react`
+  - Import: `import { AcademicCapIcon } from '@heroicons/react/24/outline'`
+
+**Geometric Shapes:**
+- CSS-only shapes (circles, squares with border-radius, gradients)
+- SVG basic shapes (circle, rect, polygon) with inline SVG
+
+**Example Hero Background:**
+```css
+.hero-background {
+  background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 50%, #ecfdf5 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -200px;
+  right: -200px;
+}
+
+.hero-background::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  bottom: -150px;
+  left: -150px;
+}
+```
+
+---
+
+## 📝 CONTENT COPY REFERENCE
+
+### Headlines
+- **Hero:** "Find Your Perfect Career Path"
+- **Why:** "Why Take the RIASEC Assessment?"
+- **How:** "How It Works"
+- **Features:** "Trusted Assessment Platform"
+- **FAQ:** "Common Questions"
+- **Final CTA:** "Ready to Discover Your Career Path?"
+
+### Tone Guidelines
+- **Professional but approachable** (not corporate, not childish)
+- **Action-oriented** ("Discover", "Explore", "Start")
+- **Benefit-focused** (what users gain, not features)
+- **Credible** (mention science, research, validation)
+- **Encouraging** ("You can", "We'll help you")
+
+### Voice
+- Second person ("you", "your")
+- Active voice preferred
+- Concise sentences (15-20 words max)
+- Avoid jargon or academic terms
+- Inclusive language
+
+---
+
+## ⚠️ RISKS & MITIGATIONS
+
+### Risk 1: Too Minimal (Lacks Engagement)
+**Mitigation:** Add subtle animations, ensure CTA stands out, use engaging copy
+
+### Risk 2: Low Credibility (No Testimonials)
+**Mitigation:** Emphasize scientific backing, Dr. Holland reference, "thousands of students" generic social proof
+
+### Risk 3: High Bounce (Users Don't Scroll)
+**Mitigation:** Strong above-fold CTA, clear value prop in hero, FAQ targets objections
+
+### Risk 4: FAQ Too Long (Decision Fatigue)
+**Mitigation:** Accordion keeps collapsed by default, 8 questions is manageable, order by importance
+
+---
+
+## 🔗 REFERENCES & INSPIRATION
+
+### Primary Inspiration
+- **riasectest.com:** Conversion structure, FAQ approach, professional credibility
+- **careerexplorer.hawaii.edu:** Simplicity, educational tone, minimalist design
+
+### Design Resources
+- Tailwind CSS v4 Documentation
+- Heroicons Library
+- WCAG 2.2 Guidelines
+- Web Vitals Performance Metrics
+
+---
+
+## 📚 NEXT STEPS (POST-MVP)
+
+### Future Enhancements (Not in v1)
+- [ ] Testimonials section (once user data collected)
+- [ ] Multilingual support (English/Filipino toggle)
+- [ ] RIASEC type explorer page (deep dive into each type)
+- [ ] Blog/resources section
+- [ ] Account system for saving results
+- [ ] Email results feature
+- [ ] Social share functionality
+
+---
+
+## 📄 APPENDIX: COMPONENT SPECS SUMMARY
+
+| Component | Props | State | Complexity | Est. Lines |
+|-----------|-------|-------|------------|------------|
+| HomePage | `onStartQuestionnaire` | None | Low | 40 |
+| HeroSection | `onStart` | None | Medium | 80 |
+| WhyHowSection | None | None | Medium | 120 |
+| FeaturesGrid | None | None | Low | 100 |
+| FAQSection | `onStart` | Local (accordion) | Medium | 150 |
+
+**Total Estimated Code:** ~490 lines across 5 files
+
+---
+
+*Plan created: October 17, 2025*
+*Version: 2.0 (Conversion-Optimized MVP)*
 *Following: `rules/frontend-ui.md` PLAN Mode*
+*Inspired by: riasectest.com + hawaii.edu RIASEC platforms*
 *Ready for: ACT Mode implementation*
 
 ---
 
-## 🖼️ ASSETS & LICENSING
-
-Required assets (SVG preferred unless noted):
-- Illustrations
-  - 1 Hero illustration (diverse student/teen context)
-  - 6 RIASEC type icons/mini-illustrations (R, I, A, S, E, C)
-  - 3 step icons for “How it works”
-  - 1 Final CTA illustration
-- Icons
-  - UI icons via library (Heroicons/Lucide/Phosphor) to avoid bundling heavy sets.
-- Backgrounds/Textures
-  - CSS gradients (no files) + optional subtle noise overlay (SVG/PNG ≤ 2KB)
-- Fonts
-  - Poppins (headings), Inter (body); optional Fredoka for CTA only.
-
-Sources & license notes
-- unDraw, Storyset, Humaaans for illustrations (review license/attribution as required).
-- Heroicons/Lucide/Phosphor for icons (OSS-friendly licenses, check attribution policy).
-- Google Fonts for typography (Open Font License).
-
-Folder plan (on asset import):
-- `public/assets/illustrations/` (hero, riasec, steps, final-cta)
-- `public/assets/textures/` (optional noise overlays)
-- Icons loaded via package/library; avoid duplicating SVGs locally when possible.
+**END OF DESIGN PLAN**

@@ -1,7 +1,5 @@
 export { default } from './HomePage';
 export { default as HeroSection } from './HeroSection';
-export { default as ValueProposition } from './ValueProposition';
-export { default as RIASECIntro } from './RIASECIntro';
-export { default as HowItWorks } from './HowItWorks';
-export { default as SampleQuestion } from './SampleQuestion';
-export { default as FinalCTA } from './FinalCTA';
+export { default as WhyHowSection } from './WhyHowSection';
+export { default as FeaturesGrid } from './FeaturesGrid';
+export { default as FAQSection } from './FAQSection';
