@@ -1,11 +1,6 @@
 import { useEffect, useState } from 'react'
-import {
-  landingBtnPrimary,
-  landingNavLink,
-  landingNavShell,
-  landingWordmark,
-  landingWordmarkAccent
-} from '../landing/landingClasses'
+import { KursoKoLogo } from '../brand'
+import { landingBtnPrimary, landingNavLink, landingNavShell } from '../landing/landingClasses'
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
@@ -37,8 +32,12 @@ const Navbar = ({ onStart }) => {
         className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 md:px-8"
         aria-label="Primary"
       >
-        <a href="#hero" className={landingWordmark} aria-label="KursoKo Home">
-          Kurso<span className={landingWordmarkAccent}>Ko</span>
+        <a
+          href="#hero"
+          className="flex shrink-0 items-center rounded-lg py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent"
+          aria-label="KursoKo Home"
+        >
+          <KursoKoLogo iconSize={26} />
         </a>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -62,7 +61,7 @@ const Navbar = ({ onStart }) => {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-landing-ink hover:bg-black/5 md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-landing-ink hover:bg-landing-ink/5 md:hidden"
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
@@ -74,7 +73,7 @@ const Navbar = ({ onStart }) => {
       </nav>
 
       {open && (
-        <div className="border-t border-stone-200/80 bg-landing-paper md:hidden">
+        <div className="border-t border-landing-ink/10 bg-landing-paper md:hidden">
           <div className="flex flex-col gap-1 px-4 py-3">
             {navLinks.map(({ href, label }) => (
               <NavLink key={href} href={href} onClick={() => setOpen(false)}>

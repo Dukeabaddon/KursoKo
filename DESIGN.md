@@ -1,61 +1,53 @@
-# KursoKo Landing — Editorial Redesign
+---
+name: "KursoKo Landing"
+theme: "light"
+text-case: "selective-uppercase"
+colors:
+  background: "#FDFCF8"
+  surface: "#F9F9F8"
+  text-primary: "#2D2D2D"
+  text-muted: "#64748B"
+  accent: "#4B2C7F"
+  accent-hover: "#3D2468"
+  brand-teal: "#4DB6AC"
+  brand-yellow: "#FFD54F"
+  brand-lavender: "#9575CD"
+  outline: "#2D2D2D"
+typography:
+  display:
+    family: "Montserrat"
+    weight: 700-800
+  body:
+    family: "Inter"
+    size: "clamp(0.9375rem, 0.45vw + 0.75rem, 1.125rem)"
+  meta:
+    transform: "uppercase"
+    tracking: "0.18em"
+    color: "#4DB6AC"
+effects:
+  texture: "none"
+  ambient: "soft-blobs"
+  blobs:
+    - color: "rgba(255, 213, 79, 0.32)"
+      position: "top-left"
+    - color: "rgba(255, 183, 150, 0.22)"
+      position: "center-right"
+    - color: "rgba(149, 117, 205, 0.18)"
+      position: "bottom-right"
+hero:
+  layout: "split-text-image"
+  eyebrow: "Free career assessment"
+  headline: "Choose the career that fits you"
+  voice: "SCOPE-inspired — plain student language, no RIASEC jargon above fold"
+logo:
+  type: "svg-geometric"
+  mark: "pill K — teal stem, yellow upper, lavender lower, #2D2D2D outline"
+---
 
-**Status:** Approved · English only · Section-by-section build  
-**Vibe:** Editorial guidance (Persona energy in accent only — not gaming UI)
+# Design Decisions
 
-## Tokens
-
-| Role | Value |
-|------|-------|
-| Paper | `#F5F2EB` |
-| Ink | `#1C1917` |
-| Muted | `#78716C` |
-| Accent | `#C2410C` |
-| Accent hover | `#9A3412` |
-| Surface | `#FAFAF8` |
-| Dark band | `#1C1917` |
-| Display font | Montserrat |
-| Body font | Inter |
-| Max width | `72rem` (1152px) |
-| Motion | `400ms cubic-bezier(0.22, 1, 0.36, 1)` |
-| Scroll reveal | opacity + 12px Y |
-
-## Asset placeholders
-
-Gray dashed boxes with uppercase labels. Replace with final art later.
-
-| Slot | Label |
-|------|-------|
-| Logo | `Logo mark — KursoKo icon or mascot` |
-| Hero | `Hero illustration — student at career crossroads (editorial, 3:4)` |
-| Why | `Illustration — student discovering strengths` |
-| How steps | `Screenshot — question UI / archetype card / careers / scholarships` |
-| Proof band | `Testimonial photo or quote card` |
-| Scholarships | `Illustration — scholarship discovery` |
-
-## Hero fold
-
-- **Height:** `100dvh` (nav + hero together, no scroll within fold)
-- **Layers:** paper base → accent radial (top-left) → ink vignette (bottom-right) → grain (3.5% multiply)
-- **No:** blur orbs, purple gradients, glass cards, WebGL
-
-## Page order (build sequence)
-
-1. ✅ Foundation + Navbar  
-2. ✅ Hero  
-3. Sample question  
-4. How it works (timeline)  
-5. What you get (dark band)  
-6. Scholarships teaser  
-7. FAQ + closing CTA  
-
-## CTA
-
-Single style everywhere: solid accent, no purple gradient.
-
-## Motion rules
-
-- Hero: entrance stagger on load  
-- Other sections: scroll reveal (later)  
-- Respect `prefers-reduced-motion`  
-- No hover lift on every card  
+- **Palette** from KursoKo mockup: cream paper, deep purple CTAs, teal/yellow/lavender logo accents.
+- **Content tone** follows [SCOPE](https://scope.sti.edu/) — “know yourself”, “choose the right career”, free assessment — without copying layout or illustrations.
+- **Hero** avoids RIASEC; students see “career assessment” only.
+- **Logo** is simple geometric SVG (Rule 2 safe). No hand-drawn illustrations on landing fold.
+- **Background** uses soft blob gradients only — no heavy grain, no purple-to-blue slop gradients.

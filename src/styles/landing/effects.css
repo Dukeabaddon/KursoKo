@@ -1,5 +1,5 @@
 /**
- * Landing effects — complex backgrounds & a11y patterns (not practical as utilities)
+ * Landing effects — soft blobs & a11y (not practical as Tailwind utilities)
  */
 
 .landing-hero-accent {
@@ -7,23 +7,10 @@
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 55% at 0% 0%, rgba(194, 65, 12, 0.14), transparent 58%),
-    radial-gradient(ellipse 50% 45% at 100% 100%, rgba(28, 25, 23, 0.04), transparent 55%),
+    radial-gradient(ellipse 48% 42% at 6% 10%, rgba(255, 213, 79, 0.32), transparent 68%),
+    radial-gradient(ellipse 42% 38% at 88% 48%, rgba(255, 183, 150, 0.22), transparent 62%),
+    radial-gradient(ellipse 38% 34% at 72% 92%, rgba(149, 117, 205, 0.18), transparent 58%),
     linear-gradient(180deg, var(--color-landing-paper) 0%, var(--color-landing-surface) 100%);
-}
-
-.landing-hero-grain {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.035;
-  mix-blend-mode: multiply;
-  background: repeating-conic-gradient(
-    #1c1917 0.0001%,
-    transparent 0.0002%,
-    transparent 0.0004%,
-    #1c1917 0.0005%
-  );
 }
 
 .landing-chapter-rule {
