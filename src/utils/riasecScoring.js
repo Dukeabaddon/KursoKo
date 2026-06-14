@@ -19,7 +19,7 @@ export const calculateRiasecScores = (responses) => {
     const code = response.selectedCode
     const rating = response.rating
     
-    if (scores.hasOwnProperty(code)) {
+    if (Object.hasOwn(scores, code)) {
       scores[code] += rating
     }
   })

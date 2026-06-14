@@ -1,0 +1,61 @@
+/**
+ * Landing animations & interactive motion — keep in CSS
+ */
+
+@keyframes landing-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-landing-rise {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.landing-cta-fancy {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition:
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.landing-cta-fancy-shine {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 65%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.landing-cta-fancy:hover .landing-cta-fancy-shine {
+  transform: translateX(120%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-cta-fancy:hover {
+    transform: none;
+  }
+
+  .landing-cta-fancy-shine {
+    display: none;
+  }
+}

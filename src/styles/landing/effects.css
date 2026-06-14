@@ -1,0 +1,75 @@
+/**
+ * Landing effects — complex backgrounds & a11y patterns (not practical as utilities)
+ */
+
+.landing-hero-accent {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 55% at 0% 0%, rgba(194, 65, 12, 0.14), transparent 58%),
+    radial-gradient(ellipse 50% 45% at 100% 100%, rgba(28, 25, 23, 0.04), transparent 55%),
+    linear-gradient(180deg, var(--color-landing-paper) 0%, var(--color-landing-surface) 100%);
+}
+
+.landing-hero-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background: repeating-conic-gradient(
+    #1c1917 0.0001%,
+    transparent 0.0002%,
+    transparent 0.0004%,
+    #1c1917 0.0005%
+  );
+}
+
+.landing-chapter-rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-landing-chapter),
+    transparent
+  );
+}
+
+.skip-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.375rem;
+  pointer-events: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.375rem;
+  background: var(--color-landing-accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: auto;
+  transition: left 150ms ease-out, top 150ms ease-out;
+}
+
+.skip-link:focus {
+  left: 0.375rem;
+  outline: 2px solid var(--color-landing-ink);
+  outline-offset: 2px;
+}
+
+.skip-link--second:focus {
+  top: 2.75rem;
+}

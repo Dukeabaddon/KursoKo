@@ -80,7 +80,7 @@ const WhyHowSection = () => {
           </div>
         </div>
 
-        <div>
+        <div id="how">
           <h3 className="text-2xl font-semibold text-neutral-900 sm:text-3xl">How It Works</h3>
           <p className="mt-2 max-w-2xl text-sm text-neutral-600 sm:text-base">
             A streamlined four-step journey that moves you from curiosity to clarity without extra sign-ups or distractions.

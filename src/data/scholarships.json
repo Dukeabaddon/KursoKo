@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2026-06-13",
+    "disclaimer": "Verify eligibility and deadlines on each official provider site before applying. KursoKo does not process applications.",
+    "verificationPolicy": "Entries include verificationDate and verificationSource from official government or foundation pages only."
+  },
+  "scholarships": [
+    {
+      "id": "unifast-fhe",
+      "provider": "UniFAST (Republic Act 10931)",
+      "category": "government",
+      "name": "Free Higher Education (FHE)",
+      "eligibility": [
+        "Filipino students in eligible public higher education institutions per RA 10931 implementing rules"
+      ],
+      "benefits": [
+        "Free tuition and other school fees at eligible SUCs and LUCs per official UniFAST program rules"
+      ],
+      "coverage": ["Tuition", "Other school fees (per program guidelines)"],
+      "requirements": ["Enrollment at eligible institution", "Meet UniFAST/CHED published criteria"],
+      "location": ["Philippines"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "applicationLink": "https://unifast.gov.ph/fhe.html",
+      "verificationDate": "2026-06-13",
+      "verificationSource": "https://unifast.gov.ph/"
+    },
+    {
+      "id": "unifast-tes",
+      "provider": "UniFAST (Republic Act 10931)",
+      "category": "government",
+      "name": "Tertiary Education Subsidy (TES)",
+      "eligibility": [
+        "Students meeting TES criteria as published by UniFAST/CHED"
+      ],
+      "benefits": [
+        "Financial assistance for tertiary education under the TES program"
+      ],
+      "coverage": ["Approved educational expenses per TES guidelines"],
+      "requirements": ["Apply through official UniFAST TES process", "Submit required documents per portal"],
+      "location": ["Philippines"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "applicationLink": "https://unifast.gov.ph/tes.html",
+      "verificationDate": "2026-06-13",
+      "verificationSource": "https://unifast.gov.ph/"
+    },
+    {
+      "id": "unifast-ftvet",
+      "provider": "UniFAST (Republic Act 10931)",
+      "category": "government",
+      "name": "Free Tech-Voc Education and Training (FTVET)",
+      "eligibility": [
+        "Learners in eligible technical-vocational programs per UniFAST rules"
+      ],
+      "benefits": [
+        "Free tech-voc education and training at eligible institutions"
+      ],
+      "coverage": ["Tech-voc program fees per official guidelines"],
+      "requirements": ["Enrollment in eligible TESDA/tech-voc pathway", "UniFAST published requirements"],
+      "location": ["Philippines"],
+      "riasecTags": ["R", "I", "C"],
+      "careerTags": ["electrician", "chef", "mechanical-engineer"],
+      "applicationLink": "https://unifast.gov.ph/ftvet.html",
+      "verificationDate": "2026-06-13",
+      "verificationSource": "https://unifast.gov.ph/"
+    },
+    {
+      "id": "unifast-slp",
+      "provider": "UniFAST (Republic Act 10931)",
+      "category": "government",
+      "name": "Student Loan Program – Short Term (SLP)",
+      "eligibility": [
+        "Students who meet SLP criteria published by UniFAST"
+      ],
+      "benefits": [
+        "Short-term student loan assistance for tertiary education"
+      ],
+      "coverage": ["Loan amount and terms per official SLP guidelines"],
+      "requirements": ["Apply via UniFAST SLP process", "Meet credit/eligibility rules on portal"],
+      "location": ["Philippines"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "applicationLink": "https://unifast.gov.ph/slp.html",
+      "verificationDate": "2026-06-13",
+      "verificationSource": "https://unifast.gov.ph/"
+    },
+    {
+      "id": "dost-sei-undergraduate",
+      "provider": "DOST-SEI",
+      "category": "government",
+      "name": "DOST-SEI Undergraduate Scholarship",
+      "eligibility": [
+        "STEM-oriented students meeting DOST-SEI published qualification standards"
+      ],
+      "benefits": [
+        "Scholarship support for priority science and technology courses (see DOST-SEI site for current benefits)"
+      ],
+      "coverage": ["Tuition and allowances per DOST-SEI program guidelines"],
+      "requirements": ["Pass DOST-SEI examination and screening", "Enroll in priority S&T course"],
+      "location": ["Philippines"],
+      "riasecTags": ["R", "I"],
+      "careerTags": ["software-engineer", "research-scientist", "mechanical-engineer", "pharmacist", "data-analyst"],
+      "applicationLink": "https://www.sei.dost.gov.ph/",
+      "verificationDate": "2026-06-13",
+      "verificationSource": "https://www.sei.dost.gov.ph/"
+    },
+    {
+      "id": "ched-unifast-portal",
+      "provider": "CHED / UniFAST",
+      "category": "government",
+      "name": "CHED–UniFAST Programs Portal",
+      "eligibility": [
+        "Varies by program — see individual FHE, TES, FTVET, and SLP pages"
+      ],
+      "benefits": [
+        "Central hub for Republic Act 10931 student financial assistance programs"
+      ],
+      "coverage": ["Program-specific"],
+      "requirements": ["Follow instructions on the official UniFAST website"],
+      "location": ["Philippines"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "applicationLink": "https://unifast.gov.ph/",
+      "verificationDate": "2026-06-13",
+      "verificationSource": "https://unifast.gov.ph/"
+    }
+  ]
+}

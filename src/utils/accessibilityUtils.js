@@ -118,20 +118,6 @@ export class AccessibilityController {
     document.addEventListener('mousedown', () => {
       document.body.classList.remove('keyboard-navigation')
     })
-
-    // Skip links for keyboard navigation
-    this.createSkipLinks()
-  }
-
-  // Create skip navigation links
-  createSkipLinks() {
-    const skipLinks = document.createElement('div')
-    skipLinks.className = 'skip-links'
-    skipLinks.innerHTML = `
-      <a href="#main-content" class="skip-link">Skip to main content</a>
-      <a href="#navigation" class="skip-link">Skip to navigation</a>
-    `
-    document.body.insertBefore(skipLinks, document.body.firstChild)
   }
 
   // Announce content to screen readers
