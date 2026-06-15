@@ -96,7 +96,11 @@ function App() {
         role="application"
         aria-label="KursoKo Career Assessment System"
       >
-        <main id="main" className="flex-1 mobile-spacing" aria-label="Main content">
+        <main
+          id="main"
+          className={`flex-1 ${currentPage === 'questionnaire' ? 'overflow-hidden' : 'mobile-spacing'}`}
+          aria-label="Main content"
+        >
           {error && (
             <ErrorState
               title="Oops! May problema"
@@ -113,7 +117,12 @@ function App() {
           )}
 
           {!error && !isCalculating && (
-            <div className="mobile-spacing" role="region" aria-live="polite" aria-atomic="true">
+            <div
+              className={currentPage === 'questionnaire' ? '' : 'mobile-spacing'}
+              role="region"
+              aria-live="polite"
+              aria-atomic="true"
+            >
               {currentPage === 'home' && (
                 <HomePage onStartQuestionnaire={startQuestionnaire} />
               )}

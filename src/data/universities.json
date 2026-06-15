@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "region": "NCR",
+    "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site."
+  },
+  "universities": [
+    {
+      "id": "pup-manila",
+      "name": "PUP Manila",
+      "type": "public",
+      "location": "Sta. Mesa, Manila",
+      "description": "Known for accessible quality education and strong business, IT, and engineering programs.",
+      "tuition": "Libreng Edukasyon (RA 10931 / Free Tuition) for eligible students",
+      "popularCourses": ["BS Accountancy", "BS Computer Science", "BS Business Administration"],
+      "website": "https://www.pup.edu.ph/",
+      "riasecTags": ["E", "C", "R"],
+      "strengthTags": ["business", "public-service", "technology"]
+    },
+    {
+      "id": "ateneo-manila",
+      "name": "Ateneo de Manila University",
+      "type": "private",
+      "location": "Quezon City",
+      "description": "Jesuit university strong in liberal arts, management, and leadership formation.",
+      "tuition": "₱120,000 – ₱160,000 per semester (estimate; check official site)",
+      "popularCourses": ["BS Management", "AB Psychology", "BS Computer Science"],
+      "website": "https://www.ateneo.edu/",
+      "riasecTags": ["E", "S", "I"],
+      "strengthTags": ["leadership", "service", "research"]
+    },
+    {
+      "id": "feu-manila",
+      "name": "FEU Manila",
+      "type": "private",
+      "location": "Manila",
+      "description": "Historic university with solid health sciences, business, and arts programs.",
+      "tuition": "₱55,000 – ₱85,000 per semester (estimate; check official site)",
+      "popularCourses": ["BS Nursing", "BS Accountancy", "BS Tourism Management"],
+      "website": "https://www.feu.edu.ph/",
+      "riasecTags": ["S", "E", "A"],
+      "strengthTags": ["healthcare", "business", "hospitality"]
+    },
+    {
+      "id": "dlsu-manila",
+      "name": "De La Salle University",
+      "type": "private",
+      "location": "Manila",
+      "description": "Research-oriented university known for business, engineering, and education.",
+      "tuition": "₱85,000 – ₱115,000 per semester (estimate; check official site)",
+      "popularCourses": ["BS Business Administration", "BS Computer Science", "BS Psychology"],
+      "website": "https://www.dlsu.edu.ph/",
+      "riasecTags": ["E", "I", "S"],
+      "strengthTags": ["business", "technology", "education"]
+    }
+  ]
+}
