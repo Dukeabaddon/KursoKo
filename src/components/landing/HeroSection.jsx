@@ -15,7 +15,7 @@ const HeroSection = ({ onStart }) => {
       className="relative flex min-h-0 w-full flex-1 flex-col"
     >
       <div className="landing-hero-stage w-full">
-        <div className="landing-hero-banner relative mx-auto block w-[calc(100%-2rem)] max-w-7xl clear-both md:w-[calc(100%-4rem)]">
+        <div className="landing-hero-banner relative mx-auto block h-[var(--landing-hero-height)] max-h-[var(--landing-hero-height)] w-[calc(100%-2rem)] max-w-7xl clear-both md:w-[calc(100%-4rem)]">
           <div className="landing-hero-banner-bg" aria-hidden="true">
             <svg
               className="h-full w-full"
@@ -37,8 +37,8 @@ const HeroSection = ({ onStart }) => {
             </svg>
           </div>
 
-          <div className="relative z-10 grid h-full w-full grid-cols-1 items-end gap-8 px-6 py-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:px-12 lg:grid-cols-12 lg:px-16">
-            <div className="flex w-full min-w-0 max-w-full flex-col items-start justify-center space-y-6 text-left md:col-span-1 lg:col-span-7">
+          <div className="relative z-10 grid h-full min-h-0 w-full grid-cols-1 items-stretch gap-8 px-6 py-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:px-12 lg:grid-cols-12 lg:px-16">
+            <div className="relative z-10 flex h-full !min-h-[450px] w-full min-w-0 max-w-full flex-col items-start justify-center space-y-6 text-left md:col-span-1 md:!min-h-[500px] lg:col-span-7 lg:!min-h-[550px]">
               <h1
                 id="hero-heading"
                 className="w-full max-w-full break-words text-pretty text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-6xl"
@@ -73,17 +73,19 @@ const HeroSection = ({ onStart }) => {
               </button>
             </div>
 
-            <div className="landing-hero-character-col relative flex w-full items-end justify-center md:col-span-1 lg:col-span-5 lg:justify-end">
-              <div className="landing-hero-character-scale">
-                <img
-                  src={heroCharacterCutout}
-                  alt="Student thinking about career choices"
-                  className="landing-hero-character-img"
-                  width={1024}
-                  height={1365}
-                  loading="eager"
-                  decoding="async"
-                />
+            <div className="landing-hero-character-col relative flex h-full w-full min-h-0 items-end justify-center md:col-span-1 lg:col-span-5">
+              <div className="landing-hero-character-anchor" aria-hidden="true">
+                <div className="landing-hero-character-scale">
+                  <img
+                    src={heroCharacterCutout}
+                    alt="Student thinking about career choices"
+                    className="landing-hero-character-img"
+                    width={1024}
+                    height={1365}
+                    loading="eager"
+                    decoding="async"
+                  />
+                </div>
               </div>
             </div>
           </div>

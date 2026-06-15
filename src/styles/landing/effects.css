@@ -17,8 +17,8 @@
 
 .landing-hero-banner {
   position: relative;
-  overflow: hidden;
-  min-height: var(--landing-hero-height);
+  height: var(--landing-hero-height);
+  max-height: var(--landing-hero-height);
 }
 
 .landing-hero-banner-bg {
@@ -28,11 +28,23 @@
   pointer-events: none;
 }
 
-/* Hero character — height:auto beats preflight; scale wrapper avoids column overflow clip */
+/* Character zone: grid column stays relative; anchor handles position only */
 .landing-hero-character-col {
   overflow: visible;
   min-height: 0;
   align-self: end;
+  pointer-events: none;
+}
+
+/* Center at bottom of column — tweak translateY only for foot tuck */
+.landing-hero-character-anchor {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+  transform-origin: bottom center;
+  line-height: 0;
+  pointer-events: none;
 }
 
 .landing-hero-character-scale {
@@ -60,7 +72,7 @@
 
 @media (min-width: 1024px) {
   .landing-hero-character-scale {
-    transform: scale(1.4);
+    transform: scale(1.1);
   }
 
   .landing-hero-character-img {
@@ -70,7 +82,7 @@
 
 @media (min-width: 1280px) {
   .landing-hero-character-scale {
-    transform: scale(1.5);
+    transform: scale(1.25);
   }
 }
 
