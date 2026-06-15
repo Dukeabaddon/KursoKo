@@ -1,4 +1,4 @@
-import { landingCtaFancy } from '../landing/landingClasses'
+import { landingCtaFancy, landingCtaYellow } from '../landing/landingClasses'
 
 /**
  * Primary landing CTA with shine sweep — motion in src/styles/landing/animations.css
@@ -8,13 +8,14 @@ const LandingCtaButton = ({
   onClick,
   className = '',
   type = 'button',
-  ariaLabel
+  ariaLabel,
+  variant = 'purple'
 }) => (
   <button
     type={type}
     onClick={onClick}
     aria-label={ariaLabel}
-    className={`${landingCtaFancy} ${className}`}
+    className={`${variant === 'yellow' ? landingCtaYellow : landingCtaFancy} ${className}`}
   >
     <span className="landing-cta-fancy-shine" aria-hidden="true" />
     <span className="relative z-[2]">{children}</span>

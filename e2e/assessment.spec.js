@@ -18,6 +18,6 @@ test.describe('Assessment page', () => {
 
   test('returns to landing from home button', async ({ page }) => {
     await page.getByRole('button', { name: /^Home$/i }).click()
-    await expect(page.getByRole('heading', { name: /Choose the career that fits you/i })).toBeVisible()
+    await expect(page.getByRole('heading', { name: /Find the perfect path for your future/i })).toBeVisible()
   })
 })

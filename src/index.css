@@ -12,13 +12,6 @@
   --font-heading: 'Poppins', 'Montserrat', sans-serif;
   --font-playful: 'Fredoka One', 'Concert One', cursive;
   
-  /* Spacing system (8px base) */
-  --spacing-xs: 0.5rem;   /* 8px */
-  --spacing-sm: 1rem;     /* 16px */
-  --spacing-md: 1.5rem;   /* 24px */
-  --spacing-lg: 2rem;     /* 32px */
-  --spacing-xl: 3rem;     /* 48px */
-  
   /* Border radius */
   --radius-sm: 0.375rem;  /* 6px */
   --radius-md: 0.5rem;    /* 8px */

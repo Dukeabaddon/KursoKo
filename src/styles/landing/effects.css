@@ -1,16 +1,77 @@
 /**
- * Landing effects — soft blobs & a11y (not practical as Tailwind utilities)
+ * Landing effects — hero panel & a11y (not practical as Tailwind utilities)
  */
 
-.landing-hero-accent {
+.landing-hero-stage {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  padding: 0.75rem 0 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .landing-hero-stage {
+    padding: 1rem 0 0.75rem;
+  }
+}
+
+.landing-hero-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: var(--landing-hero-height);
+}
+
+.landing-hero-banner-bg {
   position: absolute;
   inset: 0;
+  z-index: 0;
   pointer-events: none;
-  background:
-    radial-gradient(ellipse 48% 42% at 6% 10%, rgba(255, 213, 79, 0.32), transparent 68%),
-    radial-gradient(ellipse 42% 38% at 88% 48%, rgba(255, 183, 150, 0.22), transparent 62%),
-    radial-gradient(ellipse 38% 34% at 72% 92%, rgba(149, 117, 205, 0.18), transparent 58%),
-    linear-gradient(180deg, var(--color-landing-paper) 0%, var(--color-landing-surface) 100%);
+}
+
+/* Hero character — height:auto beats preflight; scale wrapper avoids column overflow clip */
+.landing-hero-character-col {
+  overflow: visible;
+  min-height: 0;
+  align-self: end;
+}
+
+.landing-hero-character-scale {
+  transform-origin: bottom center;
+  line-height: 0;
+}
+
+.landing-hero-character-img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: auto;
+  max-height: min(52dvh, 420px);
+  object-fit: contain;
+  object-position: bottom center;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .landing-hero-character-img {
+    max-height: min(60dvh, 520px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-hero-character-scale {
+    transform: scale(1.4);
+  }
+
+  .landing-hero-character-img {
+    max-height: min(72dvh, 680px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .landing-hero-character-scale {
+    transform: scale(1.5);
+  }
 }
 
 .landing-chapter-rule {

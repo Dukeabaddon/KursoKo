@@ -26,16 +26,41 @@ typography:
     color: "#4DB6AC"
 effects:
   texture: "none"
-  ambient: "soft-blobs"
-  blobs:
-    - color: "rgba(255, 213, 79, 0.32)"
-      position: "top-left"
-    - color: "rgba(255, 183, 150, 0.22)"
-      position: "center-right"
-    - color: "rgba(149, 117, 205, 0.18)"
-      position: "bottom-right"
+  ambient: "cream-page-violet-panel"
+  blobs: null
 hero:
-  layout: "split-text-image"
+  layout: "purple-panel"
+  panel:
+    background: "linear-gradient(145deg, #4B2C7F 0%, #3D2468 100%)"
+    width: "var(--landing-hero-width) default min(80vw, calc(100% - 1.5rem))"
+    height: "var(--landing-hero-height) default min(72dvh, 560px)"
+    radius: null
+    clip-path: "polygon(0% 0%, 100% 0%, 96% 88%, 3% 100%)"
+    clip-tokens: "--landing-hero-clip-br-x/y, --landing-hero-clip-bl-x/y in tokens.css"
+    size-tokens: "src/styles/landing/tokens.css"
+  grid:
+    columns-desktop: "1.1fr 0.9fr"
+    copy-side: "left"
+    visual-side: "right"
+  colors-on-panel:
+    text-primary: "#FDFCF8"
+    text-muted: "rgba(253, 252, 248, 0.78)"
+    eyebrow-pill: "rgba(255, 255, 255, 0.12)"
+    eyebrow-text: "#4DB6AC"
+    headline-accent: "#FFD54F"
+    cta-bg: "#FFD54F"
+    cta-text: "#4B2C7F"
+    privacy-link: "rgba(253, 252, 248, 0.85)"
+  illustration:
+    asset: "kursoko-hero-pt-v3-cutout.png"
+    method: "img-cutout"
+    anchor: "bottom-right"
+    bleed: "translateY(6%) past panel bottom"
+  motion:
+    ease: "cubic-bezier(0.22, 1, 0.36, 1)"
+    rise-ms: 400
+    stagger-ms: [0, 80, 160, 240, 320]
+    reduced-motion: "no rise animation skip only"
   eyebrow: "Free career assessment"
   headline: "Choose the career that fits you"
   voice: "SCOPE-inspired — plain student language, no RIASEC jargon above fold"
@@ -102,5 +127,6 @@ results:
 - **Content tone** follows [SCOPE](https://scope.sti.edu/) — “know yourself”, “choose the right career”, free assessment — without copying layout or illustrations.
 - **Hero** avoids RIASEC; students see “career assessment” only.
 - **Logo** is simple geometric SVG (Rule 2 safe). No hand-drawn illustrations on landing fold.
-- **Background** uses soft blob gradients only — no heavy grain, no purple-to-blue slop gradients.
+- **Hero** purple trapezoid via `clip-path: polygon` — flat top, sloped bottom, no skew/SVG.
+- **Background** fold is cream paper outside the hero panel — no blob layer behind hero copy.
 - **Results (Resulta)** uses hybrid hero: identity column + RIASEC panel on desktop; scroll sections for course, NCR universities, scholarships. Border-only surfaces (no shadow-md slop). RIASEC shown only on results — earned after assessment.

@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test'
 test.describe('Landing page', () => {
   test('shows hero and start CTA', async ({ page }) => {
     await page.goto('/')
-    await expect(page.getByRole('heading', { name: /Choose the career that fits you/i })).toBeVisible()
+    await expect(page.getByRole('heading', { name: /Find the perfect path for your future/i })).toBeVisible()
     await expect(page.getByRole('button', { name: /Start Assessment/i }).first()).toBeVisible()
   })
 

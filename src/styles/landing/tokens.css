@@ -1,6 +1,5 @@
 /**
  * Landing design tokens — playful student-friendly palette
- * Edit here → use bg-landing-paper, text-landing-accent, etc. in JSX
  */
 @theme {
   --color-landing-paper: #fdfcf8;
@@ -18,4 +17,7 @@
 
   --ease-landing: cubic-bezier(0.22, 1, 0.36, 1);
   --animate-landing-rise: landing-rise 400ms var(--ease-landing) both;
+
+  /* Hero banner — min-height only (width is w-full in HeroSection.jsx) */
+  --landing-hero-height: min(85dvh, 700px);
 }
