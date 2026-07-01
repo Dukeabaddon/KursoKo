@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q19 option 1 — Fixing electric bicycles",
+  "questionnaire": {
+    "question_id": 19,
+    "option_key": "1",
+    "slot": "19.1",
+    "choice_text": "Fixing electric bicycles",
+    "hint": "E-mobility tech",
+    "riasec_code": "R",
+    "riasec_type": "Realistic",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/19.1.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "R",
+    "riasec_type": "Realistic",
+    "accent": "#4DB6AC",
+    "secondary": "#9575CD",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "teal battery indicator LEDs",
+      "teal mechanic sleeves"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "holds battery housing open",
+    "right_hand": "tests lead with probe",
+    "gesture": "e-mobility repair",
+    "energy": "focused, approachable",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+    "accessories": "optional thin work gloves or tool belt edge visible"
+  },
+  "subject": {
+    "choice_label": "Fixing electric bicycles",
+    "activity_hint": "E-mobility tech",
+    "activity": "Fixing electric bicycles",
+    "primary_objects": [
+      "e-bike battery pack",
+      "multimeter probes",
+      "hex key set"
+    ],
+    "environment": "bike repair stand edge",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Fixing electric bicycles",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Fixing electric bicycles. Subject focus: Fixing electric bicycles. Props: e-bike battery pack, multimeter probes, hex key set. Environment: bike repair stand edge. Pose: e-mobility repair. Camera: three-quarter top-down, centered. Left hand: holds battery housing open. Right hand: tests lead with probe. Clothes: rolled work-shirt sleeves, sturdy cotton, cuff trim in accent. Accessories: optional thin work gloves or tool belt edge visible. Colors — RIASEC Realistic: accent #4DB6AC, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: teal battery indicator LEDs, teal mechanic sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+}

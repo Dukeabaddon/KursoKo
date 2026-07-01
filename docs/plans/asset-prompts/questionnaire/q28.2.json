@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q28 option 2 — Developing cybersecurity protocols",
+  "questionnaire": {
+    "question_id": 28,
+    "option_key": "2",
+    "slot": "28.2",
+    "choice_text": "Developing cybersecurity protocols",
+    "hint": "Digital protection",
+    "riasec_code": "I",
+    "riasec_type": "Investigative",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/28.2.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "I",
+    "riasec_type": "Investigative",
+    "accent": "#4B2C7F",
+    "secondary": "#4DB6AC",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "purple shield glow",
+      "purple tech hoodie"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "on keyboard shortcut keys",
+    "right_hand": "points at shield icon on screen",
+    "gesture": "security hardening",
+    "energy": "alert, focused",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+    "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+  },
+  "subject": {
+    "choice_label": "Developing cybersecurity protocols",
+    "activity_hint": "Digital protection",
+    "activity": "Developing cybersecurity protocols",
+    "primary_objects": [
+      "laptop",
+      "shield lock icon",
+      "network node diagram"
+    ],
+    "environment": "security ops desk",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Developing cybersecurity protocols",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Developing cybersecurity protocols. Subject focus: Developing cybersecurity protocols. Props: laptop, shield lock icon, network node diagram. Environment: security ops desk. Pose: security hardening. Camera: three-quarter top-down, centered. Left hand: on keyboard shortcut keys. Right hand: points at shield icon on screen. Clothes: long lab-coat or knit sweater sleeves, neat cuffs. Accessories: optional nitrile gloves or safety glasses on forehead edge (no face). Colors — RIASEC Investigative: accent #4B2C7F, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: purple shield glow, purple tech hoodie. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: alert, focused. Safe margin 40px."
+}

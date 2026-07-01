@@ -1,0 +1,104 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q2 option 1 — Creating digital artwork for a game",
+  "questionnaire": {
+    "question_id": 2,
+    "option_key": "1",
+    "slot": "2.1",
+    "choice_text": "Creating digital artwork for a game",
+    "hint": "Visual design",
+    "riasec_code": "A",
+    "riasec_type": "Artistic",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/02.1.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "A",
+    "riasec_type": "Artistic",
+    "accent": "#FFD54F",
+    "secondary": "#9575CD",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "yellow UI accents on tablet UI chrome",
+      "yellow paint fleck on sleeve"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "rests on tablet bezel",
+    "right_hand": "draws flowing character line with stylus",
+    "gesture": "creative stroke in progress",
+    "energy": "focused, approachable",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "paint-splattered hoodie sleeves, yellow and lavender flecks",
+    "accessories": "woven friendship bracelet or paint on fingers"
+  },
+  "subject": {
+    "choice_label": "Creating digital artwork for a game",
+    "activity_hint": "Visual design",
+    "activity": "Creating digital artwork for a game",
+    "primary_objects": [
+      "graphics tablet",
+      "stylus",
+      "on-screen fantasy creature sketch",
+      "color swatch chips"
+    ],
+    "environment": "creative desk with scattered sticky notes (blank, no text)",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Creating digital artwork for a game",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Creating digital artwork for a game. Subject focus: Creating digital artwork for a game. Props: graphics tablet, stylus, on-screen fantasy creature sketch, color swatch chips. Environment: creative desk with scattered sticky notes (blank, no text). Pose: creative stroke in progress. Camera: three-quarter top-down, centered. Left hand: rests on tablet bezel. Right hand: draws flowing character line with stylus. Clothes: paint-splattered hoodie sleeves, yellow and lavender flecks. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow UI accents on tablet UI chrome, yellow paint fleck on sleeve. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+}

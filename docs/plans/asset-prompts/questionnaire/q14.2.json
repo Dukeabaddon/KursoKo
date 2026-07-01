@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q14 option 2 — Designing museum exhibits",
+  "questionnaire": {
+    "question_id": 14,
+    "option_key": "2",
+    "slot": "14.2",
+    "choice_text": "Designing museum exhibits",
+    "hint": "Spatial design",
+    "riasec_code": "A",
+    "riasec_type": "Artistic",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/14.2.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "A",
+    "riasec_type": "Artistic",
+    "accent": "#FFD54F",
+    "secondary": "#9575CD",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "yellow spotlight cone",
+      "yellow creative sleeves"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "positions model figure on pedestal",
+    "right_hand": "adjusts spotlight angle tool",
+    "gesture": "exhibit curation",
+    "energy": "curatorial",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "loose creative hoodie sleeves with light paint splatter",
+    "accessories": "woven friendship bracelet or paint on fingers"
+  },
+  "subject": {
+    "choice_label": "Designing museum exhibits",
+    "activity_hint": "Spatial design",
+    "activity": "Designing museum exhibits",
+    "primary_objects": [
+      "display pedestal",
+      "mini diorama model",
+      "label stand (blank plaque)"
+    ],
+    "environment": "museum prep table",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Designing museum exhibits",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Designing museum exhibits. Subject focus: Designing museum exhibits. Props: display pedestal, mini diorama model, label stand (blank plaque). Environment: museum prep table. Pose: exhibit curation. Camera: three-quarter top-down, centered. Left hand: positions model figure on pedestal. Right hand: adjusts spotlight angle tool. Clothes: loose creative hoodie sleeves with light paint splatter. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow spotlight cone, yellow creative sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: curatorial. Safe margin 40px."
+}

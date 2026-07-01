@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q12 option 2 — Auditing company accounts",
+  "questionnaire": {
+    "question_id": 12,
+    "option_key": "2",
+    "slot": "12.2",
+    "choice_text": "Auditing company accounts",
+    "hint": "Financial verification",
+    "riasec_code": "C",
+    "riasec_type": "Conventional",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/12.2.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "C",
+    "riasec_type": "Conventional",
+    "accent": "#81D4FA",
+    "secondary": "#4B2C7F",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "sky-blue column headers on sheet",
+      "sky-blue shirt cuffs"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "turns ledger page",
+    "right_hand": "places checkmark on line item",
+    "gesture": "verification audit",
+    "energy": "precise",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "pressed office shirt sleeves, crisp cuffs",
+    "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+  },
+  "subject": {
+    "choice_label": "Auditing company accounts",
+    "activity_hint": "Financial verification",
+    "activity": "Auditing company accounts",
+    "primary_objects": [
+      "ledger book",
+      "green checkmark stickers",
+      "audit spreadsheet printout"
+    ],
+    "environment": "audit desk with neat piles",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Auditing company accounts",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Auditing company accounts. Subject focus: Auditing company accounts. Props: ledger book, green checkmark stickers, audit spreadsheet printout. Environment: audit desk with neat piles. Pose: verification audit. Camera: three-quarter top-down, centered. Left hand: turns ledger page. Right hand: places checkmark on line item. Clothes: pressed office shirt sleeves, crisp cuffs. Accessories: pen clipped to shirt pocket at chest edge (no face). Colors — RIASEC Conventional: accent #81D4FA, secondary #4B2C7F, skin warm neutral medium, outline #2D2D2D. Accent on: sky-blue column headers on sheet, sky-blue shirt cuffs. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: precise. Safe margin 40px."
+}

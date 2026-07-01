@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q6 option 1 — Marketing products on social media",
+  "questionnaire": {
+    "question_id": 6,
+    "option_key": "1",
+    "slot": "6.1",
+    "choice_text": "Marketing products on social media",
+    "hint": "Digital promotion",
+    "riasec_code": "E",
+    "riasec_type": "Enterprising",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/06.1.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "E",
+    "riasec_type": "Enterprising",
+    "accent": "#FF8A65",
+    "secondary": "#FFD54F",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "coral heart icon",
+      "coral blazer cuff"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "holds phone upright for posting",
+    "right_hand": "thumb hovering over post button",
+    "gesture": "social campaign launch",
+    "energy": "upbeat",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "smart casual blazer or polo sleeves, confident fit",
+    "accessories": "watch or presentation clicker at wrist"
+  },
+  "subject": {
+    "choice_label": "Marketing products on social media",
+    "activity_hint": "Digital promotion",
+    "activity": "Marketing products on social media",
+    "primary_objects": [
+      "smartphone",
+      "product photo on screen",
+      "heart and share icons"
+    ],
+    "environment": "bright creator desk",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Marketing products on social media",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Marketing products on social media. Subject focus: Marketing products on social media. Props: smartphone, product photo on screen, heart and share icons. Environment: bright creator desk. Pose: social campaign launch. Camera: three-quarter top-down, centered. Left hand: holds phone upright for posting. Right hand: thumb hovering over post button. Clothes: smart casual blazer or polo sleeves, confident fit. Accessories: watch or presentation clicker at wrist. Colors — RIASEC Enterprising: accent #FF8A65, secondary #FFD54F, skin warm neutral medium, outline #2D2D2D. Accent on: coral heart icon, coral blazer cuff. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: upbeat. Safe margin 40px."
+}

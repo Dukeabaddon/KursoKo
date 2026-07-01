@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q26 option 1 — Building disaster-resistant housing",
+  "questionnaire": {
+    "question_id": 26,
+    "option_key": "1",
+    "slot": "26.1",
+    "choice_text": "Building disaster-resistant housing",
+    "hint": "Structural engineering",
+    "riasec_code": "R",
+    "riasec_type": "Realistic",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/26.1.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "R",
+    "riasec_type": "Realistic",
+    "accent": "#4DB6AC",
+    "secondary": "#9575CD",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "teal beam accent stripe",
+      "teal work vest sleeves"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "sets beam on model roof",
+    "right_hand": "unrolls blueprint corner",
+    "gesture": "resilient construction",
+    "energy": "focused, approachable",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+    "accessories": "optional thin work gloves or tool belt edge visible"
+  },
+  "subject": {
+    "choice_label": "Building disaster-resistant housing",
+    "activity_hint": "Structural engineering",
+    "activity": "Building disaster-resistant housing",
+    "primary_objects": [
+      "house model",
+      "reinforced steel beam",
+      "blueprint roll"
+    ],
+    "environment": "construction planning table",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Building disaster-resistant housing",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Building disaster-resistant housing. Subject focus: Building disaster-resistant housing. Props: house model, reinforced steel beam, blueprint roll. Environment: construction planning table. Pose: resilient construction. Camera: three-quarter top-down, centered. Left hand: sets beam on model roof. Right hand: unrolls blueprint corner. Clothes: rolled work-shirt sleeves, sturdy cotton, cuff trim in accent. Accessories: optional thin work gloves or tool belt edge visible. Colors — RIASEC Realistic: accent #4DB6AC, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: teal beam accent stripe, teal work vest sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+}

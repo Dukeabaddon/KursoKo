@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q17 option 1 — Helping refugees settle locally",
+  "questionnaire": {
+    "question_id": 17,
+    "option_key": "1",
+    "slot": "17.1",
+    "choice_text": "Helping refugees settle locally",
+    "hint": "Community integration",
+    "riasec_code": "S",
+    "riasec_type": "Social",
+    "sensitive_topic": true
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/17.1.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "S",
+    "riasec_type": "Social",
+    "accent": "#9575CD",
+    "secondary": "#4DB6AC",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "lavender ribbon on key",
+      "lavender cardigan"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "offers basket handle forward",
+    "right_hand": "extends key on open palm",
+    "gesture": "welcoming gesture",
+    "energy": "hopeful, gentle",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+    "accessories": "simple wristband or volunteer lanyard at wrist only"
+  },
+  "subject": {
+    "choice_label": "Helping refugees settle locally",
+    "activity_hint": "Community integration",
+    "activity": "Helping refugees settle locally",
+    "primary_objects": [
+      "welcome basket with bread and fruit",
+      "house key on ribbon",
+      "small potted plant"
+    ],
+    "environment": "doorstep welcome scene — symbolic, hopeful",
+    "symbolic": true
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Helping refugees settle locally",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Helping refugees settle locally. Subject focus: Helping refugees settle locally. Props: welcome basket with bread and fruit, house key on ribbon, small potted plant. Environment: doorstep welcome scene — symbolic, hopeful. Pose: welcoming gesture. Camera: three-quarter top-down, centered. Left hand: offers basket handle forward. Right hand: extends key on open palm. Clothes: soft cardigan or volunteer vest sleeves, warm tones. Accessories: simple wristband or volunteer lanyard at wrist only. Colors — RIASEC Social: accent #9575CD, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: lavender ribbon on key, lavender cardigan. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: hopeful, gentle. Safe margin 40px. Symbolic hopeful tone only — no distress, no graphic medical or crisis imagery."
+}

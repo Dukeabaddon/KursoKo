@@ -1,18 +1,50 @@
-# RIASEC sticker asset prompts
+# Landing asset prompts
 
-**Reference sticker:** letter **A** (approved style) — all others must match.
+## Generate order (hero hybrid: 3D character + 2D props in code)
 
-| Letter | Type | JSON | Drop file here |
-|--------|------|------|----------------|
-| R | Realistic | `riasec-r.json` | `src/assets/landing/placeholders/riasec/r.png` |
-| I | Investigative | `riasec-i.json` | `src/assets/landing/placeholders/riasec/i.png` |
-| A | Artistic | `riasec-a.json` | `src/assets/landing/placeholders/riasec/a.png` |
-| S | Social | `riasec-s.json` | `src/assets/landing/placeholders/riasec/s.png` |
-| E | Enterprising | `riasec-e.json` | `src/assets/landing/placeholders/riasec/e.png` |
-| C | Conventional | `riasec-c.json` | `src/assets/landing/placeholders/riasec/c.png` |
+| Step | Asset | JSON | Output path | Style |
+|------|-------|------|-------------|-------|
+| **1** | Hero character | `hero-character.json` | `src/assets/landing/kursoko-hero-v4-cutout.png` | **3D** Play Together NPR — see `reference_visual_lock` in JSON (external tools: no repo paths) |
+| **2** | Star sparkle | `hero-asset-star.json` | `src/assets/landing/hero/star-sparkle.png` | **2D** flat |
+| **3** | Lavender blob | `hero-asset-blob-lavender.json` | `src/assets/landing/hero/blob-lavender.png` | **2D** flat |
+| **4** | Teal blob | `hero-asset-blob-teal.json` | `src/assets/landing/hero/blob-teal.png` | **2D** flat |
 
-**Specs:** 512×512 PNG, transparent background, 48px safe padding.
+**Code (no image gen):** radial glow behind character column, gentle float CSS, hide props on mobile `< md`.
 
-**After drop:** tell agent `wire riasec images` to show stickers on landing (UI still uses letter badges until then).
+**After step 1:** tell agent `wire hero v4`.  
+**After steps 2–4:** tell agent `wire hero floating assets`.
 
-Copy `prompt_for_image_ai` from each JSON into your image AI. Add: *"Match the attached letter A sticker exactly for style."*
+Optional: skip steps 3–4 if reusing `src/assets/landing/placeholders/blobs/*.png` at smaller CSS scale.
+
+---
+
+## RIASEC stickers (2D)
+
+**Reference:** letter **A** — all others must match.
+
+| Letter | JSON | Drop file |
+|--------|------|-----------|
+| R | `riasec-r.json` | `placeholders/riasec/r.png` |
+| I | `riasec-i.json` | `placeholders/riasec/i.png` |
+| A | `riasec-a.json` | `placeholders/riasec/a.png` |
+| S | `riasec-s.json` | `placeholders/riasec/s.png` |
+| E | `riasec-e.json` | `placeholders/riasec/e.png` |
+| C | `riasec-c.json` | `placeholders/riasec/c.png` |
+
+**Specs:** 512×512 PNG, transparent, 48px safe padding.
+
+---
+
+## Questionnaire choices (60 scenes)
+
+**Folder:** `questionnaire/` — flat `q01.1.json` … `q30.2.json` + `manifest.json`
+
+| Spec | Value |
+|------|--------|
+| Style | Flat vector scene — **no letter, no border** (RIASEC vibe minus frame) |
+| Size | 640×640 PNG → `src/assets/questionnaire/NN.M.png` |
+| People | Hands only · neutral locale · subtle RIASEC accent |
+
+**Regenerate prompts:** `python3 scripts/generate-questionnaire-prompts.py`
+
+**After PNGs:** tell agent `wire questionnaire assets` (update `Questionnaire.jsx` imports).

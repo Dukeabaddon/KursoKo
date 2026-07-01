@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q1 option 2 — Analyzing patterns in stock market data",
+  "questionnaire": {
+    "question_id": 1,
+    "option_key": "2",
+    "slot": "1.2",
+    "choice_text": "Analyzing patterns in stock market data",
+    "hint": "Data investigation",
+    "riasec_code": "I",
+    "riasec_type": "Investigative",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/01.2.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "I",
+    "riasec_type": "Investigative",
+    "accent": "#4B2C7F",
+    "secondary": "#4DB6AC",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "purple highlight on selected chart bars",
+      "purple sweater cuff"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "holds tablet at readable angle",
+    "right_hand": "traces upward trend with stylus tip",
+    "gesture": "analytical point-and-study",
+    "energy": "curious, analytical",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+    "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+  },
+  "subject": {
+    "choice_label": "Analyzing patterns in stock market data",
+    "activity_hint": "Data investigation",
+    "activity": "Analyzing stock market patterns",
+    "primary_objects": [
+      "tablet with candlestick chart",
+      "stylus",
+      "small trend-line overlay"
+    ],
+    "environment": "minimal desk edge, soft lavender tint on tablet bezel only",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Analyzing stock market patterns",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Analyzing patterns in stock market data. Subject focus: Analyzing stock market patterns. Props: tablet with candlestick chart, stylus, small trend-line overlay. Environment: minimal desk edge, soft lavender tint on tablet bezel only. Pose: analytical point-and-study. Camera: three-quarter top-down, centered. Left hand: holds tablet at readable angle. Right hand: traces upward trend with stylus tip. Clothes: long lab-coat or knit sweater sleeves, neat cuffs. Accessories: optional nitrile gloves or safety glasses on forehead edge (no face). Colors — RIASEC Investigative: accent #4B2C7F, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: purple highlight on selected chart bars, purple sweater cuff. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: curious, analytical. Safe margin 40px."
+}

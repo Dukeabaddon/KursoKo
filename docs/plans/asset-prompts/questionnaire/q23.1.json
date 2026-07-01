@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q23 option 1 — Assembling telescope components",
+  "questionnaire": {
+    "question_id": 23,
+    "option_key": "1",
+    "slot": "23.1",
+    "choice_text": "Assembling telescope components",
+    "hint": "Precision instrumentation",
+    "riasec_code": "R",
+    "riasec_type": "Realistic",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/23.1.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "R",
+    "riasec_type": "Realistic",
+    "accent": "#4DB6AC",
+    "secondary": "#9575CD",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "teal lens coating reflection",
+      "teal lab work sleeves"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "holds lens in calipers",
+    "right_hand": "fits lens into tube mount",
+    "gesture": "precision optics assembly",
+    "energy": "careful",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+    "accessories": "optional thin work gloves or tool belt edge visible"
+  },
+  "subject": {
+    "choice_label": "Assembling telescope components",
+    "activity_hint": "Precision instrumentation",
+    "activity": "Assembling telescope components",
+    "primary_objects": [
+      "telescope tube",
+      "lens element",
+      "precision calipers"
+    ],
+    "environment": "optics assembly bench",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Assembling telescope components",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Assembling telescope components. Subject focus: Assembling telescope components. Props: telescope tube, lens element, precision calipers. Environment: optics assembly bench. Pose: precision optics assembly. Camera: three-quarter top-down, centered. Left hand: holds lens in calipers. Right hand: fits lens into tube mount. Clothes: rolled work-shirt sleeves, sturdy cotton, cuff trim in accent. Accessories: optional thin work gloves or tool belt edge visible. Colors — RIASEC Realistic: accent #4DB6AC, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: teal lens coating reflection, teal lab work sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: careful. Safe margin 40px."
+}

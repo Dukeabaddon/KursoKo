@@ -1,0 +1,3247 @@
+{
+  "project": "KursoKo",
+  "version": 2,
+  "global_art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly career education for students",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ]
+  },
+  "riasec_palette": {
+    "R": {
+      "type": "Realistic",
+      "accent": "#4DB6AC",
+      "secondary": "#9575CD"
+    },
+    "I": {
+      "type": "Investigative",
+      "accent": "#4B2C7F",
+      "secondary": "#4DB6AC"
+    },
+    "A": {
+      "type": "Artistic",
+      "accent": "#FFD54F",
+      "secondary": "#9575CD"
+    },
+    "S": {
+      "type": "Social",
+      "accent": "#9575CD",
+      "secondary": "#4DB6AC"
+    },
+    "E": {
+      "type": "Enterprising",
+      "accent": "#FF8A65",
+      "secondary": "#FFD54F"
+    },
+    "C": {
+      "type": "Conventional",
+      "accent": "#81D4FA",
+      "secondary": "#4B2C7F"
+    }
+  },
+  "choices": {
+    "1.1": {
+      "prompt_file": "q01.1.json",
+      "choice_text": "Building a robot kit",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Building a robot kit",
+        "primary_objects": [
+          "unfinished cute robot body",
+          "small screwdriver",
+          "loose gears",
+          "color-coded wires"
+        ],
+        "environment": "light wooden workbench surface, cream paper under kit",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "steadies robot chassis flat on bench",
+        "right_hand": "inserts brass gear with precision grip",
+        "gesture": "active assembly — mid-build moment",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "thin grey work gloves, fingertips exposed"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal LED dots on robot chest",
+          "teal cuff trim on work shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "1.2": {
+      "prompt_file": "q01.2.json",
+      "choice_text": "Analyzing patterns in stock market data",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Analyzing stock market patterns",
+        "primary_objects": [
+          "tablet with candlestick chart",
+          "stylus",
+          "small trend-line overlay"
+        ],
+        "environment": "minimal desk edge, soft lavender tint on tablet bezel only",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds tablet at readable angle",
+        "right_hand": "traces upward trend with stylus tip",
+        "gesture": "analytical point-and-study",
+        "energy": "curious, analytical",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple highlight on selected chart bars",
+          "purple sweater cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "2.1": {
+      "prompt_file": "q02.1.json",
+      "choice_text": "Creating digital artwork for a game",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Creating digital artwork for a game",
+        "primary_objects": [
+          "graphics tablet",
+          "stylus",
+          "on-screen fantasy creature sketch",
+          "color swatch chips"
+        ],
+        "environment": "creative desk with scattered sticky notes (blank, no text)",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "rests on tablet bezel",
+        "right_hand": "draws flowing character line with stylus",
+        "gesture": "creative stroke in progress",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "paint-splattered hoodie sleeves, yellow and lavender flecks",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow UI accents on tablet UI chrome",
+          "yellow paint fleck on sleeve"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "2.2": {
+      "prompt_file": "q02.2.json",
+      "choice_text": "Tutoring classmates in math",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Tutoring classmates in math",
+        "primary_objects": [
+          "small whiteboard",
+          "marker",
+          "algebra equation (symbols only, no words)",
+          "pencil"
+        ],
+        "environment": "study table, warm soft light implied by flat highlight",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "writes equation on board",
+        "right_hand": "student hand holds pencil nearby — peer learning",
+        "gesture": "teaching moment, collaborative",
+        "energy": "patient, encouraging",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender marker cap",
+          "lavender cardigan cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "3.1": {
+      "prompt_file": "q03.1.json",
+      "choice_text": "Starting an online business",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Starting an online business",
+        "primary_objects": [
+          "shipping box",
+          "packing tape",
+          "laptop with simple shop icon dashboard"
+        ],
+        "environment": "home packing station, tidy",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "folds box flap",
+        "right_hand": "applies tape strip",
+        "gesture": "entrepreneur shipping first order",
+        "energy": "energetic, optimistic",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral shop icon on laptop",
+          "coral polo cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "3.2": {
+      "prompt_file": "q03.2.json",
+      "choice_text": "Organizing school records database",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Organizing school records database",
+        "primary_objects": [
+          "monitor with sorted folder rows",
+          "keyboard",
+          "labeled color tabs (no text labels)"
+        ],
+        "environment": "organized office nook",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "on keyboard home row",
+        "right_hand": "clicking mouse on sorted list",
+        "gesture": "structured data entry",
+        "energy": "calm, methodical",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue selected row highlight",
+          "sky-blue shirt cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "4.1": {
+      "prompt_file": "q04.1.json",
+      "choice_text": "Repairing smartphone hardware",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Repairing smartphone hardware",
+        "primary_objects": [
+          "open phone chassis",
+          "precision screwdriver set",
+          "anti-static mat"
+        ],
+        "environment": "repair bench with tiny parts tray",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds phone frame steady",
+        "right_hand": "turns micro screwdriver on screw",
+        "gesture": "precision repair",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "ESD wrist strap at wrist, no face"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal mat corner icon",
+          "teal work glove fingertips"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "4.2": {
+      "prompt_file": "q04.2.json",
+      "choice_text": "Researching AI ethics",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Researching AI ethics",
+        "primary_objects": [
+          "research paper stack",
+          "scales-of-justice icon",
+          "neural-node diagram card"
+        ],
+        "environment": "quiet study desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds document edge",
+        "right_hand": "points at diagram node",
+        "gesture": "ethical analysis review",
+        "energy": "thoughtful",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple diagram nodes",
+          "purple lab-coat cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "5.1": {
+      "prompt_file": "q05.1.json",
+      "choice_text": "Writing fantasy novel chapters",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Writing fantasy novel chapters",
+        "primary_objects": [
+          "laptop",
+          "glowing dragon silhouette on screen",
+          "coffee mug (steam curls only)"
+        ],
+        "environment": "cozy writing nook implied by warm yellow highlight",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "rests on laptop deck",
+        "right_hand": "types on keyboard",
+        "gesture": "imaginative writing flow",
+        "energy": "inspired",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "loose creative hoodie sleeves with light paint splatter",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow dragon glow on screen",
+          "yellow hoodie sleeve"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "5.2": {
+      "prompt_file": "q05.2.json",
+      "choice_text": "Counseling peers through stress",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Counseling peers through stress",
+        "primary_objects": [
+          "ceramic mug",
+          "tissue box",
+          "small plant on table"
+        ],
+        "environment": "calm counseling table, soft lavender ambient",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "offers mug forward",
+        "right_hand": "open palm supportive gesture",
+        "gesture": "gentle peer support",
+        "energy": "warm, calm",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender mug stripe",
+          "lavender soft cardigan"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "6.1": {
+      "prompt_file": "q06.1.json",
+      "choice_text": "Marketing products on social media",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Marketing products on social media",
+        "primary_objects": [
+          "smartphone",
+          "product photo on screen",
+          "heart and share icons"
+        ],
+        "environment": "bright creator desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds phone upright for posting",
+        "right_hand": "thumb hovering over post button",
+        "gesture": "social campaign launch",
+        "energy": "upbeat",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral heart icon",
+          "coral blazer cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "6.2": {
+      "prompt_file": "q06.2.json",
+      "choice_text": "Processing financial transactions",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Processing financial transactions",
+        "primary_objects": [
+          "calculator",
+          "receipt stack",
+          "spreadsheet on monitor"
+        ],
+        "environment": "accounting desk, neat stacks",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "keys numbers on calculator",
+        "right_hand": "sorts receipt pile by date tabs",
+        "gesture": "systematic finance processing",
+        "energy": "steady",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue calculator keys",
+          "sky-blue pressed shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "7.1": {
+      "prompt_file": "q07.1.json",
+      "choice_text": "Installing home security systems",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Installing home security systems",
+        "primary_objects": [
+          "wall bracket",
+          "compact security camera",
+          "screwdriver",
+          "pencil level"
+        ],
+        "environment": "interior wall section cross-section",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds camera to bracket",
+        "right_hand": "drives mounting screw",
+        "gesture": "hardware install",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "tool belt corner visible at frame edge"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal status LED on camera",
+          "teal work shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "7.2": {
+      "prompt_file": "q07.2.json",
+      "choice_text": "Developing climate prediction models",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Developing climate prediction models",
+        "primary_objects": [
+          "laptop",
+          "world map heat overlay",
+          "line graph prediction curves"
+        ],
+        "environment": "research desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "on trackpad scrolling map",
+        "right_hand": "points at graph peak",
+        "gesture": "climate data interpretation",
+        "energy": "focused research",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple graph line",
+          "purple knit sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "8.1": {
+      "prompt_file": "q08.1.json",
+      "choice_text": "Designing streetwear fashion",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Designing streetwear fashion",
+        "primary_objects": [
+          "sketchbook",
+          "hoodie flat sketch",
+          "fabric swatches",
+          "markers"
+        ],
+        "environment": "fashion studio table",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "pins swatch to page",
+        "right_hand": "sketches bold hoodie outline",
+        "gesture": "streetwear design",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "oversized streetwear hoodie sleeves, paint marks",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow highlight on sketch",
+          "yellow paint on fingers"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "8.2": {
+      "prompt_file": "q08.2.json",
+      "choice_text": "Coaching youth sports teams",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Coaching youth sports teams",
+        "primary_objects": [
+          "coach whistle on lanyard",
+          "clipboard with diagram Xs and Os",
+          "cone at field edge"
+        ],
+        "environment": "sports field sideline, green flat strip only",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds clipboard",
+        "right_hand": "raises whistle ready to signal",
+        "gesture": "sideline coaching",
+        "energy": "motivating",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender team bib edge on clipboard",
+          "lavender vest sleeve"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "9.1": {
+      "prompt_file": "q09.1.json",
+      "choice_text": "Pitching startup ideas to investors",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Pitching startup ideas to investors",
+        "primary_objects": [
+          "small easel board",
+          "lightbulb icon",
+          "growth arrow chart",
+          "clicker"
+        ],
+        "environment": "pitch room table edge",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "open presenting gesture toward board",
+        "right_hand": "holds clicker",
+        "gesture": "confident pitch",
+        "energy": "bold, persuasive",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral growth arrow",
+          "coral blazer cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "9.2": {
+      "prompt_file": "q09.2.json",
+      "choice_text": "Managing supply chain logistics",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Managing supply chain logistics",
+        "primary_objects": [
+          "conveyor belt diagram",
+          "labeled boxes A/B/C icons only",
+          "routing arrows"
+        ],
+        "environment": "operations planning desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "slides box icon along route",
+        "right_hand": "marks checkpoint on flowchart",
+        "gesture": "logistics coordination",
+        "energy": "organized",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue route arrows",
+          "sky-blue office shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "10.1": {
+      "prompt_file": "q10.1.json",
+      "choice_text": "Building sustainable furniture",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Building sustainable furniture",
+        "primary_objects": [
+          "wooden chair leg",
+          "sandpaper block",
+          "wood shavings",
+          "clamps"
+        ],
+        "environment": "woodshop bench",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "clamps leg steady",
+        "right_hand": "sands along grain",
+        "gesture": "craft woodworking",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "sawdust on gloves, no face"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal clamp handle",
+          "teal rolled work sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "10.2": {
+      "prompt_file": "q10.2.json",
+      "choice_text": "Studying marine biology specimens",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Studying marine biology specimens",
+        "primary_objects": [
+          "magnifying glass",
+          "shells in shallow tray",
+          "specimen forceps",
+          "field journal"
+        ],
+        "environment": "lab tray on neutral surface",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds shell with forceps",
+        "right_hand": "magnifies surface pattern",
+        "gesture": "specimen examination",
+        "energy": "meticulous",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple journal bookmark ribbon",
+          "purple lab sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "11.1": {
+      "prompt_file": "q11.1.json",
+      "choice_text": "Producing music tracks",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Producing music tracks",
+        "primary_objects": [
+          "MIDI keyboard",
+          "laptop with waveform display",
+          "headphones around neck edge only"
+        ],
+        "environment": "bedroom studio desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "plays chord on keys",
+        "right_hand": "adjusts laptop slider",
+        "gesture": "music production",
+        "energy": "creative flow",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "loose creative hoodie sleeves with light paint splatter",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow waveform peaks",
+          "yellow hoodie with headphone cable"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "11.2": {
+      "prompt_file": "q11.2.json",
+      "choice_text": "Volunteering at community health camp",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Volunteering at community health camp",
+        "primary_objects": [
+          "first-aid kit",
+          "volunteer armband (no text)",
+          "folded blanket stack"
+        ],
+        "environment": "community table setup",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "passes kit across table",
+        "right_hand": "receives from partner hands — teamwork",
+        "gesture": "volunteer handoff",
+        "energy": "helpful",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender cross icon on kit",
+          "lavender volunteer vest"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "12.1": {
+      "prompt_file": "q12.1.json",
+      "choice_text": "Leading corporate negotiations",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Leading corporate negotiations",
+        "primary_objects": [
+          "contract document",
+          "pen",
+          "conference table edge"
+        ],
+        "environment": "boardroom table, minimal",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "firm handshake grip",
+        "right_hand": "matching handshake — deal closing",
+        "gesture": "professional handshake over contracts",
+        "energy": "confident",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral tie edge at bottom frame",
+          "coral blazer sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "12.2": {
+      "prompt_file": "q12.2.json",
+      "choice_text": "Auditing company accounts",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Auditing company accounts",
+        "primary_objects": [
+          "ledger book",
+          "green checkmark stickers",
+          "audit spreadsheet printout"
+        ],
+        "environment": "audit desk with neat piles",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "turns ledger page",
+        "right_hand": "places checkmark on line item",
+        "gesture": "verification audit",
+        "energy": "precise",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue column headers on sheet",
+          "sky-blue shirt cuffs"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "13.1": {
+      "prompt_file": "q13.1.json",
+      "choice_text": "Maintaining drone equipment",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Maintaining drone equipment",
+        "primary_objects": [
+          "quadcopter drone",
+          "hex wrench",
+          "propeller blade",
+          "maintenance stand"
+        ],
+        "environment": "tech bench",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds drone body on stand",
+        "right_hand": "tightens prop nut with wrench",
+        "gesture": "drone repair",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "optional thin work gloves or tool belt edge visible"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal propeller tips",
+          "teal mechanic gloves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "13.2": {
+      "prompt_file": "q13.2.json",
+      "choice_text": "Researching quantum computing",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Researching quantum computing",
+        "primary_objects": [
+          "monitor with qubit lattice diagram",
+          "notebook with equations (symbols only)"
+        ],
+        "environment": "advanced physics desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "scribes equation symbol",
+        "right_hand": "points at qubit node on screen",
+        "gesture": "theoretical research",
+        "energy": "deep focus",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple lattice nodes",
+          "purple lab-coat sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "14.1": {
+      "prompt_file": "q14.1.json",
+      "choice_text": "Teaching coding to kids",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Teaching coding to kids",
+        "primary_objects": [
+          "laptop with block-code colors",
+          "child-size hands smaller scale",
+          "star sticker reward"
+        ],
+        "environment": "classroom table",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "adult hand guides child hand on trackpad",
+        "right_hand": "child hand clicks colorful code block",
+        "gesture": "mentored learning",
+        "energy": "patient, fun",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender code blocks",
+          "lavender teacher cardigan"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "14.2": {
+      "prompt_file": "q14.2.json",
+      "choice_text": "Designing museum exhibits",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Designing museum exhibits",
+        "primary_objects": [
+          "display pedestal",
+          "mini diorama model",
+          "label stand (blank plaque)"
+        ],
+        "environment": "museum prep table",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "positions model figure on pedestal",
+        "right_hand": "adjusts spotlight angle tool",
+        "gesture": "exhibit curation",
+        "energy": "curatorial",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "loose creative hoodie sleeves with light paint splatter",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow spotlight cone",
+          "yellow creative sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "15.1": {
+      "prompt_file": "q15.1.json",
+      "choice_text": "Managing e-commerce store",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Managing e-commerce store",
+        "primary_objects": [
+          "laptop dashboard",
+          "cart icon",
+          "order notification badge",
+          "shipping label roll"
+        ],
+        "environment": "seller workstation",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "scrolls order list",
+        "right_hand": "clicks fulfill button",
+        "gesture": "store management",
+        "energy": "busy, proactive",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral cart icon",
+          "coral smart polo"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "15.2": {
+      "prompt_file": "q15.2.json",
+      "choice_text": "Optimizing database efficiency",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Optimizing database efficiency",
+        "primary_objects": [
+          "server rack icon on monitor",
+          "performance graph trending up",
+          "keyboard"
+        ],
+        "environment": "server admin desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "types query shortcut",
+        "right_hand": "points at optimized graph green zone",
+        "gesture": "DB tuning",
+        "energy": "technical, calm",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue graph line",
+          "sky-blue office sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "16.1": {
+      "prompt_file": "q16.1.json",
+      "choice_text": "Installing solar farm panels",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Installing solar farm panels",
+        "primary_objects": [
+          "two solar panels",
+          "MC4 cable connector",
+          "work harness strap at edge"
+        ],
+        "environment": "outdoor install frame, sunny yellow highlight only",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "aligns panel edge",
+        "right_hand": "clicks cable connector",
+        "gesture": "renewable install",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "work gloves, harness clip at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal connector housing",
+          "teal hi-vis sleeve stripe"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "16.2": {
+      "prompt_file": "q16.2.json",
+      "choice_text": "Documenting wildlife behavior",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Documenting wildlife behavior",
+        "primary_objects": [
+          "binoculars",
+          "field notebook",
+          "bird silhouettes in far background"
+        ],
+        "environment": "field observation, soft horizon line only",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "focuses binocular dial",
+        "right_hand": "writes observation sketch of bird",
+        "gesture": "field research",
+        "energy": "quiet observation",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple notebook cover",
+          "purple field jacket cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "17.1": {
+      "prompt_file": "q17.1.json",
+      "choice_text": "Helping refugees settle locally",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Helping refugees settle locally",
+        "primary_objects": [
+          "welcome basket with bread and fruit",
+          "house key on ribbon",
+          "small potted plant"
+        ],
+        "environment": "doorstep welcome scene — symbolic, hopeful",
+        "symbolic": true
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "offers basket handle forward",
+        "right_hand": "extends key on open palm",
+        "gesture": "welcoming gesture",
+        "energy": "hopeful, gentle",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender ribbon on key",
+          "lavender cardigan"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "17.2": {
+      "prompt_file": "q17.2.json",
+      "choice_text": "Creating public space murals",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Creating public space murals",
+        "primary_objects": [
+          "paint roller",
+          "mural wall section with bold geometric shapes",
+          "paint tray"
+        ],
+        "environment": "outdoor wall panel",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "guides roller upward",
+        "right_hand": "holds tray steady",
+        "gesture": "mural painting",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "paint-covered street-art sleeves",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow sun motif on wall",
+          "yellow paint on roller"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "18.1": {
+      "prompt_file": "q18.1.json",
+      "choice_text": "Planning corporate takeover",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Planning corporate takeover",
+        "primary_objects": [
+          "chess board",
+          "tall king piece",
+          "strategy chart cards"
+        ],
+        "environment": "strategy war-room table",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "moves chess piece forward",
+        "right_hand": "slides chart card into place",
+        "gesture": "strategic planning",
+        "energy": "calculating, bold",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral chess piece highlight",
+          "coral blazer"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "18.2": {
+      "prompt_file": "q18.2.json",
+      "choice_text": "Standardizing filing systems",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Standardizing filing systems",
+        "primary_objects": [
+          "color-coded folders",
+          "label maker",
+          "filing cabinet drawer"
+        ],
+        "environment": "records room",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "pulls folder from drawer",
+        "right_hand": "applies color label tab",
+        "gesture": "filing standardization",
+        "energy": "methodical",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue folder tabs",
+          "sky-blue shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "19.1": {
+      "prompt_file": "q19.1.json",
+      "choice_text": "Fixing electric bicycles",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Fixing electric bicycles",
+        "primary_objects": [
+          "e-bike battery pack",
+          "multimeter probes",
+          "hex key set"
+        ],
+        "environment": "bike repair stand edge",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds battery housing open",
+        "right_hand": "tests lead with probe",
+        "gesture": "e-mobility repair",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "optional thin work gloves or tool belt edge visible"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal battery indicator LEDs",
+          "teal mechanic sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "19.2": {
+      "prompt_file": "q19.2.json",
+      "choice_text": "Studying virus mutations",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Studying virus mutations",
+        "primary_objects": [
+          "microscope eyepiece edge",
+          "petri dish",
+          "abstract soft cell blobs"
+        ],
+        "environment": "lab bench — symbolic, non-graphic",
+        "symbolic": true
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "adjusts microscope focus knob",
+        "right_hand": "positions petri dish gently",
+        "gesture": "microbiology study",
+        "energy": "scientific, calm",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple cell blob accents",
+          "purple lab gloves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "20.1": {
+      "prompt_file": "q20.1.json",
+      "choice_text": "Mentoring first-generation students",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Mentoring first-generation students",
+        "primary_objects": [
+          "textbook",
+          "graduation cap charm keychain",
+          "bookmark"
+        ],
+        "environment": "library table",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "slides textbook toward mentee side",
+        "right_hand": "offers cap charm as encouragement",
+        "gesture": "mentorship gift",
+        "energy": "supportive",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender bookmark",
+          "lavender mentor cardigan"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "20.2": {
+      "prompt_file": "q20.2.json",
+      "choice_text": "Illustrating science textbooks",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Illustrating science textbooks",
+        "primary_objects": [
+          "drawing tablet",
+          "cell diagram with organelles",
+          "reference photo of leaf"
+        ],
+        "environment": "illustration desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds reference leaf",
+        "right_hand": "stylizes organelle on tablet",
+        "gesture": "scientific illustration",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "loose creative hoodie sleeves with light paint splatter",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow nucleus highlight",
+          "yellow paint-fleck sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "21.1": {
+      "prompt_file": "q21.1.json",
+      "choice_text": "Analyzing consumer behavior trends",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Analyzing consumer behavior trends",
+        "primary_objects": [
+          "tablet",
+          "bar chart",
+          "pie chart",
+          "trend arrow"
+        ],
+        "environment": "market research desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "steadies tablet",
+        "right_hand": "swipes to next chart panel",
+        "gesture": "consumer analytics",
+        "energy": "analytical",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple trend arrow",
+          "purple sweater cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "21.2": {
+      "prompt_file": "q21.2.json",
+      "choice_text": "Creating tax compliance reports",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Creating tax compliance reports",
+        "primary_objects": [
+          "document stack",
+          "approved stamp",
+          "tax form grid (numbers only)"
+        ],
+        "environment": "compliance office desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "aligns report stack",
+        "right_hand": "stamps approval mark",
+        "gesture": "regulatory filing",
+        "energy": "precise",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue form header band",
+          "sky-blue shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "22.1": {
+      "prompt_file": "q22.1.json",
+      "choice_text": "Directing non-profit organization",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Directing non-profit organization",
+        "primary_objects": [
+          "round table edge",
+          "heart-in-hands logo sketch",
+          "mission sticky notes blank"
+        ],
+        "environment": "nonprofit meeting space",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "gestures open toward team (second hand pair edge only)",
+        "right_hand": "points at heart logo sketch",
+        "gesture": "mission leadership",
+        "energy": "inspiring",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral heart logo",
+          "coral blazer"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "22.2": {
+      "prompt_file": "q22.2.json",
+      "choice_text": "Quality-checking manufacturing outputs",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Quality-checking manufacturing outputs",
+        "primary_objects": [
+          "clipboard",
+          "product unit on belt",
+          "checklist ticks"
+        ],
+        "environment": "factory QC station simplified",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds product for inspection",
+        "right_hand": "marks checklist tick",
+        "gesture": "quality assurance",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue checklist header",
+          "sky-blue uniform sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "23.1": {
+      "prompt_file": "q23.1.json",
+      "choice_text": "Assembling telescope components",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Assembling telescope components",
+        "primary_objects": [
+          "telescope tube",
+          "lens element",
+          "precision calipers"
+        ],
+        "environment": "optics assembly bench",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds lens in calipers",
+        "right_hand": "fits lens into tube mount",
+        "gesture": "precision optics assembly",
+        "energy": "careful",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "optional thin work gloves or tool belt edge visible"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal lens coating reflection",
+          "teal lab work sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "23.2": {
+      "prompt_file": "q23.2.json",
+      "choice_text": "Developing cancer treatment trials",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Developing cancer treatment trials",
+        "primary_objects": [
+          "lab flask with soft glow",
+          "microscope",
+          "hope ribbon icon subtle"
+        ],
+        "environment": "research lab — uplifting symbolic",
+        "symbolic": true
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds flask to light",
+        "right_hand": "adjusts microscope slide gently",
+        "gesture": "medical research hope",
+        "energy": "hopeful, serious but not sad",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple flask liquid accent",
+          "purple lab coat"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "24.1": {
+      "prompt_file": "q24.1.json",
+      "choice_text": "Counseling at-risk youth",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Counseling at-risk youth",
+        "primary_objects": [
+          "park bench edge",
+          "open palm gesture",
+          "small notebook closed"
+        ],
+        "environment": "quiet park — symbolic safe space",
+        "symbolic": true
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "open relaxed palm offered",
+        "right_hand": "second person hand reaching to accept support — no faces",
+        "gesture": "supportive listening pose",
+        "energy": "calm, safe",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender bench slat accent",
+          "lavender soft sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "24.2": {
+      "prompt_file": "q24.2.json",
+      "choice_text": "Designing inclusive playgrounds",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Designing inclusive playgrounds",
+        "primary_objects": [
+          "site plan",
+          "wheelchair-accessible swing model",
+          "ramp icon",
+          "color pencils"
+        ],
+        "environment": "architect desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "places swing model on plan",
+        "right_hand": "draws ramp curve on plan",
+        "gesture": "inclusive design planning",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "loose creative hoodie sleeves with light paint splatter",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow swing seat accent",
+          "yellow designer sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "25.1": {
+      "prompt_file": "q25.1.json",
+      "choice_text": "Testing water purification systems",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Testing water purification systems",
+        "primary_objects": [
+          "clear water sample vial",
+          "test strip kit",
+          "pH color chart"
+        ],
+        "environment": "environmental lab bench",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds vial to light",
+        "right_hand": "dips test strip",
+        "gesture": "water quality test",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple chart band",
+          "purple field jacket sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "25.2": {
+      "prompt_file": "q25.2.json",
+      "choice_text": "Managing payroll systems",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Managing payroll systems",
+        "primary_objects": [
+          "keyboard",
+          "payslip stack",
+          "calendar with pay-day dot icons"
+        ],
+        "environment": "HR admin desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "types employee code",
+        "right_hand": "sorts payslip envelopes",
+        "gesture": "payroll processing",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue calendar dots",
+          "sky-blue office shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "26.1": {
+      "prompt_file": "q26.1.json",
+      "choice_text": "Building disaster-resistant housing",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Building disaster-resistant housing",
+        "primary_objects": [
+          "house model",
+          "reinforced steel beam",
+          "blueprint roll"
+        ],
+        "environment": "construction planning table",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "sets beam on model roof",
+        "right_hand": "unrolls blueprint corner",
+        "gesture": "resilient construction",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "optional thin work gloves or tool belt edge visible"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal beam accent stripe",
+          "teal work vest sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "26.2": {
+      "prompt_file": "q26.2.json",
+      "choice_text": "Planning city recycling programs",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Planning city recycling programs",
+        "primary_objects": [
+          "three sort bins with icons",
+          "recycling arrows",
+          "route map"
+        ],
+        "environment": "municipal planning desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "drops paper icon in bin",
+        "right_hand": "draws collection route arrow",
+        "gesture": "recycling program design",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue arrow paths",
+          "sky-blue municipal shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "27.1": {
+      "prompt_file": "q27.1.json",
+      "choice_text": "Art therapy for trauma survivors",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Art therapy for trauma survivors",
+        "primary_objects": [
+          "canvas",
+          "paintbrush",
+          "grey strokes turning into color blooms"
+        ],
+        "environment": "art therapy easel — symbolic healing",
+        "symbolic": true
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "holds canvas edge",
+        "right_hand": "brush pulls color through grey",
+        "gesture": "healing through art",
+        "energy": "gentle, restorative",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender to yellow color bloom",
+          "lavender soft sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "27.2": {
+      "prompt_file": "q27.2.json",
+      "choice_text": "Brand identity design for startups",
+      "riasec_code": "A",
+      "subject": {
+        "activity": "Brand identity design for startups",
+        "primary_objects": [
+          "logo sketches on paper",
+          "color swatch fan",
+          "tablet with logo preview"
+        ],
+        "environment": "branding studio desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "fans swatch cards",
+        "right_hand": "sketches logo mark with pen",
+        "gesture": "brand identity craft",
+        "energy": "inventive",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "loose creative hoodie sleeves with light paint splatter",
+        "accessories": "woven friendship bracelet or paint on fingers"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "yellow primary swatch",
+          "yellow creative sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FFD54F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "28.1": {
+      "prompt_file": "q28.1.json",
+      "choice_text": "Launching tech incubator program",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Launching tech incubator program",
+        "primary_objects": [
+          "laptop",
+          "rocket icon lifting",
+          "seedling sprouts in pots"
+        ],
+        "environment": "startup incubator desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "types launch command",
+        "right_hand": "waters seedling while rocket anim on screen",
+        "gesture": "ecosystem launch",
+        "energy": "visionary",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral rocket trail",
+          "coral startup polo"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "28.2": {
+      "prompt_file": "q28.2.json",
+      "choice_text": "Developing cybersecurity protocols",
+      "riasec_code": "I",
+      "subject": {
+        "activity": "Developing cybersecurity protocols",
+        "primary_objects": [
+          "laptop",
+          "shield lock icon",
+          "network node diagram"
+        ],
+        "environment": "security ops desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "on keyboard shortcut keys",
+        "right_hand": "points at shield icon on screen",
+        "gesture": "security hardening",
+        "energy": "alert, focused",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+        "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "purple shield glow",
+          "purple tech hoodie"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4B2C7F"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "29.1": {
+      "prompt_file": "q29.1.json",
+      "choice_text": "Search-and-rescue operations",
+      "riasec_code": "R",
+      "subject": {
+        "activity": "Search-and-rescue operations",
+        "primary_objects": [
+          "handheld radio",
+          "first-aid kit",
+          "trail marker post"
+        ],
+        "environment": "mountain trail sign — no danger imagery",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "keys radio mic",
+        "right_hand": "lifts kit strap ready",
+        "gesture": "rescue readiness",
+        "energy": "focused, approachable",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
+        "accessories": "reflective stripe on vest cuff"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "teal radio display",
+          "teal rescue vest sleeves"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#4DB6AC"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "29.2": {
+      "prompt_file": "q29.2.json",
+      "choice_text": "Organizing community gardens",
+      "riasec_code": "S",
+      "subject": {
+        "activity": "Organizing community gardens",
+        "primary_objects": [
+          "seedling trays",
+          "hand trowel",
+          "raised garden bed soil"
+        ],
+        "environment": "community garden plot",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "plants seedling in soil",
+        "right_hand": "holds trowel aside",
+        "gesture": "community planting",
+        "energy": "communal, warm",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
+        "accessories": "simple wristband or volunteer lanyard at wrist only"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "lavender garden glove back",
+          "lavender volunteer tee sleeve"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#9575CD"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "30.1": {
+      "prompt_file": "q30.1.json",
+      "choice_text": "Negotiating international trade deals",
+      "riasec_code": "E",
+      "subject": {
+        "activity": "Negotiating international trade deals",
+        "primary_objects": [
+          "globe desk ornament",
+          "trade document folders",
+          "handshake icon card"
+        ],
+        "environment": "international business table",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "extends handshake",
+        "right_hand": "partner handshake — deal close",
+        "gesture": "global trade agreement",
+        "energy": "diplomatic confidence",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "smart casual blazer or polo sleeves, confident fit",
+        "accessories": "watch or presentation clicker at wrist"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "coral globe meridian line",
+          "coral suit cuff"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#FF8A65"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    },
+    "30.2": {
+      "prompt_file": "q30.2.json",
+      "choice_text": "Creating corporate compliance manuals",
+      "riasec_code": "C",
+      "subject": {
+        "activity": "Creating corporate compliance manuals",
+        "primary_objects": [
+          "thick binder",
+          "checkmark compliance seal",
+          "tab dividers"
+        ],
+        "environment": "compliance library desk",
+        "symbolic": false
+      },
+      "pose": {
+        "camera_angle": "three-quarter top-down, centered",
+        "left_hand": "opens binder rings",
+        "right_hand": "presses seal sticker on cover",
+        "gesture": "compliance documentation",
+        "energy": "thorough",
+        "framing": "hands and forearms only — crop above wrists, no faces"
+      },
+      "clothes": {
+        "visible": "forearms and sleeves only",
+        "sleeves": "pressed office shirt sleeves, crisp cuffs",
+        "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+      },
+      "color": {
+        "skin_tone": "warm neutral medium",
+        "background": "fully transparent — no floor cast, no scene box",
+        "accent_placement": [
+          "sky-blue tab dividers",
+          "sky-blue office shirt"
+        ],
+        "shading": "minimal flat cel shadow under hands and main prop only",
+        "accent": "#81D4FA"
+      },
+      "art_style": {
+        "medium": "flat vector illustration",
+        "line_weight_px": 2,
+        "outline": "#2D2D2D",
+        "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+        "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+        "not": [
+          "photorealistic",
+          "3D render",
+          "SaaS dashboard",
+          "text on image",
+          "RIASEC letter",
+          "border frame"
+        ]
+      }
+    }
+  }
+}

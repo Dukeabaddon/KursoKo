@@ -1,0 +1,104 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q10 option 2 — Studying marine biology specimens",
+  "questionnaire": {
+    "question_id": 10,
+    "option_key": "2",
+    "slot": "10.2",
+    "choice_text": "Studying marine biology specimens",
+    "hint": "Scientific examination",
+    "riasec_code": "I",
+    "riasec_type": "Investigative",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/10.2.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "I",
+    "riasec_type": "Investigative",
+    "accent": "#4B2C7F",
+    "secondary": "#4DB6AC",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "purple journal bookmark ribbon",
+      "purple lab sleeves"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "holds shell with forceps",
+    "right_hand": "magnifies surface pattern",
+    "gesture": "specimen examination",
+    "energy": "meticulous",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
+    "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+  },
+  "subject": {
+    "choice_label": "Studying marine biology specimens",
+    "activity_hint": "Scientific examination",
+    "activity": "Studying marine biology specimens",
+    "primary_objects": [
+      "magnifying glass",
+      "shells in shallow tray",
+      "specimen forceps",
+      "field journal"
+    ],
+    "environment": "lab tray on neutral surface",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Studying marine biology specimens",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Studying marine biology specimens. Subject focus: Studying marine biology specimens. Props: magnifying glass, shells in shallow tray, specimen forceps, field journal. Environment: lab tray on neutral surface. Pose: specimen examination. Camera: three-quarter top-down, centered. Left hand: holds shell with forceps. Right hand: magnifies surface pattern. Clothes: long lab-coat or knit sweater sleeves, neat cuffs. Accessories: optional nitrile gloves or safety glasses on forehead edge (no face). Colors — RIASEC Investigative: accent #4B2C7F, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: purple journal bookmark ribbon, purple lab sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: meticulous. Safe margin 40px."
+}

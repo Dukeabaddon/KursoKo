@@ -1,0 +1,103 @@
+{
+  "project": "KursoKo",
+  "asset_set": "Questionnaire Q17 option 2 — Creating public space murals",
+  "questionnaire": {
+    "question_id": 17,
+    "option_key": "2",
+    "slot": "17.2",
+    "choice_text": "Creating public space murals",
+    "hint": "Urban art",
+    "riasec_code": "A",
+    "riasec_type": "Artistic",
+    "sensitive_topic": false
+  },
+  "deliverable": {
+    "filename": "src/assets/questionnaire/17.2.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 40
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "line_weight_px": 2,
+    "outline_hex": "#2D2D2D",
+    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
+    "shading": "minimal cel shadow under hands and hero prop only",
+    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
+    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
+    "forbidden": [
+      "RIASEC letter on image",
+      "colored border frame or sticker card",
+      "text labels or captions on image",
+      "full faces or identifiable people",
+      "photorealistic render",
+      "purple-blue SaaS gradient UI",
+      "distressing or graphic imagery"
+    ],
+    "outline": "#2D2D2D",
+    "not": [
+      "photorealistic",
+      "3D render",
+      "SaaS dashboard",
+      "text on image",
+      "RIASEC letter",
+      "border frame"
+    ]
+  },
+  "color": {
+    "riasec_code": "A",
+    "riasec_type": "Artistic",
+    "accent": "#FFD54F",
+    "secondary": "#9575CD",
+    "ink": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "skin_tone": "warm neutral medium",
+    "background": "fully transparent — no floor cast, no scene box",
+    "accent_placement": [
+      "yellow sun motif on wall",
+      "yellow paint on roller"
+    ],
+    "shading": "minimal flat cel shadow under hands and main prop only",
+    "rule": "Accent on props and sleeve trim only — not full background wash"
+  },
+  "pose": {
+    "camera_angle": "three-quarter top-down, centered",
+    "left_hand": "guides roller upward",
+    "right_hand": "holds tray steady",
+    "gesture": "mural painting",
+    "energy": "focused, approachable",
+    "framing": "hands and forearms only — crop above wrists, no faces"
+  },
+  "clothes": {
+    "visible": "forearms and sleeves only",
+    "sleeves": "paint-covered street-art sleeves",
+    "accessories": "woven friendship bracelet or paint on fingers"
+  },
+  "subject": {
+    "choice_label": "Creating public space murals",
+    "activity_hint": "Urban art",
+    "activity": "Creating public space murals",
+    "primary_objects": [
+      "paint roller",
+      "mural wall section with bold geometric shapes",
+      "paint tray"
+    ],
+    "environment": "outdoor wall panel",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "single clear scene, centered focal activity",
+    "focal_point": "Creating public space murals",
+    "text_on_image": "none",
+    "readable_at": "assessment card thumbnail ~160px width"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 200,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Creating public space murals. Subject focus: Creating public space murals. Props: paint roller, mural wall section with bold geometric shapes, paint tray. Environment: outdoor wall panel. Pose: mural painting. Camera: three-quarter top-down, centered. Left hand: guides roller upward. Right hand: holds tray steady. Clothes: paint-covered street-art sleeves. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow sun motif on wall, yellow paint on roller. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+}
