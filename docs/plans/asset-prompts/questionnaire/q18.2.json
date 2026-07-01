@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q18 option 2 — Standardizing filing systems",
   "questionnaire": {
     "question_id": 18,
+    "question_text": "Which organizational task fits you?",
     "option_key": "2",
     "slot": "18.2",
     "choice_text": "Standardizing filing systems",
@@ -23,81 +25,167 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under drawer and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; faint horizontal file-tab lines on drawer via 3 parallel lines max",
+    "mood": "calm methodical order energy — approachable admin craft, not tedious drudgery",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter C on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "brand logos on devices",
+      "full human figure or face",
+      "photorealistic render",
+      "cluttered messy office chaos",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
     "riasec_type": "Conventional",
-    "accent": "#81D4FA",
-    "secondary": "#4B2C7F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "sky-blue folder tabs",
-      "sky-blue shirt"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#81D4FA",
+        "name": "sky blue",
+        "use": "folder tab, shirt cuff piping"
+      },
+      "secondary": {
+        "hex": "#4B2C7F",
+        "name": "deep violet",
+        "use": "label maker body accent"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "filing cabinet drawer", "hex": "#9E9E9E" },
+        { "name": "color-coded folder", "hex": "#81D4FA" },
+        { "name": "label maker", "hex": "#4B2C7F" },
+        { "name": "label tab", "hex": "#81D4FA" },
+        { "name": "pen", "hex": "#2D2D2D" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint cool #F0F4FF highlight on knuckle tops only",
+    "accent_rule": "sky blue appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on drawer edge and label maker",
+    "shadow": "flat #2D2D2D at 12% opacity under drawer and hands"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "pulls folder from drawer",
-    "right_hand": "applies color label tab",
-    "gesture": "filing standardization",
-    "energy": "methodical",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "pulls a color-coded folder from the open drawer",
+      "grip": "pinch grip on the folder tab edge",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "applies a fresh label tab with the label maker",
+      "grip": "precision two-finger press",
+      "position": "center-right, hovering over the folder"
+    },
+    "gesture_summary": "mid-file freeze frame — the label tab pressing into place",
+    "energy": "methodical, calm, satisfied",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "pressed office shirt sleeves, crisp cuffs",
-    "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "pressed office shirt",
+      "fabric": "crisp cotton poplin",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled to mid-forearm, crisp cuffs",
+      "accent_trim_hex": "#81D4FA",
+      "accent_trim_placement": "thin cuff piping"
+    },
+    "accessories": [
+      {
+        "item": "ballpoint pen",
+        "color_hex": "#2D2D2D",
+        "placement": "clipped to shirt pocket edge — no face in frame"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Standardizing filing systems",
     "activity_hint": "Process optimization",
-    "activity": "Standardizing filing systems",
+    "scene_narrative": "A pair of tidy hands pulls a color-coded folder from an open filing drawer while the other applies a fresh sky-blue label tab, capturing the satisfying click of an organized system falling into place. The scene reads as methodical calm, not tedious drudgery.",
     "primary_objects": [
-      "color-coded folders",
-      "label maker",
-      "filing cabinet drawer"
+      {
+        "name": "filing cabinet drawer",
+        "material": "brushed steel",
+        "color_hex": "#9E9E9E",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "open drawer edge with rows of upright folder tabs"
+      },
+      {
+        "name": "color-coded folder",
+        "material": "manila card stock",
+        "color_hex": "#81D4FA",
+        "size_relative": "medium — held in left hand",
+        "detail": "sky-blue tab edge, no readable text"
+      },
+      {
+        "name": "label maker",
+        "material": "matte plastic",
+        "color_hex": "#4B2C7F",
+        "size_relative": "small — held in right hand",
+        "detail": "small blank label strip feeding out"
+      },
+      {
+        "name": "label tab",
+        "material": "adhesive paper",
+        "color_hex": "#81D4FA",
+        "size_relative": "small accent",
+        "detail": "blank color tab, no printed text"
+      }
     ],
-    "environment": "records room",
-    "symbolic": false
+    "environment": "quiet records room strip across bottom third — fades to transparent at edges, neutral shelving suggestion only",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Standardizing filing systems",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from drawer → folder → label maker",
+    "focal_hierarchy": [
+      "color-coded folder center mass",
+      "right hand applying label",
+      "left hand pulling from drawer",
+      "filing cabinet anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and label maker",
+      "midground: folder and drawer edge",
+      "background: records room strip only"
+    ],
+    "thumbnail_readability": "drawer silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Standardizing filing systems. Subject focus: Standardizing filing systems. Props: color-coded folders, label maker, filing cabinet drawer. Environment: records room. Pose: filing standardization. Camera: three-quarter top-down, centered. Left hand: pulls folder from drawer. Right hand: applies color label tab. Clothes: pressed office shirt sleeves, crisp cuffs. Accessories: pen clipped to shirt pocket at chest edge (no face). Colors — RIASEC Conventional: accent #81D4FA, secondary #4B2C7F, skin warm neutral medium, outline #2D2D2D. Accent on: sky-blue folder tabs, sky-blue shirt. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: methodical. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, cluttered messy office, paper shredding chaos, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Standardizing filing systems\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a crisp steel-blue office shirt with sky-blue #81D4FA cuff piping. Left hand pinches a sky-blue tabbed folder pulled from an open brushed-steel filing drawer. Right hand presses a violet label maker applying a fresh blank sky-blue tab. A ballpoint pen clips to the shirt pocket edge. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, quiet records-room strip fading to transparent. Mood: calm methodical satisfaction, tidy admin craft not tedious drudgery. Readable silhouette at small thumbnail size."
 }

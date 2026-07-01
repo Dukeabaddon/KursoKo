@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q7 option 1 — Installing home security systems",
   "questionnaire": {
     "question_id": 7,
+    "question_text": "Which technical work interests you?",
     "option_key": "1",
     "slot": "7.1",
     "choice_text": "Installing home security systems",
@@ -17,88 +19,172 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and camera unit — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle stucco texture suggestion on wall panel via 3 parallel lines max",
+    "mood": "trustworthy technician energy — approachable smart-home installer, not industrial security guard",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter R on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "brand logos on camera or driver",
+      "full human figure or face",
+      "photorealistic metal reflections",
+      "surveillance-state or menacing mood",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "R",
     "riasec_type": "Realistic",
-    "accent": "#4DB6AC",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "teal status LED on camera",
-      "teal work shirt"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#4DB6AC",
+        "name": "KursoKo teal",
+        "use": "camera LED ring, wire lead tip, shirt cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "driver body accent, mount bracket highlight"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "camera housing", "hex": "#E8E8E8" },
+        { "name": "wall mount bracket", "hex": "#9E9E9E" },
+        { "name": "cordless driver bit", "hex": "#2D2D2D" },
+        { "name": "wire insulation", "hex": "#4DB6AC" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "teal appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on camera dome and driver shaft",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and camera base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "holds camera to bracket",
-    "right_hand": "drives mounting screw",
-    "gesture": "hardware install",
-    "energy": "focused, approachable",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "holds the security camera flush against the mounting bracket",
+      "grip": "spread fingers cradling the dome base, thumb on far edge",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "drives a screw into the bracket with a cordless driver",
+      "grip": "firm fist grip around driver handle, index finger on trigger",
+      "position": "center-right, hovering over the mount"
+    },
+    "gesture_summary": "mid-install freeze frame — screw halfway seated",
+    "energy": "focused, capable, trustworthy installer",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
-    "accessories": "tool belt corner visible at frame edge"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "short-sleeve technician polo",
+      "fabric": "sturdy cotton pique",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled once to mid-forearm",
+      "accent_trim_hex": "#4DB6AC",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "thin work gloves",
+        "color_hex": "#9E9E9E",
+        "placement": "both hands — fingertips cut out exposing skin for dexterity"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Installing home security systems",
     "activity_hint": "Electronics setup",
-    "activity": "Installing home security systems",
+    "scene_narrative": "A pair of hands mounts a compact security camera onto an exterior wall bracket. The left hand holds the camera steady against the mounting plate while the right hand drives a screw into place with a cordless driver, a coiled teal wire lead dangling loose and ready to connect. The scene captures the precise, hands-on moment of a smart-home installer at work.",
     "primary_objects": [
-      "wall bracket",
-      "compact security camera",
-      "screwdriver",
-      "pencil level"
+      {
+        "name": "security camera",
+        "material": "matte plastic dome",
+        "color_hex": "#E8E8E8",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "small teal LED status ring, curved lens detail, 2px outline seams"
+      },
+      {
+        "name": "cordless driver",
+        "material": "plastic body with metal bit",
+        "color_hex": "#9575CD",
+        "size_relative": "medium — held in right hand",
+        "detail": "Phillips bit angled into screw head"
+      },
+      {
+        "name": "wall mount bracket",
+        "material": "brushed metal",
+        "color_hex": "#9E9E9E",
+        "size_relative": "small — beneath the camera",
+        "detail": "two visible screw holes, one filled"
+      },
+      {
+        "name": "coiled wire lead",
+        "material": "insulated copper",
+        "color_hex": "#4DB6AC",
+        "size_relative": "small accent",
+        "detail": "loosely coiled, teal tip, ready to plug into camera base"
+      }
     ],
-    "environment": "interior wall section cross-section",
-    "symbolic": false
+    "environment": "light exterior wall panel strip across bottom third — fades to transparent at edges, warm stucco texture suggestion via 3 lines max",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Installing home security systems",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from driver → camera → wire lead",
+    "focal_hierarchy": [
+      "camera body center mass",
+      "right hand driving screw",
+      "left stabilizing hand",
+      "wall bracket anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and driver",
+      "midground: camera and bracket",
+      "background: wall panel edge only — no roofline"
+    ],
+    "thumbnail_readability": "camera silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Installing home security systems. Subject focus: Installing home security systems. Props: wall bracket, compact security camera, screwdriver, pencil level. Environment: interior wall section cross-section. Pose: hardware install. Camera: three-quarter top-down, centered. Left hand: holds camera to bracket. Right hand: drives mounting screw. Clothes: rolled work-shirt sleeves, sturdy cotton, cuff trim in accent. Accessories: tool belt corner visible at frame edge. Colors — RIASEC Realistic: accent #4DB6AC, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: teal status LED on camera, teal work shirt. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter R, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, surveillance horror, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Installing home security systems\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with thin grey work gloves (fingertips exposed) mounting a light-grey security camera dome with a small teal #4DB6AC LED ring onto a metal wall bracket. Left hand cradles the camera, right hand drives a screw with a lavender #9575CD cordless driver. A coiled teal wire lead dangles nearby. Rolled steel-blue technician polo sleeves with teal cuff trim. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: focused, trustworthy installer energy. Readable silhouette at small thumbnail size."
 }

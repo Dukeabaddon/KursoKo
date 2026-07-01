@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q19 option 2 — Studying virus mutations",
   "questionnaire": {
     "question_id": 19,
+    "question_text": "Which repair work would you prefer?",
     "option_key": "2",
     "slot": "19.2",
     "choice_text": "Studying virus mutations",
@@ -23,81 +25,167 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single soft cel shadow ellipse under microscope and wrists — kept light, never clinical or ominous",
+    "texture": "none on skin; no texture on cell-blob shapes — kept smooth and rounded",
+    "mood": "calm curious science energy — symbolic and gentle, never clinical distress or outbreak panic",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter I on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "full human figure or face",
+      "photorealistic render",
+      "biohazard or hazmat imagery",
+      "sick or distressed figures, hospital beds, or syringes",
+      "anatomically accurate pathogens or spike-protein shapes"
     ]
   },
   "color": {
     "riasec_code": "I",
     "riasec_type": "Investigative",
-    "accent": "#4B2C7F",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "purple cell blob accents",
-      "purple lab gloves"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#4B2C7F",
+        "name": "KursoKo deep violet",
+        "use": "cell-blob shapes, lab-glove cuff"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "teal",
+        "use": "microscope focus-knob accent"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "microscope body", "hex": "#3A3A3A" },
+        { "name": "petri dish", "hex": "#EDEBFB" },
+        { "name": "cell-blob shapes", "hex": "#4B2C7F" },
+        { "name": "lab coat sleeve", "hex": "#F4F2EC" },
+        { "name": "nitrile glove", "hex": "#4B2C7F" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint cool #F0F4FF highlight on knuckle tops and dish rim",
+    "accent_rule": "violet appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on the microscope lens rim and dish edge",
+    "shadow": "flat #2D2D2D at 10% opacity under microscope and hands — soft, never heavy"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "adjusts microscope focus knob",
-    "right_hand": "positions petri dish gently",
-    "gesture": "microbiology study",
-    "energy": "scientific, calm",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "adjusts the microscope focus knob",
+      "grip": "two-finger precision turn",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "gently positions the petri dish beneath the lens",
+      "grip": "flat palm supporting the dish underside",
+      "position": "center-right, hovering beneath the microscope"
+    },
+    "gesture_summary": "mid-focus freeze frame — the dish settling into view as focus sharpens",
+    "energy": "calm, curious, careful",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
-    "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "long lab-coat sleeve",
+      "fabric": "smooth cotton-poly blend",
+      "color_hex": "#F4F2EC",
+      "sleeve_style": "pushed to mid-forearm, neat cuff",
+      "accent_trim_hex": "#4B2C7F",
+      "accent_trim_placement": "thin cuff pinstripe"
+    },
+    "accessories": [
+      {
+        "item": "nitrile gloves",
+        "color_hex": "#4B2C7F",
+        "placement": "both hands, cuff visible at wrist"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Studying virus mutations",
     "activity_hint": "Microbiology research",
-    "activity": "Studying virus mutations",
+    "scene_narrative": "A pair of gloved hands adjusts a microscope focus knob while the other gently positions a petri dish holding soft, abstract cell-blob shapes rendered as friendly rounded lavender forms — never anatomically graphic. The scene reads as calm curious science, entirely symbolic, with no medical distress, illness, or crisis imagery.",
     "primary_objects": [
-      "microscope eyepiece edge",
-      "petri dish",
-      "abstract soft cell blobs"
+      {
+        "name": "microscope",
+        "material": "matte metal body",
+        "color_hex": "#3A3A3A",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "single eyepiece edge and focus knob, no brand markings"
+      },
+      {
+        "name": "petri dish",
+        "material": "clear plastic",
+        "color_hex": "#EDEBFB",
+        "size_relative": "medium — held in right hand",
+        "detail": "shallow dish holding two soft rounded lavender cell-blob shapes, purely abstract"
+      },
+      {
+        "name": "cell-blob shapes",
+        "material": "abstract flat shape",
+        "color_hex": "#4B2C7F",
+        "size_relative": "small accent",
+        "detail": "two rounded friendly blobs with soft dot details, no spikes or menacing shapes"
+      },
+      {
+        "name": "lab glove cuff",
+        "material": "nitrile",
+        "color_hex": "#4B2C7F",
+        "size_relative": "small accent at wrist",
+        "detail": "cuff edge only, no full glove texture"
+      }
     ],
-    "environment": "lab bench — symbolic, non-graphic",
-    "symbolic": true
+    "environment": "clean lab bench strip across bottom third — fades to transparent at edges, no hazard signage or crowd",
+    "symbolic": true,
+    "sensitive_handling": "Depict virus and cell study only as soft, abstract, rounded lavender blob shapes on a petri dish and microscope — never anatomically accurate pathogens, spike proteins, sick patients, needles, biohazard symbols, hazmat suits, or outbreak/pandemic imagery. Tone must read as calm scientific curiosity, not crisis."
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Studying virus mutations",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from petri dish → cell-blob shapes → microscope lens",
+    "focal_hierarchy": [
+      "petri dish and cell-blob shapes center mass",
+      "left hand adjusting focus knob",
+      "right hand positioning dish",
+      "microscope body anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and petri dish",
+      "midground: microscope body",
+      "background: clean lab bench strip only"
+    ],
+    "thumbnail_readability": "microscope silhouette + petri dish readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Studying virus mutations. Subject focus: Studying virus mutations. Props: microscope eyepiece edge, petri dish, abstract soft cell blobs. Environment: lab bench — symbolic, non-graphic. Pose: microbiology study. Camera: three-quarter top-down, centered. Left hand: adjusts microscope focus knob. Right hand: positions petri dish gently. Clothes: long lab-coat or knit sweater sleeves, neat cuffs. Accessories: optional nitrile gloves or safety glasses on forehead edge (no face). Colors — RIASEC Investigative: accent #4B2C7F, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: purple cell blob accents, purple lab gloves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: scientific, calm. Safe margin 40px. Symbolic hopeful tone only — no distress, no graphic medical or crisis imagery."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter I, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, biohazard symbol, syringe, sick patient, hospital bed, hazmat suit, virus spike imagery, outbreak map, pandemic crisis, blood, illness distress"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Studying virus mutations\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal soft cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a cream lab-coat sleeve with violet #4B2C7F cuff pinstripe, violet nitrile gloves. Left hand turns a dark-grey microscope focus knob. Right hand gently holds a clear petri dish containing two soft, rounded, friendly lavender cell-blob shapes with simple dot details — purely abstract, never anatomically graphic. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, clean lab bench strip fading to transparent. Mood: calm curious scientific wonder, entirely symbolic — no biohazard, illness, or outbreak imagery. Readable silhouette at small thumbnail size. Sensitive topic handled with gentle symbolism only."
 }

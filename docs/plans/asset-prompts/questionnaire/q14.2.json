@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q14 option 2 — Designing museum exhibits",
   "questionnaire": {
     "question_id": 14,
+    "question_text": "Which helping role feels natural?",
     "option_key": "2",
     "slot": "14.2",
     "choice_text": "Designing museum exhibits",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under pedestal and forearms — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle matte plaster suggestion on pedestal via 3 parallel lines max",
+    "mood": "curatorial creative energy — approachable exhibit-building craft, not a stiff museum boardroom",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter A on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "museum brand logos",
+      "full human figure or face",
+      "photorealistic diorama rendering",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
     "riasec_type": "Artistic",
-    "accent": "#FFD54F",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "yellow spotlight cone",
-      "yellow creative sleeves"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FFD54F",
+        "name": "sunshine yellow",
+        "use": "spotlight cone, hoodie sleeve cuff"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "diorama base accent, label stand trim"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "display pedestal", "hex": "#E8E8E8" },
+        { "name": "diorama model figure", "hex": "#FF8A65" },
+        { "name": "label stand", "hex": "#9575CD" },
+        { "name": "spotlight tool", "hex": "#FFD54F" },
+        { "name": "hoodie sleeve", "hex": "#B8AFA3" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "yellow appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on pedestal edge and spotlight cone",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and pedestal base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "positions model figure on pedestal",
-    "right_hand": "adjusts spotlight angle tool",
-    "gesture": "exhibit curation",
-    "energy": "curatorial",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "positions a small diorama figure on the display pedestal",
+      "grip": "delicate pinch on the figure's base",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "adjusts the angle of a small spotlight tool",
+      "grip": "two-finger tilt on the spotlight head",
+      "position": "center-right, hovering above the pedestal"
+    },
+    "gesture_summary": "mid-installation freeze frame — final placement of a display piece",
+    "energy": "attentive, curatorial, creative",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "loose creative hoodie sleeves with light paint splatter",
-    "accessories": "woven friendship bracelet or paint on fingers"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "loose creative hoodie",
+      "fabric": "brushed cotton fleece",
+      "color_hex": "#B8AFA3",
+      "sleeve_style": "pushed up loosely to mid-forearm",
+      "accent_trim_hex": "#FFD54F",
+      "accent_trim_placement": "cuff seam stitch"
+    },
+    "accessories": [
+      {
+        "item": "faint paint smudge",
+        "color_hex": "#9575CD",
+        "placement": "tip of left thumb"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Designing museum exhibits",
     "activity_hint": "Spatial design",
-    "activity": "Designing museum exhibits",
+    "scene_narrative": "A pair of forearms carefully installs a small diorama figure onto a clean white display pedestal, while the other hand angles a compact spotlight tool for the perfect highlight. A blank label stand waits beside the scene. The moment reads as thoughtful exhibit craftsmanship — spatial storytelling in miniature, not a dry boardroom task.",
     "primary_objects": [
-      "display pedestal",
-      "mini diorama model",
-      "label stand (blank plaque)"
+      {
+        "name": "display pedestal",
+        "material": "matte painted plywood",
+        "color_hex": "#E8E8E8",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "simple rectangular block with a rounded top edge"
+      },
+      {
+        "name": "mini diorama figure",
+        "material": "painted resin model",
+        "color_hex": "#FF8A65",
+        "size_relative": "small — held in left hand",
+        "detail": "simplified abstract figure shape, no facial detail"
+      },
+      {
+        "name": "spotlight tool",
+        "material": "matte metal housing",
+        "color_hex": "#FFD54F",
+        "size_relative": "small — held in right hand",
+        "detail": "small cone-shaped head casting a soft yellow glow"
+      },
+      {
+        "name": "label stand",
+        "material": "thin acrylic plaque",
+        "color_hex": "#9575CD",
+        "size_relative": "small accent",
+        "detail": "blank rectangular plaque, no readable text"
+      }
     ],
-    "environment": "museum prep table",
-    "symbolic": false
+    "environment": "light museum prep table surface strip across bottom third — fades to transparent at edges",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Designing museum exhibits",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from figure-placing hand → pedestal → spotlight hand",
+    "focal_hierarchy": [
+      "pedestal and diorama figure",
+      "right hand adjusting spotlight",
+      "left hand placing figure",
+      "label stand anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and spotlight tool",
+      "midground: pedestal and figure",
+      "background: table edge only — no wall"
+    ],
+    "thumbnail_readability": "pedestal silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Designing museum exhibits. Subject focus: Designing museum exhibits. Props: display pedestal, mini diorama model, label stand (blank plaque). Environment: museum prep table. Pose: exhibit curation. Camera: three-quarter top-down, centered. Left hand: positions model figure on pedestal. Right hand: adjusts spotlight angle tool. Clothes: loose creative hoodie sleeves with light paint splatter. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow spotlight cone, yellow creative sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: curatorial. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, museum brand, letter A, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, stiff boardroom, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Designing museum exhibits\". Style: flat vector, 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two forearms installing a coral #FF8A65 diorama figure onto a light-grey display pedestal. Right hand angles a yellow #FFD54F spotlight tool above it. A blank lavender #9575CD label plaque rests beside the pedestal, no readable text. Loose stone-grey hoodie sleeves pushed to mid-forearm with yellow cuff trim, faint lavender paint smudge on thumb. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, transparent margins. Mood: attentive, curatorial craftsmanship."
 }

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate questionnaire choice asset prompt JSONs from questions.json + choice specs."""
+"""DEPRECATED — v3 prompts live in docs/plans/asset-prompts/questionnaire/qNN.M.json
+
+Use scripts/build-questionnaire-manifest.py to rebuild manifest only.
+This file kept for reference; do not run for new work.
+"""
 
 from __future__ import annotations
 

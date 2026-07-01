@@ -1,0 +1,72 @@
+{
+  "project": "KursoKo",
+  "asset": "hero_floating_blob_lavender",
+  "generation_mode": "text_to_image",
+  "version": "v2",
+  "intent": "Single soft lavender organic blob — 2D background accent behind the 3D hero mascot. CreativeHive edu cloud feel, subtle not dominant.",
+  "style_reference": "docs/plans/asset-prompts/hero-character.json — pairs with 3D chibi hero; lavender matches RIASEC purple cloud tones",
+
+  "output": {
+    "format": "PNG with alpha transparency",
+    "width_px": 320,
+    "height_px": 320,
+    "aspect_ratio": "1:1",
+    "framing": "single blob with ~24px safe padding — blob may be off-center mass",
+    "background": "fully transparent — no white canvas, no square crop visible, no floor"
+  },
+
+  "render_style": {
+    "medium": "2D flat vector OR ultra-soft single-hue gradient mesh",
+    "aesthetic": "soft organic edu blob — CreativeHive fluffy cloud amoeba, landing-section decorative tone",
+    "shading": "single lavender hue family — flat #B39DDB base with optional soft #9575CD depth at core. NO 3D sphere lighting, NO photoreal cloud",
+    "edge_treatment": {
+      "required": true,
+      "style": "soft feathery transparent fade at perimeter",
+      "weight": "no hard ink outline — edge dissolves into alpha",
+      "coverage": "organic blob boundary only — interior stays soft flat color"
+    },
+    "must_not_look_like": [
+      "3D rendered sphere or metaball",
+      "realistic cumulus cloud photo",
+      "hard-edged geometric shape",
+      "SaaS purple-blue gradient orb",
+      "character or face in blob",
+      "multiple overlapping blobs"
+    ]
+  },
+
+  "subject": {
+    "object": "one amoeba-like organic blob",
+    "count": "exactly one blob in frame",
+    "shape": "soft cloud/amoeba silhouette — off-center mass OK, no perfect circle",
+    "scale": "primary hero accent blob — larger than teal companion blob",
+    "no_face": true,
+    "no_character": true
+  },
+
+  "color_palette": {
+    "primary": "#B39DDB",
+    "depth": "#9575CD",
+    "forbidden": ["teal", "yellow", "orange", "neon purple", "blue SaaS gradient", "multicolor rainbow"]
+  },
+
+  "forbidden_in_image": [
+    "character or face",
+    "stars or sparkles",
+    "text",
+    "3D render lighting",
+    "hard rectangular edges",
+    "multiple blobs",
+    "white or colored background fill",
+    "drop shadow oval on ground"
+  ],
+
+  "visual_reference_description": {
+    "summary": "One soft lavender organic blob — fluffy edu cloud accent with feathery alpha edge. Sits behind 3D hero upper-right at ~85% opacity in CSS. Transparent PNG.",
+    "quality_bar": "soft edge fade, single hue family, no AI banding at 320px"
+  },
+
+  "prompt": "Single soft organic lavender blob shape for Filipino education app KursoKo hero section. Exactly ONE blob in frame.\n\nSTYLE: 2D flat edu illustration — soft fluffy cloud-like amoeba, CreativeHive decorative blob. Single lavender hue family: base #B39DDB with optional soft #9575CD depth at core. NOT 3D sphere, NOT photoreal cloud, NOT hard geometric shape.\n\nEDGE: soft feathery transparent fade at perimeter — no hard ink outline, no square crop edge visible. Organic dissolve into alpha.\n\nSHAPE: one amoeba-like blob, off-center mass OK, no face, no character, no stars.\n\nBACKGROUND: transparent PNG, no white canvas, no floor, no drop shadow.\n\nOUTPUT: 320×320 square, ~24px safe padding, soft edges only.",
+
+  "negative_prompt": "3D render, metaball, sphere lighting, photoreal cloud, hard edges, square, rectangle, geometric, character, face, star, sparkle, text, teal, yellow, orange, neon, SaaS gradient orb, multiple blobs, cluster, white background, colored background, drop shadow, ground shadow"
+}

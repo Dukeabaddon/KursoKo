@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q17 option 1 — Helping refugees settle locally",
   "questionnaire": {
     "question_id": 17,
+    "question_text": "Which social service appeals more?",
     "option_key": "1",
     "slot": "17.1",
     "choice_text": "Helping refugees settle locally",
@@ -23,81 +25,167 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single soft cel shadow ellipse under hands only — kept light, never heavy or ominous",
+    "texture": "none on skin; faint woven-basket texture via 3 curved lines max",
+    "mood": "gentle hopeful welcome energy — warm community kindness, never crisis or hardship",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter S on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "full human figure or face",
+      "photorealistic render",
+      "refugee camp, tents, or border fence imagery",
+      "crowds, protest signs, or distress body language",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
     "riasec_type": "Social",
-    "accent": "#9575CD",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "lavender ribbon on key",
-      "lavender cardigan"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "key ribbon, cardigan cuff trim"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "teal",
+        "use": "small leaf-sprout accent on potted plant"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "welcome basket weave", "hex": "#D7B896" },
+        { "name": "house key metal", "hex": "#D4A84B" },
+        { "name": "ribbon", "hex": "#9575CD" },
+        { "name": "potted plant sprout", "hex": "#8BA888" },
+        { "name": "terracotta pot", "hex": "#C77B4E" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops and key surface",
+    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "soft warm highlight on basket weave and key surface",
+    "shadow": "flat #2D2D2D at 10% opacity under hands only — soft, never heavy"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "offers basket handle forward",
-    "right_hand": "extends key on open palm",
-    "gesture": "welcoming gesture",
-    "energy": "hopeful, gentle",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "offers a woven welcome basket forward",
+      "grip": "full palm under the basket handle",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "extends a house key resting on an open palm",
+      "grip": "flat open palm, key resting on its ribbon",
+      "position": "center-right, presented toward viewer"
+    },
+    "gesture_summary": "welcoming freeze frame — the moment a key and basket are offered forward",
+    "energy": "hopeful, warm, gentle",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
-    "accessories": "simple wristband or volunteer lanyard at wrist only"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "soft knit cardigan",
+      "fabric": "brushed wool-blend knit",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "loose, pushed to mid-forearm",
+      "accent_trim_hex": "#9575CD",
+      "accent_trim_placement": "thin ribbed cuff trim"
+    },
+    "accessories": [
+      {
+        "item": "volunteer lanyard",
+        "color_hex": "#9575CD",
+        "placement": "looped once at wrist only — no badge text visible"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Helping refugees settle locally",
     "activity_hint": "Community integration",
-    "activity": "Helping refugees settle locally",
+    "scene_narrative": "A pair of hands offers a woven welcome basket of bread and fruit forward while the other extends a house key resting on a lavender ribbon across an open palm — a doorstep-warm gesture of welcome and new beginnings. The scene stays entirely symbolic and hopeful: no camps, no distress, no border imagery, just an open door and a gift of belonging.",
     "primary_objects": [
-      "welcome basket with bread and fruit",
-      "house key on ribbon",
-      "small potted plant"
+      {
+        "name": "welcome basket",
+        "material": "woven wicker",
+        "color_hex": "#D7B896",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "holds a round loaf of bread and two pieces of fruit, checkered cloth liner"
+      },
+      {
+        "name": "house key",
+        "material": "brushed brass",
+        "color_hex": "#D4A84B",
+        "size_relative": "small — resting on open palm",
+        "detail": "simple bow-and-shaft shape, threaded on a lavender ribbon"
+      },
+      {
+        "name": "ribbon",
+        "material": "satin",
+        "color_hex": "#9575CD",
+        "size_relative": "small accent",
+        "detail": "looped once through the key bow"
+      },
+      {
+        "name": "potted plant",
+        "material": "terracotta pot with a small green sprout",
+        "color_hex": "#8BA888",
+        "size_relative": "small background accent",
+        "detail": "single simple sprout, a quiet symbol of new growth"
+      }
     ],
-    "environment": "doorstep welcome scene — symbolic, hopeful",
-    "symbolic": true
+    "environment": "warm doorstep threshold strip across bottom third — sunlit welcome-mat suggestion only, fades to transparent, no building facade or crowd",
+    "symbolic": true,
+    "sensitive_handling": "Depict only a hopeful, symbolic welcome gesture — house key, bread, and a home doorstep. Do not depict refugee camps, border fences, distress, crowds, sadness, or any hardship imagery. Tone must read as warm community welcome, not crisis."
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Helping refugees settle locally",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "centered symmetrical offering — basket on the left, key on the right, both reaching toward the viewer",
+    "focal_hierarchy": [
+      "house key on open palm",
+      "welcome basket",
+      "potted plant accent",
+      "doorstep threshold"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands, key, and basket",
+      "midground: potted plant",
+      "background: warm threshold strip only"
+    ],
+    "thumbnail_readability": "basket silhouette + offered key readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Helping refugees settle locally. Subject focus: Helping refugees settle locally. Props: welcome basket with bread and fruit, house key on ribbon, small potted plant. Environment: doorstep welcome scene — symbolic, hopeful. Pose: welcoming gesture. Camera: three-quarter top-down, centered. Left hand: offers basket handle forward. Right hand: extends key on open palm. Clothes: soft cardigan or volunteer vest sleeves, warm tones. Accessories: simple wristband or volunteer lanyard at wrist only. Colors — RIASEC Social: accent #9575CD, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: lavender ribbon on key, lavender cardigan. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: hopeful, gentle. Safe margin 40px. Symbolic hopeful tone only — no distress, no graphic medical or crisis imagery."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter S, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, refugee camp, tents, border fence, crowd of people, distress, crying, sadness, war imagery, weapons, blood, protest signs"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Helping refugees settle locally\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal soft cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft steel-blue knit cardigan with lavender #9575CD cuff trim. Left hand offers a woven wicker welcome basket holding a round loaf of bread and fruit. Right hand extends an open palm presenting a brass house key threaded on a lavender ribbon. A small terracotta pot with a single green sprout sits nearby as a quiet symbol of new growth. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, warm sunlit doorstep threshold fading to transparent. Mood: hopeful, gentle, warm community welcome — entirely symbolic, no camps, no distress, no crisis imagery. Readable silhouette at small thumbnail size. Sensitive topic handled with hopeful symbolism only."
 }

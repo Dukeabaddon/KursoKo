@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q9 option 1 — Pitching startup ideas to investors",
   "questionnaire": {
     "question_id": 9,
+    "question_text": "Which business role suits you?",
     "option_key": "1",
     "slot": "9.1",
     "choice_text": "Pitching startup ideas to investors",
@@ -17,88 +19,171 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and flip-chart — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle paper-grain suggestion on flip-chart via 3 parallel lines max",
+    "mood": "confident founder-in-the-room energy — persuasive pitch moment, not a stiff boardroom",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter E on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "corporate brand logos",
+      "full human figure or face",
+      "photorealistic render",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
     "riasec_type": "Enterprising",
-    "accent": "#FF8A65",
-    "secondary": "#FFD54F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "coral growth arrow",
-      "coral blazer cuff"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FF8A65",
+        "name": "coral",
+        "use": "flip-chart border line, marker barrel, blazer cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#FFD54F",
+        "name": "warm yellow",
+        "use": "lightbulb icon glow, coffee sleeve"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "flip-chart paper", "hex": "#FDFCF8" },
+        { "name": "coffee cup body", "hex": "#E8E8E8" },
+        { "name": "cufflink dot", "hex": "#D4A84B" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on marker barrel and lightbulb icon",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and flip-chart base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "open presenting gesture toward board",
-    "right_hand": "holds clicker",
-    "gesture": "confident pitch",
-    "energy": "bold, persuasive",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "gestures open-palm toward the flip-chart growth graphic",
+      "grip": "relaxed open hand, fingers spread",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "draws an upward trend arrow on the flip-chart with a marker",
+      "grip": "precision pinch between thumb and index finger",
+      "position": "center-right, hovering over the flip-chart"
+    },
+    "gesture_summary": "mid-pitch freeze frame — confident gesture meets marker stroke",
+    "energy": "persuasive, high-confidence founder",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "smart casual blazer or polo sleeves, confident fit",
-    "accessories": "watch or presentation clicker at wrist"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "tailored blazer",
+      "fabric": "smooth wool blend",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled once to mid-forearm",
+      "accent_trim_hex": "#FF8A65",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "slim wristwatch with cufflink dot",
+        "color_hex": "#D4A84B",
+        "placement": "left wrist, near flip-chart edge"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Pitching startup ideas to investors",
     "activity_hint": "Persuasive presentation",
-    "activity": "Pitching startup ideas to investors",
+    "scene_narrative": "A pair of hands presents a startup pitch, one hand gesturing open toward a small growth-chart flip-card while the other holds a marker mid-stroke on a simple upward arrow. A lightbulb icon glows softly on the corner of the flip-chart, capturing the confident, persuasive energy of a founder in the pitch room.",
     "primary_objects": [
-      "small easel board",
-      "lightbulb icon",
-      "growth arrow chart",
-      "clicker"
+      {
+        "name": "flip-chart card",
+        "material": "paper on easel board",
+        "color_hex": "#FDFCF8",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "coral border line, simple upward bar-and-arrow growth graphic, no readable text"
+      },
+      {
+        "name": "marker",
+        "material": "plastic barrel",
+        "color_hex": "#FF8A65",
+        "size_relative": "medium — held in right hand",
+        "detail": "mid-stroke on the upward arrow, bullet tip visible"
+      },
+      {
+        "name": "lightbulb icon sign",
+        "material": "small acrylic stand",
+        "color_hex": "#FFD54F",
+        "size_relative": "small accent",
+        "detail": "simple flat bulb glyph with soft glow"
+      },
+      {
+        "name": "coffee cup",
+        "material": "paper cup with sleeve",
+        "color_hex": "#E8E8E8",
+        "size_relative": "small accent",
+        "detail": "coral sleeve, resting beside flip-chart"
+      }
     ],
-    "environment": "pitch room table edge",
-    "symbolic": false
+    "environment": "minimal meeting-room table edge strip across bottom third, fades to transparent",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Pitching startup ideas to investors",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from coffee cup → flip-chart → marker hand",
+    "focal_hierarchy": [
+      "flip-chart growth graphic center mass",
+      "right hand drawing arrow",
+      "left gesturing hand",
+      "lightbulb icon accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and marker",
+      "midground: flip-chart",
+      "background: table edge only — no wall"
+    ],
+    "thumbnail_readability": "flip-chart silhouette + growth arrow readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Pitching startup ideas to investors. Subject focus: Pitching startup ideas to investors. Props: small easel board, lightbulb icon, growth arrow chart, clicker. Environment: pitch room table edge. Pose: confident pitch. Camera: three-quarter top-down, centered. Left hand: open presenting gesture toward board. Right hand: holds clicker. Clothes: smart casual blazer or polo sleeves, confident fit. Accessories: watch or presentation clicker at wrist. Colors — RIASEC Enterprising: accent #FF8A65, secondary #FFD54F, skin warm neutral medium, outline #2D2D2D. Accent on: coral growth arrow, coral blazer cuff. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: bold, persuasive. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter E, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, stiff boardroom gloom, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Pitching startup ideas to investors\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with a rolled tailored blazer sleeve, left hand gesturing open-palm toward a paper flip-chart with a coral #FF8A65 border and a simple upward growth arrow, right hand drawing the arrow mid-stroke with a coral marker. A small yellow #FFD54F glowing lightbulb icon sits at the corner, coffee cup with coral sleeve nearby. Slim wristwatch on the left wrist. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: confident, persuasive founder energy. Readable silhouette at small thumbnail size."
 }

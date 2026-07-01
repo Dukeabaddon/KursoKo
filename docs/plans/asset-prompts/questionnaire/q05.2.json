@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q5 option 2 — Counseling peers through stress",
   "questionnaire": {
     "question_id": 5,
+    "question_text": "Which creative work appeals more?",
     "option_key": "2",
     "slot": "5.2",
     "choice_text": "Counseling peers through stress",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under mug and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; two faint steam curl lines above mug only",
+    "mood": "gentle reassuring calm-support energy — approachable peer check-in, not a clinical therapy office",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter S on image",
+      "die-cut sticker border or white card frame",
+      "readable text or labels",
+      "medical or clinical brand logos",
+      "full human figure or face",
+      "photorealistic skin texture",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
     "riasec_type": "Social",
-    "accent": "#9575CD",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "lavender mug stripe",
-      "lavender soft cardigan"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#9575CD",
+        "name": "KursoKo lavender",
+        "use": "heart-shaped stress stone, mug glaze band, cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "teal",
+        "use": "tissue box pattern accent, small potted plant leaves"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "ceramic mug", "hex": "#9575CD" },
+        { "name": "heart stress stone", "hex": "#FFD54F" },
+        { "name": "tissue box", "hex": "#FDFCF8" },
+        { "name": "small potted plant", "hex": "#4DB6AC" },
+        { "name": "wooden tray", "hex": "#D7B896" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on mug rim and stress stone surface",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and tray edge"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "offers mug forward",
-    "right_hand": "open palm supportive gesture",
-    "gesture": "gentle peer support",
-    "energy": "warm, calm",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "rests gently beside a small wooden tray, palm relaxed and open",
+      "grip": "open upward-facing palm, fingers loosely curled",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "offers a small heart-shaped stress stone toward the viewer",
+      "grip": "gentle pinch between thumb and fingertips, holding it forward",
+      "position": "center-right, extended slightly toward frame center"
+    },
+    "gesture_summary": "mid-comfort freeze frame — a small calming object being offered",
+    "energy": "gentle, warm, reassuring",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
-    "accessories": "simple wristband or volunteer lanyard at wrist only"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "soft oversized cardigan sleeve",
+      "fabric": "brushed cotton-wool blend",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "pushed up to mid-forearm",
+      "accent_trim_hex": "#9575CD",
+      "accent_trim_placement": "thin stripe on cuff rib"
+    },
+    "accessories": [
+      {
+        "item": "simple woven wrist band",
+        "color_hex": "#4DB6AC",
+        "placement": "left wrist, thin calming-color band"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Counseling peers through stress",
     "activity_hint": "Emotional support",
-    "activity": "Counseling peers through stress",
+    "scene_narrative": "A pair of hands offers a small heart-shaped stress stone across a quiet wooden tray, with a warm mug of tea, a tissue, and a tiny potted plant arranged nearby. The open, gentle gesture captures the reassuring warmth of a peer support check-in rather than a clinical counseling office.",
     "primary_objects": [
-      "ceramic mug",
-      "tissue box",
-      "small plant on table"
+      {
+        "name": "heart-shaped stress stone",
+        "material": "smooth polished stone",
+        "color_hex": "#FFD54F",
+        "size_relative": "hero — held forward, 20% of visual mass",
+        "detail": "simple rounded heart shape, subtle warm highlight"
+      },
+      {
+        "name": "ceramic mug of tea",
+        "material": "glazed ceramic",
+        "color_hex": "#9575CD",
+        "size_relative": "medium — resting on tray",
+        "detail": "gentle steam curls rising, tea visible at rim"
+      },
+      {
+        "name": "folded tissue",
+        "material": "soft paper",
+        "color_hex": "#FDFCF8",
+        "size_relative": "small — resting beside mug",
+        "detail": "simple soft folds, no branding"
+      },
+      {
+        "name": "small potted plant",
+        "material": "ceramic pot with leaves",
+        "color_hex": "#4DB6AC",
+        "size_relative": "small accent — corner of tray",
+        "detail": "three simple rounded leaves, calming green"
+      }
     ],
-    "environment": "calm counseling table, soft lavender ambient",
-    "symbolic": false
+    "environment": "light birch tray surface strip across bottom third — fades to transparent at edges, no clinical office backdrop",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Counseling peers through stress",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from mug → tray center → offered stress stone",
+    "focal_hierarchy": [
+      "offered heart stone center mass",
+      "right hand extending gesture",
+      "left hand resting open beside tray",
+      "mug and plant accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and stress stone",
+      "midground: mug, tissue, plant on tray",
+      "background: tray edge only — no wall"
+    ],
+    "thumbnail_readability": "heart shape + two open hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Counseling peers through stress. Subject focus: Counseling peers through stress. Props: ceramic mug, tissue box, small plant on table. Environment: calm counseling table, soft lavender ambient. Pose: gentle peer support. Camera: three-quarter top-down, centered. Left hand: offers mug forward. Right hand: open palm supportive gesture. Clothes: soft cardigan or volunteer vest sleeves, warm tones. Accessories: simple wristband or volunteer lanyard at wrist only. Colors — RIASEC Social: accent #9575CD, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: lavender mug stripe, lavender soft cardigan. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: warm, calm. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter S, clinical symbols, medical cross, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, distressing imagery, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Counseling peers through stress\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft steel-blue cardigan sleeve with lavender cuff stripe and a teal woven wrist band. Left hand rests open and relaxed beside a small birch tray. Right hand gently offers a small gold #FFD54F heart-shaped stress stone toward the viewer. On the tray sits a lavender-glazed ceramic mug of tea with soft steam curls, a folded tissue, and a tiny potted plant with teal leaves. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: gentle, warm, reassuring peer support. Readable silhouette at small thumbnail size."
 }

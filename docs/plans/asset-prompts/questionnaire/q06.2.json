@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q6 option 2 — Processing financial transactions",
   "questionnaire": {
     "question_id": 6,
+    "question_text": "Choose your ideal internship:",
     "option_key": "2",
     "slot": "6.2",
     "choice_text": "Processing financial transactions",
@@ -17,87 +19,172 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and clipboard — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle paper-grain suggestion on ledger via 3 parallel lines max",
+    "mood": "calm meticulous back-office energy — orderly precision, not a dull grey cubicle",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter C on image",
+      "die-cut sticker border or white card frame",
+      "readable text, numbers, or currency symbols",
+      "bank or brand logos",
+      "full human figure or face",
+      "photorealistic paper texture",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
     "riasec_type": "Conventional",
-    "accent": "#81D4FA",
-    "secondary": "#4B2C7F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "sky-blue calculator keys",
-      "sky-blue pressed shirt"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#81D4FA",
+        "name": "sky blue",
+        "use": "ledger clip, stamp ink pad, shirt cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#4B2C7F",
+        "name": "deep indigo",
+        "use": "stamp handle, calculator key accents"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "ledger paper", "hex": "#FDFCF8" },
+        { "name": "calculator body", "hex": "#E8E8E8" },
+        { "name": "coin stack", "hex": "#D4A84B" },
+        { "name": "wristwatch strap", "hex": "#9E9E9E" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "sky blue appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on stamp dome and calculator edge",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and clipboard"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "keys numbers on calculator",
-    "right_hand": "sorts receipt pile by date tabs",
-    "gesture": "systematic finance processing",
-    "energy": "steady",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "pins a ledger clipboard flat against the desk",
+      "grip": "spread fingers, thumb on far edge of clipboard",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "presses a circular approval stamp onto the top slip",
+      "grip": "firm fist grip around stamp handle",
+      "position": "center-right, hovering just above clipboard"
+    },
+    "gesture_summary": "mid-stamp confirmation freeze frame — transaction being approved",
+    "energy": "calm, meticulous, orderly",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "pressed office shirt sleeves, crisp cuffs",
-    "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "crisp dress shirt",
+      "fabric": "smooth cotton poplin",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled twice to mid-forearm",
+      "accent_trim_hex": "#81D4FA",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "simple wristwatch",
+        "color_hex": "#9E9E9E",
+        "placement": "left wrist, grey strap"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Processing financial transactions",
     "activity_hint": "Systematic work",
-    "activity": "Processing financial transactions",
+    "scene_narrative": "A pair of hands processes a stack of financial paperwork at a tidy accounting desk. The left hand steadies a clipped ledger sheet with neat flat-line rows representing entries, while the right hand presses a circular approval stamp onto the top slip — the satisfying thunk of a transaction confirmed. Small coin stacks and a calculator anchor the corner, reading instantly as precise back-office finance work.",
     "primary_objects": [
-      "calculator",
-      "receipt stack",
-      "spreadsheet on monitor"
+      {
+        "name": "ledger clipboard",
+        "material": "paper on wood-backed clipboard",
+        "color_hex": "#FDFCF8",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "sky-blue metal clip, rows shown as thin grey flat lines, one row highlighted pale blue"
+      },
+      {
+        "name": "approval stamp",
+        "material": "wood handle with rubber base",
+        "color_hex": "#4B2C7F",
+        "size_relative": "medium — held in right hand",
+        "detail": "circular stamp face with a simple checkmark glyph, no readable text"
+      },
+      {
+        "name": "calculator",
+        "material": "matte plastic",
+        "color_hex": "#E8E8E8",
+        "size_relative": "small — resting beside clipboard",
+        "detail": "sky-blue key accents, simple flat button grid with dot placeholders, no digits"
+      },
+      {
+        "name": "coin stack",
+        "material": "metal",
+        "color_hex": "#D4A84B",
+        "size_relative": "small accent",
+        "detail": "four coins stacked, flat circular fill"
+      }
     ],
-    "environment": "accounting desk, neat stacks",
-    "symbolic": false
+    "environment": "pale birch desk corner strip across bottom third with a small in-tray, fades to transparent",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Processing financial transactions",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from calculator → clipboard → stamp hand",
+    "focal_hierarchy": [
+      "ledger clipboard center mass",
+      "right hand pressing stamp",
+      "left stabilizing hand",
+      "coin stack accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and stamp",
+      "midground: clipboard and calculator",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "clipboard silhouette + stamp shape readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Processing financial transactions. Subject focus: Processing financial transactions. Props: calculator, receipt stack, spreadsheet on monitor. Environment: accounting desk, neat stacks. Pose: systematic finance processing. Camera: three-quarter top-down, centered. Left hand: keys numbers on calculator. Right hand: sorts receipt pile by date tabs. Clothes: pressed office shirt sleeves, crisp cuffs. Accessories: pen clipped to shirt pocket at chest edge (no face). Colors — RIASEC Conventional: accent #81D4FA, secondary #4B2C7F, skin warm neutral medium, outline #2D2D2D. Accent on: sky-blue calculator keys, sky-blue pressed shirt. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: steady. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, currency symbols, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, cubicle gloom, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Processing financial transactions\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with rolled crisp dress-shirt sleeves, left hand steadying a paper ledger clipboard with sky-blue #81D4FA clip and thin grey line rows, right hand pressing a deep-indigo #4B2C7F approval stamp with a checkmark glyph onto the top slip. Matte grey calculator with sky-blue key accents nearby. Small brass coin stack. Simple grey wristwatch on the left wrist. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: calm, meticulous, orderly back-office precision. Readable silhouette at small thumbnail size."
 }

@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q14 option 1 — Teaching coding to kids",
   "questionnaire": {
     "question_id": 14,
+    "question_text": "Which helping role feels natural?",
     "option_key": "1",
     "slot": "14.1",
     "choice_text": "Teaching coding to kids",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under laptop and forearms — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle sticker-paper edge suggestion on star reward via 3 parallel lines max",
+    "mood": "warm mentoring energy — approachable classroom moment, not a formal lecture hall",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter S on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "software brand logos",
+      "full human figure or face",
+      "photorealistic skin texture",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
     "riasec_type": "Social",
-    "accent": "#9575CD",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "lavender code blocks",
-      "lavender teacher cardigan"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "code-block shapes on screen, mentor cardigan trim"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "KursoKo teal",
+        "use": "second code-block color, star sticker outline"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium (adult); lighter warm tone at smaller scale (child)",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient; two skin scales to show adult-child pairing"
+      },
+      "prop_colors": [
+        { "name": "laptop shell", "hex": "#E8E8E8" },
+        { "name": "code block A", "hex": "#9575CD" },
+        { "name": "code block B", "hex": "#FFD54F" },
+        { "name": "star sticker", "hex": "#4DB6AC" },
+        { "name": "cardigan sleeve", "hex": "#5C7A8A" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on laptop lid edge and star sticker",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and laptop base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "adult hand guides child hand on trackpad",
-    "right_hand": "child hand clicks colorful code block",
-    "gesture": "mentored learning",
-    "energy": "patient, fun",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "gently guides a smaller hand toward the trackpad",
+      "grip": "open supportive hover, fingertips barely touching the child's hand",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "a smaller child-scale hand clicks a colorful code block",
+      "grip": "single-finger tap on the block shape",
+      "position": "center-right, resting on the laptop trackpad"
+    },
+    "gesture_summary": "mid-lesson freeze frame — a guided click that completes a code block",
+    "energy": "patient, encouraging, playful",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
-    "accessories": "simple wristband or volunteer lanyard at wrist only"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "soft cardigan",
+      "fabric": "cotton knit",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled once to mid-forearm",
+      "accent_trim_hex": "#9575CD",
+      "accent_trim_placement": "cuff rib trim"
+    },
+    "accessories": [
+      {
+        "item": "star sticker reward",
+        "color_hex": "#4DB6AC",
+        "placement": "stuck to the desk beside the laptop, not on skin"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Teaching coding to kids",
     "activity_hint": "Educational support",
-    "activity": "Teaching coding to kids",
+    "scene_narrative": "An adult forearm gently guides a smaller child-scale hand toward a laptop trackpad, where a colorful block-based coding screen glows with simple lavender and yellow shapes. A teal star sticker rewards progress on the desk. The moment captures patient, playful mentorship — a first coding win, not a formal classroom lecture.",
     "primary_objects": [
-      "laptop with block-code colors",
-      "child-size hands smaller scale",
-      "star sticker reward"
+      {
+        "name": "laptop with block-code colors",
+        "material": "matte plastic shell",
+        "color_hex": "#E8E8E8",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "screen shows stacked colorful block shapes snapping together, no readable text"
+      },
+      {
+        "name": "child-scale hand",
+        "material": "smaller proportioned forearm and hand",
+        "color_hex": "#D9A876",
+        "size_relative": "small — nested beside the adult hand",
+        "detail": "index finger extended, mid-tap on a lavender code block"
+      },
+      {
+        "name": "star sticker reward",
+        "material": "matte paper sticker",
+        "color_hex": "#4DB6AC",
+        "size_relative": "small accent",
+        "detail": "simple five-point star, 2px outline, resting on the desk"
+      },
+      {
+        "name": "classroom table edge",
+        "material": "painted wood",
+        "color_hex": "#D7B896",
+        "size_relative": "background anchor",
+        "detail": "simple flat plank, no signage"
+      }
     ],
-    "environment": "classroom table",
-    "symbolic": false
+    "environment": "light classroom table surface strip across bottom third — fades to transparent at edges",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Teaching coding to kids",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "converging guidance line from adult hand to child hand at the trackpad",
+    "focal_hierarchy": [
+      "laptop code-block screen",
+      "child hand tapping block",
+      "adult guiding hand",
+      "star sticker accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: both hands",
+      "midground: laptop",
+      "background: table edge only — no wall"
+    ],
+    "thumbnail_readability": "laptop silhouette + two differently sized hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Teaching coding to kids. Subject focus: Teaching coding to kids. Props: laptop with block-code colors, child-size hands smaller scale, star sticker reward. Environment: classroom table. Pose: mentored learning. Camera: three-quarter top-down, centered. Left hand: adult hand guides child hand on trackpad. Right hand: child hand clicks colorful code block. Clothes: soft cardigan or volunteer vest sleeves, warm tones. Accessories: simple wristband or volunteer lanyard at wrist only. Colors — RIASEC Social: accent #9575CD, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: lavender code blocks, lavender teacher cardigan. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: patient, fun. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, coding platform brand, letter S, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, formal lecture hall, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Teaching coding to kids\". Style: flat vector, 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: an adult forearm gently guides a smaller child-scale hand toward a laptop trackpad on a classroom table. The screen shows stacked block-code shapes in lavender #9575CD and yellow #FFD54F, no readable text. A teal #4DB6AC star sticker rests on the desk beside it. Soft steel-blue cardigan sleeve rolled to mid-forearm with lavender cuff trim. Warm medium skin tones #C8956C (adult) and lighter #D9A876 (child). Three-quarter top-down camera, hands in lower half. Mood: patient, playful mentorship."
 }

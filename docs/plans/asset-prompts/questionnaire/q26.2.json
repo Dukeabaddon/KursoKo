@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q26 option 2 — Planning city recycling programs",
   "questionnaire": {
     "question_id": 26,
+    "question_text": "Which construction project excites you?",
     "option_key": "2",
     "slot": "26.2",
     "choice_text": "Planning city recycling programs",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under clipboard and bin lids — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle paper-grain suggestion on clipboard sheet via 3 parallel lines max",
+    "mood": "tidy, systems-minded civic planning — organized environmental care, not a chore",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter C on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "trash pile or littered background",
+      "full human figure or face",
+      "photorealistic reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
     "riasec_type": "Conventional",
-    "accent": "#81D4FA",
-    "secondary": "#4B2C7F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "sky-blue arrow paths",
-      "sky-blue municipal shirt"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#81D4FA",
+        "name": "sky blue",
+        "use": "route-map line, clipboard clip, bin lid rim"
+      },
+      "secondary": {
+        "hex": "#4B2C7F",
+        "name": "deep indigo",
+        "use": "second bin lid, pencil barrel"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "clipboard board", "hex": "#8D6E63" },
+        { "name": "route-map sheet", "hex": "#FDFCF8" },
+        { "name": "paper bin lid", "hex": "#81D4FA" },
+        { "name": "glass bin lid", "hex": "#4DB6AC" },
+        { "name": "color-tag dot", "hex": "#FFD54F" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint cool #F2FAFF highlight on knuckle tops only",
+    "accent_rule": "sky-blue appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on bin lid rims and pencil tip",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and clipboard base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "drops paper icon in bin",
-    "right_hand": "draws collection route arrow",
-    "gesture": "recycling program design",
-    "energy": "focused, approachable",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "holds a clipboard showing a simple city route-map diagram",
+      "grip": "flat palm supporting clipboard underside, fingers along edge",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "places a small color-coded tag dot onto a miniature bin lid",
+      "grip": "precision pinch between thumb and index finger",
+      "position": "center-right, hovering over bin lid row"
+    },
+    "gesture_summary": "mid-planning freeze frame — one tag being placed",
+    "energy": "focused, organized, civic-minded planner",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "pressed office shirt sleeves, crisp cuffs",
-    "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "pressed button-up shirt",
+      "fabric": "smooth cotton poplin",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled twice to mid-forearm",
+      "accent_trim_hex": "#81D4FA",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "slim wristwatch",
+        "color_hex": "#8D6E63",
+        "placement": "left wrist only, simple round face with no readable numerals"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Planning city recycling programs",
     "activity_hint": "Environmental systems",
-    "activity": "Planning city recycling programs",
+    "scene_narrative": "A pair of forearms plans a neighborhood recycling route: one hand holds a clipboard with a simple line-diagram map, the other places a color-coded tag onto one of three miniature bin lids lined up on the table. The scene reads as tidy, systems-level environmental planning — a civic desk task, not a cleanup chore.",
     "primary_objects": [
-      "three sort bins with icons",
-      "recycling arrows",
-      "route map"
+      {
+        "name": "route-map clipboard",
+        "material": "wood board with paper sheet",
+        "color_hex": "#8D6E63",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "simple looping street-line diagram with three dot stops, no readable text"
+      },
+      {
+        "name": "three miniature bin lids",
+        "material": "matte plastic",
+        "color_hex": "#81D4FA",
+        "size_relative": "medium — arranged in a row",
+        "detail": "sky-blue paper lid, teal glass lid, indigo general lid, each with a simple icon silhouette"
+      },
+      {
+        "name": "color-tag dot",
+        "material": "adhesive sticker",
+        "color_hex": "#FFD54F",
+        "size_relative": "small — pinched in right hand",
+        "detail": "simple flat circle, no text"
+      },
+      {
+        "name": "pencil",
+        "material": "wood with indigo barrel",
+        "color_hex": "#4B2C7F",
+        "size_relative": "small accent — resting on clipboard",
+        "detail": "sharpened tip, 2px outline"
+      }
     ],
-    "environment": "municipal planning desk",
-    "symbolic": false
+    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, cream paper sheet under clipboard",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Planning city recycling programs",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from pencil → clipboard → tag-placing hand",
+    "focal_hierarchy": [
+      "clipboard route-map center mass",
+      "right hand placing tag",
+      "left supporting hand",
+      "bin lid row anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and tag dot",
+      "midground: clipboard and bin lids",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "clipboard silhouette + bin-lid row readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Planning city recycling programs. Subject focus: Planning city recycling programs. Props: three sort bins with icons, recycling arrows, route map. Environment: municipal planning desk. Pose: recycling program design. Camera: three-quarter top-down, centered. Left hand: drops paper icon in bin. Right hand: draws collection route arrow. Clothes: pressed office shirt sleeves, crisp cuffs. Accessories: pen clipped to shirt pocket at chest edge (no face). Colors — RIASEC Conventional: accent #81D4FA, secondary #4B2C7F, skin warm neutral medium, outline #2D2D2D. Accent on: sky-blue arrow paths, sky-blue municipal shirt. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, trash pile, litter, industrial horror, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Planning city recycling programs\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with rolled steel-blue shirt sleeves and sky-blue #81D4FA cuff trim planning a recycling route on a light birch desk. Left hand holds a wooden clipboard showing a simple looping street-line map with three dot stops (no readable text). Right hand places a small yellow #FFD54F color-tag dot onto one of three miniature bin lids lined up — sky-blue paper lid, teal glass lid, indigo #4B2C7F general lid. An indigo pencil rests on the clipboard. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: tidy, organized civic environmental planning, not a cleanup chore. Readable silhouette at small thumbnail size."
 }

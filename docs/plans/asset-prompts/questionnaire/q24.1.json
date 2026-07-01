@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q24 option 1 — Counseling at-risk youth",
   "questionnaire": {
     "question_id": 24,
+    "question_text": "Which community work appeals more?",
     "option_key": "1",
     "slot": "24.1",
     "choice_text": "Counseling at-risk youth",
@@ -23,81 +25,177 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and hero prop — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle desk-surface grain suggestion via 2-3 parallel lines max",
+    "mood": "friendly career-education energy — approachable and encouraging, not corporate stock photo",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter S on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "brand logos",
+      "full human figure or face",
+      "distressing or graphic imagery",
+      "photorealistic metal or skin reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
     "riasec_type": "Social",
-    "accent": "#9575CD",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "lavender bench slat accent",
-      "lavender soft sleeves"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "bench slat accent, cardigan cuff trim"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "teal",
+        "use": "notebook cover accent"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        {
+          "name": "park bench",
+          "hex": "#D7B896"
+        },
+        {
+          "name": "bench slat accent",
+          "hex": "#9575CD"
+        },
+        {
+          "name": "notebook cover",
+          "hex": "#4DB6AC"
+        },
+        {
+          "name": "second sleeve edge",
+          "hex": "#9E9E9E"
+        }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "accent color appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "faint warm highlight along the bench edge and open palm",
+    "shadow": "flat #2D2D2D at 10% opacity under hands and bench slat — kept soft and calm"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "open relaxed palm offered",
-    "right_hand": "second person hand reaching to accept support — no faces",
-    "gesture": "supportive listening pose",
-    "energy": "calm, safe",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "rests open and relaxed, palm up in a supportive offer",
+      "grip": "loose open palm, fingers gently curved",
+      "position": "lower-left quadrant, resting on the bench"
+    },
+    "right_hand": {
+      "action": "a second hand reaches in gently to meet it, forearm only",
+      "grip": "soft open reach, fingertips just touching",
+      "position": "center-right, entering from off-frame"
+    },
+    "gesture_summary": "quiet supportive freeze frame — a gentle reach for connection, not a full handshake",
+    "energy": "calm, safe, quietly warm",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
-    "accessories": "simple wristband or volunteer lanyard at wrist only"
+    "visible_parts": "forearms and rolled or cuffed sleeves only",
+    "top": {
+      "garment": "soft cardigan",
+      "fabric": "brushed cotton knit",
+      "color_hex": "#8A9BAE",
+      "sleeve_style": "loose, pushed up to mid-forearm",
+      "accent_trim_hex": "#9575CD",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "woven wristband",
+        "color_hex": "#9575CD",
+        "placement": "left wrist only"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Counseling at-risk youth",
     "activity_hint": "Social work",
-    "activity": "Counseling at-risk youth",
+    "scene_narrative": "Two forearms meet gently near the edge of a park bench — one hand resting open and offered, the other reaching in softly from off-frame to meet it. A small closed notebook sits nearby, unopened. The scene is quiet and safe: a moment of trust and support, calm and hopeful rather than heavy or sad.",
     "primary_objects": [
-      "park bench edge",
-      "open palm gesture",
-      "small notebook closed"
+      {
+        "name": "open palm gesture",
+        "material": "flat illustrated hand shape",
+        "color_hex": "#C8956C",
+        "size_relative": "hero — 30% of visual mass",
+        "detail": "relaxed open palm resting on the bench, warm and inviting"
+      },
+      {
+        "name": "small notebook",
+        "material": "cloth-bound paper",
+        "color_hex": "#4DB6AC",
+        "size_relative": "small — resting beside the hands",
+        "detail": "closed, simple cover, no visible writing"
+      },
+      {
+        "name": "park bench edge",
+        "material": "painted wood slats",
+        "color_hex": "#D7B896",
+        "size_relative": "background anchor",
+        "detail": "two visible slats with a soft lavender accent stripe"
+      }
     ],
-    "environment": "quiet park — symbolic safe space",
-    "symbolic": true
+    "environment": "quiet park bench surface strip across bottom third, soft daylight atmosphere — fades to transparent at edges, symbolic safe space rather than a literal street scene",
+    "symbolic": true,
+    "sensitive_handling": "Treat as symbolic support, not a depiction of hardship. No distressed body language, no tears, no confrontation. Keep the mood calm, safe, and hopeful — two hands meeting gently is enough; do not add sad facial cues (faces are excluded anyway) or dark clothing."
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Counseling at-risk youth",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "gentle curved line from resting hand → reaching hand → notebook",
+    "focal_hierarchy": [
+      "open palm center mass",
+      "reaching second hand",
+      "notebook accent",
+      "bench slat anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: two hands meeting",
+      "midground: notebook",
+      "background: bench edge only — no street or crowd"
+    ],
+    "thumbnail_readability": "two open hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Counseling at-risk youth. Subject focus: Counseling at-risk youth. Props: park bench edge, open palm gesture, small notebook closed. Environment: quiet park — symbolic safe space. Pose: supportive listening pose. Camera: three-quarter top-down, centered. Left hand: open relaxed palm offered. Right hand: second person hand reaching to accept support — no faces. Clothes: soft cardigan or volunteer vest sleeves, warm tones. Accessories: simple wristband or volunteer lanyard at wrist only. Colors — RIASEC Social: accent #9575CD, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: lavender bench slat accent, lavender soft sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: calm, safe. Safe margin 40px. Symbolic hopeful tone only — no distress, no graphic medical or crisis imagery."
+  "generation": {
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6",
+      "Ideogram"
+    ],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, crying face, violence, weapon, distressing imagery, dark alley, factory, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Counseling at-risk youth\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands and hero prop only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: Two forearms meet gently near the edge of a park bench — one hand resting open and offered, the other reaching in softly from off-frame to meet it. A small closed notebook sits nearby, unopened. The scene is quiet and safe: a moment of trust and support, calm and hopeful rather than heavy or sad. Objects: open palm gesture (flat illustrated hand shape, #C8956C): relaxed open palm resting on the bench, warm and inviting; small notebook (cloth-bound paper, #4DB6AC): closed, simple cover, no visible writing; park bench edge (painted wood slats, #D7B896): two visible slats with a soft lavender accent stripe. Left hand rests open and relaxed, palm up in a supportive offer (loose open palm, fingers gently curved). Right hand a second hand reaches in gently to meet it, forearm only (soft open reach, fingertips just touching). Clothing: soft cardigan in brushed cotton knit, color #8A9BAE, loose, pushed up to mid-forearm, accent trim #9575CD at thin stripe on cuff fold. Accessories: woven wristband (#9575CD) — left wrist only. Warm medium skin tone #C8956C. Accent color #9575CD on bench slat accent, cardigan cuff trim; secondary #4DB6AC on notebook cover accent. Camera: three-quarter top-down, 20° tilt toward viewer, medium-close — hands occupy lower 55% of frame. Environment: quiet park bench surface strip across bottom third, soft daylight atmosphere — fades to transparent at edges, symbolic safe space rather than a literal street scene. Mood: calm, safe, quietly warm, friendly career-education energy — approachable and encouraging, not corporate stock photo. Generous transparent margins, readable silhouette at small thumbnail size."
 }

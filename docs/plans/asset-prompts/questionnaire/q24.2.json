@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q24 option 2 — Designing inclusive playgrounds",
   "questionnaire": {
     "question_id": 24,
+    "question_text": "Which community work appeals more?",
     "option_key": "2",
     "slot": "24.2",
     "choice_text": "Designing inclusive playgrounds",
@@ -23,82 +25,176 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and hero prop — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle desk-surface grain suggestion via 2-3 parallel lines max",
+    "mood": "friendly career-education energy — approachable and encouraging, not corporate stock photo",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter A on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "brand logos",
+      "full human figure or face",
+      "photorealistic metal or skin reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
     "riasec_type": "Artistic",
-    "accent": "#FFD54F",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "yellow swing seat accent",
-      "yellow designer sleeves"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FFD54F",
+        "name": "sunflower yellow",
+        "use": "swing seat accent, hoodie cuff trim"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "ramp icon accent"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        {
+          "name": "site plan paper",
+          "hex": "#FDFCF8"
+        },
+        {
+          "name": "swing seat",
+          "hex": "#FFD54F"
+        },
+        {
+          "name": "ramp icon",
+          "hex": "#9575CD"
+        },
+        {
+          "name": "color pencils",
+          "hex": "#FF8A65"
+        }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "accent color appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on the swing model and pencil tips",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and site plan"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "places swing model on plan",
-    "right_hand": "draws ramp curve on plan",
-    "gesture": "inclusive design planning",
-    "energy": "focused, approachable",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "places a small wheelchair-accessible swing model onto the site plan",
+      "grip": "gentle pinch grip on the model base",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "draws a smooth ramp curve with a color pencil",
+      "grip": "precision pencil grip",
+      "position": "center-right, tracing across the plan"
+    },
+    "gesture_summary": "mid-design freeze frame — a ramp curve being sketched into place",
+    "energy": "focused, playful, quietly proud",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "loose creative hoodie sleeves with light paint splatter",
-    "accessories": "woven friendship bracelet or paint on fingers"
+    "visible_parts": "forearms and rolled or cuffed sleeves only",
+    "top": {
+      "garment": "loose creative hoodie",
+      "fabric": "soft cotton fleece",
+      "color_hex": "#7A8FA6",
+      "sleeve_style": "pushed up to mid-forearm with a light paint splatter",
+      "accent_trim_hex": "#FFD54F",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "woven friendship bracelet",
+        "color_hex": "#FFD54F",
+        "placement": "left wrist only"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Designing inclusive playgrounds",
     "activity_hint": "Accessible design",
-    "activity": "Designing inclusive playgrounds",
+    "scene_narrative": "A pair of forearms leans over a rolled-out site plan, one hand setting down a small wheelchair-accessible swing model, the other sketching a smooth ramp curve with a color pencil. A little cluster of color pencils rests nearby. The mood is playful and purposeful — inclusive design, not a sterile blueprint desk.",
     "primary_objects": [
-      "site plan",
-      "wheelchair-accessible swing model",
-      "ramp icon",
-      "color pencils"
+      {
+        "name": "site plan",
+        "material": "rolled paper",
+        "color_hex": "#FDFCF8",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "simple abstract layout lines and shapes, no readable labels"
+      },
+      {
+        "name": "accessible swing model",
+        "material": "painted wood miniature",
+        "color_hex": "#FFD54F",
+        "size_relative": "medium — held in left hand",
+        "detail": "swing seat with simple side supports, wheelchair-friendly platform shape"
+      },
+      {
+        "name": "color pencils",
+        "material": "painted wood",
+        "color_hex": "#FF8A65",
+        "size_relative": "small accents",
+        "detail": "three pencils fanned out, sharpened tips, no brand text"
+      }
     ],
-    "environment": "architect desk",
-    "symbolic": false
+    "environment": "architect desk surface strip across bottom third — fades to transparent at edges, no wall",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Designing inclusive playgrounds",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from pencils → site plan → swing model",
+    "focal_hierarchy": [
+      "site plan center mass",
+      "left hand placing swing model",
+      "right hand drawing ramp",
+      "pencil accents"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and swing model",
+      "midground: site plan",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "swing model silhouette + hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Designing inclusive playgrounds. Subject focus: Designing inclusive playgrounds. Props: site plan, wheelchair-accessible swing model, ramp icon, color pencils. Environment: architect desk. Pose: inclusive design planning. Camera: three-quarter top-down, centered. Left hand: places swing model on plan. Right hand: draws ramp curve on plan. Clothes: loose creative hoodie sleeves with light paint splatter. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow swing seat accent, yellow designer sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+  "generation": {
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6",
+      "Ideogram"
+    ],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, factory, industrial horror, guns, blood, readable blueprint text, wheelchair user face"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Designing inclusive playgrounds\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands and hero prop only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: A pair of forearms leans over a rolled-out site plan, one hand setting down a small wheelchair-accessible swing model, the other sketching a smooth ramp curve with a color pencil. A little cluster of color pencils rests nearby. The mood is playful and purposeful — inclusive design, not a sterile blueprint desk. Objects: site plan (rolled paper, #FDFCF8): simple abstract layout lines and shapes, no readable labels; accessible swing model (painted wood miniature, #FFD54F): swing seat with simple side supports, wheelchair-friendly platform shape; color pencils (painted wood, #FF8A65): three pencils fanned out, sharpened tips, no brand text. Left hand places a small wheelchair-accessible swing model onto the site plan (gentle pinch grip on the model base). Right hand draws a smooth ramp curve with a color pencil (precision pencil grip). Clothing: loose creative hoodie in soft cotton fleece, color #7A8FA6, pushed up to mid-forearm with a light paint splatter, accent trim #FFD54F at thin stripe on cuff fold. Accessories: woven friendship bracelet (#FFD54F) — left wrist only. Warm medium skin tone #C8956C. Accent color #FFD54F on swing seat accent, hoodie cuff trim; secondary #9575CD on ramp icon accent. Camera: three-quarter top-down, 20° tilt toward viewer, medium-close — hands occupy lower 55% of frame. Environment: architect desk surface strip across bottom third — fades to transparent at edges, no wall. Mood: focused, playful, quietly proud, friendly career-education energy — approachable and encouraging, not corporate stock photo. Generous transparent margins, readable silhouette at small thumbnail size."
 }

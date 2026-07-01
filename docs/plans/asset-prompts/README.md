@@ -37,14 +37,17 @@ Optional: skip steps 3–4 if reusing `src/assets/landing/placeholders/blobs/*.p
 
 ## Questionnaire choices (60 scenes)
 
-**Folder:** `questionnaire/` — flat `q01.1.json` … `q30.2.json` + `manifest.json`
+**Folder:** `questionnaire/` — **v3 JSON is source of truth** (`q01.1.json` … `q30.2.json`)
 
 | Spec | Value |
 |------|--------|
-| Style | Flat vector scene — **no letter, no border** (RIASEC vibe minus frame) |
+| Schema | `questionnaire/_schema-v3.json` |
+| Gold example | `questionnaire/q01.1.json` |
+| Style | Flat vector scene — **no letter, no border** |
 | Size | 640×640 PNG → `src/assets/questionnaire/NN.M.png` |
-| People | Hands only · neutral locale · subtle RIASEC accent |
 
-**Regenerate prompts:** `python3 scripts/generate-questionnaire-prompts.py`
+**Edit:** change JSON files directly. Rebuild index: `python3 scripts/build-questionnaire-manifest.py`
 
-**After PNGs:** tell agent `wire questionnaire assets` (update `Questionnaire.jsx` imports).
+**Deprecated:** `generate-questionnaire-prompts.py` / `questionnaire_choice_specs.py` — do not use.
+
+**After PNGs:** tell agent `wire questionnaire assets`.

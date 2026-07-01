@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q1 option 2 — Analyzing patterns in stock market data",
   "questionnaire": {
     "question_id": 1,
+    "question_text": "Which task would you enjoy more?",
     "option_key": "2",
     "slot": "1.2",
     "choice_text": "Analyzing patterns in stock market data",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under tablet and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; faint dot-grid texture on printed chart paper via 3 rows max",
+    "mood": "curious analytical energy — approachable data-nerd hobby, not corporate trading floor",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter I on image",
+      "die-cut sticker border or white card frame",
+      "readable text, numbers, or ticker symbols",
+      "brand logos on devices",
+      "full human figure or face",
+      "photorealistic screen glare",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "I",
     "riasec_type": "Investigative",
-    "accent": "#4B2C7F",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "purple highlight on selected chart bars",
-      "purple sweater cuff"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#4B2C7F",
+        "name": "KursoKo deep violet",
+        "use": "selected candlestick bars, stylus tip band, sweater cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "teal",
+        "use": "upward trend line, magnifying glass rim accent"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "tablet chassis", "hex": "#3A3A3A" },
+        { "name": "tablet screen background", "hex": "#EDEBFB" },
+        { "name": "printed chart paper", "hex": "#FDFCF8" },
+        { "name": "stylus barrel", "hex": "#E8E8E8" },
+        { "name": "magnifying glass frame", "hex": "#D4A84B" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint cool #F0F4FF highlight on knuckle tops only",
+    "accent_rule": "violet appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on tablet corner and magnifying lens glass",
+    "shadow": "flat #2D2D2D at 12% opacity under tablet and hands"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "holds tablet at readable angle",
-    "right_hand": "traces upward trend with stylus tip",
-    "gesture": "analytical point-and-study",
-    "energy": "curious, analytical",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "holds a printed chart sheet flat against the desk edge",
+      "grip": "flat palm and splayed fingers pinning the paper corner",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "traces an ascending zigzag trend line on the tablet with a stylus",
+      "grip": "precision pen grip, stylus tip touching screen",
+      "position": "center-right, hovering over tablet surface"
+    },
+    "gesture_summary": "mid-analysis freeze frame — stylus mid-stroke on a rising trend",
+    "energy": "focused, curious, analytical",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
-    "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "fine-knit crew sweater",
+      "fabric": "soft ribbed knit",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "pushed up to mid-forearm",
+      "accent_trim_hex": "#4B2C7F",
+      "accent_trim_placement": "thin pinstripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "thin wire-frame reading glasses",
+        "color_hex": "#2D2D2D",
+        "placement": "folded, resting on desk beside tablet — not worn on a face"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Analyzing patterns in stock market data",
     "activity_hint": "Data investigation",
-    "activity": "Analyzing stock market patterns",
+    "scene_narrative": "A pair of hands cross-references a printed candlestick chart against a live trend line on a tablet, magnifying glass poised over a cluster of highlighted bars. The desk is otherwise bare, keeping focus on the moment of spotting a pattern. The scene reads as quiet analytical discovery, not a chaotic trading floor.",
     "primary_objects": [
-      "tablet with candlestick chart",
-      "stylus",
-      "small trend-line overlay"
+      {
+        "name": "tablet with candlestick chart",
+        "material": "matte glass and aluminum",
+        "color_hex": "#3A3A3A",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "lavender-tinted screen with abstract candlestick bars and one violet highlighted cluster"
+      },
+      {
+        "name": "printed chart sheet",
+        "material": "paper",
+        "color_hex": "#FDFCF8",
+        "size_relative": "medium — held flat by left hand",
+        "detail": "faint dot-grid lines with a hand-drawn teal trend curve, no readable numbers"
+      },
+      {
+        "name": "magnifying glass",
+        "material": "glass lens with brass ring",
+        "color_hex": "#D4A84B",
+        "size_relative": "small — hovering above chart",
+        "detail": "circular lens subtly enlarging one bar cluster"
+      },
+      {
+        "name": "stylus",
+        "material": "matte plastic",
+        "color_hex": "#E8E8E8",
+        "size_relative": "small — pinched in right hand",
+        "detail": "violet tip band, resting against tablet glass"
+      }
     ],
-    "environment": "minimal desk edge, soft lavender tint on tablet bezel only",
-    "symbolic": false
+    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, no wall or window",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Analyzing stock market patterns",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from printed chart → magnifying glass → tablet trend line",
+    "focal_hierarchy": [
+      "tablet trend line center mass",
+      "right hand tracing with stylus",
+      "left hand steadying printed chart",
+      "magnifying glass accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and stylus",
+      "midground: tablet and magnifying glass",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "tablet silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Analyzing patterns in stock market data. Subject focus: Analyzing stock market patterns. Props: tablet with candlestick chart, stylus, small trend-line overlay. Environment: minimal desk edge, soft lavender tint on tablet bezel only. Pose: analytical point-and-study. Camera: three-quarter top-down, centered. Left hand: holds tablet at readable angle. Right hand: traces upward trend with stylus tip. Clothes: long lab-coat or knit sweater sleeves, neat cuffs. Accessories: optional nitrile gloves or safety glasses on forehead edge (no face). Colors — RIASEC Investigative: accent #4B2C7F, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: purple highlight on selected chart bars, purple sweater cuff. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: curious, analytical. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter I, ticker symbols, readable numbers, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, trading floor crowd, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Analyzing patterns in stock market data\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft-knit steel-blue sweater with violet cuff pinstripe. Left hand pins a printed chart sheet with a faint teal trend curve flat on a birch desk edge. Right hand traces an ascending zigzag line on a tablet screen tinted lavender #EDEBFB with a violet #4B2C7F highlighted candlestick cluster, using a light grey stylus. A small brass-rimmed magnifying glass hovers over the highlighted bars. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: focused curious analyst energy, quiet discovery not trading chaos. Readable silhouette at small thumbnail size."
 }

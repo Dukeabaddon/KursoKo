@@ -1,0 +1,183 @@
+{
+  "project": "KursoKo",
+  "asset": "hero_character_cutout",
+  "generation_mode": "text_to_image",
+  "version": "v4",
+  "intent": "Create a new original 3D chibi brand mascot for the KursoKo Filipino career-guidance web app. Stylized vinyl-toy 3D render with bold black outlines — NOT photorealistic, NOT soft NPR without outlines. Original design — not a copy of any existing game, IP, or prior image.",
+  "style_reference": "docs/plans/asset-prompts/hero-character-v3-cutout-spec.json",
+
+  "output": {
+    "format": "PNG with alpha transparency",
+    "width_px": 1024,
+    "height_px": 1365,
+    "aspect_ratio": "3:4 portrait",
+    "framing": "full body, head to both shoes, small padding at top and sides, feet near bottom edge",
+    "background": "fully transparent — no floor, no studio backdrop, no gradient, no shadow blob on ground"
+  },
+
+  "render_style": {
+    "medium": "3D digital character render",
+    "aesthetic": "stylized chibi vinyl toy / mobile-game mascot — toon-shaded 3D with ink outlines",
+    "engine_look": "Blender Freestyle outline + toon BSDF, or Unreal Engine stylized toon avatar with post-process edge detection",
+    "shading_model": "toon-shaded / cel-shaded hybrid — flat color bands on skin and clothing, NOT smooth photoreal gradients",
+    "materials": "matte vinyl toy skin, matte fabric hoodie, matte rubber sneaker soles, matte plastic tablet — zero subsurface scattering, zero skin pores",
+    "edge_treatment": {
+      "required": true,
+      "style": "clean consistent bold BLACK ink-style outlines on full silhouette and major internal features",
+      "weight": "uniform medium stroke — visible at thumbnail size",
+      "coverage": "character perimeter, eyes, mouth, hair facet edges, clothing seams, shoe stripe, tablet edges",
+      "critical": "outlines are NON-NEGOTIABLE — shapes must NOT be defined by lighting alone"
+    },
+    "anti_realism_rules": {
+      "skin": "flat matte vinyl toy surface — 2-tone max shading (base + soft shadow). NO subsurface scattering, NO pore texture, NO realistic jaw sculpt, NO human portrait lighting",
+      "eyes": "flat cartoon eyes — solid dark brown iris fill, 2 white circular catchlights only. NO iris gradient, NO cornea refraction, NO realistic eye depth, NO eyelid fold detail",
+      "overall": "must read as 3D game mascot or vinyl figure — NOT AI portrait, NOT uncanny valley human"
+    },
+    "must_not_look_like": [
+      "photorealistic human portrait",
+      "realistic skin with subsurface scattering",
+      "realistic eyes with depth and gradient iris",
+      "soft NPR render without outlines",
+      "Pixar-style realistic skin",
+      "2D flat anime illustration",
+      "Studio Ghibli painting",
+      "watercolor or soft AI illustration slop",
+      "claymorphism squish toy"
+    ]
+  },
+
+  "failed_generation_anti_patterns": {
+    "description": "Traits from a failed v3 regen that MUST be avoided",
+    "avoid": [
+      "no black outlines — shapes defined only by soft lighting",
+      "realistic medium-tan skin with jawline sculpt and soft portrait shading",
+      "eyes with gradient iris, cornea depth, and realistic specular — looks like human not mascot",
+      "head turned straight toward camera instead of three-quarter left",
+      "body angled 45° right while face looks at viewer — wrong direction",
+      "faint nose shadow suggesting a bridge — nose must be completely absent",
+      "smooth hair without visible low-poly facets"
+    ]
+  },
+
+  "proportions": {
+    "type": "chibi stylized youth / super-deformed",
+    "head_to_body_ratio": "oversized head roughly 2.5× torso height — classic chibi mascot scale",
+    "limbs": "short arms and legs, rounded chunky hands with four visible fingers, compact feet",
+    "age_read": "17–22 college-age student",
+    "build": "slim, friendly, approachable"
+  },
+
+  "pose": {
+    "stance": "standing relaxed, weight evenly on both feet, feet slightly apart",
+    "body_orientation": "three-quarter view — torso turned toward viewer's LEFT",
+    "head_direction": "face turned toward viewer's LEFT in three-quarter profile — NOT facing camera straight-on",
+    "gaze": "looking toward viewer's left, contemplative",
+    "right_arm": "bent at elbow, hand curled into loose fist resting against lower chin — classic thinking gesture",
+    "left_arm": "forearm folded across lower chest, holding tablet vertically against torso",
+    "head_tilt": "very slight tilt, attentive and calm",
+    "expression_energy": "quiet confidence — deciding a career path, not worried"
+  },
+
+  "face": {
+    "skin_tone": {
+      "color": "warm light tan Filipino youth #E8B896",
+      "rendering": "flat matte vinyl — maximum 2 tone bands (base + soft shadow). Toy figure paint, NOT human skin shader"
+    },
+    "eyes": {
+      "shape": "large perfectly round cartoon eyes — flat graphic shapes on 3D head",
+      "color": "solid flat dark brown #3D2314 iris — uniform fill, NO gradient",
+      "highlights": "exactly two white circular catchlights per eye (upper-left glossy dots)",
+      "pupils": "same dark brown as iris or simple black dot — no realistic depth",
+      "lashes": "minimal — single dark upper lash line outlined in black, no heavy mascara",
+      "spacing": "wide friendly spacing, eyes in lower half of face",
+      "forbidden": "realistic iris gradient, cornea refraction, wet-eye look, human eye anatomy, eyelid crease detail"
+    },
+    "eyebrows": "thick dark brown curved brows #2C1810 outlined in black, slightly raised outer ends — thoughtful not angry",
+    "mouth": "small gentle closed smile — single short black-outlined curved line, no lip geometry",
+    "cheeks": "optional very faint flat blush — no realistic blush gradient",
+    "nose": "ABSENT — no nose geometry at all. Smooth uninterrupted flat skin plane between eyes and mouth. No nostrils, no nose bridge, no nose shadow, no nose line, no dot, no faint bridge shadow",
+    "ears": "large rounded cartoon ears protruding at head sides, same flat skin tone, simple inner-ear C curve, black outline"
+  },
+
+  "hair": {
+    "color": "dark chocolate brown #2C1810 base with lighter brown #4A3228 facet highlights on plane tops",
+    "style": "messy short layered cut, blocky geometric fringe",
+    "geometry_critical": "hair MUST read as LOW-POLY 3D SCULPT — large flat angular geometric planes, chunky triangular and trapezoid facets with hard plane breaks and black outlines on facet edges. Mobile game character mesh look",
+    "must_not_be": "soft flowing anime strands, painted illustration locks, wispy Ghibli hair, smooth sculpted hair without visible facets"
+  },
+
+  "wardrobe": {
+    "hoodie": {
+      "type": "oversized pullover hoodie, no zipper",
+      "color": "cream off-white #F5F0E6",
+      "fit": "loose, dropped shoulders, long sleeves bunched slightly at wrists",
+      "hood": "down, resting on upper back — hood outline visible behind neck",
+      "drawstrings": "two thin cream strings with small metal aglets at chest",
+      "kangaroo_pocket": "single large front pouch seam, subtle",
+      "fabric": "matte cotton fleece, flat toon shading in folds — not photoreal fabric",
+      "left_sleeve_logo": {
+        "position": "outer left upper arm only — viewer's right when facing character",
+        "shape": "small six-point star or sun burst",
+        "color": "bright orange #F97316",
+        "size": "about 2cm at scale — small accent, not a large patch"
+      }
+    },
+    "pants": {
+      "type": "straight-leg casual trousers or jeans",
+      "color": "dark navy #1E2A4A",
+      "details": "minimal — single center seam line per leg, slight stack/fold at ankles above shoes",
+      "fit": "regular, not skinny"
+    },
+    "shoes": {
+      "type": "low-top casual sneakers",
+      "upper": "white #FFFFFF smooth leather or canvas",
+      "sole": "thick white rubber platform sole #F0F0F0, about 2cm visible height",
+      "accent": "one horizontal sky-blue stripe #42A5F5 across outer side of each shoe",
+      "laces": "white flat laces, tied in simple bow"
+    }
+  },
+
+  "prop_tablet": {
+    "object": "plain rectangular tablet device — like a small iPad",
+    "color": "dark gunmetal grey #3A3A3A body, slightly lighter grey #555555 screen bezel",
+    "screen": "blank dark grey glass — no icons, no text, no UI, no glow",
+    "orientation": "portrait vertical, held against left side of torso under folded arm",
+    "size": "about half torso height",
+    "must_not_be": "clipboard, paper pad, checklist, notebook, book, phone, laptop"
+  },
+
+  "lighting": {
+    "key_light": "soft diffused studio light from upper-left at 45 degrees",
+    "fill": "gentle ambient fill — flat toon bands, not portrait lighting",
+    "shadows": "simple flat shadow bands in hoodie folds only — not realistic ambient occlusion",
+    "no_ground_shadow": true,
+    "silhouette_read": "comes from black outlines first, rim light second"
+  },
+
+  "forbidden_in_image": [
+    "photorealistic skin or eyes",
+    "missing black outlines",
+    "realistic portrait lighting",
+    "floating clouds or blobs",
+    "stars or sparkles",
+    "speech bubbles",
+    "text or logos except orange sleeve emblem",
+    "clipboard or checkmarks",
+    "visible nose or nose shadow",
+    "background scenery",
+    "other characters",
+    "desk or floor plane",
+    "drop shadow oval under feet"
+  ],
+
+  "visual_reference_description": {
+    "summary": "Standalone 3D chibi boy mascot — vinyl-toy toon-shaded render with BOLD BLACK OUTLINES on silhouette and features. Faceted low-poly hair, flat cartoon eyes (no realistic depth), flat vinyl skin (no pores), face with eyes and mouth only (no nose). Thinking pose facing left, tablet under left arm, cream hoodie with orange sun on left sleeve, navy pants, white sneakers with blue stripe. Transparent background.",
+    "silhouette": "chunky chibi outline with visible black ink perimeter — big round head, wide hoodie shoulders, narrow ankles, sneakers at bottom",
+    "color_palette": ["cream #F5F0E6", "navy #1E2A4A", "orange #F97316", "white #FFFFFF", "blue #42A5F5", "dark brown hair #2C1810", "warm tan skin #E8B896", "grey tablet #3A3A3A", "black outline #1A1A1A"],
+    "quality_bar": "clean app-store marketing asset — crisp black outlines, flat toon shading, reads as 3D vinyl mascot NOT realistic human"
+  },
+
+  "prompt": "Create an original 3D chibi brand mascot for Filipino career-guidance app KursoKo. New original design, not any existing game or copyrighted character.\n\nSTYLE — CRITICAL: 3D toon-shaded vinyl toy mascot with BOLD BLACK INK OUTLINES on full silhouette, eyes, mouth, hair facets, clothing seams, and props. Blender Freestyle / toon-shader look. Flat cel-shaded color bands — NOT photorealistic, NOT soft NPR without outlines, NOT Pixar realistic skin.\n\nSKIN: flat matte vinyl toy surface warm light tan #E8B896 — max 2 tone bands, zero pores, zero subsurface scattering, zero realistic jaw sculpt. Toy figure paint job.\n\nEYES: large perfectly round flat CARTOON eyes — solid flat dark brown #3D2314 iris with NO gradient, exactly 2 white circular catchlights per eye. NO cornea depth, NO realistic iris, NO wet human eye look. Black outline around each eye.\n\nNOSE: COMPLETELY ABSENT — smooth flat skin between eyes and mouth. Zero nose geometry, zero nostrils, zero nose shadow, zero faint bridge shadow.\n\nHAIR: dark chocolate brown low-poly FACETED 3D sculpt — large angular geometric planes, chunky triangular facets with black outlines on edges. Mobile game mesh hair. NOT smooth sculpted hair, NOT anime strands.\n\nPROPORTIONS: chibi super-deformed — head 2.5× torso, short limbs, full body head to sneakers, age 17-22 slim student.\n\nPOSE: standing three-quarter view — body AND face turned toward viewer's LEFT (not facing camera). Right hand fist under chin thinking gesture. Left forearm across chest holding dark grey rectangular tablet vertically (iPad shape, blank screen, NOT clipboard, NOT laptop).\n\nOUTFIT: oversized cream #F5F0E6 pullover hoodie hood down, kangaroo pocket, drawstrings, small bright orange six-point sun on LEFT upper sleeve only. Dark navy #1E2A4A straight-leg pants. White sneakers thick white sole, one horizontal sky-blue stripe per shoe.\n\nLIGHTING: soft upper-left studio light, flat toon shadow bands — not portrait lighting.\n\nBACKGROUND: transparent PNG, character isolated. No floor, no shadow blob, no scenery.\n\nOUTPUT: 1024×1365 portrait, professional app marketing quality.",
+
+  "negative_prompt": "photorealistic, realistic skin, realistic eyes, iris gradient, cornea refraction, subsurface scattering, skin pores, portrait lighting, human portrait, uncanny valley, Pixar realistic, soft NPR without outlines, no outlines, outline-free render, missing black outlines, nose, nostrils, nose bridge, nose shadow, faint nose shadow, 2D flat anime, manga, Studio Ghibli, watercolor, AI slop, smooth hair without facets, anime hair strands, clipboard, laptop, paper, notebook, face toward camera, head facing viewer straight, clouds, blobs, stars, floor, ground shadow, claymorphism, squishy toy, extra limbs, cropped feet, watermark, text, copyrighted game character, Play Together, copy, clone"
+}

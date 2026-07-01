@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q17 option 2 — Creating public space murals",
   "questionnaire": {
     "question_id": 17,
+    "question_text": "Which social service appeals more?",
     "option_key": "2",
     "slot": "17.2",
     "choice_text": "Creating public space murals",
@@ -23,81 +25,167 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under tray and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; scattered paint-fleck dots on sleeve via 4 dots max",
+    "mood": "joyful expressive street-art energy — approachable public creativity, not vandalism",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter A on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "graffiti tags or gang symbols",
+      "full human figure or face",
+      "photorealistic render",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
     "riasec_type": "Artistic",
-    "accent": "#FFD54F",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "yellow sun motif on wall",
-      "yellow paint on roller"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FFD54F",
+        "name": "sunshine yellow",
+        "use": "mural sun motif, wet roller paint"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "mural triangle accents, paint-fleck sleeve dots"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "mural wall base", "hex": "#EDEBFB" },
+        { "name": "paint roller head", "hex": "#FFD54F" },
+        { "name": "roller handle", "hex": "#D7B896" },
+        { "name": "paint tray", "hex": "#9E9E9E" },
+        { "name": "paint fleck accent", "hex": "#9575CD" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops and wet paint",
+    "accent_rule": "yellow appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on wet roller paint and tray rim",
+    "shadow": "flat #2D2D2D at 12% opacity under tray and hands"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "guides roller upward",
-    "right_hand": "holds tray steady",
-    "gesture": "mural painting",
-    "energy": "focused, approachable",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "guides the paint roller upward across the mural wall",
+      "grip": "full-hand grip on the roller handle",
+      "position": "upper-left quadrant, arm extended"
+    },
+    "right_hand": {
+      "action": "holds the paint tray steady below",
+      "grip": "fingers curled under the tray lip",
+      "position": "lower-right quadrant"
+    },
+    "gesture_summary": "mid-stroke freeze frame — roller gliding upward across the wall",
+    "energy": "joyful, focused, expressive",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "paint-covered street-art sleeves",
-    "accessories": "woven friendship bracelet or paint on fingers"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "loose creative hoodie",
+      "fabric": "brushed cotton fleece",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "pushed to mid-forearm, paint-flecked",
+      "accent_trim_hex": "#FFD54F",
+      "accent_trim_placement": "paint smear near cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "woven friendship bracelet",
+        "color_hex": "#9575CD",
+        "placement": "left wrist only"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Creating public space murals",
     "activity_hint": "Urban art",
-    "activity": "Creating public space murals",
+    "scene_narrative": "A pair of paint-flecked hands guides a roller upward across a mural wall bursting with bold geometric shapes and a yellow sun motif, while the other hand steadies a paint tray below. The scene reads as joyful public art in progress, not vandalism.",
     "primary_objects": [
-      "paint roller",
-      "mural wall section with bold geometric shapes",
-      "paint tray"
+      {
+        "name": "mural wall section",
+        "material": "painted concrete panel",
+        "color_hex": "#EDEBFB",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "bold geometric sun motif in yellow with lavender triangle accents, one fresh roller stroke visible"
+      },
+      {
+        "name": "paint roller",
+        "material": "foam roller head on wood handle",
+        "color_hex": "#FFD54F",
+        "size_relative": "medium — gripped in left hand",
+        "detail": "wet yellow paint coating, minimal drips"
+      },
+      {
+        "name": "paint tray",
+        "material": "plastic",
+        "color_hex": "#9E9E9E",
+        "size_relative": "small — steadied by right hand",
+        "detail": "shallow pool of yellow paint"
+      },
+      {
+        "name": "paint fleck accents",
+        "material": "dried paint spatter",
+        "color_hex": "#9575CD",
+        "size_relative": "small accent on sleeve",
+        "detail": "scattered small dots, decorative not messy"
+      }
     ],
-    "environment": "outdoor wall panel",
-    "symbolic": false
+    "environment": "outdoor wall panel strip across bottom two-thirds — fades to transparent at edges, no street or crowd",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Creating public space murals",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "vertical workflow line from paint tray up through roller to the mural sun motif",
+    "focal_hierarchy": [
+      "mural sun motif center mass",
+      "left hand rolling upward",
+      "paint tray anchor",
+      "paint fleck accents"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands, roller, and tray",
+      "midground: mural wall section",
+      "background: wall edge only — no street"
+    ],
+    "thumbnail_readability": "mural sun motif + roller hand readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Creating public space murals. Subject focus: Creating public space murals. Props: paint roller, mural wall section with bold geometric shapes, paint tray. Environment: outdoor wall panel. Pose: mural painting. Camera: three-quarter top-down, centered. Left hand: guides roller upward. Right hand: holds tray steady. Clothes: paint-covered street-art sleeves. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow sun motif on wall, yellow paint on roller. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter A, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, graffiti tagging, vandalism, gang symbols, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Creating public space murals\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a paint-flecked steel-blue hoodie with yellow #FFD54F cuff smear. Left hand grips a roller mid-stroke, rolling wet yellow paint upward across a lavender-and-yellow geometric sun mural. Right hand steadies a grey paint tray with a shallow pool of yellow paint. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, sunlit outdoor wall panel fading to transparent. Mood: joyful expressive street-art energy, playful public creativity not vandalism. Readable silhouette at small thumbnail size."
 }

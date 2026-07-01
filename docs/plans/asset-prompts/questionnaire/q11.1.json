@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q11 option 1 — Producing music tracks",
   "questionnaire": {
     "question_id": 11,
+    "question_text": "Which creative project interests you?",
     "option_key": "1",
     "slot": "11.1",
     "choice_text": "Producing music tracks",
@@ -17,87 +19,178 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under keyboard and forearms — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle brushed-fleece hatch on hoodie cuff via 3 parallel lines max",
+    "mood": "creative bedroom-studio energy — approachable hobby music-making, not a professional stage",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter A on image",
+      "die-cut sticker border or white card frame",
+      "readable text, app UI labels, or DAW logos",
+      "brand logos on keyboard or laptop",
+      "full human figure or face",
+      "photorealistic screen glare",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
     "riasec_type": "Artistic",
-    "accent": "#FFD54F",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "yellow waveform peaks",
-      "yellow hoodie with headphone cable"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FFD54F",
+        "name": "KursoKo sunshine yellow",
+        "use": "waveform peaks on laptop screen, hoodie drawstring tips, key-strip glow"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "headphone ear cushion, friendship bracelet threads"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "keyboard body", "hex": "#3A3A3A" },
+        { "name": "keyboard keys", "hex": "#FDFCF8" },
+        { "name": "laptop shell", "hex": "#E8E8E8" },
+        { "name": "headphone cable", "hex": "#4DB6AC" },
+        { "name": "guitar pick accent", "hex": "#FF8A65" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "yellow appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on laptop lid edge and keyboard key tops",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and keyboard base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "plays chord on keys",
-    "right_hand": "adjusts laptop slider",
-    "gesture": "music production",
-    "energy": "creative flow",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "presses a three-note chord on the MIDI keys",
+      "grip": "relaxed spread fingers resting on keytops, wrist low",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "slides a volume fader on the laptop trackpad edge",
+      "grip": "precision two-finger pinch on the slider",
+      "position": "center-right, hovering over laptop keyboard"
+    },
+    "gesture_summary": "mid-take freeze frame — playing and mixing at once",
+    "energy": "focused, joyful creative flow",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "loose creative hoodie sleeves with light paint splatter",
-    "accessories": "woven friendship bracelet or paint on fingers"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "oversized creative hoodie",
+      "fabric": "brushed cotton fleece",
+      "color_hex": "#B8AFA3",
+      "sleeve_style": "pushed up loosely to mid-forearm",
+      "accent_trim_hex": "#FFD54F",
+      "accent_trim_placement": "drawstring tips and cuff seam stitch"
+    },
+    "accessories": [
+      {
+        "item": "woven friendship bracelet",
+        "color_hex": "#9575CD",
+        "placement": "left wrist only"
+      },
+      {
+        "item": "faint ink smudge",
+        "color_hex": "#4DB6AC",
+        "placement": "tip of right index finger"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Producing music tracks",
     "activity_hint": "Audio production",
-    "activity": "Producing music tracks",
+    "scene_narrative": "A pair of forearms works a compact home-studio setup on a light desk. One hand presses a chord on a small MIDI keyboard while the other nudges a fader on an open laptop, its screen alive with a bouncing yellow waveform. Headphones rest looped over the desk edge, cable curling toward the laptop. The moment reads as joyful bedroom-producer flow, not a professional recording stage.",
     "primary_objects": [
-      "MIDI keyboard",
-      "laptop with waveform display",
-      "headphones around neck edge only"
+      {
+        "name": "MIDI keyboard",
+        "material": "matte plastic body with textured keys",
+        "color_hex": "#3A3A3A",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "two octaves of white and black keys, thin yellow backlit strip along the top edge"
+      },
+      {
+        "name": "laptop with waveform display",
+        "material": "brushed metal shell",
+        "color_hex": "#E8E8E8",
+        "size_relative": "large — anchors upper-right",
+        "detail": "screen shows an abstract bouncing yellow waveform and colored EQ bars, no readable text"
+      },
+      {
+        "name": "headphones",
+        "material": "matte plastic and foam cushion",
+        "color_hex": "#9575CD",
+        "size_relative": "medium — draped over desk edge",
+        "detail": "coiled teal cable trailing toward the laptop port"
+      },
+      {
+        "name": "guitar pick",
+        "material": "thin plastic",
+        "color_hex": "#FF8A65",
+        "size_relative": "small accent",
+        "detail": "resting beside the keyboard, single rounded triangle shape"
+      }
     ],
-    "environment": "bedroom studio desk",
-    "symbolic": false
+    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Producing music tracks",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from keyboard chord hand → keyboard body → laptop slider hand",
+    "focal_hierarchy": [
+      "MIDI keyboard center mass",
+      "left hand pressing chord",
+      "right hand on laptop fader",
+      "headphones accent shape"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and headphone cable",
+      "midground: keyboard and laptop",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "keyboard silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Producing music tracks. Subject focus: Producing music tracks. Props: MIDI keyboard, laptop with waveform display, headphones around neck edge only. Environment: bedroom studio desk. Pose: music production. Camera: three-quarter top-down, centered. Left hand: plays chord on keys. Right hand: adjusts laptop slider. Clothes: loose creative hoodie sleeves with light paint splatter. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow waveform peaks, yellow hoodie with headphone cable. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: creative flow. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, DAW UI text, letter A, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, stage lighting, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Producing music tracks\". Style: 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two forearms at a home studio desk. Left hand presses a chord on a charcoal MIDI keyboard with a yellow #FFD54F backlit key strip. Right hand pinches a fader on a laptop showing a bouncing yellow waveform, no readable text. Lavender #9575CD headphones drape over the desk edge with a teal cable. Stone-grey hoodie sleeves pushed to mid-forearm, yellow drawstring tips. Warm medium skin #C8956C. Top-down camera, hands in lower half. Mood: joyful bedroom-producer flow."
 }

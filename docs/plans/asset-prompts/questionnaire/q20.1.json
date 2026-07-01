@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q20 option 1 — Mentoring first-generation students",
   "questionnaire": {
     "question_id": 20,
+    "question_text": "Which educational role suits you?",
     "option_key": "1",
     "slot": "20.1",
     "choice_text": "Mentoring first-generation students",
@@ -23,81 +25,167 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under textbook and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle wood-grain suggestion on table via 3 parallel lines max",
+    "mood": "warm patient mentorship energy — approachable support, not a formal lecture",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter S on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "full human figure or face",
+      "photorealistic render",
+      "distressed or crying student imagery",
+      "empty sad classroom mood",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
     "riasec_type": "Social",
-    "accent": "#9575CD",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "lavender bookmark",
-      "lavender mentor cardigan"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "bookmark ribbon, cardigan cuff trim"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "teal",
+        "use": "graduation-cap charm accent"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "textbook cover", "hex": "#5C7A8A" },
+        { "name": "graduation-cap charm", "hex": "#9575CD" },
+        { "name": "bookmark ribbon", "hex": "#9575CD" },
+        { "name": "table wood", "hex": "#D7B896" },
+        { "name": "lanyard", "hex": "#9575CD" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on textbook cover and charm surface",
+    "shadow": "flat #2D2D2D at 12% opacity under textbook and hands"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "slides textbook toward mentee side",
-    "right_hand": "offers cap charm as encouragement",
-    "gesture": "mentorship gift",
-    "energy": "supportive",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "slides the open textbook across the table toward the mentee side",
+      "grip": "flat palm guiding the book's edge",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "offers a small graduation-cap charm as encouragement",
+      "grip": "pinched between thumb and index finger",
+      "position": "center-right, presented forward"
+    },
+    "gesture_summary": "mid-encouragement freeze frame — the charm offered as the book arrives",
+    "energy": "supportive, warm, patient",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
-    "accessories": "simple wristband or volunteer lanyard at wrist only"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "soft knit cardigan",
+      "fabric": "brushed cotton-wool blend",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "loose, pushed to mid-forearm",
+      "accent_trim_hex": "#9575CD",
+      "accent_trim_placement": "thin ribbed cuff trim"
+    },
+    "accessories": [
+      {
+        "item": "volunteer lanyard",
+        "color_hex": "#9575CD",
+        "placement": "looped once at wrist only"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Mentoring first-generation students",
     "activity_hint": "Equity support",
-    "activity": "Mentoring first-generation students",
+    "scene_narrative": "A pair of hands slides an open textbook across a library table toward an unseen mentee while the other offers a small graduation-cap charm as a gesture of encouragement. The scene reads as warm, patient mentorship — a quiet moment of support, not a formal lecture.",
     "primary_objects": [
-      "textbook",
-      "graduation cap charm keychain",
-      "bookmark"
+      {
+        "name": "textbook",
+        "material": "paper with cloth cover",
+        "color_hex": "#5C7A8A",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "open to a page with a simple lavender bookmark ribbon, no readable text"
+      },
+      {
+        "name": "graduation-cap charm",
+        "material": "small enameled metal",
+        "color_hex": "#9575CD",
+        "size_relative": "small — held in right hand",
+        "detail": "tiny mortarboard shape on a keyring loop"
+      },
+      {
+        "name": "bookmark ribbon",
+        "material": "satin ribbon",
+        "color_hex": "#9575CD",
+        "size_relative": "small accent",
+        "detail": "draped across the open textbook page"
+      },
+      {
+        "name": "table edge",
+        "material": "light birch wood",
+        "color_hex": "#D7B896",
+        "size_relative": "background surface",
+        "detail": "simple grain lines, no clutter"
+      }
     ],
-    "environment": "library table",
-    "symbolic": false
+    "environment": "quiet library table strip across bottom third — fades to transparent at edges, no bookshelf wall",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Mentoring first-generation students",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from textbook → bookmark → charm hand",
+    "focal_hierarchy": [
+      "textbook center mass",
+      "right hand offering charm",
+      "left hand sliding textbook",
+      "table edge anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and charm",
+      "midground: textbook and bookmark",
+      "background: library table strip only"
+    ],
+    "thumbnail_readability": "textbook silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Mentoring first-generation students. Subject focus: Mentoring first-generation students. Props: textbook, graduation cap charm keychain, bookmark. Environment: library table. Pose: mentorship gift. Camera: three-quarter top-down, centered. Left hand: slides textbook toward mentee side. Right hand: offers cap charm as encouragement. Clothes: soft cardigan or volunteer vest sleeves, warm tones. Accessories: simple wristband or volunteer lanyard at wrist only. Colors — RIASEC Social: accent #9575CD, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: lavender bookmark, lavender mentor cardigan. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: supportive. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter S, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, distressed or crying student, empty sad classroom, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Mentoring first-generation students\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft steel-blue knit cardigan with lavender #9575CD cuff trim. Left hand slides an open steel-blue textbook with a lavender bookmark ribbon across a birch library table. Right hand pinches a small lavender graduation-cap charm, offering it forward as encouragement. A lavender lanyard loops once at the wrist. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, quiet library table strip fading to transparent. Mood: warm patient supportive mentorship, quiet encouragement not a formal lecture. Readable silhouette at small thumbnail size."
 }

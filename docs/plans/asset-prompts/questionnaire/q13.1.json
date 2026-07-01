@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q13 option 1 — Maintaining drone equipment",
   "questionnaire": {
     "question_id": 13,
+    "question_text": "Which technical challenge excites you?",
     "option_key": "1",
     "slot": "13.1",
     "choice_text": "Maintaining drone equipment",
@@ -17,88 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under drone and forearms — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle brushed-metal suggestion on propeller via 3 parallel lines max",
+    "mood": "curious maker energy — approachable tech hobby, not an industrial repair bay",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter R on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "drone brand logos",
+      "full human figure or face",
+      "photorealistic metal reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "R",
     "riasec_type": "Realistic",
-    "accent": "#4DB6AC",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "teal propeller tips",
-      "teal mechanic gloves"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#4DB6AC",
+        "name": "KursoKo teal",
+        "use": "propeller tips, mechanic glove trim"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "maintenance stand base, small washer accents"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "drone body", "hex": "#E8E8E8" },
+        { "name": "propeller blade", "hex": "#4DB6AC" },
+        { "name": "hex wrench", "hex": "#D4A84B" },
+        { "name": "maintenance stand", "hex": "#9575CD" },
+        { "name": "work glove", "hex": "#9E9E9E" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "teal appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on propeller blade and wrench shaft",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and drone base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "holds drone body on stand",
-    "right_hand": "tightens prop nut with wrench",
-    "gesture": "drone repair",
-    "energy": "focused, approachable",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "steadies the drone body on the maintenance stand",
+      "grip": "spread fingers cradling the underside frame",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "tightens a propeller nut with a hex wrench",
+      "grip": "precision pinch grip on the wrench handle",
+      "position": "center-right, hovering over the propeller hub"
+    },
+    "gesture_summary": "mid-repair freeze frame — one propeller being secured",
+    "energy": "focused, capable, beginner-friendly maker",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
-    "accessories": "optional thin work gloves or tool belt edge visible"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "short-sleeve work shirt",
+      "fabric": "sturdy cotton twill",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled twice to mid-forearm",
+      "accent_trim_hex": "#4DB6AC",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "thin work gloves",
+        "color_hex": "#9E9E9E",
+        "placement": "both hands — fingertips cut out exposing skin for dexterity"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Maintaining drone equipment",
     "activity_hint": "Aerial tech maintenance",
-    "activity": "Maintaining drone equipment",
+    "scene_narrative": "A pair of gloved hands services a small quadcopter drone propped on a compact maintenance stand. One hand steadies the light-grey body while the other tightens a propeller nut with a hex wrench, a spare teal-tipped blade resting nearby. The scene reads as hands-on tech hobby care, not a factory repair line.",
     "primary_objects": [
-      "quadcopter drone",
-      "hex wrench",
-      "propeller blade",
-      "maintenance stand"
+      {
+        "name": "quadcopter drone",
+        "material": "matte plastic chassis",
+        "color_hex": "#E8E8E8",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "four arms with rounded motor housings, two teal-tipped propeller blades visible"
+      },
+      {
+        "name": "hex wrench",
+        "material": "brushed metal",
+        "color_hex": "#D4A84B",
+        "size_relative": "small — pinched in right hand",
+        "detail": "L-shaped tool, short end engaging the prop nut"
+      },
+      {
+        "name": "spare propeller blade",
+        "material": "lightweight plastic",
+        "color_hex": "#4DB6AC",
+        "size_relative": "small — resting beside stand",
+        "detail": "two-blade shape, gently curved"
+      },
+      {
+        "name": "maintenance stand",
+        "material": "molded plastic cradle",
+        "color_hex": "#9575CD",
+        "size_relative": "medium — beneath drone body",
+        "detail": "simple U-shaped cradle holding the drone level"
+      }
     ],
-    "environment": "tech bench",
-    "symbolic": false
+    "environment": "light tech bench surface strip across bottom third — fades to transparent at edges",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Maintaining drone equipment",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from wrench hand → drone body → stabilizing hand",
+    "focal_hierarchy": [
+      "drone body center mass",
+      "right hand with wrench",
+      "left stabilizing hand",
+      "maintenance stand anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and wrench",
+      "midground: drone and stand",
+      "background: bench edge only — no wall"
+    ],
+    "thumbnail_readability": "drone silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Maintaining drone equipment. Subject focus: Maintaining drone equipment. Props: quadcopter drone, hex wrench, propeller blade, maintenance stand. Environment: tech bench. Pose: drone repair. Camera: three-quarter top-down, centered. Left hand: holds drone body on stand. Right hand: tightens prop nut with wrench. Clothes: rolled work-shirt sleeves, sturdy cotton, cuff trim in accent. Accessories: optional thin work gloves or tool belt edge visible. Colors — RIASEC Realistic: accent #4DB6AC, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: teal propeller tips, teal mechanic gloves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, drone brand, letter R, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, industrial factory, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Maintaining drone equipment\". Style: 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two forearms with thin grey work gloves (fingertips exposed) servicing a light-grey quadcopter drone on a lavender #9575CD maintenance stand. Left hand steadies the body, right hand tightens a propeller nut with a brass #D4A84B hex wrench. A spare teal #4DB6AC propeller blade rests beside the stand. Rolled steel-blue work shirt sleeves, teal cuff trim. Warm medium skin #C8956C. Top-down camera, hands in lower half. Mood: focused maker energy, hobby not factory."
 }

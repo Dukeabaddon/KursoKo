@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q30 option 2 — Creating corporate compliance manuals",
   "questionnaire": {
     "question_id": 30,
+    "question_text": "Which strategic task interests you?",
     "option_key": "2",
     "slot": "30.2",
     "choice_text": "Creating corporate compliance manuals",
@@ -17,87 +19,172 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under binder and hands — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle page-edge suggestion on binder via 3 parallel lines max",
+    "mood": "meticulous, tidy diligence — orderly rule-making, not bureaucratic drudgery",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter C on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "full human figure or face",
+      "photorealistic render",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
     "riasec_type": "Conventional",
-    "accent": "#81D4FA",
-    "secondary": "#4B2C7F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "sky-blue tab dividers",
-      "sky-blue office shirt"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#81D4FA",
+        "name": "sky blue",
+        "use": "tab dividers, checkmark stamp ring, cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#4B2C7F",
+        "name": "deep indigo",
+        "use": "binder rings, highlighter cap"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "ring binder cover", "hex": "#8D6E63" },
+        { "name": "tab dividers", "hex": "#81D4FA" },
+        { "name": "checkmark stamp", "hex": "#4DB6AC" },
+        { "name": "highlighter body", "hex": "#FFD54F" },
+        { "name": "binder rings", "hex": "#4B2C7F" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint cool #F2FAFF highlight on knuckle tops only",
+    "accent_rule": "sky-blue appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on binder rings and stamp handle",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and binder base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "opens binder rings",
-    "right_hand": "presses seal sticker on cover",
-    "gesture": "compliance documentation",
-    "energy": "thorough",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "holds open a ring binder with color-coded tab dividers",
+      "grip": "flat palm supporting the open cover, fingers along the spine",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "presses a small teal checkmark stamp onto an open page",
+      "grip": "firm grip on the stamp handle",
+      "position": "center-right, pressing down onto the page"
+    },
+    "gesture_summary": "mid-review freeze frame — one section being checked off",
+    "energy": "meticulous, calm, quietly satisfied",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "pressed office shirt sleeves, crisp cuffs",
-    "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "pressed button-up shirt",
+      "fabric": "smooth cotton poplin",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled twice to mid-forearm",
+      "accent_trim_hex": "#81D4FA",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "slim wristwatch",
+        "color_hex": "#4B2C7F",
+        "placement": "left wrist only, simple round face with no readable numerals"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Creating corporate compliance manuals",
     "activity_hint": "Regulatory guidance",
-    "activity": "Creating corporate compliance manuals",
+    "scene_narrative": "A pair of forearms reviews a compliance manual: one hand holds open a ring binder with color-coded tab dividers while the other presses a small teal checkmark stamp onto the page. A capped highlighter rests nearby. The scene reads as meticulous, orderly diligence — careful rule-making, not tedious paperwork.",
     "primary_objects": [
-      "thick binder",
-      "checkmark compliance seal",
-      "tab dividers"
+      {
+        "name": "open ring binder with tab dividers",
+        "material": "leatherette cover, paper pages",
+        "color_hex": "#8D6E63",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "indigo binder rings, four sky-blue tab dividers along the edge, open page with a simple checklist grid of blank boxes"
+      },
+      {
+        "name": "checkmark stamp",
+        "material": "wood handle, rubber stamp head",
+        "color_hex": "#4DB6AC",
+        "size_relative": "medium — held in right hand",
+        "detail": "simple flat checkmark shape on the stamp face"
+      },
+      {
+        "name": "capped highlighter",
+        "material": "plastic",
+        "color_hex": "#FFD54F",
+        "size_relative": "small accent — resting beside binder",
+        "detail": "simple flat cylinder with a chiseled cap, 2px outline"
+      },
+      {
+        "name": "paperclip",
+        "material": "metal",
+        "color_hex": "#81D4FA",
+        "size_relative": "tiny accent — clipped to a tab divider",
+        "detail": "simple flat oval loop shape"
+      }
     ],
-    "environment": "compliance library desk",
-    "symbolic": false
+    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, cream paper sheet under binder",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Creating corporate compliance manuals",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from highlighter → binder → stamping hand",
+    "focal_hierarchy": [
+      "open binder center mass",
+      "right hand pressing stamp",
+      "left supporting hand",
+      "highlighter and paperclip anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and stamp",
+      "midground: open binder",
+      "background: highlighter and desk edge only — no wall"
+    ],
+    "thumbnail_readability": "binder silhouette + tab dividers readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Creating corporate compliance manuals. Subject focus: Creating corporate compliance manuals. Props: thick binder, checkmark compliance seal, tab dividers. Environment: compliance library desk. Pose: compliance documentation. Camera: three-quarter top-down, centered. Left hand: opens binder rings. Right hand: presses seal sticker on cover. Clothes: pressed office shirt sleeves, crisp cuffs. Accessories: pen clipped to shirt pocket at chest edge (no face). Colors — RIASEC Conventional: accent #81D4FA, secondary #4B2C7F, skin warm neutral medium, outline #2D2D2D. Accent on: sky-blue tab dividers, sky-blue office shirt. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: thorough. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, industrial horror, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Creating corporate compliance manuals\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a pressed shirt with rolled sleeves and sky-blue #81D4FA cuff trim review a leatherette ring binder with indigo #4B2C7F rings and four sky-blue tab dividers on a light birch desk. Left hand holds the binder open to a page with a simple blank checklist grid. Right hand presses a teal #4DB6AC checkmark stamp onto the page. A capped yellow highlighter and a small sky-blue paperclip rest nearby. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: meticulous, orderly diligence — careful rule-making, not tedious paperwork. Readable silhouette at small thumbnail size."
 }

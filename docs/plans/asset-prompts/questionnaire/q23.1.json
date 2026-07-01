@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q23 option 1 — Assembling telescope components",
   "questionnaire": {
     "question_id": 23,
+    "question_text": "Which hands-on science excites you?",
     "option_key": "1",
     "slot": "23.1",
     "choice_text": "Assembling telescope components",
@@ -23,81 +25,176 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and hero prop — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle desk-surface grain suggestion via 2-3 parallel lines max",
+    "mood": "friendly career-education energy — approachable and encouraging, not corporate stock photo",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter R on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "brand logos",
+      "full human figure or face",
+      "photorealistic metal or skin reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "R",
     "riasec_type": "Realistic",
-    "accent": "#4DB6AC",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "teal lens coating reflection",
-      "teal lab work sleeves"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#4DB6AC",
+        "name": "KursoKo teal",
+        "use": "lens coating reflection, work-shirt cuff trim"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "calipers accent grip"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        {
+          "name": "telescope tube",
+          "hex": "#E8E8E8"
+        },
+        {
+          "name": "lens element",
+          "hex": "#4DB6AC"
+        },
+        {
+          "name": "precision calipers",
+          "hex": "#9E9E9E"
+        },
+        {
+          "name": "workbench surface",
+          "hex": "#D7B896"
+        }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "accent color appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on telescope tube rim and lens edge",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and telescope tube"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "holds lens in calipers",
-    "right_hand": "fits lens into tube mount",
-    "gesture": "precision optics assembly",
-    "energy": "careful",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "holds a round lens steady with precision calipers",
+      "grip": "pinch grip on calipers, lens balanced between the jaws",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "guides the lens into the telescope tube mount",
+      "grip": "precision pinch between thumb and index finger",
+      "position": "center-right, hovering over the tube opening"
+    },
+    "gesture_summary": "mid-assembly freeze frame — lens about to seat into the mount",
+    "energy": "careful, focused, quietly proud maker energy",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
-    "accessories": "optional thin work gloves or tool belt edge visible"
+    "visible_parts": "forearms and rolled or cuffed sleeves only",
+    "top": {
+      "garment": "short-sleeve work shirt",
+      "fabric": "sturdy cotton twill",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled twice to mid-forearm",
+      "accent_trim_hex": "#4DB6AC",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "thin work gloves",
+        "color_hex": "#9E9E9E",
+        "placement": "both hands — fingertips cut out exposing skin for dexterity"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Assembling telescope components",
     "activity_hint": "Precision instrumentation",
-    "activity": "Assembling telescope components",
+    "scene_narrative": "A pair of gloved hands works over a partially built telescope tube on a light workbench. One hand holds a round lens steady in a pair of precision calipers while the other guides it toward the mount — the quiet, careful moment right before a satisfying click into place. Optics assembly, not a workshop mess.",
     "primary_objects": [
-      "telescope tube",
-      "lens element",
-      "precision calipers"
+      {
+        "name": "telescope tube",
+        "material": "matte metal cylinder",
+        "color_hex": "#E8E8E8",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "open mount ring at top, faint teal lens-coating reflection glinting inside"
+      },
+      {
+        "name": "lens element",
+        "material": "coated glass",
+        "color_hex": "#4DB6AC",
+        "size_relative": "medium — held in calipers",
+        "detail": "circular, slight teal coating sheen, 2px outline"
+      },
+      {
+        "name": "precision calipers",
+        "material": "brushed metal",
+        "color_hex": "#9E9E9E",
+        "size_relative": "small — gripped in left hand",
+        "detail": "simple jaw shape, no readable measurement markings"
+      }
     ],
-    "environment": "optics assembly bench",
-    "symbolic": false
+    "environment": "light workbench surface strip across bottom third — fades to transparent at edges, no wall",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Assembling telescope components",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from calipers hand → lens → tube mount",
+    "focal_hierarchy": [
+      "telescope tube center mass",
+      "right hand guiding lens",
+      "left calipers hand",
+      "workbench anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and lens",
+      "midground: telescope tube",
+      "background: workbench edge only — no wall"
+    ],
+    "thumbnail_readability": "telescope tube silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Assembling telescope components. Subject focus: Assembling telescope components. Props: telescope tube, lens element, precision calipers. Environment: optics assembly bench. Pose: precision optics assembly. Camera: three-quarter top-down, centered. Left hand: holds lens in calipers. Right hand: fits lens into tube mount. Clothes: rolled work-shirt sleeves, sturdy cotton, cuff trim in accent. Accessories: optional thin work gloves or tool belt edge visible. Colors — RIASEC Realistic: accent #4DB6AC, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: teal lens coating reflection, teal lab work sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: careful. Safe margin 40px."
+  "generation": {
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6",
+      "Ideogram"
+    ],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, factory, industrial horror, guns, blood, night sky backdrop, observatory building"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Assembling telescope components\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands and hero prop only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: A pair of gloved hands works over a partially built telescope tube on a light workbench. One hand holds a round lens steady in a pair of precision calipers while the other guides it toward the mount — the quiet, careful moment right before a satisfying click into place. Optics assembly, not a workshop mess. Objects: telescope tube (matte metal cylinder, #E8E8E8): open mount ring at top, faint teal lens-coating reflection glinting inside; lens element (coated glass, #4DB6AC): circular, slight teal coating sheen, 2px outline; precision calipers (brushed metal, #9E9E9E): simple jaw shape, no readable measurement markings. Left hand holds a round lens steady with precision calipers (pinch grip on calipers, lens balanced between the jaws). Right hand guides the lens into the telescope tube mount (precision pinch between thumb and index finger). Clothing: short-sleeve work shirt in sturdy cotton twill, color #5C7A8A, rolled twice to mid-forearm, accent trim #4DB6AC at thin stripe on cuff fold. Accessories: thin work gloves (#9E9E9E) — both hands — fingertips cut out exposing skin for dexterity. Warm medium skin tone #C8956C. Accent color #4DB6AC on lens coating reflection, work-shirt cuff trim; secondary #9575CD on calipers accent grip. Camera: three-quarter top-down, 25° tilt toward viewer, medium-close — hands occupy lower 55% of frame. Environment: light workbench surface strip across bottom third — fades to transparent at edges, no wall. Mood: careful, focused, quietly proud maker energy, friendly career-education energy — approachable and encouraging, not corporate stock photo. Generous transparent margins, readable silhouette at small thumbnail size."
 }

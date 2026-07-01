@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q3 option 1 — Starting an online business",
   "questionnaire": {
     "question_id": 3,
+    "question_text": "Which would you rather do?",
     "option_key": "1",
     "slot": "3.1",
     "choice_text": "Starting an online business",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under shipping box and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; two faint corrugated lines suggesting cardboard edge on box only",
+    "mood": "energetic startup-hustle vibe — approachable small-business launch, not corporate boardroom",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter E on image",
+      "die-cut sticker border or white card frame",
+      "readable text, shipping labels, or logos",
+      "currency symbols or dollar signs",
+      "full human figure or face",
+      "photorealistic cardboard texture",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
     "riasec_type": "Enterprising",
-    "accent": "#FF8A65",
-    "secondary": "#FFD54F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "coral shop icon on laptop",
-      "coral polo cuff"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FF8A65",
+        "name": "KursoKo coral",
+        "use": "phone growth-arrow icon, packing tape strip, sleeve cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#FFD54F",
+        "name": "gold",
+        "use": "shipping box corner star sticker, phone case trim"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "shipping box", "hex": "#D7B896" },
+        { "name": "packing tape", "hex": "#FF8A65" },
+        { "name": "smartphone body", "hex": "#3A3A3A" },
+        { "name": "phone screen background", "hex": "#FFF3E0" },
+        { "name": "blank shipping label", "hex": "#FDFCF8" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on phone screen edge and tape dispenser",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and box base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "folds box flap",
-    "right_hand": "applies tape strip",
-    "gesture": "entrepreneur shipping first order",
-    "energy": "energetic, optimistic",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "seals a small shipping box with a strip of tape",
+      "grip": "flat palm pressing the tape strip down",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "holds up a smartphone showing an abstract upward growth-arrow icon",
+      "grip": "loose grip along the phone's edge, thumb near the screen",
+      "position": "center-right, phone tilted toward viewer"
+    },
+    "gesture_summary": "mid-launch freeze frame — first order packed while sales notification appears",
+    "energy": "energetic, optimistic, hands-on hustle",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "smart casual blazer or polo sleeves, confident fit",
-    "accessories": "watch or presentation clicker at wrist"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "casual button-up shirt",
+      "fabric": "lightweight cotton",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled twice to mid-forearm",
+      "accent_trim_hex": "#FF8A65",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "simple leather wrist strap",
+        "color_hex": "#D4A84B",
+        "placement": "left wrist, minimal buckle-free band"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Starting an online business",
     "activity_hint": "Entrepreneurship",
-    "activity": "Starting an online business",
+    "scene_narrative": "A pair of hands packs and seals a small shipping box for a first customer order while a smartphone lights up with an abstract upward growth-arrow icon. A blank shipping label and a small gold star sticker on the box corner suggest a proud milestone moment, capturing the DIY energy of launching a small online shop rather than a corporate office scene.",
     "primary_objects": [
-      "shipping box",
-      "packing tape",
-      "laptop with simple shop icon dashboard"
+      {
+        "name": "small shipping box",
+        "material": "corrugated cardboard",
+        "color_hex": "#D7B896",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "blank shipping label on top, gold star sticker on near corner, coral tape strip being applied"
+      },
+      {
+        "name": "smartphone with growth icon",
+        "material": "matte glass and aluminum",
+        "color_hex": "#3A3A3A",
+        "size_relative": "medium — held upright in right hand",
+        "detail": "warm cream screen with a simple coral upward arrow and small bar shapes, no readable text"
+      },
+      {
+        "name": "tape dispenser",
+        "material": "plastic",
+        "color_hex": "#FF8A65",
+        "size_relative": "small — resting beside box",
+        "detail": "coral body with visible tape roll edge"
+      },
+      {
+        "name": "gold star sticker",
+        "material": "glossy paper",
+        "color_hex": "#FFD54F",
+        "size_relative": "small accent — on box corner",
+        "detail": "simple five-point star, no text"
+      }
     ],
-    "environment": "home packing station, tidy",
-    "symbolic": false
+    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, no office backdrop",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Starting an online business",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from tape dispenser → shipping box → phone growth icon",
+    "focal_hierarchy": [
+      "shipping box center mass",
+      "right hand holding phone",
+      "left hand sealing box",
+      "gold star accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and phone",
+      "midground: shipping box",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "box silhouette + phone shape + two hands readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Starting an online business. Subject focus: Starting an online business. Props: shipping box, packing tape, laptop with simple shop icon dashboard. Environment: home packing station, tidy. Pose: entrepreneur shipping first order. Camera: three-quarter top-down, centered. Left hand: folds box flap. Right hand: applies tape strip. Clothes: smart casual blazer or polo sleeves, confident fit. Accessories: watch or presentation clicker at wrist. Colors — RIASEC Enterprising: accent #FF8A65, secondary #FFD54F, skin warm neutral medium, outline #2D2D2D. Accent on: coral shop icon on laptop, coral polo cuff. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: energetic, optimistic. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter E, dollar sign, currency symbols, readable shipping label, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Starting an online business\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a light steel-blue button-up sleeve with coral cuff stripe. Left hand seals a small tan cardboard shipping box with a coral tape strip; the box has a blank label and a small gold star sticker on its corner. Right hand holds up a dark smartphone with a warm cream screen showing a simple coral upward growth-arrow icon, no readable text. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: energetic optimistic small-business hustle, not a corporate office. Readable silhouette at small thumbnail size."
 }

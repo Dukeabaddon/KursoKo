@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q9 option 2 — Managing supply chain logistics",
   "questionnaire": {
     "question_id": 9,
+    "question_text": "Which business role suits you?",
     "option_key": "2",
     "slot": "9.2",
     "choice_text": "Managing supply chain logistics",
@@ -17,87 +19,171 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and tablet — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle cardboard-flute suggestion on boxes via 3 parallel lines max",
+    "mood": "calm systematic coordinator energy — organized warehouse flow, not a grim loading dock",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter C on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "shipping brand logos",
+      "full human figure or face",
+      "photorealistic render",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
     "riasec_type": "Conventional",
-    "accent": "#81D4FA",
-    "secondary": "#4B2C7F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "sky-blue route arrows",
-      "sky-blue office shirt"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#81D4FA",
+        "name": "sky blue",
+        "use": "tablet grid icon, checklist marks, vest trim pinstripe"
+      },
+      "secondary": {
+        "hex": "#4B2C7F",
+        "name": "deep indigo",
+        "use": "scanner wand, box tape stripe"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "tablet body", "hex": "#E8E8E8" },
+        { "name": "clipboard back", "hex": "#D7B896" },
+        { "name": "shipping boxes", "hex": "#D7B896" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "sky blue appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on tablet edge and scanner wand",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and clipboard base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "slides box icon along route",
-    "right_hand": "marks checkpoint on flowchart",
-    "gesture": "logistics coordination",
-    "energy": "organized",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "holds a tablet at a readable angle showing the logistics map",
+      "grip": "flat palm support from underneath, fingers curled over edge",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "marks a checklist square on a clipboard mid-scan",
+      "grip": "precision pen grip",
+      "position": "center-right, hovering over the clipboard"
+    },
+    "gesture_summary": "mid-scan verification freeze frame — one item being checked off",
+    "energy": "calm, systematic coordinator",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "pressed office shirt sleeves, crisp cuffs",
-    "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "work vest over shirt",
+      "fabric": "sturdy canvas over cotton",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled once to mid-forearm",
+      "accent_trim_hex": "#81D4FA",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "lanyard ID badge, blank face",
+        "color_hex": "#9E9E9E",
+        "placement": "clipped near left wrist, no readable text"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Managing supply chain logistics",
     "activity_hint": "Operational coordination",
-    "activity": "Managing supply chain logistics",
+    "scene_narrative": "A pair of hands coordinates a small warehouse operation, one hand holding a tablet showing a simple grid-and-truck logistics map while the other checks off a box on a clipboard mid-scan. Stacked shipping boxes anchor the corner, capturing the calm, systematic energy of supply-chain coordination.",
     "primary_objects": [
-      "conveyor belt diagram",
-      "labeled boxes A/B/C icons only",
-      "routing arrows"
+      {
+        "name": "tablet",
+        "material": "matte plastic and glass",
+        "color_hex": "#E8E8E8",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "screen shows a sky-blue warehouse grid icon and a small truck icon, no readable text"
+      },
+      {
+        "name": "clipboard",
+        "material": "wood-backed board with paper",
+        "color_hex": "#D7B896",
+        "size_relative": "medium — held in right hand's reach",
+        "detail": "checklist of sky-blue checkmark squares, no readable text"
+      },
+      {
+        "name": "shipping boxes",
+        "material": "corrugated cardboard",
+        "color_hex": "#D7B896",
+        "size_relative": "small accent stack",
+        "detail": "two boxes stacked, indigo tape stripe across seams"
+      },
+      {
+        "name": "barcode scanner wand",
+        "material": "matte plastic",
+        "color_hex": "#4B2C7F",
+        "size_relative": "small accent",
+        "detail": "clipped near the belt edge, simple trigger shape"
+      }
     ],
-    "environment": "operations planning desk",
-    "symbolic": false
+    "environment": "warehouse shelf edge strip across bottom third, fades to transparent",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Managing supply chain logistics",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from shipping boxes → tablet → clipboard hand",
+    "focal_hierarchy": [
+      "tablet grid map center mass",
+      "right hand marking checklist",
+      "left holding hand",
+      "shipping box stack accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and clipboard",
+      "midground: tablet and boxes",
+      "background: shelf edge only — no wall"
+    ],
+    "thumbnail_readability": "tablet silhouette + box stack shape readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Managing supply chain logistics. Subject focus: Managing supply chain logistics. Props: conveyor belt diagram, labeled boxes A/B/C icons only, routing arrows. Environment: operations planning desk. Pose: logistics coordination. Camera: three-quarter top-down, centered. Left hand: slides box icon along route. Right hand: marks checkpoint on flowchart. Clothes: pressed office shirt sleeves, crisp cuffs. Accessories: pen clipped to shirt pocket at chest edge (no face). Colors — RIASEC Conventional: accent #81D4FA, secondary #4B2C7F, skin warm neutral medium, outline #2D2D2D. Accent on: sky-blue route arrows, sky-blue office shirt. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: organized. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, grim loading dock, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Managing supply chain logistics\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a rolled steel-blue work vest, left hand holding a light-grey tablet showing a sky-blue #81D4FA warehouse grid icon and truck icon, right hand marking a sky-blue checkmark on a wood-backed clipboard. Two stacked cardboard boxes with indigo tape stripe, an indigo #4B2C7F barcode scanner wand clipped nearby. Blank lanyard ID badge on the wrist. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: calm, systematic coordinator energy. Readable silhouette at small thumbnail size."
 }

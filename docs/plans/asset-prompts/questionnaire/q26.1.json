@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q26 option 1 — Building disaster-resistant housing",
   "questionnaire": {
     "question_id": 26,
+    "question_text": "Which construction project excites you?",
     "option_key": "1",
     "slot": "26.1",
     "choice_text": "Building disaster-resistant housing",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under model house and hands — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle grain suggestion on wood frame via 3 parallel lines max",
+    "mood": "resilient, hopeful engineering — safety and craftsmanship, not disaster or damage",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter R on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "collapsed building, rubble, or storm damage",
+      "full human figure or face",
+      "photorealistic metal reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "R",
     "riasec_type": "Realistic",
-    "accent": "#4DB6AC",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "teal beam accent stripe",
-      "teal work vest sleeves"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#4DB6AC",
+        "name": "KursoKo teal",
+        "use": "hurricane strap tips, tool handle band, cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "spirit-level bubble vial, small bolt washers"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "model house frame", "hex": "#D7B896" },
+        { "name": "steel bracing", "hex": "#8FA3AD" },
+        { "name": "hurricane strap", "hex": "#607D8B" },
+        { "name": "wrench handle", "hex": "#FF8A65" },
+        { "name": "roof panel", "hex": "#B0473B" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "teal appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on wrench shaft and steel bracket edge",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and house base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "sets beam on model roof",
-    "right_hand": "unrolls blueprint corner",
-    "gesture": "resilient construction",
-    "energy": "focused, approachable",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "steadies a small reinforced model house frame on the table",
+      "grip": "spread fingers bracing the roof ridge",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "fastens a diagonal steel hurricane strap to the corner post with a wrench",
+      "grip": "precision grip on wrench handle",
+      "position": "center-right, hovering over house corner joint"
+    },
+    "gesture_summary": "mid-reinforcement freeze frame — one brace being tightened",
+    "energy": "focused, capable, safety-minded builder",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "rolled work-shirt sleeves, sturdy cotton, cuff trim in accent",
-    "accessories": "optional thin work gloves or tool belt edge visible"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "short-sleeve work shirt",
+      "fabric": "sturdy cotton twill",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled twice to mid-forearm",
+      "accent_trim_hex": "#4DB6AC",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "thin work gloves",
+        "color_hex": "#9E9E9E",
+        "placement": "both hands — fingertips cut out exposing skin for dexterity"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Building disaster-resistant housing",
     "activity_hint": "Structural engineering",
-    "activity": "Building disaster-resistant housing",
+    "scene_narrative": "A pair of gloved hands reinforces a small scale-model house on a workbench, bolting a diagonal steel hurricane strap across the corner post while the other hand holds the frame steady. The scene reads as careful, confident structural engineering — proactive safety craftsmanship, never disaster aftermath.",
     "primary_objects": [
-      "house model",
-      "reinforced steel beam",
-      "blueprint roll"
+      {
+        "name": "reinforced model house frame",
+        "material": "light wood with a terracotta roof panel",
+        "color_hex": "#D7B896",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "visible corner post, terracotta roof panel, one wall cut away showing bracing"
+      },
+      {
+        "name": "diagonal steel hurricane strap",
+        "material": "galvanized steel",
+        "color_hex": "#607D8B",
+        "size_relative": "medium — spans the corner joint",
+        "detail": "two bolt holes, teal-tipped bolt caps"
+      },
+      {
+        "name": "compact wrench",
+        "material": "plastic handle + metal head",
+        "color_hex": "#FF8A65",
+        "size_relative": "small — gripped in right hand",
+        "detail": "open-end head fitted onto bolt"
+      },
+      {
+        "name": "spirit level",
+        "material": "aluminum body, lavender bubble vial",
+        "color_hex": "#9575CD",
+        "size_relative": "small accent — resting beside frame",
+        "detail": "single bubble vial, 2px outline"
+      }
     ],
-    "environment": "construction planning table",
-    "symbolic": false
+    "environment": "light birch workbench surface strip across bottom third — fades to transparent at edges, cream paper sheet under model house",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Building disaster-resistant housing",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from wrench → house corner → steadying hand",
+    "focal_hierarchy": [
+      "model house frame center mass",
+      "right hand fastening strap",
+      "left stabilizing hand",
+      "bench surface anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and wrench",
+      "midground: model house",
+      "background: bench edge only — no wall"
+    ],
+    "thumbnail_readability": "house silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Building disaster-resistant housing. Subject focus: Building disaster-resistant housing. Props: house model, reinforced steel beam, blueprint roll. Environment: construction planning table. Pose: resilient construction. Camera: three-quarter top-down, centered. Left hand: sets beam on model roof. Right hand: unrolls blueprint corner. Clothes: rolled work-shirt sleeves, sturdy cotton, cuff trim in accent. Accessories: optional thin work gloves or tool belt edge visible. Colors — RIASEC Realistic: accent #4DB6AC, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: teal beam accent stripe, teal work vest sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter R, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, collapsed building, rubble, storm damage, industrial horror, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Building disaster-resistant housing\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with thin grey work gloves (fingertips exposed) reinforcing a small scale-model house on a light birch workbench. Left hand steadies the light-wood house frame with its terracotta roof panel. Right hand uses a small orange #FF8A65 wrench to fasten a galvanized steel #607D8B diagonal hurricane strap across the corner post, teal #4DB6AC bolt caps visible. A lavender #9575CD spirit level rests nearby. Rolled steel-blue work shirt sleeves with teal cuff trim. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: proactive, confident structural safety engineering — never disaster aftermath or damage. Readable silhouette at small thumbnail size."
 }

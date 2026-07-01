@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q22 option 2 — Quality-checking manufacturing outputs",
   "questionnaire": {
     "question_id": 22,
+    "question_text": "Which leadership role fits you?",
     "option_key": "2",
     "slot": "22.2",
     "choice_text": "Quality-checking manufacturing outputs",
@@ -23,81 +25,176 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and hero prop — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle desk-surface grain suggestion via 2-3 parallel lines max",
+    "mood": "friendly career-education energy — approachable and encouraging, not corporate stock photo",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter C on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "brand logos",
+      "full human figure or face",
+      "photorealistic metal or skin reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
     "riasec_type": "Conventional",
-    "accent": "#81D4FA",
-    "secondary": "#4B2C7F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "sky-blue checklist header",
-      "sky-blue uniform sleeves"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#81D4FA",
+        "name": "sky blue",
+        "use": "checklist header band, uniform cuff trim"
+      },
+      "secondary": {
+        "hex": "#4B2C7F",
+        "name": "deep indigo",
+        "use": "product unit accent seam"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        {
+          "name": "clipboard",
+          "hex": "#E8E8E8"
+        },
+        {
+          "name": "product unit",
+          "hex": "#4B2C7F"
+        },
+        {
+          "name": "conveyor segment",
+          "hex": "#D7B896"
+        },
+        {
+          "name": "checklist tick marks",
+          "hex": "#81D4FA"
+        }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "accent color appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on clipboard clip and product unit edge",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and conveyor segment"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "holds product for inspection",
-    "right_hand": "marks checklist tick",
-    "gesture": "quality assurance",
-    "energy": "focused, approachable",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "lifts a small product unit off the belt for inspection",
+      "grip": "cradling grip, fingers curled underneath",
+      "position": "lower-left quadrant, wrist angled up"
+    },
+    "right_hand": {
+      "action": "marks a tick on the checklist",
+      "grip": "precision pinch on a pen",
+      "position": "center-right, hovering over the clipboard"
+    },
+    "gesture_summary": "mid-check freeze frame — one tick about to land on the checklist",
+    "energy": "focused, methodical, quietly approachable",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "pressed office shirt sleeves, crisp cuffs",
-    "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+    "visible_parts": "forearms and rolled or cuffed sleeves only",
+    "top": {
+      "garment": "pressed collared work shirt",
+      "fabric": "crisp cotton poplin",
+      "color_hex": "#7A8FA6",
+      "sleeve_style": "rolled once to mid-forearm, sharp cuff fold",
+      "accent_trim_hex": "#81D4FA",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "pen clipped at cuff edge",
+        "color_hex": "#81D4FA",
+        "placement": "resting along the right forearm near the wrist"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Quality-checking manufacturing outputs",
     "activity_hint": "Production standards",
-    "activity": "Quality-checking manufacturing outputs",
+    "scene_narrative": "A pair of forearms works over a short segment of conveyor belt — one hand lifting a small rounded product unit for a close look, the other bringing a pen down to tick a box on a clipboard. The mood is calm, precise quality assurance, not a noisy factory floor.",
     "primary_objects": [
-      "clipboard",
-      "product unit on belt",
-      "checklist ticks"
+      {
+        "name": "clipboard checklist",
+        "material": "wood-backed clipboard with paper",
+        "color_hex": "#E8E8E8",
+        "size_relative": "hero — 30% of visual mass",
+        "detail": "simple grid of empty boxes with one sky-blue tick mark, no readable text"
+      },
+      {
+        "name": "product unit",
+        "material": "matte molded plastic",
+        "color_hex": "#4B2C7F",
+        "size_relative": "medium — cradled in left hand",
+        "detail": "rounded rectangular widget shape with one visible seam line, no logo"
+      },
+      {
+        "name": "conveyor belt segment",
+        "material": "rubber and steel rollers",
+        "color_hex": "#9E9E9E",
+        "size_relative": "background anchor",
+        "detail": "short flat section only, no full machine visible"
+      }
     ],
-    "environment": "factory QC station simplified",
-    "symbolic": false
+    "environment": "short conveyor belt segment across bottom third — fades to transparent at edges, no factory wall",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Quality-checking manufacturing outputs",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "horizontal workflow line from conveyor unit → inspecting hand → checklist",
+    "focal_hierarchy": [
+      "product unit center mass",
+      "left inspecting hand",
+      "right tick-marking hand",
+      "checklist accent"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and product unit",
+      "midground: clipboard",
+      "background: conveyor edge only — no factory wall"
+    ],
+    "thumbnail_readability": "clipboard shape + product unit readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Quality-checking manufacturing outputs. Subject focus: Quality-checking manufacturing outputs. Props: clipboard, product unit on belt, checklist ticks. Environment: factory QC station simplified. Pose: quality assurance. Camera: three-quarter top-down, centered. Left hand: holds product for inspection. Right hand: marks checklist tick. Clothes: pressed office shirt sleeves, crisp cuffs. Accessories: pen clipped to shirt pocket at chest edge (no face). Colors — RIASEC Conventional: accent #81D4FA, secondary #4B2C7F, skin warm neutral medium, outline #2D2D2D. Accent on: sky-blue checklist header, sky-blue uniform sleeves. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+  "generation": {
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6",
+      "Ideogram"
+    ],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, factory, industrial horror, guns, blood, assembly line crowd, readable inspection text"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Quality-checking manufacturing outputs\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands and hero prop only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: A pair of forearms works over a short segment of conveyor belt — one hand lifting a small rounded product unit for a close look, the other bringing a pen down to tick a box on a clipboard. The mood is calm, precise quality assurance, not a noisy factory floor. Objects: clipboard checklist (wood-backed clipboard with paper, #E8E8E8): simple grid of empty boxes with one sky-blue tick mark, no readable text; product unit (matte molded plastic, #4B2C7F): rounded rectangular widget shape with one visible seam line, no logo; conveyor belt segment (rubber and steel rollers, #9E9E9E): short flat section only, no full machine visible. Left hand lifts a small product unit off the belt for inspection (cradling grip, fingers curled underneath). Right hand marks a tick on the checklist (precision pinch on a pen). Clothing: pressed collared work shirt in crisp cotton poplin, color #7A8FA6, rolled once to mid-forearm, sharp cuff fold, accent trim #81D4FA at thin stripe on cuff fold. Accessories: pen clipped at cuff edge (#81D4FA) — resting along the right forearm near the wrist. Warm medium skin tone #C8956C. Accent color #81D4FA on checklist header band, uniform cuff trim; secondary #4B2C7F on product unit accent seam. Camera: three-quarter top-down, 20° tilt toward viewer, medium-close — hands occupy lower 55% of frame. Environment: short conveyor belt segment across bottom third — fades to transparent at edges, no factory wall. Mood: focused, methodical, quietly approachable, friendly career-education energy — approachable and encouraging, not corporate stock photo. Generous transparent margins, readable silhouette at small thumbnail size."
 }

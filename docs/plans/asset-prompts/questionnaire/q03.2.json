@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q3 option 2 — Organizing school records database",
   "questionnaire": {
     "question_id": 3,
+    "question_text": "Which would you rather do?",
     "option_key": "2",
     "slot": "3.2",
     "choice_text": "Organizing school records database",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under folder stack and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; faint horizontal ruled lines suggesting index card texture only",
+    "mood": "calm methodical order energy — approachable tidy-desk task, not a dusty back-office archive",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter C on image",
+      "die-cut sticker border or white card frame",
+      "readable text, names, or student data",
+      "school brand logos",
+      "full human figure or face",
+      "photorealistic paper texture",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
     "riasec_type": "Conventional",
-    "accent": "#81D4FA",
-    "secondary": "#4B2C7F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "sky-blue selected row highlight",
-      "sky-blue shirt cuff"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#81D4FA",
+        "name": "KursoKo sky blue",
+        "use": "folder tab color-coding, laptop screen grid lines, sleeve cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#4B2C7F",
+        "name": "deep violet",
+        "use": "second folder tab set, laptop table row highlight"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "filing folders", "hex": "#FDFCF8" },
+        { "name": "laptop chassis", "hex": "#E8E8E8" },
+        { "name": "laptop screen background", "hex": "#EAF6FF" },
+        { "name": "index card box", "hex": "#D7B896" },
+        { "name": "binder clip", "hex": "#9E9E9E" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint cool #F0F8FF highlight on knuckle tops only",
+    "accent_rule": "sky blue appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on laptop screen corner and folder tab edges",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and folder stack"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "on keyboard home row",
-    "right_hand": "clicking mouse on sorted list",
-    "gesture": "structured data entry",
-    "energy": "calm, methodical",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "slides a color-tabbed folder into an upright sorting stack",
+      "grip": "flat fingers guiding the folder edge into place",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "adjusts a row on a laptop screen showing an abstract table grid",
+      "grip": "relaxed fingertip touch near the trackpad",
+      "position": "center-right, hovering over laptop keyboard edge"
+    },
+    "gesture_summary": "mid-organizing freeze frame — one folder being filed while the digital record updates",
+    "energy": "calm, methodical, quietly satisfied",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "pressed office shirt sleeves, crisp cuffs",
-    "accessories": "pen clipped to shirt pocket at chest edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "crisp short-sleeve office shirt",
+      "fabric": "smooth cotton poplin",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled once to mid-forearm",
+      "accent_trim_hex": "#81D4FA",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "simple wristwatch",
+        "color_hex": "#9E9E9E",
+        "placement": "left wrist, plain round face with no readable numbers"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Organizing school records database",
     "activity_hint": "Data management",
-    "activity": "Organizing school records database",
+    "scene_narrative": "A pair of hands files a color-tabbed folder into a neat upright stack while adjusting a matching row on a laptop's abstract table grid. A small index card box and a binder clip sit nearby, capturing the quiet satisfaction of turning a messy pile of records into a clean, organized system.",
     "primary_objects": [
-      "monitor with sorted folder rows",
-      "keyboard",
-      "labeled color tabs (no text labels)"
+      {
+        "name": "color-tabbed filing folders",
+        "material": "coated cardstock",
+        "color_hex": "#FDFCF8",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "upright stack of folders with sky-blue and violet tabs, no readable labels"
+      },
+      {
+        "name": "laptop with table grid",
+        "material": "matte aluminum and glass",
+        "color_hex": "#E8E8E8",
+        "size_relative": "medium — open at edge of frame",
+        "detail": "pale sky-blue screen showing an abstract row-and-column grid with one highlighted row"
+      },
+      {
+        "name": "index card box",
+        "material": "wood-grain cardboard",
+        "color_hex": "#D7B896",
+        "size_relative": "small — resting beside folders",
+        "detail": "lid ajar showing rows of blank index cards"
+      },
+      {
+        "name": "binder clip",
+        "material": "metal",
+        "color_hex": "#9E9E9E",
+        "size_relative": "small accent — clipped to loose papers",
+        "detail": "simple fold-back clip, no branding"
+      }
     ],
-    "environment": "organized office nook",
-    "symbolic": false
+    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, no office backdrop",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Organizing school records database",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from index box → folder stack → laptop grid",
+    "focal_hierarchy": [
+      "folder stack center mass",
+      "left hand filing folder",
+      "right hand adjusting laptop row",
+      "index card box accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and folder",
+      "midground: folder stack and laptop",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "folder silhouette + laptop shape + two hands readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Organizing school records database. Subject focus: Organizing school records database. Props: monitor with sorted folder rows, keyboard, labeled color tabs (no text labels). Environment: organized office nook. Pose: structured data entry. Camera: three-quarter top-down, centered. Left hand: on keyboard home row. Right hand: clicking mouse on sorted list. Clothes: pressed office shirt sleeves, crisp cuffs. Accessories: pen clipped to shirt pocket at chest edge (no face). Colors — RIASEC Conventional: accent #81D4FA, secondary #4B2C7F, skin warm neutral medium, outline #2D2D2D. Accent on: sky-blue selected row highlight, sky-blue shirt cuff. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: calm, methodical. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter C, readable names or numbers, student data, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, dusty archive, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Organizing school records database\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a crisp steel-blue office shirt sleeve with sky-blue cuff stripe. Left hand slides a cream folder with a sky-blue tab into an upright stack of similar color-tabbed folders. Right hand adjusts a row on a laptop screen tinted pale sky-blue #EAF6FF showing an abstract grid with one violet #4B2C7F highlighted row. A small wood-grain index card box sits open nearby with a metal binder clip beside it. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: calm methodical order, quiet satisfaction not dusty archive. Readable silhouette at small thumbnail size."
 }

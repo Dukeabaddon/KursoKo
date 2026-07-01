@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q2 option 1 — Creating digital artwork for a game",
   "questionnaire": {
     "question_id": 2,
+    "question_text": "Choose your preferred activity:",
     "option_key": "1",
     "slot": "2.1",
     "choice_text": "Creating digital artwork for a game",
@@ -17,88 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under drawing tablet and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; two faint diagonal hatch lines suggesting screen glass reflection on tablet only",
+    "mood": "playful creative-studio energy — approachable digital art hobby, not corporate game-dev office",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter A on image",
+      "die-cut sticker border or white card frame",
+      "readable text or UI labels",
+      "game or software brand logos",
+      "full human figure or face",
+      "photorealistic screen reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
     "riasec_type": "Artistic",
-    "accent": "#FFD54F",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "yellow UI accents on tablet UI chrome",
-      "yellow paint fleck on sleeve"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FFD54F",
+        "name": "KursoKo gold",
+        "use": "selected color swatch, stylus grip band, sleeve cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "in-progress character sprite outline glow, palette fan accent"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "drawing tablet body", "hex": "#3A3A3A" },
+        { "name": "tablet canvas background", "hex": "#F5F0FF" },
+        { "name": "stylus pen", "hex": "#E8E8E8" },
+        { "name": "color swatch fan", "hex": "#FF8A65" },
+        { "name": "sprite character fill", "hex": "#81D4FA" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "gold appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on tablet screen edge and stylus tip",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and tablet base"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "rests on tablet bezel",
-    "right_hand": "draws flowing character line with stylus",
-    "gesture": "creative stroke in progress",
-    "energy": "focused, approachable",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "steadies a graphics drawing tablet flat on the desk",
+      "grip": "flat palm along the tablet's far edge, fingers relaxed",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "shades the wing of a small game creature sprite with a stylus",
+      "grip": "precision pen grip, stylus tip touching the screen",
+      "position": "center-right, hovering over the sprite artwork"
+    },
+    "gesture_summary": "mid-illustration freeze frame — one shading stroke in progress",
+    "energy": "playful, imaginative, focused",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "paint-splattered hoodie sleeves, yellow and lavender flecks",
-    "accessories": "woven friendship bracelet or paint on fingers"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "oversized graphic hoodie sleeve",
+      "fabric": "soft cotton fleece",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "pushed up to mid-forearm",
+      "accent_trim_hex": "#FFD54F",
+      "accent_trim_placement": "thin stripe on cuff rib"
+    },
+    "accessories": [
+      {
+        "item": "thin fingerless art gloves",
+        "color_hex": "#9E9E9E",
+        "placement": "right hand only — smudge-guard style, fingertips exposed"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Creating digital artwork for a game",
     "activity_hint": "Visual design",
-    "activity": "Creating digital artwork for a game",
+    "scene_narrative": "A pair of hands works on a drawing tablet, mid-stroke shading the wing of a small fantasy-creature game sprite that is only half colored in. A fanned color swatch and a second reference sprite sketch sit beside the tablet, capturing the playful energy of building a game's visual world one character at a time.",
     "primary_objects": [
-      "graphics tablet",
-      "stylus",
-      "on-screen fantasy creature sketch",
-      "color swatch chips"
+      {
+        "name": "drawing tablet with in-progress sprite",
+        "material": "matte glass and plastic body",
+        "color_hex": "#3A3A3A",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "lavender-tinted canvas showing a small winged creature sprite, half line-art and half colored"
+      },
+      {
+        "name": "stylus pen",
+        "material": "matte plastic",
+        "color_hex": "#E8E8E8",
+        "size_relative": "small — pinched in right hand",
+        "detail": "gold grip band, nib touching the tablet glass"
+      },
+      {
+        "name": "fanned color swatch cards",
+        "material": "coated cardstock",
+        "color_hex": "#FF8A65",
+        "size_relative": "small — resting beside tablet",
+        "detail": "five overlapping color chips fanned like a hand of cards, no readable labels"
+      },
+      {
+        "name": "reference sprite sketch sheet",
+        "material": "paper",
+        "color_hex": "#FDFCF8",
+        "size_relative": "small accent — tucked under tablet corner",
+        "detail": "loose pencil thumbnails of the same creature in different poses"
+      }
     ],
-    "environment": "creative desk with scattered sticky notes (blank, no text)",
-    "symbolic": false
+    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, no wall or monitor",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Creating digital artwork for a game",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from swatch fan → tablet sprite → shading hand",
+    "focal_hierarchy": [
+      "sprite artwork center mass",
+      "right hand shading with stylus",
+      "left hand steadying tablet",
+      "color swatch accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and stylus",
+      "midground: drawing tablet",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "tablet silhouette + sprite shape + two hands readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Creating digital artwork for a game. Subject focus: Creating digital artwork for a game. Props: graphics tablet, stylus, on-screen fantasy creature sketch, color swatch chips. Environment: creative desk with scattered sticky notes (blank, no text). Pose: creative stroke in progress. Camera: three-quarter top-down, centered. Left hand: rests on tablet bezel. Right hand: draws flowing character line with stylus. Clothes: paint-splattered hoodie sleeves, yellow and lavender flecks. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow UI accents on tablet UI chrome, yellow paint fleck on sleeve. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: focused, approachable. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter A, UI chrome, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, gore, violence, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Creating digital artwork for a game\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft steel-blue hoodie sleeve with gold cuff stripe, right hand wearing a fingerless art glove. Left hand steadies a drawing tablet on a birch desk edge; the lavender-tinted canvas #F5F0FF shows a small winged creature game sprite, half line-art and half colored in sky-blue #81D4FA. Right hand shades the wing with a light-grey stylus with a gold grip band. A fanned orange #FF8A65 color-swatch card set and a loose pencil reference sketch rest beside the tablet. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: playful imaginative maker energy. Readable silhouette at small thumbnail size."
 }

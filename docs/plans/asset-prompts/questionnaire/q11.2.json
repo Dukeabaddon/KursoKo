@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q11 option 2 — Volunteering at community health camp",
   "questionnaire": {
     "question_id": 11,
+    "question_text": "Which creative project interests you?",
     "option_key": "2",
     "slot": "11.2",
     "choice_text": "Volunteering at community health camp",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under kit and forearms — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle woven texture on blanket edge via 3 parallel lines max",
+    "mood": "warm community-care energy — approachable volunteer service, not a clinical hospital scene",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter S on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "medical cross brand logos",
+      "full human figure or face",
+      "distressing or clinical imagery",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
     "riasec_type": "Social",
-    "accent": "#9575CD",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "lavender cross icon on kit",
-      "lavender volunteer vest"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "first-aid cross icon, volunteer vest trim"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "KursoKo teal",
+        "use": "wristband, blanket-stack ribbon tie"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "first-aid kit shell", "hex": "#FDFCF8" },
+        { "name": "kit handle", "hex": "#2D2D2D" },
+        { "name": "folded blanket stack", "hex": "#F2D9B1" },
+        { "name": "volunteer vest", "hex": "#9575CD" },
+        { "name": "wristband", "hex": "#4DB6AC" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlights on kit lid and blanket fold edges",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and table objects"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "passes kit across table",
-    "right_hand": "receives from partner hands — teamwork",
-    "gesture": "volunteer handoff",
-    "energy": "helpful",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "passes the first-aid kit across the community table",
+      "grip": "full palm under kit base, fingers curled on the near edge",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "receives the kit from a second volunteer's forearm entering frame-right",
+      "grip": "fingers reaching to steady the kit handle",
+      "position": "center-right, meeting the handoff point"
+    },
+    "gesture_summary": "mid-handoff freeze frame — teamwork passing supplies",
+    "energy": "warm, helpful, cooperative",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "soft cardigan or volunteer vest sleeves, warm tones",
-    "accessories": "simple wristband or volunteer lanyard at wrist only"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "soft volunteer vest over cardigan",
+      "fabric": "cotton knit",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled once to mid-forearm",
+      "accent_trim_hex": "#9575CD",
+      "accent_trim_placement": "vest edge binding"
+    },
+    "accessories": [
+      {
+        "item": "volunteer wristband",
+        "color_hex": "#4DB6AC",
+        "placement": "left wrist only, no text"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Volunteering at community health camp",
     "activity_hint": "Public service",
-    "activity": "Volunteering at community health camp",
+    "scene_narrative": "Two pairs of forearms meet over a simple community table, mid-handoff of a first-aid kit. A neat stack of folded blankets sits nearby, ready to distribute. The gesture captures the quiet teamwork of a volunteer health camp — supplies moving hand to hand, calm and organized, with warmth rather than urgency.",
     "primary_objects": [
-      "first-aid kit",
-      "volunteer armband (no text)",
-      "folded blanket stack"
+      {
+        "name": "first-aid kit",
+        "material": "matte plastic case",
+        "color_hex": "#FDFCF8",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "rounded lavender cross icon on the lid, dark handle clasp"
+      },
+      {
+        "name": "folded blanket stack",
+        "material": "woven cotton",
+        "color_hex": "#F2D9B1",
+        "size_relative": "medium — resting beside kit",
+        "detail": "three folded layers with a teal ribbon tie"
+      },
+      {
+        "name": "volunteer armband",
+        "material": "elastic fabric",
+        "color_hex": "#9575CD",
+        "size_relative": "small accent",
+        "detail": "worn on the receiving forearm, plain no text"
+      },
+      {
+        "name": "community table edge",
+        "material": "painted wood",
+        "color_hex": "#D7B896",
+        "size_relative": "background anchor",
+        "detail": "simple flat plank, no signage"
+      }
     ],
-    "environment": "community table setup",
-    "symbolic": false
+    "environment": "light wooden community table strip across bottom third — fades to transparent at edges",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Volunteering at community health camp",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "converging handoff line from left kit-passing hand to right receiving hand",
+    "focal_hierarchy": [
+      "first-aid kit at handoff point",
+      "receiving hand and forearm",
+      "passing hand and forearm",
+      "blanket stack anchor"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: kit and both hands",
+      "midground: blanket stack",
+      "background: table edge only — no wall"
+    ],
+    "thumbnail_readability": "kit silhouette + two meeting hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Volunteering at community health camp. Subject focus: Volunteering at community health camp. Props: first-aid kit, volunteer armband (no text), folded blanket stack. Environment: community table setup. Pose: volunteer handoff. Camera: three-quarter top-down, centered. Left hand: passes kit across table. Right hand: receives from partner hands — teamwork. Clothes: soft cardigan or volunteer vest sleeves, warm tones. Accessories: simple wristband or volunteer lanyard at wrist only. Colors — RIASEC Social: accent #9575CD, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: lavender cross icon on kit, lavender volunteer vest. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: helpful. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, red cross medical brand, letter S, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, clinical hospital, injury, blood, distress"
+  },
+  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Volunteering at community health camp\". Style: flat vector, 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two pairs of forearms meeting over a wooden community table mid-handoff of a first-aid kit with a lavender #9575CD cross icon. A stack of folded blankets tied with teal #4DB6AC ribbon sits beside it. Soft steel-blue volunteer vest sleeves with lavender edge trim, rolled to mid-forearm. Plain teal wristband on the receiving arm, no text. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, transparent margins. Mood: calm, cooperative community service."
 }

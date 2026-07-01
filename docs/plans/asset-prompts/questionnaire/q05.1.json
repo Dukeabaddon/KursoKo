@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q5 option 1 — Writing fantasy novel chapters",
   "questionnaire": {
     "question_id": 5,
+    "question_text": "Which creative work appeals more?",
     "option_key": "1",
     "slot": "5.1",
     "choice_text": "Writing fantasy novel chapters",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under notebook and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; faint wavy scribble lines suggesting handwriting on page only",
+    "mood": "cozy imaginative-writer energy — approachable storytelling hobby, not a formal publishing office",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter A on image",
+      "die-cut sticker border or white card frame",
+      "readable text, words, or letters",
+      "publisher brand logos",
+      "full human figure or face",
+      "photorealistic paper texture",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
     "riasec_type": "Artistic",
-    "accent": "#FFD54F",
-    "secondary": "#9575CD",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "yellow dragon glow on screen",
-      "yellow hoodie sleeve"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FFD54F",
+        "name": "KursoKo gold",
+        "use": "dragon figurine scale highlights, pen nib band, cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#9575CD",
+        "name": "lavender",
+        "use": "ink bottle glass tint, feather quill barb accents"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "open notebook pages", "hex": "#FDFCF8" },
+        { "name": "fountain pen barrel", "hex": "#E8E8E8" },
+        { "name": "small dragon figurine", "hex": "#FFD54F" },
+        { "name": "ink bottle glass", "hex": "#9575CD" },
+        { "name": "feather quill", "hex": "#D7B896" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "gold appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on ink bottle glass and dragon figurine scales",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and notebook edge"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "rests on laptop deck",
-    "right_hand": "types on keyboard",
-    "gesture": "imaginative writing flow",
-    "energy": "inspired",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "holds an open notebook page steady",
+      "grip": "flat fingers pressing the page corner down",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "writes a new line of wavy scribble text with a fountain pen",
+      "grip": "relaxed tripod pen grip, nib touching the page",
+      "position": "center-right, mid-stroke on the open page"
+    },
+    "gesture_summary": "mid-writing freeze frame — pen mid-stroke on a fresh chapter line",
+    "energy": "dreamy, imaginative, quietly absorbed",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "loose creative hoodie sleeves with light paint splatter",
-    "accessories": "woven friendship bracelet or paint on fingers"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "cozy cardigan sleeve",
+      "fabric": "soft brushed wool-blend knit",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "pushed up to mid-forearm",
+      "accent_trim_hex": "#FFD54F",
+      "accent_trim_placement": "thin stripe on cuff rib"
+    },
+    "accessories": [
+      {
+        "item": "small braided thread bracelet",
+        "color_hex": "#9575CD",
+        "placement": "left wrist, simple woven band"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Writing fantasy novel chapters",
     "activity_hint": "Storytelling",
-    "activity": "Writing fantasy novel chapters",
+    "scene_narrative": "A pair of hands writes a fresh line of a fantasy story in an open notebook, pen mid-stroke across a page of wavy handwriting scribbles. A tiny gold dragon figurine perches beside a lavender-tinted ink bottle and a loose feather quill, capturing the cozy magic of building an imaginary world one chapter at a time.",
     "primary_objects": [
-      "laptop",
-      "glowing dragon silhouette on screen",
-      "coffee mug (steam curls only)"
+      {
+        "name": "open notebook with handwriting",
+        "material": "paper",
+        "color_hex": "#FDFCF8",
+        "size_relative": "hero — 40% of visual mass",
+        "detail": "wavy scribble lines suggesting cursive handwriting, no readable words, small ink smudge in corner"
+      },
+      {
+        "name": "small dragon figurine",
+        "material": "painted resin",
+        "color_hex": "#FFD54F",
+        "size_relative": "medium — perched beside notebook",
+        "detail": "curled tail, tiny wings, simplified faceted scales"
+      },
+      {
+        "name": "ink bottle",
+        "material": "glass with metal cap",
+        "color_hex": "#9575CD",
+        "size_relative": "small — resting near notebook edge",
+        "detail": "lavender-tinted glass with a visible ink level line"
+      },
+      {
+        "name": "feather quill",
+        "material": "natural feather",
+        "color_hex": "#D7B896",
+        "size_relative": "small accent — resting across notebook spine",
+        "detail": "simple curved barbs, decorative rather than in-use"
+      }
     ],
-    "environment": "cozy writing nook implied by warm yellow highlight",
-    "symbolic": false
+    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, no bookshelf backdrop",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Writing fantasy novel chapters",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from dragon figurine → notebook page → writing hand",
+    "focal_hierarchy": [
+      "notebook page center mass",
+      "right hand writing with pen",
+      "left hand steadying page",
+      "dragon figurine accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and pen",
+      "midground: notebook and figurine",
+      "background: desk edge only — no wall"
+    ],
+    "thumbnail_readability": "notebook silhouette + dragon shape + two hands readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Writing fantasy novel chapters. Subject focus: Writing fantasy novel chapters. Props: laptop, glowing dragon silhouette on screen, coffee mug (steam curls only). Environment: cozy writing nook implied by warm yellow highlight. Pose: imaginative writing flow. Camera: three-quarter top-down, centered. Left hand: rests on laptop deck. Right hand: types on keyboard. Clothes: loose creative hoodie sleeves with light paint splatter. Accessories: woven friendship bracelet or paint on fingers. Colors — RIASEC Artistic: accent #FFD54F, secondary #9575CD, skin warm neutral medium, outline #2D2D2D. Accent on: yellow dragon glow on screen, yellow hoodie sleeve. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: inspired. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter A, readable words, sentences, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, scary dragon, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Writing fantasy novel chapters\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a cozy steel-blue cardigan sleeve with gold cuff stripe and a lavender thread bracelet. Left hand holds an open cream notebook page steady. Right hand writes a fresh line of wavy scribble handwriting with a light-grey fountain pen with a gold nib band, no readable words. A tiny gold dragon figurine perches beside a lavender-tinted glass ink bottle and a loose tan feather quill resting across the notebook spine. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: cozy imaginative storytelling, quietly absorbed. Readable silhouette at small thumbnail size."
 }

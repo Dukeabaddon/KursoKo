@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q6 option 1 — Marketing products on social media",
   "questionnaire": {
     "question_id": 6,
+    "question_text": "Choose your ideal internship:",
     "option_key": "1",
     "slot": "6.1",
     "choice_text": "Marketing products on social media",
@@ -17,87 +19,173 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under hands and product box — no cast shadows on transparent edge",
+    "texture": "none on skin; subtle soft halo glow ring around ring-light only",
+    "mood": "upbeat creator-economy energy — approachable digital hustle, not a corporate ad agency",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter E on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "brand logos on phone or product",
+      "full human figure or face",
+      "photorealistic screen glare",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
     "riasec_type": "Enterprising",
-    "accent": "#FF8A65",
-    "secondary": "#FFD54F",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "coral heart icon",
-      "coral blazer cuff"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#FF8A65",
+        "name": "coral",
+        "use": "phone case, floating heart icon, jacket cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#FFD54F",
+        "name": "warm yellow",
+        "use": "product box fill, ring-light glow tint"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "smartphone body", "hex": "#E8E8E8" },
+        { "name": "ring light housing", "hex": "#E8E8E8" },
+        { "name": "product ribbon", "hex": "#9575CD" },
+        { "name": "succulent pot", "hex": "#4DB6AC" },
+        { "name": "gold bangle", "hex": "#D4A84B" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
+    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light with ring-light glow accent",
+    "direction": "front, slightly upper-left 30°",
+    "highlight": "small curved highlights on phone bezel and ring-light rim",
+    "shadow": "flat #2D2D2D at 12% opacity under hands and product box"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "holds phone upright for posting",
-    "right_hand": "thumb hovering over post button",
-    "gesture": "social campaign launch",
-    "energy": "upbeat",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "holds smartphone upright at a flattering recording angle",
+      "grip": "loose fingers wrapped around edges, thumb resting on side rail",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "lifts a small product box toward the phone lens",
+      "grip": "fingertip pinch under the box base",
+      "position": "center-right, hovering just below phone screen"
+    },
+    "gesture_summary": "camera-ready product reveal, mid-recording freeze frame",
+    "energy": "upbeat, camera-confident creator energy",
+    "framing": "crop at mid-forearm — no elbows, no face, no visible phone screen reflection of viewer"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "smart casual blazer or polo sleeves, confident fit",
-    "accessories": "watch or presentation clicker at wrist"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "cropped denim jacket",
+      "fabric": "soft washed denim",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "rolled once to mid-forearm",
+      "accent_trim_hex": "#FF8A65",
+      "accent_trim_placement": "thin stripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "thin gold bangle bracelet",
+        "color_hex": "#D4A84B",
+        "placement": "left wrist, resting near phone edge"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Marketing products on social media",
     "activity_hint": "Digital promotion",
-    "activity": "Marketing products on social media",
+    "scene_narrative": "A pair of hands films a short product-unboxing clip for social media at a bright creator desk. The left hand holds a smartphone upright at a flattering angle while the right hand lifts a small skincare box toward the lens, ring-light glow reflecting warmly off the screen. Floating flat-icon hearts and a share arrow hover near the phone edge, capturing the thrill of a campaign about to go live.",
     "primary_objects": [
-      "smartphone",
-      "product photo on screen",
-      "heart and share icons"
+      {
+        "name": "smartphone",
+        "material": "matte plastic and glass",
+        "color_hex": "#FF8A65",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "coral case, screen shows small product photo thumbnail with a simple heart icon overlay"
+      },
+      {
+        "name": "product box",
+        "material": "matte cardboard",
+        "color_hex": "#FFD54F",
+        "size_relative": "medium — lifted in right hand",
+        "detail": "lavender ribbon bow, glossy flat fill"
+      },
+      {
+        "name": "ring light",
+        "material": "plastic and LED ring",
+        "color_hex": "#E8E8E8",
+        "size_relative": "small — visible at frame edge",
+        "detail": "soft halo glow suggestion, no readable brand marks"
+      },
+      {
+        "name": "floating engagement icons",
+        "material": "flat vector graphic",
+        "color_hex": "#FF8A65",
+        "size_relative": "tiny accents",
+        "detail": "one heart shape and one share-arrow shape, simple rounded outlines, no text"
+      }
     ],
-    "environment": "bright creator desk",
-    "symbolic": false
+    "environment": "sunlit creator desk corner strip across bottom third, small potted succulent at edge, fades to transparent",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Marketing products on social media",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal reveal line from product box up to phone screen",
+    "focal_hierarchy": [
+      "smartphone screen and case",
+      "product box in right hand",
+      "left stabilizing hand",
+      "ring light glow accent"
+    ],
+    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and product box",
+      "midground: smartphone",
+      "background: ring light edge only — no wall or desk clutter"
+    ],
+    "thumbnail_readability": "phone silhouette + product box shape readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
+    "max_file_kb": 220,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Marketing products on social media. Subject focus: Marketing products on social media. Props: smartphone, product photo on screen, heart and share icons. Environment: bright creator desk. Pose: social campaign launch. Camera: three-quarter top-down, centered. Left hand: holds phone upright for posting. Right hand: thumb hovering over post button. Clothes: smart casual blazer or polo sleeves, confident fit. Accessories: watch or presentation clicker at wrist. Colors — RIASEC Enterprising: accent #FF8A65, secondary #FFD54F, skin warm neutral medium, outline #2D2D2D. Accent on: coral heart icon, coral blazer cuff. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: upbeat. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter E, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, corporate agency, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Marketing products on social media\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with a rolled cropped denim jacket sleeve, one hand holding a coral smartphone upright showing a small product photo and heart icon, the other hand lifting a warm-yellow product box with lavender ribbon toward the phone lens. Soft ring-light glow at the frame edge. Thin gold bangle on the wrist. Small floating heart and share-arrow icons near the phone. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: upbeat, camera-confident creator energy. Readable silhouette at small thumbnail size."
 }

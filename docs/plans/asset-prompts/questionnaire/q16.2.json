@@ -1,8 +1,10 @@
 {
   "project": "KursoKo",
+  "schema_version": 3,
   "asset_set": "Questionnaire Q16 option 2 — Documenting wildlife behavior",
   "questionnaire": {
     "question_id": 16,
+    "question_text": "Which outdoor work interests you?",
     "option_key": "2",
     "slot": "16.2",
     "choice_text": "Documenting wildlife behavior",
@@ -23,81 +25,167 @@
     "medium": "flat vector illustration",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill": "solid flat fills, no gradients except soft 10% ambient on props",
-    "shading": "minimal cel shadow under hands and hero prop only",
-    "mood": "friendly edu career app — Josie AI / STI Scope sticker family without frame",
-    "reference": "KursoKo RIASEC sticker family — minus letter, minus border frame",
-    "forbidden": [
-      "RIASEC letter on image",
-      "colored border frame or sticker card",
-      "text labels or captions on image",
-      "full faces or identifiable people",
-      "photorealistic render",
-      "purple-blue SaaS gradient UI",
-      "distressing or graphic imagery"
+    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
+    "shading": "single cel shadow ellipse under notebook and wrists — no cast shadows on transparent edge",
+    "texture": "none on skin; faint grain lines on notebook cover via 3 parallel lines max",
+    "mood": "quiet curious field-science energy — approachable naturalist hobby, not sterile lab",
+    "reference_vibe": [
+      "Josie AI warm edu illustrations",
+      "STI Scope flat career graphics",
+      "KursoKo approved RIASEC sticker line weight"
     ],
-    "outline": "#2D2D2D",
-    "not": [
-      "photorealistic",
-      "3D render",
-      "SaaS dashboard",
-      "text on image",
-      "RIASEC letter",
-      "border frame"
+    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "forbidden": [
+      "RIASEC letter I on image",
+      "die-cut sticker border or white card frame",
+      "readable text or numbers",
+      "brand logos on binoculars",
+      "full human figure or face",
+      "photorealistic lens reflections",
+      "neon cyberpunk palette",
+      "dark moody background fill"
     ]
   },
   "color": {
     "riasec_code": "I",
     "riasec_type": "Investigative",
-    "accent": "#4B2C7F",
-    "secondary": "#4DB6AC",
-    "ink": "#2D2D2D",
-    "paper": "#FDFCF8",
-    "skin_tone": "warm neutral medium",
-    "background": "fully transparent — no floor cast, no scene box",
-    "accent_placement": [
-      "purple notebook cover",
-      "purple field jacket cuff"
-    ],
-    "shading": "minimal flat cel shadow under hands and main prop only",
-    "rule": "Accent on props and sleeve trim only — not full background wash"
+    "palette": {
+      "accent": {
+        "hex": "#4B2C7F",
+        "name": "KursoKo deep violet",
+        "use": "notebook cover, sweater cuff pinstripe"
+      },
+      "secondary": {
+        "hex": "#4DB6AC",
+        "name": "teal",
+        "use": "binocular lens rim accent"
+      },
+      "ink": "#2D2D2D",
+      "paper": "#FDFCF8",
+      "skin": {
+        "tone": "warm neutral medium",
+        "hex_approx": "#C8956C",
+        "note": "flat fill, no blush gradient"
+      },
+      "prop_colors": [
+        { "name": "binocular body", "hex": "#3A3A3A" },
+        { "name": "notebook cover", "hex": "#4B2C7F" },
+        { "name": "notebook pages", "hex": "#FDFCF8" },
+        { "name": "pencil wood", "hex": "#D4A84B" },
+        { "name": "bird silhouette accent", "hex": "#2D2D2D" }
+      ]
+    },
+    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
+    "lighting_tint": "faint cool #F0F4FF highlight on knuckle tops only",
+    "accent_rule": "violet appears on 2–3 small areas max — not a background wash"
+  },
+  "lighting": {
+    "type": "soft diffused illustration key light",
+    "direction": "upper-left 45°",
+    "highlight": "small curved highlight on binocular barrel and pencil tip",
+    "shadow": "flat #2D2D2D at 12% opacity under notebook and hands"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, centered",
-    "left_hand": "focuses binocular dial",
-    "right_hand": "writes observation sketch of bird",
-    "gesture": "field research",
-    "energy": "quiet observation",
-    "framing": "hands and forearms only — crop above wrists, no faces"
+    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
+    "camera_distance": "medium-close — hands occupy lower 55% of frame",
+    "left_hand": {
+      "action": "steadies the binoculars and turns the focus dial",
+      "grip": "cupped palm around the barrel, thumb on dial",
+      "position": "lower-left quadrant, wrist angled toward center"
+    },
+    "right_hand": {
+      "action": "sketches a bird silhouette into the field notebook",
+      "grip": "relaxed pencil grip",
+      "position": "center-right, hovering over the notebook page"
+    },
+    "gesture_summary": "mid-observation freeze frame — pencil mid-stroke on a fresh sketch",
+    "energy": "quiet, curious, patient observation",
+    "framing": "crop at mid-forearm — no elbows, no face, no torso"
   },
   "clothes": {
-    "visible": "forearms and sleeves only",
-    "sleeves": "long lab-coat or knit sweater sleeves, neat cuffs",
-    "accessories": "optional nitrile gloves or safety glasses on forehead edge (no face)"
+    "visible_parts": "forearms and rolled sleeves only",
+    "top": {
+      "garment": "long knit field sweater",
+      "fabric": "soft ribbed knit",
+      "color_hex": "#5C7A8A",
+      "sleeve_style": "pushed up to mid-forearm",
+      "accent_trim_hex": "#4B2C7F",
+      "accent_trim_placement": "thin pinstripe on cuff fold"
+    },
+    "accessories": [
+      {
+        "item": "thin wire-frame safety glasses",
+        "color_hex": "#2D2D2D",
+        "placement": "folded, resting on the notebook cover — not worn on a face"
+      }
+    ]
   },
   "subject": {
     "choice_label": "Documenting wildlife behavior",
     "activity_hint": "Field research",
-    "activity": "Documenting wildlife behavior",
+    "scene_narrative": "A pair of hands fine-tunes a pair of binoculars while the other sketches a bird's silhouette into a field notebook, capturing a quiet moment of observation at a soft grassy horizon. The scene reads as patient field science, not a sterile lab.",
     "primary_objects": [
-      "binoculars",
-      "field notebook",
-      "bird silhouettes in far background"
+      {
+        "name": "binoculars",
+        "material": "rubber-armored optics",
+        "color_hex": "#3A3A3A",
+        "size_relative": "hero — 35% of visual mass",
+        "detail": "focus dial mid-turn, violet-tinted lens rims"
+      },
+      {
+        "name": "field notebook",
+        "material": "paper with cloth cover",
+        "color_hex": "#4B2C7F",
+        "size_relative": "medium — open beneath right hand",
+        "detail": "simple pencil sketch of a bird silhouette, no readable text"
+      },
+      {
+        "name": "pencil",
+        "material": "wood",
+        "color_hex": "#D4A84B",
+        "size_relative": "small — resting in right hand grip",
+        "detail": "worn tip, mid-stroke on the page"
+      },
+      {
+        "name": "bird silhouettes",
+        "material": "flat shape accent",
+        "color_hex": "#2D2D2D",
+        "size_relative": "small background accent",
+        "detail": "two simple birds in soft-focus background, no fine detail"
+      }
     ],
-    "environment": "field observation, soft horizon line only",
-    "symbolic": false
+    "environment": "grassy field edge strip across bottom third fading to a soft horizon line — no sky detail, no wall",
+    "symbolic": false,
+    "sensitive_handling": null
   },
   "composition": {
-    "layout": "single clear scene, centered focal activity",
-    "focal_point": "Documenting wildlife behavior",
-    "text_on_image": "none",
-    "readable_at": "assessment card thumbnail ~160px width"
+    "layout": "diagonal workflow line from binoculars → gaze direction → notebook sketch",
+    "focal_hierarchy": [
+      "notebook sketch center mass",
+      "right hand sketching",
+      "left hand steadying binoculars",
+      "distant bird silhouettes"
+    ],
+    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
+    "depth_layers": [
+      "foreground: hands and pencil",
+      "midground: notebook and binoculars",
+      "background: soft horizon strip only"
+    ],
+    "thumbnail_readability": "notebook silhouette + two hand shapes readable at 160px width",
+    "text_on_image": "none"
   },
   "technical": {
     "export": "PNG-24 alpha",
     "max_file_kb": 200,
     "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
+    "no_drop_shadow_on_canvas": true,
+    "anti_aliasing": "smooth outer silhouette only"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG. KursoKo quiz choice — NO letter, NO border frame, NO text on image. Activity: Documenting wildlife behavior. Subject focus: Documenting wildlife behavior. Props: binoculars, field notebook, bird silhouettes in far background. Environment: field observation, soft horizon line only. Pose: field research. Camera: three-quarter top-down, centered. Left hand: focuses binocular dial. Right hand: writes observation sketch of bird. Clothes: long lab-coat or knit sweater sleeves, neat cuffs. Accessories: optional nitrile gloves or safety glasses on forehead edge (no face). Colors — RIASEC Investigative: accent #4B2C7F, secondary #4DB6AC, skin warm neutral medium, outline #2D2D2D. Accent on: purple notebook cover, purple field jacket cuff. Art: flat vector illustration, 2px outline, solid flat fills, no gradients except soft 10% ambient on props. Energy: quiet observation. Safe margin 40px."
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
+    "aspect_ratio": "1:1",
+    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter I, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, hunting weapon, trapped or injured animal, guns, blood"
+  },
+  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Documenting wildlife behavior\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft-knit steel-blue sweater with violet #4B2C7F cuff pinstripe. Left hand cups a pair of binoculars, thumb on the focus dial. Right hand sketches a simple bird silhouette into a violet-covered field notebook with a wooden pencil. Two soft-focus bird silhouettes sit in the far background. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, soft grassy horizon fading to transparent. Mood: quiet curious naturalist energy, patient field science not chaotic lab. Readable silhouette at small thumbnail size."
 }

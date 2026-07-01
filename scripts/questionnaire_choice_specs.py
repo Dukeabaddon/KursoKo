@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Build per-choice spec fields: subject, pose, clothes, color, art_style."""
+"""DEPRECATED — superseded by v3 JSON files in docs/plans/asset-prompts/questionnaire/
+
+Edit qNN.M.json directly. Do not import this module for new work.
+"""
 
 from __future__ import annotations
 
