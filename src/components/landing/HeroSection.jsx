@@ -1,13 +1,22 @@
 import { useId } from 'react'
-import heroCharacterCutout from '../../assets/landing/kursoko-hero-pt-v3-cutout.png'
-import { landingHeroBody, landingHeroCta, landingHeroTitle } from './landingClasses'
-
-/** Rounded trapezoid — viewBox 0 0 100 100, scales with preserveAspectRatio="none" */
-const HERO_BANNER_PATH =
-  'M 0,7 Q 0,0 7,0 L 93,0 Q 100,0 100,7 L 96,85 Q 95.5,88.5 92.5,89 L 6,100 Q 3,100.5 3,93 Z'
+import heroCharacterBust from '../../assets/landing/image.png'
+import { heroFloatingProps } from './landingAssets'
+import {
+  landingHeroBody,
+  landingHeroCharacterCol,
+  landingHeroCharacterImg,
+  landingHeroCharacterWrap,
+  landingHeroCta,
+  landingHeroGlow,
+  landingHeroScene,
+  landingHeroSceneDecor,
+  landingHeroTitle,
+} from './landingClasses'
+import { HERO_BANNER_PATH } from './heroBannerPath'
 
 const HeroSection = ({ onStart }) => {
   const gradientId = useId().replace(/:/g, '')
+  const clipId = `${gradientId}-clip`
 
   return (
     <section
@@ -16,7 +25,10 @@ const HeroSection = ({ onStart }) => {
       className="relative flex min-h-0 w-full flex-1 flex-col"
     >
       <div className="landing-hero-stage w-full">
-        <div className="landing-hero-banner relative mx-auto block w-[90%] md:w-[calc(100%-4rem)] md:max-w-7xl">
+        <div
+          className="landing-hero-banner landing-hero-banner--bust relative mx-auto block w-[90%] md:w-[calc(100%-4rem)] md:max-w-7xl"
+          style={{ '--hero-banner-clip': `url(#${clipId})` }}
+        >
           <div className="landing-hero-banner-bg-mobile md:hidden" aria-hidden="true" />
           <div className="landing-hero-banner-bg hidden md:block" aria-hidden="true">
             <svg
@@ -30,6 +42,9 @@ const HeroSection = ({ onStart }) => {
                   <stop offset="0%" stopColor="var(--color-landing-accent)" />
                   <stop offset="100%" stopColor="var(--color-landing-accent-hover)" />
                 </linearGradient>
+                <clipPath id={clipId} clipPathUnits="objectBoundingBox">
+                  <path d={HERO_BANNER_PATH} transform="scale(0.01)" />
+                </clipPath>
               </defs>
               <path
                 d={HERO_BANNER_PATH}
@@ -58,7 +73,7 @@ const HeroSection = ({ onStart }) => {
               <button
                 type="button"
                 onClick={onStart}
-                className={`landing-hero-cta mt-1 flex items-center gap-2 transition-all duration-200 ease-out hover:scale-105 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:mt-0 ${landingHeroCta}`}
+                className={`landing-hero-cta mt-1 md:mt-0 ${landingHeroCta}`}
               >
                 Start Assessment
                 <svg
@@ -77,15 +92,30 @@ const HeroSection = ({ onStart }) => {
               </button>
             </div>
 
-            <div className="landing-hero-character-col relative mt-auto flex w-full min-h-[11rem] flex-1 items-end justify-center md:col-span-1 md:mt-0 md:h-full md:min-h-0 lg:col-span-5">
-              <div className="landing-hero-character-anchor" aria-hidden="true">
-                <div className="landing-hero-character-scale">
+            <div className={landingHeroCharacterCol}>
+              <div className={landingHeroScene}>
+                <div className={landingHeroSceneDecor} aria-hidden="true">
+                  <div className={landingHeroGlow} />
+                  {heroFloatingProps.map((prop) => (
+                    <img
+                      key={prop.id}
+                      src={prop.src}
+                      alt=""
+                      className={prop.className}
+                      width={prop.width}
+                      height={prop.height}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ))}
+                </div>
+                <div className={landingHeroCharacterWrap}>
                   <img
-                    src={heroCharacterCutout}
-                    alt="Student thinking about career choices"
-                    className="landing-hero-character-img"
-                    width={1024}
-                    height={1365}
+                    src={heroCharacterBust}
+                    alt="Friendly student guide welcoming you to KursoKo"
+                    className={landingHeroCharacterImg}
+                    width={3600}
+                    height={3600}
                     loading="eager"
                     decoding="async"
                   />

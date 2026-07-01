@@ -20,6 +20,12 @@
     transform: none;
   }
 
+  .animate-landing-hero-drift,
+  .animate-landing-hero-drift-mirror,
+  .animate-landing-hero-float {
+    animation: none !important;
+  }
+
   .faq-toggle-icon__bar {
     transition: none;
   }
@@ -65,5 +71,35 @@
 
   .landing-cta-fancy-shine {
     display: none;
+  }
+}
+
+@keyframes landing-hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes landing-hero-drift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, -8px);
+  }
+}
+
+@keyframes landing-hero-drift-mirror {
+  0%,
+  100% {
+    transform: scaleX(-1) translate(0, 0);
+  }
+  50% {
+    transform: scaleX(-1) translate(5px, -8px);
   }
 }

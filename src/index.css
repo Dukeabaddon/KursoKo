@@ -1140,6 +1140,14 @@ body {
   scroll-behavior: auto !important;
 }
 
+/* Landing CTAs — keep color fades (not vestibular motion) */
+.reduced-motion .landing-nav-cta,
+.reduced-motion .landing-hero-cta,
+.reduced-motion .landing-nav-cta svg,
+.reduced-motion .landing-hero-cta svg {
+  transition-duration: 320ms !important;
+}
+
 /* Screen reader mode optimizations */
 .screen-reader-mode .animate-bounce,
 .screen-reader-mode .animate-pulse,

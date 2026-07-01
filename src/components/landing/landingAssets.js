@@ -1,4 +1,7 @@
 /** Landing placeholder asset map — swap PNGs, keep paths (see manifest.json) */
+import heroCloud from '../../assets/landing/hero/cloud.png'
+import heroStar from '../../assets/landing/hero/star.png'
+
 import blobLavender from '../../assets/landing/placeholders/blobs/blob-lavender.png'
 import blobTeal from '../../assets/landing/placeholders/blobs/blob-teal.png'
 import blobYellow from '../../assets/landing/placeholders/blobs/blob-yellow.png'
@@ -14,6 +17,50 @@ import stepQuiz from '../../assets/landing/placeholders/steps/step-01-quiz.png'
 import stepProfile from '../../assets/landing/placeholders/steps/step-02-profile.png'
 import stepPath from '../../assets/landing/placeholders/steps/step-03-path.png'
 
+import { landingHeroProp } from './landingClasses'
+
+/**
+ * Hero props — behind character (z-5). Triangle layout: cloud L, stars top-R, cloud top-R.
+ * star-1 small high · star-2 larger mid · lavender cloud top-right · teal cloud shoulder-left
+ */
+export const heroFloatingProps = [
+  {
+    id: 'hero-cloud-teal',
+    src: heroCloud,
+    className: `${landingHeroProp} top-[14%] left-[0%] z-[2] w-[6.25rem] max-w-[6.25rem] scale-x-[-1] opacity-[0.88] animate-landing-hero-drift-mirror`,
+    width: 120,
+    height: 120,
+  },
+  {
+    id: 'hero-cloud-lavender',
+    src: heroCloud,
+    className: `${landingHeroProp} top-[0%] right-[4%] z-[2] w-[7rem] max-w-[7rem] opacity-[0.9] animate-landing-hero-drift`,
+    width: 160,
+    height: 160,
+  },
+  {
+    id: 'hero-star-1',
+    src: heroStar,
+    className: `${landingHeroProp} top-[2%] right-[11%] z-[3] w-[1.2rem] max-w-[1.2rem] max-h-[1.2rem] opacity-[0.92] animate-landing-hero-float [animation-duration:4.5s]`,
+    width: 36,
+    height: 36,
+  },
+  {
+    id: 'hero-star-2',
+    src: heroStar,
+    className: `${landingHeroProp} top-[9%] right-[22%] z-[3] w-[1.9rem] max-w-[1.9rem] max-h-[1.9rem] opacity-[0.92] animate-landing-hero-float [animation-duration:5.5s] [animation-delay:-1.2s]`,
+    width: 28,
+    height: 28,
+  },
+  {
+    id: 'hero-star-3',
+    src: heroStar,
+    className: `${landingHeroProp} top-[4%] left-[28%] z-[3] w-[1rem] max-w-[1rem] max-h-[1rem] opacity-[0.85] animate-landing-hero-float [animation-duration:6s] [animation-delay:-2s]`,
+    width: 22,
+    height: 22,
+  },
+]
+
 export const landingBlobs = [
   { src: blobLavender, className: 'landing-blob landing-blob--lavender' },
   { src: blobTeal, className: 'landing-blob landing-blob--teal' },
@@ -27,7 +74,8 @@ export const riasecStickers = [
     hint: 'Hands-on',
     color: '#4DB6AC',
     src: riasecR,
-    description: 'You enjoy practical work with tools, machines, or the outdoors — building, fixing, and working with your hands.',
+    description:
+      'You enjoy practical work with tools, machines, or the outdoors — building, fixing, and working with your hands.',
   },
   {
     code: 'I',
@@ -35,7 +83,8 @@ export const riasecStickers = [
     hint: 'Analytical',
     color: '#6E4FB8',
     src: riasecI,
-    description: 'You like exploring ideas through research, analysis, and solving complex or abstract problems.',
+    description:
+      'You like exploring ideas through research, analysis, and solving complex or abstract problems.',
   },
   {
     code: 'A',
@@ -43,7 +92,8 @@ export const riasecStickers = [
     hint: 'Creative',
     color: '#FFD54F',
     src: riasecA,
-    description: 'You express yourself through art, design, writing, music, or other creative and imaginative work.',
+    description:
+      'You express yourself through art, design, writing, music, or other creative and imaginative work.',
   },
   {
     code: 'S',
@@ -51,7 +101,8 @@ export const riasecStickers = [
     hint: 'People-focused',
     color: '#9575CD',
     src: riasecS,
-    description: 'You thrive when helping, teaching, or connecting with people — supporting others and working in teams.',
+    description:
+      'You thrive when helping, teaching, or connecting with people — supporting others and working in teams.',
   },
   {
     code: 'E',
@@ -59,7 +110,8 @@ export const riasecStickers = [
     hint: 'Leader',
     color: '#FF8A65',
     src: riasecE,
-    description: 'You enjoy leading, persuading, and taking initiative — selling ideas, starting projects, or influencing outcomes.',
+    description:
+      'You enjoy leading, persuading, and taking initiative — selling ideas, starting projects, or influencing outcomes.',
   },
   {
     code: 'C',
@@ -67,7 +119,8 @@ export const riasecStickers = [
     hint: 'Organized',
     color: '#81D4FA',
     src: riasecC,
-    description: 'You prefer organizing data, details, and procedures — accurate records, clear systems, and structured tasks.',
+    description:
+      'You prefer organizing data, details, and procedures — accurate records, clear systems, and structured tasks.',
   },
 ]
 

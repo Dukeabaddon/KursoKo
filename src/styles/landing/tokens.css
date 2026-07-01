@@ -18,6 +18,9 @@
 
   --ease-landing: cubic-bezier(0.22, 1, 0.36, 1);
   --animate-landing-rise: landing-rise 400ms var(--ease-landing) both;
+  --animate-landing-hero-drift: landing-hero-drift 8s ease-in-out infinite alternate;
+  --animate-landing-hero-drift-mirror: landing-hero-drift-mirror 9s ease-in-out infinite alternate-reverse;
+  --animate-landing-hero-float: landing-hero-float 5s ease-in-out infinite;
 
   /* Hero banner — desktop fixed height; mobile fills fold via flex */
   --landing-hero-height: min(85dvh, 700px);

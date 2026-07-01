@@ -5,7 +5,7 @@ const HowItWorks = ({ onStart }) => (
   <section
     id="how"
     aria-labelledby="how-heading"
-    className="landing-section landing-section--how landing-section--blobs"
+    className="landing-section landing-section--how landing-section--blobs scroll-mt-20"
   >
     <LandingBlobs variant="yellow-lavender" />
     <div className="landing-section__inner">

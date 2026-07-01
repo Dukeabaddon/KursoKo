@@ -67,67 +67,97 @@
   pointer-events: none;
 }
 
-/* Character zone: grid column stays relative; anchor handles position only */
-.landing-hero-character-col {
-  overflow: visible;
-  min-height: 0;
-  align-self: end;
-  pointer-events: none;
+/* Bust banner — slanted clip on desktop (path in heroBannerPath.js) */
+.landing-hero-banner--bust {
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 1.5rem;
 }
 
-/* Center at bottom of column — tweak translateY only for foot tuck (md+) */
-.landing-hero-character-anchor {
+@media (min-width: 768px) {
+  .landing-hero-banner--bust {
+    border-radius: 0;
+    clip-path: var(--hero-banner-clip);
+    -webkit-clip-path: var(--hero-banner-clip);
+  }
+}
+
+.landing-hero-banner--bust .landing-hero-banner-bg-mobile {
+  border-radius: 1.5rem;
+}
+
+.landing-hero-banner--bust .landing-hero-content {
   position: relative;
-  line-height: 0;
-  pointer-events: none;
+  height: 100%;
+  min-height: 0;
+  padding-bottom: 0;
+  overflow: visible;
 }
 
 @media (min-width: 768px) {
-  .landing-hero-character-anchor {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(24px);
-    transform-origin: bottom center;
+  .landing-hero-banner--bust .landing-hero-content {
+    padding-top: 3rem;
+    padding-bottom: 0;
   }
 }
 
-.landing-hero-character-scale {
-  transform-origin: bottom center;
-  line-height: 0;
+/* Soft radial glow behind character — size/position in landingClasses landingHeroGlow */
+.landing-hero-glow {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(255, 255, 255, 0.1) 45%,
+    transparent 72%
+  );
 }
 
-.landing-hero-character-img {
-  display: block;
-  width: auto;
-  max-width: none;
-  height: auto;
-  max-height: min(38dvh, 300px);
-  object-fit: contain;
-  object-position: bottom center;
-  user-select: none;
-  pointer-events: none;
+/* Hero CTA + nav CTA — explicit defaults + smooth color transitions */
+.landing-nav-cta,
+.landing-hero-cta {
+  box-shadow: none !important;
+  transition:
+    background-color 320ms var(--ease-landing),
+    border-color 320ms var(--ease-landing),
+    color 320ms var(--ease-landing);
 }
 
-@media (min-width: 768px) {
-  .landing-hero-character-img {
-    max-height: min(48dvh, 400px);
-  }
+.landing-nav-cta {
+  background-color: var(--color-landing-accent);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
 }
 
-@media (min-width: 1024px) {
-  .landing-hero-character-scale {
-    transform: scale(1);
-  }
-
-  .landing-hero-character-img {
-    max-height: min(52dvh, 440px);
-  }
+.landing-nav-cta:hover,
+.landing-nav-cta:focus-visible {
+  background-color: var(--color-landing-ink);
+  border-color: var(--color-landing-ink);
+  color: #fff;
 }
 
-@media (min-width: 1280px) {
-  .landing-hero-character-scale {
-    transform: scale(1.05);
+.landing-hero-cta {
+  background-color: #fff;
+  border-color: #fff;
+  color: var(--color-landing-accent);
+}
+
+.landing-hero-cta:hover,
+.landing-hero-cta:focus-visible {
+  background-color: var(--color-landing-yellow);
+  border-color: var(--color-landing-yellow);
+  color: var(--color-landing-ink);
+}
+
+.landing-hero-cta svg {
+  color: inherit;
+  transition: color 320ms var(--ease-landing);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-nav-cta,
+  .landing-hero-cta,
+  .landing-nav-cta svg,
+  .landing-hero-cta svg {
+    transition-duration: 320ms !important;
   }
 }
 

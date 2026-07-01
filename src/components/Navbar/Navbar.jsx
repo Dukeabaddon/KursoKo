@@ -1,18 +1,18 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { KursoKoLogo } from '../brand'
-import { landingBtnPrimary, landingNavLink, landingNavShell } from '../landing/landingClasses'
+import {
+  landingBtnPrimary,
+  landingBtnPrimaryMobile,
+  landingNavLink,
+  landingNavShell
+} from '../landing/landingClasses'
+import { smoothScrollToHash } from '../../utils/smoothScroll'
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
   { href: '#how', label: 'How it works' },
   { href: '#faq', label: 'FAQ' }
 ]
-
-const NavLink = ({ href, children, onClick }) => (
-  <a href={href} onClick={onClick} className={landingNavLink}>
-    {children}
-  </a>
-)
 
 const Navbar = ({ onStart }) => {
   const [open, setOpen] = useState(false)
@@ -25,6 +25,12 @@ const Navbar = ({ onStart }) => {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const handleAnchorClick = useCallback((event, href) => {
+    event.preventDefault()
+    smoothScrollToHash(href)
+    setOpen(false)
+  }, [])
+
   return (
     <header className={landingNavShell(scrolled)}>
       <nav
@@ -34,6 +40,7 @@ const Navbar = ({ onStart }) => {
       >
         <a
           href="#hero"
+          onClick={(e) => handleAnchorClick(e, '#hero')}
           className="flex shrink-0 items-center rounded-lg py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent"
           aria-label="KursoKo Home"
         >
@@ -42,9 +49,14 @@ const Navbar = ({ onStart }) => {
 
         <div className="hidden items-center gap-1 md:flex">
           {navLinks.map(({ href, label }) => (
-            <NavLink key={href} href={href}>
+            <a
+              key={href}
+              href={href}
+              onClick={(e) => handleAnchorClick(e, href)}
+              className={landingNavLink}
+            >
               {label}
-            </NavLink>
+            </a>
           ))}
         </div>
 
@@ -52,7 +64,7 @@ const Navbar = ({ onStart }) => {
           <button
             type="button"
             onClick={onStart}
-            className={`${landingBtnPrimary} px-4 py-2 text-sm`}
+            className={landingBtnPrimary}
             aria-label="Start Assessment"
           >
             Start Assessment
@@ -76,9 +88,14 @@ const Navbar = ({ onStart }) => {
         <div className="border-t border-landing-ink/10 bg-landing-paper md:hidden">
           <div className="flex flex-col gap-1 px-4 py-3">
             {navLinks.map(({ href, label }) => (
-              <NavLink key={href} href={href} onClick={() => setOpen(false)}>
+              <a
+                key={href}
+                href={href}
+                onClick={(e) => handleAnchorClick(e, href)}
+                className={landingNavLink}
+              >
                 {label}
-              </NavLink>
+              </a>
             ))}
             <button
               type="button"
@@ -86,7 +103,7 @@ const Navbar = ({ onStart }) => {
                 setOpen(false)
                 onStart?.()
               }}
-              className={`${landingBtnPrimary} mt-2 w-full px-4 py-2.5 text-sm`}
+              className={`${landingBtnPrimary} ${landingBtnPrimaryMobile}`}
             >
               Start Assessment
             </button>
