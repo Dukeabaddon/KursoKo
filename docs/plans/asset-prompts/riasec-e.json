@@ -1,0 +1,45 @@
+{
+  "project": "KursoKo",
+  "asset_set": "RIASEC sticker — letter E (Enterprising)",
+  "deliverable": {
+    "filename": "src/assets/landing/placeholders/riasec/e.png",
+    "width_px": 512,
+    "height_px": 512,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 48
+  },
+  "art_direction": {
+    "style": "flat vector sticker, die-cut label, 2-3px dark outline (#2D2D2D)",
+    "mood": "friendly education, career exploration for any age — NOT SaaS, NOT corporate",
+    "reference_sites": ["https://josieai.com", "https://scope.sti.edu"],
+    "reference_vibe": "CreativeHive soft color blobs + flat edu stickers",
+    "match_existing": "Must match approved letter A sticker: same line weight, frame, outline, sticker card style"
+  },
+  "subject": {
+    "letter": "E",
+    "riasec_type": "Enterprising",
+    "meaning": "Leadership, persuasion, business, starting projects, taking initiative",
+    "scene": "Young person with small megaphone OR briefcase with upward arrow flag — energetic but friendly, readable at 120px",
+    "expression": "confident, optimistic, not aggressive corporate"
+  },
+  "palette": {
+    "accent": "#FF8A65",
+    "secondary": "#FFD54F",
+    "outline": "#2D2D2D",
+    "card_fill": "#FFFFFF",
+    "forbidden": ["purple-blue SaaS gradient", "neon cyber", "realistic 3D render", "stock photo", "wall street suit cliché"]
+  },
+  "composition": {
+    "layout": "sticker on white rounded rect inside colored border frame — same as letter A",
+    "focal_point": "center",
+    "text_on_image": "optional small 'E' bottom corner only — main label lives in HTML"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 150,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education sticker, RIASEC Enterprising type letter E. Same art style as KursoKo letter A sticker: die-cut label, white rounded card, 2px dark outline #2D2D2D. Friendly colorful career education vibe. Scene: teen with megaphone and small briefcase, leadership and initiative theme. Accent coral #FF8A65 and yellow #FFD54F. Simple shapes, no photorealism, no SaaS UI, transparent background, 512x512px, safe margin 48px."
+}

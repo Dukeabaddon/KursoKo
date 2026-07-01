@@ -87,7 +87,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(65px);
+    transform: translateX(-50%) translateY(24px);
     transform-origin: bottom center;
   }
 }
@@ -111,23 +111,23 @@
 
 @media (min-width: 768px) {
   .landing-hero-character-img {
-    max-height: min(60dvh, 520px);
+    max-height: min(48dvh, 400px);
   }
 }
 
 @media (min-width: 1024px) {
   .landing-hero-character-scale {
-    transform: scale(1.1);
+    transform: scale(1);
   }
 
   .landing-hero-character-img {
-    max-height: min(72dvh, 680px);
+    max-height: min(52dvh, 440px);
   }
 }
 
 @media (min-width: 1280px) {
   .landing-hero-character-scale {
-    transform: scale(1.25);
+    transform: scale(1.05);
   }
 }
 

@@ -1,0 +1,25 @@
+{
+  "project": "KursoKo",
+  "asset_set": "How it works — Step 3 (Alamin ang courses)",
+  "deliverable": {
+    "filename": "src/assets/landing/placeholders/steps/step-03-path.png",
+    "width_px": 640,
+    "height_px": 480,
+    "aspect_ratio": "4:3",
+    "background": "transparent PNG",
+    "safe_padding_px": 32
+  },
+  "subject": {
+    "step_number": "03",
+    "title_taglish": "Alamin ang courses",
+    "scene": "Winding path or roadmap with 3 flags: course icons (grad cap, briefcase, book). Student at start looking at path forward.",
+    "story": "Personalized course and career suggestions after results"
+  },
+  "palette": {
+    "primary": "#4B2C7F",
+    "teal": "#4DB6AC",
+    "yellow": "#FFD54F",
+    "ink": "#2D2D2D"
+  },
+  "prompt_for_image_ai": "Flat vector illustration, education career roadmap. Filipino student at start of a friendly winding path with three milestone flags showing college course and career options. Purple and teal accents, sticker outline style, hopeful mood, 640x480 transparent PNG, SCOPE career guidance vibe not corporate SaaS."
+}

@@ -19,6 +19,14 @@
     opacity: 1;
     transform: none;
   }
+
+  .faq-toggle-icon__bar {
+    transition: none;
+  }
+
+  .landing-faq-panel {
+    transition: none;
+  }
 }
 
 .landing-cta-fancy {

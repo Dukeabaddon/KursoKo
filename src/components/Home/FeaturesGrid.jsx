@@ -6,82 +6,81 @@ import {
   ShieldCheckIcon,
   BoltIcon
 } from '@heroicons/react/24/outline'
+import LandingBlobs from '../landing/LandingBlobs'
 
 const features = [
   {
-    title: 'Scientifically Validated',
-    description: "Built on Dr. John Holland's proven RIASEC theory trusted by counselors around the world.",
+    title: 'Scientifically grounded',
+    description:
+      "Built on Dr. John Holland's RIASEC theory — the same interest model used in career counseling worldwide.",
     Icon: AcademicCapIcon
   },
   {
-    title: 'Comprehensive Results',
-    description: 'Receive a detailed report with your dominant interest types, strengths, and focus areas.',
+    title: 'Clear results',
+    description:
+      'See your dominant interest types, strengths, and focused areas — not vague personality labels.',
     Icon: DocumentTextIcon
   },
   {
-    title: 'Quick & Easy',
-    description: 'Finish the full experience in about ten minutes with clear, scenario-based questions.',
+    title: 'Quick & focused',
+    description: 'About ten minutes. Scenario-based questions that feel relevant, not like a long survey.',
     Icon: ClockIcon
   },
   {
-    title: 'Free Forever',
-    description: 'No hidden fees, no credit card required, and no paywall for your personalized results.',
+    title: 'Free to use',
+    description: 'No credit card, no upsell, no paywall on your personalized results.',
     Icon: GiftIcon
   },
   {
-    title: 'Privacy Focused',
-    description: 'Your answers stay private—there is no tracking, selling, or saving of personal data.',
+    title: 'Privacy first',
+    description: 'Your answers are not saved on our servers — you stay in control of your data.',
     Icon: ShieldCheckIcon
   },
   {
-    title: 'Instant Access',
-    description: 'See your RIASEC profile immediately after finishing and start exploring careers right away.',
+    title: 'Instant access',
+    description: 'Finish the assessment and view your RIASEC profile immediately.',
     Icon: BoltIcon
   }
 ]
 
-const FeaturesGrid = () => {
-  return (
-    <section id="features" aria-labelledby="features-heading" className="scroll-mt-20">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 sm:px-6 md:px-8">
-        <div className="max-w-3xl">
-          <h2 id="features-heading" className="text-balance text-3xl font-bold text-neutral-900 sm:text-4xl">
-            Trusted Assessment Platform
-          </h2>
-          <p className="mt-3 text-base text-neutral-600 sm:text-lg">
-            KursoKo gives you the clarity and confidence to make smart decisions about your future with a modern, student-friendly experience.
-          </p>
-        </div>
-
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((item, index) => {
-            const { title, description, Icon } = item
-            const useAlternate = index % 2 === 1
-            const surfaceStyle = useAlternate
-              ? { background: 'rgba(245, 243, 255, 0.8)', borderColor: 'rgba(139, 92, 246, 0.2)' }
-              : { background: 'rgba(239, 246, 255, 0.8)', borderColor: 'rgba(37, 99, 235, 0.2)' }
-
-            return (
-              <article
-                key={title}
-                className="feature-card flex h-full flex-col gap-4 rounded-2xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-                style={surfaceStyle}
-              >
-                <div
-                  className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white"
-                  style={{ color: useAlternate ? 'var(--color-accent-500)' : 'var(--color-primary-600)' }}
-                >
-                  <Icon className="h-6 w-6" aria-hidden="true" />
-                </div>
-                <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
-                <p className="text-sm leading-relaxed text-neutral-600">{description}</p>
-              </article>
-            )
-          })}
-        </div>
+const FeaturesGrid = () => (
+  <section
+    id="features"
+    aria-labelledby="features-heading"
+    className="landing-section landing-section--features landing-section--blobs scroll-mt-20"
+  >
+    <LandingBlobs variant="teal-yellow" />
+    <div className="landing-section__inner">
+      <div className="landing-section__header">
+        <p className="landing-eyebrow">Why KursoKo</p>
+        <h2 id="features-heading" className="landing-heading">
+          Clarity for any career crossroads
+        </h2>
+        <p className="landing-lead">
+          For students picking a track, graduates choosing a major, or anyone who wants to know
+          which interests run strongest — not another generic personality quiz.
+        </p>
       </div>
-    </section>
-  )
-}
+
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:gap-5">
+        {features.map((item) => {
+          const { title, description, Icon } = item
+          return (
+            <article key={title} className="landing-feature-card flex h-full flex-col gap-3">
+              <div
+                className="inline-flex h-12 w-12 items-center justify-center rounded-xl"
+                style={{ background: 'rgba(149, 117, 205, 0.2)', color: 'var(--color-landing-accent)' }}
+              >
+                <Icon className="h-6 w-6" aria-hidden="true" />
+              </div>
+              <h3 className="text-lg font-bold text-[var(--color-landing-ink)]">{title}</h3>
+              <p className="text-sm leading-relaxed text-[var(--color-landing-muted)]">{description}</p>
+            </article>
+          )
+        })}
+      </div>
+    </div>
+  </section>
+)
 
 export default FeaturesGrid

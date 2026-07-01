@@ -7,21 +7,29 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies & build
 node_modules
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Editor
 .vscode/*
+!.vscode/extensions.json
 
-# Project-specific folders to exclude
-documentaion/
-
-# Local agent caches (not for git)
+# Local tooling (not for git)
 .gate-mcp/
+graphify-out/
+.agent/
+.antigravity-kit/
+.venv-assets/
 
-# Test output
+# Playwright & test artifacts
 playwright-report/
 test-results/
-e2e/screenshots/
+blob-report/
+.playwright/
+tests/e2e/screenshots/
+
+# OS
+.DS_Store

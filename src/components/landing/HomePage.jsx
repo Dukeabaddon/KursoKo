@@ -1,8 +1,10 @@
 import Navbar from '../Navbar'
 import FeaturesGrid from '../Home/FeaturesGrid'
 import FAQSection from '../Home/FAQSection'
-import WhyHowSection from '../Home/WhyHowSection'
 import HeroSection from './HeroSection'
+import StatsBar from './StatsBar'
+import RiasecIntro from './RiasecIntro'
+import HowItWorks from './HowItWorks'
 import { landingFold, landingPage } from './landingClasses'
 
 const HomePage = ({ onStartQuestionnaire }) => (
@@ -12,12 +14,12 @@ const HomePage = ({ onStartQuestionnaire }) => (
       <HeroSection onStart={onStartQuestionnaire} />
     </div>
 
-    <div className="flex flex-col" aria-label="KursoKo Homepage">
-      <div className="flex flex-col gap-20 py-16 sm:gap-24 sm:py-20 md:gap-32 md:py-24">
-        <WhyHowSection />
-        <FeaturesGrid />
-        <FAQSection onStart={onStartQuestionnaire} />
-      </div>
+    <div className="landing-page-body flex flex-col" aria-label="KursoKo Homepage">
+      <StatsBar />
+      <RiasecIntro />
+      <HowItWorks onStart={onStartQuestionnaire} />
+      <FeaturesGrid />
+      <FAQSection onStart={onStartQuestionnaire} />
     </div>
   </div>
 )

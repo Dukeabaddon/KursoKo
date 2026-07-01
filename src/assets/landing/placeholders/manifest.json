@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "style": "flat_vector_sticker",
+  "palette": {
+    "ink": "#2D2D2D",
+    "purple": "#4B2C7F",
+    "purple_light": "#9575CD",
+    "teal": "#4DB6AC",
+    "yellow": "#FFD54F",
+    "paper": "#FDFCF8",
+    "white": "#FFFFFF",
+    "outline": "#2D2D2D"
+  },
+  "replace_note": "Swap PNGs keeping same filenames; run build to verify layout.",
+  "layout": {
+    "riasec_grid": {
+      "cols_mobile": 2,
+      "cols_md": 3,
+      "cols_lg": 6,
+      "max_width_px": 120
+    },
+    "steps": {
+      "max_width_px": 320,
+      "aspect": "4:3"
+    },
+    "blobs": {
+      "position": "absolute",
+      "blur_css": "80px",
+      "max_width_vw": 40
+    }
+  },
+  "assets": {
+    "riasec": [
+      {
+        "id": "riasec-r",
+        "file": "riasec/r.png",
+        "width": 512,
+        "height": 512,
+        "label": "Realistic"
+      },
+      {
+        "id": "riasec-i",
+        "file": "riasec/i.png",
+        "width": 512,
+        "height": 512,
+        "label": "Investigative"
+      },
+      {
+        "id": "riasec-a",
+        "file": "riasec/a.png",
+        "width": 512,
+        "height": 512,
+        "label": "Artistic"
+      },
+      {
+        "id": "riasec-s",
+        "file": "riasec/s.png",
+        "width": 512,
+        "height": 512,
+        "label": "Social"
+      },
+      {
+        "id": "riasec-e",
+        "file": "riasec/e.png",
+        "width": 512,
+        "height": 512,
+        "label": "Enterprising"
+      },
+      {
+        "id": "riasec-c",
+        "file": "riasec/c.png",
+        "width": 512,
+        "height": 512,
+        "label": "Conventional"
+      }
+    ],
+    "steps": [
+      {
+        "id": "step-01-quiz",
+        "file": "steps/step-01-quiz.png",
+        "width": 640,
+        "height": 480,
+        "caption": "Sagot ka lang"
+      },
+      {
+        "id": "step-02-profile",
+        "file": "steps/step-02-profile.png",
+        "width": 640,
+        "height": 480,
+        "caption": "Profile mo"
+      },
+      {
+        "id": "step-03-path",
+        "file": "steps/step-03-path.png",
+        "width": 640,
+        "height": 480,
+        "caption": "Alamin courses"
+      }
+    ],
+    "blobs": [
+      {
+        "id": "blob-lavender",
+        "file": "blobs/blob-lavender.png",
+        "width": 800,
+        "height": 800,
+        "opacity_css": "0.2"
+      },
+      {
+        "id": "blob-teal",
+        "file": "blobs/blob-teal.png",
+        "width": 800,
+        "height": 800,
+        "opacity_css": "0.2"
+      },
+      {
+        "id": "blob-yellow",
+        "file": "blobs/blob-yellow.png",
+        "width": 800,
+        "height": 800,
+        "opacity_css": "0.2"
+      }
+    ]
+  }
+}

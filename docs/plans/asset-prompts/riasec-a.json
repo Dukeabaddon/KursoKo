@@ -1,0 +1,45 @@
+{
+  "project": "KursoKo",
+  "asset_set": "RIASEC sticker — letter A (Artistic)",
+  "deliverable": {
+    "filename": "src/assets/landing/placeholders/riasec/a.png",
+    "width_px": 512,
+    "height_px": 512,
+    "aspect_ratio": "1:1",
+    "background": "transparent PNG",
+    "safe_padding_px": 48
+  },
+  "art_direction": {
+    "style": "flat vector sticker, die-cut label, 2-3px dark outline (#2D2D2D)",
+    "mood": "friendly education, career exploration for any age — NOT SaaS, NOT corporate",
+    "reference_sites": ["https://josieai.com", "https://scope.sti.edu"],
+    "reference_vibe": "CreativeHive soft color blobs + flat edu stickers",
+    "match_existing": "Hero character: warm, approachable, purple/teal/yellow palette. APPROVED reference for R I S E C stickers."
+  },
+  "subject": {
+    "letter": "A",
+    "riasec_type": "Artistic",
+    "meaning": "Creative expression — art, design, writing, music, visual work",
+    "scene": "Young person holding paint palette and brush OR sketchbook with color swatches — simple, readable at 120px width",
+    "expression": "curious, inspired, not stressed"
+  },
+  "palette": {
+    "accent": "#FFD54F",
+    "secondary": "#9575CD",
+    "outline": "#2D2D2D",
+    "card_fill": "#FFFFFF",
+    "forbidden": ["purple-blue SaaS gradient", "neon cyber", "realistic 3D render", "stock photo"]
+  },
+  "composition": {
+    "layout": "sticker on white rounded rect inside colored border frame",
+    "focal_point": "center",
+    "text_on_image": "optional small 'A' bottom corner only — main label lives in HTML"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 150,
+    "crisp_edges": true,
+    "no_drop_shadow_on_canvas": true
+  },
+  "prompt_for_image_ai": "Flat vector education sticker, RIASEC Artistic type letter A. Friendly colorful career education vibe. Scene: person with paint palette and brush, creative career theme. Sticker style: white rounded card, 2px dark outline, accent yellow #FFD54F and lavender #9575CD. Die-cut sticker look, simple shapes, no photorealism, no SaaS UI, transparent background, 512x512px, safe margin 48px."
+}
