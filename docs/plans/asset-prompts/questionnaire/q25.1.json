@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q25 option 1 — Testing water purification systems",
   "questionnaire": {
     "question_id": 25,
@@ -19,182 +20,78 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and hero prop — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle desk-surface grain suggestion via 2-3 parallel lines max",
-    "mood": "friendly career-education energy — approachable and encouraging, not corporate stock photo",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "friendly career exploration for students",
     "forbidden": [
-      "RIASEC letter I on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos",
-      "full human figure or face",
-      "photorealistic metal or skin reflections",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "I",
-    "riasec_type": "Investigative",
-    "palette": {
-      "accent": {
-        "hex": "#4B2C7F",
-        "name": "deep indigo",
-        "use": "pH chart color band, field jacket cuff trim"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "teal",
-        "use": "test strip tip accent"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        {
-          "name": "water sample vial",
-          "hex": "#FDFCF8"
-        },
-        {
-          "name": "water tint",
-          "hex": "#4DB6AC"
-        },
-        {
-          "name": "pH color chart",
-          "hex": "#4B2C7F"
-        },
-        {
-          "name": "test strip kit",
-          "hex": "#E8E8E8"
-        }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "accent color appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4B2C7F", "use": "pH color chart band, field-jacket cuff stripe" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "water-vial tint, test-strip tip accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "medium tan", "hex_approx": "#C8956C" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on the vial glass and water surface",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and vial base"
+  "character": {
+    "presentation": "young woman",
+    "age": "late-20s",
+    "build": "average, careful standing posture",
+    "skin_tone": "medium tan",
+    "hair": "single long braid over one shoulder",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — long single braid distinguishes this figure from surrounding characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds a clear water sample vial up to the light",
-      "grip": "cupped fingers around the vial body",
-      "position": "lower-left quadrant, wrist angled up"
-    },
-    "right_hand": {
-      "action": "dips a test strip into a second vial",
-      "grip": "precision pinch on the strip end",
-      "position": "center-right, hovering over the second vial"
-    },
-    "gesture_summary": "mid-test freeze frame — the strip about to touch the water surface",
-    "energy": "focused, careful, quietly hopeful about clean water",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing beside a small stand holding sample vials",
+    "action": "holding a clear water vial up to the light with one hand while dipping a test strip into a second vial with the other",
+    "facing": "3/4 toward the vial stand",
+    "energy": "focused, careful, quietly hopeful about clean water"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled or cuffed sleeves only",
-    "top": {
-      "garment": "light field jacket",
-      "fabric": "lightweight cotton canvas",
-      "color_hex": "#7A8FA6",
-      "sleeve_style": "rolled once to mid-forearm, neat cuff fold",
-      "accent_trim_hex": "#4B2C7F",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "nitrile gloves",
-        "color_hex": "#F5F3EE",
-        "placement": "both hands, thin and close-fitting"
-      }
-    ]
+    "top": { "garment": "light field jacket", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, teal cuff stripe" },
+    "bottom": { "garment": "straight-leg trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple work boots", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Testing water purification systems",
     "activity_hint": "Environmental science",
-    "scene_narrative": "A pair of gloved hands works over two small water sample vials on an environmental lab bench. One hand holds a clear vial up to catch the light, the other dips a test strip into a second sample. A small abstract color chart of pH swatches rests nearby. The mood is careful, outdoors-minded environmental science.",
-    "primary_objects": [
-      {
-        "name": "water sample vial",
-        "material": "clear glass",
-        "color_hex": "#4DB6AC",
-        "size_relative": "hero — 30% of visual mass",
-        "detail": "cylindrical vial with a faint teal water tint, catching the light"
-      },
-      {
-        "name": "test strip kit",
-        "material": "paper strips in a small case",
-        "color_hex": "#E8E8E8",
-        "size_relative": "medium — held in right hand",
-        "detail": "single strip extended, color-changing tip, no readable text"
-      },
-      {
-        "name": "pH color chart",
-        "material": "laminated card",
-        "color_hex": "#4B2C7F",
-        "size_relative": "small accent",
-        "detail": "row of abstract color swatches, no legible labels"
-      }
-    ],
-    "environment": "environmental lab bench surface strip across bottom third — fades to transparent at edges, no wall",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young woman stands beside a small vial stand, holding a clear water sample vial up to catch the light while dipping a test strip into a second vial — the same full-body flat vector language as the approved Q1 references, reading as careful, outdoors-minded environmental science.",
+    "hero_prop": "clear glass water-sample vial with a faint teal tint, catching the light",
+    "supporting_props": ["small pH color chart card", "second vial on a stand"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from chart → vial → test strip hand",
-    "focal_hierarchy": [
-      "water vial center mass",
-      "right hand dipping strip",
-      "left hand holding vial",
-      "pH chart accent"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and vials",
-      "midground: pH color chart",
-      "background: bench edge only — no wall"
-    ],
-    "thumbnail_readability": "vial silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, vial stand right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + vial readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": [
-      "Flux Dev",
-      "DALL-E 3",
-      "Midjourney v6",
-      "Ideogram"
-    ],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, factory, industrial horror, guns, blood, polluted water imagery, dead fish"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, polluted water imagery, dead fish"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Testing water purification systems\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands and hero prop only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: A pair of gloved hands works over two small water sample vials on an environmental lab bench. One hand holds a clear vial up to catch the light, the other dips a test strip into a second sample. A small abstract color chart of pH swatches rests nearby. The mood is careful, outdoors-minded environmental science. Objects: water sample vial (clear glass, #4DB6AC): cylindrical vial with a faint teal water tint, catching the light; test strip kit (paper strips in a small case, #E8E8E8): single strip extended, color-changing tip, no readable text; pH color chart (laminated card, #4B2C7F): row of abstract color swatches, no legible labels. Left hand holds a clear water sample vial up to the light (cupped fingers around the vial body). Right hand dips a test strip into a second vial (precision pinch on the strip end). Clothing: light field jacket in lightweight cotton canvas, color #7A8FA6, rolled once to mid-forearm, neat cuff fold, accent trim #4B2C7F at thin stripe on cuff fold. Accessories: nitrile gloves (#F5F3EE) — both hands, thin and close-fitting. Warm medium skin tone #C8956C. Accent color #4B2C7F on pH chart color band, field jacket cuff trim; secondary #4DB6AC on test strip tip accent. Camera: three-quarter top-down, 20° tilt toward viewer, medium-close — hands occupy lower 55% of frame. Environment: environmental lab bench surface strip across bottom third — fades to transparent at edges, no wall. Mood: focused, careful, quietly hopeful about clean water, friendly career-education energy — approachable and encouraging, not corporate stock photo. Generous transparent margins, readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Late-20s young woman standing beside a small vial stand, medium tan skin, single long braid over one shoulder, purple #4B2C7F light field jacket with charcoal collar and teal #4DB6AC cuff stripe, charcoal straight-leg trousers and work boots. She holds a clear water sample vial with a faint teal tint up to the light with one hand while dipping a test strip into a second vial resting on the stand with the other, a small pH color chart card nearby. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Investigative RIASEC accent purple on chart band and jacket cuff, teal on vial tint. Focused, careful, quietly hopeful energy. Full head-to-feet visible."
 }

@@ -1,61 +1,58 @@
-# Questionnaire choice asset prompts (v3)
+# Questionnaire choice asset prompts (v4)
 
-**Source of truth:** each `qNN.M.json` file in this folder — **not** Python.
+**Source of truth:** each `qNN.M.json` — **not Python**.
 
-| What | File |
-|------|------|
-| Schema + global rules | `_schema-v3.json` |
-| Gold example | `q01.1.json` |
-| Index | `manifest.json` (auto-built) |
-| Prompts | `q01.1.json` … `q30.2.json` (60 files) |
+## Style reference (approved)
 
-## v3 JSON blocks (every file)
+| File | Use |
+|------|-----|
+| `src/assets/1.1.png` | Full-body flat vector — robot kit |
+| `src/assets/1.2.png` | Full-body flat vector — data/charts |
+| `q01.1.json` | Gold JSON prompt structure |
 
-| Block | Purpose |
-|-------|---------|
-| `questionnaire` | id, question text, choice, RIASEC code |
-| `deliverable` | output PNG path, 640×640 |
-| `art_style` | line weight, mood, forbidden list |
-| `color.palette` | accent/secondary hex, `prop_colors[]` |
-| `lighting` | direction, highlights, shadow |
-| `pose` | camera, left/right hand objects, gesture |
-| `clothes` | garment, fabric, hex, accessories |
-| `subject` | `scene_narrative`, detailed `primary_objects[]` |
-| `composition` | focal hierarchy, depth layers |
-| `technical` | export settings |
-| `generation` | `negative_prompt`, recommended models |
-| `prompt_for_image_ai` | **copy-paste for external image gen** |
+## v4 rules (locked)
 
-## Rules (locked)
+| Rule | Value |
+|------|--------|
+| Figure | **Full body** head-to-feet — NOT hands-only POV |
+| Style | unDraw-inspired flat vector, **thin 2px** `#2D2D2D` outline |
+| Face | Minimal dot eyes, simple smile |
+| Cast | **Diverse unique character** per choice |
+| Garments | KursoKo purple `#4B2C7F` base + **subtle RIASEC** accent on props/trim |
+| Background | **Transparent PNG** — faint grey circles + thin floor line only |
+| Forbidden | Letter, border frame, readable text |
 
-- Flat vector, 2px `#2D2D2D` outline
-- **Hands/forearms only** — no faces
-- **No** RIASEC letter, border frame, or text on image
-- Transparent PNG 640×640 → `src/assets/questionnaire/NN.M.png`
-- Subtle RIASEC accent per option code (see `_schema-v3.json`)
-- Sensitive slots (`17.1`, `19.2`, `23.2`, `24.1`, `27.1`): symbolic, hopeful only
+## Schema
 
-## External image workflow
+`_schema-v4.json` — superseded v3 hands-only schema.
+
+## Files
+
+| Pattern | Example |
+|---------|---------|
+| Prompt | `q15.1.json` |
+| Output PNG | `src/assets/questionnaire/15.1.png` |
+| Index | `manifest.json` |
+
+## External workflow
 
 1. Open `qNN.M.json`
-2. Copy `prompt_for_image_ai` (+ optional `generation.negative_prompt`)
-3. Generate in Flux / DALL·E / Midjourney / Ideogram
-4. Save to path in `deliverable.filename`
+2. Copy `prompt_for_image_ai` + `generation.negative_prompt`
+3. Attach reference images `1.1.png` / `1.2.png` if your tool supports it
+4. Save PNG to `deliverable.filename`
 
-## Edit prompts
-
-Edit the JSON file directly. Rebuild index:
+## Rebuild manifest
 
 ```bash
 python3 scripts/build-questionnaire-manifest.py
 ```
 
-## Deprecated (do not use for prompts)
+## Deprecated
 
-- `scripts/generate-questionnaire-prompts.py` — old Python→JSON generator
-- `scripts/questionnaire_choice_specs.py` — superseded by v3 JSON files
-- `choice-specs.json` — legacy aggregate; remove after review
+- `_schema-v3.json` — hands-only era
+- `generate-questionnaire-prompts.py`
+- `questionnaire_choice_specs.py`
 
-## Wire app (after PNGs)
+## Sensitive slots
 
-Tell agent: `wire questionnaire assets`
+`17.1` `19.2` `23.2` `24.1` `27.1` — symbolic hopeful full-body scenes only

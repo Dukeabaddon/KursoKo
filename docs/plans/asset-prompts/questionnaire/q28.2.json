@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q28 option 2 — Developing cybersecurity protocols",
   "questionnaire": {
     "question_id": 28,
@@ -23,169 +24,75 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under keyboard and hands — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle keycap bevel suggestion via 2px inner outline only",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "quiet analytical focus — digital protection as careful investigation, not hacker menace",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter I on image",
-      "die-cut sticker border or white card frame",
-      "readable text, code, or numbers",
-      "full human figure or face",
+      "RIASEC letter",
+      "border frame",
+      "readable text or code",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
       "hooded hacker or balaclava imagery",
-      "photorealistic screen glow or render",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "I",
-    "riasec_type": "Investigative",
-    "palette": {
-      "accent": {
-        "hex": "#4B2C7F",
-        "name": "deep indigo",
-        "use": "keyboard function keys, shield glow ring, cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "padlock highlight, circuit-card trace lines"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "keyboard body", "hex": "#37474F" },
-        { "name": "shield icon", "hex": "#4B2C7F" },
-        { "name": "padlock", "hex": "#E8E8E8" },
-        { "name": "circuit card", "hex": "#2E7D6B" },
-        { "name": "indicator dot", "hex": "#4DB6AC" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint cool #F1F0F8 highlight on knuckle tops only",
-    "accent_rule": "indigo appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4B2C7F", "use": "keyboard function keys, shield glow ring, cuff pinstripe" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "padlock highlight, circuit-card trace lines" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "light peach", "hex_approx": "#F2C4A0" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on padlock body and shield rim",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and keyboard base"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "average, slightly lanky",
+    "skin_tone": "light peach",
+    "hair": "short side part",
+    "face": "minimal — two dot eyes, small smile, no detailed nose, thin round glasses",
+    "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "types on a compact keyboard, fingers mid-keystroke",
-      "grip": "relaxed typing posture, fingertips resting on home row",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "gently sets a small glowing padlock icon into a shield-shaped holder",
-      "grip": "precision pinch between thumb and index finger",
-      "position": "center-right, hovering above the desk"
-    },
-    "gesture_summary": "mid-verification freeze frame — a padlock being secured into place",
-    "energy": "calm, analytical, quietly vigilant",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing at a compact standing desk with keyboard, upright attentive posture",
+    "action": "one hand typing mid-keystroke on a compact keyboard while the other gently sets a small glowing padlock into a shield-shaped holder",
+    "facing": "3/4 toward desk, padlock hand forward",
+    "energy": "calm, analytical, quietly vigilant"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "casual crew-neck sweatshirt",
-      "fabric": "soft brushed cotton fleece",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "pushed up loosely to mid-forearm",
-      "accent_trim_hex": "#4B2C7F",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "slim digital wristband",
-        "color_hex": "#37474F",
-        "placement": "left wrist only, simple flat band with a small teal indicator dot, no readable display"
-      }
-    ]
+    "top": { "garment": "crew-neck sweatshirt", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, indigo cuff stripe, sleeves pushed up" },
+    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "sneakers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Developing cybersecurity protocols",
     "activity_hint": "Digital protection",
-    "scene_narrative": "A pair of forearms works at a compact keyboard: one hand types while the other carefully sets a small glowing padlock into a shield-shaped holder beside a miniature circuit-trace card. The scene reads as calm, methodical digital protection work — a careful investigator securing a system, not a hooded hacker.",
-    "primary_objects": [
-      {
-        "name": "compact keyboard",
-        "material": "matte plastic",
-        "color_hex": "#37474F",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "simple flat keycaps, two indigo function keys, no readable labels"
-      },
-      {
-        "name": "shield-shaped holder with padlock",
-        "material": "matte plastic shield, metal padlock",
-        "color_hex": "#4B2C7F",
-        "size_relative": "medium — held in right hand",
-        "detail": "rounded shield outline with a small glowing teal padlock nestled inside"
-      },
-      {
-        "name": "circuit-trace card",
-        "material": "printed circuit board",
-        "color_hex": "#2E7D6B",
-        "size_relative": "small accent — propped beside keyboard",
-        "detail": "simple looping teal trace lines with three small node dots, no text"
-      },
-      {
-        "name": "indicator light dot",
-        "material": "LED",
-        "color_hex": "#4DB6AC",
-        "size_relative": "tiny accent — on wristband",
-        "detail": "single glowing dot, 2px outline"
-      }
-    ],
-    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, cream paper sheet under keyboard",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man stands at a compact standing desk, typing with one hand while carefully setting a small glowing padlock into a shield-shaped holder beside a miniature circuit-trace card. Calm, methodical digital protection work — a careful investigator securing a system, never a hooded hacker — the same full-body flat vector language as the approved Q1 references.",
+    "hero_prop": "rounded indigo shield-shaped holder with a small glowing teal padlock nestled inside",
+    "supporting_props": ["compact dark-grey keyboard on standing desk", "circuit-trace card with looping teal lines and three node dots"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from keyboard → shield holder → circuit card",
-    "focal_hierarchy": [
-      "shield and padlock center mass",
-      "right hand placing padlock",
-      "left typing hand",
-      "circuit-trace card anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and shield holder",
-      "midground: keyboard",
-      "background: circuit card and desk edge only — no wall"
-    ],
-    "thumbnail_readability": "shield silhouette + keyboard shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, standing desk and shield right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + shield/padlock readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, code, watermark, logo, letter I, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, hooded hacker, balaclava, industrial horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, code, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, hooded hacker, balaclava, industrial horror, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Developing cybersecurity protocols\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft sweatshirt with rolled sleeves and indigo #4B2C7F cuff trim work at a compact dark-grey keyboard on a light birch desk. Left hand types mid-keystroke. Right hand carefully sets a small glowing teal padlock into an indigo shield-shaped holder. A small circuit-trace card with looping teal lines and three node dots props beside the keyboard. A slim wristband with a single glowing teal indicator dot sits on the left wrist. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: calm, methodical digital protection — careful investigation, not hacker menace. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face with thin round glasses. Young college-age man, average slightly lanky build, light peach skin #F2C4A0, short side-part hair, standing upright at a compact standing desk. He wears a purple #4B2C7F crew-neck sweatshirt with charcoal collar and indigo #4B2C7F cuff stripe, sleeves pushed up, dark straight trousers, and sneakers. One hand types mid-keystroke on a compact dark-grey keyboard; the other carefully sets a small glowing teal padlock into a rounded indigo shield-shaped holder. A small circuit-trace card with looping teal #4DB6AC lines and three node dots sits on the desk. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Mood: calm, methodical digital protection — careful investigation, not hacker menace. Full head-to-feet visible."
 }

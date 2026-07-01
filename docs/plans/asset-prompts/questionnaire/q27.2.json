@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q27 option 2 — Brand identity design for startups",
   "questionnaire": {
     "question_id": 27,
@@ -23,169 +24,75 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under mood board and hands — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle paper-grain suggestion on swatch cards via 3 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "playful, commercial-creative energy — a design studio moment, confident and colorful",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter A on image",
-      "die-cut sticker border or white card frame",
-      "readable text, words, or brand names",
+      "RIASEC letter",
+      "border frame",
+      "readable text or brand names",
       "recognizable real logos or brand marks",
-      "full human figure or face",
-      "photorealistic render",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
-    "riasec_type": "Artistic",
-    "palette": {
-      "accent": {
-        "hex": "#FFD54F",
-        "name": "sunflower yellow",
-        "use": "swatch chip, stylus tip glow, cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "second swatch chip, tablet bezel accent"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "mood board", "hex": "#F5EFE0" },
-        { "name": "tablet body", "hex": "#37474F" },
-        { "name": "stylus", "hex": "#FF8A65" },
-        { "name": "abstract logo shape on screen", "hex": "#4DB6AC" },
-        { "name": "swatch chip stack", "hex": "#FFD54F" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "yellow appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FFD54F", "use": "swatch chip, stylus tip glow, shirt cuff stripe" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "second swatch chip, tablet bezel accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "light olive", "hex_approx": "#D9A876" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on tablet screen edge and stylus tip",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and mood board base"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "lean, casual",
+    "skin_tone": "light olive",
+    "hair": "short textured quiff, undercut sides",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds a small drawing tablet tilted toward the viewer, screen showing an abstract logo shape being sketched",
-      "grip": "flat palm cradling the tablet underside",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "places a yellow color swatch chip onto a mood board beside the tablet",
-      "grip": "precision pinch between thumb and index finger",
-      "position": "center-right, hovering over the mood board"
-    },
-    "gesture_summary": "mid-design freeze frame — one swatch being placed onto the board",
-    "energy": "playful, confident, commercially creative",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing beside a mood board on an easel stand, weight on one hip",
+    "action": "holding a drawing tablet mid-sketch of an abstract logo shape while placing a yellow color swatch chip onto the mood board with his free hand",
+    "facing": "3/4 toward mood board, tablet held forward",
+    "energy": "playful, confident, commercially creative"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "relaxed denim shirt",
-      "fabric": "soft washed denim",
-      "color_hex": "#7A94A6",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#FFD54F",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "thin leather cord bracelet",
-        "color_hex": "#8D6E63",
-        "placement": "left wrist only, simple and unobtrusive"
-      }
-    ]
+    "top": { "garment": "relaxed denim shirt", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, yellow cuff stripe, rolled sleeves" },
+    "bottom": { "garment": "black jeans", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "sneakers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Brand identity design for startups",
     "activity_hint": "Commercial creativity",
-    "scene_narrative": "A pair of forearms works at a small design studio setup: one hand cradles a drawing tablet mid-sketch of an abstract, non-letter logo shape, while the other places a fresh color swatch chip onto a mood board of stacked palette cards. The scene reads as energetic, commercial brand-building creativity — a startup's visual identity coming together.",
-    "primary_objects": [
-      {
-        "name": "drawing tablet",
-        "material": "matte plastic body, glass screen",
-        "color_hex": "#37474F",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "screen shows a simple teal abstract geometric mark mid-sketch, no letters or words"
-      },
-      {
-        "name": "mood board with swatch stack",
-        "material": "cork-textured board, paper chips",
-        "color_hex": "#F5EFE0",
-        "size_relative": "medium — lower-right of frame",
-        "detail": "small stack of color swatch cards in yellow, lavender, and teal, no text"
-      },
-      {
-        "name": "stylus",
-        "material": "matte plastic",
-        "color_hex": "#FF8A65",
-        "size_relative": "small — held near tablet screen",
-        "detail": "glowing orange tip, 2px outline"
-      },
-      {
-        "name": "color swatch chip",
-        "material": "coated card stock",
-        "color_hex": "#FFD54F",
-        "size_relative": "small accent — pinched in right hand",
-        "detail": "simple rounded-corner rectangle, no text"
-      }
-    ],
-    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, cream paper sheet under mood board",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man stands at a small design studio easel stand, cradling a drawing tablet mid-sketch of an abstract, non-letter logo shape while placing a fresh color swatch chip onto a mood board of stacked palette cards — the same full-body flat vector language as the approved Q1 references. Energetic, commercial brand-building creativity.",
+    "hero_prop": "cork mood board on an easel stand holding a small stack of yellow, lavender, and teal color-swatch cards",
+    "supporting_props": ["drawing tablet with abstract teal logo mark mid-sketch", "glowing-tip stylus"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from stylus → tablet screen → swatch-placing hand",
-    "focal_hierarchy": [
-      "tablet screen center mass",
-      "right hand placing swatch",
-      "left supporting hand",
-      "mood board anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and swatch chip",
-      "midground: tablet and mood board",
-      "background: desk edge only — no wall"
-    ],
-    "thumbnail_readability": "tablet silhouette + swatch stack readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, mood board right at chest height, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + mood board readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter A, real brand marks, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, industrial horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, logo, letter A, real brand marks, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, industrial horror, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Brand identity design for startups\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a relaxed denim shirt with rolled sleeves and yellow #FFD54F cuff trim work at a small design studio desk. Left hand cradles a dark grey drawing tablet showing a simple teal #4DB6AC abstract geometric mark mid-sketch on screen — no letters or words. Right hand pinches a yellow swatch chip and places it onto a cork mood board holding a small stack of yellow, lavender, and teal color-swatch cards. An orange #FF8A65 stylus rests near the tablet. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: playful, confident, commercially creative brand-building energy. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, lean casual build, light olive skin #D9A876, short textured quiff with undercut sides, standing beside a cork mood board on an easel stand. He wears a purple #4B2C7F relaxed denim shirt with charcoal collar and yellow #FFD54F cuff stripe, rolled sleeves, black jeans, and sneakers. He cradles a dark grey drawing tablet showing a simple teal #4DB6AC abstract geometric mark mid-sketch on screen (no letters or words) while pinching a yellow swatch chip to place onto the mood board's small stack of yellow, lavender, and teal color-swatch cards. An orange-glow stylus rests near the tablet. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame, NO real brand logos. Mood: playful, confident, commercially creative brand-building energy. Full head-to-feet visible."
 }

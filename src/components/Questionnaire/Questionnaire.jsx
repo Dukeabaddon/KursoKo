@@ -9,6 +9,7 @@ import {
   SPARK_PURPLE
 } from '../assessment/assessmentClasses'
 import { ClickSpark } from '../ui'
+import { getQuestionnaireImage } from '../../utils/questionnaireAssets'
 
 function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -157,10 +158,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
   const progress =
     questions.length > 0 ? Math.round((responses.length / questions.length) * 100) : 0
 
-  const getAssetPath = (questionId, option) => {
-    const assetNumber = option === 'A' ? 1 : 2
-    return `/assets/${questionId}.${assetNumber}.png`
-  }
+  const getChoiceImage = (questionId, option) => getQuestionnaireImage(questionId, option)
 
   if (isLoading || questions.length === 0) {
     return (
@@ -230,7 +228,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
               <AssessmentChoiceCard
                 optionKey="A"
                 title={currentQ.optionA.text}
-                imageSrc={questionId <= 14 ? getAssetPath(questionId, 'A') : null}
+                imageSrc={getChoiceImage(questionId, 'A')}
                 isSelected={selectedOption === 'A'}
                 isDimmed={Boolean(selectedOption && selectedOption !== 'A')}
                 selectedRating={selectedOption === 'A' ? selectedRating : null}
@@ -247,7 +245,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
               <AssessmentChoiceCard
                 optionKey="B"
                 title={currentQ.optionB.text}
-                imageSrc={questionId <= 14 ? getAssetPath(questionId, 'B') : null}
+                imageSrc={getChoiceImage(questionId, 'B')}
                 isSelected={selectedOption === 'B'}
                 isDimmed={Boolean(selectedOption && selectedOption !== 'B')}
                 selectedRating={selectedOption === 'B' ? selectedRating : null}

@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q6 option 1 — Marketing products on social media",
   "questionnaire": {
     "question_id": 6,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and product box — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle soft halo glow ring around ring-light only",
-    "mood": "upbeat creator-economy energy — approachable digital hustle, not a corporate ad agency",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "upbeat creator-economy energy for students",
     "forbidden": [
-      "RIASEC letter E on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos on phone or product",
-      "full human figure or face",
-      "photorealistic screen glare",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
-    "riasec_type": "Enterprising",
-    "palette": {
-      "accent": {
-        "hex": "#FF8A65",
-        "name": "coral",
-        "use": "phone case, floating heart icon, jacket cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#FFD54F",
-        "name": "warm yellow",
-        "use": "product box fill, ring-light glow tint"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "smartphone body", "hex": "#E8E8E8" },
-        { "name": "ring light housing", "hex": "#E8E8E8" },
-        { "name": "product ribbon", "hex": "#9575CD" },
-        { "name": "succulent pot", "hex": "#4DB6AC" },
-        { "name": "gold bangle", "hex": "#D4A84B" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FF8A65", "use": "phone case, floating heart icon, sneaker accent" },
+    "riasec_secondary": { "hex": "#FFD54F", "use": "product box ribbon trim" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "warm medium brown", "hex_approx": "#C8956C" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light with ring-light glow accent",
-    "direction": "front, slightly upper-left 30°",
-    "highlight": "small curved highlights on phone bezel and ring-light rim",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and product box"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "lean, energetic",
+    "skin_tone": "warm medium brown",
+    "hair": "short fade haircut",
+    "face": "minimal — two dot eyes, small confident smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds smartphone upright at a flattering recording angle",
-      "grip": "loose fingers wrapped around edges, thumb resting on side rail",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "lifts a small product box toward the phone lens",
-      "grip": "fingertip pinch under the box base",
-      "position": "center-right, hovering just below phone screen"
-    },
-    "gesture_summary": "camera-ready product reveal, mid-recording freeze frame",
-    "energy": "upbeat, camera-confident creator energy",
-    "framing": "crop at mid-forearm — no elbows, no face, no visible phone screen reflection of viewer"
+    "stance": "full body, dynamic 3/4 stance, weight on back foot",
+    "action": "holding phone up filming himself, other hand presenting a small product box outward",
+    "facing": "3/4 toward viewer, chest angled to camera",
+    "energy": "upbeat, camera-confident hustle"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "cropped denim jacket",
-      "fabric": "soft washed denim",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled once to mid-forearm",
-      "accent_trim_hex": "#FF8A65",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "thin gold bangle bracelet",
-        "color_hex": "#D4A84B",
-        "placement": "left wrist, resting near phone edge"
-      }
-    ]
+    "top": { "garment": "cropped bomber jacket", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, coral zipper and cuff stripe" },
+    "bottom": { "garment": "slim joggers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "chunky sneakers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Marketing products on social media",
     "activity_hint": "Digital promotion",
-    "scene_narrative": "A pair of hands films a short product-unboxing clip for social media at a bright creator desk. The left hand holds a smartphone upright at a flattering angle while the right hand lifts a small skincare box toward the lens, ring-light glow reflecting warmly off the screen. Floating flat-icon hearts and a share arrow hover near the phone edge, capturing the thrill of a campaign about to go live.",
-    "primary_objects": [
-      {
-        "name": "smartphone",
-        "material": "matte plastic and glass",
-        "color_hex": "#FF8A65",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "coral case, screen shows small product photo thumbnail with a simple heart icon overlay"
-      },
-      {
-        "name": "product box",
-        "material": "matte cardboard",
-        "color_hex": "#FFD54F",
-        "size_relative": "medium — lifted in right hand",
-        "detail": "lavender ribbon bow, glossy flat fill"
-      },
-      {
-        "name": "ring light",
-        "material": "plastic and LED ring",
-        "color_hex": "#E8E8E8",
-        "size_relative": "small — visible at frame edge",
-        "detail": "soft halo glow suggestion, no readable brand marks"
-      },
-      {
-        "name": "floating engagement icons",
-        "material": "flat vector graphic",
-        "color_hex": "#FF8A65",
-        "size_relative": "tiny accents",
-        "detail": "one heart shape and one share-arrow shape, simple rounded outlines, no text"
-      }
-    ],
-    "environment": "sunlit creator desk corner strip across bottom third, small potted succulent at edge, fades to transparent",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man in a dynamic stance films a product reveal on his phone while presenting a small ribboned box outward, a floating heart icon and share arrow suggesting the clip is about to go live — same full-body flat vector language as the approved reference assets.",
+    "hero_prop": "smartphone with a tiny heart icon on its screen",
+    "supporting_props": ["small product box with lavender ribbon", "floating share-arrow icon", "wireless earbud case"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal reveal line from product box up to phone screen",
-    "focal_hierarchy": [
-      "smartphone screen and case",
-      "product box in right hand",
-      "left stabilizing hand",
-      "ring light glow accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and product box",
-      "midground: smartphone",
-      "background: ring light edge only — no wall or desk clutter"
-    ],
-    "thumbnail_readability": "phone silhouette + product box shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + phone readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter E, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, corporate agency, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Marketing products on social media\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with a rolled cropped denim jacket sleeve, one hand holding a coral smartphone upright showing a small product photo and heart icon, the other hand lifting a warm-yellow product box with lavender ribbon toward the phone lens. Soft ring-light glow at the frame edge. Thin gold bangle on the wrist. Small floating heart and share-arrow icons near the phone. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: upbeat, camera-confident creator energy. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, warm medium brown skin, short fade haircut, dynamic 3/4 stance with weight on back foot. Purple #4B2C7F cropped bomber jacket with coral #FF8A65 zipper and cuff stripe, charcoal joggers and chunky sneakers. He holds a coral smartphone up filming a short clip while presenting a small yellow product box with a lavender ribbon outward — a tiny heart icon and share-arrow icon float near the phone. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Enterprising RIASEC accent coral on phone case and sneaker, gold on box ribbon. Upbeat camera-confident creator energy. Full head-to-feet visible."
 }

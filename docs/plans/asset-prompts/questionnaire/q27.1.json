@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q27 option 1 — Art therapy for trauma survivors",
   "questionnaire": {
     "question_id": 27,
@@ -23,170 +24,79 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with a soft 10% ambient gradient allowed only inside the color-bloom area of the canvas",
-    "shading": "single cel shadow ellipse under canvas and brush hand — no cast shadows on transparent edge",
-    "texture": "none on skin; soft brushstroke texture allowed only within the canvas bloom, rendered as 3–4 overlapping flat shapes",
-    "mood": "gentle, hopeful, restorative — a quiet moment of healing, never clinical or distressing",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade, soft ambient gradient allowed only inside the canvas color-bloom",
+    "mood": "gentle, hopeful, restorative — a quiet moment of creative calm, never clinical or distressing",
     "forbidden": [
-      "RIASEC letter S on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "full human figure or face",
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
       "hospital, clinic, or medical equipment imagery",
       "bandages, tears, wounds, or any injury reference",
+      "sad or distressed facial expression",
       "dark, bleak, or desaturated overall palette",
-      "photorealistic render",
-      "neon cyberpunk palette"
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
-    "riasec_type": "Social",
-    "palette": {
-      "accent": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "sleeve trim, palette-tray rim, one bloom petal shape"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "second bloom petal shape, water-cup rim"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "canvas grey wash", "hex": "#C9C9C9" },
-        { "name": "canvas frame", "hex": "#D7B896" },
-        { "name": "brush handle", "hex": "#FF8A65" },
-        { "name": "bloom petal — warm", "hex": "#FFD54F" },
-        { "name": "bloom petal — cool", "hex": "#9575CD" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "lavender and teal appear only within the bloom and sleeve trim — never a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#9575CD", "use": "cardigan cuff trim, one bloom petal shape" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "second bloom petal shape, water-cup rim" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "warm brown", "hex_approx": "#B67A52" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on brush ferrule and canvas frame corner",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and canvas base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "average, relaxed posture",
+    "skin_tone": "warm brown",
+    "hair": "natural curly afro, shoulder length",
+    "face": "minimal — two dot eyes, small calm smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "steadies the lower edge of a small canvas on an easel ledge",
-      "grip": "relaxed open palm along the frame edge",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "draws a loaded brush across the canvas, pulling warm color through a grey wash",
-      "grip": "relaxed pencil grip on the brush handle",
-      "position": "center-right, mid-stroke over the canvas"
-    },
-    "gesture_summary": "mid-brushstroke freeze frame — color blooming outward from a single stroke",
-    "energy": "calm, gentle, quietly hopeful",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing at a tabletop easel, gentle relaxed posture facing the canvas",
+    "action": "one hand steadying a small canvas frame while the other draws a loaded brush through a soft grey wash, warm color blooming outward like a quiet sunrise",
+    "facing": "3/4 toward canvas, calm and unhurried",
+    "energy": "calm, gentle, quietly hopeful"
   },
   "clothes": {
-    "visible_parts": "forearms and sleeves only",
-    "top": {
-      "garment": "soft knit cardigan",
-      "fabric": "brushed cotton-wool blend",
-      "color_hex": "#E8DFF5",
-      "sleeve_style": "pushed up loosely to mid-forearm",
-      "accent_trim_hex": "#9575CD",
-      "accent_trim_placement": "thin ribbed cuff band"
-    },
-    "accessories": [
-      {
-        "item": "simple woven wristband",
-        "color_hex": "#4DB6AC",
-        "placement": "right wrist only, small and unobtrusive"
-      }
-    ]
+    "top": { "garment": "soft knit cardigan", "color_hex": "#E8DFF5", "detail": "lavender ribbed cuff trim, loose sleeves pushed to mid-forearm" },
+    "bottom": { "garment": "relaxed trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Art therapy for trauma survivors",
     "activity_hint": "Healing through art",
-    "scene_narrative": "A pair of hands rests at a small canvas on a tabletop easel. One hand steadies the frame while the other draws a loaded brush through a soft grey wash, and warm color blooms outward from the stroke like a quiet sunrise. The image is entirely symbolic and hopeful — an abstract visual metaphor for healing and restoration, with no clinical setting, no distress, and no depiction of trauma itself.",
-    "primary_objects": [
-      {
-        "name": "small canvas on easel ledge",
-        "material": "stretched canvas, wood frame",
-        "color_hex": "#D7B896",
-        "size_relative": "hero — 45% of visual mass",
-        "detail": "grey wash background with a single warm-to-cool color bloom expanding from the brush stroke, soft rounded petal shapes, no recognizable imagery within the bloom"
-      },
-      {
-        "name": "loaded paintbrush",
-        "material": "wood handle, soft bristle head",
-        "color_hex": "#FF8A65",
-        "size_relative": "medium — held in right hand",
-        "detail": "bristle tip carrying a warm yellow-orange pigment"
-      },
-      {
-        "name": "small water cup",
-        "material": "ceramic",
-        "color_hex": "#4DB6AC",
-        "size_relative": "small accent — resting beside canvas",
-        "detail": "simple rounded cup, faint water tint"
-      },
-      {
-        "name": "watercolor palette tray",
-        "material": "plastic",
-        "color_hex": "#9575CD",
-        "size_relative": "small accent — corner of frame",
-        "detail": "three shallow wells of warm pigment, 2px outline"
-      }
-    ],
-    "environment": "soft cream tabletop strip across bottom third — fades to transparent at edges, no walls, no furniture beyond the easel ledge",
+    "scene_narrative": "A young woman stands calmly at a small tabletop easel, one hand steadying the canvas frame while the other draws a loaded brush through a soft grey wash — warm and cool color blooms outward from the stroke like a quiet sunrise. The image is entirely symbolic and hopeful — an abstract visual metaphor for healing and restoration, with no clinical setting, no distress, and no depiction of trauma itself. Same full-body flat vector language as the approved Q1 references.",
+    "hero_prop": "small canvas on a tabletop easel with a soft grey wash and a warm-to-cool abstract color bloom expanding from a single brush stroke — no recognizable imagery within the bloom",
+    "supporting_props": ["loaded paintbrush with warm pigment", "small ceramic water cup", "watercolor palette tray with three warm pigment wells"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior, no walls or furniture beyond the easel",
     "symbolic": true,
-    "sensitive_handling": "This slot represents art therapy for trauma survivors, a sensitive topic. Depict only an abstract, hopeful visual metaphor of color emerging from grey — no clinical setting, no medical props, no facial expressions, no tears, no bandages, and no reference to the trauma itself. Tone must read as calm and restorative, suitable for a general-audience career quiz."
+    "sensitive_handling": "This slot represents art therapy for trauma survivors, a sensitive topic. Depict only a calm, standing figure at an easel with an abstract, hopeful color bloom — no clinical setting, no medical props, no tears, no bandages, no distressed body language or facial expression, and no reference to the trauma itself. Tone must read as gentle and restorative, suitable for a general-audience career quiz."
   },
   "composition": {
-    "layout": "centered single scene — canvas as the calm focal anchor, brush stroke leading the eye outward",
-    "focal_hierarchy": [
-      "color bloom on canvas",
-      "right hand mid-brushstroke",
-      "left steadying hand",
-      "tabletop anchor"
-    ],
-    "negative_space": "generous transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and brush",
-      "midground: canvas and bloom",
-      "background: tabletop edge only — no wall, no clinical furniture"
-    ],
-    "thumbnail_readability": "canvas silhouette with color bloom readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure centered slightly left, easel and canvas right at eye level, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + canvas bloom readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter S, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, hospital, clinic, medical equipment, bandages, wounds, tears, crying, self-harm, crisis imagery, weapons, blood, distressing imagery, industrial horror"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, hospital, clinic, medical equipment, bandages, wounds, tears, crying, self-harm, crisis imagery, weapons, blood, distressing imagery, industrial horror"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Art therapy for trauma survivors\" — sensitive topic handled through purely symbolic, hopeful imagery only. Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft lavender-tinted cardigan with a thin lavender #9575CD ribbed cuff rest at a small canvas on a tabletop easel. Left hand gently steadies the wood-frame canvas edge. Right hand draws an orange-loaded paintbrush through a grey #C9C9C9 wash, and warm yellow and lavender color blooms outward from the stroke like a soft sunrise — an entirely abstract, non-figurative bloom shape. A teal water cup and a small palette tray with three warm pigment wells sit beside the canvas. Warm medium skin tone #C8956C, small teal woven wristband on right wrist. Three-quarter top-down camera, hands in lower half, generous transparent margins, calm cream tabletop strip only — no clinical setting, no medical props, no faces, no tears, no bandages. Mood: gentle, hopeful, quietly restorative — color emerging from grey. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face with a small calm smile. Young college-age woman, average relaxed build, warm brown skin #B67A52, natural curly afro at shoulder length, standing calmly at a small tabletop easel. She wears a soft lavender-tinted #E8DFF5 knit cardigan with a lavender #9575CD ribbed cuff trim, dark relaxed trousers, and simple flats. One hand gently steadies the wood-frame canvas edge; the other draws an orange-loaded paintbrush through a grey #C9C9C9 wash, and warm yellow and lavender color blooms outward from the stroke like a soft sunrise — an entirely abstract, non-figurative bloom shape, no recognizable imagery. A small teal water cup and a palette tray with three warm pigment wells sit on the easel ledge. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame, NO clinical setting, NO medical props, NO tears or bandages. Mood: gentle, hopeful, quietly restorative — color emerging from grey, entirely symbolic. Full head-to-feet visible."
 }

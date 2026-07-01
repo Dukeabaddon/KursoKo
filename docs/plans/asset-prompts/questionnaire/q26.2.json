@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q26 option 2 — Planning city recycling programs",
   "questionnaire": {
     "question_id": 26,
@@ -23,169 +24,75 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under clipboard and bin lids — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle paper-grain suggestion on clipboard sheet via 3 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "tidy, systems-minded civic planning — organized environmental care, not a chore",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter C on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
       "trash pile or littered background",
-      "full human figure or face",
-      "photorealistic reflections",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
-    "riasec_type": "Conventional",
-    "palette": {
-      "accent": {
-        "hex": "#81D4FA",
-        "name": "sky blue",
-        "use": "route-map line, clipboard clip, bin lid rim"
-      },
-      "secondary": {
-        "hex": "#4B2C7F",
-        "name": "deep indigo",
-        "use": "second bin lid, pencil barrel"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "clipboard board", "hex": "#8D6E63" },
-        { "name": "route-map sheet", "hex": "#FDFCF8" },
-        { "name": "paper bin lid", "hex": "#81D4FA" },
-        { "name": "glass bin lid", "hex": "#4DB6AC" },
-        { "name": "color-tag dot", "hex": "#FFD54F" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint cool #F2FAFF highlight on knuckle tops only",
-    "accent_rule": "sky-blue appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#81D4FA", "use": "clipboard clip, bin-lid rim, blouse cuff stripe" },
+    "riasec_secondary": { "hex": "#4B2C7F", "use": "second bin lid" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "olive tan", "hex_approx": "#C79A6B" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on bin lid rims and pencil tip",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and clipboard base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "slender, tall",
+    "skin_tone": "olive tan",
+    "hair": "long straight ponytail",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds a clipboard showing a simple city route-map diagram",
-      "grip": "flat palm supporting clipboard underside, fingers along edge",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "places a small color-coded tag dot onto a miniature bin lid",
-      "grip": "precision pinch between thumb and index finger",
-      "position": "center-right, hovering over bin lid row"
-    },
-    "gesture_summary": "mid-planning freeze frame — one tag being placed",
-    "energy": "focused, organized, civic-minded planner",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, side profile leaning slightly toward three miniature bins at her feet",
+    "action": "holding a clipboard with a simple route-map diagram while placing a color-coded tag dot onto a bin lid with her free hand",
+    "facing": "right profile, 3/4 toward bin row",
+    "energy": "focused, organized, civic-minded planner"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "pressed button-up shirt",
-      "fabric": "smooth cotton poplin",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#81D4FA",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "slim wristwatch",
-        "color_hex": "#8D6E63",
-        "placement": "left wrist only, simple round face with no readable numerals"
-      }
-    ]
+    "top": { "garment": "pressed blouse", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, sky-blue cuff stripe" },
+    "bottom": { "garment": "wide-leg trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Planning city recycling programs",
     "activity_hint": "Environmental systems",
-    "scene_narrative": "A pair of forearms plans a neighborhood recycling route: one hand holds a clipboard with a simple line-diagram map, the other places a color-coded tag onto one of three miniature bin lids lined up on the table. The scene reads as tidy, systems-level environmental planning — a civic desk task, not a cleanup chore.",
-    "primary_objects": [
-      {
-        "name": "route-map clipboard",
-        "material": "wood board with paper sheet",
-        "color_hex": "#8D6E63",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "simple looping street-line diagram with three dot stops, no readable text"
-      },
-      {
-        "name": "three miniature bin lids",
-        "material": "matte plastic",
-        "color_hex": "#81D4FA",
-        "size_relative": "medium — arranged in a row",
-        "detail": "sky-blue paper lid, teal glass lid, indigo general lid, each with a simple icon silhouette"
-      },
-      {
-        "name": "color-tag dot",
-        "material": "adhesive sticker",
-        "color_hex": "#FFD54F",
-        "size_relative": "small — pinched in right hand",
-        "detail": "simple flat circle, no text"
-      },
-      {
-        "name": "pencil",
-        "material": "wood with indigo barrel",
-        "color_hex": "#4B2C7F",
-        "size_relative": "small accent — resting on clipboard",
-        "detail": "sharpened tip, 2px outline"
-      }
-    ],
-    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, cream paper sheet under clipboard",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young woman in profile stands over three miniature recycling bins, holding a clipboard with a simple looping street-line map and placing a color-coded tag onto one of the bin lids — the same full-body flat vector language as the approved Q1 references. Tidy civic planning, not a cleanup chore.",
+    "hero_prop": "three miniature bin lids in a row — sky-blue paper lid, teal glass lid, indigo general lid",
+    "supporting_props": ["route-map clipboard", "yellow color-tag dot", "indigo pencil"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from pencil → clipboard → tag-placing hand",
-    "focal_hierarchy": [
-      "clipboard route-map center mass",
-      "right hand placing tag",
-      "left supporting hand",
-      "bin lid row anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and tag dot",
-      "midground: clipboard and bin lids",
-      "background: desk edge only — no wall"
-    ],
-    "thumbnail_readability": "clipboard silhouette + bin-lid row readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, bin row right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + bin row readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, trash pile, litter, industrial horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, trash pile, litter, industrial horror, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Planning city recycling programs\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with rolled steel-blue shirt sleeves and sky-blue #81D4FA cuff trim planning a recycling route on a light birch desk. Left hand holds a wooden clipboard showing a simple looping street-line map with three dot stops (no readable text). Right hand places a small yellow #FFD54F color-tag dot onto one of three miniature bin lids lined up — sky-blue paper lid, teal glass lid, indigo #4B2C7F general lid. An indigo pencil rests on the clipboard. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: tidy, organized civic environmental planning, not a cleanup chore. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, slender tall build, olive tan skin #C79A6B, long straight ponytail, standing in side profile over three miniature recycling bins. She wears a purple #4B2C7F pressed blouse with charcoal collar and sky-blue #81D4FA cuff stripe, charcoal wide-leg trousers, and flats. She holds a wooden clipboard showing a simple looping street-line map with three dot stops while pinching a small yellow color-tag dot to place onto one of three bin lids — sky-blue paper lid, teal glass lid, indigo #4B2C7F general lid. An indigo pencil rests on the clipboard. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Mood: tidy, organized civic environmental planning, not a cleanup chore. Full head-to-feet visible."
 }

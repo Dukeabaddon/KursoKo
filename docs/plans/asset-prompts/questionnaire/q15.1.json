@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q15 option 1 — Managing e-commerce store",
   "questionnaire": {
     "question_id": 15,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under laptop and forearms — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle cardboard-fiber suggestion on shipping label via 3 parallel lines max",
-    "mood": "busy proactive entrepreneur energy — approachable small-business hustle, not a corporate SaaS dashboard",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "busy, proactive small-business energy",
     "forbidden": [
-      "RIASEC letter E on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "e-commerce brand logos",
-      "full human figure or face",
-      "photorealistic screen glare",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
-    "riasec_type": "Enterprising",
-    "palette": {
-      "accent": {
-        "hex": "#FF8A65",
-        "name": "coral",
-        "use": "cart icon, shipping label edge, polo cuff trim"
-      },
-      "secondary": {
-        "hex": "#FFD54F",
-        "name": "sunshine yellow",
-        "use": "order notification badge, wristwatch accent"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "laptop shell", "hex": "#E8E8E8" },
-        { "name": "cart icon", "hex": "#FF8A65" },
-        { "name": "notification badge", "hex": "#FFD54F" },
-        { "name": "shipping label roll", "hex": "#D7B896" },
-        { "name": "polo sleeve", "hex": "#5C7A8A" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FF8A65", "use": "shopping-cart icon, parcel tape stripe" },
+    "riasec_secondary": { "hex": "#FFD54F", "use": "order notification badge" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "medium tan", "hex_approx": "#D9A066" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on laptop lid edge and notification badge",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and laptop base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "average, energetic posture",
+    "skin_tone": "medium tan",
+    "hair": "high ponytail",
+    "face": "minimal — two dot eyes, bright smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "scrolls through a list of incoming orders",
-      "grip": "two-finger scroll gesture on the trackpad",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "applies a shipping label to a small parcel box",
-      "grip": "flat palm pressing the label smooth",
-      "position": "center-right, hovering over the parcel"
-    },
-    "gesture_summary": "mid-fulfillment freeze frame — one order packed and ready to ship",
-    "energy": "busy, proactive, capable",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, one leg stepping forward as if in motion",
+    "action": "carrying a small parcel box on one arm while holding a phone showing a coral cart icon in the other hand",
+    "facing": "3/4 toward viewer, gaze on the phone",
+    "energy": "busy, proactive, capable"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "smart casual polo",
-      "fabric": "cotton piqué",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled once to mid-forearm",
-      "accent_trim_hex": "#FF8A65",
-      "accent_trim_placement": "sleeve cuff stripe"
-    },
-    "accessories": [
-      {
-        "item": "wrist watch",
-        "color_hex": "#FFD54F",
-        "placement": "left wrist only"
-      }
-    ]
+    "top": { "garment": "short-sleeve blouse", "color_hex": "#4B2C7F", "detail": "coral cuff trim, charcoal collar" },
+    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Managing e-commerce store",
     "activity_hint": "Online business",
-    "scene_narrative": "A pair of forearms multitasks between an open laptop showing a coral cart icon and a yellow order badge, and a small parcel box getting its shipping label smoothed into place. A roll of labels sits nearby. The scene reads as energetic small-business ownership — hands-on order fulfillment, not a passive corporate dashboard glance.",
-    "primary_objects": [
-      {
-        "name": "laptop with seller dashboard",
-        "material": "brushed metal shell",
-        "color_hex": "#E8E8E8",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "screen shows a simple coral cart icon and a yellow circular order badge, no readable text"
-      },
-      {
-        "name": "parcel box",
-        "material": "corrugated cardboard",
-        "color_hex": "#D7B896",
-        "size_relative": "medium — beneath right hand",
-        "detail": "small closed box with a shipping label being pressed on top"
-      },
-      {
-        "name": "shipping label roll",
-        "material": "adhesive paper roll",
-        "color_hex": "#FDFCF8",
-        "size_relative": "small accent",
-        "detail": "coral edge stripe, no readable barcode text"
-      },
-      {
-        "name": "order notification badge",
-        "material": "flat icon shape",
-        "color_hex": "#FFD54F",
-        "size_relative": "small — on laptop screen",
-        "detail": "simple circular badge with a plain dot, no numeral"
-      }
-    ],
-    "environment": "light seller workstation desk surface strip across bottom third — fades to transparent at edges",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young woman strides forward carrying a small parcel box while checking a phone showing a coral shopping-cart icon and a yellow order badge — full-body flat vector language matching the approved Q1 references.",
+    "hero_prop": "phone displaying a glowing coral shopping-cart icon and yellow order badge",
+    "supporting_props": ["small parcel box with coral tape", "shipping label", "floating tag icon"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from laptop scroll hand → laptop screen → label hand",
-    "focal_hierarchy": [
-      "laptop dashboard screen",
-      "right hand applying label",
-      "left hand scrolling orders",
-      "parcel box anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and parcel box",
-      "midground: laptop",
-      "background: desk edge only — no wall"
-    ],
-    "thumbnail_readability": "laptop silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + parcel readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, e-commerce platform brand, letter E, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, warehouse chaos, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Managing e-commerce store\". Style: flat vector, 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two forearms at a seller workstation. Left hand scrolls a laptop showing a coral #FF8A65 cart icon and a yellow #FFD54F order badge, no readable text. Right hand presses a shipping label onto a cardboard parcel box, with a label roll beside it. Smart-casual steel-blue polo sleeve rolled to mid-forearm with coral cuff stripe, yellow wristwatch. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half. Mood: busy, proactive small-business energy."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, medium tan skin, high ponytail, striding forward with a bright smile. Purple #4B2C7F short-sleeve blouse with coral #FF8A65 cuff trim, charcoal trousers, flats. She carries a small parcel box wrapped with coral tape on one arm while holding a phone showing a glowing coral shopping-cart icon and a yellow #FFD54F order badge in the other hand. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Enterprising RIASEC coral accent. Busy proactive energy. Full head-to-feet visible, NOT a hands-only crop."
 }

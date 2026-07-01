@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q16 option 1 — Installing solar farm panels",
   "questionnaire": {
     "question_id": 16,
@@ -19,178 +20,80 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under panel and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; faint horizontal busbar lines on panel glass via 4 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "sunny outdoor maker energy — approachable renewable-energy fieldwork, not industrial factory",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter R on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill",
       "brand logos on panel or tools",
-      "full human figure or face",
-      "photorealistic metal reflections",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "industrial hazard imagery"
     ]
   },
   "color": {
     "riasec_code": "R",
-    "riasec_type": "Realistic",
-    "palette": {
-      "accent": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "MC4 connector housing, cable jacket, shirt cuff stripe"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "harness clip webbing, small stitching accents"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "solar panel cell surface", "hex": "#2B3A42" },
-        { "name": "panel busbar lines", "hex": "#D7D7D7" },
-        { "name": "mounting rail", "hex": "#D7D7D7" },
-        { "name": "harness strap", "hex": "#9E9E9E" },
-        { "name": "work glove grey", "hex": "#9E9E9E" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops and panel glass edge",
-    "accent_rule": "teal appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4DB6AC", "use": "MC4 connector housing, cable jacket, shirt cuff stripe" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "harness clip webbing accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "warm tan", "hex_approx": "#D9A066" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on panel glass edge and connector housing",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and panel corner"
+  "character": {
+    "presentation": "young man",
+    "age": "mid-20s tradesperson",
+    "build": "athletic, broad-shouldered",
+    "skin_tone": "warm tan",
+    "hair": "short black coily crop, cropped fade",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — male presentation, tan skin, coily crop distinguishes from other slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "aligns the solar panel edge onto the mounting rail",
-      "grip": "flat palm pressing the panel corner down",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "clicks an MC4 cable connector into its matching socket",
-      "grip": "precision pinch between thumb and index finger",
-      "position": "center-right, hovering over the panel edge"
-    },
-    "gesture_summary": "mid-install freeze frame — connector clicking home as the panel seats onto the rail",
-    "energy": "focused, capable, outdoor maker energy",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, three-quarter angle, reaching upward toward a tilted solar panel",
+    "action": "lifting the top edge of a solar panel into place on a mounting rack, free hand steadying a support bracket",
+    "facing": "3/4 left, torso and gaze angled up toward the panel",
+    "energy": "energetic outdoor maker, sun-warmed focus"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "short-sleeve hi-vis work shirt",
-      "fabric": "sturdy cotton twill",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#4DB6AC",
-      "accent_trim_placement": "thin hi-vis stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "thin work gloves",
-        "color_hex": "#9E9E9E",
-        "placement": "both hands — fingertips exposed for grip"
-      },
-      {
-        "item": "harness clip",
-        "color_hex": "#4DB6AC",
-        "placement": "wrist edge only, short webbing strap visible"
-      }
-    ]
+    "top": { "garment": "short-sleeve hi-vis work shirt", "color_hex": "#4B2C7F", "detail": "dark charcoal sleeve caps, teal cuff stripe, thin harness strap crossing chest" },
+    "bottom": { "garment": "cargo work trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "steel-toe work boots", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Installing solar farm panels",
     "activity_hint": "Renewable energy",
-    "scene_narrative": "A pair of gloved hands positions a solar panel edge onto a mounting rail while the other hand clicks an MC4 cable connector into place, sun-warmed glass glinting beneath a teal hi-vis sleeve stripe. The scene reads as satisfying renewable-energy fieldwork, not heavy industrial labor.",
-    "primary_objects": [
-      {
-        "name": "solar panel",
-        "material": "tempered glass over dark photovoltaic cells",
-        "color_hex": "#2B3A42",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "grid of thin silver busbar lines, one corner lifting into alignment on the rail"
-      },
-      {
-        "name": "MC4 cable connector",
-        "material": "matte plastic housing",
-        "color_hex": "#4DB6AC",
-        "size_relative": "small — pinched between fingers",
-        "detail": "twist-lock connector clicking into a matching socket, teal cable jacket"
-      },
-      {
-        "name": "mounting rail",
-        "material": "brushed aluminum",
-        "color_hex": "#D7D7D7",
-        "size_relative": "medium — anchors the panel beneath",
-        "detail": "simple straight rail segment, no bolts or brand marks visible"
-      },
-      {
-        "name": "harness strap",
-        "material": "woven nylon webbing",
-        "color_hex": "#9E9E9E",
-        "size_relative": "small accent at wrist edge",
-        "detail": "single clip buckle, teal stitching"
-      }
-    ],
-    "environment": "sun-bleached rooftop mounting frame strip across bottom third — fades to transparent at edges, warm sunlit highlight only, no sky or horizon",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young tradesman in three-quarter stance lifts a solar panel edge onto a mounting rail, teal MC4 cable coiled at his hip — the same confident full-body maker energy as the approved Q1 references, translated to sunny renewable-energy fieldwork.",
+    "hero_prop": "large tilted solar panel with thin silver busbar lines, half-seated onto an aluminum mounting rail",
+    "supporting_props": ["coiled teal MC4 cable", "small tool pouch on hip", "harness clip at chest strap"],
+    "environment": "thin grey rooftop ledge line, faint sun-ray circle motif behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from mounting rail → panel corner → connector hand",
-    "focal_hierarchy": [
-      "solar panel corner center mass",
-      "right hand clicking connector",
-      "left hand aligning panel",
-      "harness strap accent"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and connector",
-      "midground: solar panel and rail",
-      "background: sunlit surface strip only — no sky"
-    ],
-    "thumbnail_readability": "panel silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure right-of-center reaching toward panel upper-left, balanced like 1.2.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + tilted panel readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter R, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, industrial hazard, exposed wiring danger, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter R, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, industrial hazard, sparking exposed wires, fire, explosion"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Installing solar farm panels\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a steel-blue hi-vis work shirt with teal cuff stripe, thin grey work gloves with fingertips exposed. Left hand aligns a dark photovoltaic solar panel edge onto a brushed aluminum mounting rail. Right hand pinches a teal #4DB6AC MC4 cable connector clicking into its socket. A small harness clip with lavender stitching sits at the wrist edge. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, warm sunlit highlight on panel glass. Mood: focused capable outdoor maker energy, renewable fieldwork not factory labor. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young athletic man, warm tan skin, short black coily crop hair, three-quarter stance reaching upward. He wears a purple #4B2C7F hi-vis work shirt with charcoal sleeve caps and a teal #4DB6AC cuff stripe, charcoal cargo trousers, steel-toe boots, and a lavender-webbed harness clip across his chest. He lifts the top edge of a large tilted solar panel with thin silver busbar lines onto an aluminum mounting rail, free hand steadying a bracket; a coiled teal cable hangs at his hip. Thin grey rooftop ledge line, faint sun-ray circle motif — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Sunny confident outdoor maker energy."
 }

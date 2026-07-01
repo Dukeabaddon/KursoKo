@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q22 option 1 — Directing non-profit organization",
   "questionnaire": {
     "question_id": 22,
@@ -19,182 +20,78 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and hero prop — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle desk-surface grain suggestion via 2-3 parallel lines max",
-    "mood": "friendly career-education energy — approachable and encouraging, not corporate stock photo",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "friendly career exploration for students",
     "forbidden": [
-      "RIASEC letter E on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos",
-      "full human figure or face",
-      "photorealistic metal or skin reflections",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
-    "riasec_type": "Enterprising",
-    "palette": {
-      "accent": {
-        "hex": "#FF8A65",
-        "name": "coral",
-        "use": "heart-in-hand logo sketch, blazer cuff trim"
-      },
-      "secondary": {
-        "hex": "#FFD54F",
-        "name": "sunflower yellow",
-        "use": "sticky note accents"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        {
-          "name": "table surface",
-          "hex": "#D7B896"
-        },
-        {
-          "name": "sketch card",
-          "hex": "#FDFCF8"
-        },
-        {
-          "name": "sticky notes",
-          "hex": "#FFD54F"
-        },
-        {
-          "name": "second hand sleeve edge",
-          "hex": "#9E9E9E"
-        }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "accent color appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FF8A65", "use": "heart-in-hand logo card, blazer cuff stripe" },
+    "riasec_secondary": { "hex": "#FFD54F", "use": "small sticky-note accents" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#8D5A3C" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on table edge and sketch card corner",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and table edge"
+  "character": {
+    "presentation": "woman",
+    "age": "late-20s",
+    "build": "average, straight-backed confident stance",
+    "skin_tone": "deep brown",
+    "hair": "box braids styled in a high bun",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — deep brown skin and box-braid bun distinguish this figure from surrounding characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "gestures open toward the team across the table",
-      "grip": "relaxed open palm, fingers gently spread",
-      "position": "lower-left quadrant, palm angled up"
-    },
-    "right_hand": {
-      "action": "points to a small heart-in-hand logo sketch",
-      "grip": "single extended finger",
-      "position": "center-right, hovering over the sketch card"
-    },
-    "gesture_summary": "mid-pitch freeze frame — an inspiring idea being shared around the table",
-    "energy": "inspiring, warm, confidently open",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing facing 3/4 toward the viewer with one arm open",
+    "action": "gesturing an open welcome with one arm while holding up a small heart-in-hand logo card with the other",
+    "facing": "3/4 forward, open and inviting",
+    "energy": "inspiring, warm, confidently open"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled or cuffed sleeves only",
-    "top": {
-      "garment": "smart casual blazer",
-      "fabric": "soft structured cotton blend",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "pushed up to mid-forearm, tailored fold",
-      "accent_trim_hex": "#FF8A65",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "slim presentation clicker",
-        "color_hex": "#2D2D2D",
-        "placement": "held loosely against the left palm edge"
-      }
-    ]
+    "top": { "garment": "smart-casual blazer", "color_hex": "#4B2C7F", "detail": "dark charcoal lapel, coral cuff stripe" },
+    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Directing non-profit organization",
     "activity_hint": "Social enterprise",
-    "scene_narrative": "Two forearms meet at the edge of a round meeting table — one gesturing open and welcoming, the other pointing to a small heart-in-hand logo sketch surrounded by blank sticky notes. A second sleeve edge enters from off-frame, hinting at a small team gathered around a shared mission, not a solo desk.",
-    "primary_objects": [
-      {
-        "name": "heart-in-hand logo sketch",
-        "material": "paper card",
-        "color_hex": "#FF8A65",
-        "size_relative": "hero — 30% of visual mass",
-        "detail": "simple rounded heart cradled by an open hand outline, hand-drawn feel, no text"
-      },
-      {
-        "name": "blank sticky notes",
-        "material": "paper",
-        "color_hex": "#FFD54F",
-        "size_relative": "small accents",
-        "detail": "three overlapping squares, no writing"
-      },
-      {
-        "name": "round table edge",
-        "material": "light wood",
-        "color_hex": "#D7B896",
-        "size_relative": "background anchor",
-        "detail": "gentle curved edge, simple wood grain suggestion"
-      }
-    ],
-    "environment": "round meeting table surface strip across bottom third — fades to transparent at edges, no wall",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A woman stands with one arm open in welcome and the other holding up a small heart-in-hand logo card, blank yellow sticky notes floating nearby — the same full-body flat vector language as the approved Q1 references, reading as an inspiring mission-driven leader.",
+    "hero_prop": "small heart-in-hand logo card, coral accent",
+    "supporting_props": ["floating blank sticky notes", "slim presentation clicker"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "curved workflow line from open hand → logo sketch → sticky notes",
-    "focal_hierarchy": [
-      "heart-in-hand sketch center mass",
-      "right hand pointing",
-      "left open gesture hand",
-      "sticky note accents"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and sketch card",
-      "midground: sticky notes and second hand edge",
-      "background: table edge only — no wall"
-    ],
-    "thumbnail_readability": "heart-in-hand shape + two hand gestures readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, logo card right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + heart-in-hand card readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": [
-      "Flux Dev",
-      "DALL-E 3",
-      "Midjourney v6",
-      "Ideogram"
-    ],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, factory, industrial horror, guns, blood, corporate boardroom skyline, readable signage"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Directing non-profit organization\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands and hero prop only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: Two forearms meet at the edge of a round meeting table — one gesturing open and welcoming, the other pointing to a small heart-in-hand logo sketch surrounded by blank sticky notes. A second sleeve edge enters from off-frame, hinting at a small team gathered around a shared mission, not a solo desk. Objects: heart-in-hand logo sketch (paper card, #FF8A65): simple rounded heart cradled by an open hand outline, hand-drawn feel, no text; blank sticky notes (paper, #FFD54F): three overlapping squares, no writing; round table edge (light wood, #D7B896): gentle curved edge, simple wood grain suggestion. Left hand gestures open toward the team across the table (relaxed open palm, fingers gently spread). Right hand points to a small heart-in-hand logo sketch (single extended finger). Clothing: smart casual blazer in soft structured cotton blend, color #5C7A8A, pushed up to mid-forearm, tailored fold, accent trim #FF8A65 at thin stripe on cuff fold. Accessories: slim presentation clicker (#2D2D2D) — held loosely against the left palm edge. Warm medium skin tone #C8956C. Accent color #FF8A65 on heart-in-hand logo sketch, blazer cuff trim; secondary #FFD54F on sticky note accents. Camera: three-quarter top-down, 20° tilt toward viewer, medium-close — hands occupy lower 55% of frame. Environment: round meeting table surface strip across bottom third — fades to transparent at edges, no wall. Mood: inspiring, warm, confidently open, friendly career-education energy — approachable and encouraging, not corporate stock photo. Generous transparent margins, readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Woman in late-20s, standing 3/4 toward viewer, deep brown skin, box braids in a high bun, purple #4B2C7F smart-casual blazer with charcoal lapel and coral #FF8A65 cuff stripe, charcoal tailored trousers and flats. She gestures an open welcome with one arm while holding up a small heart-in-hand logo card with the other, blank yellow sticky notes floating nearby, a slim presentation clicker in hand. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Enterprising RIASEC accent coral on the logo card and blazer cuff, yellow on sticky notes. Inspiring, warm, confidently open energy. Full head-to-feet visible."
 }

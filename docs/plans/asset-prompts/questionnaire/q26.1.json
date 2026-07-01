@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q26 option 1 — Building disaster-resistant housing",
   "questionnaire": {
     "question_id": 26,
@@ -23,169 +24,75 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under model house and hands — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle grain suggestion on wood frame via 3 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "resilient, hopeful engineering — safety and craftsmanship, not disaster or damage",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter R on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
       "collapsed building, rubble, or storm damage",
-      "full human figure or face",
-      "photorealistic metal reflections",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "R",
-    "riasec_type": "Realistic",
-    "palette": {
-      "accent": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "hurricane strap tips, tool handle band, cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "spirit-level bubble vial, small bolt washers"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "model house frame", "hex": "#D7B896" },
-        { "name": "steel bracing", "hex": "#8FA3AD" },
-        { "name": "hurricane strap", "hex": "#607D8B" },
-        { "name": "wrench handle", "hex": "#FF8A65" },
-        { "name": "roof panel", "hex": "#B0473B" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "teal appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4DB6AC", "use": "hurricane strap tips, tool-belt buckle, shirt cuff stripe" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "spirit-level bubble vial accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#7A4B32" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on wrench shaft and steel bracket edge",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and house base"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "athletic, broad-shouldered",
+    "skin_tone": "deep brown",
+    "hair": "short tight coils, faded sides",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "steadies a small reinforced model house frame on the table",
-      "grip": "spread fingers bracing the roof ridge",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "fastens a diagonal steel hurricane strap to the corner post with a wrench",
-      "grip": "precision grip on wrench handle",
-      "position": "center-right, hovering over house corner joint"
-    },
-    "gesture_summary": "mid-reinforcement freeze frame — one brace being tightened",
-    "energy": "focused, capable, safety-minded builder",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, kneeling on one knee beside a workbench, three-quarter angle toward activity",
+    "action": "bolting a diagonal steel hurricane strap onto a small reinforced model house with a wrench, free hand steadying the roof ridge",
+    "facing": "3/4 toward the model house, wrench hand forward",
+    "energy": "focused, capable, safety-minded builder"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "short-sleeve work shirt",
-      "fabric": "sturdy cotton twill",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#4DB6AC",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "thin work gloves",
-        "color_hex": "#9E9E9E",
-        "placement": "both hands — fingertips cut out exposing skin for dexterity"
-      }
-    ]
+    "top": { "garment": "short-sleeve work shirt", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, teal cuff stripe, rolled sleeve on wrench arm" },
+    "bottom": { "garment": "canvas cargo pants", "color_hex": "#2D2D2D", "detail": "teal-tipped tool belt loop" },
+    "footwear": { "garment": "work boots", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Building disaster-resistant housing",
     "activity_hint": "Structural engineering",
-    "scene_narrative": "A pair of gloved hands reinforces a small scale-model house on a workbench, bolting a diagonal steel hurricane strap across the corner post while the other hand holds the frame steady. The scene reads as careful, confident structural engineering — proactive safety craftsmanship, never disaster aftermath.",
-    "primary_objects": [
-      {
-        "name": "reinforced model house frame",
-        "material": "light wood with a terracotta roof panel",
-        "color_hex": "#D7B896",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "visible corner post, terracotta roof panel, one wall cut away showing bracing"
-      },
-      {
-        "name": "diagonal steel hurricane strap",
-        "material": "galvanized steel",
-        "color_hex": "#607D8B",
-        "size_relative": "medium — spans the corner joint",
-        "detail": "two bolt holes, teal-tipped bolt caps"
-      },
-      {
-        "name": "compact wrench",
-        "material": "plastic handle + metal head",
-        "color_hex": "#FF8A65",
-        "size_relative": "small — gripped in right hand",
-        "detail": "open-end head fitted onto bolt"
-      },
-      {
-        "name": "spirit level",
-        "material": "aluminum body, lavender bubble vial",
-        "color_hex": "#9575CD",
-        "size_relative": "small accent — resting beside frame",
-        "detail": "single bubble vial, 2px outline"
-      }
-    ],
-    "environment": "light birch workbench surface strip across bottom third — fades to transparent at edges, cream paper sheet under model house",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man kneels beside a workbench, wrench in hand, fastening a diagonal steel hurricane strap onto the corner post of a small scale-model house while his other hand braces the roof ridge — the same full-body flat vector language as the approved Q1 references. Proactive craftsmanship, never disaster aftermath.",
+    "hero_prop": "small reinforced model house with light-wood frame, terracotta roof panel, and visible corner bracing",
+    "supporting_props": ["compact wrench", "spirit level with lavender bubble vial", "tool belt"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from wrench → house corner → steadying hand",
-    "focal_hierarchy": [
-      "model house frame center mass",
-      "right hand fastening strap",
-      "left stabilizing hand",
-      "bench surface anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and wrench",
-      "midground: model house",
-      "background: bench edge only — no wall"
-    ],
-    "thumbnail_readability": "house silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center kneeling, model house right at bench height, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of kneeling person + model house readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter R, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, collapsed building, rubble, storm damage, industrial horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter R, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, collapsed building, rubble, storm damage, industrial horror, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Building disaster-resistant housing\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with thin grey work gloves (fingertips exposed) reinforcing a small scale-model house on a light birch workbench. Left hand steadies the light-wood house frame with its terracotta roof panel. Right hand uses a small orange #FF8A65 wrench to fasten a galvanized steel #607D8B diagonal hurricane strap across the corner post, teal #4DB6AC bolt caps visible. A lavender #9575CD spirit level rests nearby. Rolled steel-blue work shirt sleeves with teal cuff trim. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: proactive, confident structural safety engineering — never disaster aftermath or damage. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, athletic build, deep brown skin #7A4B32, short tight coils with faded sides, kneeling on one knee beside a workbench. He wears a purple #4B2C7F short-sleeve work shirt with charcoal collar and teal #4DB6AC cuff stripe, charcoal cargo pants with a tool belt, and dark work boots. He fastens a diagonal galvanized-steel hurricane strap (teal bolt caps) onto the corner post of a small light-wood model house with a terracotta roof panel, using a compact wrench, while his free hand steadies the roof ridge. A lavender #9575CD spirit level rests on the bench. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Mood: resilient, hopeful, capable structural engineering — never disaster or damage. Full head-to-feet visible."
 }

@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q20 option 2 — Illustrating science textbooks",
   "questionnaire": {
     "question_id": 20,
@@ -19,173 +20,79 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under tablet and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; simple vein lines on leaf via 3 strokes max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "playful scientific creativity — approachable illustration craft, not clinical diagramming",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter A on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos on tablet",
-      "full human figure or face",
-      "photorealistic render",
-      "clinical medical diagram or dissection imagery",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill",
+      "clinical medical diagram or dissection imagery"
     ]
   },
   "color": {
     "riasec_code": "A",
-    "riasec_type": "Artistic",
-    "palette": {
-      "accent": {
-        "hex": "#FFD54F",
-        "name": "sunshine yellow",
-        "use": "cell nucleus highlight, stylus tip band"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "organelle shapes, paint-fleck sleeve dots"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "drawing tablet chassis", "hex": "#3A3A3A" },
-        { "name": "tablet screen background", "hex": "#EDEBFB" },
-        { "name": "reference leaf", "hex": "#8BA888" },
-        { "name": "stylus barrel", "hex": "#E8E8E8" },
-        { "name": "paint fleck accent", "hex": "#FFD54F" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "yellow appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FFD54F", "use": "cell nucleus highlight, stylus tip band" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "organelle shapes, paint-fleck sleeve dots" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "warm light tan", "hex_approx": "#EAC086" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on tablet corner and leaf edge",
-    "shadow": "flat #2D2D2D at 12% opacity under tablet and hands"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "lanky, relaxed",
+    "skin_tone": "warm light tan",
+    "hair": "messy curls",
+    "face": "minimal — two dot eyes, small playful smile, no detailed nose",
+    "diversity_note": "unique cast per slot — male presentation, warm light tan skin, messy curls distinguishes from other slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds a real leaf up for reference",
-      "grip": "gentle pinch at the stem",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "stylizes a cell organelle on the drawing tablet",
-      "grip": "precision pen grip, stylus tip touching screen",
-      "position": "center-right, hovering over the tablet surface"
-    },
-    "gesture_summary": "mid-illustration freeze frame — stylus mid-stroke shaping a nucleus",
-    "energy": "focused, playful, approachable",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing casually, tablet held up at chest height",
+    "action": "holding a large drawing tablet up showing a cell diagram with one hand while holding a real reference leaf up beside it with the other",
+    "facing": "3/4 toward viewer, playful focused gaze between leaf and tablet",
+    "energy": "focused, playful, approachable"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "loose creative hoodie",
-      "fabric": "brushed cotton fleece",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "pushed to mid-forearm, paint-flecked",
-      "accent_trim_hex": "#FFD54F",
-      "accent_trim_placement": "paint smear near cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "woven friendship bracelet",
-        "color_hex": "#9575CD",
-        "placement": "left wrist only"
-      }
-    ]
+    "top": { "garment": "loose creative hoodie", "color_hex": "#4B2C7F", "detail": "charcoal drawstrings, yellow paint-smear cuff, scattered lavender paint-fleck dots" },
+    "bottom": { "garment": "relaxed joggers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "canvas sneakers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Illustrating science textbooks",
     "activity_hint": "Educational visuals",
-    "scene_narrative": "A pair of hands holds a real leaf for reference while the other stylizes a friendly cell diagram with a glowing yellow nucleus on a drawing tablet, translating raw nature into an approachable textbook illustration. The scene reads as playful scientific creativity, not clinical diagramming.",
-    "primary_objects": [
-      {
-        "name": "drawing tablet",
-        "material": "matte glass and plastic",
-        "color_hex": "#3A3A3A",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "screen shows a stylized cell diagram with a yellow nucleus and lavender organelle shapes, no readable labels"
-      },
-      {
-        "name": "reference leaf",
-        "material": "organic leaf",
-        "color_hex": "#8BA888",
-        "size_relative": "medium — held in left hand",
-        "detail": "single simple leaf with visible vein lines"
-      },
-      {
-        "name": "stylus",
-        "material": "matte plastic",
-        "color_hex": "#E8E8E8",
-        "size_relative": "small — pinched in right hand",
-        "detail": "yellow tip band, resting against the tablet glass"
-      },
-      {
-        "name": "paint fleck accents",
-        "material": "dried paint spatter",
-        "color_hex": "#FFD54F",
-        "size_relative": "small accent on sleeve",
-        "detail": "scattered small dots on hoodie cuff"
-      }
-    ],
-    "environment": "creative illustration desk strip across bottom third — fades to transparent at edges, no wall or window",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A relaxed young man holds a real leaf up for reference beside a drawing tablet showing a friendly cell diagram with a glowing yellow nucleus, translating raw nature into an approachable textbook illustration — full-body playful creativity in the same maker language as the approved Q1 references.",
+    "hero_prop": "large drawing tablet showing a stylized cell diagram with a yellow nucleus and lavender organelle shapes",
+    "supporting_props": ["single green reference leaf with visible veins", "light-grey stylus with a yellow tip band"],
+    "environment": "thin creative-desk ledge line, faint grey decorative circles behind figure — no wall or window",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from reference leaf → gaze direction → tablet diagram",
-    "focal_hierarchy": [
-      "tablet cell diagram center mass",
-      "right hand stylizing organelle",
-      "left hand holding leaf",
-      "paint fleck accents"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and stylus",
-      "midground: tablet and leaf",
-      "background: illustration desk strip only"
-    ],
-    "thumbnail_readability": "tablet silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure right-of-center holding tablet left, balanced like 1.2.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + tablet diagram readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter A, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, clinical medical diagram, dissection imagery, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, clinical medical diagram, dissection imagery, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Illustrating science textbooks\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a paint-flecked steel-blue hoodie with yellow #FFD54F cuff smear. Left hand gently pinches a green reference leaf with visible veins. Right hand holds a light-grey stylus with a yellow tip, stylizing a friendly cell diagram with a glowing yellow nucleus and lavender organelle shapes on a lavender-tinted tablet screen. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, creative illustration desk fading to transparent. Mood: playful focused scientific creativity, approachable illustration craft not clinical diagramming. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal playful dot-eye face. Young lanky man, warm light tan skin, messy curly hair, standing casually 3/4 toward viewer. He wears a purple #4B2C7F loose creative hoodie with charcoal drawstrings, a yellow #FFD54F paint-smear cuff, and scattered lavender #9575CD paint-fleck dots, relaxed charcoal joggers, and canvas sneakers. He holds a large drawing tablet up at chest height showing a friendly cell diagram with a glowing yellow nucleus and lavender organelle shapes, using a light-grey stylus with a yellow tip band, while holding a single green reference leaf with visible veins up beside it with the other hand. Thin creative-desk ledge line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Playful focused scientific creativity, approachable illustration craft not clinical diagramming."
 }

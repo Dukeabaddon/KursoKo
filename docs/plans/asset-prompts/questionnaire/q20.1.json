@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q20 option 1 — Mentoring first-generation students",
   "questionnaire": {
     "question_id": 20,
@@ -19,173 +20,80 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under textbook and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle wood-grain suggestion on table via 3 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "warm patient mentorship energy — approachable support, not a formal lecture",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter S on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "full human figure or face",
-      "photorealistic render",
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill",
       "distressed or crying student imagery",
-      "empty sad classroom mood",
-      "dark moody background fill"
+      "empty sad classroom mood"
     ]
   },
   "color": {
     "riasec_code": "S",
-    "riasec_type": "Social",
-    "palette": {
-      "accent": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "bookmark ribbon, cardigan cuff trim"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "teal",
-        "use": "graduation-cap charm accent"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "textbook cover", "hex": "#5C7A8A" },
-        { "name": "graduation-cap charm", "hex": "#9575CD" },
-        { "name": "bookmark ribbon", "hex": "#9575CD" },
-        { "name": "table wood", "hex": "#D7B896" },
-        { "name": "lanyard", "hex": "#9575CD" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#9575CD", "use": "bookmark ribbon, cardigan cuff trim" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "graduation-cap charm accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#7A4B2A" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on textbook cover and charm surface",
-    "shadow": "flat #2D2D2D at 12% opacity under textbook and hands"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "warm, approachable",
+    "skin_tone": "deep brown",
+    "hair": "curly bun with a small clip",
+    "face": "minimal — two dot eyes, small warm smile, no detailed nose",
+    "diversity_note": "unique cast per slot — female presentation, deep brown skin, curly clipped bun distinguishes from other slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "slides the open textbook across the table toward the mentee side",
-      "grip": "flat palm guiding the book's edge",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "offers a small graduation-cap charm as encouragement",
-      "grip": "pinched between thumb and index finger",
-      "position": "center-right, presented forward"
-    },
-    "gesture_summary": "mid-encouragement freeze frame — the charm offered as the book arrives",
-    "energy": "supportive, warm, patient",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing beside a library table, leaning gently forward",
+    "action": "sliding an open textbook across the table toward the viewer with one hand while offering a small graduation-cap charm forward with the other",
+    "facing": "3/4 toward viewer, warm encouraging gaze",
+    "energy": "supportive, warm, patient"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "soft knit cardigan",
-      "fabric": "brushed cotton-wool blend",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "loose, pushed to mid-forearm",
-      "accent_trim_hex": "#9575CD",
-      "accent_trim_placement": "thin ribbed cuff trim"
-    },
-    "accessories": [
-      {
-        "item": "volunteer lanyard",
-        "color_hex": "#9575CD",
-        "placement": "looped once at wrist only"
-      }
-    ]
+    "top": { "garment": "soft knit cardigan", "color_hex": "#4B2C7F", "detail": "charcoal collar, lavender ribbed cuff trim" },
+    "bottom": { "garment": "straight-leg trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Mentoring first-generation students",
     "activity_hint": "Equity support",
-    "scene_narrative": "A pair of hands slides an open textbook across a library table toward an unseen mentee while the other offers a small graduation-cap charm as a gesture of encouragement. The scene reads as warm, patient mentorship — a quiet moment of support, not a formal lecture.",
-    "primary_objects": [
-      {
-        "name": "textbook",
-        "material": "paper with cloth cover",
-        "color_hex": "#5C7A8A",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "open to a page with a simple lavender bookmark ribbon, no readable text"
-      },
-      {
-        "name": "graduation-cap charm",
-        "material": "small enameled metal",
-        "color_hex": "#9575CD",
-        "size_relative": "small — held in right hand",
-        "detail": "tiny mortarboard shape on a keyring loop"
-      },
-      {
-        "name": "bookmark ribbon",
-        "material": "satin ribbon",
-        "color_hex": "#9575CD",
-        "size_relative": "small accent",
-        "detail": "draped across the open textbook page"
-      },
-      {
-        "name": "table edge",
-        "material": "light birch wood",
-        "color_hex": "#D7B896",
-        "size_relative": "background surface",
-        "detail": "simple grain lines, no clutter"
-      }
-    ],
-    "environment": "quiet library table strip across bottom third — fades to transparent at edges, no bookshelf wall",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A warm young woman leans over a library table, sliding an open textbook forward while offering a small graduation-cap charm as encouragement — full-body patient mentorship captured in the same maker language as the approved Q1 references. The scene reads as a quiet moment of support, not a formal lecture.",
+    "hero_prop": "open textbook with a lavender bookmark ribbon draped across the page",
+    "supporting_props": ["small enameled graduation-cap charm on a keyring loop", "lavender lanyard looped at the wrist"],
+    "environment": "thin quiet library-table line, faint grey decorative circles behind figure — no bookshelf wall",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from textbook → bookmark → charm hand",
-    "focal_hierarchy": [
-      "textbook center mass",
-      "right hand offering charm",
-      "left hand sliding textbook",
-      "table edge anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and charm",
-      "midground: textbook and bookmark",
-      "background: library table strip only"
-    ],
-    "thumbnail_readability": "textbook silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center leaning over table toward viewer, textbook right, balanced like 1.2.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + open textbook readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter S, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, distressed or crying student, empty sad classroom, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, distressed or crying student, empty sad classroom, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Mentoring first-generation students\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft steel-blue knit cardigan with lavender #9575CD cuff trim. Left hand slides an open steel-blue textbook with a lavender bookmark ribbon across a birch library table. Right hand pinches a small lavender graduation-cap charm, offering it forward as encouragement. A lavender lanyard loops once at the wrist. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, quiet library table strip fading to transparent. Mood: warm patient supportive mentorship, quiet encouragement not a formal lecture. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal warm dot-eye face. Young warm woman, deep brown skin, curly bun with a small clip, leaning gently 3/4 toward viewer beside a library table. She wears a purple #4B2C7F soft knit cardigan with charcoal collar and lavender #9575CD ribbed cuff trim, charcoal straight-leg trousers, and simple flats, with a lavender lanyard looped once at her wrist. She slides an open steel-blue textbook with a lavender bookmark ribbon across the table with one hand while offering a small lavender graduation-cap charm forward with the other. Thin quiet library-table line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Warm patient supportive mentorship, quiet encouragement not a formal lecture."
 }

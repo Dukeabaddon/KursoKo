@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q23 option 2 — Developing cancer treatment trials",
   "questionnaire": {
     "question_id": 23,
@@ -19,183 +20,85 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and hero prop — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle desk-surface grain suggestion via 2-3 parallel lines max",
-    "mood": "friendly career-education energy — approachable and encouraging, not corporate stock photo",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "friendly career exploration for students — hopeful, never clinical or sad",
     "forbidden": [
-      "RIASEC letter I on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos",
-      "full human figure or face",
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill",
       "distressing or graphic imagery",
-      "photorealistic metal or skin reflections",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "hospital gown",
+      "sick patient",
+      "clinical distress",
+      "sad expression",
+      "IV drip"
     ]
   },
   "color": {
     "riasec_code": "I",
-    "riasec_type": "Investigative",
-    "palette": {
-      "accent": {
-        "hex": "#4B2C7F",
-        "name": "deep indigo",
-        "use": "flask liquid glow, lab coat cuff trim"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "teal",
-        "use": "microscope base accent"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        {
-          "name": "lab flask",
-          "hex": "#FDFCF8"
-        },
-        {
-          "name": "flask liquid glow",
-          "hex": "#4B2C7F"
-        },
-        {
-          "name": "microscope body",
-          "hex": "#E8E8E8"
-        },
-        {
-          "name": "hope ribbon icon",
-          "hex": "#4DB6AC"
-        }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "accent color appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4B2C7F", "use": "glowing flask liquid, lab coat cuff stripe" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "microscope base accent, small hope-ribbon icon" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "medium tan", "hex_approx": "#C8956C" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint warm grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "soft warm glow radiating from the flask liquid, small curved highlight on microscope lens barrel",
-    "shadow": "flat #2D2D2D at 10% opacity under hands and flask base — kept soft to preserve hopeful mood"
+  "character": {
+    "presentation": "man",
+    "age": "early-30s",
+    "build": "average, calm upright posture",
+    "skin_tone": "medium tan",
+    "hair": "short neat hair",
+    "face": "minimal — two dot eyes, small calm smile, no detailed nose",
+    "diversity_note": "unique cast per slot — calm short-haired researcher distinguishes this figure from surrounding characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds a glowing lab flask up toward the light",
-      "grip": "cupped fingers around the flask neck",
-      "position": "lower-left quadrant, wrist angled up"
-    },
-    "right_hand": {
-      "action": "gently adjusts a microscope slide",
-      "grip": "light two-finger touch on the slide edge",
-      "position": "center-right, hovering over the microscope stage"
-    },
-    "gesture_summary": "quiet hopeful freeze frame — light catching a research breakthrough in progress",
-    "energy": "hopeful, serious but warm, never sad",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing at a research bench",
+    "action": "holding a glowing flask up toward the light with one hand, other hand resting gently on a microscope",
+    "facing": "3/4 toward the flask, gaze lifted toward the glow",
+    "energy": "hopeful, serious but warm, never sad"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled or cuffed sleeves only",
-    "top": {
-      "garment": "long lab coat",
-      "fabric": "smooth cotton blend",
-      "color_hex": "#F5F3EE",
-      "sleeve_style": "straight cuff, neat and clean",
-      "accent_trim_hex": "#4B2C7F",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "nitrile gloves",
-        "color_hex": "#F5F3EE",
-        "placement": "both hands, thin and close-fitting"
-      }
-    ]
+    "top": { "garment": "long lab coat", "color_hex": "#F5F3EE", "detail": "dark charcoal collar, purple cuff stripe" },
+    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple flat shoes", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Developing cancer treatment trials",
     "activity_hint": "Medical research",
-    "scene_narrative": "A pair of gloved hands works gently at a research bench — one holding a small flask of glowing indigo liquid up to the light, the other carefully adjusting a microscope slide. A tiny abstract ribbon icon rests nearby, subtle and quiet. The mood is hopeful and purposeful: careful science working toward a cure, never clinical or sad.",
-    "primary_objects": [
-      {
-        "name": "lab flask",
-        "material": "glass",
-        "color_hex": "#FDFCF8",
-        "size_relative": "hero — 30% of visual mass",
-        "detail": "round-bottom flask with a soft glowing indigo liquid inside, warm gentle light radiating outward"
-      },
-      {
-        "name": "microscope",
-        "material": "matte metal",
-        "color_hex": "#E8E8E8",
-        "size_relative": "medium — under right hand",
-        "detail": "simple eyepiece and stage, no brand marks"
-      },
-      {
-        "name": "hope ribbon icon",
-        "material": "flat vector shape",
-        "color_hex": "#4DB6AC",
-        "size_relative": "tiny accent",
-        "detail": "small looped ribbon shape resting beside the flask, subtle and non-literal"
-      }
-    ],
-    "environment": "research bench surface strip across bottom third, warm soft-lit atmosphere — fades to transparent at edges, no clinical wall or equipment clutter",
+    "scene_narrative": "A man in a lab coat stands at a research bench, holding a small flask of glowing indigo liquid up toward the light while his other hand rests gently on a microscope, a tiny abstract hope-ribbon icon resting nearby — the same full-body flat vector language as the approved Q1 references, deliberately symbolic and uplifting rather than clinical.",
+    "hero_prop": "glass flask with softly glowing indigo liquid, warm light radiating outward",
+    "supporting_props": ["simple microscope", "small abstract hope-ribbon icon"],
+    "environment": "thin grey floor line only, warm soft glow, two faint grey circles behind figure — no clinical wall or equipment clutter",
     "symbolic": true,
-    "sensitive_handling": "Treat as symbolic and uplifting only — glowing flask represents hope and discovery, not disease. No hospital imagery, no sick patients, no clinical distress, no sad color palette. Keep warm light, calm hands, quiet optimism."
+    "sensitive_handling": "Treat as symbolic and uplifting only — the glowing flask represents hope and discovery, not disease. Single calm researcher figure, no hospital imagery, no sick patients, no clinical distress, no sad color palette. Keep warm light, calm posture, quiet optimism."
   },
   "composition": {
-    "layout": "diagonal workflow line from microscope → flask glow → gloved hands",
-    "focal_hierarchy": [
-      "glowing flask center mass",
-      "left hand holding flask",
-      "right hand at microscope",
-      "ribbon icon accent"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and flask",
-      "midground: microscope",
-      "background: bench edge only — no clinical wall"
-    ],
-    "thumbnail_readability": "glowing flask silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, flask glow right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + glowing flask readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": [
-      "Flux Dev",
-      "DALL-E 3",
-      "Midjourney v6",
-      "Ideogram"
-    ],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, hospital gown, sick patient, clinical distress, sad expression, IV drip, graphic medical imagery, factory, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, hospital gown, sick patient, clinical distress, sad expression, IV drip, graphic medical imagery"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Developing cancer treatment trials\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands and hero prop only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: A pair of gloved hands works gently at a research bench — one holding a small flask of glowing indigo liquid up to the light, the other carefully adjusting a microscope slide. A tiny abstract ribbon icon rests nearby, subtle and quiet. The mood is hopeful and purposeful: careful science working toward a cure, never clinical or sad. Objects: lab flask (glass, #FDFCF8): round-bottom flask with a soft glowing indigo liquid inside, warm gentle light radiating outward; microscope (matte metal, #E8E8E8): simple eyepiece and stage, no brand marks; hope ribbon icon (flat vector shape, #4DB6AC): small looped ribbon shape resting beside the flask, subtle and non-literal. Left hand holds a glowing lab flask up toward the light (cupped fingers around the flask neck). Right hand gently adjusts a microscope slide (light two-finger touch on the slide edge). Clothing: long lab coat in smooth cotton blend, color #F5F3EE, straight cuff, neat and clean, accent trim #4B2C7F at thin stripe on cuff fold. Accessories: nitrile gloves (#F5F3EE) — both hands, thin and close-fitting. Warm medium skin tone #C8956C. Accent color #4B2C7F on flask liquid glow, lab coat cuff trim; secondary #4DB6AC on microscope base accent. Camera: three-quarter top-down, 20° tilt toward viewer, medium-close — hands occupy lower 55% of frame. Environment: research bench surface strip across bottom third, warm soft-lit atmosphere — fades to transparent at edges, no clinical wall or equipment clutter. Mood: hopeful, serious but warm, never sad, friendly career-education energy — approachable and encouraging, not corporate stock photo. Generous transparent margins, readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Calm early-30s man standing at a research bench, medium tan skin, short neat hair, off-white #F5F3EE long lab coat with charcoal collar and purple #4B2C7F cuff stripe, charcoal tailored trousers and flat shoes. He holds a small glass flask of glowing indigo liquid up toward the light with one hand, other hand resting gently on a simple microscope, a tiny abstract hope-ribbon icon nearby. Thin grey floor line, warm soft glow, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Investigative RIASEC accent purple on flask glow and coat cuff, teal on microscope and ribbon icon. Symbolic and uplifting only: hopeful, serious but warm, never sad or clinical. Full head-to-feet visible."
 }

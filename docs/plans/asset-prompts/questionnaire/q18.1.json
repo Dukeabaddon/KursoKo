@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q18 option 1 — Planning corporate takeover",
   "questionnaire": {
     "question_id": 18,
@@ -19,173 +20,79 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under chessboard and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle wood-grain suggestion on board via 3 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "bold confident strategy energy — approachable boardroom game, not hostile takeover",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter E on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos on devices",
-      "full human figure or face",
-      "photorealistic render",
-      "aggressive or hostile body language",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill",
+      "aggressive or hostile body language"
     ]
   },
   "color": {
     "riasec_code": "E",
-    "riasec_type": "Enterprising",
-    "palette": {
-      "accent": {
-        "hex": "#FF8A65",
-        "name": "coral",
-        "use": "king piece accent ring, blazer cuff piping"
-      },
-      "secondary": {
-        "hex": "#FFD54F",
-        "name": "sunshine yellow",
-        "use": "small chart-card highlight bars"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "chessboard wood", "hex": "#D7B896" },
-        { "name": "king chess piece", "hex": "#FDFCF8" },
-        { "name": "strategy chart card", "hex": "#FDFCF8" },
-        { "name": "table surface", "hex": "#3A3A3A" },
-        { "name": "wristwatch", "hex": "#2D2D2D" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops and chess piece",
-    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FF8A65", "use": "king piece accent ring, blazer cuff piping" },
+    "riasec_secondary": { "hex": "#FFD54F", "use": "small chart-card highlight bars" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "rich brown", "hex_approx": "#6B4226" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on the king piece crown and chart card edge",
-    "shadow": "flat #2D2D2D at 12% opacity under chessboard and hands"
+  "character": {
+    "presentation": "young woman",
+    "age": "young professional",
+    "build": "poised, confident",
+    "skin_tone": "rich brown",
+    "hair": "sleek high ponytail",
+    "face": "minimal — two dot eyes, small confident smile, no detailed nose",
+    "diversity_note": "unique cast per slot — female presentation, rich brown skin, sleek high ponytail distinguishes from other slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "moves the king chess piece forward",
-      "grip": "pinch grip at the piece crown",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "slides a strategy chart card into place",
-      "grip": "flat fingers sliding the card edge",
-      "position": "center-right, hovering over the table"
-    },
-    "gesture_summary": "mid-move freeze frame — the king piece settling into a new square",
-    "energy": "calculating, bold, confident",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing beside a small chess table, weight shifted confidently",
+    "action": "moving a tall king chess piece forward with one hand while holding a strategy chart card in the other",
+    "facing": "3/4 toward the chessboard, calculating gaze downward",
+    "energy": "calculating, bold, confident"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "smart casual blazer",
-      "fabric": "structured wool-blend",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "pushed to mid-forearm, confident fit",
-      "accent_trim_hex": "#FF8A65",
-      "accent_trim_placement": "thin cuff piping"
-    },
-    "accessories": [
-      {
-        "item": "slim wristwatch",
-        "color_hex": "#2D2D2D",
-        "placement": "right wrist only"
-      }
-    ]
+    "top": { "garment": "smart casual blazer", "color_hex": "#4B2C7F", "detail": "charcoal lapels, coral cuff piping" },
+    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "pointed flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Planning corporate takeover",
     "activity_hint": "Business strategy",
-    "scene_narrative": "A pair of confident hands moves a tall king chess piece forward while the other slides a strategy chart card into place across a polished table, capturing a decisive boardroom strategy moment. The scene reads as bold competitive strategy, not aggression.",
-    "primary_objects": [
-      {
-        "name": "chessboard",
-        "material": "wood inlay",
-        "color_hex": "#D7B896",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "simple two-tone squares, only a few pieces remaining on the board"
-      },
-      {
-        "name": "king chess piece",
-        "material": "carved wood",
-        "color_hex": "#FDFCF8",
-        "size_relative": "medium — mid-move in left hand",
-        "detail": "tall silhouette with a coral accent ring at the base"
-      },
-      {
-        "name": "strategy chart card",
-        "material": "stiff card stock",
-        "color_hex": "#FDFCF8",
-        "size_relative": "small — held in right hand",
-        "detail": "abstract upward bar shapes, no readable text"
-      },
-      {
-        "name": "table surface",
-        "material": "dark polished wood",
-        "color_hex": "#3A3A3A",
-        "size_relative": "background surface",
-        "detail": "minimal reflection line only"
-      }
-    ],
-    "environment": "polished war-room table strip across bottom third — fades to transparent at edges, no wall or window",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A poised young woman in a blazer stands beside a small chessboard table, moving a tall king piece forward while holding a strategy chart card, capturing a decisive boardroom-game moment — full-body confidence in the same maker language as the approved Q1 references. The scene reads as bold competitive strategy, not aggression.",
+    "hero_prop": "small wood-inlay chessboard table with a tall king chess piece mid-move, coral accent ring at its base",
+    "supporting_props": ["cream strategy chart card with abstract upward bars", "slim wristwatch"],
+    "environment": "thin polished table-edge line, faint grey decorative circles behind figure — no wall or window",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from chart card → table center → king piece",
-    "focal_hierarchy": [
-      "king chess piece center mass",
-      "left hand moving the piece",
-      "right hand sliding the chart card",
-      "chessboard anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and chess piece",
-      "midground: chessboard and chart card",
-      "background: table edge only — no wall"
-    ],
-    "thumbnail_readability": "chessboard silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure right-of-center beside chessboard left, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + chessboard readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter E, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, hostile takeover violence, aggressive body language, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, hostile takeover violence, aggressive body language, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Planning corporate takeover\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a steel-blue smart-casual blazer with coral #FF8A65 cuff piping. Left hand pinches a tall king chess piece with a coral accent ring, mid-move across a birch chessboard. Right hand slides a cream strategy chart card with abstract upward bars into place. A slim dark wristwatch sits at the right wrist. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, polished dark table edge fading to transparent. Mood: calculating bold confident strategy energy, competitive game not hostility. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young poised woman, rich brown skin, sleek high ponytail, standing confidently 3/4 toward a small wood-inlay chessboard table. She wears a purple #4B2C7F smart-casual blazer with charcoal lapels and coral #FF8A65 cuff piping, charcoal tailored trousers, and pointed flats, with a slim dark wristwatch. She moves a tall king chess piece with a coral accent ring forward with one hand while holding a cream strategy chart card with abstract upward bars in the other. Thin polished table-edge line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Calculating bold confident boardroom-strategy energy, competitive game not hostility."
 }

@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q4 option 1 — Repairing smartphone hardware",
   "questionnaire": {
     "question_id": 4,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under phone and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle circuit-line suggestion on exposed board via 3 thin traces max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "precise hobbyist-repair energy — approachable bench tinkering, not an industrial teardown line",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter R on image",
-      "die-cut sticker border or white card frame",
+      "RIASEC letter",
+      "border frame",
       "readable text or brand logos on phone",
-      "identifiable phone brand shape",
-      "full human figure or face",
-      "photorealistic metal reflections",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "R",
-    "riasec_type": "Realistic",
-    "palette": {
-      "accent": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "battery insulation tape, precision screwdriver tip band, cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "small parts tray liner, secondary ribbon cable"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "phone back panel", "hex": "#3A3A3A" },
-        { "name": "circuit board", "hex": "#4B2C7F" },
-        { "name": "battery pack", "hex": "#81D4FA" },
-        { "name": "precision screwdriver", "hex": "#E8E8E8" },
-        { "name": "parts tray", "hex": "#D7B896" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "teal appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4DB6AC", "use": "battery insulation tape, coverall cuff stripe" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "circuit board tint, tool pouch trim" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on screwdriver shaft and tweezers tip",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and phone body"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "athletic, capable stance",
+    "skin_tone": "deep brown",
+    "hair": "box braids tied back in a low bun",
+    "face": "minimal — two dot eyes, focused expression, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct hairstyle, skin tone, and outfit from prior slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "steadies an open smartphone with its back panel removed",
-      "grip": "flat fingers cradling the phone edges, thumb resting on the frame",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "lifts a small battery pack free with fine-tip tweezers",
-      "grip": "precision pinch grip on the tweezers",
-      "position": "center-right, hovering over the open phone cavity"
-    },
-    "gesture_summary": "mid-repair freeze frame — battery lifted just clear of its slot",
-    "energy": "focused, careful, capable",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, leaning slightly over a small workbench prop",
+    "action": "holding an open smartphone with its back panel removed in one hand, lifting a small battery pack free with tweezers in the other",
+    "facing": "3/4 toward workbench, focused downward gaze",
+    "energy": "focused, careful, capable"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "short-sleeve work shirt",
-      "fabric": "sturdy cotton twill",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#4DB6AC",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "anti-static wrist strap",
-        "color_hex": "#9E9E9E",
-        "placement": "left wrist, thin coiled band with small grounding clip"
-      }
-    ]
+    "top": { "garment": "short-sleeve coveralls jumpsuit", "color_hex": "#4B2C7F", "detail": "charcoal chest zip panel, teal cuff stripe" },
+    "bottom": { "garment": "coveralls continue to ankle", "color_hex": "#4B2C7F" },
+    "footwear": { "garment": "utility boots", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Repairing smartphone hardware",
     "activity_hint": "Technical repair",
-    "scene_narrative": "A pair of hands works on an open smartphone with its back panel removed, exposing a small circuit board and battery. Fine-tip tweezers lift the battery pack free while a precision screwdriver and a small parts tray of tiny screws sit ready nearby, capturing the careful precision of hands-on hardware repair rather than a factory teardown line.",
-    "primary_objects": [
-      {
-        "name": "open smartphone with exposed internals",
-        "material": "matte plastic and glass frame",
-        "color_hex": "#3A3A3A",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "back panel removed, violet circuit board visible, sky-blue battery pack lifting free"
-      },
-      {
-        "name": "battery pack",
-        "material": "matte plastic shell",
-        "color_hex": "#81D4FA",
-        "size_relative": "medium — pinched by tweezers",
-        "detail": "teal insulation tape strip along one edge"
-      },
-      {
-        "name": "precision screwdriver",
-        "material": "plastic handle and metal shaft",
-        "color_hex": "#E8E8E8",
-        "size_relative": "small — resting beside phone",
-        "detail": "teal tip band, tiny Phillips head visible"
-      },
-      {
-        "name": "small parts tray",
-        "material": "molded plastic",
-        "color_hex": "#D7B896",
-        "size_relative": "small accent — holding tiny screws",
-        "detail": "shallow compartments with five miniature screws"
-      }
-    ],
-    "environment": "light birch workbench surface strip across bottom third — fades to transparent at edges, no factory backdrop",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young woman in coveralls leans over a small workbench, holding an open smartphone with its back panel removed while lifting a battery pack free with fine-tip tweezers — a full-body flat vector figure capturing the careful precision of hands-on hardware repair.",
+    "hero_prop": "open smartphone with back panel removed, revealing a violet-tinted circuit board and a sky-blue battery pack lifting free",
+    "supporting_props": ["fine-tip tweezers", "precision screwdriver with teal tip band", "small parts tray with tiny screws on the workbench"],
+    "environment": "thin grey floor line only, small low workbench prop, two faint grey decorative circles behind figure",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from parts tray → open phone → tweezers lifting battery",
-    "focal_hierarchy": [
-      "open phone body center mass",
-      "right hand lifting battery with tweezers",
-      "left hand steadying phone",
-      "parts tray accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and tweezers",
-      "midground: open phone",
-      "background: bench edge only — no wall"
-    ],
-    "thumbnail_readability": "phone silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure right-of-center leaning over workbench left, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + phone readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter R, brand name on phone, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, factory line, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter R, brand name on phone, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Repairing smartphone hardware\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a steel-blue work shirt sleeve with teal cuff trim, left wrist wearing a thin anti-static strap. Left hand steadies an open dark-grey smartphone with its back panel removed, revealing a violet #4B2C7F circuit board. Right hand uses fine-tip tweezers to lift a sky-blue #81D4FA battery pack with a teal insulation tape edge free from its slot. A light-grey precision screwdriver with a teal tip band and a small tan parts tray of tiny screws sit nearby. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: careful precise hobbyist-repair energy. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Athletic college-age young woman, deep brown skin, box braids tied in a low bun, purple #4B2C7F short-sleeve coveralls with a charcoal chest zip panel and teal #4DB6AC cuff stripe, dark utility boots. She leans over a small low workbench, holding an open dark-grey smartphone with its back panel removed showing a violet #9575CD circuit board, using fine-tip tweezers in her other hand to lift a sky-blue battery pack with a teal insulation tape edge free from its slot. A precision screwdriver with a teal tip band and a small parts tray of tiny screws rest on the workbench. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Realistic RIASEC teal accent on tools and cuff. Careful precise hobbyist-repair energy, full head-to-feet visible."
 }

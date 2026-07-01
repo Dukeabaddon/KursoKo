@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q15 option 2 — Optimizing database efficiency",
   "questionnaire": {
     "question_id": 15,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under keyboard and forearms — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle keycap bevel suggestion via 3 parallel lines max",
-    "mood": "calm technical precision energy — approachable systems work, not a chaotic server-room emergency",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "calm, systematic technical energy",
     "forbidden": [
-      "RIASEC letter C on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "database software brand logos",
-      "full human figure or face",
-      "photorealistic screen glare",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
-    "riasec_type": "Conventional",
-    "palette": {
-      "accent": {
-        "hex": "#81D4FA",
-        "name": "sky blue",
-        "use": "performance graph line, shirt cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#4B2C7F",
-        "name": "deep violet",
-        "use": "server rack icon, keyboard accent key"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "monitor shell", "hex": "#3A3A3A" },
-        { "name": "server rack icon", "hex": "#4B2C7F" },
-        { "name": "performance graph line", "hex": "#66BB6A" },
-        { "name": "keyboard body", "hex": "#E8E8E8" },
-        { "name": "shirt sleeve", "hex": "#FDFCF8" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "sky blue appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#81D4FA", "use": "gear/flow icon glow, cardigan cuff stripe" },
+    "riasec_secondary": { "hex": "#4B2C7F", "use": "server-rack icon panel accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on monitor edge and keyboard keycaps",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and keyboard base"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "average, calm posture",
+    "skin_tone": "deep brown",
+    "hair": "short hair",
+    "face": "minimal — two dot eyes, small calm smile, round glasses",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "types a quick query shortcut on the keyboard",
-      "grip": "relaxed fingertips resting on home-row keys",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "points at the green optimized zone on a performance graph",
-      "grip": "extended index finger, other fingers loosely curled",
-      "position": "center-right, hovering near the monitor edge"
-    },
-    "gesture_summary": "mid-tuning freeze frame — a query run confirming a performance gain",
-    "energy": "calm, technical, methodical",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, one arm cradling an open laptop against his side",
+    "action": "adjusting a floating server-rack icon with one hand while the laptop in his other arm glows with an abstract gear/flow icon",
+    "facing": "3/4 toward viewer, gaze on the floating server icon",
+    "energy": "calm, systematic, capable"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "pressed office shirt",
-      "fabric": "crisp cotton poplin",
-      "color_hex": "#FDFCF8",
-      "sleeve_style": "rolled twice to mid-forearm, sharp fold",
-      "accent_trim_hex": "#81D4FA",
-      "accent_trim_placement": "thin pinstripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "pen clipped at desk edge",
-        "color_hex": "#4B2C7F",
-        "placement": "resting beside the keyboard, not on body"
-      }
-    ]
+    "top": { "garment": "cardigan over shirt", "color_hex": "#4B2C7F", "detail": "sky-blue cuff stripe, white shirt collar" },
+    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "loafers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Optimizing database efficiency",
     "activity_hint": "System improvement",
-    "scene_narrative": "A pair of forearms works at a server admin desk, one hand tapping a keyboard shortcut while the other points to a rising green line on a performance graph beside a small violet server-rack icon. The scene reads as calm systems tuning — a quiet technical win, not a frantic outage response.",
-    "primary_objects": [
-      {
-        "name": "monitor with performance graph",
-        "material": "matte plastic bezel",
-        "color_hex": "#3A3A3A",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "screen shows a small violet server-rack icon beside a green line trending upward, no readable labels"
-      },
-      {
-        "name": "keyboard",
-        "material": "matte plastic with keycaps",
-        "color_hex": "#E8E8E8",
-        "size_relative": "medium — beneath left hand",
-        "detail": "compact layout, one sky-blue accent key"
-      },
-      {
-        "name": "performance graph line",
-        "material": "flat vector line on screen",
-        "color_hex": "#66BB6A",
-        "size_relative": "small accent",
-        "detail": "simple upward trending curve with a rounded peak"
-      },
-      {
-        "name": "desk pen",
-        "material": "matte plastic",
-        "color_hex": "#4B2C7F",
-        "size_relative": "small accent",
-        "detail": "resting diagonally beside the keyboard"
-      }
-    ],
-    "environment": "light server admin desk surface strip across bottom third — fades to transparent at edges",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man in glasses cradles an open laptop glowing with an abstract sky-blue gear/flow icon while adjusting a floating server-rack icon with his free hand — full-body flat vector language matching the approved Q1 references.",
+    "hero_prop": "open laptop glowing with an abstract sky-blue gear/flowchart icon",
+    "supporting_props": ["floating server-rack icon", "small data-node dots", "notebook tucked under arm"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from keyboard hand → monitor → pointing hand",
-    "focal_hierarchy": [
-      "monitor performance graph",
-      "right hand pointing at green zone",
-      "left hand typing",
-      "keyboard anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and keyboard",
-      "midground: monitor base",
-      "background: desk edge only — no wall"
-    ],
-    "thumbnail_readability": "monitor silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + laptop readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, database software brand, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, server room panic, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, readable numbers"
   },
-  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Optimizing database efficiency\". Style: flat vector, 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two forearms at a server admin desk. Left hand types on a light-grey keyboard with one sky-blue #81D4FA accent key. Right hand points at a rising green performance line on a monitor beside a violet #4B2C7F server-rack icon, no readable text. Crisp white office shirt sleeves rolled twice with sky-blue pinstripe cuff trim. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half. Mood: calm, methodical precision."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, deep brown skin, short hair, round glasses, standing calmly with an open laptop cradled against his side. Purple #4B2C7F cardigan with sky-blue #81D4FA cuff stripe over a white shirt, charcoal trousers, loafers. The laptop glows with an abstract sky-blue gear/flowchart icon while he adjusts a floating server-rack icon with his free hand; small data-node dots float nearby, notebook tucked under his arm. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO readable numbers, NO border frame. Subtle Conventional RIASEC sky-blue accent. Calm systematic energy. Full head-to-feet visible, NOT a hands-only crop."
 }

@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q2 option 2 — Tutoring classmates in math",
   "questionnaire": {
     "question_id": 2,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under notebook and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; faint faint-ruled notebook lines suggested via 3 parallel lines max",
-    "mood": "warm peer-mentoring energy — approachable study-buddy moment, not formal classroom lecture",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "warm peer-mentoring energy — approachable study-buddy moment, not a formal classroom lecture",
     "forbidden": [
-      "RIASEC letter S on image",
-      "die-cut sticker border or white card frame",
+      "RIASEC letter",
+      "border frame",
       "readable text, equations, or numbers",
-      "school brand logos",
-      "full human figure or face",
-      "photorealistic paper texture",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
-    "riasec_type": "Social",
-    "palette": {
-      "accent": {
-        "hex": "#9575CD",
-        "name": "KursoKo lavender",
-        "use": "highlighted graph curve, pencil eraser tip, sleeve cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "teal",
-        "use": "sticky note accent, ruler edge highlight"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "open notebook pages", "hex": "#FDFCF8" },
-        { "name": "protractor", "hex": "#81D4FA" },
-        { "name": "wooden ruler", "hex": "#D7B896" },
-        { "name": "pencil body", "hex": "#FFD54F" },
-        { "name": "sticky note", "hex": "#4DB6AC" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#9575CD", "use": "highlighted graph curve on whiteboard, cuff stripe" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "pencil eraser, ruler edge highlight" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#6B4226" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on protractor arc and pencil tip",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and notebook edge"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "average, friendly stance",
+    "skin_tone": "deep brown",
+    "hair": "short natural afro",
+    "face": "minimal — two dot eyes, warm smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct hair, skin tone, and outfit from prior slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds a wooden ruler steady along a drawn graph curve",
-      "grip": "flat fingers pressing the ruler edge to the page",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "points a pencil at a highlighted parabola curve on the open notebook",
-      "grip": "relaxed tripod pencil grip, tip hovering just above the page",
-      "position": "center-right, hovering over notebook page"
-    },
-    "gesture_summary": "mid-explanation freeze frame — pencil pointing out the key step",
-    "energy": "warm, patient, encouraging",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing three-quarter toward a freestanding whiteboard easel",
+    "action": "pointing a pencil at a hand-drawn parabola curve on the whiteboard, other hand holding a wooden ruler against it",
+    "facing": "facing easel, 3/4 turn toward viewer",
+    "energy": "warm, patient, encouraging"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "soft crewneck sweatshirt",
-      "fabric": "brushed cotton fleece",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "pushed up to mid-forearm",
-      "accent_trim_hex": "#9575CD",
-      "accent_trim_placement": "thin stripe on cuff rib"
-    },
-    "accessories": [
-      {
-        "item": "friendship-style thread bracelet",
-        "color_hex": "#4DB6AC",
-        "placement": "left wrist, simple woven band"
-      }
-    ]
+    "top": { "garment": "open cardigan over collared shirt", "color_hex": "#4B2C7F", "detail": "charcoal shirt collar, teal cuff stripe" },
+    "bottom": { "garment": "straight chinos", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "loafers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Tutoring classmates in math",
     "activity_hint": "Academic support",
-    "scene_narrative": "A pair of hands guides a peer through a math problem, pencil pointing at a hand-drawn parabola curve on an open notebook while a ruler steadies the page. A protractor and a small teal sticky note with an encouraging squiggle sit nearby, capturing the warmth of a one-on-one study session rather than a stiff lecture.",
-    "primary_objects": [
-      {
-        "name": "open notebook with graph curve",
-        "material": "paper",
-        "color_hex": "#FDFCF8",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "hand-drawn parabola curve with a lavender highlight arc, faint ruled lines, no readable numbers"
-      },
-      {
-        "name": "wooden ruler",
-        "material": "lacquered wood",
-        "color_hex": "#D7B896",
-        "size_relative": "medium — held flat by left hand",
-        "detail": "simple tick marks along the edge, no readable units"
-      },
-      {
-        "name": "protractor",
-        "material": "clear plastic",
-        "color_hex": "#81D4FA",
-        "size_relative": "small — resting beside notebook",
-        "detail": "semi-circular shape with faint degree tick marks"
-      },
-      {
-        "name": "pencil",
-        "material": "lacquered wood with graphite tip",
-        "color_hex": "#FFD54F",
-        "size_relative": "small — pinched in right hand",
-        "detail": "lavender eraser cap, tip hovering over the curve"
-      }
-    ],
-    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, no classroom backdrop",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man stands beside a freestanding whiteboard easel, pointing out a hand-drawn parabola curve with a pencil while steadying a wooden ruler against the board — a full-body flat vector scene capturing the warmth of one-on-one peer tutoring rather than a stiff lecture.",
+    "hero_prop": "freestanding whiteboard easel showing a hand-drawn parabola curve with a lavender highlight arc, no readable numbers",
+    "supporting_props": ["wooden ruler", "pencil with lavender eraser cap", "small clear protractor propped at easel base"],
+    "environment": "thin grey floor line only, two faint grey decorative circles behind figure — no classroom interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from ruler → graph curve → pointing pencil",
-    "focal_hierarchy": [
-      "graph curve center mass",
-      "right hand pointing with pencil",
-      "left hand steadying ruler",
-      "protractor accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and pencil",
-      "midground: notebook and ruler",
-      "background: desk edge only — no wall"
-    ],
-    "thumbnail_readability": "notebook silhouette + curve shape + two hands readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure right-of-center, whiteboard easel left, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + whiteboard readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter S, readable equations, numbers, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, classroom crowd, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, readable equations, numbers, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Tutoring classmates in math\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a soft steel-blue sweatshirt sleeve with lavender cuff stripe and a teal thread bracelet. Left hand holds a light-wood ruler steady along a hand-drawn parabola curve on an open cream notebook. Right hand points a yellow #FFD54F pencil with a lavender #9575CD eraser cap at the highlighted curve. A clear sky-blue #81D4FA protractor rests beside the notebook. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: warm patient peer-mentoring energy, not a stiff lecture. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, deep brown skin, short natural afro, purple #4B2C7F open cardigan over a charcoal-collared shirt with teal #4DB6AC cuff stripe, charcoal chinos and loafers. He stands beside a freestanding whiteboard easel showing a hand-drawn parabola curve with a lavender #9575CD highlight arc, pointing at it with a pencil that has a lavender eraser cap while his other hand steadies a light-wood ruler against the board; a small clear protractor leans at the easel base. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame, NO readable numbers. Subtle Social RIASEC lavender accent on the curve and cuff. Warm patient mentoring energy, full head-to-feet visible."
 }

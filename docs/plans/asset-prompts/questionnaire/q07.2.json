@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q7 option 2 — Developing climate prediction models",
   "questionnaire": {
     "question_id": 7,
@@ -23,168 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and laptop — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle steam-curl suggestion above mug only",
-    "mood": "quietly analytical research energy — curious science in motion, not a sterile lab",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "analytical, curious researcher energy for students",
     "forbidden": [
-      "RIASEC letter I on image",
-      "die-cut sticker border or white card frame",
-      "readable text, code, or numbers",
-      "laptop brand logos",
-      "full human figure or face",
-      "photorealistic screen glare",
-      "apocalyptic or distressing climate imagery",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "I",
-    "riasec_type": "Investigative",
-    "palette": {
-      "accent": {
-        "hex": "#4B2C7F",
-        "name": "deep indigo",
-        "use": "line-graph trend, stylus body, sweater cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "globe gradient bands, mug rim"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "laptop body", "hex": "#E8E8E8" },
-        { "name": "globe overlay", "hex": "#4DB6AC" },
-        { "name": "tea mug", "hex": "#9575CD" },
-        { "name": "glasses frame", "hex": "#2D2D2D" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "indigo appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4B2C7F", "use": "hologram chart lines, badge, laptop lid accent" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "globe outline, laptop trim" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "olive tan", "hex_approx": "#C68863" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light with cool screen glow accent",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on globe overlay and laptop edge",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and laptop base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "average, attentive",
+    "skin_tone": "olive tan",
+    "hair": "long dark ponytail",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "rests on the laptop trackpad, steadying the view",
-      "grip": "relaxed fingers, palm flat",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "tilts a small rotating globe overlay to inspect the temperature gradient",
-      "grip": "fingertip pinch on the globe stand",
-      "position": "center-right, hovering above the laptop screen"
-    },
-    "gesture_summary": "mid-analysis freeze frame — comparing chart trend to globe gradient",
-    "energy": "curious, quietly focused researcher",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, one arm extended toward a floating data display",
+    "action": "gesturing at a floating holographic globe with weather icons, laptop tucked against her hip",
+    "facing": "3/4 toward the floating globe prop",
+    "energy": "analytical, curious researcher"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "knit sweater",
-      "fabric": "soft ribbed knit",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "pushed up to mid-forearm",
-      "accent_trim_hex": "#4B2C7F",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "thin-frame glasses",
-        "color_hex": "#2D2D2D",
-        "placement": "resting folded on desk edge, not worn"
-      }
-    ]
+    "top": { "garment": "lab coat over blouse", "color_hex": "#4B2C7F", "detail": "teal cuff stripe on lab coat sleeve" },
+    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Developing climate prediction models",
     "activity_hint": "Scientific programming",
-    "scene_narrative": "A pair of hands works at a laptop building a climate prediction model. The left hand rests on the trackpad while the right hand adjusts a small rotating globe overlay showing a temperature gradient sweep, a line graph of a rising trend glowing softly on the laptop screen beside a simple cloud icon. The mood is quietly analytical — science in motion, not a sterile lab.",
-    "primary_objects": [
-      {
-        "name": "laptop",
-        "material": "matte plastic and glass",
-        "color_hex": "#E8E8E8",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "screen shows an indigo line-graph trend curve and small cloud and sun icons, no readable text"
-      },
-      {
-        "name": "globe overlay widget",
-        "material": "translucent acrylic sphere",
-        "color_hex": "#4DB6AC",
-        "size_relative": "medium — held in right hand",
-        "detail": "gradient bands sweeping from cool to warm, simple latitude lines only"
-      },
-      {
-        "name": "stylus",
-        "material": "brushed plastic",
-        "color_hex": "#4B2C7F",
-        "size_relative": "small — resting beside laptop",
-        "detail": "simple tapered shape, matte finish"
-      },
-      {
-        "name": "tea mug",
-        "material": "ceramic",
-        "color_hex": "#9575CD",
-        "size_relative": "small accent",
-        "detail": "single steam curl suggestion, teal rim stripe"
-      }
-    ],
-    "environment": "minimal desk edge strip across bottom third with a soft lavender desk-mat corner, fades to transparent",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young researcher gestures toward a small floating holographic globe ringed by simple cloud and sun icons, laptop tucked at her hip, capturing the thrill of modeling climate patterns — same full-body flat vector language as the approved reference assets.",
+    "hero_prop": "floating holographic globe with simple cloud, sun, and arrow icons",
+    "supporting_props": ["laptop", "small chart-line icon", "loose data dot trail"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from mug → laptop → globe hand",
-    "focal_hierarchy": [
-      "laptop screen center mass",
-      "right hand tilting globe",
-      "left resting hand",
-      "tea mug accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and globe",
-      "midground: laptop",
-      "background: desk-mat edge only — no wall"
-    ],
-    "thumbnail_readability": "laptop silhouette + globe shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + globe readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter I, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, apocalyptic climate imagery, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Developing climate prediction models\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a rolled steel-blue knit sweater, left hand resting on a light-grey laptop trackpad showing an indigo #4B2C7F line-graph trend and small cloud icon, right hand tilting a translucent teal #4DB6AC globe overlay with gradient bands. Lavender tea mug with steam curl nearby, thin-frame glasses resting on the desk. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: curious, quietly focused researcher energy. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, olive tan skin, long dark ponytail, standing with one arm extended toward a floating holographic globe ringed by simple flat cloud, sun, and arrow icons. Purple #4B2C7F lab coat with teal #4DB6AC cuff stripe over a blouse, charcoal trousers and flats, laptop tucked against her hip. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Investigative RIASEC accent deep purple on hologram lines, teal on globe outline. Analytical, curious researcher energy. Full head-to-feet visible."
 }

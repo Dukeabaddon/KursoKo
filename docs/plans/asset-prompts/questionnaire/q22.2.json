@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q22 option 2 — Quality-checking manufacturing outputs",
   "questionnaire": {
     "question_id": 22,
@@ -19,182 +20,78 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and hero prop — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle desk-surface grain suggestion via 2-3 parallel lines max",
-    "mood": "friendly career-education energy — approachable and encouraging, not corporate stock photo",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "friendly career exploration for students",
     "forbidden": [
-      "RIASEC letter C on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos",
-      "full human figure or face",
-      "photorealistic metal or skin reflections",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
-    "riasec_type": "Conventional",
-    "palette": {
-      "accent": {
-        "hex": "#81D4FA",
-        "name": "sky blue",
-        "use": "checklist header band, uniform cuff trim"
-      },
-      "secondary": {
-        "hex": "#4B2C7F",
-        "name": "deep indigo",
-        "use": "product unit accent seam"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        {
-          "name": "clipboard",
-          "hex": "#E8E8E8"
-        },
-        {
-          "name": "product unit",
-          "hex": "#4B2C7F"
-        },
-        {
-          "name": "conveyor segment",
-          "hex": "#D7B896"
-        },
-        {
-          "name": "checklist tick marks",
-          "hex": "#81D4FA"
-        }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "accent color appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#81D4FA", "use": "checklist tick mark, work-shirt cuff stripe" },
+    "riasec_secondary": { "hex": "#4B2C7F", "use": "product-unit accent seam" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "medium tan", "hex_approx": "#C8956C" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on clipboard clip and product unit edge",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and conveyor segment"
+  "character": {
+    "presentation": "man",
+    "age": "early-30s",
+    "build": "sturdy, athletic",
+    "skin_tone": "medium tan",
+    "hair": "short fade haircut",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — sturdy build and short fade haircut distinguish this figure from surrounding characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "lifts a small product unit off the belt for inspection",
-      "grip": "cradling grip, fingers curled underneath",
-      "position": "lower-left quadrant, wrist angled up"
-    },
-    "right_hand": {
-      "action": "marks a tick on the checklist",
-      "grip": "precision pinch on a pen",
-      "position": "center-right, hovering over the clipboard"
-    },
-    "gesture_summary": "mid-check freeze frame — one tick about to land on the checklist",
-    "energy": "focused, methodical, quietly approachable",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing beside a short conveyor-belt segment",
+    "action": "holding a clipboard checklist in one hand while lifting a small product unit for inspection with the other",
+    "facing": "3/4 toward the conveyor segment",
+    "energy": "focused, methodical, quietly approachable"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled or cuffed sleeves only",
-    "top": {
-      "garment": "pressed collared work shirt",
-      "fabric": "crisp cotton poplin",
-      "color_hex": "#7A8FA6",
-      "sleeve_style": "rolled once to mid-forearm, sharp cuff fold",
-      "accent_trim_hex": "#81D4FA",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "pen clipped at cuff edge",
-        "color_hex": "#81D4FA",
-        "placement": "resting along the right forearm near the wrist"
-      }
-    ]
+    "top": { "garment": "collared work shirt", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, sky-blue cuff stripe" },
+    "bottom": { "garment": "sturdy work trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple work boots", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Quality-checking manufacturing outputs",
     "activity_hint": "Production standards",
-    "scene_narrative": "A pair of forearms works over a short segment of conveyor belt — one hand lifting a small rounded product unit for a close look, the other bringing a pen down to tick a box on a clipboard. The mood is calm, precise quality assurance, not a noisy factory floor.",
-    "primary_objects": [
-      {
-        "name": "clipboard checklist",
-        "material": "wood-backed clipboard with paper",
-        "color_hex": "#E8E8E8",
-        "size_relative": "hero — 30% of visual mass",
-        "detail": "simple grid of empty boxes with one sky-blue tick mark, no readable text"
-      },
-      {
-        "name": "product unit",
-        "material": "matte molded plastic",
-        "color_hex": "#4B2C7F",
-        "size_relative": "medium — cradled in left hand",
-        "detail": "rounded rectangular widget shape with one visible seam line, no logo"
-      },
-      {
-        "name": "conveyor belt segment",
-        "material": "rubber and steel rollers",
-        "color_hex": "#9E9E9E",
-        "size_relative": "background anchor",
-        "detail": "short flat section only, no full machine visible"
-      }
-    ],
-    "environment": "short conveyor belt segment across bottom third — fades to transparent at edges, no factory wall",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A man stands beside a short conveyor-belt segment, lifting a small rounded product unit for a close look while holding a clipboard with a sky-blue tick mark in his other hand — the same full-body flat vector language as the approved Q1 references, reading as calm, precise quality assurance.",
+    "hero_prop": "clipboard checklist with a simple grid of empty boxes and one sky-blue tick mark",
+    "supporting_props": ["small purple product unit", "short conveyor-belt segment"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "horizontal workflow line from conveyor unit → inspecting hand → checklist",
-    "focal_hierarchy": [
-      "product unit center mass",
-      "left inspecting hand",
-      "right tick-marking hand",
-      "checklist accent"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and product unit",
-      "midground: clipboard",
-      "background: conveyor edge only — no factory wall"
-    ],
-    "thumbnail_readability": "clipboard shape + product unit readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, conveyor segment right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + clipboard readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": [
-      "Flux Dev",
-      "DALL-E 3",
-      "Midjourney v6",
-      "Ideogram"
-    ],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, factory, industrial horror, guns, blood, assembly line crowd, readable inspection text"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Quality-checking manufacturing outputs\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands and hero prop only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: A pair of forearms works over a short segment of conveyor belt — one hand lifting a small rounded product unit for a close look, the other bringing a pen down to tick a box on a clipboard. The mood is calm, precise quality assurance, not a noisy factory floor. Objects: clipboard checklist (wood-backed clipboard with paper, #E8E8E8): simple grid of empty boxes with one sky-blue tick mark, no readable text; product unit (matte molded plastic, #4B2C7F): rounded rectangular widget shape with one visible seam line, no logo; conveyor belt segment (rubber and steel rollers, #9E9E9E): short flat section only, no full machine visible. Left hand lifts a small product unit off the belt for inspection (cradling grip, fingers curled underneath). Right hand marks a tick on the checklist (precision pinch on a pen). Clothing: pressed collared work shirt in crisp cotton poplin, color #7A8FA6, rolled once to mid-forearm, sharp cuff fold, accent trim #81D4FA at thin stripe on cuff fold. Accessories: pen clipped at cuff edge (#81D4FA) — resting along the right forearm near the wrist. Warm medium skin tone #C8956C. Accent color #81D4FA on checklist header band, uniform cuff trim; secondary #4B2C7F on product unit accent seam. Camera: three-quarter top-down, 20° tilt toward viewer, medium-close — hands occupy lower 55% of frame. Environment: short conveyor belt segment across bottom third — fades to transparent at edges, no factory wall. Mood: focused, methodical, quietly approachable, friendly career-education energy — approachable and encouraging, not corporate stock photo. Generous transparent margins, readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Sturdy early-30s man, standing 3/4 pose, medium tan skin, short fade haircut, purple #4B2C7F collared work shirt with charcoal collar and sky-blue #81D4FA cuff stripe, charcoal work trousers and boots. He stands beside a short conveyor-belt segment, lifting a small rounded purple product unit for inspection with one hand while holding a clipboard checklist with a sky-blue tick mark in the other. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Conventional RIASEC accent sky blue on checklist and cuff stripe. Focused, methodical, quietly approachable energy. Full head-to-feet visible."
 }

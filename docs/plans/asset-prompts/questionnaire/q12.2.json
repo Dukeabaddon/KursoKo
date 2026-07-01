@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q12 option 2 — Auditing company accounts",
   "questionnaire": {
     "question_id": 12,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under ledger and forearms — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle ruled-line suggestion on ledger page via 3 parallel lines max",
-    "mood": "precise, tidy desk energy — approachable financial diligence, not a sterile spreadsheet grind",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "focused, meticulous office energy",
     "forbidden": [
-      "RIASEC letter C on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "accounting software brand logos",
-      "full human figure or face",
-      "photorealistic paper texture",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "C",
-    "riasec_type": "Conventional",
-    "palette": {
-      "accent": {
-        "hex": "#81D4FA",
-        "name": "sky blue",
-        "use": "ledger column headers, shirt cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#4B2C7F",
-        "name": "deep violet",
-        "use": "checkmark sticker ink, pen clip"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "ledger book cover", "hex": "#5C7A8A" },
-        { "name": "ledger pages", "hex": "#FDFCF8" },
-        { "name": "checkmark sticker", "hex": "#66BB6A" },
-        { "name": "audit printout", "hex": "#E8E8E8" },
-        { "name": "shirt cuff", "hex": "#FDFCF8" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "sky blue appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#81D4FA", "use": "checkmark icon, cardigan cuff stripe" },
+    "riasec_secondary": { "hex": "#4B2C7F", "use": "pen and clipboard clip accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "light peach", "hex_approx": "#F2C4A0" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on ledger page edge and pen clip",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and ledger base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "average, poised posture",
+    "skin_tone": "light peach",
+    "hair": "neat low bun",
+    "face": "minimal — two dot eyes, small focused smile, round glasses",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "turns a page of the ledger book",
-      "grip": "thumb and forefinger pinching the page corner",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "places a checkmark sticker on a verified line item",
-      "grip": "precision pinch between thumb and index finger",
-      "position": "center-right, hovering over the audit printout"
-    },
-    "gesture_summary": "mid-verification freeze frame — one line item confirmed, moving to next",
-    "energy": "calm, meticulous, precise",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, weight on one hip, slight forward focus",
+    "action": "holding a clipboard with one arm, pointing at a floating checkmark icon with the other hand",
+    "facing": "3/4 toward viewer, gaze on the clipboard",
+    "energy": "focused, meticulous, satisfied"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "pressed office shirt",
-      "fabric": "crisp cotton poplin",
-      "color_hex": "#FDFCF8",
-      "sleeve_style": "rolled twice to mid-forearm, sharp fold",
-      "accent_trim_hex": "#81D4FA",
-      "accent_trim_placement": "thin pinstripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "pen clipped at desk edge",
-        "color_hex": "#4B2C7F",
-        "placement": "resting beside the ledger, not on body"
-      }
-    ]
+    "top": { "garment": "fitted cardigan over blouse", "color_hex": "#4B2C7F", "detail": "sky-blue cuff stripe, white blouse collar" },
+    "bottom": { "garment": "pencil trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "low flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Auditing company accounts",
     "activity_hint": "Financial verification",
-    "scene_narrative": "A pair of forearms works through a neat stack of financial records on a tidy desk. One hand turns a ledger page while the other applies a small green checkmark sticker to a verified line on a printed audit sheet. The scene reads as calm, methodical diligence — the satisfaction of a balanced book, not tedious paperwork.",
-    "primary_objects": [
-      {
-        "name": "ledger book",
-        "material": "cloth-bound cover with paper pages",
-        "color_hex": "#5C7A8A",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "open spread with faint ruled columns and a sky-blue header band, no readable numbers"
-      },
-      {
-        "name": "checkmark sticker",
-        "material": "matte paper sticker",
-        "color_hex": "#66BB6A",
-        "size_relative": "small — held in right hand",
-        "detail": "simple rounded checkmark shape, 2px outline"
-      },
-      {
-        "name": "audit printout",
-        "material": "plain paper",
-        "color_hex": "#E8E8E8",
-        "size_relative": "medium — beneath the ledger",
-        "detail": "faint ruled rows suggesting a spreadsheet, no readable text"
-      },
-      {
-        "name": "desk pen",
-        "material": "matte plastic",
-        "color_hex": "#4B2C7F",
-        "size_relative": "small accent",
-        "detail": "resting diagonally beside the printout"
-      }
-    ],
-    "environment": "light desk surface strip across bottom third with neat paper stack edges — fades to transparent at edges",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young woman in glasses holds a clipboard and points at a floating blue checkmark icon, a small stack of ledger books beside her — full-body flat vector language matching the approved Q1 references.",
+    "hero_prop": "clipboard with a glowing sky-blue checkmark icon",
+    "supporting_props": ["small stack of ledger books", "floating calculator icon", "pen tucked behind ear"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from ledger page-turn hand → ledger body → checkmark hand",
-    "focal_hierarchy": [
-      "ledger book center mass",
-      "right hand placing checkmark",
-      "left page-turning hand",
-      "desk surface anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and checkmark sticker",
-      "midground: ledger and printout",
-      "background: desk edge only — no wall"
-    ],
-    "thumbnail_readability": "ledger silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + clipboard readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, spreadsheet software brand, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, cluttered desk chaos, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, readable numbers"
   },
-  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Auditing company accounts\". Style: flat vector, 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two forearms at a tidy desk. Left hand turns a page of a steel-blue #5C7A8A ledger with a sky-blue #81D4FA header band. Right hand places a green checkmark sticker onto a printed audit sheet beneath. A violet #4B2C7F pen rests nearby. Crisp white office shirt sleeves rolled twice with sky-blue pinstripe cuff trim. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, transparent margins. Mood: calm, precise diligence."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, light peach skin, neat low bun, round glasses, standing poised with weight on one hip. Purple #4B2C7F fitted cardigan with sky-blue #81D4FA cuff stripe over a white blouse, charcoal pencil trousers, dark flats. She holds a clipboard and points at a floating glowing checkmark icon in sky blue; a small stack of ledger books sits beside her, pen tucked behind her ear. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO readable numbers, NO border frame. Subtle Conventional RIASEC sky-blue accent. Focused meticulous energy. Full head-to-feet visible, NOT a hands-only crop."
 }

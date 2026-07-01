@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q5 option 1 — Writing fantasy novel chapters",
   "questionnaire": {
     "question_id": 5,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under notebook and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; faint wavy scribble lines suggesting handwriting on page only",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "cozy imaginative-writer energy — approachable storytelling hobby, not a formal publishing office",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter A on image",
-      "die-cut sticker border or white card frame",
+      "RIASEC letter",
+      "border frame",
       "readable text, words, or letters",
-      "publisher brand logos",
-      "full human figure or face",
-      "photorealistic paper texture",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
-    "riasec_type": "Artistic",
-    "palette": {
-      "accent": {
-        "hex": "#FFD54F",
-        "name": "KursoKo gold",
-        "use": "dragon figurine scale highlights, pen nib band, cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "ink bottle glass tint, feather quill barb accents"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "open notebook pages", "hex": "#FDFCF8" },
-        { "name": "fountain pen barrel", "hex": "#E8E8E8" },
-        { "name": "small dragon figurine", "hex": "#FFD54F" },
-        { "name": "ink bottle glass", "hex": "#9575CD" },
-        { "name": "feather quill", "hex": "#D7B896" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "gold appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FFD54F", "use": "dragon figurine scale highlights, cardigan button trim" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "ink bottle glass tint, hair ribbon" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "fair rosy", "hex_approx": "#F5D0B9" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on ink bottle glass and dragon figurine scales",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and notebook edge"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "average, relaxed dreamy posture",
+    "skin_tone": "fair rosy",
+    "hair": "long wavy auburn hair",
+    "face": "minimal — two dot eyes, dreamy smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct hair color and style, skin tone, and outfit from prior slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds an open notebook page steady",
-      "grip": "flat fingers pressing the page corner down",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "writes a new line of wavy scribble text with a fountain pen",
-      "grip": "relaxed tripod pen grip, nib touching the page",
-      "position": "center-right, mid-stroke on the open page"
-    },
-    "gesture_summary": "mid-writing freeze frame — pen mid-stroke on a fresh chapter line",
-    "energy": "dreamy, imaginative, quietly absorbed",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing beside a small standing writing lectern or podium prop, one leg slightly forward",
+    "action": "holding an open notebook in one arm while writing a fresh line with a fountain pen, a small dragon figurine perched on the lectern edge",
+    "facing": "3/4 toward lectern, gaze down at page",
+    "energy": "dreamy, imaginative, quietly absorbed"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "cozy cardigan sleeve",
-      "fabric": "soft brushed wool-blend knit",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "pushed up to mid-forearm",
-      "accent_trim_hex": "#FFD54F",
-      "accent_trim_placement": "thin stripe on cuff rib"
-    },
-    "accessories": [
-      {
-        "item": "small braided thread bracelet",
-        "color_hex": "#9575CD",
-        "placement": "left wrist, simple woven band"
-      }
-    ]
+    "top": { "garment": "cozy cardigan over a simple dress", "color_hex": "#4B2C7F", "detail": "charcoal dress underlayer, gold button trim" },
+    "bottom": { "garment": "dress continues to mid-calf", "color_hex": "#4B2C7F" },
+    "footwear": { "garment": "flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Writing fantasy novel chapters",
     "activity_hint": "Storytelling",
-    "scene_narrative": "A pair of hands writes a fresh line of a fantasy story in an open notebook, pen mid-stroke across a page of wavy handwriting scribbles. A tiny gold dragon figurine perches beside a lavender-tinted ink bottle and a loose feather quill, capturing the cozy magic of building an imaginary world one chapter at a time.",
-    "primary_objects": [
-      {
-        "name": "open notebook with handwriting",
-        "material": "paper",
-        "color_hex": "#FDFCF8",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "wavy scribble lines suggesting cursive handwriting, no readable words, small ink smudge in corner"
-      },
-      {
-        "name": "small dragon figurine",
-        "material": "painted resin",
-        "color_hex": "#FFD54F",
-        "size_relative": "medium — perched beside notebook",
-        "detail": "curled tail, tiny wings, simplified faceted scales"
-      },
-      {
-        "name": "ink bottle",
-        "material": "glass with metal cap",
-        "color_hex": "#9575CD",
-        "size_relative": "small — resting near notebook edge",
-        "detail": "lavender-tinted glass with a visible ink level line"
-      },
-      {
-        "name": "feather quill",
-        "material": "natural feather",
-        "color_hex": "#D7B896",
-        "size_relative": "small accent — resting across notebook spine",
-        "detail": "simple curved barbs, decorative rather than in-use"
-      }
-    ],
-    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, no bookshelf backdrop",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A dreamy young woman stands beside a small writing lectern, an open notebook cradled in one arm as she writes a fresh line with a fountain pen, a tiny gold dragon figurine perched at the lectern edge — a full-body flat vector figure capturing the cozy magic of building an imaginary world one chapter at a time.",
+    "hero_prop": "open notebook with wavy scribble handwriting lines, no readable words",
+    "supporting_props": ["small gold dragon figurine with tiny wings", "lavender-tinted glass ink bottle", "loose feather quill resting on the lectern"],
+    "environment": "thin grey floor line only, two faint grey decorative circles behind figure — no bookshelf interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from dragon figurine → notebook page → writing hand",
-    "focal_hierarchy": [
-      "notebook page center mass",
-      "right hand writing with pen",
-      "left hand steadying page",
-      "dragon figurine accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and pen",
-      "midground: notebook and figurine",
-      "background: desk edge only — no wall"
-    ],
-    "thumbnail_readability": "notebook silhouette + dragon shape + two hands readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure right-of-center, lectern with notebook left, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + notebook and dragon readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter A, readable words, sentences, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, scary dragon, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, readable words, sentences, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, scary dragon"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Writing fantasy novel chapters\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a cozy steel-blue cardigan sleeve with gold cuff stripe and a lavender thread bracelet. Left hand holds an open cream notebook page steady. Right hand writes a fresh line of wavy scribble handwriting with a light-grey fountain pen with a gold nib band, no readable words. A tiny gold dragon figurine perches beside a lavender-tinted glass ink bottle and a loose tan feather quill resting across the notebook spine. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: cozy imaginative storytelling, quietly absorbed. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Dreamy college-age young woman, fair rosy skin, long wavy auburn hair, purple #4B2C7F cozy cardigan with gold #FFD54F button trim over a charcoal dress reaching mid-calf, flats. She stands beside a small writing lectern, an open cream notebook cradled in one arm showing wavy scribble handwriting lines, writing a fresh line with a light-grey fountain pen with a gold nib band; a tiny gold dragon figurine with small wings perches at the lectern edge beside a lavender-tinted glass ink bottle and a loose tan feather quill. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame, NO readable words. Subtle Artistic RIASEC gold accent on the dragon and cardigan trim. Cozy imaginative energy, full head-to-feet visible."
 }

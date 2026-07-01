@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q29 option 2 — Organizing community gardens",
   "questionnaire": {
     "question_id": 29,
@@ -23,168 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under garden bed and hands — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle soil-grain suggestion via small dot cluster max 6 dots",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "warm communal care — nurturing shared green space, cheerful and grounded",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter S on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "full human figure or face",
-      "photorealistic render",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
-    "riasec_type": "Social",
-    "palette": {
-      "accent": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "watering can handle, seed packet flower icon, cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "trowel handle band, small leaf accents"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "raised garden bed wood", "hex": "#D7B896" },
-        { "name": "soil", "hex": "#6D4C41" },
-        { "name": "seedling leaves", "hex": "#66BB6A" },
-        { "name": "watering can body", "hex": "#FFD54F" },
-        { "name": "seed packet", "hex": "#FDFCF8" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#9575CD", "use": "watering can handle, seed packet flower icon, apron cuff stripe" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "trowel handle band, small leaf accents" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "medium brown", "hex_approx": "#A87552" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on watering can spout and trowel blade",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and garden-bed base"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "stocky, warm demeanor",
+    "skin_tone": "medium brown",
+    "hair": "short curly, close undercut",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "cups a small seedling, gently pressing it into a raised garden bed",
-      "grip": "cupped fingers supporting the seedling's root ball",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "tips a small watering can, a soft arc of water reaching the seedling",
-      "grip": "relaxed grip on the watering-can handle",
-      "position": "center-right, tilted above the garden bed"
-    },
-    "gesture_summary": "mid-planting freeze frame — water arcing onto a freshly planted seedling",
-    "energy": "warm, communal, quietly joyful",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, kneeling beside a raised garden bed",
+    "action": "pressing a small seedling into the soil with one hand while tipping a watering can with the other, a soft arc of water reaching the plant",
+    "facing": "3/4 toward garden bed, watering-can arm extended",
+    "energy": "warm, communal, quietly joyful"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "canvas gardening apron sleeve",
-      "fabric": "heavy cotton canvas",
-      "color_hex": "#7A9471",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#9575CD",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "canvas gardening gloves",
-        "color_hex": "#D7B896",
-        "placement": "both hands — fingertips cut out exposing skin for dexterity"
-      }
-    ]
+    "top": { "garment": "canvas gardening apron over shirt", "color_hex": "#4B2C7F", "detail": "dark charcoal apron straps, lavender cuff stripe" },
+    "bottom": { "garment": "work trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "garden boots", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Organizing community gardens",
     "activity_hint": "Urban agriculture",
-    "scene_narrative": "A pair of gloved hands plants a seedling into a shared raised garden bed while the other hand waters it with a small can, a soft arc of water catching the light. A seed packet and hand trowel rest nearby. The scene reads as warm, communal urban gardening — nurturing a shared green space together.",
-    "primary_objects": [
-      {
-        "name": "raised garden bed",
-        "material": "light wood planks with dark soil",
-        "color_hex": "#D7B896",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "wood-plank edge, rich soil, one freshly planted seedling with small green leaves"
-      },
-      {
-        "name": "small watering can",
-        "material": "painted metal",
-        "color_hex": "#FFD54F",
-        "size_relative": "medium — held in right hand",
-        "detail": "curved spout with a soft arcing water stream, lavender handle"
-      },
-      {
-        "name": "hand trowel",
-        "material": "wood handle, metal blade",
-        "color_hex": "#4DB6AC",
-        "size_relative": "small accent — resting beside garden bed",
-        "detail": "simple flat blade shape, 2px outline"
-      },
-      {
-        "name": "seed packet",
-        "material": "paper",
-        "color_hex": "#FDFCF8",
-        "size_relative": "small accent — corner of frame",
-        "detail": "simple flower icon silhouette, no readable text"
-      }
-    ],
-    "environment": "light birch surface strip across bottom third — fades to transparent at edges, cream paper sheet under garden bed",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man kneels beside a shared raised garden bed, pressing a seedling into rich soil with one hand while tipping a small watering can with the other, a soft arc of water catching the light. A seed packet and hand trowel rest nearby. Warm, communal urban gardening — the same full-body flat vector language as the approved Q1 references.",
+    "hero_prop": "raised wood garden bed with rich soil and a freshly planted seedling",
+    "supporting_props": ["small yellow watering can with lavender handle", "teal hand trowel", "cream seed packet with a simple flower icon"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from seed packet → garden bed → watering-can hand",
-    "focal_hierarchy": [
-      "garden bed and seedling center mass",
-      "right hand watering",
-      "left planting hand",
-      "trowel and seed packet anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and watering can",
-      "midground: garden bed and seedling",
-      "background: trowel, seed packet, and surface edge only — no wall"
-    ],
-    "thumbnail_readability": "garden bed silhouette + watering arc readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center kneeling, garden bed right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of kneeling person + garden bed readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter S, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, industrial horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, industrial horror, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Organizing community gardens\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with canvas gardening gloves (fingertips exposed) and lavender #9575CD cuff trim tend a raised wood garden bed. Left hand cups a small seedling, pressing it into rich soil. Right hand tips a yellow #FFD54F watering can, a soft arc of water reaching the plant. A teal hand trowel and a cream seed packet with a simple flower icon rest nearby. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: warm, communal urban gardening — nurturing shared green space together. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, stocky build, medium brown skin #A87552, short curly hair with a close undercut, kneeling beside a raised wood garden bed. He wears a purple #4B2C7F canvas gardening apron over a shirt with charcoal straps and lavender #9575CD cuff stripe, dark work trousers, and garden boots. He presses a small seedling into rich soil with one hand while tipping a small yellow watering can with a lavender handle, a soft arc of water reaching the plant. A teal #4DB6AC hand trowel and a cream seed packet with a simple flower icon rest nearby. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Mood: warm, communal urban gardening — nurturing shared green space together. Full head-to-feet visible."
 }

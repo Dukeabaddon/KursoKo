@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q10 option 2 — Studying marine biology specimens",
   "questionnaire": {
     "question_id": 10,
@@ -23,167 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and specimen jar — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle sandy-grain suggestion on tray via 3 dot clusters max",
-    "mood": "gently curious field-science energy — tide-pool research, not a sterile lab",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "curious, scientific focus energy for students",
     "forbidden": [
-      "RIASEC letter I on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "research institute logos",
-      "full human figure or face",
-      "photorealistic glass reflections",
-      "distressing or graphic sea-creature imagery",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "I",
-    "riasec_type": "Investigative",
-    "palette": {
-      "accent": {
-        "hex": "#4B2C7F",
-        "name": "deep indigo",
-        "use": "magnifying glass handle, sea star fill, vest cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "jar water tint, tide-pool tray rim"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "specimen jar glass", "hex": "#E8E8E8" },
-        { "name": "tablet body", "hex": "#E8E8E8" },
-        { "name": "shell fragments", "hex": "#D7B896" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "indigo appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4B2C7F", "use": "lab coat trim, jar cap, tablet edge" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "coral specimen accent, water tint" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on jar glass and magnifying lens rim",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and jar base"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "average, attentive",
+    "skin_tone": "deep brown",
+    "hair": "short curly hair",
+    "face": "minimal — two dot eyes, small curious smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds the specimen jar up toward the light",
-      "grip": "wraparound grip near the jar base, fingers spread for balance",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "angles a magnifying glass over the jar for a closer look",
-      "grip": "precision pinch on the magnifying glass handle",
-      "position": "center-right, hovering above the jar"
-    },
-    "gesture_summary": "mid-observation freeze frame — close inspection of the specimen",
-    "energy": "gently curious field researcher",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, one hand holding a specimen jar up to examine",
+    "action": "examining a glass specimen jar with a small coral shape inside while holding a tablet in the other hand",
+    "facing": "3/4 toward the specimen jar, looking at it closely",
+    "energy": "curious, scientific focus"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "field vest over shirt",
-      "fabric": "lightweight canvas over cotton",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled once to mid-forearm",
-      "accent_trim_hex": "#4B2C7F",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "thin nitrile gloves",
-        "color_hex": "#9E9E9E",
-        "placement": "both hands — fingertips exposed for dexterity"
-      }
-    ]
+    "top": { "garment": "lab coat over shirt", "color_hex": "#4B2C7F", "detail": "teal cuff stripe on lab coat sleeve" },
+    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Studying marine biology specimens",
     "activity_hint": "Scientific examination",
-    "scene_narrative": "A pair of hands examines a small tide-pool specimen jar at a research bench. The left hand holds the glass jar containing a tiny sea star up to the light while the right hand angles a magnifying glass for a closer look, a tablet beside them showing a simple fish-silhouette identification chart. The mood is gently curious field science, not a sterile lab.",
-    "primary_objects": [
-      {
-        "name": "specimen jar",
-        "material": "glass with metal rim",
-        "color_hex": "#E8E8E8",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "teal water tint, small lavender-indigo sea star visible inside"
-      },
-      {
-        "name": "magnifying glass",
-        "material": "glass lens with metal handle",
-        "color_hex": "#4B2C7F",
-        "size_relative": "medium — held in right hand",
-        "detail": "angled over the jar, simple curved lens outline"
-      },
-      {
-        "name": "tablet",
-        "material": "matte plastic and glass",
-        "color_hex": "#E8E8E8",
-        "size_relative": "small accent",
-        "detail": "shows a simple fish-silhouette chart icon, no readable text"
-      },
-      {
-        "name": "tide-pool tray",
-        "material": "shallow ceramic dish",
-        "color_hex": "#4DB6AC",
-        "size_relative": "small accent",
-        "detail": "teal rim, pebbles and shell fragments inside"
-      }
-    ],
-    "environment": "tide-pool research bench edge strip across bottom third with sandy texture suggestion, fades to transparent",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young marine biology student holds a glass jar with a small teal coral specimen up to the light while carrying a tablet, faint wave-line accents suggesting the ocean he studies — same full-body flat vector language as the approved reference assets.",
+    "hero_prop": "glass specimen jar with a small teal coral silhouette inside",
+    "supporting_props": ["tablet", "small starfish icon", "faint wave-line accent"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from tide-pool tray → jar → magnifying-glass hand",
-    "focal_hierarchy": [
-      "specimen jar center mass",
-      "right hand angling magnifying glass",
-      "left holding hand",
-      "tablet chart accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and magnifying glass",
-      "midground: specimen jar",
-      "background: tide-pool tray edge only — no wall"
-    ],
-    "thumbnail_readability": "jar silhouette + magnifying glass shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + specimen jar readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter I, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, sterile lab horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Studying marine biology specimens\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with thin grey nitrile gloves (fingertips exposed) holding a glass specimen jar with teal-tinted water and a small indigo #4B2C7F sea star up to the light, right hand angling an indigo-handled magnifying glass over the jar. A tablet showing a simple fish-silhouette chart and a teal #4DB6AC tide-pool tray with shells sit nearby. Rolled canvas field vest over a steel-blue shirt with indigo cuff trim. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: gently curious field researcher energy. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, deep brown skin, short curly hair, standing with one hand holding a glass specimen jar up to examine closely. Purple #4B2C7F lab coat with teal #4DB6AC cuff stripe over a shirt, charcoal trousers and flats, tablet held in his other hand. The jar contains a small teal coral silhouette; a tiny starfish icon and faint wave-line accents float nearby. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Investigative RIASEC accent deep purple on lab coat trim and jar cap, teal on coral specimen. Curious, scientific focus energy. Full head-to-feet visible."
 }

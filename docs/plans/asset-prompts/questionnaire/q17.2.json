@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q17 option 2 — Creating public space murals",
   "questionnaire": {
     "question_id": 17,
@@ -19,173 +20,79 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under tray and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; scattered paint-fleck dots on sleeve via 4 dots max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "joyful expressive street-art energy — approachable public creativity, not vandalism",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter A on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "graffiti tags or gang symbols",
-      "full human figure or face",
-      "photorealistic render",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill",
+      "graffiti tags or gang symbols"
     ]
   },
   "color": {
     "riasec_code": "A",
-    "riasec_type": "Artistic",
-    "palette": {
-      "accent": {
-        "hex": "#FFD54F",
-        "name": "sunshine yellow",
-        "use": "mural sun motif, wet roller paint"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "mural triangle accents, paint-fleck sleeve dots"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "mural wall base", "hex": "#EDEBFB" },
-        { "name": "paint roller head", "hex": "#FFD54F" },
-        { "name": "roller handle", "hex": "#D7B896" },
-        { "name": "paint tray", "hex": "#9E9E9E" },
-        { "name": "paint fleck accent", "hex": "#9575CD" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops and wet paint",
-    "accent_rule": "yellow appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FFD54F", "use": "mural sun motif, wet roller paint" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "mural triangle accents, paint-fleck sleeve dots" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "medium tan-brown", "hex_approx": "#C68642" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on wet roller paint and tray rim",
-    "shadow": "flat #2D2D2D at 12% opacity under tray and hands"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "lean, expressive",
+    "skin_tone": "medium tan-brown",
+    "hair": "wavy undercut hairstyle",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — male presentation, wavy undercut, medium tan-brown skin distinguishes from other slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "guides the paint roller upward across the mural wall",
-      "grip": "full-hand grip on the roller handle",
-      "position": "upper-left quadrant, arm extended"
-    },
-    "right_hand": {
-      "action": "holds the paint tray steady below",
-      "grip": "fingers curled under the tray lip",
-      "position": "lower-right quadrant"
-    },
-    "gesture_summary": "mid-stroke freeze frame — roller gliding upward across the wall",
-    "energy": "joyful, focused, expressive",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing tall reaching upward toward a mural wall segment",
+    "action": "guiding a paint roller upward across the mural wall with one hand while holding a paint tray steady with the other",
+    "facing": "3/4 right, torso stretched upward toward the roller stroke",
+    "energy": "joyful, focused, expressive"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "loose creative hoodie",
-      "fabric": "brushed cotton fleece",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "pushed to mid-forearm, paint-flecked",
-      "accent_trim_hex": "#FFD54F",
-      "accent_trim_placement": "paint smear near cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "woven friendship bracelet",
-        "color_hex": "#9575CD",
-        "placement": "left wrist only"
-      }
-    ]
+    "top": { "garment": "loose creative hoodie", "color_hex": "#4B2C7F", "detail": "charcoal drawstrings, yellow paint-smear cuff, scattered lavender paint-fleck dots" },
+    "bottom": { "garment": "relaxed joggers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "canvas sneakers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Creating public space murals",
     "activity_hint": "Urban art",
-    "scene_narrative": "A pair of paint-flecked hands guides a roller upward across a mural wall bursting with bold geometric shapes and a yellow sun motif, while the other hand steadies a paint tray below. The scene reads as joyful public art in progress, not vandalism.",
-    "primary_objects": [
-      {
-        "name": "mural wall section",
-        "material": "painted concrete panel",
-        "color_hex": "#EDEBFB",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "bold geometric sun motif in yellow with lavender triangle accents, one fresh roller stroke visible"
-      },
-      {
-        "name": "paint roller",
-        "material": "foam roller head on wood handle",
-        "color_hex": "#FFD54F",
-        "size_relative": "medium — gripped in left hand",
-        "detail": "wet yellow paint coating, minimal drips"
-      },
-      {
-        "name": "paint tray",
-        "material": "plastic",
-        "color_hex": "#9E9E9E",
-        "size_relative": "small — steadied by right hand",
-        "detail": "shallow pool of yellow paint"
-      },
-      {
-        "name": "paint fleck accents",
-        "material": "dried paint spatter",
-        "color_hex": "#9575CD",
-        "size_relative": "small accent on sleeve",
-        "detail": "scattered small dots, decorative not messy"
-      }
-    ],
-    "environment": "outdoor wall panel strip across bottom two-thirds — fades to transparent at edges, no street or crowd",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man reaches up to guide a roller across a mural wall bursting with a bold yellow sun motif and lavender triangle accents, paint tray steadied at his side — full-body joyful public art in progress, in the same expressive maker language as the approved Q1 references. The scene reads as playful creativity, not vandalism.",
+    "hero_prop": "mural wall segment with a bold geometric sun motif in yellow and lavender triangle accents, one fresh roller stroke visible",
+    "supporting_props": ["paint roller with wet yellow paint", "grey paint tray with a shallow pool of yellow paint", "scattered lavender paint flecks on sleeve"],
+    "environment": "thin outdoor wall-panel line, faint grey decorative circles behind figure — no street or crowd",
+    "symbolic": false
   },
   "composition": {
-    "layout": "vertical workflow line from paint tray up through roller to the mural sun motif",
-    "focal_hierarchy": [
-      "mural sun motif center mass",
-      "left hand rolling upward",
-      "paint tray anchor",
-      "paint fleck accents"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands, roller, and tray",
-      "midground: mural wall section",
-      "background: wall edge only — no street"
-    ],
-    "thumbnail_readability": "mural sun motif + roller hand readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center reaching upward toward mural sun motif upper-right, balanced like 1.2.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + mural sun motif readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter A, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, graffiti tagging, vandalism, gang symbols, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, graffiti tagging, vandalism, gang symbols, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Creating public space murals\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a paint-flecked steel-blue hoodie with yellow #FFD54F cuff smear. Left hand grips a roller mid-stroke, rolling wet yellow paint upward across a lavender-and-yellow geometric sun mural. Right hand steadies a grey paint tray with a shallow pool of yellow paint. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, sunlit outdoor wall panel fading to transparent. Mood: joyful expressive street-art energy, playful public creativity not vandalism. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young lean man, medium tan-brown skin, wavy undercut hairstyle, standing 3/4 right reaching upward. He wears a purple #4B2C7F loose creative hoodie with charcoal drawstrings, a yellow #FFD54F paint-smear cuff, and scattered lavender #9575CD paint-fleck dots, relaxed charcoal joggers, and canvas sneakers. He guides a paint roller coated in wet yellow paint upward across a mural wall segment showing a bold geometric sun motif with lavender triangle accents, steadying a grey paint tray with the other hand. Thin outdoor wall-panel line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Joyful expressive street-art energy, playful public creativity not vandalism."
 }

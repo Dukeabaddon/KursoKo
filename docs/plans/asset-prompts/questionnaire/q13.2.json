@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q13 option 2 — Researching quantum computing",
   "questionnaire": {
     "question_id": 13,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under monitor and forearms — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle paper-grain suggestion on notebook via 3 parallel lines max",
-    "mood": "quiet deep-focus research energy — approachable science curiosity, not a sterile lab horror scene",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "thoughtful, analytical research energy",
     "forbidden": [
-      "RIASEC letter I on image",
-      "die-cut sticker border or white card frame",
-      "readable text, real equations, or numbers",
-      "tech brand logos",
-      "full human figure or face",
-      "photorealistic screen glare",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "I",
-    "riasec_type": "Investigative",
-    "palette": {
-      "accent": {
-        "hex": "#4B2C7F",
-        "name": "deep violet",
-        "use": "qubit lattice nodes, lab-coat cuff trim"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "connecting lattice lines, notebook ribbon"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "monitor shell", "hex": "#3A3A3A" },
-        { "name": "lattice node", "hex": "#4B2C7F" },
-        { "name": "notebook cover", "hex": "#5C7A8A" },
-        { "name": "pencil", "hex": "#D4A84B" },
-        { "name": "lab-coat sleeve", "hex": "#FDFCF8" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "violet appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4B2C7F", "use": "glowing orbit halo around the atom icon" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "orbit ring lines, sweater cuff stripe" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on monitor edge and lattice node dots",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and desk objects"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "slim, thoughtful posture",
+    "skin_tone": "deep brown",
+    "hair": "short afro",
+    "face": "minimal — two dot eyes, small contemplative smile, round glasses",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "sketches a simple symbol in an open notebook",
-      "grip": "pencil held in a relaxed writing grip",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "points at a highlighted node on the qubit lattice diagram",
-      "grip": "extended index finger, other fingers loosely curled",
-      "position": "center-right, hovering near the monitor edge"
-    },
-    "gesture_summary": "mid-thought freeze frame — connecting a diagram idea to a notebook sketch",
-    "energy": "quiet, deep, curious focus",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, head tilted upward in thought",
+    "action": "holding a tablet in one hand while reaching toward a floating glowing atom/orbit icon with the other",
+    "facing": "3/4 toward viewer, gaze on the floating atom icon",
+    "energy": "thoughtful, curious, analytical"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "long lab-coat",
-      "fabric": "smooth cotton twill",
-      "color_hex": "#FDFCF8",
-      "sleeve_style": "rolled once to mid-forearm, neat cuff",
-      "accent_trim_hex": "#4B2C7F",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "safety glasses",
-        "color_hex": "#81D4FA",
-        "placement": "folded at desk edge, not worn"
-      }
-    ]
+    "top": { "garment": "cardigan over collared shirt", "color_hex": "#4B2C7F", "detail": "teal cuff stripe, white shirt collar" },
+    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "loafers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Researching quantum computing",
     "activity_hint": "Advanced physics",
-    "scene_narrative": "A pair of forearms works at a quiet physics desk, one hand sketching a simple symbol in a notebook while the other points at a glowing node on a monitor's qubit lattice diagram. Folded safety glasses rest nearby. The scene reads as deep theoretical curiosity — a mind chasing a connection, not a sterile clinical lab.",
-    "primary_objects": [
-      {
-        "name": "monitor with qubit lattice diagram",
-        "material": "matte plastic bezel",
-        "color_hex": "#3A3A3A",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "grid of connected violet nodes joined by thin teal lines, no readable labels"
-      },
-      {
-        "name": "open notebook",
-        "material": "cloth-bound cover with paper pages",
-        "color_hex": "#5C7A8A",
-        "size_relative": "medium — beneath left hand",
-        "detail": "faint sketch of simple geometric symbols, no real equations or text"
-      },
-      {
-        "name": "pencil",
-        "material": "wood with metal ferrule",
-        "color_hex": "#D4A84B",
-        "size_relative": "small — held in left hand",
-        "detail": "simple hexagonal shaft, sharpened tip"
-      },
-      {
-        "name": "folded safety glasses",
-        "material": "clear plastic lens with frame",
-        "color_hex": "#81D4FA",
-        "size_relative": "small accent",
-        "detail": "resting closed at the desk edge"
-      }
-    ],
-    "environment": "light physics desk surface strip across bottom third — fades to transparent at edges",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man in glasses reaches toward a floating glowing atom made of teal orbit rings, tablet in his other hand — full-body flat vector language matching the approved Q1 references.",
+    "hero_prop": "floating glowing atom icon with teal orbit rings",
+    "supporting_props": ["tablet", "small floating particle dots", "notebook tucked under arm"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from notebook sketch hand → monitor → pointing hand",
-    "focal_hierarchy": [
-      "monitor lattice diagram",
-      "right hand pointing at node",
-      "left hand sketching",
-      "notebook anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and pencil",
-      "midground: notebook and monitor base",
-      "background: desk edge only — no wall"
-    ],
-    "thumbnail_readability": "monitor silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + atom icon readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, real math equations, letter I, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, sterile lab horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Researching quantum computing\". Style: 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two forearms at a physics desk. Right hand points at a glowing violet #4B2C7F node on a monitor showing a qubit lattice diagram with teal lines. Left hand sketches an abstract symbol with a pencil in an open notebook, no readable equations. Folded sky-blue safety glasses rest at the desk edge. White lab-coat sleeves rolled to mid-forearm, violet cuff trim. Warm medium skin #C8956C. Top-down camera, hands in lower half. Mood: quiet, deep-focus research."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, deep brown skin, short afro, round glasses, standing with head tilted upward in thought. Purple #4B2C7F cardigan with teal #4DB6AC cuff stripe over a white collared shirt, charcoal trousers, loafers. He holds a tablet in one hand while reaching toward a floating glowing atom icon made of teal orbit rings with the other; small particle dots float nearby, notebook tucked under his arm. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Investigative RIASEC teal accent. Thoughtful analytical energy. Full head-to-feet visible, NOT a hands-only crop."
 }

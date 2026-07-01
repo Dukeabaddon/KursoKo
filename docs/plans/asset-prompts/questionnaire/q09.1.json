@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q9 option 1 — Pitching startup ideas to investors",
   "questionnaire": {
     "question_id": 9,
@@ -23,167 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and flip-chart — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle paper-grain suggestion on flip-chart via 3 parallel lines max",
-    "mood": "confident founder-in-the-room energy — persuasive pitch moment, not a stiff boardroom",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "confident, persuasive energy for students",
     "forbidden": [
-      "RIASEC letter E on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "corporate brand logos",
-      "full human figure or face",
-      "photorealistic render",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
-    "riasec_type": "Enterprising",
-    "palette": {
-      "accent": {
-        "hex": "#FF8A65",
-        "name": "coral",
-        "use": "flip-chart border line, marker barrel, blazer cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#FFD54F",
-        "name": "warm yellow",
-        "use": "lightbulb icon glow, coffee sleeve"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "flip-chart paper", "hex": "#FDFCF8" },
-        { "name": "coffee cup body", "hex": "#E8E8E8" },
-        { "name": "cufflink dot", "hex": "#D4A84B" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FF8A65", "use": "blazer lapel trim, lightbulb icon, tablet edge" },
+    "riasec_secondary": { "hex": "#FFD54F", "use": "rising chart bar icon" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "light peach", "hex_approx": "#F2C4A0" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on marker barrel and lightbulb icon",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and flip-chart base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "confident, upright posture",
+    "skin_tone": "light peach",
+    "hair": "sleek shoulder-length hair",
+    "face": "minimal — two dot eyes, confident smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "gestures open-palm toward the flip-chart growth graphic",
-      "grip": "relaxed open hand, fingers spread",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "draws an upward trend arrow on the flip-chart with a marker",
-      "grip": "precision pinch between thumb and index finger",
-      "position": "center-right, hovering over the flip-chart"
-    },
-    "gesture_summary": "mid-pitch freeze frame — confident gesture meets marker stroke",
-    "energy": "persuasive, high-confidence founder",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, one hand raised presenting outward",
+    "action": "pitching toward a floating lightbulb and rising bar-chart icon while holding a tablet at her hip",
+    "facing": "3/4 toward the floating icon prop",
+    "energy": "confident, persuasive"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "tailored blazer",
-      "fabric": "smooth wool blend",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled once to mid-forearm",
-      "accent_trim_hex": "#FF8A65",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "slim wristwatch with cufflink dot",
-        "color_hex": "#D4A84B",
-        "placement": "left wrist, near flip-chart edge"
-      }
-    ]
+    "top": { "garment": "tailored blazer", "color_hex": "#4B2C7F", "detail": "coral lapel trim" },
+    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Pitching startup ideas to investors",
     "activity_hint": "Persuasive presentation",
-    "scene_narrative": "A pair of hands presents a startup pitch, one hand gesturing open toward a small growth-chart flip-card while the other holds a marker mid-stroke on a simple upward arrow. A lightbulb icon glows softly on the corner of the flip-chart, capturing the confident, persuasive energy of a founder in the pitch room.",
-    "primary_objects": [
-      {
-        "name": "flip-chart card",
-        "material": "paper on easel board",
-        "color_hex": "#FDFCF8",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "coral border line, simple upward bar-and-arrow growth graphic, no readable text"
-      },
-      {
-        "name": "marker",
-        "material": "plastic barrel",
-        "color_hex": "#FF8A65",
-        "size_relative": "medium — held in right hand",
-        "detail": "mid-stroke on the upward arrow, bullet tip visible"
-      },
-      {
-        "name": "lightbulb icon sign",
-        "material": "small acrylic stand",
-        "color_hex": "#FFD54F",
-        "size_relative": "small accent",
-        "detail": "simple flat bulb glyph with soft glow"
-      },
-      {
-        "name": "coffee cup",
-        "material": "paper cup with sleeve",
-        "color_hex": "#E8E8E8",
-        "size_relative": "small accent",
-        "detail": "coral sleeve, resting beside flip-chart"
-      }
-    ],
-    "environment": "minimal meeting-room table edge strip across bottom third, fades to transparent",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A confident young woman gestures toward a floating lightbulb beside a small rising bar-chart icon while holding a tablet at her hip, capturing the energy of pitching a bold new idea — same full-body flat vector language as the approved reference assets.",
+    "hero_prop": "floating lightbulb icon beside a simple rising bar-chart icon",
+    "supporting_props": ["tablet", "small upward arrow icon"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from coffee cup → flip-chart → marker hand",
-    "focal_hierarchy": [
-      "flip-chart growth graphic center mass",
-      "right hand drawing arrow",
-      "left gesturing hand",
-      "lightbulb icon accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and marker",
-      "midground: flip-chart",
-      "background: table edge only — no wall"
-    ],
-    "thumbnail_readability": "flip-chart silhouette + growth arrow readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + lightbulb readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter E, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, stiff boardroom gloom, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Pitching startup ideas to investors\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with a rolled tailored blazer sleeve, left hand gesturing open-palm toward a paper flip-chart with a coral #FF8A65 border and a simple upward growth arrow, right hand drawing the arrow mid-stroke with a coral marker. A small yellow #FFD54F glowing lightbulb icon sits at the corner, coffee cup with coral sleeve nearby. Slim wristwatch on the left wrist. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: confident, persuasive founder energy. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, light peach skin, sleek shoulder-length hair, standing confidently with one hand raised presenting outward. Purple #4B2C7F tailored blazer with coral #FF8A65 lapel trim, charcoal trousers and flats, tablet held at her hip. She gestures toward a floating coral lightbulb icon beside a small gold rising bar-chart icon. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Enterprising RIASEC accent coral on lightbulb and lapel, gold on bar-chart icon. Confident, persuasive energy. Full head-to-feet visible."
 }

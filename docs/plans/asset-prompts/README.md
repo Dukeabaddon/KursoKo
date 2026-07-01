@@ -37,17 +37,13 @@ Optional: skip steps 3–4 if reusing `src/assets/landing/placeholders/blobs/*.p
 
 ## Questionnaire choices (60 scenes)
 
-**Folder:** `questionnaire/` — **v3 JSON is source of truth** (`q01.1.json` … `q30.2.json`)
+**Folder:** `questionnaire/` — **v4 JSON** full-body style (matches `src/assets/1.1.png` & `1.2.png`)
 
 | Spec | Value |
 |------|--------|
-| Schema | `questionnaire/_schema-v3.json` |
-| Gold example | `questionnaire/q01.1.json` |
-| Style | Flat vector scene — **no letter, no border** |
-| Size | 640×640 PNG → `src/assets/questionnaire/NN.M.png` |
+| Schema | `questionnaire/_schema-v4.json` |
+| Gold JSON | `questionnaire/q01.1.json` |
+| Style | Full-body unDraw flat vector, thin outline, transparent PNG |
+| Size | 640×640 → `src/assets/questionnaire/NN.M.png` |
 
-**Edit:** change JSON files directly. Rebuild index: `python3 scripts/build-questionnaire-manifest.py`
-
-**Deprecated:** `generate-questionnaire-prompts.py` / `questionnaire_choice_specs.py` — do not use.
-
-**After PNGs:** tell agent `wire questionnaire assets`.
+**Edit JSON directly.** Rebuild index: `python3 scripts/build-questionnaire-manifest.py`

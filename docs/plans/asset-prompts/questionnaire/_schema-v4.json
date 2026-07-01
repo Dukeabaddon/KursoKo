@@ -1,0 +1,57 @@
+{
+  "$comment": "v4 — full-body character style matching src/assets/1.1.png & 1.2.png references",
+  "schema_version": 4,
+  "style_reference_files": [
+    "src/assets/1.1.png",
+    "src/assets/1.2.png"
+  ],
+  "required_blocks": [
+    "questionnaire",
+    "deliverable",
+    "art_style",
+    "color",
+    "character",
+    "pose",
+    "clothes",
+    "subject",
+    "composition",
+    "technical",
+    "generation",
+    "prompt_for_image_ai"
+  ],
+  "global_rules": {
+    "figure": "full-body person — head to feet visible, diverse cast per choice",
+    "style": "flat vector illustration, unDraw-inspired, thin 2px #2D2D2D outline on figure and props",
+    "face": "minimal friendly face — simple dot eyes, small mouth optional, not photorealistic",
+    "background": "fully transparent PNG — no white fill, no floor box; optional thin grey ground line only",
+    "locale": "neutral global — young adult student age",
+    "forbidden_on_image": [
+      "RIASEC letter",
+      "border frame or sticker card",
+      "readable text paragraphs or numbers",
+      "photorealistic render",
+      "3D clay render",
+      "hands-only crop",
+      "POV first-person desk view",
+      "SaaS dashboard UI screenshots"
+    ],
+    "size_px": "640x640",
+    "output_dir": "src/assets/questionnaire/",
+    "naming": "NN.M.png — zero-padded question id"
+  },
+  "style_reference_notes": {
+    "from_1_1": "Side-profile full body, purple top + dark pants, interacting with activity prop (robot), light grey accent blobs, thin floor line",
+    "from_1_2": "Standing full body, purple/lavender top + black wide pants, holding activity prop (document/chart), abstract background shapes",
+    "shared": "Flat fills, thin outline, limited palette, generous negative space, symbol icons OK (checkmark, exclamation) but no words"
+  },
+  "riasec_palette": {
+    "R": { "type": "Realistic", "accent": "#4DB6AC", "secondary": "#9575CD" },
+    "I": { "type": "Investigative", "accent": "#4B2C7F", "secondary": "#4DB6AC" },
+    "A": { "type": "Artistic", "accent": "#FFD54F", "secondary": "#9575CD" },
+    "S": { "type": "Social", "accent": "#9575CD", "secondary": "#4DB6AC" },
+    "E": { "type": "Enterprising", "accent": "#FF8A65", "secondary": "#FFD54F" },
+    "C": { "type": "Conventional", "accent": "#81D4FA", "secondary": "#4B2C7F" }
+  },
+  "color_rule": "KursoKo purple #4B2C7F as base garment accent + subtle RIASEC code accent on props or trim",
+  "sensitive_slots_symbolic_only": ["17.1", "19.2", "23.2", "24.1", "27.1"]
+}

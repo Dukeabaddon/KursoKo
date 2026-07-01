@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q18 option 2 — Standardizing filing systems",
   "questionnaire": {
     "question_id": 18,
@@ -19,173 +20,79 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under drawer and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; faint horizontal file-tab lines on drawer via 3 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "calm methodical order energy — approachable admin craft, not tedious drudgery",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter C on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos on devices",
-      "full human figure or face",
-      "photorealistic render",
-      "cluttered messy office chaos",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill",
+      "cluttered messy office chaos"
     ]
   },
   "color": {
     "riasec_code": "C",
-    "riasec_type": "Conventional",
-    "palette": {
-      "accent": {
-        "hex": "#81D4FA",
-        "name": "sky blue",
-        "use": "folder tab, shirt cuff piping"
-      },
-      "secondary": {
-        "hex": "#4B2C7F",
-        "name": "deep violet",
-        "use": "label maker body accent"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "filing cabinet drawer", "hex": "#9E9E9E" },
-        { "name": "color-coded folder", "hex": "#81D4FA" },
-        { "name": "label maker", "hex": "#4B2C7F" },
-        { "name": "label tab", "hex": "#81D4FA" },
-        { "name": "pen", "hex": "#2D2D2D" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint cool #F0F4FF highlight on knuckle tops only",
-    "accent_rule": "sky blue appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#81D4FA", "use": "folder tab, shirt cuff piping" },
+    "riasec_secondary": { "hex": "#4B2C7F", "use": "label maker body accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "light peach", "hex_approx": "#F2C4A0" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on drawer edge and label maker",
-    "shadow": "flat #2D2D2D at 12% opacity under drawer and hands"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "tidy, average",
+    "skin_tone": "light peach",
+    "hair": "short neat side part",
+    "face": "minimal — two dot eyes, small calm smile, simple round glasses",
+    "diversity_note": "unique cast per slot — male presentation, light peach skin, round glasses distinguishes from other slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 20° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "pulls a color-coded folder from the open drawer",
-      "grip": "pinch grip on the folder tab edge",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "applies a fresh label tab with the label maker",
-      "grip": "precision two-finger press",
-      "position": "center-right, hovering over the folder"
-    },
-    "gesture_summary": "mid-file freeze frame — the label tab pressing into place",
-    "energy": "methodical, calm, satisfied",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing beside an open filing cabinet drawer",
+    "action": "pulling a color-coded folder from the drawer with one hand while applying a fresh label tab with a label maker in the other",
+    "facing": "3/4 left, calm attentive gaze toward the folder",
+    "energy": "methodical, calm, satisfied"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "pressed office shirt",
-      "fabric": "crisp cotton poplin",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled to mid-forearm, crisp cuffs",
-      "accent_trim_hex": "#81D4FA",
-      "accent_trim_placement": "thin cuff piping"
-    },
-    "accessories": [
-      {
-        "item": "ballpoint pen",
-        "color_hex": "#2D2D2D",
-        "placement": "clipped to shirt pocket edge — no face in frame"
-      }
-    ]
+    "top": { "garment": "pressed office shirt", "color_hex": "#4B2C7F", "detail": "charcoal collar, sky-blue cuff piping" },
+    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "simple loafers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Standardizing filing systems",
     "activity_hint": "Process optimization",
-    "scene_narrative": "A pair of tidy hands pulls a color-coded folder from an open filing drawer while the other applies a fresh sky-blue label tab, capturing the satisfying click of an organized system falling into place. The scene reads as methodical calm, not tedious drudgery.",
-    "primary_objects": [
-      {
-        "name": "filing cabinet drawer",
-        "material": "brushed steel",
-        "color_hex": "#9E9E9E",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "open drawer edge with rows of upright folder tabs"
-      },
-      {
-        "name": "color-coded folder",
-        "material": "manila card stock",
-        "color_hex": "#81D4FA",
-        "size_relative": "medium — held in left hand",
-        "detail": "sky-blue tab edge, no readable text"
-      },
-      {
-        "name": "label maker",
-        "material": "matte plastic",
-        "color_hex": "#4B2C7F",
-        "size_relative": "small — held in right hand",
-        "detail": "small blank label strip feeding out"
-      },
-      {
-        "name": "label tab",
-        "material": "adhesive paper",
-        "color_hex": "#81D4FA",
-        "size_relative": "small accent",
-        "detail": "blank color tab, no printed text"
-      }
-    ],
-    "environment": "quiet records room strip across bottom third — fades to transparent at edges, neutral shelving suggestion only",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A tidy young man stands beside an open filing cabinet drawer, pulling a sky-blue tabbed folder free while pressing a fresh label into place with a label maker, capturing the satisfying click of an organized system falling into order — full-body calm captured in the same maker language as the approved Q1 references.",
+    "hero_prop": "open brushed-steel filing cabinet drawer with rows of upright folder tabs",
+    "supporting_props": ["sky-blue tabbed folder", "violet label maker with a blank label feeding out", "ballpoint pen clipped to shirt pocket"],
+    "environment": "thin quiet records-room line, faint grey decorative circles behind figure — no clutter",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from drawer → folder → label maker",
-    "focal_hierarchy": [
-      "color-coded folder center mass",
-      "right hand applying label",
-      "left hand pulling from drawer",
-      "filing cabinet anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and label maker",
-      "midground: folder and drawer edge",
-      "background: records room strip only"
-    ],
-    "thumbnail_readability": "drawer silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure right-of-center beside filing drawer left, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + filing drawer readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter C, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, cluttered messy office, paper shredding chaos, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, cluttered messy office, paper shredding chaos, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Standardizing filing systems\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a crisp steel-blue office shirt with sky-blue #81D4FA cuff piping. Left hand pinches a sky-blue tabbed folder pulled from an open brushed-steel filing drawer. Right hand presses a violet label maker applying a fresh blank sky-blue tab. A ballpoint pen clips to the shirt pocket edge. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, quiet records-room strip fading to transparent. Mood: calm methodical satisfaction, tidy admin craft not tedious drudgery. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face with simple round glasses. Young tidy man, light peach skin, short neat side part, standing 3/4 left beside an open brushed-steel filing cabinet drawer. He wears a purple #4B2C7F pressed office shirt with charcoal collar and sky-blue #81D4FA cuff piping, charcoal tailored trousers, and simple loafers, with a ballpoint pen clipped to his shirt pocket. He pulls a sky-blue tabbed folder from the drawer with one hand while pressing a fresh blank label into place with a violet label maker in the other. Thin quiet records-room line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Calm methodical satisfaction, tidy admin craft not tedious drudgery."
 }

@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q8 option 2 — Coaching youth sports teams",
   "questionnaire": {
     "question_id": 8,
@@ -23,167 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and clipboard — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle grass-blade suggestion at bottom edge via 3 short lines max",
-    "mood": "encouraging high-energy mentor vibe — grassroots youth sport, not a professional league",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "encouraging, energetic mentor energy for students",
     "forbidden": [
-      "RIASEC letter S on image",
-      "die-cut sticker border or white card frame",
-      "readable text, team names, or numbers",
-      "sports brand logos",
-      "full human figure or face",
-      "photorealistic render",
-      "aggressive or intense competition mood",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "S",
-    "riasec_type": "Social",
-    "palette": {
-      "accent": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "play-diagram arrows, whistle lanyard, polo cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "water bottle, play-diagram circles"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "clipboard back", "hex": "#D7B896" },
-        { "name": "whistle body", "hex": "#E8E8E8" },
-        { "name": "soccer ball panels", "hex": "#FDFCF8" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "lavender appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#9575CD", "use": "whistle cord, clipboard trim, cap accent" },
+    "riasec_secondary": { "hex": "#4DB6AC", "use": "jersey stripe, ball accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on whistle body and ball surface",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and clipboard"
+  "character": {
+    "presentation": "young woman",
+    "age": "young adult",
+    "build": "athletic",
+    "skin_tone": "deep brown",
+    "hair": "cornrows tied back, cap over hair",
+    "face": "minimal — two dot eyes, big encouraging smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds a coach's clipboard at hip height",
-      "grip": "flat palm support from underneath, fingers curled over top edge",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "raises a whistle mid-blow, cropped below chin line",
-      "grip": "pinch grip on whistle body, lanyard looped over fingers",
-      "position": "center-right, raised toward upper frame edge"
-    },
-    "gesture_summary": "mid-whistle huddle call — encouraging freeze frame",
-    "energy": "encouraging, high-energy mentor",
-    "framing": "crop at mid-forearm and below chin — no face, no torso"
+    "stance": "full body, standing, one arm gesturing outward instructing",
+    "action": "coaching gesture with a whistle around her neck, clipboard held in the other hand",
+    "facing": "3/4 toward viewer, encouraging stance",
+    "energy": "encouraging, energetic mentor"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "team polo shirt",
-      "fabric": "breathable pique cotton",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "short sleeve, natural fit",
-      "accent_trim_hex": "#9575CD",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "lavender lanyard whistle cord",
-        "color_hex": "#9575CD",
-        "placement": "looped around right hand, connecting to whistle"
-      }
-    ]
+    "top": { "garment": "track jacket", "color_hex": "#4B2C7F", "detail": "lavender collar and cuff trim" },
+    "bottom": { "garment": "track pants", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "sport sneakers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Coaching youth sports teams",
     "activity_hint": "Athletic mentoring",
-    "scene_narrative": "A pair of hands holds a coach's clipboard and whistle on the sidelines of a youth practice. The left hand grips the clipboard showing a simple play diagram of circles and arrows, while the right hand raises a whistle mid-blow — the encouraging, high-energy instant before a team huddle. A soccer ball rests at the corner, grounding the scene in grassroots sport.",
-    "primary_objects": [
-      {
-        "name": "coach's clipboard",
-        "material": "wood-backed board with paper",
-        "color_hex": "#D7B896",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "play diagram of lavender circles and teal arrows, no readable text"
-      },
-      {
-        "name": "whistle",
-        "material": "brushed metal",
-        "color_hex": "#E8E8E8",
-        "size_relative": "medium — raised in right hand",
-        "detail": "lavender lanyard cord looped through"
-      },
-      {
-        "name": "soccer ball",
-        "material": "synthetic leather panels",
-        "color_hex": "#FDFCF8",
-        "size_relative": "small accent",
-        "detail": "lavender pentagon panels, resting at frame corner"
-      },
-      {
-        "name": "water bottle",
-        "material": "matte plastic",
-        "color_hex": "#4DB6AC",
-        "size_relative": "small accent",
-        "detail": "resting against clipboard edge"
-      }
-    ],
-    "environment": "sideline grass strip across bottom third with short blade texture suggestion, fades to transparent",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young coach gestures encouragingly with a whistle around her neck and a clipboard in hand, a small soccer ball with a teal accent stripe resting nearby, capturing the energy of mentoring a youth team — same full-body flat vector language as the approved reference assets.",
+    "hero_prop": "soccer ball with a teal accent stripe",
+    "supporting_props": ["whistle on a lavender cord", "clipboard with scribble lines", "cap"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from soccer ball → clipboard → whistle hand",
-    "focal_hierarchy": [
-      "clipboard play diagram center mass",
-      "right hand raising whistle",
-      "left holding hand",
-      "soccer ball accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and whistle",
-      "midground: clipboard",
-      "background: soccer ball and grass edge only"
-    ],
-    "thumbnail_readability": "clipboard silhouette + whistle shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + ball readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter S, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, aggressive competition, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Coaching youth sports teams\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a rolled steel-blue team polo, left hand holding a wood-backed clipboard with a play diagram of lavender #9575CD circles and teal arrows, right hand raising a metal whistle on a lavender lanyard mid-blow, cropped below the chin. A soccer ball with lavender panels and a teal water bottle sit at the corner. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: encouraging, high-energy mentor. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young adult woman, deep brown skin, cornrows tied back under a cap, standing with one arm gesturing outward in an encouraging coaching stance. Purple #4B2C7F track jacket with lavender #9575CD collar and cuff trim, charcoal track pants and sport sneakers. A whistle on a lavender cord hangs at her neck, clipboard with scribble lines in her other hand, small soccer ball with a teal accent stripe resting nearby. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Social RIASEC accent lavender on whistle cord and clipboard trim, teal on ball stripe. Encouraging, energetic mentor energy. Full head-to-feet visible."
 }

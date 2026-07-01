@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q12 option 1 — Leading corporate negotiations",
   "questionnaire": {
     "question_id": 12,
@@ -23,169 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under handshake and table edge — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle paper-grain suggestion on contract via 3 parallel lines max",
-    "mood": "confident boardroom energy — approachable business deal-making, not a cold corporate stock photo",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "confident, persuasive business energy",
     "forbidden": [
-      "RIASEC letter E on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "corporate brand logos",
-      "full human figure or face",
-      "photorealistic suit fabric",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
-    "riasec_type": "Enterprising",
-    "palette": {
-      "accent": {
-        "hex": "#FF8A65",
-        "name": "coral",
-        "use": "tie edge, blazer cuff trim"
-      },
-      "secondary": {
-        "hex": "#FFD54F",
-        "name": "sunshine yellow",
-        "use": "pen barrel, watch face accent"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "contract document", "hex": "#FDFCF8" },
-        { "name": "pen barrel", "hex": "#FFD54F" },
-        { "name": "conference table", "hex": "#8A6E5A" },
-        { "name": "blazer sleeve", "hex": "#3A4A5A" },
-        { "name": "wrist watch", "hex": "#D4A84B" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FF8A65", "use": "necktie, rising bar-chart icon" },
+    "riasec_secondary": { "hex": "#FFD54F", "use": "briefcase clasp accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "medium tan", "hex_approx": "#D9A066" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on clasped knuckles and watch face",
-    "shadow": "flat #2D2D2D at 12% opacity under handshake and table objects"
+  "character": {
+    "presentation": "young man",
+    "age": "college-age",
+    "build": "average, confident posture",
+    "skin_tone": "medium tan",
+    "hair": "short fade haircut",
+    "face": "minimal — two dot eyes, small confident smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire characters"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "extends into a firm handshake grip",
-      "grip": "full palm clasp, thumb wrapped over the other hand",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "meets the handshake to close the deal",
-      "grip": "matching full palm clasp",
-      "position": "center-right, meeting at the handshake point"
-    },
-    "gesture_summary": "mid-handshake freeze frame — a deal being sealed over the contract",
-    "energy": "confident, decisive, collaborative",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing tall, one arm extended forward mid-gesture",
+    "action": "gesturing persuasively with one hand while holding a slim folder against his chest with the other",
+    "facing": "3/4 toward viewer, chin slightly up",
+    "energy": "confident, persuasive, in command"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "smart casual blazer",
-      "fabric": "structured wool-blend",
-      "color_hex": "#3A4A5A",
-      "sleeve_style": "rolled once to mid-forearm, sharp crease",
-      "accent_trim_hex": "#FF8A65",
-      "accent_trim_placement": "cuff button trim"
-    },
-    "accessories": [
-      {
-        "item": "wrist watch",
-        "color_hex": "#D4A84B",
-        "placement": "left wrist only"
-      }
-    ]
+    "top": { "garment": "tailored blazer over shirt", "color_hex": "#4B2C7F", "detail": "coral necktie, white shirt collar" },
+    "bottom": { "garment": "slim trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "dress shoes", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Leading corporate negotiations",
     "activity_hint": "Strategic discussion",
-    "scene_narrative": "Two forearms meet in a firm handshake directly above an open contract on a minimal boardroom table. A yellow pen rests uncapped beside the signature line, and a wristwatch glints on one arm. The gesture captures the exact instant a deal is sealed — confident, mutual, and forward-looking rather than tense.",
-    "primary_objects": [
-      {
-        "name": "contract document",
-        "material": "matte paper",
-        "color_hex": "#FDFCF8",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "open double-page spread with faint ruled lines, no readable text"
-      },
-      {
-        "name": "pen",
-        "material": "matte plastic barrel",
-        "color_hex": "#FFD54F",
-        "size_relative": "small — resting on the contract",
-        "detail": "uncapped, tip pointing toward the signature line"
-      },
-      {
-        "name": "conference table edge",
-        "material": "polished wood veneer",
-        "color_hex": "#8A6E5A",
-        "size_relative": "background anchor",
-        "detail": "simple flat plank, subtle grain lines"
-      },
-      {
-        "name": "wrist watch",
-        "material": "brushed metal",
-        "color_hex": "#D4A84B",
-        "size_relative": "small accent",
-        "detail": "round face, plain no numerals"
-      }
-    ],
-    "environment": "warm wood boardroom table strip across bottom third — fades to transparent at edges",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young man in a tailored blazer gestures persuasively mid-negotiation, a rising coral bar-chart icon floating beside him and a slim folder held against his chest — full-body flat vector language matching the approved Q1 references.",
+    "hero_prop": "floating rising bar-chart icon with a coral upward arrow",
+    "supporting_props": ["slim leather folder", "small briefcase", "floating handshake icon"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "centered handshake meeting point with contract fanned beneath",
-    "focal_hierarchy": [
-      "handshake clasp at center",
-      "contract document beneath",
-      "pen accent",
-      "table edge anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: clasped hands",
-      "midground: contract and pen",
-      "background: table edge only — no wall"
-    ],
-    "thumbnail_readability": "handshake silhouette + contract shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + chart icon readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, corporate brand, letter E, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, aggressive body language, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector illustration, 640x640, transparent PNG background. KursoKo quiz choice for \"Leading corporate negotiations\". Style: flat vector, 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands — matches KursoKo RIASEC sticker family, NO letter, NO border frame, NO text on image. Scene: two forearms meet in a firm handshake above an open contract on a wood boardroom table. A yellow #FFD54F pen rests uncapped beside the page. Structured navy blazer sleeves rolled to mid-forearm with coral #FF8A65 cuff trim, brushed gold wristwatch on one arm. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, transparent margins. Mood: confident, decisive deal-closing energy."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, medium tan skin, short fade haircut, standing tall and confident. Purple #4B2C7F tailored blazer over white shirt with a coral #FF8A65 necktie, charcoal slim trousers and dress shoes. He gestures persuasively with one hand while holding a slim folder against his chest; a floating rising bar-chart icon with a coral upward arrow hovers beside him, small briefcase at his side. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Enterprising RIASEC coral accent. Confident persuasive energy. Full head-to-feet visible, NOT a hands-only crop."
 }

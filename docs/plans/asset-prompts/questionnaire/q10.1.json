@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q10 option 1 — Building sustainable furniture",
   "questionnaire": {
     "question_id": 10,
@@ -23,167 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and stool — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle wood grain suggestion on stool via 3 parallel lines max",
-    "mood": "tactile sustainable-maker energy — cozy workshop craft, not an industrial mill",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "focused, hands-on craftsperson energy for students",
     "forbidden": [
-      "RIASEC letter R on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "furniture brand logos",
-      "full human figure or face",
-      "photorealistic wood texture",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "R",
-    "riasec_type": "Realistic",
-    "palette": {
-      "accent": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "eco-leaf brand stamp, glue bottle cap, apron strap pinstripe"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "sanding block body"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "stool wood", "hex": "#D7B896" },
-        { "name": "wood shavings", "hex": "#E8C9A0" },
-        { "name": "glue bottle", "hex": "#4DB6AC" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "teal appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4DB6AC", "use": "apron trim, wood grain highlight, tool handle" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "sawhorse accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "light peach", "hex_approx": "#F2C4A0" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on stool leg and sanding block",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and stool base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "sturdy, capable",
+    "skin_tone": "light peach",
+    "hair": "dark hair tied in a practical ponytail",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "pins the stool frame steady on the workbench",
-      "grip": "spread fingers, thumb bracing the leg joint",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "guides a sanding block along the stool leg grain",
-      "grip": "firm palm grip, fingers curled over the block",
-      "position": "center-right, mid-stroke along the leg"
-    },
-    "gesture_summary": "mid-sanding stroke freeze frame — wood shavings lifting",
-    "energy": "focused, tactile, sustainable maker",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, side profile standing at a workbench",
+    "action": "planing a wood plank steady on a sawhorse with a hand plane",
+    "facing": "side profile toward the workbench prop",
+    "energy": "focused, hands-on craftsperson"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "canvas work apron strap over shirt",
-      "fabric": "sturdy cotton canvas over cotton shirt",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#4DB6AC",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "thin work gloves",
-        "color_hex": "#9E9E9E",
-        "placement": "both hands — fingertips cut out exposing skin for dexterity"
-      }
-    ]
+    "top": { "garment": "work apron over shirt", "color_hex": "#4B2C7F", "detail": "teal apron trim and pocket stripe" },
+    "bottom": { "garment": "work overalls", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "work boots", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Building sustainable furniture",
     "activity_hint": "Woodworking craft",
-    "scene_narrative": "A pair of hands sands the leg of a handcrafted wooden stool at a workshop bench, curls of wood shavings drifting from the motion. The left hand steadies the stool frame while the right hand guides a sanding block along the grain, a small eco-leaf stamp branded faintly into the underside — the satisfying, tactile moment of sustainable craft in progress.",
-    "primary_objects": [
-      {
-        "name": "wooden stool",
-        "material": "reclaimed solid wood",
-        "color_hex": "#D7B896",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "visible wood grain via 3 parallel lines max, small teal eco-leaf brand stamp on the underside"
-      },
-      {
-        "name": "sanding block",
-        "material": "wood block with sandpaper texture suggestion",
-        "color_hex": "#9575CD",
-        "size_relative": "medium — held in right hand",
-        "detail": "flat rectangular shape, simple grip notch"
-      },
-      {
-        "name": "wood shavings",
-        "material": "curled wood",
-        "color_hex": "#E8C9A0",
-        "size_relative": "small accents",
-        "detail": "two or three curled flat shapes drifting near the sanding motion"
-      },
-      {
-        "name": "wood glue bottle",
-        "material": "plastic bottle",
-        "color_hex": "#4DB6AC",
-        "size_relative": "small accent",
-        "detail": "resting at bench edge, teal cap"
-      }
-    ],
-    "environment": "light workshop bench strip across bottom third with subtle wood grain suggestion, fades to transparent",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young woodworker planes a wood plank steady on a sawhorse, curled shavings falling as a stool frame takes shape nearby, capturing the satisfaction of hands-on furniture building — same full-body flat vector language as the approved reference assets.",
+    "hero_prop": "wooden stool frame in progress on a sawhorse",
+    "supporting_props": ["hand plane", "wood plank", "curled wood shavings"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from glue bottle → stool → sanding hand",
-    "focal_hierarchy": [
-      "stool leg center mass",
-      "right hand sanding",
-      "left stabilizing hand",
-      "wood shavings accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and sanding block",
-      "midground: stool",
-      "background: bench edge only — no wall"
-    ],
-    "thumbnail_readability": "stool silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + sawhorse readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter R, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, industrial mill, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter R, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Building sustainable furniture\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with thin grey work gloves (fingertips exposed) sanding the leg of a light-wood #D7B896 stool with a small teal eco-leaf stamp underneath. Left hand steadies the stool, right hand guides a lavender #9575CD sanding block along the grain, curled wood shavings drifting nearby. Teal-capped wood glue bottle at the bench edge. Rolled canvas work apron over a steel-blue shirt with teal cuff trim. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: focused, tactile, sustainable maker energy. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, light peach skin, dark hair in a practical ponytail, standing in side profile at a workbench. Purple #4B2C7F work apron with teal #4DB6AC trim over a shirt, charcoal overalls and work boots. She planes a wood plank steady on a lavender-accented sawhorse with a hand plane, curled wood shavings falling nearby, a stool frame taking shape. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Realistic RIASEC accent teal on apron and tool handle, lavender on sawhorse. Focused, hands-on craftsperson energy. Full head-to-feet visible."
 }

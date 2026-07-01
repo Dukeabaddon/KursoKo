@@ -15,7 +15,7 @@
   "choices": [
     {
       "prompt_file": "questionnaire/q01.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "1.1",
       "question_id": 1,
       "option_key": "1",
@@ -26,7 +26,7 @@
     },
     {
       "prompt_file": "questionnaire/q01.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "1.2",
       "question_id": 1,
       "option_key": "2",
@@ -37,7 +37,7 @@
     },
     {
       "prompt_file": "questionnaire/q02.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "2.1",
       "question_id": 2,
       "option_key": "1",
@@ -48,7 +48,7 @@
     },
     {
       "prompt_file": "questionnaire/q02.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "2.2",
       "question_id": 2,
       "option_key": "2",
@@ -59,7 +59,7 @@
     },
     {
       "prompt_file": "questionnaire/q03.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "3.1",
       "question_id": 3,
       "option_key": "1",
@@ -70,7 +70,7 @@
     },
     {
       "prompt_file": "questionnaire/q03.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "3.2",
       "question_id": 3,
       "option_key": "2",
@@ -81,7 +81,7 @@
     },
     {
       "prompt_file": "questionnaire/q04.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "4.1",
       "question_id": 4,
       "option_key": "1",
@@ -92,7 +92,7 @@
     },
     {
       "prompt_file": "questionnaire/q04.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "4.2",
       "question_id": 4,
       "option_key": "2",
@@ -103,7 +103,7 @@
     },
     {
       "prompt_file": "questionnaire/q05.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "5.1",
       "question_id": 5,
       "option_key": "1",
@@ -114,7 +114,7 @@
     },
     {
       "prompt_file": "questionnaire/q05.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "5.2",
       "question_id": 5,
       "option_key": "2",
@@ -125,7 +125,7 @@
     },
     {
       "prompt_file": "questionnaire/q06.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "6.1",
       "question_id": 6,
       "option_key": "1",
@@ -136,7 +136,7 @@
     },
     {
       "prompt_file": "questionnaire/q06.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "6.2",
       "question_id": 6,
       "option_key": "2",
@@ -147,7 +147,7 @@
     },
     {
       "prompt_file": "questionnaire/q07.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "7.1",
       "question_id": 7,
       "option_key": "1",
@@ -158,7 +158,7 @@
     },
     {
       "prompt_file": "questionnaire/q07.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "7.2",
       "question_id": 7,
       "option_key": "2",
@@ -169,7 +169,7 @@
     },
     {
       "prompt_file": "questionnaire/q08.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "8.1",
       "question_id": 8,
       "option_key": "1",
@@ -180,7 +180,7 @@
     },
     {
       "prompt_file": "questionnaire/q08.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "8.2",
       "question_id": 8,
       "option_key": "2",
@@ -191,7 +191,7 @@
     },
     {
       "prompt_file": "questionnaire/q09.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "9.1",
       "question_id": 9,
       "option_key": "1",
@@ -202,7 +202,7 @@
     },
     {
       "prompt_file": "questionnaire/q09.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "9.2",
       "question_id": 9,
       "option_key": "2",
@@ -213,7 +213,7 @@
     },
     {
       "prompt_file": "questionnaire/q10.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "10.1",
       "question_id": 10,
       "option_key": "1",
@@ -224,7 +224,7 @@
     },
     {
       "prompt_file": "questionnaire/q10.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "10.2",
       "question_id": 10,
       "option_key": "2",
@@ -235,7 +235,7 @@
     },
     {
       "prompt_file": "questionnaire/q11.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "11.1",
       "question_id": 11,
       "option_key": "1",
@@ -246,7 +246,7 @@
     },
     {
       "prompt_file": "questionnaire/q11.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "11.2",
       "question_id": 11,
       "option_key": "2",
@@ -257,7 +257,7 @@
     },
     {
       "prompt_file": "questionnaire/q12.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "12.1",
       "question_id": 12,
       "option_key": "1",
@@ -268,7 +268,7 @@
     },
     {
       "prompt_file": "questionnaire/q12.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "12.2",
       "question_id": 12,
       "option_key": "2",
@@ -279,7 +279,7 @@
     },
     {
       "prompt_file": "questionnaire/q13.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "13.1",
       "question_id": 13,
       "option_key": "1",
@@ -290,7 +290,7 @@
     },
     {
       "prompt_file": "questionnaire/q13.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "13.2",
       "question_id": 13,
       "option_key": "2",
@@ -301,7 +301,7 @@
     },
     {
       "prompt_file": "questionnaire/q14.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "14.1",
       "question_id": 14,
       "option_key": "1",
@@ -312,7 +312,7 @@
     },
     {
       "prompt_file": "questionnaire/q14.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "14.2",
       "question_id": 14,
       "option_key": "2",
@@ -323,7 +323,7 @@
     },
     {
       "prompt_file": "questionnaire/q15.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "15.1",
       "question_id": 15,
       "option_key": "1",
@@ -334,7 +334,7 @@
     },
     {
       "prompt_file": "questionnaire/q15.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "15.2",
       "question_id": 15,
       "option_key": "2",
@@ -345,7 +345,7 @@
     },
     {
       "prompt_file": "questionnaire/q16.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "16.1",
       "question_id": 16,
       "option_key": "1",
@@ -356,7 +356,7 @@
     },
     {
       "prompt_file": "questionnaire/q16.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "16.2",
       "question_id": 16,
       "option_key": "2",
@@ -367,7 +367,7 @@
     },
     {
       "prompt_file": "questionnaire/q17.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "17.1",
       "question_id": 17,
       "option_key": "1",
@@ -378,7 +378,7 @@
     },
     {
       "prompt_file": "questionnaire/q17.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "17.2",
       "question_id": 17,
       "option_key": "2",
@@ -389,7 +389,7 @@
     },
     {
       "prompt_file": "questionnaire/q18.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "18.1",
       "question_id": 18,
       "option_key": "1",
@@ -400,7 +400,7 @@
     },
     {
       "prompt_file": "questionnaire/q18.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "18.2",
       "question_id": 18,
       "option_key": "2",
@@ -411,7 +411,7 @@
     },
     {
       "prompt_file": "questionnaire/q19.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "19.1",
       "question_id": 19,
       "option_key": "1",
@@ -422,7 +422,7 @@
     },
     {
       "prompt_file": "questionnaire/q19.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "19.2",
       "question_id": 19,
       "option_key": "2",
@@ -433,7 +433,7 @@
     },
     {
       "prompt_file": "questionnaire/q20.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "20.1",
       "question_id": 20,
       "option_key": "1",
@@ -444,7 +444,7 @@
     },
     {
       "prompt_file": "questionnaire/q20.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "20.2",
       "question_id": 20,
       "option_key": "2",
@@ -455,7 +455,7 @@
     },
     {
       "prompt_file": "questionnaire/q21.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "21.1",
       "question_id": 21,
       "option_key": "1",
@@ -466,7 +466,7 @@
     },
     {
       "prompt_file": "questionnaire/q21.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "21.2",
       "question_id": 21,
       "option_key": "2",
@@ -477,7 +477,7 @@
     },
     {
       "prompt_file": "questionnaire/q22.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "22.1",
       "question_id": 22,
       "option_key": "1",
@@ -488,7 +488,7 @@
     },
     {
       "prompt_file": "questionnaire/q22.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "22.2",
       "question_id": 22,
       "option_key": "2",
@@ -499,7 +499,7 @@
     },
     {
       "prompt_file": "questionnaire/q23.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "23.1",
       "question_id": 23,
       "option_key": "1",
@@ -510,7 +510,7 @@
     },
     {
       "prompt_file": "questionnaire/q23.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "23.2",
       "question_id": 23,
       "option_key": "2",
@@ -521,7 +521,7 @@
     },
     {
       "prompt_file": "questionnaire/q24.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "24.1",
       "question_id": 24,
       "option_key": "1",
@@ -532,7 +532,7 @@
     },
     {
       "prompt_file": "questionnaire/q24.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "24.2",
       "question_id": 24,
       "option_key": "2",
@@ -543,7 +543,7 @@
     },
     {
       "prompt_file": "questionnaire/q25.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "25.1",
       "question_id": 25,
       "option_key": "1",
@@ -554,7 +554,7 @@
     },
     {
       "prompt_file": "questionnaire/q25.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "25.2",
       "question_id": 25,
       "option_key": "2",
@@ -565,7 +565,7 @@
     },
     {
       "prompt_file": "questionnaire/q26.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "26.1",
       "question_id": 26,
       "option_key": "1",
@@ -576,7 +576,7 @@
     },
     {
       "prompt_file": "questionnaire/q26.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "26.2",
       "question_id": 26,
       "option_key": "2",
@@ -587,7 +587,7 @@
     },
     {
       "prompt_file": "questionnaire/q27.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "27.1",
       "question_id": 27,
       "option_key": "1",
@@ -598,7 +598,7 @@
     },
     {
       "prompt_file": "questionnaire/q27.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "27.2",
       "question_id": 27,
       "option_key": "2",
@@ -609,7 +609,7 @@
     },
     {
       "prompt_file": "questionnaire/q28.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "28.1",
       "question_id": 28,
       "option_key": "1",
@@ -620,7 +620,7 @@
     },
     {
       "prompt_file": "questionnaire/q28.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "28.2",
       "question_id": 28,
       "option_key": "2",
@@ -631,7 +631,7 @@
     },
     {
       "prompt_file": "questionnaire/q29.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "29.1",
       "question_id": 29,
       "option_key": "1",
@@ -642,7 +642,7 @@
     },
     {
       "prompt_file": "questionnaire/q29.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "29.2",
       "question_id": 29,
       "option_key": "2",
@@ -653,7 +653,7 @@
     },
     {
       "prompt_file": "questionnaire/q30.1.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "30.1",
       "question_id": 30,
       "option_key": "1",
@@ -664,7 +664,7 @@
     },
     {
       "prompt_file": "questionnaire/q30.2.json",
-      "schema_version": 3,
+      "schema_version": 4,
       "slot": "30.2",
       "question_id": 30,
       "option_key": "2",

@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q30 option 1 — Negotiating international trade deals",
   "questionnaire": {
     "question_id": 30,
@@ -23,169 +24,75 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under globe and hands — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle paper-grain suggestion on document via 3 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "confident global dealmaking — a handshake moment across borders, warm and professional",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter E on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
+      "RIASEC letter",
+      "border frame",
+      "readable text",
       "real national flags or political symbols",
-      "full human figure or face",
-      "photorealistic render",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
-    "riasec_type": "Enterprising",
-    "palette": {
-      "accent": {
-        "hex": "#FF8A65",
-        "name": "coral orange",
-        "use": "wax seal, pennant flag, sleeve cuff pinstripe"
-      },
-      "secondary": {
-        "hex": "#FFD54F",
-        "name": "sunflower yellow",
-        "use": "second pennant flag, pen barrel"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "globe body", "hex": "#4DB6AC" },
-        { "name": "globe stand", "hex": "#8D6E63" },
-        { "name": "document folder", "hex": "#FDFCF8" },
-        { "name": "wax seal", "hex": "#FF8A65" },
-        { "name": "pennant flags", "hex": "#FFD54F" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FF8A65", "use": "wax seal, pennant flag, blazer cuff stripe" },
+    "riasec_secondary": { "hex": "#FFD54F", "use": "second pennant flag, pen barrel" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#7A4B32" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on globe surface and pen barrel",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and folder base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "poised, straight posture",
+    "skin_tone": "deep brown",
+    "hair": "sleek low bun",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "presents an open document folder sealed with a small wax stamp",
-      "grip": "flat palm supporting the folder underside, fingers along edge",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "offers a pen across the table, mid-handoff gesture",
-      "grip": "light pinch near the pen's midpoint",
-      "position": "center-right, hovering above the folder"
-    },
-    "gesture_summary": "mid-signing freeze frame — a pen being offered to seal the deal",
-    "energy": "confident, warm, professionally poised",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing beside a small pedestal table, poised professional posture",
+    "action": "presenting a wax-sealed document folder in one hand while offering a pen forward with the other, mid-handoff gesture",
+    "facing": "3/4 forward, pen-offering arm extended toward viewer",
+    "energy": "confident, warm, professionally poised"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "tailored dress shirt",
-      "fabric": "crisp cotton poplin",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#FF8A65",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "slim metal cufflink band",
-        "color_hex": "#E8E8E8",
-        "placement": "left cuff only, simple flat disc shape"
-      }
-    ]
+    "top": { "garment": "tailored blazer", "color_hex": "#4B2C7F", "detail": "dark charcoal lapel, coral cuff stripe" },
+    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "low heels", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Negotiating international trade deals",
     "activity_hint": "Global business",
-    "scene_narrative": "A pair of forearms meets across a small table to finalize an international deal: one hand presents a wax-sealed document folder while the other offers a pen, mid-handoff. A small teal desk globe and two abstract color-block pennant flags (no real national symbols) sit nearby, signaling global reach. The scene reads as confident, respectful cross-border dealmaking.",
-    "primary_objects": [
-      {
-        "name": "small desk globe",
-        "material": "painted metal sphere on a wood stand",
-        "color_hex": "#4DB6AC",
-        "size_relative": "hero — 35% of visual mass",
-        "detail": "simple flat continent shapes in a slightly darker teal, no readable country labels"
-      },
-      {
-        "name": "wax-sealed document folder",
-        "material": "cream card stock, red wax",
-        "color_hex": "#FDFCF8",
-        "size_relative": "medium — held in left hand",
-        "detail": "closed folder with a small coral wax seal, no readable text"
-      },
-      {
-        "name": "pen",
-        "material": "metal barrel",
-        "color_hex": "#FFD54F",
-        "size_relative": "small — held in right hand",
-        "detail": "simple flat cylinder with a fine nib tip"
-      },
-      {
-        "name": "abstract pennant flags",
-        "material": "paper on small dowels",
-        "color_hex": "#FF8A65",
-        "size_relative": "small accent — propped beside globe",
-        "detail": "two simple triangular color-block flags, coral and yellow, no emblems or symbols"
-      }
-    ],
-    "environment": "light birch table surface strip across bottom third — fades to transparent at edges, cream paper sheet under globe",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young woman stands poised beside a small pedestal table, presenting a wax-sealed document folder while offering a pen forward, mid-handoff. A small teal desk globe and two abstract color-block pennant flags (no real national symbols) sit on the table, signaling global reach. Confident, respectful cross-border dealmaking — the same full-body flat vector language as the approved Q1 references.",
+    "hero_prop": "small painted-metal desk globe with simple flat continent shapes in darker teal, no readable country labels",
+    "supporting_props": ["cream document folder with a small coral wax seal", "yellow pen", "two abstract triangular pennant flags in coral and yellow"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from pennant flags → globe → pen-offering hand",
-    "focal_hierarchy": [
-      "globe center mass",
-      "right hand offering pen",
-      "left hand presenting folder",
-      "pennant flags anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and pen",
-      "midground: document folder and globe",
-      "background: pennant flags and table edge only — no wall"
-    ],
-    "thumbnail_readability": "globe silhouette + folder shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, pedestal table with globe right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + globe readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter E, real national flags, political symbols, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, industrial horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, real national flags, political symbols, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, industrial horror, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Negotiating international trade deals\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a crisp dress shirt with rolled sleeves and coral #FF8A65 cuff trim meet across a light birch table. Left hand presents a cream document folder closed with a small coral wax seal. Right hand offers a yellow #FFD54F pen, mid-handoff. A small teal #4DB6AC desk globe with simple flat continent shapes sits nearby, alongside two abstract triangular pennant flags in coral and yellow (no real national flags or emblems). Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: confident, respectful cross-border dealmaking. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, poised straight-posture build, deep brown skin #7A4B32, sleek low bun, standing beside a small pedestal table. She wears a purple #4B2C7F tailored blazer with charcoal lapel and coral #FF8A65 cuff stripe, dark straight trousers, and low heels. She presents a cream document folder closed with a small coral wax seal in one hand while offering a yellow #FFD54F pen forward with the other, mid-handoff gesture. A small teal #4DB6AC desk globe with simple flat continent shapes sits on the table, alongside two abstract triangular pennant flags in coral and yellow (no real national flags or emblems). Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Mood: confident, respectful cross-border dealmaking. Full head-to-feet visible."
 }

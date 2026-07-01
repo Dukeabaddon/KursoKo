@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q28 option 1 — Launching tech incubator program",
   "questionnaire": {
     "question_id": 28,
@@ -23,169 +24,75 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under jar and hands — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle glass-highlight suggestion on jar via 2 curved strokes max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "optimistic entrepreneurial growth — nurturing a new venture, not a boardroom pitch",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter E on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "full human figure or face",
-      "photorealistic render",
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
       "corporate boardroom or suit-and-tie imagery",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "E",
-    "riasec_type": "Enterprising",
-    "palette": {
-      "accent": {
-        "hex": "#FF8A65",
-        "name": "coral orange",
-        "use": "growth-chart bars, sleeve cuff pinstripe, paper airplane tip"
-      },
-      "secondary": {
-        "hex": "#FFD54F",
-        "name": "sunflower yellow",
-        "use": "glowing seedling light, jar lid rim"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "glass terrarium jar", "hex": "#DCEFEA" },
-        { "name": "seedling leaves", "hex": "#66BB6A" },
-        { "name": "growth-chart card", "hex": "#FDFCF8" },
-        { "name": "paper airplane", "hex": "#FF8A65" },
-        { "name": "soil patch", "hex": "#8D6E63" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "coral appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FF8A65", "use": "growth-chart bars, paper airplane tip, shirt cuff stripe" },
+    "riasec_secondary": { "hex": "#FFD54F", "use": "glowing seedling light, jar lid rim" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "deep brown", "hex_approx": "#7A4B32" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on jar glass rim and paper airplane fold",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and jar base"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "average, confident stance",
+    "skin_tone": "deep brown",
+    "hair": "locs pulled into a high bun",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "cups the base of a small glass terrarium jar holding a glowing seedling",
-      "grip": "open palm supporting the jar from below and side",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "sets a small paper airplane down beside the jar, mid-launch gesture",
-      "grip": "light pinch on the airplane's tail fold",
-      "position": "center-right, hovering just above the desk"
-    },
-    "gesture_summary": "mid-launch freeze frame — a new idea taking flight beside a nurtured seedling",
-    "energy": "optimistic, driven, quietly nurturing",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, standing, weight forward as if mid-launch",
+    "action": "cupping a small glass terrarium jar with a glowing seedling in one hand while the other sets a paper airplane down mid-launch gesture",
+    "facing": "3/4 forward, launching arm extended",
+    "energy": "optimistic, driven, quietly nurturing"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "casual button-up shirt",
-      "fabric": "smooth cotton poplin",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#FF8A65",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "slim leather bracelet",
-        "color_hex": "#8D6E63",
-        "placement": "right wrist only, simple and unobtrusive"
-      }
-    ]
+    "top": { "garment": "casual button-up shirt", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, coral cuff stripe, rolled sleeves" },
+    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "loafers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Launching tech incubator program",
     "activity_hint": "Entrepreneurial ecosystem",
-    "scene_narrative": "A pair of forearms tends a small glass terrarium jar holding a single glowing seedling — a visual metaphor for an incubated startup idea — while the other hand sets a small paper airplane beside it, mid-launch. A simple rising bar-chart card sits just behind, hinting at growth. The scene reads as optimistic, hands-on entrepreneurial nurturing, not a corporate pitch meeting.",
-    "primary_objects": [
-      {
-        "name": "glass terrarium jar with glowing seedling",
-        "material": "clear glass, soil, small plant",
-        "color_hex": "#DCEFEA",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "single sprouting seedling with a soft yellow glow at its leaves, small soil patch at the base"
-      },
-      {
-        "name": "paper airplane",
-        "material": "folded paper",
-        "color_hex": "#FF8A65",
-        "size_relative": "medium — held in right hand",
-        "detail": "simple three-fold dart shape, no text"
-      },
-      {
-        "name": "rising bar-chart card",
-        "material": "cream card stock",
-        "color_hex": "#FDFCF8",
-        "size_relative": "small accent — propped behind the jar",
-        "detail": "three ascending coral bars, no readable labels"
-      },
-      {
-        "name": "small soil trowel",
-        "material": "wood handle, metal blade",
-        "color_hex": "#8D6E63",
-        "size_relative": "small accent — resting beside jar",
-        "detail": "simple flat shape, 2px outline"
-      }
-    ],
-    "environment": "light birch desk surface strip across bottom third — fades to transparent at edges, cream paper sheet under jar",
-    "symbolic": true,
-    "sensitive_handling": null
+    "scene_narrative": "A young woman stands confidently, cupping a small glass terrarium jar holding a single glowing seedling — a visual metaphor for an incubated startup idea — while her other hand sets a small paper airplane down mid-launch. A simple rising bar-chart card stands on a small pedestal beside her. Optimistic, hands-on entrepreneurial nurturing — the same full-body flat vector language as the approved Q1 references.",
+    "hero_prop": "clear glass terrarium jar with a single sprouting seedling glowing softly yellow at its leaves",
+    "supporting_props": ["coral paper airplane", "cream card with three ascending coral bar-chart shapes", "small soil trowel"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": true
   },
   "composition": {
-    "layout": "diagonal workflow line from paper airplane → jar → growth-chart card",
-    "focal_hierarchy": [
-      "glowing seedling jar center mass",
-      "right hand launching airplane",
-      "left cupping hand",
-      "growth-chart card anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and airplane",
-      "midground: terrarium jar",
-      "background: chart card and desk edge only — no wall"
-    ],
-    "thumbnail_readability": "jar silhouette + airplane shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, terrarium jar and chart card right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + glowing jar readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter E, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, boardroom, suit and tie, industrial horror, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, boardroom, suit and tie, industrial horror, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Launching tech incubator program\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with rolled shirt sleeves and coral #FF8A65 cuff trim tend a small clear-glass terrarium jar holding a single glowing seedling (soft yellow #FFD54F glow) on a light birch desk. Left hand cups the jar base. Right hand sets a coral-orange folded paper airplane down beside it, mid-launch gesture. A cream card with three ascending coral bar-chart shapes props up just behind the jar; a small wood-handled trowel rests nearby. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: optimistic, hands-on entrepreneurial nurturing — a startup idea taking flight, not a boardroom pitch. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, average confident build, deep brown skin #7A4B32, locs pulled into a high bun, standing with weight forward mid-launch. She wears a purple #4B2C7F casual button-up shirt with charcoal collar and coral #FF8A65 cuff stripe, rolled sleeves, dark tailored trousers, and loafers. She cups a clear-glass terrarium jar holding a single glowing seedling (soft yellow #FFD54F glow) in one hand, while her other hand sets a coral-orange folded paper airplane down in a mid-launch gesture. A cream card with three ascending coral bar-chart shapes stands on a small pedestal beside her, with a wood-handled trowel nearby. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Mood: optimistic, hands-on entrepreneurial nurturing — a startup idea taking flight, not a boardroom pitch. Full head-to-feet visible."
 }

@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q19 option 1 — Fixing electric bicycles",
   "questionnaire": {
     "question_id": 19,
@@ -19,173 +20,79 @@
     "height_px": 640,
     "aspect_ratio": "1:1",
     "background": "transparent PNG",
-    "safe_padding_px": 40
+    "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under battery pack and wrists — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle brushed-metal lines on battery casing via 3 parallel lines max",
+    "fill": "solid flat color blocks with minimal cel shade",
     "mood": "curious maker energy — approachable e-mobility repair, not risky electrical work",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
     "forbidden": [
-      "RIASEC letter R on image",
-      "die-cut sticker border or white card frame",
-      "readable text or numbers",
-      "brand logos on battery or tools",
-      "full human figure or face",
-      "photorealistic render",
-      "sparking exposed wires, fire, or explosion",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill",
+      "sparking exposed wires, fire, or explosion"
     ]
   },
   "color": {
     "riasec_code": "R",
-    "riasec_type": "Realistic",
-    "palette": {
-      "accent": {
-        "hex": "#4DB6AC",
-        "name": "KursoKo teal",
-        "use": "battery indicator LEDs, mechanic sleeve cuff trim"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "multimeter probe tip accent"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "e-bike battery pack casing", "hex": "#3A3A3A" },
-        { "name": "multimeter probe cable", "hex": "#4DB6AC" },
-        { "name": "hex key set", "hex": "#9E9E9E" },
-        { "name": "repair stand clamp", "hex": "#D7D7D7" },
-        { "name": "work glove grey", "hex": "#9E9E9E" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "teal appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#4DB6AC", "use": "battery indicator LEDs, mechanic sleeve cuff trim" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "multimeter probe tip accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "medium brown", "hex_approx": "#A9713F" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlight on battery casing edge and probe tip",
-    "shadow": "flat #2D2D2D at 12% opacity under battery pack and hands"
+  "character": {
+    "presentation": "young woman",
+    "age": "college-age",
+    "build": "sturdy, capable",
+    "skin_tone": "medium brown",
+    "hair": "bandana-wrapped bun",
+    "face": "minimal — two dot eyes, small focused smile, no detailed nose",
+    "diversity_note": "unique cast per slot — female presentation, medium brown skin, bandana-wrapped bun distinguishes from other slots"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "holds the battery housing open and steady",
-      "grip": "cupped palm supporting the casing edge",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "touches a multimeter probe to a battery lead",
-      "grip": "precision pinch on the probe handle",
-      "position": "center-right, hovering over the battery"
-    },
-    "gesture_summary": "mid-diagnostic freeze frame — probe touching lead as the LED confirms charge",
-    "energy": "focused, capable, approachable maker",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, kneeling beside an e-bike wheel and frame",
+    "action": "holding an open battery housing steady with one hand while touching a multimeter probe to a battery lead with the other",
+    "facing": "3/4 down toward the battery pack, focused gaze",
+    "energy": "focused, capable, approachable maker"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "short-sleeve work shirt",
-      "fabric": "sturdy cotton twill",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled twice to mid-forearm",
-      "accent_trim_hex": "#4DB6AC",
-      "accent_trim_placement": "thin stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "thin work gloves",
-        "color_hex": "#9E9E9E",
-        "placement": "both hands — fingertips exposed for dexterity"
-      }
-    ]
+    "top": { "garment": "short-sleeve work shirt", "color_hex": "#4B2C7F", "detail": "charcoal collar, teal cuff stripe" },
+    "bottom": { "garment": "work coveralls rolled to the knee", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "work boots", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Fixing electric bicycles",
     "activity_hint": "E-mobility tech",
-    "scene_narrative": "A pair of hands holds an e-bike battery housing open while the other touches a multimeter probe to a lead, watching for the confirming teal indicator glow. The scene reads as satisfying hands-on repair, not risky electrical work.",
-    "primary_objects": [
-      {
-        "name": "e-bike battery pack",
-        "material": "matte plastic casing",
-        "color_hex": "#3A3A3A",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "open housing revealing cell rows, two small teal LED indicator dots"
-      },
-      {
-        "name": "multimeter probes",
-        "material": "insulated cable and metal tip",
-        "color_hex": "#4DB6AC",
-        "size_relative": "medium — held in right hand",
-        "detail": "teal and lavender probe tips, one touching a lead"
-      },
-      {
-        "name": "hex key set",
-        "material": "steel",
-        "color_hex": "#9E9E9E",
-        "size_relative": "small — resting beside the battery",
-        "detail": "folded multi-tool, one key extended"
-      },
-      {
-        "name": "repair stand clamp",
-        "material": "powder-coated steel",
-        "color_hex": "#D7D7D7",
-        "size_relative": "background anchor",
-        "detail": "simple clamp arm edge, no bike frame fully shown"
-      }
-    ],
-    "environment": "bike repair stand edge strip across bottom third — fades to transparent at edges, workshop suggestion only",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A sturdy young woman kneels beside an e-bike frame, holding an open battery housing steady while touching a multimeter probe to a lead, watching for the confirming teal indicator glow — full-body hands-on repair energy in the same maker language as the approved Q1 references.",
+    "hero_prop": "e-bike frame and wheel with an open dark-grey battery housing revealing teal LED indicator dots",
+    "supporting_props": ["multimeter with teal and lavender probe tips", "folded steel hex key set beside the battery"],
+    "environment": "thin repair-stand ledge line, faint grey decorative circles behind figure — workshop suggestion only",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from hex key set → battery pack → probe hand",
-    "focal_hierarchy": [
-      "battery pack center mass",
-      "right hand testing with probe",
-      "left hand steadying battery",
-      "repair stand clamp anchor"
-    ],
-    "negative_space": "transparent margin top and sides — 40px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and probe",
-      "midground: battery pack and hex key set",
-      "background: repair stand edge only"
-    ],
-    "thumbnail_readability": "battery silhouette + two hand shapes readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure right-of-center kneeling beside e-bike left, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of kneeling person + e-bike readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 200,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter R, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, sparking exposed wires, fire, explosion, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter R, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, sparking exposed wires, fire, explosion, guns, blood"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Fixing electric bicycles\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms in a steel-blue work shirt with teal #4DB6AC cuff trim, thin grey work gloves with fingertips exposed. Left hand cups an open dark-grey e-bike battery housing with two small teal LED dots. Right hand touches a teal-tipped multimeter probe to a battery lead. A folded steel hex key set rests beside the battery. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins, workshop repair-stand edge fading to transparent. Mood: focused capable maker energy, satisfying diagnostic repair not risky electrical work. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young sturdy woman, medium brown skin, bandana-wrapped bun, kneeling beside an e-bike frame and wheel. She wears a purple #4B2C7F short-sleeve work shirt with charcoal collar and teal #4DB6AC cuff stripe, charcoal work coveralls rolled to the knee, and work boots. She holds an open dark-grey battery housing with teal LED indicator dots steady with one hand while touching a lavender-tipped multimeter probe to a battery lead with the other; a folded steel hex key set rests beside the battery. Thin repair-stand ledge line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Focused capable maker energy, satisfying diagnostic repair not risky electrical work."
 }

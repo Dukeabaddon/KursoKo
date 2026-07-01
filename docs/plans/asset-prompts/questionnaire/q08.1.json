@@ -1,6 +1,7 @@
 {
   "project": "KursoKo",
-  "schema_version": 3,
+  "schema_version": 4,
+  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
   "asset_set": "Questionnaire Q8 option 1 — Designing streetwear fashion",
   "questionnaire": {
     "question_id": 8,
@@ -23,167 +24,74 @@
   },
   "art_style": {
     "medium": "flat vector illustration",
+    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
-    "fill_technique": "solid flat fills with optional 8–12% ambient shade on curved surfaces only",
-    "shading": "single cel shadow ellipse under hands and tablet — no cast shadows on transparent edge",
-    "texture": "none on skin; subtle woven-fabric suggestion on swatches via 3 parallel lines max",
-    "mood": "expressive confident creative energy — indie streetwear studio, not a corporate fashion house",
-    "reference_vibe": [
-      "Josie AI warm edu illustrations",
-      "STI Scope flat career graphics",
-      "KursoKo approved RIASEC sticker line weight"
-    ],
-    "match_family": "Same 2px ink and flat fill language as RIASEC stickers — but NO letter glyph and NO colored border frame",
+    "fill": "solid flat color blocks with minimal cel shade",
+    "mood": "creative, expressive energy for students",
     "forbidden": [
-      "RIASEC letter A on image",
-      "die-cut sticker border or white card frame",
-      "readable text, logos, or brand marks",
-      "identifiable brand streetwear labels",
-      "full human figure or face",
-      "photorealistic fabric texture",
-      "neon cyberpunk palette",
-      "dark moody background fill"
+      "RIASEC letter",
+      "border frame",
+      "readable text",
+      "photorealistic",
+      "3D render",
+      "hands-only POV crop",
+      "opaque white background fill"
     ]
   },
   "color": {
     "riasec_code": "A",
-    "riasec_type": "Artistic",
-    "palette": {
-      "accent": {
-        "hex": "#FFD54F",
-        "name": "warm yellow",
-        "use": "sketch accent stripe, stylus tip, jacket cuff stitch"
-      },
-      "secondary": {
-        "hex": "#9575CD",
-        "name": "lavender",
-        "use": "fabric swatch, mannequin sleeve fabric"
-      },
-      "ink": "#2D2D2D",
-      "paper": "#FDFCF8",
-      "skin": {
-        "tone": "warm neutral medium",
-        "hex_approx": "#C8956C",
-        "note": "flat fill, no blush gradient"
-      },
-      "prop_colors": [
-        { "name": "drawing tablet bezel", "hex": "#2D2D2D" },
-        { "name": "fabric swatch neutral", "hex": "#E8E8E8" },
-        { "name": "pin badges", "hex": "#FF8A65" }
-      ]
-    },
-    "background": "fully transparent — no floor plane, no vignette, no cream fill behind scene",
-    "lighting_tint": "faint warm #FFF8F0 highlight on knuckle tops only",
-    "accent_rule": "yellow appears on 2–3 small areas max — not a background wash"
+    "base_garment_purple": "#4B2C7F",
+    "riasec_accent": { "hex": "#FFD54F", "use": "sketchpad cover, fabric swatch, sneaker accent" },
+    "riasec_secondary": { "hex": "#9575CD", "use": "hanger garment accent" },
+    "ink": "#2D2D2D",
+    "skin": { "tone": "warm medium brown", "hex_approx": "#C8956C" },
+    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
+    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
   },
-  "lighting": {
-    "type": "soft diffused illustration key light",
-    "direction": "upper-left 45°",
-    "highlight": "small curved highlights on stylus tip and tablet edge",
-    "shadow": "flat #2D2D2D at 12% opacity under hands and tablet base"
+  "character": {
+    "presentation": "androgynous young person",
+    "age": "college-age",
+    "build": "slim, stylish",
+    "skin_tone": "warm medium brown",
+    "hair": "short curly afro",
+    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "camera_angle": "three-quarter top-down, 25° tilt toward viewer",
-    "camera_distance": "medium-close — hands occupy lower 55% of frame",
-    "left_hand": {
-      "action": "pins the drawing tablet flat on the drafting table",
-      "grip": "spread fingers, thumb on far edge of tablet",
-      "position": "lower-left quadrant, wrist angled toward center"
-    },
-    "right_hand": {
-      "action": "draws a bold accent stripe on the hoodie sketch with a stylus",
-      "grip": "precision pinch between thumb and index finger",
-      "position": "center-right, hovering over the tablet screen"
-    },
-    "gesture_summary": "mid-sketch creative flow — one stroke being added",
-    "energy": "expressive, confident creative",
-    "framing": "crop at mid-forearm — no elbows, no face, no torso"
+    "stance": "full body, side profile standing beside a garment hanger",
+    "action": "sketching a design on a pad while holding a fabric swatch up toward a hanging jacket silhouette",
+    "facing": "side profile toward the hanger prop",
+    "energy": "creative, expressive"
   },
   "clothes": {
-    "visible_parts": "forearms and rolled sleeves only",
-    "top": {
-      "garment": "cropped denim jacket",
-      "fabric": "washed denim",
-      "color_hex": "#5C7A8A",
-      "sleeve_style": "rolled once to mid-forearm",
-      "accent_trim_hex": "#FFD54F",
-      "accent_trim_placement": "thin stitch stripe on cuff fold"
-    },
-    "accessories": [
-      {
-        "item": "leather wrist strap with small pin badges",
-        "color_hex": "#FF8A65",
-        "placement": "left wrist, resting near tablet edge"
-      }
-    ]
+    "top": { "garment": "oversized varsity jacket", "color_hex": "#4B2C7F", "detail": "gold cuff and collar stripe" },
+    "bottom": { "garment": "wide-leg pants", "color_hex": "#2D2D2D" },
+    "footwear": { "garment": "chunky sneakers", "color_hex": "#2D2D2D" }
   },
   "subject": {
     "choice_label": "Designing streetwear fashion",
     "activity_hint": "Creative expression",
-    "scene_narrative": "A pair of hands sketches a streetwear hoodie design on a drawing tablet, fabric swatches fanned beside it. The left hand steadies the tablet while the right hand adds a bold yellow accent stripe with a stylus, a small mannequin sleeve draped in the actual fabric sitting just behind — capturing the leap from flat sketch to real garment.",
-    "primary_objects": [
-      {
-        "name": "drawing tablet",
-        "material": "matte plastic and glass",
-        "color_hex": "#2D2D2D",
-        "size_relative": "hero — 40% of visual mass",
-        "detail": "screen shows a flat hoodie sketch with a yellow accent line, no readable text"
-      },
-      {
-        "name": "fabric swatch fan",
-        "material": "cotton and nylon blends",
-        "color_hex": "#9575CD",
-        "size_relative": "medium — fanned like cards",
-        "detail": "three swatches in yellow, lavender, and neutral grey"
-      },
-      {
-        "name": "stylus",
-        "material": "brushed plastic",
-        "color_hex": "#FFD54F",
-        "size_relative": "small — held in right hand",
-        "detail": "simple tapered tip, matte finish"
-      },
-      {
-        "name": "mannequin sleeve",
-        "material": "fabric-draped form",
-        "color_hex": "#9575CD",
-        "size_relative": "small accent — partial in background",
-        "detail": "hoodie sleeve fabric visible, no full figure"
-      }
-    ],
-    "environment": "light drafting table strip across bottom third with a cork pinboard edge and swatch pins, fades to transparent",
-    "symbolic": false,
-    "sensitive_handling": null
+    "scene_narrative": "A young designer sketches a new streetwear silhouette on a pad while holding up a fabric swatch beside a hanging jacket on a garment rack, capturing the thrill of creative expression through fashion — same full-body flat vector language as the approved reference assets.",
+    "hero_prop": "garment hanger displaying a simple gold-accented streetwear jacket silhouette",
+    "supporting_props": ["sketchpad with wavy scribble lines", "fabric swatch square", "pencil"],
+    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "symbolic": false
   },
   "composition": {
-    "layout": "diagonal workflow line from swatch fan → tablet → stylus hand",
-    "focal_hierarchy": [
-      "tablet screen center mass",
-      "right hand drawing accent stripe",
-      "left stabilizing hand",
-      "fabric swatch fan accent"
-    ],
-    "negative_space": "transparent margin top and sides — 48px safe zone for card crop",
-    "depth_layers": [
-      "foreground: hands and stylus",
-      "midground: tablet and swatches",
-      "background: mannequin sleeve and pinboard edge only"
-    ],
-    "thumbnail_readability": "tablet silhouette + swatch fan shape readable at 160px width",
-    "text_on_image": "none"
+    "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
+    "camera": "eye-level full-body, not top-down",
+    "negative_space": "48px transparent margin all sides",
+    "thumbnail_test": "silhouette of person + hanger readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
-    "max_file_kb": 220,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true,
-    "anti_aliasing": "smooth outer silhouette only"
+    "max_file_kb": 250,
+    "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6", "Ideogram"],
-    "aspect_ratio": "1:1",
-    "negative_prompt": "face, portrait, person head, text, watermark, logo, letter A, border frame, sticker outline, photorealistic, 3d render, cgi, blurry, dark background, brand labels, guns, blood"
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector education illustration, 640x640 square, transparent PNG background. KursoKo career quiz choice image for activity \"Designing streetwear fashion\". Style: friendly flat vector with consistent 2px dark outline #2D2D2D, solid fills, minimal cel shadow under hands only — match KursoKo RIASEC sticker art family but NO letter, NO border frame, NO text on image. Scene: two forearms with a rolled cropped denim jacket sleeve, left hand steadying a dark drawing tablet showing a flat hoodie sketch with a yellow #FFD54F accent stripe, right hand drawing with a yellow stylus. A fan of lavender #9575CD and neutral fabric swatches sits beside the tablet, with a mannequin sleeve draped in matching fabric partly visible behind. Leather wrist strap with small coral pin badges. Warm medium skin tone #C8956C. Three-quarter top-down camera, hands in lower half, generous transparent margins. Mood: expressive, confident creative energy. Readable silhouette at small thumbnail size."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Androgynous young college-age person, warm medium brown skin, short curly afro, standing in side profile beside a garment hanger. Purple #4B2C7F oversized varsity jacket with gold #FFD54F cuff and collar stripe, charcoal wide-leg pants and chunky sneakers. They sketch a design on a pad while holding a gold fabric swatch up toward a hanging jacket silhouette with lavender accent on the rack. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Artistic RIASEC accent gold on sketchpad and swatch, lavender on hanger garment. Creative, expressive energy. Full head-to-feet visible."
 }
