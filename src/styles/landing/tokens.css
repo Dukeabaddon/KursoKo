@@ -18,6 +18,6 @@
   --ease-landing: cubic-bezier(0.22, 1, 0.36, 1);
   --animate-landing-rise: landing-rise 400ms var(--ease-landing) both;
 
-  /* Hero banner — min-height only (width is w-full in HeroSection.jsx) */
+  /* Hero banner — desktop fixed height; mobile fills fold via flex */
   --landing-hero-height: min(85dvh, 700px);
 }

@@ -6,19 +6,58 @@
   flex: 1;
   min-height: 0;
   width: 100%;
-  padding: 0.75rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.375rem 0 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .landing-hero-stage {
+    display: block;
     padding: 1rem 0 0.75rem;
   }
 }
 
 .landing-hero-banner {
   position: relative;
-  height: var(--landing-hero-height);
-  max-height: var(--landing-hero-height);
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .landing-hero-banner {
+    flex: none;
+    display: block;
+    height: var(--landing-hero-height);
+    max-height: var(--landing-hero-height);
+  }
+}
+
+.landing-hero-content {
+  flex: 1;
+  min-height: 0;
+}
+
+@media (min-width: 768px) {
+  .landing-hero-content {
+    flex: none;
+    min-height: 0;
+  }
+}
+
+.landing-hero-banner-bg-mobile {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-landing-accent) 0%,
+    var(--color-landing-accent-hover) 100%
+  );
 }
 
 .landing-hero-banner-bg {
@@ -36,15 +75,21 @@
   pointer-events: none;
 }
 
-/* Center at bottom of column — tweak translateY only for foot tuck */
+/* Center at bottom of column — tweak translateY only for foot tuck (md+) */
 .landing-hero-character-anchor {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(65px);
-  transform-origin: bottom center;
+  position: relative;
   line-height: 0;
   pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .landing-hero-character-anchor {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+    transform-origin: bottom center;
+  }
 }
 
 .landing-hero-character-scale {
@@ -57,7 +102,7 @@
   width: auto;
   max-width: none;
   height: auto;
-  max-height: min(52dvh, 420px);
+  max-height: min(38dvh, 300px);
   object-fit: contain;
   object-position: bottom center;
   user-select: none;

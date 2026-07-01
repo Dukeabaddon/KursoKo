@@ -1,5 +1,6 @@
 import { useId } from 'react'
 import heroCharacterCutout from '../../assets/landing/kursoko-hero-pt-v3-cutout.png'
+import { landingHeroBody, landingHeroCta, landingHeroTitle } from './landingClasses'
 
 /** Rounded trapezoid — viewBox 0 0 100 100, scales with preserveAspectRatio="none" */
 const HERO_BANNER_PATH =
@@ -15,8 +16,9 @@ const HeroSection = ({ onStart }) => {
       className="relative flex min-h-0 w-full flex-1 flex-col"
     >
       <div className="landing-hero-stage w-full">
-        <div className="landing-hero-banner relative mx-auto block h-[var(--landing-hero-height)] max-h-[var(--landing-hero-height)] w-[calc(100%-2rem)] max-w-7xl clear-both md:w-[calc(100%-4rem)]">
-          <div className="landing-hero-banner-bg" aria-hidden="true">
+        <div className="landing-hero-banner relative mx-auto block w-[90%] md:w-[calc(100%-4rem)] md:max-w-7xl">
+          <div className="landing-hero-banner-bg-mobile md:hidden" aria-hidden="true" />
+          <div className="landing-hero-banner-bg hidden md:block" aria-hidden="true">
             <svg
               className="h-full w-full"
               viewBox="0 0 100 100"
@@ -37,16 +39,18 @@ const HeroSection = ({ onStart }) => {
             </svg>
           </div>
 
-          <div className="relative z-10 grid h-full min-h-0 w-full grid-cols-1 items-stretch gap-8 px-6 py-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:px-12 lg:grid-cols-12 lg:px-16">
-            <div className="relative z-10 flex h-full !min-h-[450px] w-full min-w-0 max-w-full flex-col items-start justify-center space-y-6 text-left md:col-span-1 md:!min-h-[500px] lg:col-span-7 lg:!min-h-[550px]">
+          <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-5 pt-6 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:items-stretch md:gap-8 md:px-12 md:py-12 lg:grid-cols-12 lg:px-16">
+            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 max-w-full flex-col items-start justify-center gap-4 text-left md:col-span-1 md:h-full md:!min-h-[500px] md:gap-0 lg:col-span-7 lg:!min-h-[550px]">
               <h1
                 id="hero-heading"
-                className="w-full max-w-full break-words text-pretty text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-6xl"
+                className={`mb-0 w-full max-w-full break-words text-pretty font-extrabold text-white md:mb-4 lg:mb-5 ${landingHeroTitle}`}
               >
                 Find the perfect path <br className="hidden md:block" /> for your future.
               </h1>
 
-              <p className="max-w-xl text-base font-medium leading-relaxed text-purple-100/90 md:text-lg">
+              <p
+                className={`mb-0 max-w-lg font-normal text-purple-100/90 md:mb-8 md:max-w-xl lg:mb-8 ${landingHeroBody}`}
+              >
                 Take a free 10-minute personality assessment to discover the college courses and
                 scholarships in the Philippines that match your true strengths.
               </p>
@@ -54,12 +58,12 @@ const HeroSection = ({ onStart }) => {
               <button
                 type="button"
                 onClick={onStart}
-                className="flex items-center gap-2 rounded-full bg-[#7C3AED] px-8 py-4 text-lg font-bold text-white shadow-lg transition-all duration-200 ease-out hover:scale-105 hover:bg-[#6D28D9] hover:shadow-xl active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className={`landing-hero-cta mt-1 flex items-center gap-2 transition-all duration-200 ease-out hover:scale-105 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:mt-0 ${landingHeroCta}`}
               >
                 Start Assessment
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-4 w-4 md:h-[1.125rem] md:w-[1.125rem]"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
@@ -73,7 +77,7 @@ const HeroSection = ({ onStart }) => {
               </button>
             </div>
 
-            <div className="landing-hero-character-col relative flex h-full w-full min-h-0 items-end justify-center md:col-span-1 lg:col-span-5">
+            <div className="landing-hero-character-col relative mt-auto flex w-full min-h-[11rem] flex-1 items-end justify-center md:col-span-1 md:mt-0 md:h-full md:min-h-0 lg:col-span-5">
               <div className="landing-hero-character-anchor" aria-hidden="true">
                 <div className="landing-hero-character-scale">
                   <img
