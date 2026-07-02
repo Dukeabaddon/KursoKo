@@ -1,15 +1,15 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import questionsData from '../../data/questions.json'
-import { AssessmentChoiceCard, AssessmentShell, useAssessmentScrollReveal } from '../assessment'
+import { AssessmentChoiceCard, AssessmentShell, useAssessmentScrollReveal } from '../shared/assessment'
 import {
   assessmentGhostBtn,
   assessmentPrimaryBtn,
   ASSESSMENT_EXIT_MS,
   SPARK_ACCENT,
   SPARK_PURPLE
-} from '../assessment/assessmentClasses'
-import { ClickSpark } from '../ui'
-import { getQuestionnaireImage } from '../../utils/questionnaireAssets'
+} from '../shared/assessment/assessmentClasses'
+import { ClickSpark } from '../shared/ui'
+import { getQuestionnaireImage } from './questionnaireAssets'
 
 function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
   const [currentQuestion, setCurrentQuestion] = useState(0)

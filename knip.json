@@ -2,7 +2,11 @@
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "entry": ["src/main.jsx", "playwright.config.js", "tests/e2e/**/*.spec.js"],
   "project": ["src/**/*.{js,jsx}", "tests/e2e/**/*.js"],
-  "ignore": ["src/utils/accessibilityUtils.js"],
+  "ignore": [
+    "src/utils/accessibilityUtils.js",
+    "scripts/**",
+    "docs/**"
+  ],
   "ignoreDependencies": ["autoprefixer", "@tailwindcss/postcss"],
   "ignoreExportsUsedInFile": true
 }

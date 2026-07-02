@@ -14,7 +14,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "src/assets/landing/placeholders"
 
-# Strict palette — matches src/styles/landing/tokens.css
+# Strict palette — matches src/components/landing/tokens.css
 PALETTE = {
     "ink": "#2D2D2D",
     "purple": "#4B2C7F",

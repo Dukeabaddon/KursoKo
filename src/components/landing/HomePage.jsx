@@ -1,25 +1,35 @@
-import Navbar from '../Navbar'
-import FeaturesGrid from '../Home/FeaturesGrid'
-import FAQSection from '../Home/FAQSection'
-import HeroSection from './HeroSection'
-import StatsBar from './StatsBar'
-import RiasecIntro from './RiasecIntro'
-import HowItWorks from './HowItWorks'
-import { landingFold, landingPage } from './landingClasses'
+import Navbar from '../public/Navbar'
+import { HeroSection } from './hero'
+import { StatsBar } from './stats'
+import { RiasecIntro } from './riasec'
+import { HowItWorks } from './how-it-works'
+import { FeaturesGrid } from './features'
+import { FAQSection } from './faq'
+import { SpotlightCursor } from '../shared/ui'
+import {
+  landingFold,
+  landingPage,
+  landingSpotlightBlockSelector,
+  landingSpotlightScopeProps,
+} from './landingClasses'
 
 const HomePage = ({ onStartQuestionnaire }) => (
-  <div className={landingPage}>
-    <div className={landingFold}>
-      <Navbar onStart={onStartQuestionnaire} />
-      <HeroSection onStart={onStartQuestionnaire} />
-    </div>
+  <div className={landingPage} {...landingSpotlightScopeProps}>
+    <SpotlightCursor blockSelector={landingSpotlightBlockSelector} />
 
-    <div className="landing-page-body flex flex-col" aria-label="KursoKo Homepage">
-      <StatsBar />
-      <RiasecIntro />
-      <HowItWorks onStart={onStartQuestionnaire} />
-      <FeaturesGrid />
-      <FAQSection onStart={onStartQuestionnaire} />
+    <div className="relative z-[2]">
+      <div className={landingFold}>
+        <Navbar onStart={onStartQuestionnaire} />
+        <HeroSection onStart={onStartQuestionnaire} />
+      </div>
+
+      <div className="landing-page-body flex flex-col" aria-label="KursoKo Homepage">
+        <StatsBar />
+        <RiasecIntro />
+        <HowItWorks onStart={onStartQuestionnaire} />
+        <FeaturesGrid />
+        <FAQSection onStart={onStartQuestionnaire} />
+      </div>
     </div>
   </div>
 )

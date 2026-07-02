@@ -1,13 +1,32 @@
 /**
  * Landing Tailwind presets — edit shared UI strings here.
- * Colors: src/styles/landing/tokens.css
+ * Colors: src/components/landing/tokens.css
  */
 
-export const landingPage = 'min-h-screen w-full bg-landing-paper text-landing-ink font-sans'
+export const landingPage =
+  'relative isolate min-h-screen w-full bg-landing-paper text-landing-ink font-sans'
+
+/** Marks UI blocks where the landing hover glow must not appear */
+export const landingGlowBlockProps = { 'data-landing-glow-block': true }
+
+/** Spotlight scope root on HomePage */
+export const landingSpotlightScopeProps = { 'data-spotlight-scope': true }
+
+/** Granular blocks — cards, text headers, links, buttons (not whole sections) */
+export const landingSpotlightBlockSelector = [
+  '[data-landing-glow-block]',
+  '.landing-section__header',
+  '.landing-stats__pill',
+  '.landing-riasec-tile',
+  '.landing-step-card',
+  '.landing-feature-card',
+  '.landing-faq-item',
+  '.landing-faq-cta',
+  'a',
+  'button',
+].join(', ')
 
 export const landingFold = 'flex h-dvh max-h-dvh flex-col overflow-hidden bg-landing-paper'
-
-export const landingDisplay = 'font-[family-name:var(--font-display)]'
 
 export const landingBtnPrimary =
   'landing-nav-cta inline-flex items-center justify-center rounded-2xl border px-4 py-2 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent'
@@ -26,58 +45,20 @@ export const landingNavShell = (scrolled) =>
 export const landingNavLink =
   'rounded-xl px-3 py-2 text-sm font-medium text-landing-muted transition-colors duration-300 ease-landing hover:bg-landing-ink/5 hover:text-landing-ink'
 
-export const landingHeroEyebrow =
-  'inline-flex w-fit items-center rounded-full bg-white/10 px-3 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-landing-teal sm:text-xs'
-
-export const landingHeroEyebrowOnPanel =
-  'inline-flex w-fit items-center rounded-full bg-white/10 px-3 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-landing-teal sm:text-xs'
-
-export const landingHeroOnPanelMuted = 'text-[rgba(253,252,248,0.78)]'
-
-export const landingHeroOnPanelLink =
-  'font-semibold text-[rgba(253,252,248,0.9)] underline-offset-4 hover:underline'
-
 export const landingHeroTitle =
   'text-[clamp(1.875rem,2.8vw+1rem,3rem)] leading-[1.08] max-[767px]:text-[clamp(2rem,5.5vw+0.75rem,2.5rem)] max-[767px]:leading-[1.12] md:text-[clamp(2.25rem,2.2vw+1.25rem,3rem)] md:leading-[1.06] lg:text-[clamp(2.5rem,1.6vw+1.5rem,3.25rem)]'
 
 export const landingHeroBody =
   'text-[clamp(0.9375rem,0.45vw+0.75rem,1.125rem)] leading-[1.55] max-[767px]:text-[clamp(1rem,2.5vw+0.65rem,1.125rem)] max-[767px]:leading-[1.6] md:text-lg md:leading-[1.65] lg:text-[1.1875rem] lg:leading-[1.7]'
 
-export const landingRise = 'animate-landing-rise'
-
-export const landingRiseDelay = (ms) => `animate-landing-rise [animation-delay:${ms}ms]`
-
 export const landingHeroCta =
   'landing-hero-cta inline-flex items-center justify-center gap-2 rounded-full border-2 px-6 py-2.5 text-sm font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:px-7 md:py-3 md:text-base'
 
-export const landingCtaFancy =
-  'landing-cta-fancy group inline-flex items-center justify-center rounded-2xl border-0 bg-landing-accent px-7 py-3 text-base font-semibold text-white shadow-[0_1px_2px_rgba(45,45,45,0.08),0_8px_24px_rgba(75,44,127,0.22)] hover:-translate-y-px hover:bg-landing-accent-hover hover:shadow-[0_2px_4px_rgba(45,45,45,0.1),0_12px_32px_rgba(75,44,127,0.32)] active:translate-y-0 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-landing-ink'
-
-export const landingCtaYellow =
-  'landing-cta-fancy group inline-flex items-center justify-center rounded-2xl border-0 bg-landing-yellow px-7 py-3 text-base font-semibold text-landing-accent shadow-[0_1px_2px_rgba(45,45,45,0.1),0_8px_24px_rgba(255,213,79,0.35)] hover:-translate-y-px hover:bg-[#ffc107] hover:shadow-[0_2px_4px_rgba(45,45,45,0.12),0_12px_32px_rgba(255,213,79,0.45)] active:translate-y-0 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-landing-yellow'
-
 /**
- * Hero — Tailwind presets. Clip only on purple banner (effects.css).
- * Character z-20 on top. Props z-5 behind. No overflow-hidden on scene/col/wrap.
+ * Hero character column — relative canvas. Decor sizes: hero/heroDecor.js
  */
 export const landingHeroCharacterCol =
   'pointer-events-none relative mt-auto flex w-full min-h-[9rem] max-h-[52%] flex-1 md:col-span-1 md:mt-0 md:h-full md:max-h-full md:min-h-0 lg:col-span-5'
 
-export const landingHeroScene =
-  'relative flex min-h-[11rem] w-full items-end justify-center overflow-visible md:absolute md:inset-0 md:block md:h-full md:min-h-0'
-
-export const landingHeroSceneDecor =
-  'pointer-events-none absolute inset-0 z-[5] overflow-visible'
-
 export const landingHeroGlow =
   'landing-hero-glow pointer-events-none absolute bottom-[24%] left-1/2 z-[1] hidden h-[42%] w-[min(68%,18rem)] -translate-x-1/2 rounded-full md:block'
-
-export const landingHeroCharacterWrap =
-  'pointer-events-none absolute bottom-0 left-0 right-0 z-20 flex h-full w-full items-end justify-center overflow-visible'
-
-/** Size knob: h-[%] of wrap (not max-h). w-auto keeps ratio. Do not add max-w-full. */
-export const landingHeroCharacterImg =
-  'pointer-events-none relative z-20 block h-[94%] w-auto max-w-none shrink-0 object-contain object-bottom select-none md:h-[90%] lg:h-[100%]'
-
-export const landingHeroProp =
-  'pointer-events-none absolute hidden h-auto max-h-[5rem] w-auto max-w-[10rem] select-none object-contain md:block'

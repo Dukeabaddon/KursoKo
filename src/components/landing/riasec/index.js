@@ -1,0 +1,1 @@
+export { RiasecIntro } from './RiasecIntro'

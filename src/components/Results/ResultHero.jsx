@@ -1,5 +1,4 @@
 import { Sparkles, CircleCheck } from 'lucide-react'
-import ArchetypePortrait from './ArchetypePortrait'
 import { resultsMeta } from './resultsClasses'
 
 const ResultHero = ({ archetype, primaryCode, shsStrands, heroEnter }) => (
@@ -11,11 +10,18 @@ const ResultHero = ({ archetype, primaryCode, shsStrands, heroEnter }) => (
       <span className={resultsMeta}>Your main archetype</span>
     </div>
 
-    <div className="results-hero-item mb-4">
-      <ArchetypePortrait
-        riasecCode={primaryCode}
-        alt={`${archetype.name} character portrait`}
+    <div className="results-hero-item relative mx-auto mb-4 h-[200px] w-[200px] shrink-0 sm:h-[260px] sm:w-[260px]">
+      <div
+        className="h-full w-full rounded-2xl border border-neutral-300 bg-neutral-200"
+        role="img"
+        aria-label={`${archetype.name} portrait placeholder`}
       />
+      <span
+        className="absolute bottom-3 right-1 flex h-9 w-9 items-center justify-center rounded-full bg-landing-accent text-sm font-bold text-white shadow-sm"
+        aria-label={`Primary type ${primaryCode}`}
+      >
+        {primaryCode}
+      </span>
     </div>
 
     <h1 className="results-hero-item w-full font-[family-name:var(--font-display)] text-3xl font-extrabold text-landing-accent sm:text-4xl">

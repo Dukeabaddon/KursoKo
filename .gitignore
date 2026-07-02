@@ -23,6 +23,10 @@ graphify-out/
 .agent/
 .antigravity-kit/
 .venv-assets/
+.tools/drawbridge/
+
+# Drawbridge (visual UI annotations — local task queue + screenshots)
+.moat/
 
 # Playwright & test artifacts
 playwright-report/
@@ -33,3 +37,12 @@ tests/e2e/screenshots/
 
 # OS
 .DS_Store
+
+# Claude Code configuration
+.claude/
+
+# Windsurf configuration
+.windsurf/
+
+# Codex CLI configuration
+.codex/

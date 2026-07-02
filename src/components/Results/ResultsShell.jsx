@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { KursoKoLogo } from '../brand'
-import { ClickSpark } from '../ui'
+import { KursoKoLogo } from '../public/brand'
+import { ClickSpark } from '../shared/ui'
 import { resultsNavBtn } from './resultsClasses'
-import { SPARK_ACCENT } from '../assessment/assessmentClasses'
+import { SPARK_ACCENT } from '../shared/assessment/assessmentClasses'
 
 const ResultsShell = ({ onHome, children }) => (
   <div className="results-fold min-h-dvh bg-landing-paper text-landing-ink">

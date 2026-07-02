@@ -11,7 +11,9 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "knip": "knip",
-    "assets:landing": ".venv-assets/bin/python scripts/generate-landing-placeholders.py"
+    "assets:landing": ".venv-assets/bin/python scripts/generate-landing-placeholders.py",
+    "drawbridge:install": "test -d .tools/drawbridge || git clone --depth 1 https://github.com/Dukeabaddon/drawbridge.git .tools/drawbridge",
+    "drawbridge:extension-path": "node -e \"console.log(require('path').resolve('.tools/drawbridge/chrome-extension'))\""
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",

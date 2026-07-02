@@ -1,6 +1,6 @@
 import { Home, RotateCcw, Share2 } from 'lucide-react'
-import { ClickSpark } from '../ui'
-import { SPARK_ACCENT, SPARK_PURPLE } from '../assessment/assessmentClasses'
+import { ClickSpark } from '../shared/ui'
+import { SPARK_ACCENT, SPARK_PURPLE } from '../shared/assessment/assessmentClasses'
 import { resultsGhostBtn, resultsPrimaryBtn } from './resultsClasses'
 
 const ResultsFooter = ({ onHome, onRetake, onShare, shareMessage }) => (

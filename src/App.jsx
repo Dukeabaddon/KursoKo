@@ -5,9 +5,9 @@ import {
   Results,
   ErrorBoundary,
   LoadingSpinner,
-  ErrorState
+  ErrorState,
+  SkipLinks,
 } from './components'
-import SkipLinks from './components/SkipLinks'
 import { validateAndSanitize } from './utils/validation'
 import {
   startSession,

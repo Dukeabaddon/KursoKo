@@ -1,7 +1,7 @@
 @import "tailwindcss";
-@import "./styles/landing/index.css";
-@import "./styles/assessment/index.css";
-@import "./styles/results/index.css";
+@import "./components/landing/index.css";
+@import "./components/questionnaire/index.css";
+@import "./components/results/index.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Fredoka+One:wght@400&family=Nunito:wght@300;400;500;600;700;800;900&family=Concert+One:wght@400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
