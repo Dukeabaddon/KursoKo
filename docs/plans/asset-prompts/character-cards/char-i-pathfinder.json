@@ -1,0 +1,122 @@
+{
+  "project": "KursoKo",
+  "schema_version": 1,
+  "asset_set": "Share character card — The Pathfinder (Investigative / I)",
+  "character_card": {
+    "archetype_id": "pathfinder",
+    "archetype_name": "The Pathfinder",
+    "riasec_code": "I",
+    "riasec_type": "Investigative",
+    "tagline": "You follow questions until the truth shows up.",
+    "card_label": "THE PATHFINDER"
+  },
+  "deliverable": {
+    "filename": "src/assets/characters/pathfinder.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "fully transparent PNG — alpha outside border stroke only",
+    "safe_padding_px": 32
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "reference_description": "Modern Corporate Memphis edu illustration — lineless flat fills, minimal cel-shade on clothing folds only, thoughtful curious student",
+    "line_weight_px": 0,
+    "outline": "none on figure — shapes from color blocks only",
+    "fill": "solid flat color with optional 8% darker side panel on vest or shirt for depth",
+    "mood": "curious, analytical, calm focus",
+    "forbidden": [
+      "black ink outline on body",
+      "readable text",
+      "letter I",
+      "straight rectangle border",
+      "white background fill",
+      "photorealistic",
+      "3D render",
+      "lab coat stereotype only"
+    ]
+  },
+  "border_frame": {
+    "shape": "wonky skewed rounded quadrilateral",
+    "geometry": {
+      "left_edge": "slight inward lean top to bottom",
+      "top_edge": "slopes down 5 degrees left to right",
+      "right_edge": "nearly vertical with soft bow outward",
+      "bottom_edge": "slopes up 4 degrees left to right",
+      "corner_radius": "large bubbly rounded corners on all four vertices"
+    },
+    "stroke_hex": "#4B2C7F",
+    "stroke_weight_px": 5,
+    "interior_fill": "transparent",
+    "exterior": "fully transparent alpha",
+    "unique_skew_note": "frame leans slightly counter-clockwise — inquiry and discovery tilt"
+  },
+  "color": {
+    "riasec_code": "I",
+    "primary_accent": {
+      "hex": "#4B2C7F",
+      "use": "border stroke, cardigan or vest, magnifying glass handle"
+    },
+    "secondary_accent": {
+      "hex": "#4DB6AC",
+      "use": "chart dots, book spine stripe, lens glint"
+    },
+    "garment_neutrals": ["#FFFFFF", "#2D2D2D"],
+    "skin": {
+      "tone": "light peach",
+      "hex_approx": "#F2C4A0"
+    }
+  },
+  "character": {
+    "presentation": "young woman",
+    "age": "SHS to college",
+    "build": "slim, thoughtful",
+    "hair": "dark straight hair in low ponytail",
+    "face": "minimal — dot eyes looking down at notes, tiny nose tick, neutral focused mouth",
+    "diversity_note": "distinct from other five archetype cards"
+  },
+  "pose": {
+    "stance": "full body standing, one foot slightly forward",
+    "action": "holding open notebook in one hand, magnifying glass raised toward floating data dots in other hand",
+    "facing": "three-quarter toward viewer right",
+    "energy": "researching, connecting clues"
+  },
+  "clothes": {
+    "top": {
+      "garment": "white blouse under deep purple cardigan",
+      "primary_hex": "#4B2C7F",
+      "detail": "teal buttons on cardigan"
+    },
+    "bottom": {
+      "garment": "dark straight trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "simple loafers",
+      "color_hex": "#2D2D2D"
+    }
+  },
+  "subject": {
+    "scene_narrative": "Investigative student exploring questions inside a playful skewed sticker frame",
+    "hero_prop": "magnifying glass with teal glint on lens",
+    "supporting_props": ["open notebook", "three small floating teal dots suggesting data points"],
+    "environment": "none — transparent outside border only",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "wonky frame centered on canvas; figure offset to right inside frame",
+    "camera": "eye-level full-body",
+    "negative_space": "transparent margin outside purple border stroke",
+    "thumbnail_test": "skewed frame + person + magnifying glass readable at 120px"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 400,
+    "crisp_edges": true
+  },
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Ideogram", "Midjourney v6"],
+    "negative_prompt": "straight rectangle border, white background, black outline on character, photorealistic, 3d render, text, watermark, letter I, sharp square corners, microscope POV, anime lineart, cluttered lab background"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, fully transparent PNG outside the frame. Draw a wonky skewed rounded quadrilateral border — NOT a straight rectangle: left edge leans slightly inward, top edge slopes down left-to-right, right edge nearly vertical with soft outward bow, bottom edge slopes up left-to-right, all corners heavily rounded like a bubble sticker. Border stroke solid deep purple #4B2C7F, medium weight about 5px, transparent interior except character. Lineless Corporate Memphis style — no black outlines, flat fills, minimal cel-shade on clothes. Young woman, SHS-college age, light peach skin, dark hair in low ponytail, minimal dot eyes looking at notes. White blouse under purple #4B2C7F cardigan with teal #4DB6AC buttons, dark trousers, dark loafers. Three-quarter pose, open notebook in one hand, magnifying glass with teal lens glint in other, three small teal floating dots near glass. Figure off-center toward right inside frame. Curious analytical pathfinder energy. NO text, NO letters, NO background fill, NO white canvas — transparent alpha outside purple border."
+}

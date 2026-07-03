@@ -1,0 +1,122 @@
+{
+  "project": "KursoKo",
+  "schema_version": 1,
+  "asset_set": "Share character card — The Builder (Realistic / R)",
+  "character_card": {
+    "archetype_id": "builder",
+    "archetype_name": "The Builder",
+    "riasec_code": "R",
+    "riasec_type": "Realistic",
+    "tagline": "You turn ideas into real things.",
+    "card_label": "THE BUILDER"
+  },
+  "deliverable": {
+    "filename": "src/assets/characters/builder.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "fully transparent PNG — alpha outside border stroke only",
+    "safe_padding_px": 32
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "reference_description": "Modern Corporate Memphis edu illustration — lineless flat fills, minimal cel-shade on clothing folds only, friendly professional-casual student",
+    "line_weight_px": 0,
+    "outline": "none on figure — shapes from color blocks only",
+    "fill": "solid flat color with optional 8% darker side panel on vest or shirt for depth",
+    "mood": "capable, hands-on, grounded confidence",
+    "forbidden": [
+      "black ink outline on body",
+      "readable text",
+      "letter R",
+      "straight rectangle border",
+      "white background fill",
+      "photorealistic",
+      "3D render",
+      "anime heavy lineart"
+    ]
+  },
+  "border_frame": {
+    "shape": "wonky skewed rounded quadrilateral",
+    "geometry": {
+      "left_edge": "nearly vertical, slight outward lean",
+      "top_edge": "slopes down 4 degrees left to right",
+      "right_edge": "tapers inward toward top — soft trapezoid",
+      "bottom_edge": "slopes up 3 degrees left to right",
+      "corner_radius": "large bubbly rounded corners on all four vertices"
+    },
+    "stroke_hex": "#4DB6AC",
+    "stroke_weight_px": 5,
+    "interior_fill": "transparent",
+    "exterior": "fully transparent alpha",
+    "unique_skew_note": "frame leans slightly clockwise — energetic forward tilt"
+  },
+  "color": {
+    "riasec_code": "R",
+    "primary_accent": {
+      "hex": "#4DB6AC",
+      "use": "border stroke, vest or work shirt, hero prop accents"
+    },
+    "secondary_accent": {
+      "hex": "#9575CD",
+      "use": "small gear icon, tool grip wrap, cuff trim"
+    },
+    "garment_neutrals": ["#FFFFFF", "#2D2D2D"],
+    "skin": {
+      "tone": "medium warm beige",
+      "hex_approx": "#E8B896"
+    }
+  },
+  "character": {
+    "presentation": "young man",
+    "age": "SHS to college",
+    "build": "sturdy, approachable",
+    "hair": "short curly dark hair",
+    "face": "minimal — dot eyes, tiny nose tick, small confident smile",
+    "diversity_note": "distinct from other five archetype cards"
+  },
+  "pose": {
+    "stance": "full body standing, weight on back foot",
+    "action": "holding wrench in one hand, other hand resting on compact toolbox at side",
+    "facing": "three-quarter toward viewer left",
+    "energy": "ready to build and fix things"
+  },
+  "clothes": {
+    "top": {
+      "garment": "white shirt under teal utility vest",
+      "primary_hex": "#4DB6AC",
+      "detail": "lavender stripe on vest pocket"
+    },
+    "bottom": {
+      "garment": "dark charcoal work trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "simple dark sneakers",
+      "color_hex": "#2D2D2D"
+    }
+  },
+  "subject": {
+    "scene_narrative": "Hands-on builder student inside a playful skewed sticker frame — tools and practical maker energy",
+    "hero_prop": "chrome-adjustable wrench with lavender grip tape",
+    "supporting_props": ["compact red toolbox", "small gear floating near shoulder"],
+    "environment": "none — transparent outside border only",
+    "symbolic": false
+  },
+  "composition": {
+    "layout": "wonky frame centered on canvas; figure offset to right inside frame",
+    "camera": "eye-level full-body",
+    "negative_space": "transparent margin outside purple-teal border stroke",
+    "thumbnail_test": "skewed frame + person + wrench readable at 120px"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 400,
+    "crisp_edges": true
+  },
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Ideogram", "Midjourney v6"],
+    "negative_prompt": "straight rectangle border, axis-aligned box, white background, cream background, black outline on character, photorealistic, 3d render, text, watermark, letter R, sharp square corners, drop shadow on ground, anime lineart, cluttered background"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, fully transparent PNG outside the frame. Draw a wonky skewed rounded quadrilateral border — NOT a straight rectangle: left edge nearly vertical, top edge slopes gently down left-to-right, right edge tapers inward toward the top, bottom edge slopes up left-to-right, all four corners heavily rounded like a soft bubble sticker. Border stroke solid teal #4DB6AC, medium weight about 5px, empty transparent interior except the character. Lineless Corporate Memphis style — no black outlines on the figure, flat color fills, minimal cel-shade on clothing only. Young man, SHS-college age, medium warm beige skin, short curly dark hair, minimal dot eyes and small smile. White shirt under teal #4DB6AC utility vest with small lavender #9575CD pocket stripe, dark charcoal trousers, dark sneakers. Three-quarter pose standing, holding a wrench with lavender grip, compact toolbox at side, small gear near shoulder. Figure placed off-center toward the right inside the frame. Friendly capable builder energy. NO text, NO letters, NO background fill, NO floor, NO white canvas — transparent alpha everywhere outside the teal border stroke."
+}

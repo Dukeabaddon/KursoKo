@@ -1,0 +1,122 @@
+{
+  "project": "KursoKo",
+  "schema_version": 1,
+  "asset_set": "Share character card — The Visionary (Enterprising / E)",
+  "character_card": {
+    "archetype_id": "visionary",
+    "archetype_name": "The Visionary",
+    "riasec_code": "E",
+    "riasec_type": "Enterprising",
+    "tagline": "You see opportunity and move others to act.",
+    "card_label": "THE VISIONARY"
+  },
+  "deliverable": {
+    "filename": "src/assets/characters/visionary.png",
+    "width_px": 640,
+    "height_px": 640,
+    "aspect_ratio": "1:1",
+    "background": "fully transparent PNG — alpha outside border stroke only",
+    "safe_padding_px": 32
+  },
+  "art_style": {
+    "medium": "flat vector illustration",
+    "reference_description": "Modern Corporate Memphis edu illustration — lineless flat fills, confident presenter energy like a student running a booth or pitch",
+    "line_weight_px": 0,
+    "outline": "none on figure",
+    "fill": "solid flat color with minimal cel-shade on vest fold",
+    "mood": "confident, forward-leaning, persuasive but friendly",
+    "forbidden": [
+      "black ink outline on body",
+      "readable text",
+      "letter E",
+      "straight rectangle border",
+      "white background fill",
+      "photorealistic",
+      "3D render",
+      "corporate boardroom stock photo vibe"
+    ]
+  },
+  "border_frame": {
+    "shape": "wonky skewed rounded quadrilateral",
+    "geometry": {
+      "left_edge": "nearly vertical",
+      "top_edge": "slopes down 6 degrees left to right — most dynamic top slope of the set",
+      "right_edge": "inward taper with forward momentum",
+      "bottom_edge": "slopes up 4 degrees left to right",
+      "corner_radius": "large rounded corners"
+    },
+    "stroke_hex": "#FF8A65",
+    "stroke_weight_px": 5,
+    "interior_fill": "transparent",
+    "exterior": "fully transparent alpha",
+    "unique_skew_note": "frame pitches forward like leaning into a pitch"
+  },
+  "color": {
+    "riasec_code": "E",
+    "primary_accent": {
+      "hex": "#FF8A65",
+      "use": "border stroke, vest, megaphone body"
+    },
+    "secondary_accent": {
+      "hex": "#FFD54F",
+      "use": "rising arrow icon, lapel pin, chart bar highlight"
+    },
+    "garment_neutrals": ["#FFFFFF", "#2D2D2D"],
+    "skin": {
+      "tone": "light olive",
+      "hex_approx": "#DEB887"
+    }
+  },
+  "character": {
+    "presentation": "young man",
+    "age": "SHS to college",
+    "build": "upright confident posture",
+    "hair": "short neat black hair",
+    "face": "minimal — dot eyes, confident half-smile",
+    "diversity_note": "distinct from other five archetype cards"
+  },
+  "pose": {
+    "stance": "full body standing, chest open",
+    "action": "holding small megaphone in one hand, other hand gesturing upward toward floating rising arrow",
+    "facing": "three-quarter toward viewer left",
+    "energy": "leading a group project or school fair booth"
+  },
+  "clothes": {
+    "top": {
+      "garment": "white collared shirt under coral vest",
+      "primary_hex": "#FF8A65",
+      "detail": "golden yellow lapel pin shaped like tiny upward arrow"
+    },
+    "bottom": {
+      "garment": "dark tailored trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "dark dress shoes",
+      "color_hex": "#2D2D2D"
+    }
+  },
+  "subject": {
+    "scene_narrative": "Enterprising student pitching an idea inside a playful coral skewed sticker frame",
+    "hero_prop": "compact friendly megaphone in coral and white",
+    "supporting_props": ["floating upward arrow in golden yellow", "simple three-bar chart icon with no numbers"],
+    "environment": "none — transparent outside border only",
+    "symbolic": true
+  },
+  "composition": {
+    "layout": "wonky frame centered; figure offset right, megaphone and arrow in upper-left breathing room",
+    "camera": "eye-level full-body",
+    "negative_space": "transparent outside coral border",
+    "thumbnail_test": "coral skewed frame + megaphone readable at 120px"
+  },
+  "technical": {
+    "export": "PNG-24 alpha",
+    "max_file_kb": 400,
+    "crisp_edges": true
+  },
+  "generation": {
+    "recommended_models": ["Flux Dev", "DALL-E 3", "Ideogram", "Midjourney v6"],
+    "negative_prompt": "straight rectangle border, white background, black outline, photorealistic, text, letter E, suit and tie corporate cliche, anime, watermark, office background"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, fully transparent PNG outside frame. Wonky skewed rounded quadrilateral border — NOT a straight rectangle: left edge nearly vertical, top edge slopes down 6 degrees left-to-right for forward energy, right edge tapers inward, bottom slopes up left-to-right, all corners heavily rounded. Border stroke coral orange #FF8A65, 5px solid, transparent interior. Lineless Corporate Memphis style, no black outlines, flat fills, minimal vest fold shade. Young man, SHS-college, light olive skin, short neat black hair, confident minimal dot eyes and half-smile. White collared shirt, coral #FF8A65 vest with golden #FFD54F tiny upward-arrow lapel pin, dark trousers, dark shoes. Full body standing open posture, compact megaphone in one hand, other hand gesturing up toward floating golden upward arrow and simple three-bar chart icon with no numbers or text. Figure off-center right inside frame. Confident visionary pitch energy. NO text, NO letters, NO background — transparent outside coral border."
+}
