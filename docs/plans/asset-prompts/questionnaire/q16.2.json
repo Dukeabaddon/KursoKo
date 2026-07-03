@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q16 option 2 — Documenting wildlife behavior",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q16 option 2 — Describing bird calls heard from a park bench",
   "questionnaire": {
     "question_id": 16,
-    "question_text": "Which outdoor work interests you?",
+    "question_text": "Which would you rather do?",
     "option_key": "2",
     "slot": "16.2",
-    "choice_text": "Documenting wildlife behavior",
-    "hint": "Field research",
+    "choice_text": "Describing bird calls heard from a park bench",
+    "hint": "Curious",
     "riasec_code": "I",
     "riasec_type": "Investigative",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "quiet curious field-science energy — approachable naturalist hobby, not sterile lab",
+    "mood": "observant peaceful energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,19 +39,32 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill",
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)",
       "hunting weapon or trapped animal imagery"
     ]
   },
   "color": {
     "riasec_code": "I",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#4B2C7F", "use": "field vest, notebook cover" },
-    "riasec_secondary": { "hex": "#4DB6AC", "use": "binocular lens rim accent" },
+    "riasec_accent": {
+      "hex": "#4B2C7F",
+      "use": "field vest, notebook cover"
+    },
+    "riasec_secondary": {
+      "hex": "#4DB6AC",
+      "use": "binocular lens rim accent"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "deep brown",
+      "hex_approx": "#8D5524"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young woman",
@@ -60,30 +76,44 @@
     "diversity_note": "unique cast per slot — female presentation, deep brown skin, afro puff distinguishes from other slots"
   },
   "pose": {
-    "stance": "full body, crouched profile at the edge of tall grass",
-    "action": "raising binoculars to her eyes with one hand while balancing an open field notebook on her knee, pencil in the other hand",
+    "stance": "full body, seated on park bench",
+    "action": "describing bird calls heard from a park bench into a small recorder",
     "facing": "left profile, gaze tracking toward distant birds",
     "energy": "quiet, patient, curious observation"
   },
   "clothes": {
-    "top": { "garment": "sleeveless field vest over long-sleeve tee", "color_hex": "#4B2C7F", "detail": "charcoal collar trim, teal zipper pull" },
-    "bottom": { "garment": "cargo field trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "lace-up hiking boots", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "sleeveless field vest over long-sleeve tee",
+      "color_hex": "#4B2C7F",
+      "detail": "charcoal collar trim, teal zipper pull"
+    },
+    "bottom": {
+      "garment": "cargo field trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "lace-up hiking boots",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Documenting wildlife behavior",
-    "activity_hint": "Field research",
-    "scene_narrative": "A young woman crouches at a grassy field edge, binoculars raised in one hand and a pencil sketching a bird silhouette into her field notebook with the other — quiet naturalist patience captured full-body, in the same approachable maker language as the approved Q1 references.",
-    "hero_prop": "rubber-armored binoculars raised to eye level, teal-tinted lens rims",
-    "supporting_props": ["open field notebook resting on knee with a simple bird sketch", "wooden pencil", "two soft-focus bird silhouettes in the distance"],
-    "environment": "thin grassy field-edge line, faint grey decorative circles behind figure — no sky detail, no wall",
+    "choice_label": "Describing bird calls heard from a park bench",
+    "activity_hint": "Curious",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: describing bird calls heard from a park bench into a small recorder. Hero focus on park bench with birds in nearby tree. Activity matches \"Describing bird calls heard from a park bench\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "park bench with birds in nearby tree",
+    "supporting_props": [
+      "small audio recorder",
+      "field notebook",
+      "leaf bookmark"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grassy field-edge line, faint grey decorative circles behind figure — no sky detail, no wall",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center crouched low, binoculars and gaze directing eye toward upper-right distant birds, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of crouched person + binoculars readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person on bench + birds readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -91,8 +121,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, hunting weapon, trapped or injured animal, guns, blood"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young slender woman, deep brown skin, natural coily afro puff, crouched in left profile at a grassy field edge. She wears a purple #4B2C7F sleeveless field vest with charcoal collar trim and a teal zipper pull, over charcoal cargo trousers and lace-up hiking boots. She raises rubber-armored binoculars with teal-tinted lens rims to her eyes with one hand while sketching a bird silhouette into an open field notebook balanced on her knee with a pencil in the other hand. Two soft-focus bird silhouettes sit in the distance. Thin grassy field-edge line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Quiet curious naturalist energy."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, deep brown skin, natural coily afro puff, sleeveless field vest over long-sleeve tee #4B2C7F with charcoal collar trim, teal zipper pull, cargo field trousers #2D2D2D, lace-up hiking boots #2D2D2D. Pose: full body, seated on park bench, describing bird calls heard from a park bench into a small recorder. Hero prop: park bench with birds in nearby tree. Supporting props: small audio recorder, field notebook, leaf bookmark. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Investigative RIASEC accent #4B2C7F on props and trim, #4DB6AC secondary accents. Observant peaceful energy. Full head-to-feet visible."
 }

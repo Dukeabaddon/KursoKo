@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q13 option 2 — Researching quantum computing",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q13 option 2 — Testing if a phone hack online really works",
   "questionnaire": {
     "question_id": 13,
-    "question_text": "Which technical challenge excites you?",
+    "question_text": "Which would you rather do?",
     "option_key": "2",
     "slot": "13.2",
-    "choice_text": "Researching quantum computing",
-    "hint": "Advanced physics",
+    "choice_text": "Testing if a phone hack online really works",
+    "hint": "Curious",
     "riasec_code": "I",
     "riasec_type": "Investigative",
     "sensitive_topic": false
@@ -19,16 +22,17 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "thoughtful, analytical research energy",
+    "mood": "skeptical experimental energy",
+    "style_lock": "STRICT KursoKo unDraw match: 01.1.png and 01.2.png ONLY. Flat vector, 2px outline, dot-eye face. NOT anime/manga.",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,53 +40,91 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)",
+      "anime",
+      "manga",
+      "chibi",
+      "large expressive eyes",
+      "detailed nose or mouth",
+      "colored hair (blue purple pink green)",
+      "gaming chair",
+      "office chair",
+      "wifi router",
+      "laptop on floor",
+      "hoodie streetwear look"
     ]
   },
   "color": {
     "riasec_code": "I",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#4B2C7F", "use": "glowing orbit halo around the atom icon" },
-    "riasec_secondary": { "hex": "#4DB6AC", "use": "orbit ring lines, sweater cuff stripe" },
+    "riasec_accent": {
+      "hex": "#4B2C7F",
+      "use": "glowing orbit halo around the atom icon"
+    },
+    "riasec_secondary": {
+      "hex": "#4DB6AC",
+      "use": "orbit ring lines, sweater cuff stripe"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "deep brown",
+      "hex_approx": "#8D5524"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young man",
     "age": "college-age",
     "build": "slim, thoughtful posture",
     "skin_tone": "deep brown",
-    "hair": "short afro",
-    "face": "minimal — two dot eyes, small contemplative smile, round glasses",
+    "hair": "short natural black hair, neat side part — NATURAL hair color only, never purple or blue",
+    "face": "minimal unDraw face ONLY — two small dot eyes, tiny neutral line mouth, NO nose, NO anime eyes, NO eyebrows detail",
     "diversity_note": "unique cast per slot — distinct from other questionnaire characters"
   },
   "pose": {
-    "stance": "full body, standing, head tilted upward in thought",
-    "action": "holding a tablet in one hand while reaching toward a floating glowing atom/orbit icon with the other",
-    "facing": "3/4 toward viewer, gaze on the floating atom icon",
+    "stance": "full body, seated with phone",
+    "action": "testing whether a phone hack online really works",
+    "facing": "3/4 toward viewer, calm curious look",
     "energy": "thoughtful, curious, analytical"
   },
   "clothes": {
-    "top": { "garment": "cardigan over collared shirt", "color_hex": "#4B2C7F", "detail": "teal cuff stripe, white shirt collar" },
-    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "loafers", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "short-sleeve purple tee",
+      "color_hex": "#4B2C7F",
+      "detail": "charcoal sleeve caps, teal cuff stripe — NOT a hoodie"
+    },
+    "bottom": {
+      "garment": "straight trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "loafers",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Researching quantum computing",
-    "activity_hint": "Advanced physics",
-    "scene_narrative": "A young man in glasses reaches toward a floating glowing atom made of teal orbit rings, tablet in his other hand — full-body flat vector language matching the approved Q1 references.",
-    "hero_prop": "floating glowing atom icon with teal orbit rings",
-    "supporting_props": ["tablet", "small floating particle dots", "notebook tucked under arm"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Testing if a phone hack online really works",
+    "activity_hint": "Curious",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: testing whether a phone hack online really works. Hero focus on phone showing tutorial steps. Activity matches \"Testing if a phone hack online really works\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "phone showing tutorial steps",
+    "supporting_props": [
+      "notes",
+      "timer icon",
+      "charger cable"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + atom icon readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + phone readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -90,8 +132,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
     "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, deep brown skin, short afro, round glasses, standing with head tilted upward in thought. Purple #4B2C7F cardigan with teal #4DB6AC cuff stripe over a white collared shirt, charcoal trousers, loafers. He holds a tablet in one hand while reaching toward a floating glowing atom icon made of teal orbit rings with the other; small particle dots float nearby, notebook tucked under his arm. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Investigative RIASEC teal accent. Thoughtful analytical energy. Full head-to-feet visible, NOT a hands-only crop."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, deep brown skin, short natural black hair, neat side part — NATURAL hair color only, never purple or blue, short-sleeve purple tee #4B2C7F with charcoal sleeve caps, teal cuff stripe — NOT a hoodie, straight trousers #2D2D2D, loafers #2D2D2D. Pose: full body, seated with phone, testing whether a phone hack online really works. Hero prop: phone showing tutorial steps. Supporting props: notes, timer icon, charger cable. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Investigative RIASEC accent #4B2C7F on props and trim, #4DB6AC secondary accents. Skeptical experimental energy. Full head-to-feet visible."
 }

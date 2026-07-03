@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q1 option 2 — Analyzing patterns in stock market data",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q1 option 2 — Comparing two phones before your family buys one",
   "questionnaire": {
     "question_id": 1,
-    "question_text": "Which task would you enjoy more?",
+    "question_text": "Which would you rather do?",
     "option_key": "2",
     "slot": "1.2",
-    "choice_text": "Analyzing patterns in stock market data",
-    "hint": "Data investigation",
+    "choice_text": "Comparing two phones before your family buys one",
+    "hint": "Curious",
     "riasec_code": "I",
     "riasec_type": "Investigative",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters; this slot directly echoes the 1.2 data/chart vibe with a new diverse character",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters; this slot directly echoes the 1.2 data/chart vibe with a new diverse character",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "curious analytical energy — approachable data-nerd focus, not a corporate trading floor",
+    "mood": "curious deciding energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,18 +39,31 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "I",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#4B2C7F", "use": "tablet screen tint block, darker piping on collar" },
-    "riasec_secondary": { "hex": "#4DB6AC", "use": "trend-line highlight, cuff stripe, wire lead" },
+    "riasec_accent": {
+      "hex": "#4B2C7F",
+      "use": "tablet screen tint block, darker piping on collar"
+    },
+    "riasec_secondary": {
+      "hex": "#4DB6AC",
+      "use": "trend-line highlight, cuff stripe, wire lead"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "medium brown", "hex_approx": "#A9744F" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "medium brown",
+      "hex_approx": "#A9744F"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young man",
@@ -59,30 +75,43 @@
     "diversity_note": "unique cast per slot — distinct from 1.1's young woman; matches 1.2 reference silhouette and data-chart narrative"
   },
   "pose": {
-    "stance": "full body, side profile standing, weight on back foot, torso angled toward prop",
-    "action": "holding a tablet flat in one arm showing an ascending candlestick trend line, tracing it with a stylus in the other hand",
+    "stance": "full body, standing 3/4 turn",
+    "action": "holding two smartphones side by side, comparing screens thoughtfully",
     "facing": "left profile, 3/4 toward tablet screen",
     "energy": "curious, focused, analytical"
   },
   "clothes": {
-    "top": { "garment": "quarter-zip sweater", "color_hex": "#4B2C7F", "detail": "charcoal chest panel, teal collar trim" },
-    "bottom": { "garment": "tapered trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "canvas sneakers", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "quarter-zip sweater",
+      "color_hex": "#4B2C7F",
+      "detail": "charcoal chest panel, teal collar trim"
+    },
+    "bottom": {
+      "garment": "tapered trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "canvas sneakers",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Analyzing patterns in stock market data",
-    "activity_hint": "Data investigation",
-    "scene_narrative": "A young man stands in profile studying a tablet that displays a simple upward candlestick trend line, tracing a highlighted cluster with a stylus while a small magnifying glass hovers nearby — the same full-body flat vector language as reference 1.2, echoing its data-and-chart mood with a fresh diverse character.",
-    "hero_prop": "tablet with lavender-tinted screen showing abstract teal candlestick bars and one violet highlighted cluster",
-    "supporting_props": ["stylus", "small magnifying glass with brass ring", "loose printed chart page tucked under arm"],
-    "environment": "thin grey floor line only, two faint grey decorative circles behind figure — no room interior",
+    "choice_label": "Comparing two phones before your family buys one",
+    "activity_hint": "Curious",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: holding two smartphones side by side, comparing screens thoughtfully. Hero focus on two smartphones held for comparison. Activity matches \"Comparing two phones before your family buys one\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "two smartphones held for comparison",
+    "supporting_props": [
+      "small notepad",
+      "checkmark icon bubble"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey decorative circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure right-of-center, tablet held left toward viewer, mirrors 1.2 balance",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + tablet readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + two phones readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -90,8 +119,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, ticker symbols, readable numbers, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man in side profile, medium brown skin, short black fade hair, purple #4B2C7F quarter-zip sweater with charcoal chest panel and teal #4DB6AC collar trim, charcoal tapered trousers and canvas sneakers. He studies a tablet held in one arm showing a lavender-tinted screen with an ascending teal candlestick trend line and one violet highlighted cluster, tracing it with a stylus in his other hand; a small brass-rimmed magnifying glass floats near the highlighted bars and a loose printed chart page peeks from under his arm. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Investigative RIASEC teal accent on trend line and cuff. Curious analytical energy, full head-to-feet visible, echoes the data-chart mood of reference 1.2."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, medium brown skin, short black fade, close-cropped sides, quarter-zip sweater #4B2C7F with charcoal chest panel, teal collar trim, tapered trousers #2D2D2D, canvas sneakers #2D2D2D. Pose: full body, standing 3/4 turn, holding two smartphones side by side, comparing screens thoughtfully. Hero prop: two smartphones held for comparison. Supporting props: small notepad, checkmark icon bubble. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Investigative RIASEC accent #4B2C7F on props and trim, #4DB6AC secondary accents. Curious deciding energy. Full head-to-feet visible."
 }

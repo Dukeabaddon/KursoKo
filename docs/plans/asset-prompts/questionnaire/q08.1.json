@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q8 option 1 — Designing streetwear fashion",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q8 option 1 — Designing a T-shirt idea for your class",
   "questionnaire": {
     "question_id": 8,
-    "question_text": "Which artistic activity excites you?",
+    "question_text": "Which sounds more fun to you?",
     "option_key": "1",
     "slot": "8.1",
-    "choice_text": "Designing streetwear fashion",
-    "hint": "Creative expression",
+    "choice_text": "Designing a T-shirt idea for your class",
+    "hint": "Creative",
     "riasec_code": "A",
     "riasec_type": "Artistic",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "creative, expressive energy for students",
+    "mood": "creative bold energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,18 +39,31 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "A",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#FFD54F", "use": "sketchpad cover, fabric swatch, sneaker accent" },
-    "riasec_secondary": { "hex": "#9575CD", "use": "hanger garment accent" },
+    "riasec_accent": {
+      "hex": "#FFD54F",
+      "use": "sketchpad cover, fabric swatch, sneaker accent"
+    },
+    "riasec_secondary": {
+      "hex": "#9575CD",
+      "use": "hanger garment accent"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "warm medium brown", "hex_approx": "#C8956C" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "warm medium brown",
+      "hex_approx": "#C8956C"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "androgynous young person",
@@ -59,30 +75,44 @@
     "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "stance": "full body, side profile standing beside a garment hanger",
-    "action": "sketching a design on a pad while holding a fabric swatch up toward a hanging jacket silhouette",
+    "stance": "full body, standing with sketch raised",
+    "action": "sketching a T-shirt design on paper",
     "facing": "side profile toward the hanger prop",
     "energy": "creative, expressive"
   },
   "clothes": {
-    "top": { "garment": "oversized varsity jacket", "color_hex": "#4B2C7F", "detail": "gold cuff and collar stripe" },
-    "bottom": { "garment": "wide-leg pants", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "chunky sneakers", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "oversized varsity jacket",
+      "color_hex": "#4B2C7F",
+      "detail": "gold cuff and collar stripe"
+    },
+    "bottom": {
+      "garment": "wide-leg pants",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "chunky sneakers",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Designing streetwear fashion",
-    "activity_hint": "Creative expression",
-    "scene_narrative": "A young designer sketches a new streetwear silhouette on a pad while holding up a fabric swatch beside a hanging jacket on a garment rack, capturing the thrill of creative expression through fashion — same full-body flat vector language as the approved reference assets.",
-    "hero_prop": "garment hanger displaying a simple gold-accented streetwear jacket silhouette",
-    "supporting_props": ["sketchpad with wavy scribble lines", "fabric swatch square", "pencil"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Designing a T-shirt idea for your class",
+    "activity_hint": "Creative",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: sketching a T-shirt design on paper. Hero focus on T-shirt flat sketch with bold shapes. Activity matches \"Designing a T-shirt idea for your class\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "T-shirt flat sketch with bold shapes",
+    "supporting_props": [
+      "fabric markers",
+      "color swatches",
+      "tape roll"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + hanger readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + tee sketch readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -90,8 +120,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
     "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Androgynous young college-age person, warm medium brown skin, short curly afro, standing in side profile beside a garment hanger. Purple #4B2C7F oversized varsity jacket with gold #FFD54F cuff and collar stripe, charcoal wide-leg pants and chunky sneakers. They sketch a design on a pad while holding a gold fabric swatch up toward a hanging jacket silhouette with lavender accent on the rack. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Artistic RIASEC accent gold on sketchpad and swatch, lavender on hanger garment. Creative, expressive energy. Full head-to-feet visible."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, androgynous young person, warm medium brown skin, short curly afro, oversized varsity jacket #4B2C7F with gold cuff and collar stripe, wide-leg pants #2D2D2D, chunky sneakers #2D2D2D. Pose: full body, standing with sketch raised, sketching a T-shirt design on paper. Hero prop: T-shirt flat sketch with bold shapes. Supporting props: fabric markers, color swatches, tape roll. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Artistic RIASEC accent #FFD54F on props and trim, #9575CD secondary accents. Creative bold energy. Full head-to-feet visible."
 }

@@ -1,0 +1,67 @@
+{
+    "projectId": "kurso-ko",
+    "version": "2.0.0-research-extension",
+    "generatedDate": "2025-06-30",
+    "description": "Extended research dataset for KursoKo RIASEC career-assessment app — PH-focused",
+    "scope": {
+      "regions": ["NCR", "Bulacan", "Cavite", "Laguna", "Rizal", "Antipolo", "Pampanga"],
+      "schoolTypes": ["SUC", "LUC", "public-college", "private-university", "private-college", "specialty-school", "chain-school", "SHS", "TVET"],
+      "scholarshipTypes": ["government", "CHED", "UniFAST", "DOST", "TESDA", "DepEd", "OWWA", "LGU", "private-foundation", "corporate", "university-specific", "SHS", "TVET", "international"]
+    },
+    "counts": {
+      "scholarships": {
+        "previousTotal": 91,
+        "newEntries": 112,
+        "newTotal": 203,
+        "targetPublic": 300,
+        "targetPrivate": 200,
+        "breakdown": {
+          "government": 48,
+          "LGU": 32,
+          "privateFoundation": 18,
+          "corporate": 20,
+          "universitySpecific": 15,
+          "international": 12,
+          "TVET": 8
+        }
+      },
+      "universities": {
+        "previousTotal": 163,
+        "newEntries": 147,
+        "newTotal": 310,
+        "target": 400,
+        "breakdown": {
+          "NCR-public": 12,
+          "NCR-private": 45,
+          "NCR-SHS-TVET": 18,
+          "Bulacan": 14,
+          "Cavite": 16,
+          "Laguna": 18,
+          "Rizal-Antipolo": 12,
+          "Pampanga": 12
+        }
+      },
+      "programs": {
+        "previousTotal": 153,
+        "newEntries": 120,
+        "newTotal": 273
+      },
+      "careers": {
+        "previousTotal": 20,
+        "newEntries": 35,
+        "newTotal": 55
+      },
+      "courseCombos": {
+        "previousTotal": 20,
+        "unchanged": 20,
+        "note": "All 20 RIASEC 2-letter combos already covered with examples"
+      }
+    },
+    "verificationNote": "All new entries include verification metadata. Entries marked 'unknown' status require further manual verification. Entries marked 'active' are based on official sources checked as of the verificationDate.",
+    "dataQuality": {
+      "linkCheckPassRate": "estimated 78%",
+      "entriesNeedingManualVerify": 34,
+      "staleEntriesFlagged": 8,
+      "discontinuedEntriesFlagged": 3
+    }
+  }

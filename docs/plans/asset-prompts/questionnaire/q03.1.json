@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q3 option 1 — Starting an online business",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q3 option 1 — Calling out snack deals during a school fair",
   "questionnaire": {
     "question_id": 3,
-    "question_text": "Which would you rather do?",
+    "question_text": "Pick the one you'd enjoy more.",
     "option_key": "1",
     "slot": "3.1",
-    "choice_text": "Starting an online business",
-    "hint": "Entrepreneurship",
+    "choice_text": "Calling out snack deals during a school fair",
+    "hint": "Persuasive",
     "riasec_code": "E",
     "riasec_type": "Enterprising",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "energetic startup-hustle vibe — approachable small-business launch, not a corporate boardroom",
+    "mood": "upbeat persuasive energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,18 +39,31 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "E",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#FF8A65", "use": "phone growth-arrow icon, blazer lapel piping" },
-    "riasec_secondary": { "hex": "#FFD54F", "use": "box corner star sticker, shoe accent" },
+    "riasec_accent": {
+      "hex": "#FF8A65",
+      "use": "phone growth-arrow icon, blazer lapel piping"
+    },
+    "riasec_secondary": {
+      "hex": "#FFD54F",
+      "use": "box corner star sticker, shoe accent"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "olive tan", "hex_approx": "#D9A066" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "olive tan",
+      "hex_approx": "#D9A066"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young woman",
@@ -59,30 +75,44 @@
     "diversity_note": "unique cast per slot — distinct hairstyle, skin tone, and outfit from prior slots"
   },
   "pose": {
-    "stance": "full body, standing, one hip forward, confident weight shift",
-    "action": "holding a small shipping box under one arm while raising a phone in the other hand showing an upward growth-arrow icon",
+    "stance": "full body, standing behind small table",
+    "action": "calling out snack deals during a school fair",
     "facing": "3/4 toward viewer, phone tilted up",
     "energy": "energetic, optimistic, hands-on hustle"
   },
   "clothes": {
-    "top": { "garment": "cropped blazer over a plain tee", "color_hex": "#4B2C7F", "detail": "charcoal lapel, coral piping trim" },
-    "bottom": { "garment": "wide-leg trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "sneakers with gold accent stripe", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "cropped blazer over a plain tee",
+      "color_hex": "#4B2C7F",
+      "detail": "charcoal lapel, coral piping trim"
+    },
+    "bottom": {
+      "garment": "wide-leg trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "sneakers with gold accent stripe",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Starting an online business",
-    "activity_hint": "Entrepreneurship",
-    "scene_narrative": "A young woman stands confidently holding a small taped shipping box under one arm while raising a phone showing a coral growth-arrow icon in the other — a full-body flat vector figure capturing the DIY energy of launching a small online shop, in the same style language as the approved references.",
-    "hero_prop": "smartphone with a warm cream screen showing a simple coral upward growth-arrow icon and small bar shapes",
-    "supporting_props": ["small taped shipping box with a gold star sticker on the corner", "roll of packing tape tucked under arm"],
-    "environment": "thin grey floor line only, two faint grey decorative circles behind figure — no office interior",
+    "choice_label": "Calling out snack deals during a school fair",
+    "activity_hint": "Persuasive",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: calling out snack deals during a school fair. Hero focus on snack fair booth with treat display. Activity matches \"Calling out snack deals during a school fair\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "snack fair booth with treat display",
+    "supporting_props": [
+      "small cash box",
+      "price tag shapes without text",
+      "napkin stack"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey decorative circles behind figure — no office interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, phone raised right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + phone and box readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + fair booth readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -90,8 +120,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, dollar sign, currency symbols, readable shipping label, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Confident college-age young woman, olive tan skin, sleek high ponytail, purple #4B2C7F cropped blazer with charcoal lapel and coral #FF8A65 piping over a plain tee, charcoal wide-leg trousers, sneakers with a gold accent stripe. She stands with one hip forward holding a small taped tan shipping box with a gold #FFD54F star sticker under one arm, while raising a smartphone in her other hand showing a warm cream screen with a simple coral upward growth-arrow icon, no readable text. A roll of packing tape peeks from under her arm. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Enterprising RIASEC coral accent on phone icon and blazer trim. Energetic optimistic hustle energy, full head-to-feet visible."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, olive tan skin, high ponytail, sleek, cropped blazer over a plain tee #4B2C7F with charcoal lapel, coral piping trim, wide-leg trousers #2D2D2D, sneakers with gold accent stripe #2D2D2D. Pose: full body, standing behind small table, calling out snack deals during a school fair. Hero prop: snack fair booth with treat display. Supporting props: small cash box, price tag shapes without text, napkin stack. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Enterprising RIASEC accent #FF8A65 on props and trim, #FFD54F secondary accents. Upbeat persuasive energy. Full head-to-feet visible."
 }

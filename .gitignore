@@ -24,6 +24,15 @@ graphify-out/
 .antigravity-kit/
 .venv-assets/
 .tools/drawbridge/
+.cursor/
+
+# Python cache
+scripts/__pycache__/
+**/__pycache__/
+*.pyc
+
+# Questionnaire asset staging (production PNGs live in src/assets/questionnaire/)
+src/assets/questionnaire/_inbox/
 
 # Drawbridge (visual UI annotations — local task queue + screenshots)
 .moat/

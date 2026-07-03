@@ -2,7 +2,7 @@ import { KursoKoLogo } from '../../public/brand'
 import { ClickSpark } from '../ui'
 import { assessmentNavBtn, SPARK_ACCENT } from './assessmentClasses'
 
-const AssessmentShell = ({ onExitHome, scrollRef, children }) => (
+const AssessmentShell = ({ onExitHome, scrollRef, footer, children }) => (
   <div className="assessment-fold flex h-dvh max-h-dvh flex-col bg-landing-paper text-landing-ink">
     <header className="flex h-11 shrink-0 items-center justify-between border-b border-landing-ink/10 px-3 sm:px-4">
       <ClickSpark {...SPARK_ACCENT} className="inline-flex">
@@ -31,6 +31,11 @@ const AssessmentShell = ({ onExitHome, scrollRef, children }) => (
     >
       {children}
     </div>
+    {footer ? (
+      <footer className="assessment-nav-footer shrink-0 border-t border-landing-ink/10 bg-landing-paper px-3 py-2.5 sm:px-4">
+        {footer}
+      </footer>
+    ) : null}
   </div>
 )
 

@@ -68,24 +68,36 @@ export const HERO_CHARACTER = {
     'pointer-events-none absolute bottom-0 left-1/2 z-20 h-[94%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom select-none md:h-[90%] lg:h-[100%]',
 }
 
-const decorClass = 'pointer-events-none absolute max-md:hidden select-none'
+const decorImgBase = 'pointer-events-none block h-auto max-w-none select-none'
 
-export function renderDecorStyle(item) {
+export function decorWrapperStyle(item) {
+  const style = {
+    zIndex: item.zIndex,
+  }
+  if (item.top != null) style.top = item.top
+  if (item.left != null) {
+    style.left = typeof item.left === 'number' ? `${item.left}px` : item.left
+  }
+  if (item.right != null) style.right = item.right
+  return style
+}
+
+export function decorImgStyle(item) {
   const style = {
     width: `${item.widthRem}rem`,
     height: 'auto',
     maxWidth: 'none',
     opacity: item.opacity,
-    zIndex: item.zIndex,
   }
-  if (item.top != null) style.top = item.top
-  if (item.left != null) style.left = item.left
-  if (item.right != null) style.right = item.right
+  if (item.animate === 'animate-landing-hero-drift-mirror') {
+    style.transform = 'scaleX(-1)'
+    style.transformOrigin = 'center'
+  }
   if (item.animationDuration) style.animationDuration = item.animationDuration
   if (item.animationDelay) style.animationDelay = item.animationDelay
   return style
 }
 
-export function decorClassName(item) {
-  return [decorClass, item.animate].filter(Boolean).join(' ')
+export function decorImgClassName(item, driftReady) {
+  return [decorImgBase, driftReady && item.animate].filter(Boolean).join(' ')
 }

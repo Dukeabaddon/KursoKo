@@ -11,6 +11,21 @@
   --assessment-ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Sticky nav — always visible, never scroll-reveal */
+.assessment-fold .assessment-nav-footer {
+  padding-bottom: max(0.625rem, env(safe-area-inset-bottom, 0px));
+}
+
+.assessment-fold .assessment-nav-footer .assessment-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  max-width: 48rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
 /* Centered choice block — bumped up from previous compact size */
 .assessment-fold .assessment-choices-panel {
   width: 100%;

@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "verificationPolicy": "Conservative program-fit copy with official source URLs — not employment ranking claims."
+  },
+  "insights": [
+    {
+      "id": "si-pup-manila-accountant",
+      "institutionId": "pup-manila",
+      "careerId": "accountant",
+      "headline": "Strong accountancy value at a public SUC",
+      "body": "PUP Manila is widely known for BS Accountancy and attracts students who want CPA-track training without elite private tuition. RA 10931 free tuition can apply for eligible enrollees, and the OSFA also runs merit and work-study programs.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/students/scholarships"
+    },
+    {
+      "id": "si-pup-manila-data-analyst",
+      "institutionId": "pup-manila",
+      "careerId": "data-analyst",
+      "headline": "Accessible CS and business analytics path",
+      "body": "PUP offers BS Computer Science and business programs that build spreadsheet, coding, and research skills used in analyst roles. Graduates often enter NCR IT, BPO analytics, and government data teams — a practical route if you want technical training on a public-university budget.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/"
+    },
+    {
+      "id": "si-pup-manila-software-engineer",
+      "institutionId": "pup-manila",
+      "careerId": "software-engineer",
+      "headline": "Large IT graduate pipeline",
+      "body": "PUP Manila produces many IT and computer science graduates who join software teams, startups, and enterprise IT departments in Metro Manila. The campus culture rewards builders and problem-solvers who learn by doing.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/"
+    },
+    {
+      "id": "si-pup-manila-entrepreneur",
+      "institutionId": "pup-manila",
+      "careerId": "entrepreneur",
+      "headline": "Business programs with real-world hustle",
+      "body": "BS Business Administration and related tracks at PUP attract students who want to learn sales, operations, and small-business skills without heavy upfront cost — a common starting point for young founders and family-business successors.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/"
+    },
+    {
+      "id": "si-dlsu-manila-software-engineer",
+      "institutionId": "dlsu-manila",
+      "careerId": "software-engineer",
+      "headline": "Engineering and CS reputation",
+      "body": "DLSU is known for computer science and engineering rigor, industry partnerships, and a strong recruiting presence from tech employers. A good fit if you want structured STEM training plus campus networks that feed software roles.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/"
+    },
+    {
+      "id": "si-dlsu-manila-mechanical-engineer",
+      "institutionId": "dlsu-manila",
+      "careerId": "mechanical-engineer",
+      "headline": "Established engineering college",
+      "body": "De La Salle's engineering programs emphasize design, labs, and project work that map directly to mechanical and manufacturing careers. Scholarship grants like St. La Salle Financial Assistance can offset cost for qualified students.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/scholarship/"
+    },
+    {
+      "id": "si-ateneo-manila-entrepreneur",
+      "institutionId": "ateneo-manila",
+      "careerId": "entrepreneur",
+      "headline": "Management and leadership formation",
+      "body": "Ateneo's management programs emphasize ethics, teamwork, and presentation skills that translate well to startups, family ventures, and corporate leadership tracks. Financial aid and merit programs can reduce tuition for qualified applicants.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ateneo.edu/college/scholarships/programs"
+    },
+    {
+      "id": "si-ateneo-manila-psychologist",
+      "institutionId": "ateneo-manila",
+      "careerId": "psychologist",
+      "headline": "Psychology and human sciences depth",
+      "body": "Ateneo offers psychology and related liberal arts training with research and service culture — a common path for students aiming at counseling, HR, or graduate psychology programs.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ateneo.edu/"
+    },
+    {
+      "id": "si-ateneo-manila-teacher",
+      "institutionId": "ateneo-manila",
+      "careerId": "teacher",
+      "headline": "Education and formation focus",
+      "body": "Ateneo trains educators who value mentorship and community impact. Education-related programs and service learning align with students who want to teach, coach, or lead learning programs.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ateneo.edu/"
+    },
+    {
+      "id": "si-feu-manila-nurse",
+      "institutionId": "feu-manila",
+      "careerId": "nurse",
+      "headline": "Historic health sciences campus",
+      "body": "FEU Manila is long known for nursing and allied health programs with clinical training pipelines. If patient care and hospital work appeal to you, FEU is a traditional NCR choice with merit and aid options.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.feu.edu.ph/"
+    },
+    {
+      "id": "si-feu-manila-graphic-designer",
+      "institutionId": "feu-manila",
+      "careerId": "graphic-designer",
+      "headline": "Arts and multimedia exposure",
+      "body": "FEU offers arts, communication, and design-adjacent programs suited to students who want visual storytelling, branding, or creative industry work after college.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.feu.edu.ph/"
+    },
+    {
+      "id": "si-pup-manila-_default",
+      "institutionId": "pup-manila",
+      "careerId": "_default",
+      "headline": "Philippines' national polytechnic",
+      "body": "PUP Manila delivers accessible quality programs in business, IT, and engineering — especially attractive if you want strong training with RA 10931 free tuition eligibility and OSFA scholarships.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/"
+    },
+    {
+      "id": "si-dlsu-manila-_default",
+      "institutionId": "dlsu-manila",
+      "careerId": "_default",
+      "headline": "Research-oriented Lasallian university",
+      "body": "DLSU is known for business, engineering, and technology programs with industry ties across Metro Manila.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/"
+    },
+    {
+      "id": "si-ateneo-manila-_default",
+      "institutionId": "ateneo-manila",
+      "careerId": "_default",
+      "headline": "Jesuit university in Quezon City",
+      "body": "Ateneo emphasizes liberal arts, management, leadership, and service — with scholarship programs for merit and financial need.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ateneo.edu/"
+    },
+    {
+      "id": "si-feu-manila-_default",
+      "institutionId": "feu-manila",
+      "careerId": "_default",
+      "headline": "Manila university with health and business strength",
+      "body": "FEU combines health sciences, business, and arts programs on a central Manila campus.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.feu.edu.ph/"
+    }
+  ]
+}

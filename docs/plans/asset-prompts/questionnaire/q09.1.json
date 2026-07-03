@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q9 option 1 — Pitching startup ideas to investors",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q9 option 1 — Convincing friends to join your booth game",
   "questionnaire": {
     "question_id": 9,
-    "question_text": "Which business role suits you?",
+    "question_text": "Pick the one you'd enjoy more.",
     "option_key": "1",
     "slot": "9.1",
-    "choice_text": "Pitching startup ideas to investors",
-    "hint": "Persuasive presentation",
+    "choice_text": "Convincing friends to join your booth game",
+    "hint": "Persuasive",
     "riasec_code": "E",
     "riasec_type": "Enterprising",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "confident, persuasive energy for students",
+    "mood": "persuasive playful energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,18 +39,31 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "E",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#FF8A65", "use": "blazer lapel trim, lightbulb icon, tablet edge" },
-    "riasec_secondary": { "hex": "#FFD54F", "use": "rising chart bar icon" },
+    "riasec_accent": {
+      "hex": "#FF8A65",
+      "use": "blazer lapel trim, lightbulb icon, tablet edge"
+    },
+    "riasec_secondary": {
+      "hex": "#FFD54F",
+      "use": "rising chart bar icon"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "light peach", "hex_approx": "#F2C4A0" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "light peach",
+      "hex_approx": "#F2C4A0"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young woman",
@@ -59,30 +75,44 @@
     "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "stance": "full body, standing, one hand raised presenting outward",
-    "action": "pitching toward a floating lightbulb and rising bar-chart icon while holding a tablet at her hip",
+    "stance": "full body, leaning forward animated",
+    "action": "inviting friends toward a booth game",
     "facing": "3/4 toward the floating icon prop",
     "energy": "confident, persuasive"
   },
   "clothes": {
-    "top": { "garment": "tailored blazer", "color_hex": "#4B2C7F", "detail": "coral lapel trim" },
-    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "tailored blazer",
+      "color_hex": "#4B2C7F",
+      "detail": "coral lapel trim"
+    },
+    "bottom": {
+      "garment": "tailored trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "simple flats",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Pitching startup ideas to investors",
-    "activity_hint": "Persuasive presentation",
-    "scene_narrative": "A confident young woman gestures toward a floating lightbulb beside a small rising bar-chart icon while holding a tablet at her hip, capturing the energy of pitching a bold new idea — same full-body flat vector language as the approved reference assets.",
-    "hero_prop": "floating lightbulb icon beside a simple rising bar-chart icon",
-    "supporting_props": ["tablet", "small upward arrow icon"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Convincing friends to join your booth game",
+    "activity_hint": "Persuasive",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: inviting friends toward a booth game. Hero focus on colorful ring-toss game prop. Activity matches \"Convincing friends to join your booth game\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "colorful ring-toss game prop",
+    "supporting_props": [
+      "ticket roll",
+      "small prize box",
+      "arrow icon"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + lightbulb readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + game booth readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -90,8 +120,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
     "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter E, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, light peach skin, sleek shoulder-length hair, standing confidently with one hand raised presenting outward. Purple #4B2C7F tailored blazer with coral #FF8A65 lapel trim, charcoal trousers and flats, tablet held at her hip. She gestures toward a floating coral lightbulb icon beside a small gold rising bar-chart icon. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Enterprising RIASEC accent coral on lightbulb and lapel, gold on bar-chart icon. Confident, persuasive energy. Full head-to-feet visible."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, light peach skin, sleek shoulder-length hair, tailored blazer #4B2C7F with coral lapel trim, tailored trousers #2D2D2D, simple flats #2D2D2D. Pose: full body, leaning forward animated, inviting friends toward a booth game. Hero prop: colorful ring-toss game prop. Supporting props: ticket roll, small prize box, arrow icon. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Enterprising RIASEC accent #FF8A65 on props and trim, #FFD54F secondary accents. Persuasive playful energy. Full head-to-feet visible."
 }

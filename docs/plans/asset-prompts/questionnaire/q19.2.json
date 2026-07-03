@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q19 option 2 — Studying virus mutations",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q19 option 2 — Reading how soap kills germs in a science article",
   "questionnaire": {
     "question_id": 19,
-    "question_text": "Which repair work would you prefer?",
+    "question_text": "Which would you rather do?",
     "option_key": "2",
     "slot": "19.2",
-    "choice_text": "Studying virus mutations",
-    "hint": "Microbiology research",
+    "choice_text": "Reading how soap kills germs in a science article",
+    "hint": "Curious",
     "riasec_code": "I",
     "riasec_type": "Investigative",
     "sensitive_topic": true
@@ -19,16 +22,17 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "calm curious science energy — symbolic and gentle, never clinical distress or outbreak panic",
+    "mood": "informed curious energy",
+    "style_lock": "Match 01.1.png — tablet screen MUST face the character, NOT the viewer.",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,21 +40,37 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill",
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)",
       "biohazard or hazmat imagery",
       "sick or distressed figures, hospital beds, or syringes",
-      "anatomically accurate pathogens or spike-protein shapes"
+      "anatomically accurate pathogens or spike-protein shapes",
+      "tablet screen facing camera",
+      "tablet back facing character",
+      "screen toward viewer"
     ]
   },
   "color": {
     "riasec_code": "I",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#4B2C7F", "use": "cell-blob shapes, lab-coat cuff pinstripe" },
-    "riasec_secondary": { "hex": "#4DB6AC", "use": "microscope focus-knob accent" },
+    "riasec_accent": {
+      "hex": "#4B2C7F",
+      "use": "cell-blob shapes, lab-coat cuff pinstripe"
+    },
+    "riasec_secondary": {
+      "hex": "#4DB6AC",
+      "use": "microscope focus-knob accent"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "light-medium warm", "hex_approx": "#E8B48C" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "light-medium warm",
+      "hex_approx": "#E8B48C"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young man",
@@ -62,31 +82,45 @@
     "diversity_note": "unique cast per slot — male presentation, light-medium warm skin, combed side part distinguishes from other slots"
   },
   "pose": {
-    "stance": "full body, standing at a clean lab bench, leaning gently toward a microscope",
-    "action": "adjusting the microscope focus knob with one hand while gently holding a petri dish beneath the lens with the other",
-    "facing": "3/4 down toward the microscope, calm curious gaze",
+    "stance": "full body, seated on bench reading tablet",
+    "action": "reading a science article about soap and germs on a tablet held toward their face",
+    "facing": "3/4 profile — eyes and face turned toward tablet screen in hands",
     "energy": "calm, curious, careful"
   },
   "clothes": {
-    "top": { "garment": "long lab coat", "color_hex": "#F4F2EC", "detail": "violet cuff pinstripe, worn open over a plain tee" },
-    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "long lab coat",
+      "color_hex": "#F4F2EC",
+      "detail": "violet cuff pinstripe, worn open over a plain tee"
+    },
+    "bottom": {
+      "garment": "tailored trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "simple flats",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Studying virus mutations",
-    "activity_hint": "Microbiology research",
-    "scene_narrative": "A calm young man stands at a clean lab bench, adjusting a microscope focus knob while gently holding a petri dish with soft, rounded lavender cell-blob shapes beneath the lens — full-body scientific curiosity captured in the same gentle maker language as the approved Q1 references. The scene reads as calm curious science, entirely symbolic, with no medical distress, illness, or crisis imagery.",
-    "hero_prop": "matte-metal microscope with a single eyepiece and focus knob",
-    "supporting_props": ["clear petri dish holding two soft rounded lavender cell-blob shapes with simple dot details", "violet nitrile glove cuffs"],
-    "environment": "thin clean lab-bench line, faint grey decorative circles behind figure — no hazard signage or crowd",
+    "choice_label": "Reading how soap kills germs in a science article",
+    "activity_hint": "Curious",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: reading a science article about soap and germs on a tablet held toward their face. Hero focus on tablet with simple germ diagram facing character. Activity matches \"Reading how soap kills germs in a science article\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "tablet with simple germ diagram facing character",
+    "supporting_props": [
+      "notebook",
+      "soap bar",
+      "pen"
+    ],
+    "environment": "solid #FDFCF8 page background, thin clean lab-bench line, faint grey decorative circles behind figure — no hazard signage or crowd",
     "symbolic": true,
-    "sensitive_handling": "Depict virus and cell study only as soft, abstract, rounded lavender blob shapes on a petri dish and microscope, held by a calm, minimally-featured full-body figure. Never show anatomically accurate pathogens, spike proteins, sick patients, needles, biohazard symbols, hazmat suits, or outbreak/pandemic imagery. Face must stay minimal and calm. Tone must read as gentle scientific curiosity, not crisis."
+    "sensitive_handling": "Hopeful symbolic full-body scene only — calm smiling minimal face, no distress, crisis, or harsh imagery."
   },
   "composition": {
-    "layout": "figure left-of-center leaning toward microscope right, balanced like 1.1.png",
+    "layout": "figure seated 3/4 view, tablet tilted toward character face not camera, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + microscope readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + tablet readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -94,8 +128,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, biohazard symbol, syringe, sick patient, hospital bed, hazmat suit, virus spike imagery, outbreak map, pandemic crisis, blood, illness distress"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "tablet screen facing camera, screen toward viewer, tablet back to character, face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, pure white #FFFFFF background, photorealistic, 3d render, cropped head, extra limbs, distress, crying, clinical imagery, anime eyes, lab coat"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal calm dot-eye face. Young slim man, light-medium warm skin, short combed side part, standing 3/4 leaning toward a matte-metal microscope at a clean lab bench. He wears a cream #F4F2EC long lab coat with a violet #4B2C7F cuff pinstripe over a plain tee, charcoal tailored trousers, and simple flats, with violet nitrile glove cuffs. He turns the microscope focus knob with one hand while gently holding a clear petri dish containing two soft, rounded, friendly lavender cell-blob shapes with simple dot details beneath the lens with the other — purely abstract, never anatomically graphic. Thin clean lab-bench line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Calm curious scientific wonder, entirely symbolic — no biohazard, illness, or outbreak imagery. Sensitive topic handled with gentle symbolism only."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid #FDFCF8 background. MUST match KursoKo 01.1.png and 01.2.png: unDraw flat vector, 2px outline #2D2D2D, minimal dot-eye face, natural dark hair. Young SHS man, light-medium skin, purple cardigan #4B2C7F over white tee, charcoal trousers, simple flats. Seated on bench, reading tablet in both hands. CRITICAL: tablet screen faces the CHARACTER's eyes — over-shoulder or 3/4 view — screen must NOT face the camera or viewer. Simple soap-and-germ icons on screen (no readable text). Props: notebook, soap bar, pen. Entire canvas #FDFCF8, grey floor line, faint grey circles. NO lab coat. Full head-to-feet visible."
 }

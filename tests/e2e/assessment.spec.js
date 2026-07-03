@@ -20,4 +20,19 @@ test.describe('Assessment page', () => {
     await page.getByRole('button', { name: /^Home$/i }).click()
     await expect(page.getByRole('heading', { name: /Find the perfect path for your future/i })).toBeVisible()
   })
+
+  test('next button is visible without scrolling', async ({ page }) => {
+    const next = page.getByRole('button', { name: 'Next' })
+    await expect(next).toBeVisible()
+    await expect(next).toBeDisabled()
+  })
+
+  test('restores questionnaire progress after refresh', async ({ page }) => {
+    await page.locator('.questionnaire-rating-option').first().click()
+    await page.getByRole('button', { name: 'Next' }).click()
+    await expect(page.getByText(/Question 2 of/i)).toBeVisible({ timeout: 10000 })
+
+    await page.reload()
+    await expect(page.getByText(/Question 2 of/i)).toBeVisible({ timeout: 15000 })
+  })
 })

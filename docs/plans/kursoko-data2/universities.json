@@ -1,0 +1,45 @@
+{
+    "universities": [
+      {
+        "id": "uni-pub-164",
+        "name": "University of the Philippines Los Baños",
+        "type": "SUC",
+        "location": "Los Baños, Laguna",
+        "region": "Laguna",
+        "description": "Premier agricultural, environmental, and natural sciences university in the Philippines. Constituent university of the UP System.",
+        "tuition": "Free under RA 10931 (for eligible students); socialized tuition system (STFAP) for others",
+        "website": "https://uplb.edu.ph/",
+        "riasecTags": ["I", "R"],
+        "strengthTags": ["agriculture", "forestry", "environmental-science", "biology", "veterinary-medicine", "statistics", "development-communication", "food-science"],
+        "status": "active",
+        "verificationDate": "2025-06-28",
+        "verificationSource": "UPLB official website",
+        "linkCheck": "active"
+      },
+      {
+        "id": "uni-pub-165",
+        "name": "Eulogio 'Amang' Rodriguez Institute of Science and Technology (EARIST)",
+        "type": "SUC",
+        "location": "Manila, NCR",
+        "region": "NCR",
+        "description": "State college focused on science and technology education, engineering, and industrial technology.",
+        "tuition": "Free under RA 10931",
+        "website": "https://earist.edu.ph/",
+        "riasecTags": ["R", "I", "C"],
+        "strengthTags": ["engineering", "industrial-technology", "information-technology", "architecture", "teacher-education"],
+        "status": "active",
+        "verificationDate": "2025-06-28",
+        "verificationSource": "EARIST official website",
+        "linkCheck": "active"
+      },
+      {
+        "id": "uni-pub-166",
+        "name": "Philippine State College of Aeronautics (PhilSCA) — Additional Campuses",
+        "type": "SUC",
+        "location": "Pasay City / General Trias, Cavite / other campuses",
+        "region": "NCR",
+        "description": "Already listed as PSCA (entry #13 in original). This entry notes additional campuses including Cavite.",
+        "tuition": "Free under RA 10931",
+        "website": "https://philsca.edu.ph/",
+        "riasecTags": ["R", "I"],
+        "strengthTags

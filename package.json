@@ -12,12 +12,20 @@
     "test:e2e:ui": "playwright test --ui",
     "knip": "knip",
     "assets:landing": ".venv-assets/bin/python scripts/generate-landing-placeholders.py",
+    "assets:prep": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py prep",
+    "assets:next": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py next",
+    "assets:install": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py install",
+    "assets:strip": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py strip",
+    "assets:process": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py process",
+    "assets:status": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py status",
     "drawbridge:install": "test -d .tools/drawbridge || git clone --depth 1 https://github.com/Dukeabaddon/drawbridge.git .tools/drawbridge",
     "drawbridge:extension-path": "node -e \"console.log(require('path').resolve('.tools/drawbridge/chrome-extension'))\""
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "framer-motion": "^12.42.2",
     "html-to-image": "^1.11.13",
+    "lenis": "^1.3.25",
     "lucide-react": "^1.18.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

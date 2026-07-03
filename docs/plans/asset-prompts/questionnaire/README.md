@@ -6,8 +6,8 @@
 
 | File | Use |
 |------|-----|
-| `src/assets/1.1.png` | Full-body flat vector — robot kit |
-| `src/assets/1.2.png` | Full-body flat vector — data/charts |
+| `src/assets/questionnaire/01.1.png` | Full-body flat vector — robot kit |
+| `src/assets/questionnaire/01.2.png` | Full-body flat vector — data/charts |
 | `q01.1.json` | Gold JSON prompt structure |
 
 ## v4 rules (locked)
@@ -34,7 +34,21 @@
 | Output PNG | `src/assets/questionnaire/15.1.png` |
 | Index | `manifest.json` |
 
-## External workflow
+## ChatGPT inbox workflow (recommended)
+
+**Setup once:** see [`chatgpt-project.md`](chatgpt-project.md) — Project instructions + upload `01.1.png`, `01.2.png`, and all `q*.json`.
+
+| Command | What it does |
+|---------|----------------|
+| `npm run assets:next` | Next missing slot → copies `Create image @q06.1.json (1-98)` to clipboard |
+| `npm run assets:prep -- 7.2` | Prep a specific slot |
+| `npm run assets:install -- 6.1` | Move `_inbox/06.1.png` → `06.1.png` |
+| `npm run assets:install -- --all` | Install every PNG waiting in `_inbox/` |
+| `npm run assets:status` | Done / inbox / missing table |
+
+**Per slot:** paste in ChatGPT → download → save to `src/assets/questionnaire/_inbox/NN.M.png` → `npm run assets:install`.
+
+## External workflow (manual fallback)
 
 1. Open `qNN.M.json`
 2. Copy `prompt_for_image_ai` + `generation.negative_prompt`

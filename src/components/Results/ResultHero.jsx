@@ -1,15 +1,10 @@
-import { Sparkles, CircleCheck } from 'lucide-react'
+import { CircleCheck } from 'lucide-react'
 import { resultsMeta } from './resultsClasses'
 
 const ResultHero = ({ archetype, primaryCode, shsStrands, heroEnter }) => (
   <section
     className={`flex w-full min-w-0 flex-col items-center text-center lg:items-start lg:text-left ${heroEnter ? 'results-hero-enter' : ''}`}
   >
-    <div className="results-hero-item mb-4 inline-flex items-center gap-1.5 rounded-full bg-landing-yellow/25 px-3 py-1.5 text-xs font-semibold text-landing-ink">
-      <Sparkles className="h-3.5 w-3.5 text-landing-accent" aria-hidden="true" />
-      <span className={resultsMeta}>Your main archetype</span>
-    </div>
-
     <div className="results-hero-item relative mx-auto mb-4 h-[200px] w-[200px] shrink-0 sm:h-[260px] sm:w-[260px]">
       <div
         className="h-full w-full rounded-2xl border border-neutral-300 bg-neutral-200"
@@ -39,8 +34,7 @@ const ResultHero = ({ archetype, primaryCode, shsStrands, heroEnter }) => (
       <ul className="flex flex-wrap justify-center gap-2 lg:justify-start">
         {archetype.strengths.map((trait) => (
           <li key={trait}>
-            <span className="results-trait-pill inline-flex items-center gap-1 rounded-full bg-[rgba(149,117,205,0.14)] px-3 py-1.5 text-xs font-medium text-landing-accent">
-              <Sparkles className="h-3 w-3" aria-hidden="true" />
+            <span className="results-trait-pill inline-flex items-center rounded-full bg-[rgba(149,117,205,0.14)] px-3 py-1.5 text-xs font-medium text-landing-accent">
               {trait}
             </span>
           </li>

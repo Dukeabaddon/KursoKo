@@ -1,4 +1,5 @@
 import { useId } from 'react'
+import { motion, useReducedMotion } from 'framer-motion'
 import {
   landingHeroBody,
   landingHeroCharacterCol,
@@ -6,12 +7,22 @@ import {
   landingHeroGlow,
   landingHeroTitle,
 } from '../landingClasses'
-import { decorClassName, HERO_CHARACTER, HERO_DECOR, renderDecorStyle } from './heroDecor'
+import { motionRevealProps } from '../motion'
+import { HERO_CHARACTER, HERO_DECOR } from './heroDecor'
+import { HeroDecorItem } from './HeroDecorItem'
 import { HERO_BANNER_PATH } from './heroBannerPath'
+import { HERO_MOTION } from '../motion/landingMotion'
 
 export function HeroSection({ onStart }) {
   const gradientId = useId().replace(/:/g, '')
   const clipId = `${gradientId}-clip`
+  const reducedMotion = useReducedMotion()
+
+  const titleMotion = motionRevealProps(HERO_MOTION.sequence.title, reducedMotion)
+  const bodyMotion = motionRevealProps(HERO_MOTION.sequence.body, reducedMotion)
+  const ctaMotion = motionRevealProps(HERO_MOTION.sequence.cta, reducedMotion)
+  const bustMotion = motionRevealProps(HERO_MOTION.sequence.bust, reducedMotion)
+  const glowMotion = motionRevealProps(HERO_MOTION.sequence.glow, reducedMotion)
 
   return (
     <section
@@ -52,24 +63,27 @@ export function HeroSection({ onStart }) {
 
           <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-5 pt-6 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:items-stretch md:gap-8 md:px-12 md:py-12 lg:grid-cols-12 lg:px-16">
             <div className="landing-hero-copy relative z-10 flex w-full min-w-0 max-w-full flex-col items-start justify-center gap-4 text-left md:col-span-1 md:h-full md:!min-h-[500px] md:gap-0 lg:col-span-7 lg:!min-h-[550px]">
-              <h1
+              <motion.h1
                 id="hero-heading"
                 className={`mb-0 w-full max-w-full break-words text-pretty font-extrabold text-white md:mb-4 lg:mb-5 ${landingHeroTitle}`}
+                {...titleMotion}
               >
                 Find the perfect path <br className="hidden md:block" /> for your future.
-              </h1>
+              </motion.h1>
 
-              <p
+              <motion.p
                 className={`mb-0 max-w-lg font-normal text-purple-100/90 md:mb-8 md:max-w-xl lg:mb-8 ${landingHeroBody}`}
+                {...bodyMotion}
               >
                 Take a free 10-minute personality assessment to discover the college courses and
                 scholarships in the Philippines that match your true strengths.
-              </p>
+              </motion.p>
 
-              <button
+              <motion.button
                 type="button"
                 onClick={onStart}
                 className={`landing-hero-cta mt-1 md:mt-0 ${landingHeroCta}`}
+                {...ctaMotion}
               >
                 Start Assessment
                 <svg
@@ -85,25 +99,17 @@ export function HeroSection({ onStart }) {
                     clipRule="evenodd"
                   />
                 </svg>
-              </button>
+              </motion.button>
             </div>
 
             <div className={landingHeroCharacterCol}>
-              <div className={landingHeroGlow} />
+              <motion.div className={landingHeroGlow} {...glowMotion} aria-hidden="true" />
 
               {HERO_DECOR.map((item, index) => (
-                <img
-                  key={index}
-                  src={item.src}
-                  alt=""
-                  className={decorClassName(item)}
-                  style={renderDecorStyle(item)}
-                  loading="lazy"
-                  decoding="async"
-                />
+                <HeroDecorItem key={index} item={item} index={index} />
               ))}
 
-              <img
+              <motion.img
                 src={HERO_CHARACTER.src}
                 alt={HERO_CHARACTER.alt}
                 className={HERO_CHARACTER.className}
@@ -111,6 +117,7 @@ export function HeroSection({ onStart }) {
                 height={HERO_CHARACTER.height}
                 loading="eager"
                 decoding="async"
+                {...bustMotion}
               />
             </div>
           </div>

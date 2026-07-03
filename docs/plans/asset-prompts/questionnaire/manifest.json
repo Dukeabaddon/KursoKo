@@ -1,13 +1,13 @@
 {
   "project": "KursoKo",
   "asset_set": "Questionnaire choice illustrations",
-  "version": 3,
+  "version": 4,
   "source_of_truth": "individual qNN.M.json files in this folder",
-  "schema": "questionnaire/_schema-v3.json",
+  "schema": "questionnaire/_schema-v4.json",
   "total_questions": 30,
   "total_choices": 60,
   "spec": {
-    "style": "flat vector scene v3, hands only, no letter, no border",
+    "style": "flat vector full-body v4",
     "size_px": "640x640",
     "output_dir": "src/assets/questionnaire/",
     "naming": "NN.M.png — e.g. 01.1.png = Q1 option A"
@@ -19,7 +19,7 @@
       "slot": "1.1",
       "question_id": 1,
       "option_key": "1",
-      "choice_text": "Building a robot kit",
+      "choice_text": "Assembling a toy robot from a kit",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/01.1.png",
       "sensitive": false
@@ -30,7 +30,7 @@
       "slot": "1.2",
       "question_id": 1,
       "option_key": "2",
-      "choice_text": "Analyzing patterns in stock market data",
+      "choice_text": "Comparing two phones before your family buys one",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/01.2.png",
       "sensitive": false
@@ -41,7 +41,7 @@
       "slot": "2.1",
       "question_id": 2,
       "option_key": "1",
-      "choice_text": "Creating digital artwork for a game",
+      "choice_text": "Drawing a poster for a school program",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/02.1.png",
       "sensitive": false
@@ -52,7 +52,7 @@
       "slot": "2.2",
       "question_id": 2,
       "option_key": "2",
-      "choice_text": "Tutoring classmates in math",
+      "choice_text": "Helping a classmate stuck on homework",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/02.2.png",
       "sensitive": false
@@ -63,7 +63,7 @@
       "slot": "3.1",
       "question_id": 3,
       "option_key": "1",
-      "choice_text": "Starting an online business",
+      "choice_text": "Calling out snack deals during a school fair",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/03.1.png",
       "sensitive": false
@@ -74,7 +74,7 @@
       "slot": "3.2",
       "question_id": 3,
       "option_key": "2",
-      "choice_text": "Organizing school records database",
+      "choice_text": "Tracking who paid and who still owes for snacks",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/03.2.png",
       "sensitive": false
@@ -85,7 +85,7 @@
       "slot": "4.1",
       "question_id": 4,
       "option_key": "1",
-      "choice_text": "Repairing smartphone hardware",
+      "choice_text": "Installing a replacement screen film without bubbles",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/04.1.png",
       "sensitive": false
@@ -96,7 +96,7 @@
       "slot": "4.2",
       "question_id": 4,
       "option_key": "2",
-      "choice_text": "Researching AI ethics",
+      "choice_text": "Checking if a viral tip online actually works",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/04.2.png",
       "sensitive": false
@@ -107,7 +107,7 @@
       "slot": "5.1",
       "question_id": 5,
       "option_key": "1",
-      "choice_text": "Writing fantasy novel chapters",
+      "choice_text": "Writing a short story for fun",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/05.1.png",
       "sensitive": false
@@ -118,7 +118,7 @@
       "slot": "5.2",
       "question_id": 5,
       "option_key": "2",
-      "choice_text": "Counseling peers through stress",
+      "choice_text": "Listening when a friend is upset",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/05.2.png",
       "sensitive": false
@@ -129,7 +129,7 @@
       "slot": "6.1",
       "question_id": 6,
       "option_key": "1",
-      "choice_text": "Marketing products on social media",
+      "choice_text": "Making a short video to promote a school club",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/06.1.png",
       "sensitive": false
@@ -140,7 +140,7 @@
       "slot": "6.2",
       "question_id": 6,
       "option_key": "2",
-      "choice_text": "Processing financial transactions",
+      "choice_text": "Sorting names in the right order on a class list",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/06.2.png",
       "sensitive": false
@@ -151,7 +151,7 @@
       "slot": "7.1",
       "question_id": 7,
       "option_key": "1",
-      "choice_text": "Installing home security systems",
+      "choice_text": "Repairing a bike that keeps slipping gears",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/07.1.png",
       "sensitive": false
@@ -162,7 +162,7 @@
       "slot": "7.2",
       "question_id": 7,
       "option_key": "2",
-      "choice_text": "Developing climate prediction models",
+      "choice_text": "Tracing why only one wall socket won't work",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/07.2.png",
       "sensitive": false
@@ -173,7 +173,7 @@
       "slot": "8.1",
       "question_id": 8,
       "option_key": "1",
-      "choice_text": "Designing streetwear fashion",
+      "choice_text": "Designing a T-shirt idea for your class",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/08.1.png",
       "sensitive": false
@@ -184,7 +184,7 @@
       "slot": "8.2",
       "question_id": 8,
       "option_key": "2",
-      "choice_text": "Coaching youth sports teams",
+      "choice_text": "Showing younger kids how to play a sport",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/08.2.png",
       "sensitive": false
@@ -195,7 +195,7 @@
       "slot": "9.1",
       "question_id": 9,
       "option_key": "1",
-      "choice_text": "Pitching startup ideas to investors",
+      "choice_text": "Convincing friends to join your booth game",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/09.1.png",
       "sensitive": false
@@ -206,7 +206,7 @@
       "slot": "9.2",
       "question_id": 9,
       "option_key": "2",
-      "choice_text": "Managing supply chain logistics",
+      "choice_text": "Marking paid vs unpaid on the snack money list",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/09.2.png",
       "sensitive": false
@@ -217,7 +217,7 @@
       "slot": "10.1",
       "question_id": 10,
       "option_key": "1",
-      "choice_text": "Building sustainable furniture",
+      "choice_text": "Putting up a DIY shelf from a kit",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/10.1.png",
       "sensitive": false
@@ -228,7 +228,7 @@
       "slot": "10.2",
       "question_id": 10,
       "option_key": "2",
-      "choice_text": "Studying marine biology specimens",
+      "choice_text": "Noticing tiny details on plants during a hike",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/10.2.png",
       "sensitive": false
@@ -239,7 +239,7 @@
       "slot": "11.1",
       "question_id": 11,
       "option_key": "1",
-      "choice_text": "Producing music tracks",
+      "choice_text": "Making a playlist for a friend's party",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/11.1.png",
       "sensitive": false
@@ -250,7 +250,7 @@
       "slot": "11.2",
       "question_id": 11,
       "option_key": "2",
-      "choice_text": "Volunteering at community health camp",
+      "choice_text": "Handing out flyers at a local health fair",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/11.2.png",
       "sensitive": false
@@ -261,7 +261,7 @@
       "slot": "12.1",
       "question_id": 12,
       "option_key": "1",
-      "choice_text": "Leading corporate negotiations",
+      "choice_text": "Leading your group's presentation in class",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/12.1.png",
       "sensitive": false
@@ -272,7 +272,7 @@
       "slot": "12.2",
       "question_id": 12,
       "option_key": "2",
-      "choice_text": "Auditing company accounts",
+      "choice_text": "Checking every name is spelled right on a form",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/12.2.png",
       "sensitive": false
@@ -283,7 +283,7 @@
       "slot": "13.1",
       "question_id": 13,
       "option_key": "1",
-      "choice_text": "Maintaining drone equipment",
+      "choice_text": "Tightening screws on a wobbly desk fan",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/13.1.png",
       "sensitive": false
@@ -294,7 +294,7 @@
       "slot": "13.2",
       "question_id": 13,
       "option_key": "2",
-      "choice_text": "Researching quantum computing",
+      "choice_text": "Testing if a phone hack online really works",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/13.2.png",
       "sensitive": false
@@ -305,7 +305,7 @@
       "slot": "14.1",
       "question_id": 14,
       "option_key": "1",
-      "choice_text": "Teaching coding to kids",
+      "choice_text": "Showing a younger sibling how to use an app",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/14.1.png",
       "sensitive": false
@@ -316,7 +316,7 @@
       "slot": "14.2",
       "question_id": 14,
       "option_key": "2",
-      "choice_text": "Designing museum exhibits",
+      "choice_text": "Decorating a classroom bulletin board",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/14.2.png",
       "sensitive": false
@@ -327,7 +327,7 @@
       "slot": "15.1",
       "question_id": 15,
       "option_key": "1",
-      "choice_text": "Managing e-commerce store",
+      "choice_text": "Running a snack booth at a school fair",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/15.1.png",
       "sensitive": false
@@ -338,7 +338,7 @@
       "slot": "15.2",
       "question_id": 15,
       "option_key": "2",
-      "choice_text": "Optimizing database efficiency",
+      "choice_text": "Making sure every peso and coin adds up correctly",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/15.2.png",
       "sensitive": false
@@ -349,7 +349,7 @@
       "slot": "16.1",
       "question_id": 16,
       "option_key": "1",
-      "choice_text": "Installing solar farm panels",
+      "choice_text": "Helping set up chairs and tents for an event",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/16.1.png",
       "sensitive": false
@@ -360,7 +360,7 @@
       "slot": "16.2",
       "question_id": 16,
       "option_key": "2",
-      "choice_text": "Documenting wildlife behavior",
+      "choice_text": "Describing bird calls heard from a park bench",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/16.2.png",
       "sensitive": false
@@ -371,7 +371,7 @@
       "slot": "17.1",
       "question_id": 17,
       "option_key": "1",
-      "choice_text": "Helping refugees settle locally",
+      "choice_text": "Welcoming new students on the first day",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/17.1.png",
       "sensitive": true
@@ -382,7 +382,7 @@
       "slot": "17.2",
       "question_id": 17,
       "option_key": "2",
-      "choice_text": "Creating public space murals",
+      "choice_text": "Painting a bright mural at school",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/17.2.png",
       "sensitive": false
@@ -393,7 +393,7 @@
       "slot": "18.1",
       "question_id": 18,
       "option_key": "1",
-      "choice_text": "Planning corporate takeover",
+      "choice_text": "Planning who does what for a group project",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/18.1.png",
       "sensitive": false
@@ -404,7 +404,7 @@
       "slot": "18.2",
       "question_id": 18,
       "option_key": "2",
-      "choice_text": "Standardizing filing systems",
+      "choice_text": "Stacking and sorting documents so nothing is lost",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/18.2.png",
       "sensitive": false
@@ -415,7 +415,7 @@
       "slot": "19.1",
       "question_id": 19,
       "option_key": "1",
-      "choice_text": "Fixing electric bicycles",
+      "choice_text": "Tightening loose screws on a wobbly classroom chair",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/19.1.png",
       "sensitive": false
@@ -426,7 +426,7 @@
       "slot": "19.2",
       "question_id": 19,
       "option_key": "2",
-      "choice_text": "Studying virus mutations",
+      "choice_text": "Reading how soap kills germs in a science article",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/19.2.png",
       "sensitive": true
@@ -437,7 +437,7 @@
       "slot": "20.1",
       "question_id": 20,
       "option_key": "1",
-      "choice_text": "Mentoring first-generation students",
+      "choice_text": "Guiding a new student around campus",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/20.1.png",
       "sensitive": false
@@ -448,7 +448,7 @@
       "slot": "20.2",
       "question_id": 20,
       "option_key": "2",
-      "choice_text": "Illustrating science textbooks",
+      "choice_text": "Drawing pictures for a school handout",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/20.2.png",
       "sensitive": false
@@ -459,7 +459,7 @@
       "slot": "21.1",
       "question_id": 21,
       "option_key": "1",
-      "choice_text": "Analyzing consumer behavior trends",
+      "choice_text": "Tracking which snack sold fastest at a fair",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/21.1.png",
       "sensitive": false
@@ -470,7 +470,7 @@
       "slot": "21.2",
       "question_id": 21,
       "option_key": "2",
-      "choice_text": "Creating tax compliance reports",
+      "choice_text": "Tallying quiz scores without mistakes",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/21.2.png",
       "sensitive": false
@@ -481,7 +481,7 @@
       "slot": "22.1",
       "question_id": 22,
       "option_key": "1",
-      "choice_text": "Directing non-profit organization",
+      "choice_text": "Talking people into joining your club booth",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/22.1.png",
       "sensitive": false
@@ -492,7 +492,7 @@
       "slot": "22.2",
       "question_id": 22,
       "option_key": "2",
-      "choice_text": "Quality-checking manufacturing outputs",
+      "choice_text": "Double-checking every item on a checklist",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/22.2.png",
       "sensitive": false
@@ -503,7 +503,7 @@
       "slot": "23.1",
       "question_id": 23,
       "option_key": "1",
-      "choice_text": "Assembling telescope components",
+      "choice_text": "Building a basic robot car from a starter kit",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/23.1.png",
       "sensitive": false
@@ -514,7 +514,7 @@
       "slot": "23.2",
       "question_id": 23,
       "option_key": "2",
-      "choice_text": "Developing cancer treatment trials",
+      "choice_text": "Reading how plants grow in a science magazine",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/23.2.png",
       "sensitive": true
@@ -525,7 +525,7 @@
       "slot": "24.1",
       "question_id": 24,
       "option_key": "1",
-      "choice_text": "Counseling at-risk youth",
+      "choice_text": "Sitting with a classmate who feels left out",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/24.1.png",
       "sensitive": true
@@ -536,7 +536,7 @@
       "slot": "24.2",
       "question_id": 24,
       "option_key": "2",
-      "choice_text": "Designing inclusive playgrounds",
+      "choice_text": "Designing an accessible play zone with ramps and shade",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/24.2.png",
       "sensitive": false
@@ -547,7 +547,7 @@
       "slot": "25.1",
       "question_id": 25,
       "option_key": "1",
-      "choice_text": "Testing water purification systems",
+      "choice_text": "Recording how long bubbles last on each soap sample",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/25.1.png",
       "sensitive": false
@@ -558,7 +558,7 @@
       "slot": "25.2",
       "question_id": 25,
       "option_key": "2",
-      "choice_text": "Managing payroll systems",
+      "choice_text": "Updating the class attendance sheet",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/25.2.png",
       "sensitive": false
@@ -569,7 +569,7 @@
       "slot": "26.1",
       "question_id": 26,
       "option_key": "1",
-      "choice_text": "Building disaster-resistant housing",
+      "choice_text": "Hammering nails to fix a loose wooden stool",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/26.1.png",
       "sensitive": false
@@ -580,7 +580,7 @@
       "slot": "26.2",
       "question_id": 26,
       "option_key": "2",
-      "choice_text": "Planning city recycling programs",
+      "choice_text": "Sorting recyclables into the right bins",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/26.2.png",
       "sensitive": false
@@ -591,7 +591,7 @@
       "slot": "27.1",
       "question_id": 27,
       "option_key": "1",
-      "choice_text": "Art therapy for trauma survivors",
+      "choice_text": "Drawing together with friends to relax",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/27.1.png",
       "sensitive": true
@@ -602,7 +602,7 @@
       "slot": "27.2",
       "question_id": 27,
       "option_key": "2",
-      "choice_text": "Brand identity design for startups",
+      "choice_text": "Designing a logo for a school club",
       "riasec_code": "A",
       "output_png": "src/assets/questionnaire/27.2.png",
       "sensitive": false
@@ -613,7 +613,7 @@
       "slot": "28.1",
       "question_id": 28,
       "option_key": "1",
-      "choice_text": "Launching tech incubator program",
+      "choice_text": "Pitching your project idea to the class",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/28.1.png",
       "sensitive": false
@@ -624,7 +624,7 @@
       "slot": "28.2",
       "question_id": 28,
       "option_key": "2",
-      "choice_text": "Developing cybersecurity protocols",
+      "choice_text": "Figuring out why a game lags on your phone",
       "riasec_code": "I",
       "output_png": "src/assets/questionnaire/28.2.png",
       "sensitive": false
@@ -635,7 +635,7 @@
       "slot": "29.1",
       "question_id": 29,
       "option_key": "1",
-      "choice_text": "Search-and-rescue operations",
+      "choice_text": "Carrying supply boxes for a school event",
       "riasec_code": "R",
       "output_png": "src/assets/questionnaire/29.1.png",
       "sensitive": false
@@ -646,7 +646,7 @@
       "slot": "29.2",
       "question_id": 29,
       "option_key": "2",
-      "choice_text": "Organizing community gardens",
+      "choice_text": "Planting vegetables in a school garden",
       "riasec_code": "S",
       "output_png": "src/assets/questionnaire/29.2.png",
       "sensitive": false
@@ -657,7 +657,7 @@
       "slot": "30.1",
       "question_id": 30,
       "option_key": "1",
-      "choice_text": "Negotiating international trade deals",
+      "choice_text": "Leading a debate on a class topic",
       "riasec_code": "E",
       "output_png": "src/assets/questionnaire/30.1.png",
       "sensitive": false
@@ -668,7 +668,7 @@
       "slot": "30.2",
       "question_id": 30,
       "option_key": "2",
-      "choice_text": "Creating corporate compliance manuals",
+      "choice_text": "Writing step-by-step rules for a club game",
       "riasec_code": "C",
       "output_png": "src/assets/questionnaire/30.2.png",
       "sensitive": false

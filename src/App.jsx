@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import {
   HomePage,
   Questionnaire,
@@ -16,18 +16,53 @@ import {
   checkRateLimit,
   recordSubmission,
 } from './utils/sessionManager'
+import {
+  loadAssessmentProgress,
+  loadResultsSnapshot,
+  saveResultsSnapshot,
+  clearAllAssessmentData,
+} from './utils/assessmentPersistence'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
   const [responses, setResponses] = useState([])
   const [isCalculating, setIsCalculating] = useState(false)
   const [error, setError] = useState(null)
+  const [questionnaireRestore, setQuestionnaireRestore] = useState(null)
+  const [isHydrating, setIsHydrating] = useState(true)
+  const hydratedRef = useRef(false)
+
+  useEffect(() => {
+    if (hydratedRef.current) return
+    hydratedRef.current = true
+
+    const savedResults = loadResultsSnapshot()
+    if (savedResults?.responses?.length) {
+      setResponses(savedResults.responses)
+      setCurrentPage('results')
+      setIsHydrating(false)
+      return
+    }
+
+    const savedProgress = loadAssessmentProgress()
+    if (savedProgress && savedProgress.responses.length >= 0) {
+      setQuestionnaireRestore(savedProgress)
+      setCurrentPage('questionnaire')
+      if (!isSessionValid()) {
+        startSession()
+      }
+    }
+
+    setIsHydrating(false)
+  }, [])
 
   const startQuestionnaire = useCallback(() => {
+    clearAllAssessmentData()
     clearSession()
     const sessionId = startSession()
     console.log('New assessment session started:', sessionId)
 
+    setQuestionnaireRestore(null)
     setResponses([])
     setError(null)
     setCurrentPage('questionnaire')
@@ -38,7 +73,7 @@ function App() {
       setError(null)
 
       if (!isSessionValid()) {
-        throw new Error('Session expired. Please start again.')
+        startSession()
       }
 
       const rateLimitCheck = checkRateLimit(5000)
@@ -65,8 +100,10 @@ function App() {
       setIsCalculating(false)
 
       recordSubmission()
-      setCurrentPage('results')
+      saveResultsSnapshot(validation.sanitizedResponses)
       clearSession()
+      setQuestionnaireRestore(null)
+      setCurrentPage('results')
     } catch (err) {
       console.error('Error completing questionnaire:', err)
       setError(err.message || 'Failed to submit questionnaire')
@@ -75,9 +112,16 @@ function App() {
   }, [])
 
   const goHome = useCallback(() => {
+    clearAllAssessmentData()
     clearSession()
+    setQuestionnaireRestore(null)
     setCurrentPage('home')
     setResponses([])
+    setError(null)
+  }, [])
+
+  const leaveQuestionnaire = useCallback(() => {
+    setCurrentPage('home')
     setError(null)
   }, [])
 
@@ -87,6 +131,14 @@ function App() {
       startQuestionnaire()
     }
   }, [currentPage, startQuestionnaire])
+
+  if (isHydrating) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-landing-paper">
+        <LoadingSpinner message="Loading…" size="md" />
+      </div>
+    )
+  }
 
   return (
     <ErrorBoundary onReset={goHome}>
@@ -129,8 +181,10 @@ function App() {
 
               {currentPage === 'questionnaire' && (
                 <Questionnaire
+                  key={questionnaireRestore?.updatedAt ?? 'fresh'}
+                  initialProgress={questionnaireRestore}
                   onComplete={completeQuestionnaire}
-                  onBack={goHome}
+                  onBack={leaveQuestionnaire}
                 />
               )}
 

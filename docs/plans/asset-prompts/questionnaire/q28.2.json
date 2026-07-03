@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q28 option 2 — Developing cybersecurity protocols",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q28 option 2 — Figuring out why a game lags on your phone",
   "questionnaire": {
     "question_id": 28,
-    "question_text": "Which innovation role fits you?",
+    "question_text": "Which would you rather do?",
     "option_key": "2",
     "slot": "28.2",
-    "choice_text": "Developing cybersecurity protocols",
-    "hint": "Digital protection",
+    "choice_text": "Figuring out why a game lags on your phone",
+    "hint": "Curious",
     "riasec_code": "I",
     "riasec_type": "Investigative",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "quiet analytical focus — digital protection as careful investigation, not hacker menace",
+    "mood": "analytical patient energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -37,18 +40,31 @@
       "3D render",
       "hands-only POV crop",
       "hooded hacker or balaclava imagery",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "I",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#4B2C7F", "use": "keyboard function keys, shield glow ring, cuff pinstripe" },
-    "riasec_secondary": { "hex": "#4DB6AC", "use": "padlock highlight, circuit-card trace lines" },
+    "riasec_accent": {
+      "hex": "#4B2C7F",
+      "use": "keyboard function keys, shield glow ring, cuff pinstripe"
+    },
+    "riasec_secondary": {
+      "hex": "#4DB6AC",
+      "use": "padlock highlight, circuit-card trace lines"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "light peach", "hex_approx": "#F2C4A0" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "light peach",
+      "hex_approx": "#F2C4A0"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young man",
@@ -60,30 +76,44 @@
     "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "stance": "full body, standing at a compact standing desk with keyboard, upright attentive posture",
-    "action": "one hand typing mid-keystroke on a compact keyboard while the other gently sets a small glowing padlock into a shield-shaped holder",
+    "stance": "full body, seated troubleshooting phone",
+    "action": "figuring out why a game lags on a phone",
     "facing": "3/4 toward desk, padlock hand forward",
     "energy": "calm, analytical, quietly vigilant"
   },
   "clothes": {
-    "top": { "garment": "crew-neck sweatshirt", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, indigo cuff stripe, sleeves pushed up" },
-    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "sneakers", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "crew-neck sweatshirt",
+      "color_hex": "#4B2C7F",
+      "detail": "dark charcoal collar, indigo cuff stripe, sleeves pushed up"
+    },
+    "bottom": {
+      "garment": "straight trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "sneakers",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Developing cybersecurity protocols",
-    "activity_hint": "Digital protection",
-    "scene_narrative": "A young man stands at a compact standing desk, typing with one hand while carefully setting a small glowing padlock into a shield-shaped holder beside a miniature circuit-trace card. Calm, methodical digital protection work — a careful investigator securing a system, never a hooded hacker — the same full-body flat vector language as the approved Q1 references.",
-    "hero_prop": "rounded indigo shield-shaped holder with a small glowing teal padlock nestled inside",
-    "supporting_props": ["compact dark-grey keyboard on standing desk", "circuit-trace card with looping teal lines and three node dots"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Figuring out why a game lags on your phone",
+    "activity_hint": "Curious",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: figuring out why a game lags on a phone. Hero focus on phone showing game with lag icon. Activity matches \"Figuring out why a game lags on your phone\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "phone showing game with lag icon",
+    "supporting_props": [
+      "charger cable",
+      "settings gear icon",
+      "notebook"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, standing desk and shield right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + shield/padlock readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + phone game readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -91,8 +121,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, code, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, hooded hacker, balaclava, industrial horror, guns, blood"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face with thin round glasses. Young college-age man, average slightly lanky build, light peach skin #F2C4A0, short side-part hair, standing upright at a compact standing desk. He wears a purple #4B2C7F crew-neck sweatshirt with charcoal collar and indigo #4B2C7F cuff stripe, sleeves pushed up, dark straight trousers, and sneakers. One hand types mid-keystroke on a compact dark-grey keyboard; the other carefully sets a small glowing teal padlock into a rounded indigo shield-shaped holder. A small circuit-trace card with looping teal #4DB6AC lines and three node dots sits on the desk. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Mood: calm, methodical digital protection — careful investigation, not hacker menace. Full head-to-feet visible."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, light peach skin, short side part, crew-neck sweatshirt #4B2C7F with dark charcoal collar, indigo cuff stripe, sleeves pushed up, straight trousers #2D2D2D, sneakers #2D2D2D. Pose: full body, seated troubleshooting phone, figuring out why a game lags on a phone. Hero prop: phone showing game with lag icon. Supporting props: charger cable, settings gear icon, notebook. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Investigative RIASEC accent #4B2C7F on props and trim, #4DB6AC secondary accents. Analytical patient energy. Full head-to-feet visible."
 }

@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q27 option 2 — Brand identity design for startups",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q27 option 2 — Designing a logo for a school club",
   "questionnaire": {
     "question_id": 27,
-    "question_text": "Which creative service suits you?",
+    "question_text": "Pick the one you'd enjoy more.",
     "option_key": "2",
     "slot": "27.2",
-    "choice_text": "Brand identity design for startups",
-    "hint": "Commercial creativity",
+    "choice_text": "Designing a logo for a school club",
+    "hint": "Creative",
     "riasec_code": "A",
     "riasec_type": "Artistic",
     "sensitive_topic": false
@@ -19,16 +22,17 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "playful, commercial-creative energy — a design studio moment, confident and colorful",
+    "mood": "creative focused energy",
+    "style_lock": "STRICT KursoKo unDraw match: 27.1.png and 01.2.png. Pair with Q27.1 — dark natural hair, purple on clothes only.",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -37,53 +41,92 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)",
+      "anime",
+      "manga",
+      "chibi",
+      "large expressive eyes",
+      "detailed nose or mouth",
+      "purple hair",
+      "blue hair",
+      "colored hair",
+      "spiky anime hair",
+      "cross-legged floor pose",
+      "crown logo",
+      "laurel wreath logo"
     ]
   },
   "color": {
     "riasec_code": "A",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#FFD54F", "use": "swatch chip, stylus tip glow, shirt cuff stripe" },
-    "riasec_secondary": { "hex": "#9575CD", "use": "second swatch chip, tablet bezel accent" },
+    "riasec_accent": {
+      "hex": "#FFD54F",
+      "use": "swatch chip, stylus tip glow, shirt cuff stripe"
+    },
+    "riasec_secondary": {
+      "hex": "#9575CD",
+      "use": "second swatch chip, tablet bezel accent"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "light olive", "hex_approx": "#D9A876" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "light olive",
+      "hex_approx": "#D9A876"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young man",
     "age": "college-age",
     "build": "lean, casual",
     "skin_tone": "light olive",
-    "hair": "short textured quiff, undercut sides",
-    "face": "minimal — two dot eyes, small smile, no detailed nose",
+    "hair": "short dark charcoal hair, neat side part — NATURAL black/dark brown ONLY, never purple or blue",
+    "face": "minimal unDraw face ONLY — two small dot eyes, tiny smile line, NO nose, NO anime eyes",
     "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "stance": "full body, standing beside a mood board on an easel stand, weight on one hip",
-    "action": "holding a drawing tablet mid-sketch of an abstract logo shape while placing a yellow color swatch chip onto the mood board with his free hand",
-    "facing": "3/4 toward mood board, tablet held forward",
+    "stance": "full body, leaning over laptop",
+    "action": "designing a logo for a school club",
+    "facing": "3/4 toward laptop screen",
     "energy": "playful, confident, commercially creative"
   },
   "clothes": {
-    "top": { "garment": "relaxed denim shirt", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, yellow cuff stripe, rolled sleeves" },
-    "bottom": { "garment": "black jeans", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "sneakers", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "relaxed denim shirt",
+      "color_hex": "#4B2C7F",
+      "detail": "dark charcoal collar, yellow cuff stripe, rolled sleeves"
+    },
+    "bottom": {
+      "garment": "black jeans",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "sneakers",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Brand identity design for startups",
-    "activity_hint": "Commercial creativity",
-    "scene_narrative": "A young man stands at a small design studio easel stand, cradling a drawing tablet mid-sketch of an abstract, non-letter logo shape while placing a fresh color swatch chip onto a mood board of stacked palette cards — the same full-body flat vector language as the approved Q1 references. Energetic, commercial brand-building creativity.",
-    "hero_prop": "cork mood board on an easel stand holding a small stack of yellow, lavender, and teal color-swatch cards",
-    "supporting_props": ["drawing tablet with abstract teal logo mark mid-sketch", "glowing-tip stylus"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Designing a logo for a school club",
+    "activity_hint": "Creative",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: designing a logo for a school club. Hero focus on laptop with logo draft shapes. Activity matches \"Designing a logo for a school club\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "laptop with logo draft shapes",
+    "supporting_props": [
+      "sketchbook",
+      "color swatches",
+      "stylus"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, mood board right at chest height, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + mood board readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + logo draft readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -91,8 +134,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, logo, letter A, real brand marks, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, industrial horror, guns, blood"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, lean casual build, light olive skin #D9A876, short textured quiff with undercut sides, standing beside a cork mood board on an easel stand. He wears a purple #4B2C7F relaxed denim shirt with charcoal collar and yellow #FFD54F cuff stripe, rolled sleeves, black jeans, and sneakers. He cradles a dark grey drawing tablet showing a simple teal #4DB6AC abstract geometric mark mid-sketch on screen (no letters or words) while pinching a yellow swatch chip to place onto the mood board's small stack of yellow, lavender, and teal color-swatch cards. An orange-glow stylus rests near the tablet. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame, NO real brand logos. Mood: playful, confident, commercially creative brand-building energy. Full head-to-feet visible."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, light olive skin, short dark charcoal hair, neat side part — NATURAL black/dark brown ONLY, never purple or blue, relaxed denim shirt #4B2C7F with dark charcoal collar, yellow cuff stripe, rolled sleeves, black jeans #2D2D2D, sneakers #2D2D2D. Pose: full body, leaning over laptop, designing a logo for a school club. Hero prop: laptop with logo draft shapes. Supporting props: sketchbook, color swatches, stylus. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Artistic RIASEC accent #FFD54F on props and trim, #9575CD secondary accents. Creative focused energy. Full head-to-feet visible."
 }

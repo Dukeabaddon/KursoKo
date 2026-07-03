@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q15 option 2 — Optimizing database efficiency",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q15 option 2 — Making sure every peso and coin adds up correctly",
   "questionnaire": {
     "question_id": 15,
-    "question_text": "Which professional task suits you?",
+    "question_text": "Pick the one you'd enjoy more.",
     "option_key": "2",
     "slot": "15.2",
-    "choice_text": "Optimizing database efficiency",
-    "hint": "System improvement",
+    "choice_text": "Making sure every peso and coin adds up correctly",
+    "hint": "Careful",
     "riasec_code": "C",
     "riasec_type": "Conventional",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "calm, systematic technical energy",
+    "mood": "careful responsible energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,18 +39,31 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "C",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#81D4FA", "use": "gear/flow icon glow, cardigan cuff stripe" },
-    "riasec_secondary": { "hex": "#4B2C7F", "use": "server-rack icon panel accent" },
+    "riasec_accent": {
+      "hex": "#81D4FA",
+      "use": "gear/flow icon glow, cardigan cuff stripe"
+    },
+    "riasec_secondary": {
+      "hex": "#4B2C7F",
+      "use": "server-rack icon panel accent"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "deep brown",
+      "hex_approx": "#8D5524"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young man",
@@ -59,30 +75,44 @@
     "diversity_note": "unique cast per slot — distinct from other questionnaire characters"
   },
   "pose": {
-    "stance": "full body, standing, one arm cradling an open laptop against his side",
-    "action": "adjusting a floating server-rack icon with one hand while the laptop in his other arm glows with an abstract gear/flow icon",
+    "stance": "full body, counting at table",
+    "action": "making sure every peso and coin adds up correctly",
     "facing": "3/4 toward viewer, gaze on the floating server icon",
     "energy": "calm, systematic, capable"
   },
   "clothes": {
-    "top": { "garment": "cardigan over shirt", "color_hex": "#4B2C7F", "detail": "sky-blue cuff stripe, white shirt collar" },
-    "bottom": { "garment": "straight trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "loafers", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "cardigan over shirt",
+      "color_hex": "#4B2C7F",
+      "detail": "sky-blue cuff stripe, white shirt collar"
+    },
+    "bottom": {
+      "garment": "straight trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "loafers",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Optimizing database efficiency",
-    "activity_hint": "System improvement",
-    "scene_narrative": "A young man in glasses cradles an open laptop glowing with an abstract sky-blue gear/flow icon while adjusting a floating server-rack icon with his free hand — full-body flat vector language matching the approved Q1 references.",
-    "hero_prop": "open laptop glowing with an abstract sky-blue gear/flowchart icon",
-    "supporting_props": ["floating server-rack icon", "small data-node dots", "notebook tucked under arm"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Making sure every peso and coin adds up correctly",
+    "activity_hint": "Careful",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: making sure every peso and coin adds up correctly. Hero focus on open cash box with coins being counted. Activity matches \"Making sure every peso and coin adds up correctly\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "open cash box with coins being counted",
+    "supporting_props": [
+      "calculator",
+      "receipt pad",
+      "coin tray"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + laptop readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + cash box readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -90,8 +120,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, readable numbers"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age man, deep brown skin, short hair, round glasses, standing calmly with an open laptop cradled against his side. Purple #4B2C7F cardigan with sky-blue #81D4FA cuff stripe over a white shirt, charcoal trousers, loafers. The laptop glows with an abstract sky-blue gear/flowchart icon while he adjusts a floating server-rack icon with his free hand; small data-node dots float nearby, notebook tucked under his arm. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO readable numbers, NO border frame. Subtle Conventional RIASEC sky-blue accent. Calm systematic energy. Full head-to-feet visible, NOT a hands-only crop."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, deep brown skin, short hair, cardigan over shirt #4B2C7F with sky-blue cuff stripe, white shirt collar, straight trousers #2D2D2D, loafers #2D2D2D. Pose: full body, counting at table, making sure every peso and coin adds up correctly. Hero prop: open cash box with coins being counted. Supporting props: calculator, receipt pad, coin tray. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Careful responsible energy. Full head-to-feet visible."
 }

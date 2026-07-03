@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q17 option 1 — Helping refugees settle locally",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q17 option 1 — Welcoming new students on the first day",
   "questionnaire": {
     "question_id": 17,
-    "question_text": "Which social service appeals more?",
+    "question_text": "Which sounds more fun to you?",
     "option_key": "1",
     "slot": "17.1",
-    "choice_text": "Helping refugees settle locally",
-    "hint": "Community integration",
+    "choice_text": "Welcoming new students on the first day",
+    "hint": "Welcoming",
     "riasec_code": "S",
     "riasec_type": "Social",
     "sensitive_topic": true
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "gentle hopeful welcome energy — warm community kindness, never crisis or hardship",
+    "mood": "gentle hopeful welcome energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,7 +39,7 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill",
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)",
       "refugee camp, tents, or border fence imagery",
       "crowds, protest signs, or distress body language",
       "sad or crying facial expression"
@@ -45,12 +48,25 @@
   "color": {
     "riasec_code": "S",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#9575CD", "use": "ribbon, cardigan cuff trim" },
-    "riasec_secondary": { "hex": "#4DB6AC", "use": "small leaf-sprout accent on potted plant" },
+    "riasec_accent": {
+      "hex": "#9575CD",
+      "use": "ribbon, cardigan cuff trim"
+    },
+    "riasec_secondary": {
+      "hex": "#4DB6AC",
+      "use": "small leaf-sprout accent on potted plant"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "warm olive", "hex_approx": "#C8956C" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "warm olive",
+      "hex_approx": "#C8956C"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young woman",
@@ -62,31 +78,45 @@
     "diversity_note": "unique cast per slot — female presentation, warm olive skin, low ribboned bun distinguishes from other slots"
   },
   "pose": {
-    "stance": "full body, standing gently forward at an open doorway threshold",
-    "action": "extending a house key resting on an open palm with one hand while cradling a woven welcome basket against her hip with the other",
+    "stance": "full body, open welcoming posture",
+    "action": "greeting new students with a friendly welcome sign",
     "facing": "3/4 toward viewer, warm open posture",
     "energy": "hopeful, warm, gently welcoming"
   },
   "clothes": {
-    "top": { "garment": "soft knit cardigan", "color_hex": "#4B2C7F", "detail": "charcoal collar, lavender ribbed cuff trim" },
-    "bottom": { "garment": "flowing midi skirt", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "simple flats", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "soft knit cardigan",
+      "color_hex": "#4B2C7F",
+      "detail": "charcoal collar, lavender ribbed cuff trim"
+    },
+    "bottom": {
+      "garment": "flowing midi skirt",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "simple flats",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Helping refugees settle locally",
-    "activity_hint": "Community integration",
-    "scene_narrative": "A young woman stands at a sunlit doorway threshold, extending a brass house key on a lavender ribbon across her open palm while cradling a woven basket of bread and fruit — a doorstep-warm, full-body gesture of welcome and new beginnings, in the same hopeful maker language as the approved Q1 references. The scene stays entirely symbolic: no camps, no distress, no border imagery, just an open door and a gift of belonging.",
-    "hero_prop": "brass house key threaded on a lavender ribbon, resting on her open palm",
-    "supporting_props": ["woven welcome basket with bread and fruit", "small terracotta pot with a single green sprout beside her feet"],
-    "environment": "thin warm doorstep threshold line, faint grey decorative circles behind figure — no building facade or crowd",
+    "choice_label": "Welcoming new students on the first day",
+    "activity_hint": "Welcoming",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: greeting new students with a friendly welcome sign. Hero focus on welcome sign with star icons only. Activity matches \"Welcoming new students on the first day\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "welcome sign with star icons only",
+    "supporting_props": [
+      "name tag stickers",
+      "info leaflet without text",
+      "small flower pot"
+    ],
+    "environment": "solid #FDFCF8 page background, thin warm doorstep threshold line, faint grey decorative circles behind figure — no building facade or crowd",
     "symbolic": true,
-    "sensitive_handling": "Depict only a hopeful, symbolic full-body welcome gesture — a young woman calmly offering a house key and a basket at a doorstep. Do not depict refugee camps, border fences, distress, crowds, sadness, crying, or any hardship imagery. Face must stay minimal and calmly smiling. Tone must read as warm community welcome, never crisis."
+    "sensitive_handling": "Hopeful symbolic full-body scene only — calm smiling minimal face, no distress, crisis, or harsh imagery."
   },
   "composition": {
     "layout": "figure centered, slightly right-of-center, both arms open in offering gesture, balanced like 1.2.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + offered key and basket readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + welcome sign readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -94,8 +124,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, refugee camp, tents, border fence, crowd of people, distress, crying, sadness, war imagery, weapons, blood, protest signs"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, distress, crying, sadness, crisis imagery, crowds, violence"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face with a small warm smile. Young gentle woman, warm olive skin, soft curls in a low ribboned bun, standing 3/4 toward viewer at a sunlit doorway threshold. She wears a purple #4B2C7F soft knit cardigan with charcoal collar and lavender #9575CD ribbed cuff trim, a charcoal flowing midi skirt, and simple flats. She extends a brass house key threaded on a lavender ribbon across her open palm with one hand, cradling a woven basket of bread and fruit against her hip with the other; a small terracotta pot with a single green sprout sits beside her feet. Thin warm doorstep threshold line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Full head-to-feet visible. Hopeful, gentle, entirely symbolic community-welcome energy — no camps, no distress, no crisis imagery. Sensitive topic handled with hopeful symbolism only."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, warm olive skin, soft curls in a low bun tied with a ribbon, soft knit cardigan #4B2C7F with charcoal collar, lavender ribbed cuff trim, flowing midi skirt #2D2D2D, simple flats #2D2D2D. Pose: full body, open welcoming posture, greeting new students with a friendly welcome sign. Hero prop: welcome sign with star icons only. Supporting props: name tag stickers, info leaflet without text, small flower pot. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Social RIASEC accent #9575CD on props and trim, #4DB6AC secondary accents. Gentle hopeful welcome energy. Full head-to-feet visible."
 }

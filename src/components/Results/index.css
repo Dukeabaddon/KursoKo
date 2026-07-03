@@ -23,6 +23,23 @@
   border-radius: 0.75rem;
 }
 
+.results-fold .results-main-enter {
+  animation: results-main-enter 640ms var(--results-ease) both;
+}
+
+@keyframes results-main-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
 /* Hero enter stagger */
 @keyframes results-hero-pop {
   from {
@@ -55,41 +72,125 @@
   animation-delay: 280ms;
 }
 
-/* Scroll reveal */
-@keyframes results-reveal-up {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Scroll reveal — starts at 10% viewport, completes at 30% (JS sets --results-reveal-progress) */
 .results-fold .results-reveal {
-  opacity: 0;
+  --results-reveal-progress: 0;
+  opacity: var(--results-reveal-progress);
+  transform: translateY(calc((1 - var(--results-reveal-progress)) * 16px));
+  filter: blur(calc((1 - var(--results-reveal-progress)) * 4px));
 }
 
-.results-fold .results-reveal.is-visible {
-  animation: results-reveal-up 520ms var(--results-ease) both;
+.results-fold .results-reveal.is-revealed {
+  --results-reveal-progress: 1;
+  opacity: 1;
+  transform: none;
+  filter: none;
 }
 
-/* RIASEC bars */
-.results-fold .results-riasec-bar-fill {
-  transition: width 700ms var(--results-ease);
+/* RIASEC + affinity bars */
+.results-fold .results-riasec-bar-fill,
+.results-fold .results-affinity-bar {
+  transition: width 120ms linear;
 }
 
-/* Trait pill group hover */
+.results-fold .results-riasec-panel {
+  box-shadow: 0 12px 32px rgba(75, 44, 127, 0.06);
+}
+
+.results-fold .results-riasec-summary {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Trait pills — no hover lift (cognitive calm) */
 .results-fold .results-trait-pill {
-  transition:
-    background-color 180ms var(--results-ease),
-    transform 180ms var(--results-ease);
+  transition: background-color 180ms var(--results-ease);
 }
 
-.results-fold .results-trait-pill:hover {
-  transform: translateY(-1px);
-  background: rgba(149, 117, 205, 0.2);
+/* Career rank slanted bands — skew splash (constant angle at any card height) */
+.results-fold .results-career-card.results-surface {
+  background: transparent;
+}
+
+.results-fold .results-career-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.results-fold .results-career-card-splash {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -26%;
+  width: 56%;
+  transform: skewX(-18deg);
+  transform-origin: top left;
+  pointer-events: none;
+  z-index: 0;
+  will-change: auto;
+}
+
+.results-fold .results-career-card-splash--1 {
+  background: #c4b0e8;
+}
+
+.results-fold .results-career-card-splash--2 {
+  background: #86efac;
+}
+
+.results-fold .results-career-card-splash--3 {
+  background: #fde047;
+}
+
+.results-fold .results-career-card-header {
+  position: relative;
+  z-index: 1;
+}
+
+.results-fold .results-career-rank--1 {
+  background: #4b2c7f;
+  color: #fff;
+}
+
+.results-fold .results-career-rank--2 {
+  background: rgba(5, 150, 105, 0.15);
+  color: #047857;
+}
+
+.results-fold .results-career-rank--3 {
+  background: rgba(255, 255, 255, 0.92);
+  color: #2d2d2d;
+  border: 1px solid rgba(45, 45, 45, 0.12);
+}
+
+/* Bottom CTAs — always sharp (no scroll blur on terminal actions) */
+.results-fold .results-footer {
+  opacity: 1;
+  filter: none;
+  transform: none;
+}
+
+/* Accordion body — transparent so left splash stays visible when open */
+.results-fold .results-career-card-body {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+.results-fold .results-career-card-body-inner {
+  padding-left: clamp(6.5rem, 36%, 11rem);
+  background: transparent;
+}
+
+/* School cards — no rank neon borders */
+.results-fold .results-school-card {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  overflow: hidden;
+}
+
+.results-fold .results-school-card::before {
+  content: none;
 }
 
 /* Accordion */
@@ -108,12 +209,17 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .results-fold .results-main-enter,
   .results-fold .results-hero-enter .results-hero-item,
-  .results-fold .results-reveal.is-visible,
-  .results-fold .results-riasec-bar-fill {
+  .results-fold .results-reveal,
+  .results-fold .results-reveal.is-revealed,
+  .results-fold .results-riasec-bar-fill,
+  .results-fold .results-affinity-bar,
+  .results-fold .results-accordion-panel {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
     transform: none !important;
+    filter: none !important;
   }
 }

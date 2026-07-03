@@ -1,464 +1,459 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "text": "Which task would you enjoy more?",
-        "optionA": {
-          "text": "Building a robot kit",
-          "code": "R",
-          "hint": "Hands-on construction"
-        },
-        "optionB": {
-          "text": "Analyzing patterns in stock market data",
-          "code": "I",
-          "hint": "Data investigation"
-        }
+  "metadata": {
+    "audience": "shs",
+    "copyVersion": 3,
+    "readingLevel": "grade-6-7",
+    "dimensionCounts": {
+      "R": 10,
+      "I": 10,
+      "A": 10,
+      "S": 10,
+      "E": 10,
+      "C": 10
+    },
+    "pairDistribution": {
+      "RI": 2,
+      "RA": 2,
+      "RS": 2,
+      "RE": 2,
+      "RC": 2,
+      "IA": 2,
+      "IS": 2,
+      "IE": 2,
+      "IC": 2,
+      "AS": 2,
+      "AE": 2,
+      "AC": 2,
+      "SE": 2,
+      "SC": 2,
+      "EC": 2
+    },
+    "ratingScale": {
+      "1": "Okay",
+      "2": "Like",
+      "3": "Love It"
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Assembling a toy robot from a kit",
+        "code": "R",
+        "hint": "Hands-on"
       },
-      {
-        "id": 2,
-        "text": "Choose your preferred activity:",
-        "optionA": {
-          "text": "Creating digital artwork for a game",
-          "code": "A",
-          "hint": "Visual design"
-        },
-        "optionB": {
-          "text": "Tutoring classmates in math",
-          "code": "S",
-          "hint": "Academic support"
-        }
-      },
-      {
-        "id": 3,
-        "text": "Which would you rather do?",
-        "optionA": {
-          "text": "Starting an online business",
-          "code": "E",
-          "hint": "Entrepreneurship"
-        },
-        "optionB": {
-          "text": "Organizing school records database",
-          "code": "C",
-          "hint": "Data management"
-        }
-      },
-      {
-        "id": 4,
-        "text": "Pick your preferred project:",
-        "optionA": {
-          "text": "Repairing smartphone hardware",
-          "code": "R",
-          "hint": "Technical repair"
-        },
-        "optionB": {
-          "text": "Researching AI ethics",
-          "code": "I",
-          "hint": "Conceptual analysis"
-        }
-      },
-      {
-        "id": 5,
-        "text": "Which creative work appeals more?",
-        "optionA": {
-          "text": "Writing fantasy novel chapters",
-          "code": "A",
-          "hint": "Storytelling"
-        },
-        "optionB": {
-          "text": "Counseling peers through stress",
-          "code": "S",
-          "hint": "Emotional support"
-        }
-      },
-      {
-        "id": 6,
-        "text": "Choose your ideal internship:",
-        "optionA": {
-          "text": "Marketing products on social media",
-          "code": "E",
-          "hint": "Digital promotion"
-        },
-        "optionB": {
-          "text": "Processing financial transactions",
-          "code": "C",
-          "hint": "Systematic work"
-        }
-      },
-      {
-        "id": 7,
-        "text": "Which technical work interests you?",
-        "optionA": {
-          "text": "Installing home security systems",
-          "code": "R",
-          "hint": "Electronics setup"
-        },
-        "optionB": {
-          "text": "Developing climate prediction models",
-          "code": "I",
-          "hint": "Scientific programming"
-        }
-      },
-      {
-        "id": 8,
-        "text": "Which artistic activity excites you?",
-        "optionA": {
-          "text": "Designing streetwear fashion",
-          "code": "A",
-          "hint": "Creative expression"
-        },
-        "optionB": {
-          "text": "Coaching youth sports teams",
-          "code": "S",
-          "hint": "Athletic mentoring"
-        }
-      },
-      {
-        "id": 9,
-        "text": "Which business role suits you?",
-        "optionA": {
-          "text": "Pitching startup ideas to investors",
-          "code": "E",
-          "hint": "Persuasive presentation"
-        },
-        "optionB": {
-          "text": "Managing supply chain logistics",
-          "code": "C",
-          "hint": "Operational coordination"
-        }
-      },
-      {
-        "id": 10,
-        "text": "Which hands-on task appeals more?",
-        "optionA": {
-          "text": "Building sustainable furniture",
-          "code": "R",
-          "hint": "Woodworking craft"
-        },
-        "optionB": {
-          "text": "Studying marine biology specimens",
-          "code": "I",
-          "hint": "Scientific examination"
-        }
-      },
-      {
-        "id": 11,
-        "text": "Which creative project interests you?",
-        "optionA": {
-          "text": "Producing music tracks",
-          "code": "A",
-          "hint": "Audio production"
-        },
-        "optionB": {
-          "text": "Volunteering at community health camp",
-          "code": "S",
-          "hint": "Public service"
-        }
-      },
-      {
-        "id": 12,
-        "text": "Which office role fits you better?",
-        "optionA": {
-          "text": "Leading corporate negotiations",
-          "code": "E",
-          "hint": "Strategic discussion"
-        },
-        "optionB": {
-          "text": "Auditing company accounts",
-          "code": "C",
-          "hint": "Financial verification"
-        }
-      },
-      {
-        "id": 13,
-        "text": "Which technical challenge excites you?",
-        "optionA": {
-          "text": "Maintaining drone equipment",
-          "code": "R",
-          "hint": "Aerial tech maintenance"
-        },
-        "optionB": {
-          "text": "Researching quantum computing",
-          "code": "I",
-          "hint": "Advanced physics"
-        }
-      },
-      {
-        "id": 14,
-        "text": "Which helping role feels natural?",
-        "optionA": {
-          "text": "Teaching coding to kids",
-          "code": "S",
-          "hint": "Educational support"
-        },
-        "optionB": {
-          "text": "Designing museum exhibits",
-          "code": "A",
-          "hint": "Spatial design"
-        }
-      },
-      {
-        "id": 15,
-        "text": "Which professional task suits you?",
-        "optionA": {
-          "text": "Managing e-commerce store",
-          "code": "E",
-          "hint": "Online business"
-        },
-        "optionB": {
-          "text": "Optimizing database efficiency",
-          "code": "C",
-          "hint": "System improvement"
-        }
-      },
-      {
-        "id": 16,
-        "text": "Which outdoor work interests you?",
-        "optionA": {
-          "text": "Installing solar farm panels",
-          "code": "R",
-          "hint": "Renewable energy"
-        },
-        "optionB": {
-          "text": "Documenting wildlife behavior",
-          "code": "I",
-          "hint": "Field research"
-        }
-      },
-      {
-        "id": 17,
-        "text": "Which social service appeals more?",
-        "optionA": {
-          "text": "Helping refugees settle locally",
-          "code": "S",
-          "hint": "Community integration"
-        },
-        "optionB": {
-          "text": "Creating public space murals",
-          "code": "A",
-          "hint": "Urban art"
-        }
-      },
-      {
-        "id": 18,
-        "text": "Which organizational task fits you?",
-        "optionA": {
-          "text": "Planning corporate takeover",
-          "code": "E",
-          "hint": "Business strategy"
-        },
-        "optionB": {
-          "text": "Standardizing filing systems",
-          "code": "C",
-          "hint": "Process optimization"
-        }
-      },
-      {
-        "id": 19,
-        "text": "Which repair work would you prefer?",
-        "optionA": {
-          "text": "Fixing electric bicycles",
-          "code": "R",
-          "hint": "E-mobility tech"
-        },
-        "optionB": {
-          "text": "Studying virus mutations",
-          "code": "I",
-          "hint": "Microbiology research"
-        }
-      },
-      {
-        "id": 20,
-        "text": "Which educational role suits you?",
-        "optionA": {
-          "text": "Mentoring first-generation students",
-          "code": "S",
-          "hint": "Equity support"
-        },
-        "optionB": {
-          "text": "Illustrating science textbooks",
-          "code": "A",
-          "hint": "Educational visuals"
-        }
-      },
-      {
-        "id": 21,
-        "text": "Which data task interests you?",
-        "optionA": {
-          "text": "Analyzing consumer behavior trends",
-          "code": "I",
-          "hint": "Market research"
-        },
-        "optionB": {
-          "text": "Creating tax compliance reports",
-          "code": "C",
-          "hint": "Regulatory work"
-        }
-      },
-      {
-        "id": 22,
-        "text": "Which leadership role fits you?",
-        "optionA": {
-          "text": "Directing non-profit organization",
-          "code": "E",
-          "hint": "Social enterprise"
-        },
-        "optionB": {
-          "text": "Quality-checking manufacturing outputs",
-          "code": "C",
-          "hint": "Production standards"
-        }
-      },
-      {
-        "id": 23,
-        "text": "Which hands-on science excites you?",
-        "optionA": {
-          "text": "Assembling telescope components",
-          "code": "R",
-          "hint": "Precision instrumentation"
-        },
-        "optionB": {
-          "text": "Developing cancer treatment trials",
-          "code": "I",
-          "hint": "Medical research"
-        }
-      },
-      {
-        "id": 24,
-        "text": "Which community work appeals more?",
-        "optionA": {
-          "text": "Counseling at-risk youth",
-          "code": "S",
-          "hint": "Social work"
-        },
-        "optionB": {
-          "text": "Designing inclusive playgrounds",
-          "code": "A",
-          "hint": "Accessible design"
-        }
-      },
-      {
-        "id": 25,
-        "text": "Which technical analysis interests you?",
-        "optionA": {
-          "text": "Testing water purification systems",
-          "code": "I",
-          "hint": "Environmental science"
-        },
-        "optionB": {
-          "text": "Managing payroll systems",
-          "code": "C",
-          "hint": "Financial administration"
-        }
-      },
-      {
-        "id": 26,
-        "text": "Which construction project excites you?",
-        "optionA": {
-          "text": "Building disaster-resistant housing",
-          "code": "R",
-          "hint": "Structural engineering"
-        },
-        "optionB": {
-          "text": "Planning city recycling programs",
-          "code": "C",
-          "hint": "Environmental systems"
-        }
-      },
-      {
-        "id": 27,
-        "text": "Which creative service suits you?",
-        "optionA": {
-          "text": "Art therapy for trauma survivors",
-          "code": "S",
-          "hint": "Healing through art"
-        },
-        "optionB": {
-          "text": "Brand identity design for startups",
-          "code": "A",
-          "hint": "Commercial creativity"
-        }
-      },
-      {
-        "id": 28,
-        "text": "Which innovation role fits you?",
-        "optionA": {
-          "text": "Launching tech incubator program",
-          "code": "E",
-          "hint": "Entrepreneurial ecosystem"
-        },
-        "optionB": {
-          "text": "Developing cybersecurity protocols",
-          "code": "I",
-          "hint": "Digital protection"
-        }
-      },
-      {
-        "id": 29,
-        "text": "Which outdoor service appeals more?",
-        "optionA": {
-          "text": "Search-and-rescue operations",
-          "code": "R",
-          "hint": "Emergency response"
-        },
-        "optionB": {
-          "text": "Organizing community gardens",
-          "code": "S",
-          "hint": "Urban agriculture"
-        }
-      },
-      {
-        "id": 30,
-        "text": "Which strategic task interests you?",
-        "optionA": {
-          "text": "Negotiating international trade deals",
-          "code": "E",
-          "hint": "Global business"
-        },
-        "optionB": {
-          "text": "Creating corporate compliance manuals",
-          "code": "C",
-          "hint": "Regulatory guidance"
-        }
+      "optionB": {
+        "text": "Comparing two phones before your family buys one",
+        "code": "I",
+        "hint": "Curious"
       }
-    ],
-    "metadata": {
-      "dimensionCounts": {
-        "R": 10,
-        "I": 10,
-        "A": 10,
-        "S": 10,
-        "E": 10,
-        "C": 10
+    },
+    {
+      "id": 2,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Drawing a poster for a school program",
+        "code": "A",
+        "hint": "Creative"
       },
-      "pairDistribution": {
-        "RI": 2,
-        "RA": 2,
-        "RS": 2,
-        "RE": 2,
-        "RC": 2,
-        "IA": 2,
-        "IS": 2,
-        "IE": 2,
-        "IC": 2,
-        "AS": 2,
-        "AE": 2,
-        "AC": 2,
-        "SE": 2,
-        "SC": 2,
-        "EC": 2
+      "optionB": {
+        "text": "Helping a classmate stuck on homework",
+        "code": "S",
+        "hint": "Helpful"
+      }
+    },
+    {
+      "id": 3,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Calling out snack deals during a school fair",
+        "code": "E",
+        "hint": "Persuasive"
       },
-      "characteristics": {
-        "modernTechInclusion": 22,
-        "socialImpactFocus": 18,
-        "creativeFields": 12,
-        "entrepreneurialOptions": 10
+      "optionB": {
+        "text": "Tracking who paid and who still owes for snacks",
+        "code": "C",
+        "hint": "Organized"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Installing a replacement screen film without bubbles",
+        "code": "R",
+        "hint": "Hands-on"
       },
-      "version": "1.1",
-      "targetAudience": "High school and college-bound students",
-      "ratingScale": {
-        "1": "Okay",
-        "2": "Like",
-        "3": "Love It"
+      "optionB": {
+        "text": "Checking if a viral tip online actually works",
+        "code": "I",
+        "hint": "Curious"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Writing a short story for fun",
+        "code": "A",
+        "hint": "Creative"
+      },
+      "optionB": {
+        "text": "Listening when a friend is upset",
+        "code": "S",
+        "hint": "Caring"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Making a short video to promote a school club",
+        "code": "E",
+        "hint": "Outgoing"
+      },
+      "optionB": {
+        "text": "Sorting names in the right order on a class list",
+        "code": "C",
+        "hint": "Careful"
+      }
+    },
+    {
+      "id": 7,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Repairing a bike that keeps slipping gears",
+        "code": "R",
+        "hint": "Hands-on"
+      },
+      "optionB": {
+        "text": "Tracing why only one wall socket won't work",
+        "code": "I",
+        "hint": "Curious"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Designing a T-shirt idea for your class",
+        "code": "A",
+        "hint": "Creative"
+      },
+      "optionB": {
+        "text": "Showing younger kids how to play a sport",
+        "code": "S",
+        "hint": "Helpful"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Convincing friends to join your booth game",
+        "code": "E",
+        "hint": "Persuasive"
+      },
+      "optionB": {
+        "text": "Marking paid vs unpaid on the snack money list",
+        "code": "C",
+        "hint": "Organized"
+      }
+    },
+    {
+      "id": 10,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Putting up a DIY shelf from a kit",
+        "code": "R",
+        "hint": "Hands-on"
+      },
+      "optionB": {
+        "text": "Noticing tiny details on plants during a hike",
+        "code": "I",
+        "hint": "Curious"
+      }
+    },
+    {
+      "id": 11,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Making a playlist for a friend's party",
+        "code": "A",
+        "hint": "Creative"
+      },
+      "optionB": {
+        "text": "Handing out flyers at a local health fair",
+        "code": "S",
+        "hint": "Caring"
+      }
+    },
+    {
+      "id": 12,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Leading your group's presentation in class",
+        "code": "E",
+        "hint": "Leading"
+      },
+      "optionB": {
+        "text": "Checking every name is spelled right on a form",
+        "code": "C",
+        "hint": "Careful"
+      }
+    },
+    {
+      "id": 13,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Tightening screws on a wobbly desk fan",
+        "code": "R",
+        "hint": "Hands-on"
+      },
+      "optionB": {
+        "text": "Testing if a phone hack online really works",
+        "code": "I",
+        "hint": "Curious"
+      }
+    },
+    {
+      "id": 14,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Showing a younger sibling how to use an app",
+        "code": "S",
+        "hint": "Helpful"
+      },
+      "optionB": {
+        "text": "Decorating a classroom bulletin board",
+        "code": "A",
+        "hint": "Creative"
+      }
+    },
+    {
+      "id": 15,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Running a snack booth at a school fair",
+        "code": "E",
+        "hint": "Leading"
+      },
+      "optionB": {
+        "text": "Making sure every peso and coin adds up correctly",
+        "code": "C",
+        "hint": "Careful"
+      }
+    },
+    {
+      "id": 16,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Helping set up chairs and tents for an event",
+        "code": "R",
+        "hint": "Hands-on"
+      },
+      "optionB": {
+        "text": "Describing bird calls heard from a park bench",
+        "code": "I",
+        "hint": "Curious"
+      }
+    },
+    {
+      "id": 17,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Welcoming new students on the first day",
+        "code": "S",
+        "hint": "Welcoming"
+      },
+      "optionB": {
+        "text": "Painting a bright mural at school",
+        "code": "A",
+        "hint": "Creative"
+      }
+    },
+    {
+      "id": 18,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Planning who does what for a group project",
+        "code": "E",
+        "hint": "Leading"
+      },
+      "optionB": {
+        "text": "Stacking and sorting documents so nothing is lost",
+        "code": "C",
+        "hint": "Organized"
+      }
+    },
+    {
+      "id": 19,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Tightening loose screws on a wobbly classroom chair",
+        "code": "R",
+        "hint": "Hands-on"
+      },
+      "optionB": {
+        "text": "Reading how soap kills germs in a science article",
+        "code": "I",
+        "hint": "Curious"
+      }
+    },
+    {
+      "id": 20,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Guiding a new student around campus",
+        "code": "S",
+        "hint": "Helpful"
+      },
+      "optionB": {
+        "text": "Drawing pictures for a school handout",
+        "code": "A",
+        "hint": "Creative"
+      }
+    },
+    {
+      "id": 21,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Tracking which snack sold fastest at a fair",
+        "code": "I",
+        "hint": "Curious"
+      },
+      "optionB": {
+        "text": "Tallying quiz scores without mistakes",
+        "code": "C",
+        "hint": "Careful"
+      }
+    },
+    {
+      "id": 22,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Talking people into joining your club booth",
+        "code": "E",
+        "hint": "Persuasive"
+      },
+      "optionB": {
+        "text": "Double-checking every item on a checklist",
+        "code": "C",
+        "hint": "Careful"
+      }
+    },
+    {
+      "id": 23,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Building a basic robot car from a starter kit",
+        "code": "R",
+        "hint": "Hands-on"
+      },
+      "optionB": {
+        "text": "Reading how plants grow in a science magazine",
+        "code": "I",
+        "hint": "Curious"
+      }
+    },
+    {
+      "id": 24,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Sitting with a classmate who feels left out",
+        "code": "S",
+        "hint": "Caring"
+      },
+      "optionB": {
+        "text": "Designing an accessible play zone with ramps and shade",
+        "code": "A",
+        "hint": "Creative"
+      }
+    },
+    {
+      "id": 25,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Recording how long bubbles last on each soap sample",
+        "code": "I",
+        "hint": "Curious"
+      },
+      "optionB": {
+        "text": "Updating the class attendance sheet",
+        "code": "C",
+        "hint": "Organized"
+      }
+    },
+    {
+      "id": 26,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Hammering nails to fix a loose wooden stool",
+        "code": "R",
+        "hint": "Hands-on"
+      },
+      "optionB": {
+        "text": "Sorting recyclables into the right bins",
+        "code": "C",
+        "hint": "Organized"
+      }
+    },
+    {
+      "id": 27,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Drawing together with friends to relax",
+        "code": "S",
+        "hint": "Caring"
+      },
+      "optionB": {
+        "text": "Designing a logo for a school club",
+        "code": "A",
+        "hint": "Creative"
+      }
+    },
+    {
+      "id": 28,
+      "text": "Which would you rather do?",
+      "optionA": {
+        "text": "Pitching your project idea to the class",
+        "code": "E",
+        "hint": "Leading"
+      },
+      "optionB": {
+        "text": "Figuring out why a game lags on your phone",
+        "code": "I",
+        "hint": "Curious"
+      }
+    },
+    {
+      "id": 29,
+      "text": "Which sounds more fun to you?",
+      "optionA": {
+        "text": "Carrying supply boxes for a school event",
+        "code": "R",
+        "hint": "Hands-on"
+      },
+      "optionB": {
+        "text": "Planting vegetables in a school garden",
+        "code": "S",
+        "hint": "Caring"
+      }
+    },
+    {
+      "id": 30,
+      "text": "Pick the one you'd enjoy more.",
+      "optionA": {
+        "text": "Leading a debate on a class topic",
+        "code": "E",
+        "hint": "Persuasive"
+      },
+      "optionB": {
+        "text": "Writing step-by-step rules for a club game",
+        "code": "C",
+        "hint": "Organized"
       }
     }
-  }
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "$comment": "v4 — full-body character style matching src/assets/1.1.png & 1.2.png references",
+  "$comment": "v4 — full-body character style matching src/assets/questionnaire/01.1.png & 1.2.png references",
   "schema_version": 4,
   "style_reference_files": [
-    "src/assets/1.1.png",
-    "src/assets/1.2.png"
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
   ],
   "required_blocks": [
     "questionnaire",

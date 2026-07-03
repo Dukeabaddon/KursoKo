@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-import { ChartLine, Info } from 'lucide-react'
 import { RIASEC_BAR_COLORS, RIASEC_MAX_POINTS, getBarPercent } from '../../utils/riasecDisplay'
-import { resultsMeta, resultsSectionTitle, resultsSurface } from './resultsClasses'
+import { resultsMeta, resultsSurface } from './resultsClasses'
 
 const ORDER = ['R', 'I', 'A', 'S', 'E', 'C']
 
@@ -16,17 +15,14 @@ const RiasecBreakdown = ({ allDimensions, combination, primaryName, secondaryNam
   const byCode = Object.fromEntries(allDimensions.map((d) => [d.code, d]))
 
   return (
-    <section className={`${resultsSurface} h-full`} aria-labelledby="riasec-heading">
-      <div className="mb-4 flex items-start gap-2">
-        <ChartLine className="mt-0.5 h-5 w-5 shrink-0 text-landing-accent" aria-hidden="true" />
-        <div>
-          <h2 id="riasec-heading" className={resultsSectionTitle}>
-            RIASEC scores
-          </h2>
-          <p className="mt-1 text-sm text-landing-muted normal-case">
-            How your answers spread across six interest areas
-          </p>
-        </div>
+    <section className={`${resultsSurface} results-riasec-panel h-full`} aria-labelledby="riasec-heading">
+      <div className="mb-4">
+        <h2 id="riasec-heading" className="text-lg font-bold text-landing-ink">
+          RIASEC scores
+        </h2>
+        <p className="mt-1 text-sm text-landing-muted normal-case">
+          How your answers spread across six interest areas
+        </p>
       </div>
 
       <ul className="space-y-3">
@@ -64,11 +60,10 @@ const RiasecBreakdown = ({ allDimensions, combination, primaryName, secondaryNam
         })}
       </ul>
 
-      <div className="results-surface-muted mt-5 flex gap-2 p-3 text-sm leading-relaxed text-landing-muted normal-case">
-        <Info className="mt-0.5 h-4 w-4 shrink-0 text-landing-accent" aria-hidden="true" />
+      <div className="results-riasec-summary mt-5 rounded-xl border border-landing-accent/15 bg-gradient-to-br from-landing-accent/5 to-white p-4 text-sm leading-relaxed text-landing-ink normal-case">
+        <p className={`mb-1 ${resultsMeta} text-landing-accent`}>Your pattern</p>
         <p>
-          Your top combo is <strong className="text-landing-ink">{combination}</strong> ({primaryName} +{' '}
-          {secondaryName}). Course and university picks below use this pattern.
+          Top combo: <strong>{combination}</strong> ({primaryName} + {secondaryName}). Schools and scholarships below follow this mix.
         </p>
       </div>
     </section>

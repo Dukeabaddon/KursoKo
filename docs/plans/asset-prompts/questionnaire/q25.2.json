@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q25 option 2 — Managing payroll systems",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q25 option 2 — Updating the class attendance sheet",
   "questionnaire": {
     "question_id": 25,
-    "question_text": "Which technical analysis interests you?",
+    "question_text": "Which would you rather do?",
     "option_key": "2",
     "slot": "25.2",
-    "choice_text": "Managing payroll systems",
-    "hint": "Financial administration",
+    "choice_text": "Updating the class attendance sheet",
+    "hint": "Organized",
     "riasec_code": "C",
     "riasec_type": "Conventional",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "friendly career exploration for students",
+    "mood": "dutiful focused energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,18 +39,31 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "C",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#81D4FA", "use": "desk-calendar pay-day dots, office-shirt cuff stripe" },
-    "riasec_secondary": { "hex": "#4B2C7F", "use": "keyboard key accent" },
+    "riasec_accent": {
+      "hex": "#81D4FA",
+      "use": "desk-calendar pay-day dots, office-shirt cuff stripe"
+    },
+    "riasec_secondary": {
+      "hex": "#4B2C7F",
+      "use": "keyboard key accent"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "olive", "hex_approx": "#C89B72" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "olive",
+      "hex_approx": "#C89B72"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "man",
@@ -59,30 +75,44 @@
     "diversity_note": "unique cast per slot — round glasses and seated desk pose distinguish this figure from surrounding characters"
   },
   "pose": {
-    "stance": "full body, seated on a stool at a small desk",
-    "action": "typing on a keyboard with one hand while fanning a small stack of payslip envelopes with the other",
+    "stance": "full body, updating attendance",
+    "action": "updating the class attendance sheet on a laptop",
     "facing": "3/4 toward the desk",
     "energy": "focused, orderly, quietly approachable"
   },
   "clothes": {
-    "top": { "garment": "pressed button-front shirt", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, sky-blue cuff stripe" },
-    "bottom": { "garment": "tailored trousers", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "simple loafers", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "pressed button-front shirt",
+      "color_hex": "#4B2C7F",
+      "detail": "dark charcoal collar, sky-blue cuff stripe"
+    },
+    "bottom": {
+      "garment": "tailored trousers",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "simple loafers",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Managing payroll systems",
-    "activity_hint": "Financial administration",
-    "scene_narrative": "A man sits at a small desk, typing on a keyboard with one hand while fanning a small stack of payslip envelopes with the other, a small desk calendar with pay-day dots nearby — the same full-body flat vector language as the approved Q1 references, reading as calm, organized administrative work.",
-    "hero_prop": "keyboard and a small fanned stack of payslip envelopes with a sky-blue corner accent",
-    "supporting_props": ["small desk calendar with pay-day dot markers"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Updating the class attendance sheet",
+    "activity_hint": "Organized",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: updating the class attendance sheet on a laptop. Hero focus on laptop with attendance grid. Activity matches \"Updating the class attendance sheet\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "laptop with attendance grid",
+    "supporting_props": [
+      "pen",
+      "roster booklet",
+      "checkmark icons"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, desk right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + desk readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + attendance sheet readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -90,8 +120,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, readable payroll numbers, currency symbols"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Mid-30s man seated on a stool at a small desk, olive skin, short neat hair, round glasses, purple #4B2C7F pressed button-front shirt with charcoal collar and sky-blue #81D4FA cuff stripe, charcoal tailored trousers and loafers. He types on a keyboard with one hand while fanning a small stack of payslip envelopes with a sky-blue corner accent in the other, a small desk calendar with pay-day dot markers nearby. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Conventional RIASEC accent sky blue on calendar and cuff stripe, purple on keyboard key accent. Focused, orderly, quietly approachable energy. Full head-to-feet visible."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, man, olive skin, short neat hair, round glasses, pressed button-front shirt #4B2C7F with dark charcoal collar, sky-blue cuff stripe, tailored trousers #2D2D2D, simple loafers #2D2D2D. Pose: full body, updating attendance, updating the class attendance sheet on a laptop. Hero prop: laptop with attendance grid. Supporting props: pen, roster booklet, checkmark icons. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Dutiful focused energy. Full head-to-feet visible."
 }

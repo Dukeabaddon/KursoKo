@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q29 option 1 — Search-and-rescue operations",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q29 option 1 — Carrying supply boxes for a school event",
   "questionnaire": {
     "question_id": 29,
-    "question_text": "Which outdoor service appeals more?",
+    "question_text": "Which sounds more fun to you?",
     "option_key": "1",
     "slot": "29.1",
-    "choice_text": "Search-and-rescue operations",
-    "hint": "Emergency response",
+    "choice_text": "Carrying supply boxes for a school event",
+    "hint": "Hands-on",
     "riasec_code": "R",
     "riasec_type": "Realistic",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "capable, heroic-but-calm readiness — gear preparation, never depicting an accident or victim",
+    "mood": "busy helpful energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -37,18 +40,31 @@
       "3D render",
       "hands-only POV crop",
       "injured person, stretcher, or medical distress imagery",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "R",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#4DB6AC", "use": "carabiner gate, rope end-cap, jacket cuff stripe" },
-    "riasec_secondary": { "hex": "#9575CD", "use": "compass bezel, whistle cord" },
+    "riasec_accent": {
+      "hex": "#4DB6AC",
+      "use": "carabiner gate, rope end-cap, jacket cuff stripe"
+    },
+    "riasec_secondary": {
+      "hex": "#9575CD",
+      "use": "compass bezel, whistle cord"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "medium tan", "hex_approx": "#C8956C" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "medium tan",
+      "hex_approx": "#C8956C"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young woman",
@@ -60,30 +76,45 @@
     "diversity_note": "unique cast per slot — distinct build, skin tone and hairstyle from every other questionnaire character"
   },
   "pose": {
-    "stance": "full body, standing, one foot slightly forward in a ready stance",
-    "action": "coiling an orange rescue rope over one shoulder while clipping a carabiner onto a loop of harness webbing at her waist with the other hand",
+    "stance": "full body, carrying boxes",
+    "action": "carrying supply boxes for a school event",
     "facing": "3/4 forward, carabiner hand raised",
     "energy": "focused, capable, calmly prepared"
   },
   "clothes": {
-    "top": { "garment": "technical rescue jacket", "color_hex": "#4B2C7F", "detail": "dark charcoal collar, teal reflective-style cuff stripe" },
-    "bottom": { "garment": "cargo pants", "color_hex": "#2D2D2D", "detail": "harness webbing loop at waist" },
-    "footwear": { "garment": "hiking boots", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "technical rescue jacket",
+      "color_hex": "#4B2C7F",
+      "detail": "dark charcoal collar, teal reflective-style cuff stripe"
+    },
+    "bottom": {
+      "garment": "cargo pants",
+      "color_hex": "#2D2D2D",
+      "detail": "harness webbing loop at waist"
+    },
+    "footwear": {
+      "garment": "hiking boots",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Search-and-rescue operations",
-    "activity_hint": "Emergency response",
-    "scene_narrative": "A young woman stands in a ready stance, coiling an orange rescue rope over one shoulder while clipping a carabiner onto a loop of harness webbing at her waist. A compass and whistle hang from her belt. Calm, methodical readiness — preparing to help, never depicting an accident, victim, or crisis — the same full-body flat vector language as the approved Q1 references.",
-    "hero_prop": "coiled orange rescue rope with a teal end-cap slung over the shoulder",
-    "supporting_props": ["aluminum carabiner clipped to webbing loop", "compass on belt", "rescue whistle with lavender cord"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Carrying supply boxes for a school event",
+    "activity_hint": "Hands-on",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: carrying supply boxes for a school event. Hero focus on stack of labeled supply boxes. Activity matches \"Carrying supply boxes for a school event\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "stack of labeled supply boxes",
+    "supporting_props": [
+      "tape dispenser",
+      "trolley",
+      "label stickers"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure centered slightly left, rope coil and gear right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + rope coil readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + boxes readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -91,8 +122,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter R, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, injured person, stretcher, medical distress, industrial horror, guns, blood"
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter R, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young college-age woman, athletic strong build, medium tan skin #C8956C, braided ponytail pulled back, standing in a ready stance with one foot forward. She wears a purple #4B2C7F technical rescue jacket with charcoal collar and teal #4DB6AC reflective-style cuff stripe, dark cargo pants with a harness webbing loop at the waist, and hiking boots. She coils an orange rescue rope with a teal end-cap over one shoulder while clipping an aluminum carabiner onto the webbing loop with her other hand. A simple compass and a rescue whistle with a lavender #9575CD cord hang from her belt. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Mood: calm, capable emergency-readiness — gear preparation, never an accident or victim scene. Full head-to-feet visible."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, medium tan skin, braided ponytail pulled back, technical rescue jacket #4B2C7F with dark charcoal collar, teal reflective-style cuff stripe, cargo pants #2D2D2D, hiking boots #2D2D2D. Pose: full body, carrying boxes, carrying supply boxes for a school event. Hero prop: stack of labeled supply boxes. Supporting props: tape dispenser, trolley, label stickers. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Realistic RIASEC accent #4DB6AC on props and trim, #9575CD secondary accents. Busy helpful energy. Full head-to-feet visible."
 }

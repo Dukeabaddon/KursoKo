@@ -1,0 +1,625 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "status": "review-only",
+    "scope": "Phase 1 high-confidence flattened scholarship records derived from scholarship_categories.json",
+    "notes": [
+      "These are runtime-safe candidate rows for later migration into src/data/scholarships.json.",
+      "No app code or runtime data has been changed yet."
+    ]
+  },
+  "scholarships": [
+    {
+      "id": "qcsp-shs-academic",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Academic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Accepted or enrolled in recognized institution"
+      ],
+      "benefits": [
+        "Up to PHP 20,000 tuition grant + PHP 10,000 stipend per school year",
+        "Annual application cycle under QCYDO rules"
+      ],
+      "coverage": ["Tuition grant", "Stipend"],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Academic qualification proof"
+      ],
+      "location": ["NCR"],
+      "level": ["shs"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["qcydo", "qcitizen", "any-shs"],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO and QC Government announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-qc-excel",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - QC Excel Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Recognized tertiary institution"
+      ],
+      "benefits": [
+        "Up to PHP 110,000 tuition grant + PHP 50,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": ["Tuition grant", "Stipend"],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "High academic merit"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-academic",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Academic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Recognized tertiary institution"
+      ],
+      "benefits": [
+        "Up to PHP 80,000 tuition grant + PHP 25,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": ["Tuition grant", "Stipend"],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Academic merit"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-athletic-arts",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Athletic and Arts Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Recognized tertiary institution"
+      ],
+      "benefits": [
+        "Up to PHP 55,000 tuition grant + PHP 25,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": ["Tuition grant", "Stipend"],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Arts or athletic credentials"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["A", "S", "E"],
+      "careerTags": ["graphic-designer", "content-creator"],
+      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-youth-leaders",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Youth Leaders Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Leadership role in QCYDO-registered youth organization"
+      ],
+      "benefits": [
+        "Up to PHP 55,000 tuition grant + PHP 25,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": ["Tuition grant", "Stipend"],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Registered youth leadership role"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["S", "E"],
+      "careerTags": ["teacher", "entrepreneur"],
+      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-economic",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Economic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Economic-need criteria"
+      ],
+      "benefits": [
+        "Up to PHP 10,000 tuition grant + PHP 10,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": ["Tuition grant", "Stipend"],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Economic-need qualification"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-postgraduate",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Postgraduate Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Postgraduate enrollment"
+      ],
+      "benefits": [
+        "Up to PHP 55,000 tuition grant + PHP 50,000 stipend per school year",
+        "Includes PHP 20,000 automatic release; remaining PHP 30,000 subject to thesis or dissertation grant approval"
+      ],
+      "coverage": ["Tuition grant", "Stipend", "Thesis or dissertation support"],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Postgraduate enrollment"
+      ],
+      "location": ["NCR"],
+      "level": ["graduate"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["qcydo", "qcitizen", "any-postgrad"],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/wp-content/uploads/2024/07/SP-3283-S-2024.pdf"
+    },
+    {
+      "id": "qcsp-continuing-vocational",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Continuing Education / Vocational Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Recognized vocational or continuing-education enrollment"
+      ],
+      "benefits": [
+        "PHP 10,000 stipend per school year",
+        "Category applies to continuing education or vocational studies"
+      ],
+      "coverage": ["Stipend"],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Vocational or continuing-education enrollment"
+      ],
+      "location": ["NCR"],
+      "level": ["tvet", "continuing-education"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["qcydo", "qcitizen", "any-vocational"],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "admu-financial-aid",
+      "provider": "Ateneo de Manila University",
+      "category": "university",
+      "name": "Ateneo College Scholarship Program - Financial Aid Grants",
+      "status": "active",
+      "eligibility": [
+        "Undergraduate applicant or continuing student",
+        "Demonstrated financial need",
+        "Online financial aid application"
+      ],
+      "benefits": [
+        "25% / 50% / 75% / 100% tuition and fees discount depending on award",
+        "May include book, transport, food, and dormitory assistance"
+      ],
+      "coverage": ["Tuition grant", "Book allowance", "Transport allowance", "Dormitory assistance"],
+      "requirements": [
+        "Financial need documentation",
+        "Admissions-linked application",
+        "Scholarship office review"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["ateneo", "need-based"],
+      "applicationLink": "https://www.ateneo.edu/college/scholarships/programs",
+      "deadlineNotes": "Varies by Ateneo admissions cycle.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ateneo.edu/college/scholarships/programs"
+    },
+    {
+      "id": "admu-magis",
+      "provider": "Ateneo de Manila University",
+      "category": "university",
+      "name": "Ateneo College Scholarship Program - Magis Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Selected from Ateneo financial aid recipients",
+        "Highest-need profiles prioritized"
+      ],
+      "benefits": [
+        "Full scholarship for selected highest-need awardees",
+        "Package determined within Ateneo scholarship process"
+      ],
+      "coverage": ["Tuition grant"],
+      "requirements": [
+        "Financial aid qualification",
+        "Ateneo scholarship office review"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["ateneo", "need-based"],
+      "applicationLink": "https://www.ateneo.edu/college/scholarships/programs",
+      "deadlineNotes": "Follows Ateneo financial aid cycle.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ateneo.edu/college/scholarships/programs"
+    },
+    {
+      "id": "dlsu-st-la-salle-grant",
+      "provider": "De La Salle University",
+      "category": "university",
+      "name": "De La Salle University - St. La Salle Financial Assistance Grant",
+      "status": "active",
+      "eligibility": [
+        "Incoming or continuing qualified student",
+        "Household income criteria",
+        "Required supporting documents"
+      ],
+      "benefits": [
+        "25% / 50% / 75% / 100% tuition and fees coverage depending on award",
+        "Need-based financial assistance grant"
+      ],
+      "coverage": ["Tuition grant"],
+      "requirements": [
+        "Financial documentation",
+        "Admissions or continuing-student qualification",
+        "Scholarship office review"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["dlsu", "need-based"],
+      "applicationLink": "https://www.dlsu.edu.ph/scholarship/st-la-salle-financial-assistance-grant-tdsol/",
+      "deadlineNotes": "Windows posted per academic year through DLSU and ArchersHub.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/scholarship/st-la-salle-financial-assistance-grant-tdsol/"
+    },
+    {
+      "id": "dlsu-archer-achiever-tier",
+      "provider": "De La Salle University",
+      "category": "university",
+      "name": "De La Salle University - Archer Achiever Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top DCAT examinees or equivalent direct-admission lane qualifiers",
+        "Filipino citizen"
+      ],
+      "benefits": [
+        "100% tuition and fee waiver",
+        "Includes advanced enrollment and fee waivers for graduation and alumni membership"
+      ],
+      "coverage": ["Tuition grant"],
+      "requirements": [
+        "Top admission ranking",
+        "Official DLSU eligibility notice"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["dlsu", "merit"],
+      "applicationLink": "https://www.dlsu.edu.ph/scholarship/archer-achiever-scholarship/",
+      "deadlineNotes": "Automatic for qualifying DLSU applicants.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/scholarship/archer-achiever-scholarship/"
+    },
+    {
+      "id": "ciit-future-ciitzen",
+      "provider": "CIIT Philippines",
+      "category": "university",
+      "name": "CIIT Scholarship Programs - Future CIITzen Scholarship Grant",
+      "status": "active",
+      "eligibility": [
+        "Incoming college applicant",
+        "Top 50 CIIT Admissions Test performer"
+      ],
+      "benefits": [
+        "20% discount on tuition and miscellaneous fees",
+        "Maintained annually during stay if requirements are met"
+      ],
+      "coverage": ["Tuition grant"],
+      "requirements": [
+        "CIIT admissions ranking",
+        "Required academic standing"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["I", "A"],
+      "careerTags": ["software-engineer", "graphic-designer", "content-creator"],
+      "institutionTags": ["ciit", "merit"],
+      "applicationLink": "https://www.ciit.edu.ph/announcement/ciit-scholarship/",
+      "deadlineNotes": "Automatic after admissions ranking; follow CIIT admissions schedule.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ciit.edu.ph/announcement/ciit-scholarship/"
+    },
+    {
+      "id": "ciit-interweave",
+      "provider": "CIIT Philippines",
+      "category": "university",
+      "name": "CIIT Scholarship Programs - Interweave Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Incoming first-year student",
+        "Outstanding portfolio or achievement record",
+        "Interview and academic review"
+      ],
+      "benefits": [
+        "Up to 100% tuition discount",
+        "Full academic scholarship possible for exceptional portfolio-based applicants"
+      ],
+      "coverage": ["Tuition grant"],
+      "requirements": [
+        "Portfolio submission",
+        "Interview",
+        "Academic review"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["A", "I"],
+      "careerTags": ["graphic-designer", "content-creator", "software-engineer"],
+      "institutionTags": ["ciit", "merit", "talent-based"],
+      "applicationLink": "https://www.ciit.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "Program-specific deadlines posted on CIIT scholarship announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ciit.edu.ph/admissions/scholarships/"
+    },
+    {
+      "id": "ciit-financial-aid",
+      "provider": "CIIT Philippines",
+      "category": "university",
+      "name": "CIIT Scholarship Programs - Financial Aid Program",
+      "status": "active",
+      "eligibility": [
+        "Currently enrolled student",
+        "Documented financial need",
+        "Meets grade requirements"
+      ],
+      "benefits": [
+        "50% to 80% discount on tuition and miscellaneous fees",
+        "Need-based aid for qualifying students"
+      ],
+      "coverage": ["Tuition grant"],
+      "requirements": [
+        "Financial need documentation",
+        "Grade requirement",
+        "Scholarship application review"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["ciit", "need-based"],
+      "applicationLink": "https://www.ciit.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "See CIIT scholarship portal or announcements for current windows.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ciit.edu.ph/admissions/scholarships/"
+    },
+    {
+      "id": "up-slas-giap",
+      "provider": "University of the Philippines System",
+      "category": "university",
+      "name": "University of the Philippines - SLAS Grants-in-Aid Program",
+      "status": "active",
+      "eligibility": [
+        "UP student applicant",
+        "SLAS application",
+        "Household financial data review"
+      ],
+      "benefits": [
+        "Tuition waivers and allowances depending on donor and campus program",
+        "Need-based support through UP SLAS workflows"
+      ],
+      "coverage": ["Tuition grant", "Stipend"],
+      "requirements": [
+        "SLAS application",
+        "Financial data submission",
+        "Campus or donor qualification"
+      ],
+      "location": ["Philippines"],
+      "level": ["college", "graduate"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["up-system", "slas"],
+      "applicationLink": "https://slasonline.up.edu.ph/",
+      "deadlineNotes": "Periodic SLAS windows; check campus OSG schedules.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://slasonline.up.edu.ph/"
+    },
+    {
+      "id": "up-tes-via-slas",
+      "provider": "University of the Philippines System",
+      "category": "government",
+      "name": "University of the Philippines - TES via SLAS",
+      "status": "active",
+      "eligibility": [
+        "UP student applicant",
+        "SLAS application",
+        "TES eligibility matching"
+      ],
+      "benefits": [
+        "Cash subsidy and tuition support depending on TES allocation and eligibility",
+        "Coordinated through UP SLAS workflows"
+      ],
+      "coverage": ["Tuition grant", "Stipend"],
+      "requirements": [
+        "SLAS application",
+        "TES eligibility review"
+      ],
+      "location": ["Philippines"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["up-system", "slas", "tes"],
+      "applicationLink": "https://slasonline.up.edu.ph/",
+      "deadlineNotes": "Coordinated with SLAS application windows.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://up.edu.ph/student-financial-assistance-online-frequently-asked-questions/"
+    },
+    {
+      "id": "pup-student-assistantship",
+      "provider": "Polytechnic University of the Philippines",
+      "category": "university",
+      "name": "PUP Student Assistantship",
+      "status": "active",
+      "eligibility": [
+        "Enrolled student",
+        "Work-study eligibility under OSFA rules"
+      ],
+      "benefits": [
+        "Work-study compensation under OSFA rules",
+        "Hourly compensation or capped term-based assistance depending on current OSFA scheme"
+      ],
+      "coverage": ["Stipend"],
+      "requirements": [
+        "OSFA application",
+        "Enrolled student status"
+      ],
+      "location": ["Philippines"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["pup-system", "work-study"],
+      "applicationLink": "https://www.pup.edu.ph/studentservices/osfa/services",
+      "deadlineNotes": "Per semester via OSFA.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/studentservices/osfa/services"
+    },
+    {
+      "id": "miriam-financial-aid",
+      "provider": "Miriam College",
+      "category": "university",
+      "name": "Miriam College Scholarships - GRPO Financial Aid",
+      "status": "active",
+      "eligibility": [
+        "Incoming or continuing HEU student",
+        "Demonstrable financial need",
+        "GRPO application and supporting documents"
+      ],
+      "benefits": [
+        "Tuition, basic fee, and laboratory fee discounts",
+        "Award level varies by financial aid review"
+      ],
+      "coverage": ["Tuition grant"],
+      "requirements": [
+        "Financial need documents",
+        "GRPO financial aid form",
+        "Current academic standing"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "careerTags": [],
+      "institutionTags": ["miriam-college", "need-based"],
+      "applicationLink": "https://mc.edu.ph/admissions/mc-scholarships/heu/",
+      "deadlineNotes": "Per academic schedule and admissions cycle.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://mc.edu.ph/admissions/mc-scholarships/heu/"
+    },
+    {
+      "id": "miriam-merit",
+      "provider": "Miriam College",
+      "category": "university",
+      "name": "Miriam College Scholarships - Merit Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Incoming first-year student",
+        "Top 10% of graduating class of at least 100 students",
+        "Good conduct and admissions documentation"
+      ],
+      "benefits": [
+        "Tuition fee discounts under current Miriam scholarship policy",
+        "Merit-based support for high-ranking entrants"
+      ],
+      "coverage": ["Tuition grant"],
+      "requirements": [
+        "Top 10% ranking proof",
+        "Admissions documents",
+        "Good conduct record"
+      ],
+      "location": ["NCR"],
+      "level": ["college"],
+      "riasecTags": ["S", "A", "E"],
+      "careerTags": ["teacher", "psychologist"],
+      "institutionTags": ["miriam-college", "merit"],
+      "applicationLink": "https://mc.edu.ph/admissions/mc-scholarships/heu/",
+      "deadlineNotes": "Released after admissions ranking and document review.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://mc.edu.ph/admissions/mc-scholarships/heu/"
+    }
+  ]
+}

@@ -1,15 +1,18 @@
 {
   "project": "KursoKo",
   "schema_version": 4,
-  "style_reference": ["src/assets/1.1.png", "src/assets/1.2.png"],
-  "asset_set": "Questionnaire Q7 option 1 — Installing home security systems",
+  "style_reference": [
+    "src/assets/questionnaire/01.1.png",
+    "src/assets/questionnaire/01.2.png"
+  ],
+  "asset_set": "Questionnaire Q7 option 1 — Repairing a bike that keeps slipping gears",
   "questionnaire": {
     "question_id": 7,
-    "question_text": "Which technical work interests you?",
+    "question_text": "Which would you rather do?",
     "option_key": "1",
     "slot": "7.1",
-    "choice_text": "Installing home security systems",
-    "hint": "Electronics setup",
+    "choice_text": "Repairing a bike that keeps slipping gears",
+    "hint": "Hands-on",
     "riasec_code": "R",
     "riasec_type": "Realistic",
     "sensitive_topic": false
@@ -19,16 +22,16 @@
     "width_px": 640,
     "height_px": 640,
     "aspect_ratio": "1:1",
-    "background": "transparent PNG",
+    "background": "solid #FDFCF8 — must match assessment page bg-landing-paper exactly",
     "safe_padding_px": 48
   },
   "art_style": {
     "medium": "flat vector illustration",
-    "reference": "Match src/assets/1.1.png and 1.2.png — unDraw-style full-body edu characters",
+    "reference": "Match src/assets/questionnaire/01.1.png and 1.2.png — unDraw-style full-body edu characters",
     "line_weight_px": 2,
     "outline_hex": "#2D2D2D",
     "fill": "solid flat color blocks with minimal cel shade",
-    "mood": "focused practical technician energy for students",
+    "mood": "practical focused energy",
     "forbidden": [
       "RIASEC letter",
       "border frame",
@@ -36,18 +39,31 @@
       "photorealistic",
       "3D render",
       "hands-only POV crop",
-      "opaque white background fill"
+      "opaque white #FFFFFF background (use #FDFCF8 page paper instead)"
     ]
   },
   "color": {
     "riasec_code": "R",
     "base_garment_purple": "#4B2C7F",
-    "riasec_accent": { "hex": "#4DB6AC", "use": "camera lens ring, drill grip, cap accent" },
-    "riasec_secondary": { "hex": "#9575CD", "use": "tool belt buckle" },
+    "riasec_accent": {
+      "hex": "#4DB6AC",
+      "use": "camera lens ring, drill grip, cap accent"
+    },
+    "riasec_secondary": {
+      "hex": "#9575CD",
+      "use": "tool belt buckle"
+    },
     "ink": "#2D2D2D",
-    "skin": { "tone": "deep brown", "hex_approx": "#8D5524" },
-    "neutrals": ["#2D2D2D", "#E0E0E0", "#FFFFFF"],
-    "background": "transparent — faint grey decorative circles allowed at 15% opacity"
+    "skin": {
+      "tone": "deep brown",
+      "hex_approx": "#8D5524"
+    },
+    "neutrals": [
+      "#2D2D2D",
+      "#E0E0E0",
+      "#FFFFFF"
+    ],
+    "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
     "presentation": "young man",
@@ -59,30 +75,44 @@
     "diversity_note": "unique cast per slot — distinct from other questionnaire figures"
   },
   "pose": {
-    "stance": "full body, standing on a short step stool, reaching upward",
-    "action": "fastening a wall bracket with a cordless drill while steadying a small dome camera with the other hand",
+    "stance": "full body, bent over bicycle",
+    "action": "repairing a bike whose gears keep slipping with a wrench",
     "facing": "3/4 side profile, looking up toward the camera bracket",
     "energy": "focused, practical technician"
   },
   "clothes": {
-    "top": { "garment": "work coveralls", "color_hex": "#4B2C7F", "detail": "teal chest pocket trim, tool belt at waist" },
-    "bottom": { "garment": "coveralls lower half", "color_hex": "#2D2D2D" },
-    "footwear": { "garment": "work boots", "color_hex": "#2D2D2D" }
+    "top": {
+      "garment": "work coveralls",
+      "color_hex": "#4B2C7F",
+      "detail": "teal chest pocket trim, tool belt at waist"
+    },
+    "bottom": {
+      "garment": "coveralls lower half",
+      "color_hex": "#2D2D2D"
+    },
+    "footwear": {
+      "garment": "work boots",
+      "color_hex": "#2D2D2D"
+    }
   },
   "subject": {
-    "choice_label": "Installing home security systems",
-    "activity_hint": "Electronics setup",
-    "scene_narrative": "A young technician stands on a step stool fastening a small dome security camera to a wall bracket with a cordless drill, a tool belt and loose wire lead completing the hands-on installation scene — same full-body flat vector language as the approved reference assets.",
-    "hero_prop": "small dome security camera mounted on a wall bracket",
-    "supporting_props": ["cordless drill", "tool belt", "short step stool"],
-    "environment": "thin grey floor line only, two faint grey circles behind figure — no room interior",
+    "choice_label": "Repairing a bike that keeps slipping gears",
+    "activity_hint": "Hands-on",
+    "scene_narrative": "A diverse young student in a full-body flat vector scene: repairing a bike whose gears keep slipping with a wrench. Hero focus on bicycle with slipping gears and wrench. Activity matches \"Repairing a bike that keeps slipping gears\" — same KursoKo style as 01.1 and 01.2 references.",
+    "hero_prop": "bicycle with slipping gears and wrench",
+    "supporting_props": [
+      "bike pump",
+      "repair rag",
+      "hex key"
+    ],
+    "environment": "solid #FDFCF8 page background, thin grey floor line, two faint grey circles behind figure — no room interior",
     "symbolic": false
   },
   "composition": {
     "layout": "figure left-of-center, hero prop right, balanced like 1.1.png",
     "camera": "eye-level full-body, not top-down",
-    "negative_space": "48px transparent margin all sides",
-    "thumbnail_test": "silhouette of person + camera bracket readable at 160px"
+    "negative_space": "48px #FDFCF8 margin all sides",
+    "thumbnail_test": "silhouette of person + bike gears readable at 160px"
   },
   "technical": {
     "export": "PNG-24 alpha",
@@ -90,8 +120,12 @@
     "crisp_edges": true
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Midjourney v6"],
+    "recommended_models": [
+      "Flux Dev",
+      "DALL-E 3",
+      "Midjourney v6"
+    ],
     "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter R, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, transparent PNG background. Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young adult man, deep brown skin, short cropped hair under a cap, standing on a short step stool reaching upward in 3/4 profile. Purple #4B2C7F work coveralls with teal #4DB6AC chest pocket trim, charcoal lower coveralls, tool belt with lavender buckle, and work boots. He fastens a small white dome security camera to a wall bracket with a teal-accented cordless drill, steadying it with his free hand. Thin grey floor line, faint grey decorative circles only — NO opaque background, NO text, NO letter, NO border frame. Subtle Realistic RIASEC accent teal on drill and camera ring, lavender on tool belt. Focused practical technician energy. Full head-to-feet visible."
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, deep brown skin, short cropped hair under cap, work coveralls #4B2C7F with teal chest pocket trim, tool belt at waist, coveralls lower half #2D2D2D, work boots #2D2D2D. Pose: full body, bent over bicycle, repairing a bike whose gears keep slipping with a wrench. Hero prop: bicycle with slipping gears and wrench. Supporting props: bike pump, repair rag, hex key. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Realistic RIASEC accent #4DB6AC on props and trim, #9575CD secondary accents. Practical focused energy. Full head-to-feet visible."
 }

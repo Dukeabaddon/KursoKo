@@ -3,16 +3,15 @@ import { getPersonalityProfile } from '../../utils/riasecScoring'
 import { getCourseRecommendations } from '../../utils/courseRecommendations'
 import { getArchetypeForProfile } from '../../utils/archetypes'
 import { getCareerMatches } from '../../utils/careerMatcher'
-import { getScholarshipMatches, getScholarshipsMetadata } from '../../utils/scholarshipMatcher'
-import { getUniversityMatches, getUniversitiesMetadata } from '../../utils/universityMatcher'
+import { getScholarshipMatchesForCareer, inferUserLocationFromSchool } from '../../utils/scholarshipMatcher'
+import { getUniversityMatchesForCareer } from '../../utils/universityMatcher'
 import { getShsStrands } from '../../utils/shsStrands'
 import { exportElementAsPng } from '../../utils/shareExport'
 import ResultsShell, { useResultsScrollReveal } from './ResultsShell'
 import ResultHero from './ResultHero'
 import RiasecBreakdown from './RiasecBreakdown'
 import CourseSection from './CourseSection'
-import UniversitySection from './UniversitySection'
-import ScholarshipSection from './ScholarshipSection'
+import ProfessionAccordionSection from './ProfessionAccordionSection'
 import ResultsFooter from './ResultsFooter'
 import ShareCard from './ShareCard'
 
@@ -20,13 +19,22 @@ function Results({ responses, onRetake, onHome }) {
   const profile = getPersonalityProfile(responses)
   const { primaryDimension, secondaryDimension, allDimensions, combination } = profile
   const archetype = getArchetypeForProfile(profile)
-  const careerMatches = getCareerMatches(profile, 4)
-  const scholarships = getScholarshipMatches(profile, careerMatches, 3)
-  const scholarshipMeta = getScholarshipsMetadata()
-  const universities = getUniversityMatches(profile, careerMatches, 4)
-  const universityMeta = getUniversitiesMetadata()
+  const careerMatches = getCareerMatches(profile, 10)
   const courseRecommendations = getCourseRecommendations(combination)
   const shsStrands = getShsStrands(combination, primaryDimension.code)
+  const careerCards = careerMatches.map((career) => {
+    const schools = getUniversityMatchesForCareer(profile, career, 3)
+    const topSchool = schools[0] ?? null
+    const userLocation = inferUserLocationFromSchool(topSchool)
+    const scholarships = getScholarshipMatchesForCareer(profile, career, schools, 5, userLocation)
+
+    return {
+      ...career,
+      schools,
+      topSchool,
+      scholarships,
+    }
+  })
 
   const [shareMessage, setShareMessage] = useState('')
   const [heroEnter] = useState(true)
@@ -96,8 +104,7 @@ function Results({ responses, onRetake, onHome }) {
           courseRecommendations={courseRecommendations}
           topCareers={careerMatches}
         />
-        <UniversitySection universities={universities} metadata={universityMeta} />
-        <ScholarshipSection scholarships={scholarships} disclaimer={scholarshipMeta.disclaimer} />
+        <ProfessionAccordionSection careerCards={careerCards} />
       </div>
 
       <ResultsFooter

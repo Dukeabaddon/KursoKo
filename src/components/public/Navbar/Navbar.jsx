@@ -7,6 +7,7 @@ import {
   landingNavLink,
   landingNavShell
 } from '../../landing/landingClasses'
+import { useLenis } from '../../landing/motion'
 import { smoothScrollToHash } from '../../../utils/smoothScroll'
 
 const navLinks = [
@@ -18,19 +19,27 @@ const navLinks = [
 const Navbar = ({ onStart }) => {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const lenis = useLenis()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
     onScroll()
+
+    if (lenis) {
+      const onLenisScroll = (instance) => setScrolled(instance.scroll > 24)
+      lenis.on('scroll', onLenisScroll)
+      return () => lenis.off('scroll', onLenisScroll)
+    }
+
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [lenis])
 
   const handleAnchorClick = useCallback((event, href) => {
     event.preventDefault()
-    smoothScrollToHash(href)
+    smoothScrollToHash(href, { lenis })
     setOpen(false)
-  }, [])
+  }, [lenis])
 
   return (
     <header className={landingNavShell(scrolled)} {...landingGlowBlockProps}>

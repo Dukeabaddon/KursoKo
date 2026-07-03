@@ -9,11 +9,12 @@ import {
   SPARK_PURPLE
 } from '../shared/assessment/assessmentClasses'
 import { ClickSpark } from '../shared/ui'
+import { saveAssessmentProgress } from '../../utils/assessmentPersistence'
 import { getQuestionnaireImage } from './questionnaireAssets'
 
-function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
-  const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [responses, setResponses] = useState([])
+function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress = null }) {
+  const [currentQuestion, setCurrentQuestion] = useState(() => initialProgress?.currentQuestion ?? 0)
+  const [responses, setResponses] = useState(() => initialProgress?.responses ?? [])
   const [selectedOption, setSelectedOption] = useState(null)
   const [selectedRating, setSelectedRating] = useState(null)
   const [questions, setQuestions] = useState([])
@@ -40,12 +41,23 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
   useEffect(() => {
     if (questionsData?.questions) {
       setQuestions(questionsData.questions)
-      onProgressUpdate?.({ current: 0, total: questionsData.questions.length })
+      const restored = initialProgress?.currentQuestion ?? 0
+      onProgressUpdate?.({ current: restored, total: questionsData.questions.length })
     }
     setIsLoading(false)
-  }, [onProgressUpdate])
+  }, [initialProgress?.currentQuestion, onProgressUpdate])
 
   useEffect(() => () => clearTimers(), [clearTimers])
+
+  useEffect(() => {
+    if (isLoading || questions.length === 0) return undefined
+
+    const timeoutId = window.setTimeout(() => {
+      saveAssessmentProgress({ currentQuestion, responses })
+    }, 200)
+
+    return () => window.clearTimeout(timeoutId)
+  }, [currentQuestion, responses, isLoading, questions.length])
 
   const questionId = questions[currentQuestion]?.id
   useAssessmentScrollReveal(scrollRef, questionId)
@@ -148,7 +160,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
   const handleExitHome = () => {
     if (
       responses.length > 0 &&
-      !window.confirm('Leave assessment? Your progress will not be saved.')
+      !window.confirm('Leave assessment? Your progress stays saved in this browser tab.')
     ) {
       return
     }
@@ -159,6 +171,44 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
     questions.length > 0 ? Math.round((responses.length / questions.length) * 100) : 0
 
   const getChoiceImage = (questionId, option) => getQuestionnaireImage(questionId, option)
+
+  const navFooter = (
+    <div className="assessment-nav-row">
+      <div className="flex items-center gap-2">
+        {currentQuestion > 0 ? (
+          <ClickSpark {...SPARK_ACCENT} className="inline-flex">
+            <button
+              type="button"
+              onClick={handlePrevious}
+              disabled={isAnimating}
+              className={`${assessmentGhostBtn} disabled:opacity-40`}
+            >
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous
+            </button>
+          </ClickSpark>
+        ) : (
+          <span className="inline-block min-w-[5.5rem]" aria-hidden="true" />
+        )}
+      </div>
+
+      <ClickSpark {...SPARK_PURPLE} className="ml-auto inline-flex">
+        <button
+          type="button"
+          onClick={handleNext}
+          disabled={isAnimating || !selectedOption || !selectedRating}
+          className={`${assessmentPrimaryBtn} disabled:cursor-not-allowed disabled:opacity-40`}
+        >
+          {currentQuestion >= questions.length - 1 ? 'Complete' : 'Next'}
+          <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </ClickSpark>
+    </div>
+  )
 
   if (isLoading || questions.length === 0) {
     return (
@@ -177,12 +227,11 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
   }
 
   const currentQ = questions[currentQuestion]
-  const isLastQuestion = currentQuestion >= questions.length - 1
   const gridMotionClass = animPhase === 'exit' ? 'is-exiting' : ''
 
   return (
-    <AssessmentShell onExitHome={handleExitHome} scrollRef={scrollRef}>
-      <div className="mx-auto flex min-h-[108dvh] w-full max-w-3xl flex-col px-3 pb-8 pt-2 sm:px-4">
+    <AssessmentShell onExitHome={handleExitHome} scrollRef={scrollRef} footer={navFooter}>
+      <div className="mx-auto flex w-full max-w-3xl flex-col px-3 pb-4 pt-2 sm:px-4">
         {/* Progress */}
         <div className="mb-1.5 shrink-0 sm:mb-2">
           <div className="mb-1 flex items-center justify-between text-xs text-landing-muted sm:text-sm">
@@ -218,8 +267,8 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
         </div>
 
         {/* Options — reveals on scroll */}
-        <div className="assessment-reveal assessment-reveal-delay-1 flex min-h-[50vh] flex-1 flex-col items-center justify-center sm:min-h-[46vh]">
-          <div className="assessment-choices-panel">
+        <div className="assessment-reveal assessment-reveal-delay-1 flex min-h-0 flex-col items-center justify-center py-2">
+          <div className="assessment-choices-panel w-full">
             <div
               key={`choices-${questionId}`}
               className={`assessment-choices-grid ${gridMotionClass} ${isAnimating ? 'is-busy' : ''}`}
@@ -254,41 +303,6 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate }) {
               />
             </div>
           </div>
-        </div>
-
-        {/* Footer nav — reveals on scroll */}
-        <div className="assessment-reveal assessment-reveal-delay-2 mt-1 flex shrink-0 items-center justify-between gap-2 pt-1">
-          <div className="flex items-center gap-2">
-            {currentQuestion > 0 && (
-              <ClickSpark {...SPARK_ACCENT} className="inline-flex">
-                <button
-                  type="button"
-                  onClick={handlePrevious}
-                  disabled={isAnimating}
-                  className={`${assessmentGhostBtn} disabled:opacity-40`}
-                >
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                  Previous
-                </button>
-              </ClickSpark>
-            )}
-          </div>
-
-          <ClickSpark {...SPARK_PURPLE} className="ml-auto inline-flex">
-            <button
-              type="button"
-              onClick={handleNext}
-              disabled={isAnimating || !selectedOption || !selectedRating}
-              className={`${assessmentPrimaryBtn} disabled:cursor-not-allowed disabled:opacity-40`}
-            >
-              {isLastQuestion ? 'Complete' : 'Next'}
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </ClickSpark>
         </div>
       </div>
     </AssessmentShell>
