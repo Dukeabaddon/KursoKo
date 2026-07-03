@@ -1,10 +1,18 @@
 import scholarshipsData from '../data/scholarships.json'
 
-const SCHOOL_TAGS = {
-  'pup-manila': ['pup', 'pup-system'],
-  'ateneo-manila': ['ateneo'],
-  'feu-manila': ['feu'],
-  'dlsu-manila': ['dlsu'],
+const LEGACY_SCHOOL_TAGS = {
+  'pup-manila': ['pup', 'pup-system', 'public', 'business', 'technology'],
+  'ateneo-manila': ['ateneo', 'leadership', 'research', 'service'],
+  'feu-manila': ['feu', 'healthcare', 'business', 'arts'],
+  'dlsu-manila': ['dlsu', 'technology', 'business', 'research'],
+}
+
+function getSchoolInstitutionTags(school) {
+  if (!school?.id) return []
+  const legacy = LEGACY_SCHOOL_TAGS[school.id] ?? []
+  const slugPrefix = school.id.split('-')[0]
+  const strength = (school.strengthTags ?? []).map((tag) => String(tag).toLowerCase())
+  return [...new Set([...legacy, slugPrefix, school.type, ...strength].filter(Boolean))]
 }
 
 function getResidencyRule(scholarship) {
@@ -57,7 +65,7 @@ function scoreScholarship(scholarship, profile, career, schools, userLocation) {
   const scholarshipLevels = scholarship.level ?? []
   const schoolList = Array.isArray(schools) ? schools : schools ? [schools] : []
   const schoolTagSet = new Set(
-    schoolList.flatMap((school) => SCHOOL_TAGS[school.id] ?? [])
+    schoolList.flatMap((school) => getSchoolInstitutionTags(school))
   )
 
   if (primary && tags.includes(primary)) score += 3

@@ -1,11 +1,15 @@
 import universitiesData from '../data/universities.json'
 import schoolInsightsData from '../data/schoolInsights.json'
 
-const SCHOOL_TAGS = {
+const LEGACY_SCHOOL_TAGS = {
   'pup-manila': ['pup', 'pup-system', 'public', 'business', 'technology'],
   'ateneo-manila': ['ateneo', 'leadership', 'research', 'service'],
   'feu-manila': ['feu', 'healthcare', 'business', 'arts'],
   'dlsu-manila': ['dlsu', 'technology', 'business', 'research'],
+}
+
+function getLegacySchoolTags(university) {
+  return LEGACY_SCHOOL_TAGS[university.id] ?? []
 }
 
 const CAREER_KEYWORDS = {
@@ -45,7 +49,7 @@ function getUniversityTagBag(university) {
   return [
     ...(university.riasecTags ?? []),
     ...(university.strengthTags ?? []),
-    ...(SCHOOL_TAGS[university.id] ?? []),
+    ...(getLegacySchoolTags(university)),
     ...(university.popularCourses ?? []),
     university.description ?? '',
     university.name ?? '',

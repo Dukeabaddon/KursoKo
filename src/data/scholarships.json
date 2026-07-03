@@ -1,289 +1,260 @@
 {
   "metadata": {
-    "version": "1.0.0",
-    "lastUpdated": "2026-07-02",
+    "version": "2.0.0",
+    "lastUpdated": "2026-07-03",
+    "count": 126,
     "disclaimer": "Verify eligibility, award amount, and application windows on each official provider site before applying. KursoKo does not process applications.",
-    "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages."
+    "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages.",
+    "source": "docs/plans/kursoko-data/scholarships.json"
   },
   "scholarships": [
     {
-      "id": "qcsp-shs-academic",
-      "provider": "Quezon City Government (through QCYDO)",
+      "id": "4ps-scholarship",
+      "provider": "DSWD (4Ps)",
       "category": "government",
-      "name": "Quezon City Scholarship Program - Academic Scholarship",
+      "name": "4Ps Tertiary Education Subsidy",
       "status": "active",
       "eligibility": [
-        "Quezon City resident",
-        "Verified QCitizen ID",
-        "Accepted or enrolled in recognized institution"
+        "4Ps household member",
+        "Grade 12 graduate or graduating",
+        "Passed admission to CHED-recognized HEI"
       ],
       "benefits": [
-        "Up to PHP 20,000 tuition grant + PHP 10,000 stipend per school year",
-        "Annual application cycle under QCYDO rules"
+        "Up to P20,000 per year",
+        "Book and transportation allowance"
       ],
-      "coverage": ["Tuition grant", "Stipend"],
+      "coverage": [
+        "Cash subsidy for college"
+      ],
       "requirements": [
-        "Quezon City residency",
-        "QCitizen ID",
-        "Academic qualification proof"
+        "4Ps household ID",
+        "Certificate of enrollment",
+        "Birth certificate"
       ],
-      "location": ["NCR"],
-      "level": ["shs"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "careerTags": [],
-      "institutionTags": ["qcydo", "qcitizen", "any-shs"],
-      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
-      "deadlineNotes": "Annual application cycle; check QCYDO and QC Government announcements.",
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.dswd.gov.ph/",
+      "deadlineNotes": "Coordinated through 4Ps program; check with DSWD field office Priority in UniFAST TES allocation for 4Ps beneficiaries",
       "verificationDate": "2026-07-02",
-      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+      "verificationSource": "https://www.dswd.gov.ph/"
     },
     {
-      "id": "qcsp-tertiary-qc-excel",
-      "provider": "Quezon City Government (through QCYDO)",
-      "category": "government",
-      "name": "Quezon City Scholarship Program - QC Excel Scholarship",
+      "id": "sch-priv-092",
+      "provider": "Aboitiz Foundation",
+      "category": "private",
+      "name": "Aboitiz Foundation College Scholarship Program",
       "status": "active",
       "eligibility": [
-        "Quezon City resident",
-        "Verified QCitizen ID",
-        "Recognized tertiary institution"
+        "Deserving college students with strong academic record"
       ],
       "benefits": [
-        "Up to PHP 110,000 tuition grant + PHP 50,000 stipend per school year",
-        "Renewed per term or semester under current QC guide rules"
+        "Full tuition",
+        "Allowance",
+        "Mentorship",
+        "Possible employment after graduation"
       ],
-      "coverage": ["Tuition grant", "Stipend"],
+      "coverage": [
+        "Full tuition",
+        "Stipend"
+      ],
       "requirements": [
-        "Quezon City residency",
-        "QCitizen ID",
-        "High academic merit"
+        "Filipino citizen",
+        "Good moral character",
+        "Meets GPA requirement",
+        "Passing aptitude test"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "E",
+        "I"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "mechanical-engineer",
+        "accountant",
+        "entrepreneur"
+      ],
+      "institutionTags": [
+        "partner-heis"
+      ],
+      "applicationLink": "https://www.aboitizfoundation.org/",
+      "deadlineNotes": "Usually opens in the 1st quarter; check website for annual schedule Strong engineering and business focus; Aboitiz companies may offer employment pathways.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "Aboitiz Foundation official website"
+    },
+    {
+      "id": "afp-mba-scholarship",
+      "provider": "AFP",
+      "category": "government",
+      "name": "AFP Educational Benefits System (AFPEBS) Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Dependent of active or retired military personnel",
+        "Good academic standing",
+        "Passed entrance exam"
+      ],
+      "benefits": [
+        "Full or partial tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Military ID of sponsor",
+        "Birth certificate",
+        "Grade 12 report card",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "careerTags": [],
-      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
-      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
-      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://afp.mil.ph/",
+      "deadlineNotes": "Check AFP EB office for schedule For dependents of active AFP, PNP, BFP, BJMP personnel",
       "verificationDate": "2026-07-02",
-      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+      "verificationSource": "https://afp.mil.ph/"
     },
     {
-      "id": "qcsp-tertiary-academic",
-      "provider": "Quezon City Government (through QCYDO)",
+      "id": "sch-lgu-092",
+      "provider": "Angeles City Government",
       "category": "government",
-      "name": "Quezon City Scholarship Program - Academic Scholarship",
+      "name": "Angeles City Scholarship Program",
       "status": "active",
       "eligibility": [
-        "Quezon City resident",
-        "Verified QCitizen ID",
-        "Recognized tertiary institution"
+        "Residents of Angeles City, Pampanga who are college students"
       ],
       "benefits": [
-        "Up to PHP 80,000 tuition grant + PHP 25,000 stipend per school year",
-        "Renewed per term or semester under current QC guide rules"
+        "Tuition assistance",
+        "Book allowance"
       ],
-      "coverage": ["Tuition grant", "Stipend"],
+      "coverage": [
+        "Partial to full tuition depending on bracket"
+      ],
       "requirements": [
-        "Quezon City residency",
-        "QCitizen ID",
-        "Academic merit"
+        "Angeles City resident for at least 2 years",
+        "Good moral character",
+        "Passing grades",
+        "Income bracket qualification"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
       "careerTags": [],
-      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
-      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
-      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+      "institutionTags": [
+        "any-hei"
+      ],
+      "applicationLink": "https://www.angelescity.gov.ph/",
+      "deadlineNotes": "Usually before the start of the school year Apply through the Angeles City scholarship or social welfare office.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "Angeles City Government official website"
     },
     {
-      "id": "qcsp-tertiary-athletic-arts",
-      "provider": "Quezon City Government (through QCYDO)",
+      "id": "sch-lgu-098",
+      "provider": "Antipolo City Government",
       "category": "government",
-      "name": "Quezon City Scholarship Program - Athletic and Arts Scholarship",
+      "name": "Antipolo City Scholarship Program",
       "status": "active",
       "eligibility": [
-        "Quezon City resident",
-        "Verified QCitizen ID",
-        "Recognized tertiary institution"
+        "Residents of Antipolo City"
       ],
       "benefits": [
-        "Up to PHP 55,000 tuition grant + PHP 25,000 stipend per school year",
-        "Renewed per term or semester under current QC guide rules"
+        "Tuition subsidy",
+        "Allowance for top scholars"
       ],
-      "coverage": ["Tuition grant", "Stipend"],
+      "coverage": [
+        "Partial to full tuition"
+      ],
       "requirements": [
-        "Quezon City residency",
-        "QCitizen ID",
-        "Arts or athletic credentials"
+        "Antipolo City resident",
+        "Good academic standing",
+        "Income qualification"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["A", "S", "E"],
-      "careerTags": ["graphic-designer", "content-creator"],
-      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
-      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
-      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
-    },
-    {
-      "id": "qcsp-tertiary-youth-leaders",
-      "provider": "Quezon City Government (through QCYDO)",
-      "category": "government",
-      "name": "Quezon City Scholarship Program - Youth Leaders Scholarship",
-      "status": "active",
-      "eligibility": [
-        "Quezon City resident",
-        "Verified QCitizen ID",
-        "Leadership role in QCYDO-registered youth organization"
+      "location": [
+        "Antipolo",
+        "Rizal"
       ],
-      "benefits": [
-        "Up to PHP 55,000 tuition grant + PHP 25,000 stipend per school year",
-        "Renewed per term or semester under current QC guide rules"
+      "level": [
+        "college"
       ],
-      "coverage": ["Tuition grant", "Stipend"],
-      "requirements": [
-        "Quezon City residency",
-        "QCitizen ID",
-        "Registered youth leadership role"
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["S", "E"],
-      "careerTags": ["teacher", "entrepreneur"],
-      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
-      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
-      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
-    },
-    {
-      "id": "qcsp-tertiary-economic",
-      "provider": "Quezon City Government (through QCYDO)",
-      "category": "government",
-      "name": "Quezon City Scholarship Program - Economic Scholarship",
-      "status": "active",
-      "eligibility": [
-        "Quezon City resident",
-        "Verified QCitizen ID",
-        "Economic-need criteria"
-      ],
-      "benefits": [
-        "Up to PHP 10,000 tuition grant + PHP 10,000 stipend per school year",
-        "Renewed per term or semester under current QC guide rules"
-      ],
-      "coverage": ["Tuition grant", "Stipend"],
-      "requirements": [
-        "Quezon City residency",
-        "QCitizen ID",
-        "Economic-need qualification"
-      ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
       "careerTags": [],
-      "institutionTags": ["qcydo", "qcitizen", "any-hei"],
-      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
-      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
-    },
-    {
-      "id": "qcsp-postgraduate",
-      "provider": "Quezon City Government (through QCYDO)",
-      "category": "government",
-      "name": "Quezon City Scholarship Program - Postgraduate Scholarship",
-      "status": "active",
-      "eligibility": [
-        "Quezon City resident",
-        "Verified QCitizen ID",
-        "Postgraduate enrollment"
+      "institutionTags": [
+        "any-hei"
       ],
-      "benefits": [
-        "Up to PHP 55,000 tuition grant + PHP 50,000 stipend per school year",
-        "Includes PHP 20,000 automatic release; remaining PHP 30,000 subject to thesis or dissertation grant approval"
-      ],
-      "coverage": ["Tuition grant", "Stipend", "Thesis or dissertation support"],
-      "requirements": [
-        "Quezon City residency",
-        "QCitizen ID",
-        "Postgraduate enrollment"
-      ],
-      "location": ["NCR"],
-      "level": ["graduate"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
-      "careerTags": [],
-      "institutionTags": ["qcydo", "qcitizen", "any-postgrad"],
-      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
-      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://quezoncity.gov.ph/wp-content/uploads/2024/07/SP-3283-S-2024.pdf"
-    },
-    {
-      "id": "qcsp-continuing-vocational",
-      "provider": "Quezon City Government (through QCYDO)",
-      "category": "government",
-      "name": "Quezon City Scholarship Program - Continuing Education / Vocational Scholarship",
-      "status": "active",
-      "eligibility": [
-        "Quezon City resident",
-        "Verified QCitizen ID",
-        "Recognized vocational or continuing-education enrollment"
-      ],
-      "benefits": [
-        "PHP 10,000 stipend per school year",
-        "Category applies to continuing education or vocational studies"
-      ],
-      "coverage": ["Stipend"],
-      "requirements": [
-        "Quezon City residency",
-        "QCitizen ID",
-        "Vocational or continuing-education enrollment"
-      ],
-      "location": ["NCR"],
-      "level": ["tvet", "continuing-education"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
-      "careerTags": [],
-      "institutionTags": ["qcydo", "qcitizen", "any-vocational"],
-      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
-      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
-    },
-    {
-      "id": "admu-financial-aid",
-      "provider": "Ateneo de Manila University",
-      "category": "university",
-      "name": "Ateneo College Scholarship Program - Financial Aid Grants",
-      "status": "active",
-      "eligibility": [
-        "Undergraduate applicant or continuing student",
-        "Demonstrated financial need",
-        "Online financial aid application"
-      ],
-      "benefits": [
-        "25% / 50% / 75% / 100% tuition and fees discount depending on award",
-        "May include book, transport, food, and dormitory assistance"
-      ],
-      "coverage": ["Tuition grant", "Book allowance", "Transport allowance", "Dormitory assistance"],
-      "requirements": [
-        "Financial need documentation",
-        "Admissions-linked application",
-        "Scholarship office review"
-      ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
-      "careerTags": [],
-      "institutionTags": ["ateneo", "need-based"],
-      "applicationLink": "https://www.ateneo.edu/college/scholarships/programs",
-      "deadlineNotes": "Varies by Ateneo admissions cycle.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://www.ateneo.edu/college/scholarships/programs"
+      "applicationLink": "https://antipolo.gov.ph/",
+      "deadlineNotes": "Before start of school year One of the more active LGU scholarship programs in Rizal.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "Antipolo City Government official page"
     },
     {
       "id": "admu-magis",
@@ -299,80 +270,979 @@
         "Full scholarship for selected highest-need awardees",
         "Package determined within Ateneo scholarship process"
       ],
-      "coverage": ["Tuition grant"],
+      "coverage": [
+        "Tuition grant"
+      ],
       "requirements": [
         "Financial aid qualification",
         "Ateneo scholarship office review"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "careerTags": [],
-      "institutionTags": ["ateneo", "need-based"],
+      "institutionTags": [
+        "ateneo",
+        "need-based"
+      ],
       "applicationLink": "https://www.ateneo.edu/college/scholarships/programs",
       "deadlineNotes": "Follows Ateneo financial aid cycle.",
       "verificationDate": "2026-07-02",
       "verificationSource": "https://www.ateneo.edu/college/scholarships/programs"
     },
     {
-      "id": "dlsu-st-la-salle-grant",
-      "provider": "De La Salle University",
+      "id": "ateneo-entrance-scholarship",
+      "provider": "Ateneo de Manila University",
       "category": "university",
-      "name": "De La Salle University - St. La Salle Financial Assistance Grant",
+      "name": "Ateneo de Manila Merit Scholarship",
       "status": "active",
       "eligibility": [
-        "Incoming or continuing qualified student",
-        "Household income criteria",
-        "Required supporting documents"
+        "Top performers in Ateneo College Entrance Test (ACET)",
+        "Filipino citizen",
+        "Strong academic record"
       ],
       "benefits": [
-        "25% / 50% / 75% / 100% tuition and fees coverage depending on award",
-        "Need-based financial assistance grant"
+        "Full or partial tuition waiver",
+        "Monthly stipend for full scholars"
       ],
-      "coverage": ["Tuition grant"],
+      "coverage": [
+        "Tuition and fees"
+      ],
       "requirements": [
-        "Financial documentation",
-        "Admissions or continuing-student qualification",
-        "Scholarship office review"
+        "ACET top scores",
+        "Grade 12 report card",
+        "Recommendation letters",
+        "Interview"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [],
       "careerTags": [],
-      "institutionTags": ["dlsu", "need-based"],
-      "applicationLink": "https://www.dlsu.edu.ph/scholarship/st-la-salle-financial-assistance-grant-tdsol/",
-      "deadlineNotes": "Windows posted per academic year through DLSU and ArchersHub.",
+      "institutionTags": [
+        "ateneo-de-manila"
+      ],
+      "applicationLink": "https://www.ateneo.edu/admissions/undergraduate/financial-aid",
+      "deadlineNotes": "Automatic consideration with ACET application Top ACET performers automatically considered; separate financial aid application available",
       "verificationDate": "2026-07-02",
-      "verificationSource": "https://www.dlsu.edu.ph/scholarship/st-la-salle-financial-assistance-grant-tdsol/"
+      "verificationSource": "https://www.ateneo.edu/admissions/undergraduate/financial-aid"
     },
     {
-      "id": "dlsu-archer-achiever-tier",
-      "provider": "De La Salle University",
+      "id": "admu-financial-aid",
+      "provider": "Ateneo de Manila University",
       "category": "university",
-      "name": "De La Salle University - Archer Achiever Scholarship",
+      "name": "Ateneo Financial Aid Program",
       "status": "active",
       "eligibility": [
-        "Top DCAT examinees or equivalent direct-admission lane qualifiers",
-        "Filipino citizen"
+        "Financially needy but deserving students",
+        "Ateneo admission",
+        "Good academic standing"
       ],
       "benefits": [
-        "100% tuition and fee waiver",
-        "Includes advanced enrollment and fee waivers for graduation and alumni membership"
+        "Partial to full tuition coverage based on financial need",
+        "Monthly allowance for full scholars"
       ],
-      "coverage": ["Tuition grant"],
+      "coverage": [
+        "Need-based financial assistance"
+      ],
       "requirements": [
-        "Top admission ranking",
-        "Official DLSU eligibility notice"
+        "Ateneo admission",
+        "Financial assessment documents",
+        "Income documents",
+        "Interview"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [],
       "careerTags": [],
-      "institutionTags": ["dlsu", "merit"],
-      "applicationLink": "https://www.dlsu.edu.ph/scholarship/archer-achiever-scholarship/",
-      "deadlineNotes": "Automatic for qualifying DLSU applicants.",
+      "institutionTags": [
+        "ateneo-de-manila"
+      ],
+      "applicationLink": "https://www.ateneo.edu/admissions/undergraduate/financial-aid",
+      "deadlineNotes": "Apply after admission; separate financial aid application Need-based; separate from merit scholarships; requires financial documentation",
       "verificationDate": "2026-07-02",
-      "verificationSource": "https://www.dlsu.edu.ph/scholarship/archer-achiever-scholarship/"
+      "verificationSource": "https://www.ateneo.edu/admissions/undergraduate/financial-aid"
+    },
+    {
+      "id": "ayala-foundation",
+      "provider": "Ayala Foundation",
+      "category": "private",
+      "name": "Ayala Foundation Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Financial need",
+        "Good moral character"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Mentorship programs"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Essay",
+        "Interview"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "ayala-foundation"
+      ],
+      "applicationLink": "https://www.ayalafoundation.org/",
+      "deadlineNotes": "Check Ayala Foundation website for announcements Focus on leadership development and community service",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ayalafoundation.org/"
+    },
+    {
+      "id": "bdo-foundation",
+      "provider": "BDO Foundation",
+      "category": "private",
+      "name": "BDO Foundation Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Financial need"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "bdo-foundation"
+      ],
+      "applicationLink": "https://www.bdofoundation.org/",
+      "deadlineNotes": "Check BDO Foundation website for announcements Corporate social responsibility program of BDO Unibank",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.bdofoundation.org/"
+    },
+    {
+      "id": "benilde-scholarship",
+      "provider": "De La Salle-College of Saint Benilde",
+      "category": "university",
+      "name": "Benilde Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Strong academic record",
+        "Benilde admission",
+        "Financial need (for some)"
+      ],
+      "benefits": [
+        "Partial to full tuition discount",
+        "Monthly allowance (for select scholars)"
+      ],
+      "coverage": [
+        "Tuition assistance"
+      ],
+      "requirements": [
+        "Benilde admission",
+        "Academic records",
+        "Interview",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "S"
+      ],
+      "careerTags": [
+        "design",
+        "arts",
+        "chef",
+        "business"
+      ],
+      "institutionTags": [
+        "benilde"
+      ],
+      "applicationLink": "https://www.benilde.edu.ph/",
+      "deadlineNotes": "Apply through Benilde Admissions Office Known for arts, design, and hospitality programs",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.benilde.edu.ph/"
+    },
+    {
+      "id": "benilde-sda-scholarship",
+      "provider": "De La Salle-College of Saint Benilde",
+      "category": "university",
+      "name": "Benilde School of Design and Arts Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Strong creative portfolio",
+        "Benilde SDA admission",
+        "Academic excellence"
+      ],
+      "benefits": [
+        "Partial to full tuition discount",
+        "Studio access"
+      ],
+      "coverage": [
+        "Scholarship for design and arts students"
+      ],
+      "requirements": [
+        "Portfolio submission",
+        "Benilde admission",
+        "Interview",
+        "Academic records"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "S"
+      ],
+      "careerTags": [
+        "fashion-design",
+        "interior-design",
+        "content-creator",
+        "animation",
+        "film"
+      ],
+      "institutionTags": [
+        "benilde"
+      ],
+      "applicationLink": "https://www.benilde.edu.ph/",
+      "deadlineNotes": "Apply through Benilde SDA Admissions For School of Design and Arts students; portfolio required",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.benilde.edu.ph/"
+    },
+    {
+      "id": "sch-priv-094",
+      "provider": "BPI Foundation",
+      "category": "private",
+      "name": "BPI Foundation Scholarship",
+      "status": "active",
+      "eligibility": [
+        "College students in banking, finance, IT, and related fields"
+      ],
+      "benefits": [
+        "Tuition assistance",
+        "Allowance",
+        "Internship opportunity at BPI"
+      ],
+      "coverage": [
+        "Partial to full tuition"
+      ],
+      "requirements": [
+        "Filipino citizen",
+        "3rd or 4th year college student",
+        "Finance, IT, or related field",
+        "Good academic standing"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "careerTags": [
+        "accountant",
+        "software-engineer",
+        "data-scientist"
+      ],
+      "institutionTags": [
+        "any-hei"
+      ],
+      "applicationLink": "https://www.bpifoundation.org/",
+      "deadlineNotes": "Usually in the 2nd or 3rd quarter; check BPI Foundation announcements Strong preference for finance and technology programs.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "BPI Foundation official website"
+    },
+    {
+      "id": "bulacan-province-scholarship",
+      "provider": "Bulacan Provincial Government",
+      "category": "government",
+      "name": "Bulacan Provincial Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Bulacan resident",
+        "Enrolled in CHED-recognized HEI",
+        "Meet academic and financial requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Bulacan residency",
+        "Enrollment form",
+        "Income documents",
+        "Good moral character"
+      ],
+      "location": [
+        "Bulacan"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "bulacan-state-university"
+      ],
+      "applicationLink": "https://bulacan.gov.ph/",
+      "deadlineNotes": "Check Bulacan provincial government website for announcements Bulacan residents may also access BulSU at subsidized rates",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://bulacan.gov.ph/"
+    },
+    {
+      "id": "sch-lgu-096",
+      "provider": "Calamba City Government",
+      "category": "government",
+      "name": "Calamba City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Residents of Calamba City, Laguna"
+      ],
+      "benefits": [
+        "Tuition assistance",
+        "Allowance"
+      ],
+      "coverage": [
+        "Partial tuition subsidy"
+      ],
+      "requirements": [
+        "Calamba City resident",
+        "Good moral character",
+        "Passing grades"
+      ],
+      "location": [
+        "Laguna"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "any-hei"
+      ],
+      "applicationLink": "https://calambacity.gov.ph/",
+      "deadlineNotes": "Before each semester May have special provisions for students at local Calamba-based institutions.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "Calamba City Government official page"
+    },
+    {
+      "id": "caloocan-scholarship",
+      "provider": "Caloocan City Government",
+      "category": "government",
+      "name": "Caloocan City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Caloocan City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Caloocan residency",
+        "Enrollment form",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "university-of-caloocan-city"
+      ],
+      "applicationLink": "https://www.caloocancity.gov.ph/",
+      "deadlineNotes": "Check Caloocan City Government website for announcements Supports scholars at University of Caloocan City (free tuition for residents)",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.caloocancity.gov.ph/"
+    },
+    {
+      "id": "sch-priv-098",
+      "provider": "Caritas Manila",
+      "category": "private",
+      "name": "Caritas Manila Youth Servant Leadership and Education Program (YSLEP)",
+      "status": "active",
+      "eligibility": [
+        "Poor and deserving youth from Metro Manila and surrounding areas"
+      ],
+      "benefits": [
+        "Full tuition subsidy",
+        "Allowance",
+        "Formation and leadership training"
+      ],
+      "coverage": [
+        "Full tuition",
+        "Stipend",
+        "Books"
+      ],
+      "requirements": [
+        "Financial need",
+        "Good moral character",
+        "Willingness to participate in formation activities",
+        "Passing interview and assessment"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "S"
+      ],
+      "careerTags": [
+        "teacher",
+        "nurse"
+      ],
+      "institutionTags": [
+        "partner-heis"
+      ],
+      "applicationLink": "https://caritasmanila.org.ph/",
+      "deadlineNotes": "Usually opens before each school year One of the longest-running private scholarship programs in the Philippines.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "Caritas Manila official website"
+    },
+    {
+      "id": "cavite-province-scholarship",
+      "provider": "Cavite Provincial Government",
+      "category": "government",
+      "name": "Cavite Provincial Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Cavite resident",
+        "Enrolled in CHED-recognized HEI",
+        "Meet academic and financial requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Cavite residency",
+        "Enrollment form",
+        "Income documents",
+        "Good moral character"
+      ],
+      "location": [
+        "Cavite"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "cavite-state-university"
+      ],
+      "applicationLink": "https://cavite.gov.ph/",
+      "deadlineNotes": "Check Cavite provincial government website for announcements Cavite residents may also access Cavite State University at subsidized rates",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://cavite.gov.ph/"
+    },
+    {
+      "id": "cebu-pacific-scholarship",
+      "provider": "Cebu Pacific",
+      "category": "private",
+      "name": "Cebu Pacific Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Enrolled in Aviation/Tourism/Engineering",
+        "Financial need"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Internship opportunities"
+      ],
+      "coverage": [
+        "College financial assistance with aviation industry exposure"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "careerTags": [
+        "aviation",
+        "tourism",
+        "mechanical-engineer",
+        "entrepreneur"
+      ],
+      "institutionTags": [
+        "cebu-pacific"
+      ],
+      "applicationLink": "https://www.cebupacificair.com/",
+      "deadlineNotes": "Check Cebu Pacific website for announcements Focus on aviation, tourism, and engineering courses",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.cebupacificair.com/"
+    },
+    {
+      "id": "ched-cmsp",
+      "provider": "CHED",
+      "category": "government",
+      "name": "CHED Merit Scholarship Program (CMSP)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Incoming/current first-year college student",
+        "Minimum GWA of 93% in Grade 12",
+        "Combined family income not exceeding P500,000"
+      ],
+      "benefits": [
+        "Full: P40,000 tuition + P70,000 stipend + P10,000 book allowance (annual)",
+        "Half: P20,000 tuition + P35,000 stipend + P5,000 book allowance (annual)",
+        "Free tuition at SUCs/LUCs for full SSP"
+      ],
+      "coverage": [
+        "Tuition, stipend, book allowance at SUCs/LUCs and private HEIs"
+      ],
+      "requirements": [
+        "Grade 12 report card with minimum 93% GWA",
+        "Income documents (ITR/Certificate of Indigency)",
+        "Admission to CHED-recognized HEI",
+        "Enroll in priority programs"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R",
+        "S"
+      ],
+      "careerTags": [
+        "psychologist",
+        "physical-therapy",
+        "occupational-therapy",
+        "speech-language-pathology"
+      ],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://ched.gov.ph/merit-scholarship/",
+      "deadlineNotes": "Application period typically June-July for AY start; check CHED website for exact dates Priority programs: Psychology, PT, OT, Speech-Language Pathology; competitive selection",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://ched.gov.ph/merit-scholarship/"
+    },
+    {
+      "id": "ched-ssgppa",
+      "provider": "CHED",
+      "category": "government",
+      "name": "CHED Student Support Services Program for Academic Excellence (SSGPPA)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in CHED-recognized HEI",
+        "Strong academic record",
+        "Demonstrated leadership"
+      ],
+      "benefits": [
+        "Academic scholarship support",
+        "Leadership development programs"
+      ],
+      "coverage": [
+        "Scholarship and enrichment activities"
+      ],
+      "requirements": [
+        "Academic records",
+        "Leadership portfolio",
+        "Recommendation letters"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://ched.gov.ph/",
+      "deadlineNotes": "Check CHED regional offices for schedule Focus on academic excellence and leadership development",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://ched.gov.ph/"
+    },
+    {
+      "id": "ched-tulong-dunong",
+      "provider": "CHED",
+      "category": "government",
+      "name": "CHED Tulong Dunong Program (TDP)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in CHED-recognized HEI",
+        "Combined family income not exceeding P400,000",
+        "Not a recipient of other government scholarships"
+      ],
+      "benefits": [
+        "P7,500 per semester",
+        "P15,000 per academic year"
+      ],
+      "coverage": [
+        "Cash grant for educational expenses"
+      ],
+      "requirements": [
+        "Certificate of enrollment",
+        "Income documents",
+        "Not be a UniFAST TES or FHE grantee"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://ched.gov.ph/",
+      "deadlineNotes": "Administered through CHED regional offices; check with school scholarship office Non-competitive; first-come-first-served basis depending on slot allocation",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://ched.gov.ph/"
+    },
+    {
+      "id": "chevron-scholarship",
+      "provider": "Chevron Philippines",
+      "category": "private",
+      "name": "Chevron Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Residents of host communities",
+        "Academic excellence",
+        "Financial need"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Barangay certification",
+        "Academic records",
+        "Income documents",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "mechanical-engineer",
+        "environmental-science"
+      ],
+      "institutionTags": [
+        "chevron"
+      ],
+      "applicationLink": "https://www.chevron.com/",
+      "deadlineNotes": "Check Chevron Philippines website for announcements Priority for host communities near Chevron operations",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.chevron.com/"
+    },
+    {
+      "id": "ciit-scholarship",
+      "provider": "CIIT Philippines",
+      "category": "university",
+      "name": "CIIT College Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Strong creative/technical portfolio",
+        "CIIT admission",
+        "Academic excellence"
+      ],
+      "benefits": [
+        "Partial to full tuition discount",
+        "Equipment access"
+      ],
+      "coverage": [
+        "Tuition assistance for creative and tech programs"
+      ],
+      "requirements": [
+        "CIIT admission exam",
+        "Portfolio (for arts programs)",
+        "Grade 12 report card",
+        "Interview"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college",
+        "shs"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "I"
+      ],
+      "careerTags": [
+        "content-creator",
+        "game-development",
+        "animation",
+        "software-engineer",
+        "graphic-designer"
+      ],
+      "institutionTags": [
+        "ciit"
+      ],
+      "applicationLink": "https://www.ciit.edu.ph/",
+      "deadlineNotes": "Apply through CIIT COAST portal Specializes in arts, technology, and business programs; SHS and college levels",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ciit.edu.ph/"
+    },
+    {
+      "id": "ciit-financial-aid",
+      "provider": "CIIT Philippines",
+      "category": "university",
+      "name": "CIIT Scholarship Programs - Financial Aid Program",
+      "status": "active",
+      "eligibility": [
+        "Currently enrolled student",
+        "Documented financial need",
+        "Meets grade requirements"
+      ],
+      "benefits": [
+        "50% to 80% discount on tuition and miscellaneous fees",
+        "Need-based aid for qualifying students"
+      ],
+      "coverage": [
+        "Tuition grant"
+      ],
+      "requirements": [
+        "Financial need documentation",
+        "Grade requirement",
+        "Scholarship application review"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "ciit",
+        "need-based"
+      ],
+      "applicationLink": "https://www.ciit.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "See CIIT scholarship portal or announcements for current windows.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ciit.edu.ph/admissions/scholarships/"
     },
     {
       "id": "ciit-future-ciitzen",
@@ -388,16 +1258,32 @@
         "20% discount on tuition and miscellaneous fees",
         "Maintained annually during stay if requirements are met"
       ],
-      "coverage": ["Tuition grant"],
+      "coverage": [
+        "Tuition grant"
+      ],
       "requirements": [
         "CIIT admissions ranking",
         "Required academic standing"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["I", "A"],
-      "careerTags": ["software-engineer", "graphic-designer", "content-creator"],
-      "institutionTags": ["ciit", "merit"],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "A"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "graphic-designer",
+        "content-creator"
+      ],
+      "institutionTags": [
+        "ciit",
+        "merit"
+      ],
       "applicationLink": "https://www.ciit.edu.ph/announcement/ciit-scholarship/",
       "deadlineNotes": "Automatic after admissions ranking; follow CIIT admissions schedule.",
       "verificationDate": "2026-07-02",
@@ -418,216 +1304,2079 @@
         "Up to 100% tuition discount",
         "Full academic scholarship possible for exceptional portfolio-based applicants"
       ],
-      "coverage": ["Tuition grant"],
+      "coverage": [
+        "Tuition grant"
+      ],
       "requirements": [
         "Portfolio submission",
         "Interview",
         "Academic review"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["A", "I"],
-      "careerTags": ["graphic-designer", "content-creator", "software-engineer"],
-      "institutionTags": ["ciit", "merit", "talent-based"],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "I"
+      ],
+      "careerTags": [
+        "graphic-designer",
+        "content-creator",
+        "software-engineer"
+      ],
+      "institutionTags": [
+        "ciit",
+        "merit",
+        "talent-based"
+      ],
       "applicationLink": "https://www.ciit.edu.ph/admissions/scholarships/",
       "deadlineNotes": "Program-specific deadlines posted on CIIT scholarship announcements.",
       "verificationDate": "2026-07-02",
       "verificationSource": "https://www.ciit.edu.ph/admissions/scholarships/"
     },
     {
-      "id": "ciit-financial-aid",
-      "provider": "CIIT Philippines",
-      "category": "university",
-      "name": "CIIT Scholarship Programs - Financial Aid Program",
-      "status": "active",
-      "eligibility": [
-        "Currently enrolled student",
-        "Documented financial need",
-        "Meets grade requirements"
-      ],
-      "benefits": [
-        "50% to 80% discount on tuition and miscellaneous fees",
-        "Need-based aid for qualifying students"
-      ],
-      "coverage": ["Tuition grant"],
-      "requirements": [
-        "Financial need documentation",
-        "Grade requirement",
-        "Scholarship application review"
-      ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
-      "careerTags": [],
-      "institutionTags": ["ciit", "need-based"],
-      "applicationLink": "https://www.ciit.edu.ph/admissions/scholarships/",
-      "deadlineNotes": "See CIIT scholarship portal or announcements for current windows.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://www.ciit.edu.ph/admissions/scholarships/"
-    },
-    {
-      "id": "up-slas-giap",
-      "provider": "University of the Philippines System",
-      "category": "university",
-      "name": "University of the Philippines - SLAS Grants-in-Aid Program",
-      "status": "active",
-      "eligibility": [
-        "UP student applicant",
-        "SLAS application",
-        "Household financial data review"
-      ],
-      "benefits": [
-        "Tuition waivers and allowances depending on donor and campus program",
-        "Need-based support through UP SLAS workflows"
-      ],
-      "coverage": ["Tuition grant", "Stipend"],
-      "requirements": [
-        "SLAS application",
-        "Financial data submission",
-        "Campus or donor qualification"
-      ],
-      "location": ["Philippines"],
-      "level": ["college", "graduate"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
-      "careerTags": [],
-      "institutionTags": ["up-system", "slas"],
-      "applicationLink": "https://slasonline.up.edu.ph/",
-      "deadlineNotes": "Periodic SLAS windows; check campus OSG schedules.",
-      "verificationDate": "2026-07-02",
-      "verificationSource": "https://slasonline.up.edu.ph/"
-    },
-    {
-      "id": "up-tes-via-slas",
-      "provider": "University of the Philippines System",
+      "id": "coa-scholarship",
+      "provider": "Commission on Audit",
       "category": "government",
-      "name": "University of the Philippines - TES via SLAS",
+      "name": "COA Scholarship Program",
       "status": "active",
       "eligibility": [
-        "UP student applicant",
-        "SLAS application",
-        "TES eligibility matching"
+        "Child of COA employee",
+        "Good academic standing",
+        "Enrolled in recognized HEI"
       ],
       "benefits": [
-        "Cash subsidy and tuition support depending on TES allocation and eligibility",
-        "Coordinated through UP SLAS workflows"
+        "Tuition subsidy",
+        "Monthly stipend"
       ],
-      "coverage": ["Tuition grant", "Stipend"],
+      "coverage": [
+        "College financial assistance"
+      ],
       "requirements": [
-        "SLAS application",
-        "TES eligibility review"
+        "COA employment certification of parent",
+        "Birth certificate",
+        "Enrollment form",
+        "Academic records"
       ],
-      "location": ["Philippines"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "careerTags": [],
-      "institutionTags": ["up-system", "slas", "tes"],
-      "applicationLink": "https://slasonline.up.edu.ph/",
-      "deadlineNotes": "Coordinated with SLAS application windows.",
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.coa.gov.ph/",
+      "deadlineNotes": "Internal application through COA HR; check with COA employee parent Exclusive for children of COA employees",
       "verificationDate": "2026-07-02",
-      "verificationSource": "https://up.edu.ph/student-financial-assistance-online-frequently-asked-questions/"
+      "verificationSource": "https://www.coa.gov.ph/"
     },
     {
-      "id": "pup-free-tuition",
-      "provider": "Polytechnic University of the Philippines",
+      "id": "da-agrifish-scholarship",
+      "provider": "Department of Agriculture",
       "category": "government",
-      "name": "PUP Free Tuition (RA 10931)",
+      "name": "DA Agricultural Competitiveness Enhancement Fund (ACEF) Scholarship",
       "status": "active",
       "eligibility": [
         "Filipino citizen",
-        "PUP admission qualifier",
-        "No previous undergraduate degree"
+        "Enrolled in agriculture-related degree",
+        "Good academic standing"
       ],
       "benefits": [
-        "Free tuition and other school fees for eligible students under RA 10931",
-        "Very low miscellaneous fees at PUP campuses"
+        "Tuition and other fees",
+        "Monthly stipend",
+        "Book allowance"
       ],
-      "coverage": ["Tuition grant"],
+      "coverage": [
+        "Full support for agriculture and fisheries degrees"
+      ],
       "requirements": [
-        "PUP College Entrance Test (PUPCET) passer or equivalent admission",
-        "Certificate of enrollment"
+        "Enrollment in agriculture/fisheries program",
+        "Grade requirements",
+        "Income documents"
       ],
-      "location": ["Philippines"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
-      "careerTags": [],
-      "institutionTags": ["pup-system"],
-      "residencyRule": {
-        "required": false,
-        "scope": "national",
-        "strict": false
-      },
-      "applicationLink": "https://www.pup.edu.ph/students/scholarships",
-      "deadlineNotes": "Automatic upon enrollment for eligible students; verify RA 10931 rules each year.",
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "agriculture",
+        "fisheries",
+        "veterinary-medicine",
+        "agricultural-engineering"
+      ],
+      "institutionTags": [
+        "suc",
+        "luc"
+      ],
+      "applicationLink": "https://www.da.gov.ph/",
+      "deadlineNotes": "Check DA website or nearest DA regional office for schedule Priority for agriculture, fisheries, and related S&T programs",
       "verificationDate": "2026-07-02",
-      "verificationSource": "https://www.pup.edu.ph/students/scholarships"
+      "verificationSource": "https://www.da.gov.ph/"
     },
     {
-      "id": "pup-presidential-scholarship",
-      "provider": "Polytechnic University of the Philippines",
-      "category": "university",
-      "name": "PUP Entrance / Presidential Scholarship",
+      "id": "sch-gov-095",
+      "provider": "DAR",
+      "category": "government",
+      "name": "DAR Agrarian Reform Community Scholarship Program",
       "status": "active",
       "eligibility": [
-        "Top PUPCET passers and qualifying merit categories per OSFA",
+        "Children of agrarian reform beneficiaries"
+      ],
+      "benefits": [
+        "Tuition assistance",
+        "Allowance"
+      ],
+      "coverage": [
+        "Tuition",
+        "Partial living expenses"
+      ],
+      "requirements": [
+        "Child of ARB",
+        "Enrolled or enrolling in agriculture-related or any CHED-recognized program",
+        "Good moral character"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "agriculture"
+      ],
+      "applicationLink": "https://www.dar.gov.ph/",
+      "deadlineNotes": "Varies; check with local DAR office Priority is often given to agriculture and related fields.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "DAR official website"
+    },
+    {
+      "id": "sch-lgu-100",
+      "provider": "Dasmariñas City Government",
+      "category": "government",
+      "name": "Dasmariñas City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Residents of Dasmariñas City, Cavite"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Book allowance"
+      ],
+      "coverage": [
+        "Partial tuition assistance"
+      ],
+      "requirements": [
+        "Dasmariñas City resident",
+        "Good academic standing",
+        "Income qualification"
+      ],
+      "location": [
+        "Cavite"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "any-hei"
+      ],
+      "applicationLink": "https://dasmarinascity.gov.ph/",
+      "deadlineNotes": "Before each semester Dasmariñas has a large student population because of DLSU-D and nearby HEIs.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "Dasmariñas City Government official page"
+    },
+    {
+      "id": "dbp-scholarship",
+      "provider": "DBP",
+      "category": "government",
+      "name": "DBP Endowment for Education Program (DEEP)",
+      "status": "active",
+      "eligibility": [
+        "Child of low-income family",
+        "Good academic standing",
+        "Enrolled in CHED-recognized HEI"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Enrollment form",
+        "Income documents",
+        "Academic records",
+        "Barangay certification"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.dbp.ph/",
+      "deadlineNotes": "Check DBP website or branch for schedule Available through DBP branches nationwide",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dbp.ph/"
+    },
+    {
+      "id": "dlsu-st-la-salle-grant",
+      "provider": "De La Salle University",
+      "category": "university",
+      "name": "De La Salle University - St. La Salle Financial Assistance Grant",
+      "status": "active",
+      "eligibility": [
+        "Incoming or continuing qualified student",
+        "Household income criteria",
+        "Required supporting documents"
+      ],
+      "benefits": [
+        "25% / 50% / 75% / 100% tuition and fees coverage depending on award",
+        "Need-based financial assistance grant"
+      ],
+      "coverage": [
+        "Tuition grant"
+      ],
+      "requirements": [
+        "Financial documentation",
+        "Admissions or continuing-student qualification",
+        "Scholarship office review"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "dlsu",
+        "need-based"
+      ],
+      "applicationLink": "https://www.dlsu.edu.ph/scholarship/st-la-salle-financial-assistance-grant-tdsol/",
+      "deadlineNotes": "Windows posted per academic year through DLSU and ArchersHub.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/scholarship/st-la-salle-financial-assistance-grant-tdsol/"
+    },
+    {
+      "id": "denr-scholarship",
+      "provider": "DENR",
+      "category": "government",
+      "name": "DENR Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in environmental/forestry degree",
+        "Good academic standing"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "Financial assistance for environmental science and forestry students"
+      ],
+      "requirements": [
+        "Enrollment in forestry/environmental program",
+        "Grade requirements",
+        "Income documents"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "forestry",
+        "environmental-science",
+        "biology",
+        "geology"
+      ],
+      "institutionTags": [
+        "suc",
+        "luc"
+      ],
+      "applicationLink": "https://www.denr.gov.ph/",
+      "deadlineNotes": "Check DENR website or regional office for schedule Focus on forestry, environmental management, and conservation",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.denr.gov.ph/"
+    },
+    {
+      "id": "dlsu-archer-achiever-tier",
+      "provider": "De La Salle University",
+      "category": "university",
+      "name": "DLSU Archer Achiever Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top DCAT performers",
+        "Filipino citizen"
+      ],
+      "benefits": [
+        "Full tuition and fees waiver"
+      ],
+      "coverage": [
+        "Full tuition coverage"
+      ],
+      "requirements": [
+        "Top DCAT scores",
+        "Grade 12 report card"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [],
+      "careerTags": [],
+      "institutionTags": [
+        "dlsu"
+      ],
+      "applicationLink": "https://www.dlsu.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "Automatic with DCAT; check DLSU admissions for schedule Full tuition waiver for top DCAT performers",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/admissions/scholarships/"
+    },
+    {
+      "id": "dlsu-gokongwei-grants",
+      "provider": "De La Salle University",
+      "category": "university",
+      "name": "DLSU Gokongwei Grants",
+      "status": "active",
+      "eligibility": [
+        "Engineering students",
+        "Strong academic record",
+        "Financial need"
+      ],
+      "benefits": [
+        "Full tuition and fees waiver",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "Full scholarship for engineering students"
+      ],
+      "requirements": [
+        "DLSU engineering admission",
+        "Academic records",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "mechanical-engineer",
+        "computer-engineering",
+        "electronics-engineering",
+        "civil-engineer"
+      ],
+      "institutionTags": [
+        "dlsu"
+      ],
+      "applicationLink": "https://www.dlsu.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "Apply through DLSU admissions For Gokongwei College of Engineering students",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/admissions/scholarships/"
+    },
+    {
+      "id": "dlsu-star-scholarship",
+      "provider": "De La Salle University",
+      "category": "university",
+      "name": "DLSU Star Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top admission test performers selected through screening",
+        "Filipino citizen",
+        "Strong academic and leadership record"
+      ],
+      "benefits": [
+        "Full tuition and fees waiver",
+        "Monthly stipend",
+        "Priority for master's and professional school"
+      ],
+      "coverage": [
+        "Full scholarship with advanced study opportunities"
+      ],
+      "requirements": [
+        "Top DCAT scores",
+        "Screening and interview",
+        "Grade 12 report card",
+        "Leadership portfolio"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [],
+      "careerTags": [],
+      "institutionTags": [
+        "dlsu"
+      ],
+      "applicationLink": "https://www.dlsu.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "By invitation based on DCAT performance Most prestigious DLSU scholarship; includes path to graduate studies",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/admissions/scholarships/"
+    },
+    {
+      "id": "dlsu-vaugirard",
+      "provider": "De La Salle University",
+      "category": "university",
+      "name": "DLSU Vaugirard Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top DCAT performers from public and science high schools",
+        "Filipino citizen"
+      ],
+      "benefits": [
+        "Full tuition, miscellaneous, and laboratory fee waiver",
+        "Monthly stipend",
+        "Latin honors incentives"
+      ],
+      "coverage": [
+        "Full scholarship with stipend"
+      ],
+      "requirements": [
+        "Top DCAT scores",
+        "Public or science high school graduate",
+        "Grade 12 report card"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [],
+      "careerTags": [],
+      "institutionTags": [
+        "dlsu"
+      ],
+      "applicationLink": "https://www.dlsu.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "Automatic with DCAT for qualified public/science high school graduates Specifically for top performers from public and science high schools",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dlsu.edu.ph/admissions/scholarships/"
+    },
+    {
+      "id": "doh-scholarship",
+      "provider": "DOH",
+      "category": "government",
+      "name": "DOH Health Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in health-related degree",
+        "Willing to serve in DOH facility after graduation"
+      ],
+      "benefits": [
+        "Full tuition and other fees",
+        "Monthly stipend",
+        "Book allowance",
+        "Uniform allowance"
+      ],
+      "coverage": [
+        "Full support for medical and allied health programs"
+      ],
+      "requirements": [
+        "Enrollment in health program",
+        "Return service agreement",
+        "Income documents"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "careerTags": [
+        "nurse",
+        "medicine",
+        "midwifery",
+        "medical-technology",
+        "physical-therapy"
+      ],
+      "institutionTags": [
+        "up-manila",
+        "suc",
+        "luc"
+      ],
+      "applicationLink": "https://doh.gov.ph/",
+      "deadlineNotes": "Check DOH website for annual application period Requires return service obligation in DOH facility after graduation",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://doh.gov.ph/"
+    },
+    {
+      "id": "dole-scholarship",
+      "provider": "DOLE",
+      "category": "government",
+      "name": "DOLE Child Labor Prevention and Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Former or at-risk child laborer",
+        "Age 15-17 for TVET",
+        "Age 18+ for college",
+        "Good academic standing"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "Financial assistance for education of former child laborers"
+      ],
+      "requirements": [
+        "DOLE certification as former/at-risk child laborer",
+        "Enrollment form",
+        "Birth certificate"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college",
+        "tvet"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei",
+        "tesda"
+      ],
+      "applicationLink": "https://www.dole.gov.ph/",
+      "deadlineNotes": "Check DOLE regional office for schedule For children who were engaged in or at risk of child labor",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.dole.gov.ph/"
+    },
+    {
+      "id": "dost-sei-graduate",
+      "provider": "DOST-SEI",
+      "category": "government",
+      "name": "DOST-SEI Graduate Scholarship (ASTHRDP-NSC)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Bachelor's degree holder in S&T field",
+        "For MS/PhD programs",
+        "Passed admission to CHED-recognized graduate school"
+      ],
+      "benefits": [
+        "Tuition and other fees",
+        "Monthly living allowance",
+        "Book allowance",
+        "Research support",
+        "Thesis/dissertation allowance",
+        "Transportation allowance",
+        "Health insurance"
+      ],
+      "coverage": [
+        "Full support for MS and PhD in Science and Technology"
+      ],
+      "requirements": [
+        "Bachelor's degree in relevant S&T field",
+        "Admission to CHED-recognized graduate school",
+        "DOST-SEI graduate scholarship exam",
+        "Research proposal"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "graduate"
+      ],
+      "riasecTags": [
+        "A",
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "research",
+        "science",
+        "mechanical-engineer",
+        "technology",
+        "academe"
+      ],
+      "institutionTags": [
+        "up-diliman",
+        "up-manila",
+        "pup",
+        "tup"
+      ],
+      "applicationLink": "https://www.sei.dost.gov.ph/",
+      "deadlineNotes": "Applications typically open annually; check DOST-SEI website ASTHRDP-NSC: Accelerated Science and Technology Human Resource Development Program",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.sei.dost.gov.ph/"
+    },
+    {
+      "id": "sch-gov-093",
+      "provider": "DOST-SEI",
+      "category": "government",
+      "name": "DOST-SEI Junior Level Science Scholarship (JLSS)",
+      "status": "active",
+      "eligibility": [
+        "Regular 3rd year college students enrolled in priority S&T fields at identified DOST-SEI institutions"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Book allowance",
+        "MS/PE allowance",
+        "Thesis or dissertation allowance",
+        "Transportation allowance for those outside home province"
+      ],
+      "coverage": [
+        "Partial to full tuition",
+        "Allowances"
+      ],
+      "requirements": [
+        "Filipino citizen",
+        "3rd year standing",
+        "GWA of at least 2.75 or equivalent",
+        "No failing grade",
+        "No pending DOST scholarship"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "research-scientist",
+        "software-engineer",
+        "mechanical-engineer",
+        "civil-engineer"
+      ],
+      "institutionTags": [
+        "suc",
+        "priority-s-and-t-institutions"
+      ],
+      "applicationLink": "https://www.dost.gov.ph/phd-scholarships/",
+      "deadlineNotes": "Usually opens in the 2nd quarter; check DOST-SEI announcements For students already in college who were not DOST scholars in first year.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "DOST-SEI official website"
+    },
+    {
+      "id": "sch-gov-092",
+      "provider": "DOST-SEI",
+      "category": "government",
+      "name": "DOST-SEI RA 7687 Science and Technology Scholarship",
+      "status": "active",
+      "eligibility": [
+        "High school graduates belonging to economically disadvantaged families",
+        "Top performers in STEM subjects"
+      ],
+      "benefits": [
+        "Full tuition",
+        "Monthly stipend",
+        "Book allowance",
+        "Transportation allowance",
+        "Thesis allowance",
+        "MS/PE uniform allowance"
+      ],
+      "coverage": [
+        "Tuition",
+        "Allowances",
+        "Other school fees"
+      ],
+      "requirements": [
+        "Grade 12 graduate",
+        "STEM strand preferred",
+        "Belonging to Top 5% of graduating class or with high aptitude in STEM",
+        "Filipino citizen",
+        "No pending DOST scholarship",
+        "Physically and mentally fit"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "research-scientist",
+        "software-engineer",
+        "mechanical-engineer",
+        "civil-engineer",
+        "data-scientist"
+      ],
+      "institutionTags": [
+        "suc",
+        "priority-s-and-t-institutions"
+      ],
+      "applicationLink": "https://www.dost.gov.ph/phd-scholarships/",
+      "deadlineNotes": "Usually opens August-September and closes October-November annually Separate from the general DOST-SEI S&T Undergraduate Scholarship; RA 7687 specifically targets disadvantaged families.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "DOST-SEI official website"
+    },
+    {
+      "id": "dost-sei-undergraduate",
+      "provider": "DOST-SEI",
+      "category": "government",
+      "name": "DOST-SEI Science and Technology Undergraduate Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Grade 12 graduate or graduating student",
+        "STEM or Non-STEM track eligible",
+        "For RA 7687: family income not exceeding set cut-off"
+      ],
+      "benefits": [
+        "Tuition up to P40,000/academic year",
+        "Monthly living allowance P8,000",
+        "Book allowance P10,000/year",
+        "Clothing allowance P1,000 (1st year)",
+        "Thesis allowance P10,000",
+        "Transportation allowance (if studying outside home province)",
+        "Group health and accident insurance",
+        "Graduation allowance P1,000"
+      ],
+      "coverage": [
+        "Comprehensive support for S&T degree programs"
+      ],
+      "requirements": [
+        "DOST scholarship exam passing score",
+        "Grade 12 report card",
+        "Birth certificate",
+        "Income documents (for RA 7687)",
+        "Certificate of good moral character"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "mechanical-engineer",
+        "software-engineer",
+        "mathematics",
+        "physics",
+        "chemistry",
+        "biology",
+        "architect",
+        "agriculture"
+      ],
+      "institutionTags": [
+        "up-diliman",
+        "up-manila",
+        "pup",
+        "tup",
+        "tip"
+      ],
+      "applicationLink": "https://ugs.science-scholarships.ph/",
+      "deadlineNotes": "Applications typically open October-November; exam in February-March Two types: Merit (RA 2067) and RA 7687 (for underprivileged); very competitive",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.sei.dost.gov.ph/"
+    },
+    {
+      "id": "sch-gov-097",
+      "provider": "DSWD",
+      "category": "government",
+      "name": "DSWD Assistance to Individuals in Crisis Situation (AICS) - Educational Assistance",
+      "status": "active",
+      "eligibility": [
+        "Filipino families in crisis situations with school-age children"
+      ],
+      "benefits": [
+        "One-time educational cash assistance per student"
+      ],
+      "coverage": [
+        "Cash grant varying by level from elementary to college"
+      ],
+      "requirements": [
+        "Valid ID",
+        "Enrollment proof",
+        "Certificate of indigency or crisis documentation"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "elementary",
+        "shs",
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "any-hei",
+        "any-shs",
+        "any-elementary"
+      ],
+      "applicationLink": "https://www.dswd.gov.ph/",
+      "deadlineNotes": "Rolling basis; usually distributed before school opening Not a full scholarship; one-time cash assistance coordinated through DSWD field offices and LGUs.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "DSWD official website and news reports"
+    },
+    {
+      "id": "deped-esc",
+      "provider": "DepEd-PEAC",
+      "category": "government",
+      "name": "Educational Service Contracting (ESC) Program",
+      "status": "active",
+      "eligibility": [
+        "Grade 6 completer from public elementary school",
+        "Incoming Grade 7 in ESC-participating JHS",
+        "Filipino citizen"
+      ],
+      "benefits": [
+        "P13,000 subsidy per year for JHS (Grades 7-10)"
+      ],
+      "coverage": [
+        "Junior high school tuition subsidy at private schools"
+      ],
+      "requirements": [
+        "Grade 6 report card",
+        "Birth certificate",
+        "ESC application through participating school"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "shs"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "jhs-private"
+      ],
+      "applicationLink": "https://peac.org.ph/esc/",
+      "deadlineNotes": "Apply through ESC-participating school during enrollment period ESC grantees automatically qualify for SHS voucher program",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://peac.org.ph/esc/"
+    },
+    {
+      "id": "feu-scholarship",
+      "provider": "Far Eastern University",
+      "category": "university",
+      "name": "FEU Academic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top FEU entrance exam performers",
+        "High academic achievers",
+        "Filipino citizen"
+      ],
+      "benefits": [
+        "Full or partial tuition discount",
+        "Book allowance for some categories"
+      ],
+      "coverage": [
+        "Tuition fee discount"
+      ],
+      "requirements": [
+        "FEU entrance exam",
+        "Grade 12 report card",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [],
+      "careerTags": [],
+      "institutionTags": [
+        "feu"
+      ],
+      "applicationLink": "https://www.feu.edu.ph/",
+      "deadlineNotes": "Apply through FEU Admissions Office Various scholarship tiers based on entrance exam performance",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.feu.edu.ph/"
+    },
+    {
+      "id": "unifast-fhe",
+      "provider": "CHED-UniFAST",
+      "category": "government",
+      "name": "Free Higher Education (FHE) Program under RA 10931",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in SUC or CHED-recognized LUC",
+        "No previous undergraduate degree",
+        "Meet admission and retention policies of HEI"
+      ],
+      "benefits": [
+        "Free tuition and other school fees",
+        "No financial eligibility test"
+      ],
+      "coverage": [
+        "Full tuition coverage at public HEIs"
+      ],
+      "requirements": [
+        "Certificate of enrollment at SUC/LUC",
+        "Valid ID",
+        "No separate application needed for most institutions"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc"
+      ],
+      "applicationLink": "https://unifast.gov.ph/",
+      "deadlineNotes": "Automatic upon enrollment in SUC/LUC; confirm with school registrar Universal program; all eligible SUC/LUC students qualify automatically",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://unifast.gov.ph/"
+    },
+    {
+      "id": "unifast-ftvet",
+      "provider": "CHED-UniFAST",
+      "category": "government",
+      "name": "Free TVET Program under RA 10931",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in TESDA-registered TVET program at public TVI",
+        "No age limit"
+      ],
+      "benefits": [
+        "Free tuition and training fees",
+        "Toolkits for select programs"
+      ],
+      "coverage": [
+        "Full coverage of TVET training costs at public institutions"
+      ],
+      "requirements": [
+        "Enrollment at public TESDA Technology Institution",
+        "Valid ID",
+        "No previous degree required"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "tvet"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "tesda",
+        "public-tvi"
+      ],
+      "applicationLink": "https://unifast.gov.ph/",
+      "deadlineNotes": "Rolling; inquire at nearest TESDA Technology Institution Visit TESDA website for list of registered programs and institutions",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://unifast.gov.ph/"
+    },
+    {
+      "id": "globe-telecom-scholarship",
+      "provider": "Globe Telecom",
+      "category": "private",
+      "name": "Globe Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Enrolled in IT/Digital-related degree",
+        "Financial need"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Internship opportunities"
+      ],
+      "coverage": [
+        "College financial assistance with internship"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "I"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "digital-media",
+        "mechanical-engineer"
+      ],
+      "institutionTags": [
+        "globe"
+      ],
+      "applicationLink": "https://www.globe.com.ph/",
+      "deadlineNotes": "Check Globe website for announcements Focus on digital technology and IT courses",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.globe.com.ph/"
+    },
+    {
+      "id": "gokongwei-brothers-foundation",
+      "provider": "Gokongwei Brothers Foundation",
+      "category": "private",
+      "name": "Gokongwei Brothers Foundation Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Financial need",
+        "Enrolled in partner universities"
+      ],
+      "benefits": [
+        "Full tuition coverage",
+        "Monthly stipend",
+        "Summer internship opportunities"
+      ],
+      "coverage": [
+        "Full scholarship support"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "C",
+        "E",
+        "I",
+        "S"
+      ],
+      "careerTags": [
+        "mechanical-engineer",
+        "business",
+        "management"
+      ],
+      "institutionTags": [
+        "up-diliman",
+        "ateneo",
+        "dlsu",
+        "ust"
+      ],
+      "applicationLink": "https://www.gokongweibrothersfoundation.org/",
+      "deadlineNotes": "Check GBF website for announcements Focus on STEM and business fields; partner with top universities",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.gokongweibrothersfoundation.org/"
+    },
+    {
+      "id": "gsis-scholarship",
+      "provider": "GSIS",
+      "category": "government",
+      "name": "GSIS Educational Subsidy Program (GESP)",
+      "status": "active",
+      "eligibility": [
+        "Child of active GSIS member or pensioner",
+        "Age 18-25",
+        "Not a recipient of other government scholarships"
+      ],
+      "benefits": [
+        "P10,000 one-time cash subsidy per school year"
+      ],
+      "coverage": [
+        "Educational subsidy"
+      ],
+      "requirements": [
+        "Proof of GSIS membership",
+        "Birth certificate",
+        "Enrollment form",
+        "Valid ID"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college",
+        "shs"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.gsis.gov.ph/",
+      "deadlineNotes": "Check GSIS website for annual application period Apply online through GSIS eServices portal",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.gsis.gov.ph/"
+    },
+    {
+      "id": "house-scholarship",
+      "provider": "House of Representatives",
+      "category": "government",
+      "name": "House of Representatives Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Resident in congressional district",
+        "Endorsed by congressperson",
+        "Good academic standing"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Endorsement from congressperson",
+        "Proof of district residency",
+        "Grade 12 report card",
+        "Birth certificate"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.congress.gov.ph/",
+      "deadlineNotes": "Contact your district representative's office Requires endorsement from your congressperson; varies by district",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.congress.gov.ph/"
+    },
+    {
+      "id": "jollibee-group-foundation",
+      "provider": "Jollibee Group Foundation",
+      "category": "private",
+      "name": "Jollibee Group Foundation Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Financial need",
         "Good moral character"
       ],
       "benefits": [
-        "Full tuition and school fees for qualifying entrance scholars",
-        "May include stipend depending on current OSFA award table"
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Leadership development programs"
       ],
-      "coverage": ["Tuition grant", "Stipend"],
+      "coverage": [
+        "College financial assistance"
+      ],
       "requirements": [
-        "PUPCET ranking or qualifying merit category",
-        "OSFA documentation"
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
       ],
-      "location": ["Philippines"],
-      "level": ["college"],
-      "riasecTags": ["I", "C", "E"],
-      "careerTags": ["software-engineer", "accountant", "entrepreneur", "civil-engineer", "data-analyst"],
-      "institutionTags": ["pup-system", "merit"],
-      "residencyRule": {
-        "required": false,
-        "scope": "national",
-        "strict": false
-      },
-      "applicationLink": "https://www.pup.edu.ph/students/scholarships",
-      "deadlineNotes": "Automatic consideration for top PUPCET passers; check OSFA bulletin.",
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "jollibee"
+      ],
+      "applicationLink": "https://www.jollibeegroupfoundation.org/",
+      "deadlineNotes": "Check JGF website for announcements Focus on youth leadership and education",
       "verificationDate": "2026-07-02",
-      "verificationSource": "https://www.pup.edu.ph/students/scholarships"
+      "verificationSource": "https://www.jollibeegroupfoundation.org/"
     },
     {
-      "id": "pup-student-assistantship",
-      "provider": "Polytechnic University of the Philippines",
-      "category": "university",
-      "name": "PUP Student Assistantship",
+      "id": "laguna-province-scholarship",
+      "provider": "Laguna Provincial Government",
+      "category": "government",
+      "name": "Laguna Provincial Scholarship Program",
       "status": "active",
       "eligibility": [
-        "Enrolled student",
-        "Work-study eligibility under OSFA rules"
+        "Laguna resident",
+        "Enrolled in CHED-recognized HEI",
+        "Meet academic and financial requirements"
       ],
       "benefits": [
-        "Work-study compensation under OSFA rules",
-        "Hourly compensation or capped term-based assistance depending on current OSFA scheme"
+        "Tuition subsidy",
+        "Monthly stipend"
       ],
-      "coverage": ["Stipend"],
+      "coverage": [
+        "College financial assistance"
+      ],
       "requirements": [
-        "OSFA application",
-        "Enrolled student status"
+        "Proof of Laguna residency",
+        "Enrollment form",
+        "Income documents",
+        "Good moral character"
       ],
-      "location": ["Philippines"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "Laguna"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "careerTags": [],
-      "institutionTags": ["pup-system", "work-study"],
-      "residencyRule": {
-        "required": false,
-        "scope": "national",
-        "strict": false
-      },
-      "applicationLink": "https://www.pup.edu.ph/studentservices/osfa/services",
-      "deadlineNotes": "Per semester via OSFA.",
+      "institutionTags": [
+        "laguna-state-polytechnic-university"
+      ],
+      "applicationLink": "https://laguna.gov.ph/",
+      "deadlineNotes": "Check Laguna provincial government website for announcements Laguna residents may also access LSPU at subsidized rates",
       "verificationDate": "2026-07-02",
-      "verificationSource": "https://www.pup.edu.ph/studentservices/osfa/services"
+      "verificationSource": "https://laguna.gov.ph/"
+    },
+    {
+      "id": "lbp-scholarship",
+      "provider": "Land Bank of the Philippines",
+      "category": "government",
+      "name": "LandBank Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Child of low-income family",
+        "Good academic standing",
+        "Enrolled in CHED-recognized HEI"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Enrollment form",
+        "Income documents",
+        "Academic records",
+        "Barangay certification"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.landbank.com/",
+      "deadlineNotes": "Check LandBank website or branch for schedule Available through LandBank branches nationwide",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.landbank.com/"
+    },
+    {
+      "id": "las-pinas-scholarship",
+      "provider": "Las Pinas City Government",
+      "category": "government",
+      "name": "Las Pinas City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Bona fide Las Pinas resident for 2-3 years",
+        "GWA 80%+ (varies by scholarship type)",
+        "Annual family income below P300,000",
+        "Priority for 4Ps beneficiaries"
+      ],
+      "benefits": [
+        "Full: 100% tuition at SUCs/partner schools + monthly stipend P3,500",
+        "Partial: 50-75% tuition assistance",
+        "Book allowance P2,000-4,000/semester"
+      ],
+      "coverage": [
+        "Tuition, book allowance, monthly stipend"
+      ],
+      "requirements": [
+        "Barangay certificate of residency",
+        "Grade 12 report card (GWA 80%+)",
+        "Income documents (ITR/Certificate of Indigency)",
+        "Birth certificate",
+        "Registration form"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [],
+      "applicationLink": "https://laspinascity.gov.ph/",
+      "deadlineNotes": "Annual application; check city government announcements Categories: Academic Excellence (GWA 90%+), Mayor's (GWA 88%+), Council (GWA 85%+), Need-Based (GWA 80%+)",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.chedscholar.org/las-pinas-city-scholarship/"
+    },
+    {
+      "id": "makati-scholarship",
+      "provider": "Makati City Government",
+      "category": "government",
+      "name": "Makati City College Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Makati City resident",
+        "Public high school graduate in Makati",
+        "Enrolled or intending to enroll in college"
+      ],
+      "benefits": [
+        "Up to P80,000 scholarship for public high school graduates",
+        "Free tuition at University of Makati",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "Comprehensive college financial assistance"
+      ],
+      "requirements": [
+        "Barangay certificate of residency in Makati",
+        "High school diploma",
+        "Enrollment form or admission letter",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "university-of-makati"
+      ],
+      "applicationLink": "https://www.makati.gov.ph/",
+      "deadlineNotes": "Check Makati City Government website or City Hall for application schedule Can be used at University of Makati or partner private institutions",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.makati.gov.ph/content/news/7021"
+    },
+    {
+      "id": "malabon-scholarship",
+      "provider": "Malabon City Government",
+      "category": "government",
+      "name": "Malabon City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Malabon City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Malabon residency",
+        "Enrollment form",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "city-of-malabon-university"
+      ],
+      "applicationLink": "https://malaboncity.gov.ph/",
+      "deadlineNotes": "Check Malabon City Government website for announcements Supports scholars at City of Malabon University",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://malaboncity.gov.ph/"
+    },
+    {
+      "id": "mandaluyong-scholarship",
+      "provider": "Mandaluyong City Government",
+      "category": "government",
+      "name": "Mandaluyong City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Mandaluyong City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Mandaluyong residency",
+        "Enrollment form",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [],
+      "applicationLink": "https://www.mandaluyong.gov.ph/",
+      "deadlineNotes": "Check Mandaluyong City Government website for announcements City residents may also access ESGPPA and other national programs",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.mandaluyong.gov.ph/"
+    },
+    {
+      "id": "manila-scholarship",
+      "provider": "Manila City Government",
+      "category": "government",
+      "name": "Manila City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Manila resident",
+        "Enrolled in CHED-recognized HEI in Manila",
+        "Meet academic and financial requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Manila residency",
+        "Enrollment form",
+        "Income documents",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "pamantasan-ng-lungsod-ng-maynila"
+      ],
+      "applicationLink": "https://manila.gov.ph/",
+      "deadlineNotes": "Check Manila City Hall or city government website for schedule Manila residents also eligible for free tuition at Pamantasan ng Lungsod ng Maynila",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://manila.gov.ph/"
+    },
+    {
+      "id": "mapua-presidential-scholarship",
+      "provider": "Mapua University",
+      "category": "university",
+      "name": "Mapua Presidential Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Valedictorian or salutatorian",
+        "Top Mapua entrance exam performers",
+        "Filipino citizen"
+      ],
+      "benefits": [
+        "Full tuition waiver",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "Full scholarship"
+      ],
+      "requirements": [
+        "Mapua entrance exam top scores",
+        "Class rank certification",
+        "Grade 12 report card"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "mechanical-engineer",
+        "architect",
+        "software-engineer"
+      ],
+      "institutionTags": [
+        "mapua"
+      ],
+      "applicationLink": "https://www.mapua.edu.ph/",
+      "deadlineNotes": "Apply through Mapua Admissions Office Mapua is known for engineering and architecture programs",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.mapua.edu.ph/"
+    },
+    {
+      "id": "marikina-scholarship",
+      "provider": "Marikina City Government",
+      "category": "government",
+      "name": "Marikina City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Marikina City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Marikina residency",
+        "Enrollment form",
+        "Income documents",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "pamantasan-ng-lungsod-ng-marikina"
+      ],
+      "applicationLink": "https://www.marikina.gov.ph/",
+      "deadlineNotes": "Check Marikina City Government website for announcements Supports scholars at Pamantasan ng Lungsod ng Marikina and partner institutions",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.marikina.gov.ph/"
+    },
+    {
+      "id": "maya-philippines-scholarship",
+      "provider": "Maya Philippines",
+      "category": "private",
+      "name": "Maya Philippines Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Enrolled in IT/Computer Science/Data Science",
+        "Financial need"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Internship opportunities"
+      ],
+      "coverage": [
+        "College financial assistance with fintech exposure"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "I"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "data-analyst",
+        "financial-technology"
+      ],
+      "institutionTags": [
+        "maya"
+      ],
+      "applicationLink": "https://www.maya.ph/",
+      "deadlineNotes": "Check Maya Philippines website for announcements Focus on IT, computer science, and fintech courses",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.maya.ph/"
+    },
+    {
+      "id": "megaworld-foundation",
+      "provider": "Megaworld Foundation",
+      "category": "private",
+      "name": "Megaworld Foundation Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Incoming freshman to 3rd year",
+        "Resident near any Megaworld township",
+        "GWA at least 85% with no grade below 80%",
+        "Family income not exceeding P400,000/year"
+      ],
+      "benefits": [
+        "Full tuition fee coverage",
+        "Allowance per school year (via ATM card)",
+        "Career opportunity at Megaworld after graduation",
+        "Volunteerism activities and seminars"
+      ],
+      "coverage": [
+        "Full tuition + allowance + job placement"
+      ],
+      "requirements": [
+        "Registration/enrollment form",
+        "Letter of admission or entrance exam result",
+        "Complete grades",
+        "Barangay certificate of residency",
+        "Proof of income (ITR/payslip/Certificate of Indigency)",
+        "Birth certificate",
+        "House photos",
+        "Photo of applicant with family",
+        "Utility bills",
+        "2x2 and 1x1 ID pictures"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "S"
+      ],
+      "careerTags": [
+        "mechanical-engineer",
+        "architect",
+        "accountant",
+        "hospitality-management",
+        "software-engineer",
+        "entrepreneur"
+      ],
+      "institutionTags": [
+        "megaworld-foundation"
+      ],
+      "applicationLink": "https://megaworldfoundation.com/scholarship/apply/form",
+      "deadlineNotes": "Rolling application; check website for updates 76+ partner schools including UP, PUP, TUP, and many LUCs. Supports 1,000 scholars annually.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.megaworldfoundation.com/scholarship_program"
+    },
+    {
+      "id": "metrobank-foundation",
+      "provider": "Metrobank Foundation",
+      "category": "private",
+      "name": "Metrobank Foundation Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Financial need",
+        "Good moral character"
+      ],
+      "benefits": [
+        "Full tuition coverage",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "Comprehensive college support"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "metrobank-foundation"
+      ],
+      "applicationLink": "https://www.metrobankfoundation.org/",
+      "deadlineNotes": "Check Metrobank Foundation website for announcements Long-running scholarship program; check website for updated requirements",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.metrobankfoundation.org/"
+    },
+    {
+      "id": "sch-uni-104",
+      "provider": "Miriam College",
+      "category": "university",
+      "name": "Miriam College Academic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top entrants and continuing students with high GPA at Miriam College"
+      ],
+      "benefits": [
+        "Full or partial tuition discount"
+      ],
+      "coverage": [
+        "Partial to full tuition"
+      ],
+      "requirements": [
+        "High academic standing",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "E",
+        "S"
+      ],
+      "careerTags": [
+        "teacher",
+        "psychologist"
+      ],
+      "institutionTags": [
+        "miriam-college"
+      ],
+      "applicationLink": "https://www.mc.edu.ph/",
+      "deadlineNotes": "Before each semester Covers academic merit and tuition discount tiers at Miriam College.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "Miriam College official website"
     },
     {
       "id": "miriam-financial-aid",
@@ -644,17 +3393,33 @@
         "Tuition, basic fee, and laboratory fee discounts",
         "Award level varies by financial aid review"
       ],
-      "coverage": ["Tuition grant"],
+      "coverage": [
+        "Tuition grant"
+      ],
       "requirements": [
         "Financial need documents",
         "GRPO financial aid form",
         "Current academic standing"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["R", "I", "A", "S", "E", "C"],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "careerTags": [],
-      "institutionTags": ["miriam-college", "need-based"],
+      "institutionTags": [
+        "miriam-college",
+        "need-based"
+      ],
       "applicationLink": "https://mc.edu.ph/admissions/mc-scholarships/heu/",
       "deadlineNotes": "Per academic schedule and admissions cycle.",
       "verificationDate": "2026-07-02",
@@ -675,21 +3440,2919 @@
         "Tuition fee discounts under current Miriam scholarship policy",
         "Merit-based support for high-ranking entrants"
       ],
-      "coverage": ["Tuition grant"],
+      "coverage": [
+        "Tuition grant"
+      ],
       "requirements": [
         "Top 10% ranking proof",
         "Admissions documents",
         "Good conduct record"
       ],
-      "location": ["NCR"],
-      "level": ["college"],
-      "riasecTags": ["S", "A", "E"],
-      "careerTags": ["teacher", "psychologist"],
-      "institutionTags": ["miriam-college", "merit"],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "S",
+        "A",
+        "E"
+      ],
+      "careerTags": [
+        "teacher",
+        "psychologist"
+      ],
+      "institutionTags": [
+        "miriam-college",
+        "merit"
+      ],
       "applicationLink": "https://mc.edu.ph/admissions/mc-scholarships/heu/",
       "deadlineNotes": "Released after admissions ranking and document review.",
       "verificationDate": "2026-07-02",
       "verificationSource": "https://mc.edu.ph/admissions/mc-scholarships/heu/"
+    },
+    {
+      "id": "muntinlupa-scholarship",
+      "provider": "Muntinlupa City Government",
+      "category": "government",
+      "name": "Muntinlupa City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Muntinlupa City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic and financial requirements"
+      ],
+      "benefits": [
+        "Free tuition and matriculation",
+        "Monthly stipend",
+        "Latin honors incentive (additional cash upon graduation)"
+      ],
+      "coverage": [
+        "Full tuition + stipend for college students"
+      ],
+      "requirements": [
+        "Proof of Muntinlupa residency",
+        "Enrollment form",
+        "Income documents",
+        "Good moral character certificate"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [],
+      "applicationLink": "https://muntinlupacity.gov.ph/",
+      "deadlineNotes": "Check city government website or scholarship office for schedule Over 110,000 scholars supported; one of the largest city scholarship programs in NCR",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://newsinfo.inquirer.net/2184132/muntinlupa-city-supports-over-110000-scholars"
+    },
+    {
+      "id": "navotas-scholarship",
+      "provider": "Navotas City Government",
+      "category": "government",
+      "name": "Navotas City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Navotas City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Navotas residency",
+        "Enrollment form",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [],
+      "applicationLink": "https://www.navotas.gov.ph/",
+      "deadlineNotes": "Check Navotas City Government website for announcements Annual application; priority for underprivileged residents",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.navotas.gov.ph/"
+    },
+    {
+      "id": "sch-gov-096",
+      "provider": "NCCA",
+      "category": "government",
+      "name": "NCCA Scholarship for the Arts",
+      "status": "active",
+      "eligibility": [
+        "Young Filipino artists in various arts disciplines"
+      ],
+      "benefits": [
+        "Training and development grant",
+        "Mentorship",
+        "Allowance"
+      ],
+      "coverage": [
+        "Training costs",
+        "Materials allowance",
+        "Stipend"
+      ],
+      "requirements": [
+        "Filipino citizen",
+        "18-35 years old",
+        "Demonstrated artistic talent",
+        "Not a previous NCCA scholar in the same category"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "training"
+      ],
+      "riasecTags": [
+        "A"
+      ],
+      "careerTags": [
+        "graphic-designer"
+      ],
+      "institutionTags": [
+        "arts-organizations",
+        "cultural-institutions"
+      ],
+      "applicationLink": "https://ncca.gov.ph/",
+      "deadlineNotes": "Usually opens in the 1st quarter annually Covers music, dance, theater, visual arts, literary arts, and film categories.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "NCCA official website"
+    },
+    {
+      "id": "ncip-scholarship",
+      "provider": "NCIP",
+      "category": "government",
+      "name": "NCIP Indigenous Peoples Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Registered Indigenous Peoples (IP) member with NCIP certificate",
+        "Enrolled in CHED-recognized HEI",
+        "Good academic standing"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "College financial assistance for IP students"
+      ],
+      "requirements": [
+        "NCIP certificate of tribal membership",
+        "Enrollment form",
+        "Good moral character",
+        "Grade requirements"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college",
+        "shs"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.ncip.gov.ph/",
+      "deadlineNotes": "Check NCIP regional office for schedule Requires NCIP certificate of tribal membership",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ncip.gov.ph/"
+    },
+    {
+      "id": "nu-national-scholarship",
+      "provider": "National University",
+      "category": "university",
+      "name": "NU NationalU Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Strong academic record",
+        "National University admission",
+        "Financial need (for some categories)"
+      ],
+      "benefits": [
+        "Tuition discount",
+        "Monthly stipend (for select scholars)"
+      ],
+      "coverage": [
+        "Partial to full tuition coverage"
+      ],
+      "requirements": [
+        "NU admission",
+        "Academic records",
+        "Entrance exam",
+        "Income documents (for need-based)"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college",
+        "shs"
+      ],
+      "riasecTags": [],
+      "careerTags": [],
+      "institutionTags": [
+        "national-university"
+      ],
+      "applicationLink": "https://www.nu-manila.edu.ph/",
+      "deadlineNotes": "Apply through NU Admissions Office SM Group affiliated; multiple NU campuses in NCR",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.nu-manila.edu.ph/"
+    },
+    {
+      "id": "nyc-scholarship",
+      "provider": "National Youth Commission",
+      "category": "government",
+      "name": "NYC Youth Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen aged 15-30",
+        "Member of youth organization",
+        "Good academic standing",
+        "Financially disadvantaged"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance for youth"
+      ],
+      "requirements": [
+        "Youth organization membership proof",
+        "Enrollment form",
+        "Academic records",
+        "Income documents"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college",
+        "shs"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://nyc.gov.ph/",
+      "deadlineNotes": "Check NYC website or regional office for schedule For active youth organization members",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://nyc.gov.ph/"
+    },
+    {
+      "id": "owwa-scholarship",
+      "provider": "OWWA",
+      "category": "government",
+      "name": "OWWA Education for Development Scholarship Program (EDSP)",
+      "status": "active",
+      "eligibility": [
+        "Child of active OWWA member OFW",
+        "Grade 12 graduate",
+        "GWA of at least 80%",
+        "Passed qualifying exam"
+      ],
+      "benefits": [
+        "Up to P60,000 per school year",
+        "Renewable until completion of degree"
+      ],
+      "coverage": [
+        "Tuition and living expenses"
+      ],
+      "requirements": [
+        "Proof of OWWA membership (active OFW parent)",
+        "Grade 12 report card",
+        "Birth certificate",
+        "OWWA EDSP exam passing score"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://owwa.gov.ph/",
+      "deadlineNotes": "Annual application; check OWWA website for schedule For dependents of OFWs with active OWWA membership",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://owwa.gov.ph/"
+    },
+    {
+      "id": "owwa-ofw-dsa",
+      "provider": "OWWA",
+      "category": "government",
+      "name": "OWWA OFW Dependent Scholarship Program (ODSP)",
+      "status": "active",
+      "eligibility": [
+        "Child of active OWWA member OFW with monthly salary of US$600 or less",
+        "Grade 12 graduate",
+        "Enrolled in any 4-5 year course"
+      ],
+      "benefits": [
+        "P20,000 per school year",
+        "Renewable until completion of degree"
+      ],
+      "coverage": [
+        "Cash assistance for college expenses"
+      ],
+      "requirements": [
+        "Proof of OWWA membership",
+        "Proof of OFW salary (US$600 or less)",
+        "Grade 12 report card",
+        "Birth certificate"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://owwa.gov.ph/",
+      "deadlineNotes": "Annual application; check OWWA website for schedule For families of lower-income OFWs",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://owwa.gov.ph/"
+    },
+    {
+      "id": "pampanga-province-scholarship",
+      "provider": "Pampanga Provincial Government",
+      "category": "government",
+      "name": "Pampanga Provincial Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Pampanga resident",
+        "Enrolled in CHED-recognized HEI",
+        "Meet academic and financial requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Pampanga residency",
+        "Enrollment form",
+        "Income documents",
+        "Good moral character"
+      ],
+      "location": [
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "pampanga-state-university"
+      ],
+      "applicationLink": "https://pampanga.gov.ph/",
+      "deadlineNotes": "Check Pampanga provincial government website for announcements Pampanga residents may also access PSAU at subsidized rates",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://pampanga.gov.ph/"
+    },
+    {
+      "id": "paranaque-scholarship",
+      "provider": "Paranaque City Government",
+      "category": "government",
+      "name": "Paranaque City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Paranaque City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic and financial requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Paranaque residency",
+        "Enrollment form",
+        "Income documents",
+        "Barangay clearance"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [],
+      "applicationLink": "https://www.paranaquecity.gov.ph/",
+      "deadlineNotes": "Check Paranaque City Government website for announcements Annual application cycle; priority for low-income families",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.paranaquecity.gov.ph/"
+    },
+    {
+      "id": "pasay-scholarship",
+      "provider": "Pasay City Government",
+      "category": "government",
+      "name": "Pasay City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Pasay City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic and financial requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Pasay residency",
+        "Enrollment form",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "city-university-of-pasay"
+      ],
+      "applicationLink": "https://www.pasay.gov.ph/",
+      "deadlineNotes": "Check Pasay City Government website for announcements Supports scholars at City University of Pasay",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pasay.gov.ph/"
+    },
+    {
+      "id": "pasig-scholarship",
+      "provider": "Pasig City Government",
+      "category": "government",
+      "name": "Pasig City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Pasig City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic and income requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Pasig residency",
+        "Enrollment documents",
+        "Income documents",
+        "Barangay clearance"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "pamantasan-ng-lungsod-ng-pasig"
+      ],
+      "applicationLink": "https://www.pasigcity.gov.ph/",
+      "deadlineNotes": "Check Pasig City Government website for announcements Pasig residents also eligible for free programs at Pamantasan ng Lungsod ng Pasig",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pasigcity.gov.ph/"
+    },
+    {
+      "id": "pateros-scholarship",
+      "provider": "Pateros Municipal Government",
+      "category": "government",
+      "name": "Pateros Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Pateros resident",
+        "Enrolled in recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Pateros residency",
+        "Enrollment form",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "pateros-technological-college"
+      ],
+      "applicationLink": "https://www.pateros.gov.ph/",
+      "deadlineNotes": "Check Pateros Municipal Government website for announcements Supports scholars at Pateros Technological College",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pateros.gov.ph/"
+    },
+    {
+      "id": "pcso-scholarship",
+      "provider": "PCSO",
+      "category": "government",
+      "name": "PCSO Educational Assistance Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Financially disadvantaged",
+        "Enrolled in recognized school",
+        "Good academic standing"
+      ],
+      "benefits": [
+        "Educational cash assistance (amount varies)"
+      ],
+      "coverage": [
+        "Financial assistance for school expenses"
+      ],
+      "requirements": [
+        "Enrollment form",
+        "Income documents",
+        "Barangay certificate of indigency",
+        "Valid ID"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college",
+        "shs",
+        "tvet"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.pcso.gov.ph/",
+      "deadlineNotes": "Check PCSO website or branch office for schedule Available through PCSO branch offices; requires indigency certification",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pcso.gov.ph/"
+    },
+    {
+      "id": "petron-engineering-scholarship",
+      "provider": "Petron Foundation",
+      "category": "private",
+      "name": "Petron Engineering Scholarship Program (BPSU)",
+      "status": "active",
+      "eligibility": [
+        "3rd year BS Mechanical or Electrical Engineering student at BPSU",
+        "Above-average grades",
+        "Proven financial need",
+        "Willingness to work in energy sector"
+      ],
+      "benefits": [
+        "Full tuition coverage",
+        "Monthly stipend",
+        "Book allowance",
+        "Board exam review assistance",
+        "Career opportunities at Petron Bataan Refinery"
+      ],
+      "coverage": [
+        "Full support for engineering students at BPSU"
+      ],
+      "requirements": [
+        "BPSU enrollment certification",
+        "Grade records",
+        "Income documents",
+        "Good moral character",
+        "Career commitment agreement"
+      ],
+      "location": [
+        "Bulacan",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "mechanical-engineer",
+        "electrical-engineering"
+      ],
+      "institutionTags": [
+        "bataan-peninsula-state-university"
+      ],
+      "applicationLink": "https://www.petron.com/petron-foundation-inc/",
+      "deadlineNotes": "Apply through BPSU scholarship office Since 2008, 300+ scholars, 200+ employed at Petron. Open to BPSU engineering students.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.petron.com/petron-foundation-inc/"
+    },
+    {
+      "id": "philippine-long-distance-telephone-scholarship",
+      "provider": "PLDT",
+      "category": "private",
+      "name": "PLDT Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Enrolled in IT/Engineering/Business degree",
+        "Financial need"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Internship opportunities"
+      ],
+      "coverage": [
+        "College financial assistance with internship"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "mechanical-engineer",
+        "entrepreneur"
+      ],
+      "institutionTags": [
+        "pldt"
+      ],
+      "applicationLink": "https://www.pldt.com/",
+      "deadlineNotes": "Check PLDT website for announcements Focus on IT, engineering, and business courses",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pldt.com/"
+    },
+    {
+      "id": "pnp-scholarship",
+      "provider": "PNP",
+      "category": "government",
+      "name": "PNP Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Child of active or retired PNP personnel",
+        "Good academic standing",
+        "Passed qualifying requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "PNP ID of sponsor",
+        "Birth certificate",
+        "Grade 12 report card",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://pnp.gov.ph/",
+      "deadlineNotes": "Check PNP headquarters or regional offices for schedule For dependents of PNP personnel",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://pnp.gov.ph/"
+    },
+    {
+      "id": "pup-presidential-scholarship",
+      "provider": "Polytechnic University of the Philippines",
+      "category": "university",
+      "name": "PUP Entrance / Presidential Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top PUPCET passers and qualifying merit categories per OSFA",
+        "Good moral character"
+      ],
+      "benefits": [
+        "Full tuition and school fees for qualifying entrance scholars",
+        "May include stipend depending on current OSFA award table"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "PUPCET ranking or qualifying merit category",
+        "OSFA documentation"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "C",
+        "E"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "accountant",
+        "entrepreneur",
+        "civil-engineer",
+        "data-analyst"
+      ],
+      "institutionTags": [
+        "pup-system",
+        "merit"
+      ],
+      "residencyRule": {
+        "required": false,
+        "scope": "national",
+        "strict": false
+      },
+      "applicationLink": "https://www.pup.edu.ph/students/scholarships",
+      "deadlineNotes": "Automatic consideration for top PUPCET passers; check OSFA bulletin.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/students/scholarships"
+    },
+    {
+      "id": "pup-free-tuition",
+      "provider": "PUP",
+      "category": "government",
+      "name": "PUP Free Tuition (RA 10931)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "PUP admission qualifier",
+        "No previous undergraduate degree"
+      ],
+      "benefits": [
+        "Free tuition and other school fees",
+        "Very low miscellaneous fees"
+      ],
+      "coverage": [
+        "Full tuition coverage at PUP campuses"
+      ],
+      "requirements": [
+        "PUP College Entrance Test (PUPCET) passer or equivalent",
+        "Certificate of enrollment"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Laguna",
+        "Rizal"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "pup"
+      ],
+      "applicationLink": "https://www.pup.edu.ph/",
+      "deadlineNotes": "Automatic upon enrollment; PUPCET is the entry point One of the largest public universities; known for very low cost education",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/"
+    },
+    {
+      "id": "sch-uni-094",
+      "provider": "Polytechnic University of the Philippines",
+      "category": "university",
+      "name": "PUP Presidential Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top PUP entrance exam passers with exceptional academic records"
+      ],
+      "benefits": [
+        "Free tuition",
+        "Allowance"
+      ],
+      "coverage": [
+        "Full tuition",
+        "Stipend"
+      ],
+      "requirements": [
+        "Top PUPCET scorer",
+        "Good moral character"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "accountant",
+        "entrepreneur",
+        "civil-engineer"
+      ],
+      "institutionTags": [
+        "pup-system"
+      ],
+      "applicationLink": "https://pup.edu.ph/",
+      "deadlineNotes": "Automatic consideration for top PUPCET passers Automatically awarded to top PUP College Entrance Test passers.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "PUP official website"
+    },
+    {
+      "id": "pup-student-assistantship",
+      "provider": "Polytechnic University of the Philippines",
+      "category": "university",
+      "name": "PUP Student Assistantship",
+      "status": "active",
+      "eligibility": [
+        "Enrolled student",
+        "Work-study eligibility under OSFA rules"
+      ],
+      "benefits": [
+        "Work-study compensation under OSFA rules",
+        "Hourly compensation or capped term-based assistance depending on current OSFA scheme"
+      ],
+      "coverage": [
+        "Stipend"
+      ],
+      "requirements": [
+        "OSFA application",
+        "Enrolled student status"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "pup-system",
+        "work-study"
+      ],
+      "residencyRule": {
+        "required": false,
+        "scope": "national",
+        "strict": false
+      },
+      "applicationLink": "https://www.pup.edu.ph/studentservices/osfa/services",
+      "deadlineNotes": "Per semester via OSFA.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.pup.edu.ph/studentservices/osfa/services"
+    },
+    {
+      "id": "qc-scholarship-program",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program (QCSP)",
+      "status": "active",
+      "eligibility": [
+        "Bona fide resident of Quezon City",
+        "Not a scholar of another LGU",
+        "Enrolled in CHED/DepEd-recognized institution",
+        "Meet category-specific requirements"
+      ],
+      "benefits": [
+        "SHS scholarship: up to P10,000/year stipend",
+        "Tertiary QC Excel: up to P25,000/year",
+        "Tertiary academic: up to P25,000/year",
+        "Athletic and arts scholarship: up to P25,000/year",
+        "Postgraduate: up to P40,000/year"
+      ],
+      "coverage": [
+        "Tuition grant and/or stipend for SHS, college, and postgraduate"
+      ],
+      "requirements": [
+        "QCitizen ID (primary requirement)",
+        "Proof of residency in Quezon City",
+        "Enrollment form/acceptance letter",
+        "Grade requirements vary by category",
+        "Mayor's permit or barangay clearance"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "shs",
+        "college",
+        "graduate"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-hei",
+        "any-shs",
+        "any-postgrad"
+      ],
+      "applicationLink": "https://quezoncity.gov.ph/program/qc-scholarship-program/",
+      "deadlineNotes": "Annual application cycle; check QCYDO and QC Government announcements for schedule Managed by the QC Youth Development Office (QCYDO). QCitizen ID is required before application.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/program/qc-scholarship-program/"
+    },
+    {
+      "id": "qcsp-shs-academic",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Academic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Accepted or enrolled in recognized institution"
+      ],
+      "benefits": [
+        "Up to PHP 20,000 tuition grant + PHP 10,000 stipend per school year",
+        "Annual application cycle under QCYDO rules"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Academic qualification proof"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "shs"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-shs"
+      ],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO and QC Government announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-academic",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Academic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Recognized tertiary institution"
+      ],
+      "benefits": [
+        "Up to PHP 80,000 tuition grant + PHP 25,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Academic merit"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-hei"
+      ],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-athletic-arts",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Athletic and Arts Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Recognized tertiary institution"
+      ],
+      "benefits": [
+        "Up to PHP 55,000 tuition grant + PHP 25,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Arts or athletic credentials"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "S",
+        "E"
+      ],
+      "careerTags": [
+        "graphic-designer",
+        "content-creator"
+      ],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-hei"
+      ],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-continuing-vocational",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Continuing Education / Vocational Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Recognized vocational or continuing-education enrollment"
+      ],
+      "benefits": [
+        "PHP 10,000 stipend per school year",
+        "Category applies to continuing education or vocational studies"
+      ],
+      "coverage": [
+        "Stipend"
+      ],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Vocational or continuing-education enrollment"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "tvet",
+        "continuing-education"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-vocational"
+      ],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-economic",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Economic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Economic-need criteria"
+      ],
+      "benefits": [
+        "Up to PHP 10,000 tuition grant + PHP 10,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Economic-need qualification"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-hei"
+      ],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-postgraduate",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Postgraduate Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Postgraduate enrollment"
+      ],
+      "benefits": [
+        "Up to PHP 55,000 tuition grant + PHP 50,000 stipend per school year",
+        "Includes PHP 20,000 automatic release; remaining PHP 30,000 subject to thesis or dissertation grant approval"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend",
+        "Thesis or dissertation support"
+      ],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Postgraduate enrollment"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "graduate"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-postgrad"
+      ],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/wp-content/uploads/2024/07/SP-3283-S-2024.pdf"
+    },
+    {
+      "id": "qcsp-tertiary-qc-excel",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - QC Excel Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Recognized tertiary institution"
+      ],
+      "benefits": [
+        "Up to PHP 110,000 tuition grant + PHP 50,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "High academic merit"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-hei"
+      ],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "qcsp-tertiary-youth-leaders",
+      "provider": "Quezon City Government (through QCYDO)",
+      "category": "government",
+      "name": "Quezon City Scholarship Program - Youth Leaders Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Quezon City resident",
+        "Verified QCitizen ID",
+        "Leadership role in QCYDO-registered youth organization"
+      ],
+      "benefits": [
+        "Up to PHP 55,000 tuition grant + PHP 25,000 stipend per school year",
+        "Renewed per term or semester under current QC guide rules"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "Quezon City residency",
+        "QCitizen ID",
+        "Registered youth leadership role"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "S",
+        "E"
+      ],
+      "careerTags": [
+        "teacher",
+        "entrepreneur"
+      ],
+      "institutionTags": [
+        "qcydo",
+        "qcitizen",
+        "any-hei"
+      ],
+      "applicationLink": "https://qceservices.quezoncity.gov.ph/",
+      "deadlineNotes": "Annual application cycle; check QCYDO announcements.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://quezoncity.gov.ph/qcitizen-guides/qc-scholars-guide/"
+    },
+    {
+      "id": "rizal-province-scholarship",
+      "provider": "Rizal Provincial Government",
+      "category": "government",
+      "name": "Rizal Provincial Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Rizal resident",
+        "Enrolled in CHED-recognized HEI",
+        "Meet academic and financial requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Rizal residency",
+        "Enrollment form",
+        "Income documents",
+        "Good moral character"
+      ],
+      "location": [
+        "Rizal"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "university-of-rizal-system"
+      ],
+      "applicationLink": "https://rizalprovince.ph/",
+      "deadlineNotes": "Check Rizal provincial government website for announcements Rizal residents may also access URS at subsidized rates",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://rizalprovince.ph/"
+    },
+    {
+      "id": "san-juan-scholarship",
+      "provider": "San Juan City Government",
+      "category": "government",
+      "name": "San Juan City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "San Juan City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of San Juan residency",
+        "Enrollment form",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [],
+      "applicationLink": "https://www.sanjuancity.gov.ph/",
+      "deadlineNotes": "Check San Juan City Government website for announcements City residents may combine with national programs",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.sanjuancity.gov.ph/"
+    },
+    {
+      "id": "senate-scholarship",
+      "provider": "Senate of the Philippines",
+      "category": "government",
+      "name": "Senate Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Endorsed by senator",
+        "Good academic standing"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Endorsement from senator",
+        "Grade 12 report card",
+        "Birth certificate",
+        "Proof of residency"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.senate.gov.ph/",
+      "deadlineNotes": "Contact senator's office for endorsement Requires endorsement from a senator",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.senate.gov.ph/"
+    },
+    {
+      "id": "deped-shs-voucher",
+      "provider": "DepEd-PEAC",
+      "category": "government",
+      "name": "Senior High School Voucher Program (SHS VP)",
+      "status": "active",
+      "eligibility": [
+        "Grade 10 completer from public JHS (Category A - automatic)",
+        "ESC grantee from private JHS (Category B - automatic)",
+        "Private JHS non-ESC (Category C - must apply)",
+        "ALS A&E/PEPT passer (Categories E-F)",
+        "Not previously enrolled in Grade 11"
+      ],
+      "benefits": [
+        "NCR: P22,500 (public JHS) / P18,000 (private JHS) per year",
+        "HUCs outside NCR: P20,000 / P16,000 per year",
+        "Other locations: P17,500 / P14,000 per year"
+      ],
+      "coverage": [
+        "Tuition subsidy for SHS at non-DepEd schools"
+      ],
+      "requirements": [
+        "QVR certificate (automatic) or OVAP application",
+        "Birth certificate",
+        "Grade 10 report card",
+        "Proof of JHS completion"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "shs"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "shs-private"
+      ],
+      "applicationLink": "https://ovap.peac.org.ph/",
+      "deadlineNotes": "OVAP opens typically May-June; check DepEd calendar for exact dates Voucher is remitted directly to the SHS, not given as cash to students",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://peac.org.ph/shsvp/"
+    },
+    {
+      "id": "shell-philippines-scholarship",
+      "provider": "Shell Philippines",
+      "category": "private",
+      "name": "Shell Philippines Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence in STEM",
+        "Financial need",
+        "Enrolled in engineering or related degree"
+      ],
+      "benefits": [
+        "Full tuition coverage",
+        "Monthly stipend",
+        "Summer internship",
+        "Mentorship"
+      ],
+      "coverage": [
+        "Full support for STEM/engineering students"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "mechanical-engineer",
+        "geology",
+        "chemistry",
+        "environmental-science"
+      ],
+      "institutionTags": [
+        "up-diliman",
+        "dlsu",
+        "ateneo",
+        "ust"
+      ],
+      "applicationLink": "https://www.shell.com.ph/",
+      "deadlineNotes": "Check Shell Philippines website for announcements Focus on engineering, geosciences, and related STEM fields",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.shell.com.ph/"
+    },
+    {
+      "id": "sm-foundation-college",
+      "provider": "SM Foundation",
+      "category": "private",
+      "name": "SM College Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Incoming freshman",
+        "Grade 12 graduate from public school or DepEd voucher beneficiary from private school",
+        "GWA at least 92% for Grade 12 1st semester",
+        "Household income at most P250,000/year"
+      ],
+      "benefits": [
+        "Full tuition coverage",
+        "Monthly allowance",
+        "Part-time job opportunities during semestral and Christmas breaks",
+        "Enrichment programs",
+        "Exclusive job offers with SM Group after graduation"
+      ],
+      "coverage": [
+        "Full tuition + monthly stipend + job placement"
+      ],
+      "requirements": [
+        "Online application form",
+        "Parent's ITR or Certificate of Non-Filing/Indigency",
+        "Parent's cedula",
+        "Grade 12 report card (1st semester)",
+        "Birth certificate",
+        "2x2 ID picture",
+        "Sketch of home to nearest SM Mall"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "C",
+        "E",
+        "I",
+        "S"
+      ],
+      "careerTags": [
+        "accountant",
+        "software-engineer",
+        "mechanical-engineer",
+        "teacher",
+        "entrepreneur"
+      ],
+      "institutionTags": [
+        "sm-foundation"
+      ],
+      "applicationLink": "https://scholarship.sm-foundation.org/",
+      "deadlineNotes": "Application period: February 1-28 annually Priority courses: Accountancy, Computer Science, Engineering, Education, IT, Business. Apply through SM Foundation portal.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.sm-foundation.org/what_we_do/college-scholarship-program/"
+    },
+    {
+      "id": "sm-foundation-techvoc",
+      "provider": "SM Foundation",
+      "category": "private",
+      "name": "SM Technical-Vocational Scholarship",
+      "status": "active",
+      "eligibility": [
+        "High school graduate or ALS completer",
+        "Age 18-30",
+        "Financially disadvantaged",
+        "Willing to work in retail/service sector"
+      ],
+      "benefits": [
+        "Free TESDA training",
+        "Monthly allowance",
+        "Job placement at SM after completion"
+      ],
+      "coverage": [
+        "Full TVET training support"
+      ],
+      "requirements": [
+        "High school diploma or ALS certificate",
+        "Birth certificate",
+        "Income documents",
+        "Barangay clearance",
+        "Medical clearance"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "tvet"
+      ],
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "careerTags": [
+        "retail",
+        "customer-service",
+        "food-and-beverage",
+        "visual-merchandising"
+      ],
+      "institutionTags": [
+        "sm-foundation",
+        "tesda"
+      ],
+      "applicationLink": "https://www.sm-foundation.org/what_we_do/college-scholarship-program/",
+      "deadlineNotes": "Check SM Foundation website for application period For TESDA NC II programs; job placement at SM after training",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.sm-foundation.org/"
+    },
+    {
+      "id": "tesda-step",
+      "provider": "TESDA",
+      "category": "government",
+      "name": "Special Training for Employment Program (STEP)",
+      "status": "active",
+      "eligibility": [
+        "Community members in specific barangays/areas",
+        "Out-of-school youth",
+        "Unemployed individuals",
+        "Financially disadvantaged"
+      ],
+      "benefits": [
+        "Free training and competency assessment",
+        "Starter toolkits",
+        "Training allowance P60/day"
+      ],
+      "coverage": [
+        "Short-term community-based skills training"
+      ],
+      "requirements": [
+        "Barangay certification of residency",
+        "Valid ID",
+        "May vary by local implementation"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "tvet"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "tesda"
+      ],
+      "applicationLink": "https://www.tesda.gov.ph/",
+      "deadlineNotes": "Community-based scheduling; check with local TESDA office or barangay Programs vary by community needs; delivered at barangay level",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.tesda.gov.ph/about/tesda/1279"
+    },
+    {
+      "id": "sss-educational-assistance",
+      "provider": "SSS",
+      "category": "government",
+      "name": "SSS Educational Assistance Loan Program",
+      "status": "active",
+      "eligibility": [
+        "SSS member with at least 36 monthly contributions",
+        "Monthly salary credit of P25,000 or below",
+        "Member-borrower, spouse, or child"
+      ],
+      "benefits": [
+        "Loan amount up to P20,000 per semester",
+        "Low interest rate"
+      ],
+      "coverage": [
+        "Tuition and educational expenses loan"
+      ],
+      "requirements": [
+        "SSS membership proof",
+        "Income documents",
+        "Enrollment form",
+        "Valid ID"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college",
+        "shs",
+        "tvet"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://www.sss.gov.ph/",
+      "deadlineNotes": "Apply online through My.SSS portal; year-round Loan program, not a grant; must be repaid",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.sss.gov.ph/"
+    },
+    {
+      "id": "sc-scholarship",
+      "provider": "Supreme Court of the Philippines",
+      "category": "government",
+      "name": "Supreme Court Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Child of SC employee or court personnel",
+        "Good academic standing"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "SC employment certification",
+        "Birth certificate",
+        "Enrollment form",
+        "Academic records"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://sc.judiciary.gov.ph/",
+      "deadlineNotes": "Internal application through SC administration For children of SC employees and judiciary personnel",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://sc.judiciary.gov.ph/"
+    },
+    {
+      "id": "taguig-scholarship",
+      "provider": "Taguig City Government",
+      "category": "government",
+      "name": "Taguig City Scholarship Program (Lifeline Assistance for Neighbors In-need)",
+      "status": "active",
+      "eligibility": [
+        "Taguig City resident",
+        "Enrolled or accepted in CHED-recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Full tuition coverage",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "Comprehensive college financial support"
+      ],
+      "requirements": [
+        "Taguig City residency proof",
+        "Admission/enrollment documents",
+        "Income documents",
+        "Grade requirements"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "taguig-city-university"
+      ],
+      "applicationLink": "https://www.taguig.gov.ph/",
+      "deadlineNotes": "Check Taguig City Government website for announcements Also supports scholars at Taguig City University (free tuition for residents)",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.taguig.gov.ph/"
+    },
+    {
+      "id": "unifast-tes",
+      "provider": "CHED-UniFAST",
+      "category": "government",
+      "name": "Tertiary Education Subsidy (TES) under RA 10931",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in CHED-recognized SUC/LUC/private HEI",
+        "No previous undergraduate degree",
+        "Not overstaying at college level"
+      ],
+      "benefits": [
+        "Up to P20,000 subsidy per academic year",
+        "P10,000 per semester for eligible students"
+      ],
+      "coverage": [
+        "Tuition and other school fees support",
+        "Living allowance component"
+      ],
+      "requirements": [
+        "Certificate of enrollment",
+        "UniFAST TES Application Form",
+        "Proof of Filipino citizenship",
+        "Must apply through school's TES portal"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://tes.unifast.gov.ph/",
+      "deadlineNotes": "Apply through your school's scholarship office; check with HEI for specific dates Applications processed through school, not direct to UniFAST",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://unifast.gov.ph/"
+    },
+    {
+      "id": "tesda-online-program",
+      "provider": "TESDA",
+      "category": "government",
+      "name": "TESDA Online Program (TOP)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen or foreign resident",
+        "Internet access",
+        "No age limit",
+        "No educational requirement"
+      ],
+      "benefits": [
+        "Free online courses",
+        "Certificate of completion"
+      ],
+      "coverage": [
+        "Free online technical education courses"
+      ],
+      "requirements": [
+        "TESDA Online Program account registration",
+        "Internet-connected device"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "tvet"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "tesda"
+      ],
+      "applicationLink": "https://www.e-tesda.gov.ph/",
+      "deadlineNotes": "Self-paced; enroll anytime Online only; does not include face-to-face assessment for National Certificate",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.e-tesda.gov.ph/"
+    },
+    {
+      "id": "tesda-pbd",
+      "provider": "TESDA",
+      "category": "government",
+      "name": "TESDA Private Education Student Financial Assistance (PBD-TESDA)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in TESDA-registered program at private TVI",
+        "Financially disadvantaged"
+      ],
+      "benefits": [
+        "Subsidy for training costs at private TVIs"
+      ],
+      "coverage": [
+        "Partial or full training fee subsidy"
+      ],
+      "requirements": [
+        "Enrollment in TESDA-registered program",
+        "Income documents",
+        "Barangay clearance"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "tvet"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "tesda",
+        "private-tvi"
+      ],
+      "applicationLink": "https://www.tesda.gov.ph/",
+      "deadlineNotes": "Check with TESDA-accredited private TVI For training at private TESDA-accredited institutions",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.tesda.gov.ph/"
+    },
+    {
+      "id": "tesda-twsp",
+      "provider": "TESDA",
+      "category": "government",
+      "name": "Training for Work Scholarship Program (TWSP)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "At least 18 years old",
+        "High school graduate or ALS passer",
+        "Unemployed or underemployed"
+      ],
+      "benefits": [
+        "Free training and assessment",
+        "Training allowance (varies by program)",
+        "National Certificate upon passing assessment"
+      ],
+      "coverage": [
+        "Full cost of TVET training at TESDA-accredited centers"
+      ],
+      "requirements": [
+        "High school diploma or ALS certificate",
+        "Valid ID",
+        "Barangay clearance",
+        "Birth certificate"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "tvet"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "tesda"
+      ],
+      "applicationLink": "https://www.tesda.gov.ph/",
+      "deadlineNotes": "Rolling; first-come-first-served basis at TESDA-accredited TVIs Slots allocated per region; visit nearest TESDA office for list of available programs",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.tesda.gov.ph/about/tesda/1279"
+    },
+    {
+      "id": "petron-tap-scholarship",
+      "provider": "Petron Foundation",
+      "category": "private",
+      "name": "Tulong Aral ng Petron (TAP)",
+      "status": "active",
+      "eligibility": [
+        "Resident of Petron host community",
+        "Elementary to college level",
+        "Strong academic performance",
+        "Demonstrated financial need"
+      ],
+      "benefits": [
+        "School supplies and shoes",
+        "Uniforms",
+        "Meal allowances",
+        "College tuition subsidies for select scholars",
+        "Laptops for select beneficiaries"
+      ],
+      "coverage": [
+        "Comprehensive support from elementary to college"
+      ],
+      "requirements": [
+        "Barangay residency certificate (Petron host community)",
+        "School records",
+        "Income documents",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal"
+      ],
+      "level": [
+        "college",
+        "shs"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "petron-foundation"
+      ],
+      "applicationLink": "https://www.petron.com/petron-foundation-inc/",
+      "deadlineNotes": "Applications through partner schools and community coordinators Since 2002, supported 18,000+ scholars. Priority for communities near Petron terminals.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.petron.com/petron-foundation-inc/"
+    },
+    {
+      "id": "unifast-tdp",
+      "provider": "CHED-UniFAST",
+      "category": "government",
+      "name": "Tulong Dunong Program (TDP)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Enrolled in CHED-recognized HEI",
+        "Combined family income not exceeding P400,000 annually",
+        "Not a recipient of other government scholarships"
+      ],
+      "benefits": [
+        "P7,500 per semester grant",
+        "Total P15,000 per academic year"
+      ],
+      "coverage": [
+        "Cash grant for college expenses"
+      ],
+      "requirements": [
+        "Certificate of enrollment",
+        "Income documents (ITR or Certificate of Indigency)",
+        "Grade requirements vary by CHEDRO"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Antipolo",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "suc",
+        "luc",
+        "private-hei"
+      ],
+      "applicationLink": "https://unifast.gov.ph/",
+      "deadlineNotes": "Check with your school's scholarship office for application period Administered through CHED regional offices; priority for low-income families",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://unifast.gov.ph/"
+    },
+    {
+      "id": "unilever-scholarship",
+      "provider": "Unilever Philippines",
+      "category": "private",
+      "name": "Unilever Philippines Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "Academic excellence",
+        "Enrolled in Business/Engineering/Chemistry",
+        "Financial need"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend",
+        "Internship opportunities"
+      ],
+      "coverage": [
+        "College financial assistance with internship"
+      ],
+      "requirements": [
+        "Academic records",
+        "Income documents",
+        "Recommendation letters",
+        "Interview"
+      ],
+      "location": [
+        "NCR",
+        "Bulacan",
+        "Cavite",
+        "Laguna",
+        "Rizal",
+        "Pampanga"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "careerTags": [
+        "entrepreneur",
+        "mechanical-engineer",
+        "chemistry",
+        "marketing-manager"
+      ],
+      "institutionTags": [
+        "unilever"
+      ],
+      "applicationLink": "https://www.unilever.com.ph/",
+      "deadlineNotes": "Check Unilever Philippines website for announcements Focus on business, engineering, and chemistry courses",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.unilever.com.ph/"
+    },
+    {
+      "id": "up-slas-giap",
+      "provider": "University of the Philippines System",
+      "category": "university",
+      "name": "University of the Philippines - SLAS Grants-in-Aid Program",
+      "status": "active",
+      "eligibility": [
+        "UP student applicant",
+        "SLAS application",
+        "Household financial data review"
+      ],
+      "benefits": [
+        "Tuition waivers and allowances depending on donor and campus program",
+        "Need-based support through UP SLAS workflows"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "SLAS application",
+        "Financial data submission",
+        "Campus or donor qualification"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college",
+        "graduate"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "up-system",
+        "slas"
+      ],
+      "applicationLink": "https://slasonline.up.edu.ph/",
+      "deadlineNotes": "Periodic SLAS windows; check campus OSG schedules.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://slasonline.up.edu.ph/"
+    },
+    {
+      "id": "up-tes-via-slas",
+      "provider": "University of the Philippines System",
+      "category": "government",
+      "name": "University of the Philippines - TES via SLAS",
+      "status": "active",
+      "eligibility": [
+        "UP student applicant",
+        "SLAS application",
+        "TES eligibility matching"
+      ],
+      "benefits": [
+        "Cash subsidy and tuition support depending on TES allocation and eligibility",
+        "Coordinated through UP SLAS workflows"
+      ],
+      "coverage": [
+        "Tuition grant",
+        "Stipend"
+      ],
+      "requirements": [
+        "SLAS application",
+        "TES eligibility review"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "up-system",
+        "slas",
+        "tes"
+      ],
+      "applicationLink": "https://slasonline.up.edu.ph/",
+      "deadlineNotes": "Coordinated with SLAS application windows.",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://up.edu.ph/student-financial-assistance-online-frequently-asked-questions/"
+    },
+    {
+      "id": "up-dost-scholarship",
+      "provider": "UP - DOST Partnership",
+      "category": "university",
+      "name": "UP DOST-SEI Scholarship",
+      "status": "active",
+      "eligibility": [
+        "UP student with DOST-SEI scholarship",
+        "Enrolled in priority S&T course"
+      ],
+      "benefits": [
+        "Tuition coverage through DOST-SEI",
+        "Monthly stipend",
+        "Book allowance"
+      ],
+      "coverage": [
+        "Full support via DOST-SEI"
+      ],
+      "requirements": [
+        "UP admission",
+        "DOST-SEI scholarship qualifier",
+        "Enrolled in S&T program"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "I",
+        "R"
+      ],
+      "careerTags": [
+        "science",
+        "mechanical-engineer",
+        "technology",
+        "mathematics"
+      ],
+      "institutionTags": [
+        "up-diliman",
+        "up-manila"
+      ],
+      "applicationLink": "https://www.sei.dost.gov.ph/",
+      "deadlineNotes": "Pass DOST-SEI exam first; UP admission separate Must qualify for both DOST-SEI and UP admission separately",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.sei.dost.gov.ph/"
+    },
+    {
+      "id": "up-isis",
+      "provider": "UP System",
+      "category": "government",
+      "name": "UP Iskolar ng Bayan (Universal Access to Quality Tertiary Education)",
+      "status": "active",
+      "eligibility": [
+        "Filipino citizen",
+        "UP admission qualifier",
+        "No previous undergraduate degree",
+        "Enrolled in UP constituent university"
+      ],
+      "benefits": [
+        "Free tuition and other school fees",
+        "Free health service at UP infirmary"
+      ],
+      "coverage": [
+        "Full tuition coverage at all UP campuses"
+      ],
+      "requirements": [
+        "UP College Admission Test (UPCAT) passer or equivalent",
+        "Certificate of enrollment",
+        "No separate application needed for FHE"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "up-diliman",
+        "up-manila"
+      ],
+      "applicationLink": "https://up.edu.ph/",
+      "deadlineNotes": "Automatic upon enrollment; UPCAT is the entry point UP's socialized tuition scheme (STS) covers additional expenses for low-income students",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://up.edu.ph/"
+    },
+    {
+      "id": "sch-uni-092",
+      "provider": "University of the Philippines System",
+      "category": "university",
+      "name": "UP Oblation Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Top examinees of the UP College Admission Test (UPCAT)"
+      ],
+      "benefits": [
+        "Free tuition",
+        "Monthly stipend",
+        "Book allowance",
+        "Transportation allowance"
+      ],
+      "coverage": [
+        "Full tuition",
+        "Comprehensive allowances"
+      ],
+      "requirements": [
+        "Top UPCAT scorer per campus or program",
+        "Filipino citizen"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "up-system"
+      ],
+      "applicationLink": "https://up.edu.ph/",
+      "deadlineNotes": "Automatic; awarded to top UPCAT passers Prestige merit scholarship with no separate application.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "UP System official website"
+    },
+    {
+      "id": "sch-uni-093",
+      "provider": "University of the Philippines System",
+      "category": "university",
+      "name": "UP Socialized Tuition and Financial Assistance Program (STFAP)",
+      "status": "active",
+      "eligibility": [
+        "UP students who apply for socialized tuition bracketing"
+      ],
+      "benefits": [
+        "Tuition discount or free tuition depending on bracket",
+        "Possible stipend support"
+      ],
+      "coverage": [
+        "Partial to full tuition",
+        "Possible allowance"
+      ],
+      "requirements": [
+        "UP student",
+        "Submit income documentation for STFAP or socialized tuition assessment"
+      ],
+      "location": [
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "up-system"
+      ],
+      "applicationLink": "https://up.edu.ph/",
+      "deadlineNotes": "Before each semester enrollment cycle Tuition socialization support, not a traditional merit-only scholarship.",
+      "verificationDate": "2025-06-28",
+      "verificationSource": "UP System official website"
+    },
+    {
+      "id": "ust-san-lorenzo-ruiz",
+      "provider": "University of Santo Tomas",
+      "category": "university",
+      "name": "UST San Lorenzo Ruiz Student Assistance Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Financially needy students",
+        "Willing to serve as student assistant (20-30 hours/week)",
+        "Enrolled at UST"
+      ],
+      "benefits": [
+        "Tuition assistance",
+        "Monthly stipend for student assistant work"
+      ],
+      "coverage": [
+        "Work-study program"
+      ],
+      "requirements": [
+        "UST enrollment",
+        "Income documents",
+        "Good moral character",
+        "Willingness to work as student assistant"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [],
+      "careerTags": [],
+      "institutionTags": [
+        "ust"
+      ],
+      "applicationLink": "https://www.ust.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "Apply through UST Scholarship Office Work-study program for financially challenged students",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ust.edu.ph/admissions/scholarships/"
+    },
+    {
+      "id": "ust-santo-tomas-academic",
+      "provider": "University of Santo Tomas",
+      "category": "university",
+      "name": "UST Santo Tomas Academic Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Excellent academic performance",
+        "Enrolled at UST",
+        "Filipino citizen"
+      ],
+      "benefits": [
+        "Tuition discount based on academic performance",
+        "Up to full tuition for top scholars"
+      ],
+      "coverage": [
+        "Tuition fee discount"
+      ],
+      "requirements": [
+        "UST entrance exam",
+        "Grade 12 report card",
+        "Good moral character"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [],
+      "careerTags": [],
+      "institutionTags": [
+        "ust"
+      ],
+      "applicationLink": "https://www.ust.edu.ph/admissions/scholarships/",
+      "deadlineNotes": "Apply through UST Office for Admissions Based on USTET performance and academic records",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.ust.edu.ph/admissions/scholarships/"
+    },
+    {
+      "id": "valenzuela-scholarship",
+      "provider": "Valenzuela City Government",
+      "category": "government",
+      "name": "Valenzuela City Scholarship Program",
+      "status": "active",
+      "eligibility": [
+        "Valenzuela City resident",
+        "Enrolled in recognized HEI",
+        "Meet academic requirements"
+      ],
+      "benefits": [
+        "Tuition subsidy",
+        "Monthly stipend"
+      ],
+      "coverage": [
+        "College financial assistance"
+      ],
+      "requirements": [
+        "Proof of Valenzuela residency",
+        "Enrollment form",
+        "Income documents"
+      ],
+      "location": [
+        "NCR"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
+      "careerTags": [],
+      "institutionTags": [
+        "pamantasan-ng-lungsod-ng-valenzuela"
+      ],
+      "applicationLink": "https://www.valenzuela.gov.ph/",
+      "deadlineNotes": "Check Valenzuela City Government website for announcements Supports scholars at Pamantasan ng Lungsod ng Valenzuela",
+      "verificationDate": "2026-07-02",
+      "verificationSource": "https://www.valenzuela.gov.ph/"
     }
   ]
 }

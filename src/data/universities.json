@@ -1,23 +1,321 @@
 {
   "metadata": {
-    "region": "NCR",
-    "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site."
+    "region": "NCR + CALABARZON + Central Luzon (partial)",
+    "version": "2.0.0",
+    "lastUpdated": "2026-07-03",
+    "count": 165,
+    "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site.",
+    "source": "docs/plans/kursoko-data/universities.json"
   },
   "universities": [
     {
-      "id": "pup-manila",
-      "name": "PUP Manila",
-      "type": "public",
+      "id": " access-computer",
+      "name": "Access Computer College",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Private computer college in Quezon City offering IT and business programs.",
+      "tuition": "Approximately P15,000-P30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.access.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business"
+      ]
+    },
+    {
+      "id": "adamson-university",
+      "name": "Adamson University",
+      "type": "private",
       "city": "Manila",
       "lguId": "manila",
       "region": "NCR",
-      "location": "Sta. Mesa, Manila",
-      "description": "Known for accessible quality education and strong business, IT, and engineering programs.",
-      "tuition": "Libreng Edukasyon (RA 10931 / Free Tuition) for eligible students",
-      "popularCourses": ["BS Accountancy", "BS Computer Science", "BS Business Administration"],
-      "website": "https://www.pup.edu.ph/",
-      "riasecTags": ["E", "C", "R"],
-      "strengthTags": ["business", "public-service", "technology"]
+      "location": "Manila",
+      "description": "Catholic Vincentian university known for engineering, chemistry, education, and law.",
+      "tuition": "Approximately P40,000-P60,000 per semester",
+      "popularCourses": [
+        "BS Chemical Engineering",
+        "BS Chemistry"
+      ],
+      "website": "https://www.adamson.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "engineering",
+        "chemistry",
+        "education",
+        "law",
+        "nursing"
+      ]
+    },
+    {
+      "id": "ama-computer-college",
+      "name": "AMA Computer College",
+      "type": "private",
+      "city": "Multiple NCR campuses",
+      "lguId": "multiple-ncr-campuses",
+      "region": "NCR",
+      "location": "Multiple NCR campuses",
+      "description": "One of the largest computer colleges in the Philippines. Specializes in IT, computer science, and engineering programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Information Technology"
+      ],
+      "website": "https://www.ama.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "engineering",
+        "game-development"
+      ]
+    },
+    {
+      "id": "ama-computer-santa-rosa",
+      "name": "AMA Computer College - Santa Rosa",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Santa Rosa, Laguna",
+      "description": "AMA campus in Santa Rosa offering IT, computer science, and engineering programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.ama.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "engineering"
+      ]
+    },
+    {
+      "id": "ama-shs",
+      "name": "AMA Senior High School",
+      "type": "shs",
+      "city": "Multiple NCR campuses",
+      "lguId": "multiple-ncr-campuses",
+      "region": "NCR",
+      "location": "Multiple NCR campuses",
+      "description": "AMA's senior high school specializing in STEM and TVL-ICT tracks.",
+      "tuition": "Approximately P25,000-P40,000 per year",
+      "popularCourses": [],
+      "website": "https://www.ama.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "shs",
+        "stem",
+        "tvl-ict"
+      ]
+    },
+    {
+      "id": "auf",
+      "name": "Angeles University Foundation",
+      "type": "private",
+      "city": "Pampanga",
+      "lguId": "pampanga",
+      "region": "Pampanga",
+      "location": "Angeles, Pampanga",
+      "description": "Private university in Angeles City known for medicine, nursing, law, and engineering.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [
+        "Doctor of Medicine",
+        "BS Nursing"
+      ],
+      "website": "https://www.auf.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "medicine",
+        "nursing",
+        "law",
+        "engineering",
+        "business"
+      ]
+    },
+    {
+      "id": "antipolo-science",
+      "name": "Antipolo Science High School",
+      "type": "shs",
+      "city": "Antipolo",
+      "lguId": "antipolo",
+      "region": "Antipolo",
+      "location": "Antipolo",
+      "description": "Science high school in Antipolo offering specialized STEM senior high school programs.",
+      "tuition": "Free for Antipolo residents",
+      "popularCourses": [],
+      "website": "https://www.antipolo.gov.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "stem",
+        "science",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "arellano-university",
+      "name": "Arellano University",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Private university with multiple campuses offering nursing, education, business, and law.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.arellano.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "nursing",
+        "education",
+        "business",
+        "law",
+        "criminology"
+      ]
+    },
+    {
+      "id": "asia-pacific-aviation",
+      "name": "Asia Pacific Aviation Center",
+      "type": "private",
+      "city": "Pasay",
+      "lguId": "pasay",
+      "region": "NCR",
+      "location": "Pasay",
+      "description": "Aviation training center offering flight attendant training, aircraft maintenance, and aviation management.",
+      "tuition": "Approximately P50,000-P80,000 per program",
+      "popularCourses": [
+        "Flight Attendant Training"
+      ],
+      "website": "https://www.apac.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "aviation",
+        "tourism",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "apc",
+      "name": "Asia Pacific College",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "Private college specializing in computer science, IT, and engineering. Joint venture of IBM Philippines and SM Foundation.",
+      "tuition": "Approximately P45,000-P65,000 per semester",
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Information Technology"
+      ],
+      "website": "https://www.apc.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "engineering",
+        "multimedia"
+      ]
+    },
+    {
+      "id": "asian-institute-science",
+      "name": "Asian Institute of Science and Technology",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "Private institute in Makati offering IT, business, and engineering programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.aist.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "engineering"
+      ]
+    },
+    {
+      "id": "assumption-antipolo",
+      "name": "Assumption Antipolo",
+      "type": "shs",
+      "city": "Antipolo",
+      "lguId": "antipolo",
+      "region": "Antipolo",
+      "location": "Antipolo",
+      "description": "Catholic school in Antipolo offering senior high school programs in all tracks.",
+      "tuition": "Approximately P50,000-P70,000 per year",
+      "popularCourses": [],
+      "website": "https://www.assumptionantipolo.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "shs",
+        "abm",
+        "stem",
+        "humss"
+      ]
+    },
+    {
+      "id": "ateneo-shs",
+      "name": "Ateneo de Manila Senior High School",
+      "type": "shs",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Ateneo's senior high school offering STEM, ABM, and HUMSS tracks.",
+      "tuition": "Approximately P100,000-P130,000 per year; financial aid available",
+      "popularCourses": [],
+      "website": "https://www.ateneo.edu/junior-and-senior-high-school",
+      "riasecTags": [],
+      "strengthTags": [
+        "shs",
+        "stem",
+        "abm",
+        "humss"
+      ]
     },
     {
       "id": "ateneo-manila",
@@ -27,27 +325,541 @@
       "lguId": "quezon-city",
       "region": "NCR",
       "location": "Quezon City",
-      "description": "Jesuit university strong in liberal arts, management, and leadership formation.",
-      "tuition": "₱120,000 – ₱160,000 per semester (estimate; check official site)",
-      "popularCourses": ["BS Management", "AB Psychology", "BS Computer Science"],
+      "description": "Premier private Jesuit university. Known for liberal arts, business, law, and sciences. One of the Big Four universities.",
+      "tuition": "Approximately P90,000-P110,000 per semester; financial aid available",
+      "popularCourses": [
+        "BS Management",
+        "BS Computer Science",
+        "BS Psychology"
+      ],
       "website": "https://www.ateneo.edu/",
-      "riasecTags": ["E", "S", "I"],
-      "strengthTags": ["leadership", "service", "research"]
+      "riasecTags": [],
+      "strengthTags": [
+        "liberal-arts",
+        "business",
+        "law",
+        "sciences",
+        "social-sciences"
+      ]
     },
     {
-      "id": "feu-manila",
-      "name": "FEU Manila",
+      "id": "baliuag-university",
+      "name": "Baliuag University",
+      "type": "private",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Baliuag, Bulacan",
+      "description": "Premier private university in Bulacan. Known for education, business, law, and health sciences programs.",
+      "tuition": "Approximately P25,000-P45,000 per semester",
+      "popularCourses": [
+        "Bachelor of Elementary Education",
+        "BS Criminology"
+      ],
+      "website": "https://www.baliuag.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "law",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "batangas-provincial",
+      "name": "Batangas Provincial College",
+      "type": "public",
+      "city": "Batangas City, Batangas",
+      "lguId": "batangas-city-batangas",
+      "region": "Laguna",
+      "location": "Batangas City, Batangas",
+      "description": "Provincial college of Batangas offering agriculture, business, and technology programs.",
+      "tuition": "Subsidized tuition",
+      "popularCourses": [],
+      "website": "https://www.bpc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "agriculture",
+        "business",
+        "technology"
+      ]
+    },
+    {
+      "id": "batangas-state-university",
+      "name": "Batangas State University",
+      "type": "public",
+      "city": "Batangas City, Batangas",
+      "lguId": "batangas-city-batangas",
+      "region": "Laguna",
+      "location": "Batangas City, Batangas",
+      "description": "Premier state university in Batangas known for engineering, architecture, and sciences.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Architecture",
+        "BS Engineering",
+        "BS Information Technology"
+      ],
+      "website": "https://www.batsu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "architecture",
+        "sciences",
+        "information-technology"
+      ]
+    },
+    {
+      "id": "bestlink",
+      "name": "Bestlink College of the Philippines",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Private college in Quezon City offering business, education, and technology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.bestlink.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "technology"
+      ]
+    },
+    {
+      "id": "bulacan-polytechnic",
+      "name": "Bulacan Polytechnic College",
+      "type": "public",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Malolos, Bulacan",
+      "description": "Polytechnic college in Bulacan offering technology, engineering, and business programs.",
+      "tuition": "Free or subsidized tuition",
+      "popularCourses": [],
+      "website": "https://www.bpc.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "technology",
+        "engineering",
+        "business"
+      ]
+    },
+    {
+      "id": "bulacan-state-university",
+      "name": "Bulacan State University",
+      "type": "public",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Malolos, Bulacan",
+      "description": "Premier state university in Bulacan offering engineering, education, business, and IT programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Industrial Engineering",
+        "BS Accountancy"
+      ],
+      "website": "https://www.bulsu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "engineering",
+        "education",
+        "business",
+        "information-technology"
+      ]
+    },
+    {
+      "id": "calayan-educational",
+      "name": "Calayan Educational Foundation",
+      "type": "private",
+      "city": "Lucena City, Quezon",
+      "lguId": "lucena-city-quezon",
+      "region": "Laguna",
+      "location": "Lucena City, Quezon",
+      "description": "Private educational institution in Lucena offering business, education, and criminology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.cefi.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "canossa-college",
+      "name": "Canossa College of San Pablo",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "San Pablo, Laguna",
+      "description": "Catholic college in San Pablo offering education, business, and health sciences programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "Bachelor of Elementary Education"
+      ],
+      "website": "https://www.canossa.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "cavite-maritime",
+      "name": "Cavite Maritime Academy",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Naic, Cavite",
+      "description": "Maritime academy in Cavite offering marine transportation and marine engineering programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [
+        "BS Marine Transportation",
+        "BS Marine Engineering"
+      ],
+      "website": "https://www.cma.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "marine-transportation",
+        "marine-engineering",
+        "maritime"
+      ]
+    },
+    {
+      "id": "cavite-state-university",
+      "name": "Cavite State University",
+      "type": "public",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Indang, Cavite",
+      "description": "Premier state university in Cavite known for agriculture, engineering, and education programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Agriculture",
+        "Doctor of Veterinary Medicine"
+      ],
+      "website": "https://www.cvsu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "agriculture",
+        "engineering",
+        "education",
+        "business",
+        "veterinary-medicine"
+      ]
+    },
+    {
+      "id": "central-luzon-state-university",
+      "name": "Central Luzon State University",
+      "type": "public",
+      "city": "Science City of Muñoz, Nueva Ecija",
+      "lguId": "science-city-of-munoz-nueva-ecija",
+      "region": "Pampanga",
+      "location": "Science City of Muñoz, Nueva Ecija",
+      "description": "Premier agricultural state university in Central Luzon. Known for agriculture, fisheries, and veterinary medicine.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Agriculture",
+        "Doctor of Veterinary Medicine",
+        "BS Fisheries"
+      ],
+      "website": "https://www.clsu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "agriculture",
+        "fisheries",
+        "veterinary-medicine",
+        "engineering",
+        "education"
+      ]
+    },
+    {
+      "id": "ceu",
+      "name": "Centro Escolar University",
       "type": "private",
       "city": "Manila",
       "lguId": "manila",
       "region": "NCR",
       "location": "Manila",
-      "description": "Historic university with solid health sciences, business, and arts programs.",
-      "tuition": "₱55,000 – ₱85,000 per semester (estimate; check official site)",
-      "popularCourses": ["BS Nursing", "BS Accountancy", "BS Tourism Management"],
-      "website": "https://www.feu.edu.ph/",
-      "riasecTags": ["S", "E", "A"],
-      "strengthTags": ["healthcare", "business", "hospitality"]
+      "description": "Historic private university known for dentistry, pharmacy, medical technology, and education.",
+      "tuition": "Approximately P40,000-P60,000 per semester",
+      "popularCourses": [
+        "Doctor of Dental Medicine",
+        "Doctor of Pharmacy"
+      ],
+      "website": "https://www.ceu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "dentistry",
+        "pharmacy",
+        "medical-technology",
+        "education",
+        "nursing"
+      ]
+    },
+    {
+      "id": "christian-college-tanauan",
+      "name": "Christian College of Tanauan",
+      "type": "private",
+      "city": "Tanauan, Batangas",
+      "lguId": "tanauan-batangas",
+      "region": "Laguna",
+      "location": "Tanauan, Batangas",
+      "description": "Private college in Tanauan offering education, business, and technology programs.",
+      "tuition": "Approximately P15,000-P30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.cct.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "technology"
+      ]
+    },
+    {
+      "id": "ciit-philippines",
+      "name": "CIIT College of Arts and Technology",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Specialty college focused on multimedia arts, game development, animation, software engineering, and technology programs.",
+      "tuition": "Approximately P45,000-P65,000 per semester",
+      "popularCourses": [
+        "BS Entertainment and Multimedia Computing",
+        "BS Information Technology",
+        "BS Multimedia Arts",
+        "Senior High School - ICT Track"
+      ],
+      "website": "https://www.ciit.edu.ph/",
+      "riasecTags": [
+        "A",
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "multimedia-arts",
+        "game-development",
+        "animation",
+        "software-engineering",
+        "graphic-design"
+      ]
+    },
+    {
+      "id": "cmu",
+      "name": "City of Malabon University",
+      "type": "public",
+      "city": "Malabon",
+      "lguId": "malabon",
+      "region": "NCR",
+      "location": "Malabon",
+      "description": "City university of Malabon offering business, education, and technology programs.",
+      "tuition": "Subsidized tuition for Malabon residents",
+      "popularCourses": [],
+      "website": "https://cmu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "information-technology"
+      ]
+    },
+    {
+      "id": "cup",
+      "name": "City University of Pasay",
+      "type": "public",
+      "city": "Pasay",
+      "lguId": "pasay",
+      "region": "NCR",
+      "location": "Pasay",
+      "description": "City university of Pasay offering business, education, and tourism programs.",
+      "tuition": "Subsidized tuition for Pasay residents",
+      "popularCourses": [],
+      "website": "https://cupasay.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "tourism",
+        "education"
+      ]
+    },
+    {
+      "id": "colegio-de-san-jose",
+      "name": "Colegio de San Jose",
+      "type": "private",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Malolos, Bulacan",
+      "description": "Catholic college in Malolos offering education, business, and hospitality programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.csjmalolos.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "lettran",
+      "name": "Colegio de San Juan de Letran",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Historic Dominican institution known for business, engineering, and liberal arts.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.letran.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "engineering",
+        "liberal-arts",
+        "education"
+      ]
+    },
+    {
+      "id": "colegio-de-san-pedro",
+      "name": "Colegio de San Pedro",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "San Pedro, Laguna",
+      "description": "Private college in San Pedro offering education, business, and technology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "Bachelor of Elementary Education"
+      ],
+      "website": "https://www.cdsp.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "technology"
+      ]
+    },
+    {
+      "id": "colegio-ng-lungsod-ng-batangas",
+      "name": "Colegio ng Lungsod ng Batangas",
+      "type": "public",
+      "city": "Batangas City, Batangas",
+      "lguId": "batangas-city-batangas",
+      "region": "Laguna",
+      "location": "Batangas City, Batangas",
+      "description": "City college of Batangas offering business, education, and technology programs.",
+      "tuition": "Subsidized tuition",
+      "popularCourses": [],
+      "website": "https://www.clb.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "technology"
+      ]
+    },
+    {
+      "id": "colegio-san-agustin-bacolod",
+      "name": "Colegio San Agustin - Bacolod",
+      "type": "private",
+      "city": "Bacolod, Negros Occidental",
+      "lguId": "bacolod-negros-occidental",
+      "region": "NCR",
+      "location": "Bacolod, Negros Occidental",
+      "description": "Augustinian school in Bacolod offering education, business, and engineering programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [
+        "Bachelor of Elementary Education"
+      ],
+      "website": "https://www.csa.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "engineering"
+      ]
+    },
+    {
+      "id": "dls-medical",
+      "name": "De La Salle Medical and Health Sciences Institute",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Dasmarinas, Cavite",
+      "description": "Premier medical school in Cavite offering medicine, nursing, allied health, and sciences programs.",
+      "tuition": "Approximately P60,000-P90,000 per semester",
+      "popularCourses": [
+        "Doctor of Medicine",
+        "BS Nursing"
+      ],
+      "website": "https://www.dlshsi.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "medicine",
+        "nursing",
+        "allied-health",
+        "sciences"
+      ]
+    },
+    {
+      "id": "de-la-salle-zobel",
+      "name": "De La Salle Santiago Zobel School",
+      "type": "shs",
+      "city": "Muntinlupa",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa",
+      "description": "De La Salle basic education school offering Senior High School programs in all tracks.",
+      "tuition": "Approximately P80,000-P100,000 per year",
+      "popularCourses": [],
+      "website": "https://www.dlszobel.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "shs",
+        "stem",
+        "abm",
+        "humss",
+        "tvl"
+      ]
     },
     {
       "id": "dlsu-manila",
@@ -57,12 +869,2881 @@
       "lguId": "manila",
       "region": "NCR",
       "location": "Manila",
-      "description": "Research-oriented university known for business, engineering, and education.",
-      "tuition": "₱85,000 – ₱115,000 per semester (estimate; check official site)",
-      "popularCourses": ["BS Business Administration", "BS Computer Science", "BS Psychology"],
+      "description": "Premier private Lasallian university. Renowned for business, engineering, computer studies, and sciences. One of the Big Four.",
+      "tuition": "Approximately P71,000-P102,000 per trimester; scholarships available",
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Business Administration",
+        "BS Civil Engineering",
+        "BS Industrial Engineering"
+      ],
       "website": "https://www.dlsu.edu.ph/",
-      "riasecTags": ["E", "I", "S"],
-      "strengthTags": ["business", "technology", "education"]
+      "riasecTags": [
+        "C",
+        "E",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "business",
+        "engineering",
+        "computer-studies",
+        "sciences",
+        "education"
+      ]
+    },
+    {
+      "id": "dlsu-dasmarinas",
+      "name": "De La Salle University - Dasmarinas",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Dasmarinas, Cavite",
+      "description": "Major De La Salle campus in Cavite offering comprehensive programs in sciences, engineering, business, and education.",
+      "tuition": "Approximately P50,000-P70,000 per trimester",
+      "popularCourses": [
+        "BS Psychology",
+        "BS Biology"
+      ],
+      "website": "https://www.dlsud.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "sciences",
+        "engineering",
+        "business",
+        "education",
+        "medicine"
+      ]
+    },
+    {
+      "id": "benilde",
+      "name": "De La Salle-College of Saint Benilde",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Lasallian institution known for design, arts, hospitality, and Deaf education. Pioneer in inclusive education.",
+      "tuition": "Approximately P60,000-P80,000 per trimester",
+      "popularCourses": [
+        "AB Multimedia Arts",
+        "BS Fashion Design and Merchandising",
+        "BS Hotel, Restaurant and Institution Management",
+        "BS Education Specialization in Deaf Education"
+      ],
+      "website": "https://www.benilde.edu.ph/",
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "design",
+        "arts",
+        "hospitality",
+        "deaf-education",
+        "film"
+      ]
+    },
+    {
+      "id": "earist",
+      "name": "Eulogio 'Amang' Rodriguez Institute of Science and Technology (EARIST)",
+      "type": "public",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila, NCR",
+      "description": "State college focused on science and technology education, engineering, industrial technology, and teacher education.",
+      "tuition": "Free under RA 10931",
+      "popularCourses": [],
+      "website": "https://earist.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "industrial-technology",
+        "information-technology",
+        "architecture",
+        "teacher-education"
+      ]
+    },
+    {
+      "id": "feu-manila",
+      "name": "Far Eastern University",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Historic private university known for accountancy, business, medicine, and law.",
+      "tuition": "Approximately P45,000-P65,000 per semester",
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Medical Technology",
+        "BS Psychology"
+      ],
+      "website": "https://www.feu.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "accountancy",
+        "business",
+        "medicine",
+        "law",
+        "engineering"
+      ]
+    },
+    {
+      "id": "feu-institute-of-technology",
+      "name": "FEU Institute of Technology",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Technology-focused campus of FEU offering engineering, IT, and computer science programs.",
+      "tuition": "Approximately P40,000-P60,000 per semester",
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Electronics Engineering"
+      ],
+      "website": "https://www.feutech.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "computer-science"
+      ]
+    },
+    {
+      "id": "first-city-providential",
+      "name": "First City Providential College",
+      "type": "private",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "San Jose del Monte, Bulacan",
+      "description": "Private college in San Jose del Monte offering business, education, and technology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.fcpc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "technology"
+      ]
+    },
+    {
+      "id": "golden-state",
+      "name": "Golden State College",
+      "type": "private",
+      "city": "Batangas City, Batangas",
+      "lguId": "batangas-city-batangas",
+      "region": "Laguna",
+      "location": "Batangas City, Batangas",
+      "description": "Private college in Batangas City offering business, education, and technology programs.",
+      "tuition": "Approximately P15,000-P30,000 per semester",
+      "popularCourses": [
+        "BS Criminology"
+      ],
+      "website": "https://www.gsc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "technology"
+      ]
+    },
+    {
+      "id": "grace-pedro-laguna",
+      "name": "Grace College of San Pedro, Laguna",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "San Pedro, Laguna",
+      "description": "Private college in San Pedro offering business, education, and technology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.grace.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "technology"
+      ]
+    },
+    {
+      "id": "hau",
+      "name": "Holy Angel University",
+      "type": "private",
+      "city": "Pampanga",
+      "lguId": "pampanga",
+      "region": "Pampanga",
+      "location": "Angeles, Pampanga",
+      "description": "Premier private university in Central Luzon. Known for engineering, business, hospitality, and architecture.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [
+        "BS Architecture",
+        "BS Hospitality Management"
+      ],
+      "website": "https://www.hau.edu.ph/",
+      "riasecTags": [
+        "A",
+        "C",
+        "E"
+      ],
+      "strengthTags": [
+        "engineering",
+        "business",
+        "hospitality",
+        "architecture",
+        "education"
+      ]
+    },
+    {
+      "id": "i-academy",
+      "name": "iACADEMY",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "Private college specializing in computing, business, and design programs. Known for industry-aligned curriculum.",
+      "tuition": "Approximately P50,000-P70,000 per semester",
+      "popularCourses": [
+        "BS Software Engineering",
+        "BS Game Development",
+        "BS Multimedia Arts and Design"
+      ],
+      "website": "https://www.iacademy.edu.ph/",
+      "riasecTags": [
+        "A",
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "software-engineering",
+        "game-development",
+        "multimedia-arts",
+        "business"
+      ]
+    },
+    {
+      "id": "ibm-philippines",
+      "name": "IBM Philippines",
+      "type": "tvet",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "IBM corporate training offering IT and professional development programs.",
+      "tuition": "Varies by program; corporate-sponsored",
+      "popularCourses": [
+        "Data Science Professional Certificate"
+      ],
+      "website": "https://www.ibm.com/ph-en",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "professional-development",
+        "corporate-training"
+      ]
+    },
+    {
+      "id": "icct",
+      "name": "ICCT Colleges",
+      "type": "private",
+      "city": "Rizal",
+      "lguId": "rizal",
+      "region": "Rizal",
+      "location": "Cainta, Rizal",
+      "description": "Private college in Cainta offering IT, business, and education programs.",
+      "tuition": "Approximately P15,000-P30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.icct.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "education"
+      ]
+    },
+    {
+      "id": "imus-computer-college",
+      "name": "Imus Computer College",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Imus, Cavite",
+      "description": "Private computer college in Imus offering IT, business, and criminology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "BS Computer Science"
+      ],
+      "website": "https://www.icci.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "criminology"
+      ]
+    },
+    {
+      "id": "informatics",
+      "name": "Informatics College",
+      "type": "private",
+      "city": "Multiple NCR campuses",
+      "lguId": "multiple-ncr-campuses",
+      "region": "NCR",
+      "location": "Multiple NCR campuses",
+      "description": "International college specializing in IT, business, and English language programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.informatics.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "english-language"
+      ]
+    },
+    {
+      "id": "infosys",
+      "name": "Infosys Philippines",
+      "type": "tvet",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "Corporate training center offering IT and business process management training programs.",
+      "tuition": "Varies by program; corporate-sponsored for some",
+      "popularCourses": [
+        "Java Developer Training"
+      ],
+      "website": "https://www.infosys.com/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-process-management",
+        "corporate-training"
+      ]
+    },
+    {
+      "id": "ici-culinary",
+      "name": "International Culinary Institute",
+      "type": "private",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig",
+      "description": "Premier culinary school offering diploma and certificate programs in culinary arts and pastry.",
+      "tuition": "Approximately P100,000-P200,000 per program",
+      "popularCourses": [
+        "Diploma in Culinary Arts",
+        "Diploma in Pastry Arts"
+      ],
+      "website": "https://www.ici-culinary.com/",
+      "riasecTags": [
+        "A",
+        "C",
+        "E"
+      ],
+      "strengthTags": [
+        "culinary-arts",
+        "pastry-arts",
+        "hospitality-management"
+      ]
+    },
+    {
+      "id": "jru",
+      "name": "Jose Rizal University",
+      "type": "private",
+      "city": "Mandaluyong",
+      "lguId": "mandaluyong",
+      "region": "NCR",
+      "location": "Mandaluyong",
+      "description": "Private university known for business, education, engineering, and law programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [
+        "BS Business Administration",
+        "BS Industrial Engineering"
+      ],
+      "website": "https://www.jru.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "engineering",
+        "law"
+      ]
+    },
+    {
+      "id": "la-consolacion-bacolod",
+      "name": "La Consolacion College - Bacolod",
+      "type": "private",
+      "city": "Bacolod, Negros Occidental",
+      "lguId": "bacolod-negros-occidental",
+      "region": "NCR",
+      "location": "Bacolod, Negros Occidental",
+      "description": "Catholic college in Bacolod offering business, education, and hospitality programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.lcc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "la-consolacion-university",
+      "name": "La Consolacion University Philippines",
+      "type": "private",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Malolos, Bulacan",
+      "description": "Catholic university in Malolos offering business, education, hospitality, and health sciences programs.",
+      "tuition": "Approximately P25,000-P45,000 per semester",
+      "popularCourses": [
+        "BS Hospitality Management",
+        "BS Nursing"
+      ],
+      "website": "https://www.lcup.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "hospitality",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "laguna-northwestern-college",
+      "name": "Laguna Northwestern College",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "San Pedro, Laguna",
+      "description": "Private college in San Pedro offering business, education, and criminology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "BS Business Administration"
+      ],
+      "website": "https://www.lnc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "laguna-state-polytechnic-university",
+      "name": "Laguna State Polytechnic University",
+      "type": "public",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Santa Cruz, Laguna",
+      "description": "State university in Laguna offering engineering, agriculture, business, and education programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Fisheries",
+        "BS Computer Engineering"
+      ],
+      "website": "https://www.lspu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "engineering",
+        "agriculture",
+        "business",
+        "education"
+      ]
+    },
+    {
+      "id": "lyceum-batangas",
+      "name": "Lyceum of the Philippines University - Batangas",
+      "type": "private",
+      "city": "Batangas City, Batangas",
+      "lguId": "batangas-city-batangas",
+      "region": "Laguna",
+      "location": "Batangas City, Batangas",
+      "description": "LPU campus in Batangas offering hospitality, business, maritime, and engineering programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [
+        "BS Marine Transportation",
+        "BS Hospitality Management"
+      ],
+      "website": "https://www.lpubatangas.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "hospitality",
+        "business",
+        "maritime",
+        "engineering"
+      ]
+    },
+    {
+      "id": "lpu-laguna",
+      "name": "Lyceum of the Philippines University - Laguna",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Calamba, Laguna",
+      "description": "LPU campus in Laguna offering hospitality, tourism, business, and engineering programs.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.lpulaguna.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "hospitality",
+        "tourism",
+        "business",
+        "engineering"
+      ]
+    },
+    {
+      "id": "lpu-manila",
+      "name": "Lyceum of the Philippines University - Manila",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Private university known for hospitality, tourism, business, and maritime programs.",
+      "tuition": "Approximately P40,000-P60,000 per semester",
+      "popularCourses": [
+        "BS International Hospitality Management",
+        "BS Marine Transportation"
+      ],
+      "website": "https://www.lpu.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "hospitality",
+        "tourism",
+        "business",
+        "maritime",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "magsaysay-center",
+      "name": "Magsaysay Center for Hospitality and Culinary Arts",
+      "type": "tvet",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Premier maritime and hospitality training center in the Philippines. World-class facilities for culinary and hospitality education.",
+      "tuition": "Approximately P80,000-P150,000 per program",
+      "popularCourses": [
+        "Culinary Arts Program",
+        "Hospitality Management Program"
+      ],
+      "website": "https://www.magsaysaycareers.com/",
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "culinary-arts",
+        "hospitality",
+        "maritime",
+        "tourism"
+      ]
+    },
+    {
+      "id": "mcc",
+      "name": "Makati Commercial Center",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "Commercial and educational center in Makati offering business and management programs.",
+      "tuition": "Approximately P40,000-P60,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.mcc.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "business",
+        "management",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "makati-science",
+      "name": "Makati Science High School",
+      "type": "shs",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "Premier science high school in Makati offering specialized STEM senior high school programs.",
+      "tuition": "Free for Makati residents",
+      "popularCourses": [],
+      "website": "https://www.makati.gov.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "stem",
+        "science",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "mcl",
+      "name": "Malayan Colleges Laguna",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Cabuyao, Laguna",
+      "description": "Premier Mapua branch campus in Laguna offering engineering, IT, and business programs.",
+      "tuition": "Approximately P45,000-P65,000 per semester",
+      "popularCourses": [
+        "BS Computer Engineering",
+        "BS Architecture"
+      ],
+      "website": "https://www.mcl.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "architecture",
+        "business"
+      ]
+    },
+    {
+      "id": "manila-science",
+      "name": "Manila Science High School",
+      "type": "shs",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Premier science high school in Manila offering specialized STEM senior high school programs.",
+      "tuition": "Free for Manila residents",
+      "popularCourses": [],
+      "website": "https://www.manilascience.gov.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "stem",
+        "science",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "manuel-enverga",
+      "name": "Manuel S. Enverga University Foundation",
+      "type": "private",
+      "city": "Lucena City, Quezon",
+      "lguId": "lucena-city-quezon",
+      "region": "Laguna",
+      "location": "Lucena City, Quezon",
+      "description": "Premier private university in Lucena offering law, medicine, engineering, and business programs.",
+      "tuition": "Approximately P25,000-P45,000 per semester",
+      "popularCourses": [
+        "Juris Doctor"
+      ],
+      "website": "https://www.mseuf.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "law",
+        "medicine",
+        "engineering",
+        "business"
+      ]
+    },
+    {
+      "id": "mit",
+      "name": "Mapua Institute of Technology - Makati (iMake)",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "Mapua extension campus in Makati offering IT and business programs.",
+      "tuition": "Approximately P45,000-P65,000 per quarter",
+      "popularCourses": [],
+      "website": "https://www.mapua.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "engineering"
+      ]
+    },
+    {
+      "id": "mapua-university",
+      "name": "Mapua University",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Premier engineering and technology university. Known for architecture, engineering, and IT programs.",
+      "tuition": "Approximately P50,000-P70,000 per quarter",
+      "popularCourses": [
+        "BS Civil Engineering",
+        "BS Architecture",
+        "BS Computer Engineering"
+      ],
+      "website": "https://www.mapua.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "architecture",
+        "information-technology",
+        "interior-design"
+      ]
+    },
+    {
+      "id": "marcelino-fule",
+      "name": "Marcelino R. Fule Memorial College",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Alaminos, Laguna",
+      "description": "Private college in Alaminos offering education, business, and agriculture programs.",
+      "tuition": "Approximately P15,000-P30,000 per semester",
+      "popularCourses": [
+        "BS Agriculture"
+      ],
+      "website": "https://www.mrfmc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "agriculture"
+      ]
+    },
+    {
+      "id": "maria-aurora",
+      "name": "Maria Aurora College",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "San Pablo, Laguna",
+      "description": "Private college in San Pablo offering education, business, and health sciences programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "Bachelor of Secondary Education"
+      ],
+      "website": "https://www.mac.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "meycauayan-college",
+      "name": "Meycauayan College",
+      "type": "private",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Meycauayan, Bulacan",
+      "description": "Private college in Meycauayan offering business, education, and criminology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.meycauayancollege.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "nu-manila",
+      "name": "National University",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Historic private university affiliated with SM Group. Known for business, engineering, health sciences, and education.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [
+        "BS Nursing",
+        "BS Hospitality Management"
+      ],
+      "website": "https://www.nu-manila.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "engineering",
+        "health-sciences",
+        "education"
+      ]
+    },
+    {
+      "id": "nu-moa",
+      "name": "National University - Mall of Asia",
+      "type": "private",
+      "city": "Pasay",
+      "lguId": "pasay",
+      "region": "NCR",
+      "location": "Pasay",
+      "description": "NU campus in MOA Complex offering business, tourism, and maritime programs.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.nu-moa.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "tourism",
+        "maritime"
+      ]
+    },
+    {
+      "id": "nu-santa-rosa",
+      "name": "National University - Santa Rosa",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Santa Rosa, Laguna",
+      "description": "National University campus in Santa Rosa offering business, education, and health sciences programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.nu-santarosa.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "new-era-university",
+      "name": "New Era University",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Private university affiliated with Iglesia ni Cristo. Known for education, business, and law.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Accountancy"
+      ],
+      "website": "https://www.neu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "law",
+        "accountancy"
+      ]
+    },
+    {
+      "id": "nueva-ecija-university",
+      "name": "Nueva Ecija University of Science and Technology",
+      "type": "public",
+      "city": "Cabanatuan, Nueva Ecija",
+      "lguId": "cabanatuan-nueva-ecija",
+      "region": "Pampanga",
+      "location": "Cabanatuan, Nueva Ecija",
+      "description": "State university in Nueva Ecija offering engineering, agriculture, education, and technology programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.neust.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "agriculture",
+        "education",
+        "technology"
+      ]
+    },
+    {
+      "id": "our-lady-fatima-valenzuela",
+      "name": "Our Lady of Fatima University - Valenzuela",
+      "type": "private",
+      "city": "Valenzuela",
+      "lguId": "valenzuela",
+      "region": "NCR",
+      "location": "Valenzuela",
+      "description": "OLFU campus in Valenzuela offering medicine, nursing, and allied health programs.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.fatima.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "medicine",
+        "nursing",
+        "allied-health",
+        "education"
+      ]
+    },
+    {
+      "id": "plmar",
+      "name": "Pamantasan ng Lungsod ng Marikina",
+      "type": "public",
+      "city": "Marikina",
+      "lguId": "marikina",
+      "region": "NCR",
+      "location": "Marikina",
+      "description": "City university of Marikina offering business, education, and engineering programs.",
+      "tuition": "Subsidized tuition for Marikina residents",
+      "popularCourses": [],
+      "website": "https://plmar.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "engineering"
+      ]
+    },
+    {
+      "id": "plm",
+      "name": "Pamantasan ng Lungsod ng Maynila",
+      "type": "public",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Premier city university of Manila. Known for law, medicine, engineering, and governance programs.",
+      "tuition": "Free tuition for Manila residents; subsidized for non-residents",
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Architecture"
+      ],
+      "website": "https://www.plm.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "law",
+        "medicine",
+        "engineering",
+        "governance",
+        "architecture"
+      ]
+    },
+    {
+      "id": "plmun",
+      "name": "Pamantasan ng Lungsod ng Muntinlupa",
+      "type": "public",
+      "city": "Muntinlupa",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa",
+      "description": "City university of Muntinlupa offering criminology, nursing, and business programs.",
+      "tuition": "Subsidized tuition for Muntinlupa residents",
+      "popularCourses": [],
+      "website": "https://plmun.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "criminology",
+        "nursing",
+        "business"
+      ]
+    },
+    {
+      "id": "plp",
+      "name": "Pamantasan ng Lungsod ng Pasig",
+      "type": "public",
+      "city": "Pasig",
+      "lguId": "pasig",
+      "region": "NCR",
+      "location": "Pasig",
+      "description": "City university of Pasig offering business, education, and technology programs.",
+      "tuition": "Subsidized tuition for Pasig residents",
+      "popularCourses": [],
+      "website": "https://www.plp.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "information-technology",
+        "education"
+      ]
+    },
+    {
+      "id": "plv",
+      "name": "Pamantasan ng Lungsod ng Valenzuela",
+      "type": "public",
+      "city": "Valenzuela",
+      "lguId": "valenzuela",
+      "region": "NCR",
+      "location": "Valenzuela",
+      "description": "City university of Valenzuela offering business, education, and technology programs.",
+      "tuition": "Subsidized tuition for Valenzuela residents",
+      "popularCourses": [],
+      "website": "https://plv.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "information-technology"
+      ]
+    },
+    {
+      "id": "pampanga-state-university",
+      "name": "Pampanga State University",
+      "type": "public",
+      "city": "Pampanga",
+      "lguId": "pampanga",
+      "region": "Pampanga",
+      "location": "San Fernando, Pampanga",
+      "description": "Premier state university in Pampanga offering agriculture, engineering, education, and business programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Agriculture",
+        "BS Agricultural Engineering"
+      ],
+      "website": "https://www.psu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "agriculture",
+        "engineering",
+        "education",
+        "business"
+      ]
+    },
+    {
+      "id": "don-honorio-ventura",
+      "name": "Pampanga State University (formerly Don Honorio Ventura State University)",
+      "type": "public",
+      "city": "Pampanga",
+      "lguId": "pampanga",
+      "region": "Pampanga",
+      "location": "Bacolor, Pampanga",
+      "description": "State university in Pampanga offering engineering, agriculture, education, and business programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.psu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "engineering",
+        "agriculture",
+        "education",
+        "business"
+      ]
+    },
+    {
+      "id": "pangasinan-state-university",
+      "name": "Pangasinan State University",
+      "type": "public",
+      "city": "Lingayen, Pangasinan",
+      "lguId": "lingayen-pangasinan",
+      "region": "Pampanga",
+      "location": "Lingayen, Pangasinan",
+      "description": "Major state university in Pangasinan offering agriculture, engineering, education, and business programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.psu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "agriculture",
+        "engineering",
+        "education",
+        "business"
+      ]
+    },
+    {
+      "id": "ptc",
+      "name": "Pateros Technological College",
+      "type": "public",
+      "city": "Pateros",
+      "lguId": "pateros",
+      "region": "NCR",
+      "location": "Pateros",
+      "description": "Technological college of Pateros offering business, IT, and hospitality programs.",
+      "tuition": "Subsidized tuition for Pateros residents",
+      "popularCourses": [],
+      "website": "https://ptc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "information-technology",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "patts",
+      "name": "PATTS College of Aeronautics",
+      "type": "private",
+      "city": "Parañaque",
+      "lguId": "paranaque",
+      "region": "NCR",
+      "location": "Paranaque",
+      "description": "Premier aeronautics college offering aviation engineering, aircraft maintenance, and related programs.",
+      "tuition": "Approximately P50,000-P70,000 per semester",
+      "popularCourses": [
+        "BS Aeronautical Engineering"
+      ],
+      "website": "https://www.patts.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "aeronautical-engineering",
+        "aircraft-maintenance",
+        "aviation"
+      ]
+    },
+    {
+      "id": "philippine-christian-university-dasma",
+      "name": "Philippine Christian University - Dasmarinas",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Dasmarinas, Cavite",
+      "description": "PCU campus in Dasmarinas offering education, business, and technology programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [
+        "Bachelor of Secondary Education"
+      ],
+      "website": "https://www.pcu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "technology"
+      ]
+    },
+    {
+      "id": "pnu",
+      "name": "Philippine Normal University",
+      "type": "public",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "The country's premier teacher education institution. National center for excellence in teacher training.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "Bachelor of Elementary Education"
+      ],
+      "website": "https://www.pnu.edu.ph/",
+      "riasecTags": [
+        "A",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "education-research",
+        "early-childhood-education"
+      ]
+    },
+    {
+      "id": "philippine-science",
+      "name": "Philippine Science High School System",
+      "type": "shs",
+      "city": "Multiple campuses",
+      "lguId": "multiple-campuses",
+      "region": "NCR",
+      "location": "Multiple campuses",
+      "description": "Premier science high school in the Philippines. Free specialized STEM education for scientifically gifted students.",
+      "tuition": "Free tuition, boarding, and stipend",
+      "popularCourses": [],
+      "website": "https://www.pshs.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "stem",
+        "science",
+        "mathematics",
+        "research"
+      ]
+    },
+    {
+      "id": "psca",
+      "name": "Philippine State College of Aeronautics",
+      "type": "public",
+      "city": "Pasay",
+      "lguId": "pasay",
+      "region": "NCR",
+      "location": "Pasay",
+      "description": "Specialized state college for aeronautical engineering and aviation technology.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Aeronautical Engineering",
+        "BS Aviation Technology"
+      ],
+      "website": "https://www.psca.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "aeronautical-engineering",
+        "aviation-technology",
+        "aircraft-maintenance"
+      ]
+    },
+    {
+      "id": "pup-manila",
+      "name": "Polytechnic University of the Philippines",
+      "type": "public",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "The largest public university in the Philippines by student population. Known for accessible, quality education in business, engineering, and social sciences.",
+      "tuition": "Free tuition under RA 10931; known for very low cost education",
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Accountancy",
+        "BS Engineering"
+      ],
+      "website": "https://www.pup.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "engineering",
+        "communication",
+        "public-administration",
+        "accountancy"
+      ]
+    },
+    {
+      "id": "polytechnic-university-batangas",
+      "name": "Polytechnic University of the Philippines - Batangas",
+      "type": "public",
+      "city": "Batangas City, Batangas",
+      "lguId": "batangas-city-batangas",
+      "region": "Laguna",
+      "location": "Batangas City, Batangas",
+      "description": "PUP campus in Batangas offering business, engineering, and technology programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.pup.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "engineering",
+        "technology"
+      ]
+    },
+    {
+      "id": "pup-paranaque",
+      "name": "Polytechnic University of the Philippines - Paranaque Campus",
+      "type": "public",
+      "city": "Parañaque",
+      "lguId": "paranaque",
+      "region": "NCR",
+      "location": "Paranaque",
+      "description": "PUP campus serving southern Metro Manila.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.pup.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "pup-quezon-city",
+      "name": "Polytechnic University of the Philippines - Quezon City Campus",
+      "type": "public",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "PUP campus offering engineering and technology programs in Quezon City.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.pup.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "engineering",
+        "technology"
+      ]
+    },
+    {
+      "id": "pup-san-juan",
+      "name": "Polytechnic University of the Philippines - San Juan Campus",
+      "type": "public",
+      "city": "San Juan",
+      "lguId": "san-juan",
+      "region": "NCR",
+      "location": "San Juan",
+      "description": "PUP campus serving San Juan and nearby areas with business and IT programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.pup.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "information-technology"
+      ]
+    },
+    {
+      "id": "pups-taguig",
+      "name": "Polytechnic University of the Philippines - Senior High School",
+      "type": "shs",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig",
+      "description": "PUP's senior high school offering STEM, ABM, HUMSS, and TVL tracks.",
+      "tuition": "Free tuition",
+      "popularCourses": [],
+      "website": "https://www.pup.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "shs",
+        "stem",
+        "abm",
+        "humss",
+        "tvl"
+      ]
+    },
+    {
+      "id": "pup-tagui",
+      "name": "Polytechnic University of the Philippines - Taguig Campus",
+      "type": "public",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig",
+      "description": "PUP campus in Taguig offering business and entrepreneurship programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.pup.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "entrepreneurship"
+      ]
+    },
+    {
+      "id": "quezon-city-science",
+      "name": "Quezon City Science High School",
+      "type": "shs",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Premier science high school in Quezon City offering specialized STEM senior high school programs.",
+      "tuition": "Free for QC residents",
+      "popularCourses": [],
+      "website": "https://www.qcscience.gov.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "stem",
+        "science",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "qcu",
+      "name": "Quezon City University",
+      "type": "public",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "City university of Quezon City offering IT, business, engineering, and health programs.",
+      "tuition": "Free tuition for QC residents under local ordinance",
+      "popularCourses": [
+        "BS Information Systems",
+        "BS Hospitality Management"
+      ],
+      "website": "https://qcu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "engineering",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "rtu",
+      "name": "Rizal Technological University",
+      "type": "public",
+      "city": "Mandaluyong",
+      "lguId": "mandaluyong",
+      "region": "NCR",
+      "location": "Mandaluyong",
+      "description": "State university known for astronomy, engineering, and business programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Astronomy Technology"
+      ],
+      "website": "https://www.rtu.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "astronomy",
+        "engineering",
+        "business",
+        "education"
+      ]
+    },
+    {
+      "id": "rtu-pasig",
+      "name": "Rizal Technological University - Pasig Campus",
+      "type": "public",
+      "city": "Pasig",
+      "lguId": "pasig",
+      "region": "NCR",
+      "location": "Pasig",
+      "description": "RTU campus in Pasig offering business and education programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.rtu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education"
+      ]
+    },
+    {
+      "id": "roosevelt",
+      "name": "Roosevelt College",
+      "type": "private",
+      "city": "Rizal",
+      "lguId": "rizal",
+      "region": "Rizal",
+      "location": "Cainta, Rizal",
+      "description": "Private college in Cainta offering business, education, and criminology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.roosevelt.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "sacred-heart-college",
+      "name": "Sacred Heart College",
+      "type": "private",
+      "city": "Lucena City, Quezon",
+      "lguId": "lucena-city-quezon",
+      "region": "Laguna",
+      "location": "Lucena City, Quezon",
+      "description": "Catholic college in Lucena offering education, business, and health sciences programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.shc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "saint-clare",
+      "name": "Saint Clare College of Caloocan",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan",
+      "description": "Private college in Caloocan offering business, education, and criminology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.saintclare.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "saint-francis-assisi",
+      "name": "Saint Francis of Assisi College",
+      "type": "private",
+      "city": "Las Piñas",
+      "lguId": "las-pinas",
+      "region": "NCR",
+      "location": "Las Pinas",
+      "description": "Catholic college in Las Pinas offering education, business, and health sciences programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sfac.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "saint-joseph-batangas",
+      "name": "Saint Joseph's College of Batangas",
+      "type": "private",
+      "city": "Batangas City, Batangas",
+      "lguId": "batangas-city-batangas",
+      "region": "Laguna",
+      "location": "Batangas City, Batangas",
+      "description": "Catholic college in Batangas City offering education, business, and hospitality programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sjcb.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "saint-michael-college-laguna",
+      "name": "Saint Michael's College of Laguna",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Biñan, Laguna",
+      "description": "Private Catholic college in Biñan offering business, education, and engineering programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [
+        "BS Business Administration",
+        "BS Civil Engineering"
+      ],
+      "website": "https://www.smcl.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "engineering"
+      ]
+    },
+    {
+      "id": "san-beda-college-alabang",
+      "name": "San Beda College Alabang",
+      "type": "private",
+      "city": "Muntinlupa",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa",
+      "description": "Benedictine school in Alabang offering basic education and college programs in business, law, and arts.",
+      "tuition": "Approximately P60,000-P90,000 per year",
+      "popularCourses": [],
+      "website": "https://www.sanbeda.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "law",
+        "arts"
+      ]
+    },
+    {
+      "id": "san-beda-alabang",
+      "name": "San Beda College-Alabang",
+      "type": "private",
+      "city": "Muntinlupa",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa",
+      "description": "San Beda campus in Alabang offering business, law, and arts programs.",
+      "tuition": "Approximately P45,000-P70,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sanbeda.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "law",
+        "arts-and-sciences"
+      ]
+    },
+    {
+      "id": "san-beda-university",
+      "name": "San Beda University",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Catholic Benedictine university renowned for law, business, and arts programs.",
+      "tuition": "Approximately P50,000-P80,000 per semester",
+      "popularCourses": [
+        "Juris Doctor",
+        "BS Business Administration"
+      ],
+      "website": "https://www.sanbeda.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "law",
+        "business",
+        "arts-and-sciences",
+        "nursing"
+      ]
+    },
+    {
+      "id": "san-juan-de-dios",
+      "name": "San Juan de Dios Educational Foundation",
+      "type": "private",
+      "city": "Pasay",
+      "lguId": "pasay",
+      "region": "NCR",
+      "location": "Pasay",
+      "description": "Catholic educational foundation in Pasay offering nursing and allied health programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sjd.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "allied-health"
+      ]
+    },
+    {
+      "id": "san-pablo-colleges",
+      "name": "San Pablo Colleges",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "San Pablo, Laguna",
+      "description": "Private college in San Pablo offering business, education, and criminology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "BS Nursing"
+      ],
+      "website": "https://www.spc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "ssc-r",
+      "name": "San Sebastian College-Recoletos",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Augustinian Recollect institution known for business, law, and engineering programs.",
+      "tuition": "Approximately P35,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sscr.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "law",
+        "engineering",
+        "education"
+      ]
+    },
+    {
+      "id": "santo-nino-dasma",
+      "name": "Santo Niño de Praga School",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Dasmarinas, Cavite",
+      "description": "Catholic school in Dasmarinas offering basic education and select college programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sndp.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business"
+      ]
+    },
+    {
+      "id": "southville-international",
+      "name": "Southville International School and Colleges",
+      "type": "private",
+      "city": "Las Piñas",
+      "lguId": "las-pinas",
+      "region": "NCR",
+      "location": "Las Pinas",
+      "description": "International school offering basic education to college programs. Known for business, IT, and international programs.",
+      "tuition": "Approximately P80,000-P120,000 per year",
+      "popularCourses": [],
+      "website": "https://www.southville.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "information-technology",
+        "international-programs"
+      ]
+    },
+    {
+      "id": "st-clare-caloocan",
+      "name": "St. Clare College of Caloocan",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan",
+      "description": "Private college in Caloocan offering business, education, and criminology programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.scc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "santisimo-rosario",
+      "name": "St. Dominic College of Asia",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Bacoor, Cavite",
+      "description": "Private college in Bacoor offering nursing, hospitality, and business programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sdca.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "hospitality",
+        "business"
+      ]
+    },
+    {
+      "id": "st-josephs-college",
+      "name": "St. Joseph's College of Tanauan",
+      "type": "private",
+      "city": "Tanauan, Batangas",
+      "lguId": "tanauan-batangas",
+      "region": "Laguna",
+      "location": "Tanauan, Batangas",
+      "description": "Catholic college in Tanauan offering education, business, and health sciences programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "Bachelor of Secondary Education"
+      ],
+      "website": "https://www.sjct.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "saint-la-salle",
+      "name": "St. La Salle College",
+      "type": "private",
+      "city": "Bacolod, Negros Occidental",
+      "lguId": "bacolod-negros-occidental",
+      "region": "NCR",
+      "location": "Bacolod, Negros Occidental",
+      "description": "La Salle school offering basic education and select college programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sls.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business"
+      ]
+    },
+    {
+      "id": "sti-college-alabang",
+      "name": "STI College - Alabang",
+      "type": "private",
+      "city": "Muntinlupa",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa",
+      "description": "STI campus in Alabang offering IT, business, and hospitality programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "sti-college-caloocan",
+      "name": "STI College - Caloocan",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan",
+      "description": "STI campus in Caloocan offering IT, business, and health sciences programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "sti-college-fairview",
+      "name": "STI College - Fairview",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "STI campus in Fairview offering IT, business, and hospitality programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "sti-college-santa-rosa",
+      "name": "STI College - Santa Rosa",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Santa Rosa, Laguna",
+      "description": "STI campus in Santa Rosa offering IT, business, hospitality, and engineering programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "hospitality",
+        "engineering"
+      ]
+    },
+    {
+      "id": "sti-college-shaw",
+      "name": "STI College - Shaw",
+      "type": "private",
+      "city": "Mandaluyong",
+      "lguId": "mandaluyong",
+      "region": "NCR",
+      "location": "Mandaluyong",
+      "description": "STI campus in Shaw Boulevard offering IT, business, hospitality, and engineering programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Computer Engineering",
+        "BS Hospitality Management",
+        "Senior High School - ICT Strand"
+      ],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "hospitality",
+        "engineering"
+      ]
+    },
+    {
+      "id": "sti-shs",
+      "name": "STI Senior High School",
+      "type": "shs",
+      "city": "Multiple NCR campuses",
+      "lguId": "multiple-ncr-campuses",
+      "region": "NCR",
+      "location": "Multiple NCR campuses",
+      "description": "STI's senior high school offering ABM, STEM, HUMSS, and TVL-ICT tracks across multiple campuses.",
+      "tuition": "Approximately P30,000-P45,000 per year",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "shs",
+        "abm",
+        "stem",
+        "humss",
+        "tvl-ict"
+      ]
+    },
+    {
+      "id": "west-negros",
+      "name": "STI West Negros University",
+      "type": "private",
+      "city": "Bacolod, Negros Occidental",
+      "lguId": "bacolod-negros-occidental",
+      "region": "NCR",
+      "location": "Bacolod, Negros Occidental",
+      "description": "STI-affiliated university in Bacolod offering IT, business, education, and health sciences programs.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [
+        "BS Information Technology"
+      ],
+      "website": "https://www.stiwnu.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "education",
+        "health-sciences"
+      ]
+    },
+    {
+      "id": "systems-plus",
+      "name": "Systems Plus Computer College",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Private computer college in Quezon City offering IT, business, and engineering programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.spcf.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business",
+        "engineering"
+      ]
+    },
+    {
+      "id": "tcu",
+      "name": "Taguig City University",
+      "type": "public",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig",
+      "description": "City university of Taguig offering business, education, and technology programs.",
+      "tuition": "Free tuition for Taguig residents",
+      "popularCourses": [],
+      "website": "https://tcu.taguig.gov.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "tarlac-state-university",
+      "name": "Tarlac State University",
+      "type": "public",
+      "city": "Tarlac City, Tarlac",
+      "lguId": "tarlac-city-tarlac",
+      "region": "Pampanga",
+      "location": "Tarlac City, Tarlac",
+      "description": "State university in Tarlac offering business, education, engineering, and technology programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.tsu.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "engineering",
+        "technology"
+      ]
+    },
+    {
+      "id": "dolores-tayamin",
+      "name": "Tayabas Western Academy",
+      "type": "private",
+      "city": "Tayabas, Quezon",
+      "lguId": "tayabas-quezon",
+      "region": "Laguna",
+      "location": "Tayabas, Quezon",
+      "description": "Private school in Tayabas offering basic education and select college programs.",
+      "tuition": "Approximately P15,000-P30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.twa.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business"
+      ]
+    },
+    {
+      "id": "tip-manila",
+      "name": "Technological Institute of the Philippines - Manila",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Premier private technological school known for engineering and IT programs.",
+      "tuition": "Approximately P45,000-P65,000 per semester",
+      "popularCourses": [
+        "BS Mechanical Engineering",
+        "BS Computer Engineering"
+      ],
+      "website": "https://www.tip.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "architecture"
+      ]
+    },
+    {
+      "id": "tip-quezon-city",
+      "name": "Technological Institute of the Philippines - Quezon City",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "TIP campus in Quezon City offering engineering, IT, and business programs.",
+      "tuition": "Approximately P45,000-P65,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.tip.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "business"
+      ]
+    },
+    {
+      "id": "tup-manila",
+      "name": "Technological University of the Philippines - Manila",
+      "type": "public",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Premier state technological university specializing in engineering, architecture, and technology programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [
+        "BS Mechanical Engineering",
+        "BS Electronics Engineering",
+        "BS Architecture"
+      ],
+      "website": "https://www.tup.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "architecture",
+        "technology",
+        "industrial-education"
+      ]
+    },
+    {
+      "id": "tup-tagui",
+      "name": "Technological University of the Philippines - Taguig",
+      "type": "public",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig",
+      "description": "TUP campus in Taguig offering technology and engineering programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.tup.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "technology"
+      ]
+    },
+    {
+      "id": "tesda-women-center",
+      "name": "TESDA Women's Center",
+      "type": "tvet",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig",
+      "description": "TESDA specialized training center for women offering various technical-vocational programs.",
+      "tuition": "Free for TESDA scholarship grantees",
+      "popularCourses": [
+        "Cookery NC II",
+        "Housekeeping NC II",
+        "Contact Center Services NC II",
+        "Web Development NC III",
+        "Photography NC II"
+      ],
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "technical-vocational",
+        "skills-training"
+      ]
+    },
+    {
+      "id": "trece-martires-city-college",
+      "name": "Trece Martires City College",
+      "type": "public",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Trece Martires, Cavite",
+      "description": "Public city college in Trece Martires offering business, education, and technology programs.",
+      "tuition": "Free or subsidized tuition",
+      "popularCourses": [
+        "BS Information Technology"
+      ],
+      "website": "https://www.tmccl.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "education",
+        "technology"
+      ]
+    },
+    {
+      "id": "trinity-university",
+      "name": "Trinity University of Asia",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Episcopalian university known for nursing, medical technology, and health sciences.",
+      "tuition": "Approximately P35,000-P50,000 per semester",
+      "popularCourses": [
+        "BS Nursing",
+        "BS Medical Technology"
+      ],
+      "website": "https://www.tua.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medical-technology",
+        "health-sciences",
+        "education"
+      ]
+    },
+    {
+      "id": "trinity-university-general-trias",
+      "name": "Trinity University of Asia - General Trias Campus",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "General Trias, Cavite",
+      "description": "Trinity University campus in Cavite offering nursing, health sciences, and education programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.tua.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "health-sciences",
+        "education"
+      ]
+    },
+    {
+      "id": "ubix",
+      "name": "UBIX Institute of Technologies",
+      "type": "private",
+      "city": "Mandaluyong",
+      "lguId": "mandaluyong",
+      "region": "NCR",
+      "location": "Mandaluyong",
+      "description": "Private institute specializing in IT, cybersecurity, and digital arts programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.ubix.edu.ph/",
+      "riasecTags": [
+        "A",
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "cybersecurity",
+        "digital-arts"
+      ]
+    },
+    {
+      "id": "unciano",
+      "name": "Unciano Colleges and General Hospital",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Private college with attached hospital offering nursing, medicine, and allied health programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.unciano.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medicine",
+        "allied-health"
+      ]
+    },
+    {
+      "id": "union-college-laguna",
+      "name": "Union College of Laguna",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Santa Cruz, Laguna",
+      "description": "Private college in Santa Cruz offering nursing, education, and business programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "BS Nursing"
+      ],
+      "website": "https://www.ucl.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "education",
+        "business"
+      ]
+    },
+    {
+      "id": "udm",
+      "name": "Universidad de Manila",
+      "type": "public",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "City university of Manila offering criminology, nursing, and business programs.",
+      "tuition": "Subsidized tuition",
+      "popularCourses": [],
+      "website": "https://udm.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "criminology",
+        "nursing",
+        "business"
+      ]
+    },
+    {
+      "id": "university-of-batangas",
+      "name": "University of Batangas",
+      "type": "private",
+      "city": "Batangas City, Batangas",
+      "lguId": "batangas-city-batangas",
+      "region": "Laguna",
+      "location": "Batangas City, Batangas",
+      "description": "Premier private university in Batangas offering law, engineering, business, and education programs.",
+      "tuition": "Approximately P25,000-P45,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.ub.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "law",
+        "engineering",
+        "business",
+        "education"
+      ]
+    },
+    {
+      "id": "ucc",
+      "name": "University of Caloocan City",
+      "type": "public",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan",
+      "description": "City university of Caloocan offering business, education, and criminal justice programs.",
+      "tuition": "Free tuition for Caloocan residents",
+      "popularCourses": [],
+      "website": "https://ucc.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "criminology",
+        "business",
+        "education"
+      ]
+    },
+    {
+      "id": "umak",
+      "name": "University of Makati",
+      "type": "public",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati",
+      "description": "City university of Makati known for criminology, nursing, and technology programs.",
+      "tuition": "Free tuition for Makati residents",
+      "popularCourses": [
+        "BS Criminology",
+        "BS Nursing"
+      ],
+      "website": "https://www.umak.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "criminology",
+        "nursing",
+        "information-technology",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "uphsl",
+      "name": "University of Perpetual Help System Dalta",
+      "type": "private",
+      "city": "Las Piñas",
+      "lguId": "las-pinas",
+      "region": "NCR",
+      "location": "Las Pinas",
+      "description": "Private university known for medicine, nursing, maritime, and education programs.",
+      "tuition": "Approximately P40,000-P60,000 per semester",
+      "popularCourses": [
+        "BS Marine Transportation",
+        "BS Nursing",
+        "BS Medical Technology",
+        "BS Pharmacy"
+      ],
+      "website": "https://www.perpetualdalta.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "medicine",
+        "nursing",
+        "maritime",
+        "education",
+        "allied-health"
+      ]
+    },
+    {
+      "id": "university-of-perpetual-help-calamba",
+      "name": "University of Perpetual Help System Dalta - Calamba",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Calamba, Laguna",
+      "description": "UPHSD campus in Calamba offering medicine, nursing, and allied health programs.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.perpetualdalta.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "medicine",
+        "nursing",
+        "allied-health"
+      ]
+    },
+    {
+      "id": "perpetual-help-las-pinas",
+      "name": "University of Perpetual Help System Dalta - Las Pinas",
+      "type": "private",
+      "city": "Las Piñas",
+      "lguId": "las-pinas",
+      "region": "NCR",
+      "location": "Las Pinas",
+      "description": "UPHSD campus in Las Pinas offering maritime, nursing, and business programs.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.perpetualdalta.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "maritime",
+        "nursing",
+        "business"
+      ]
+    },
+    {
+      "id": "perpetual-help-binan",
+      "name": "University of Perpetual Help System Laguna - Biñan",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Biñan, Laguna",
+      "description": "UPHSL campus in Biñan offering nursing, midwifery, and allied health programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.uphsl.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "midwifery",
+        "allied-health"
+      ]
+    },
+    {
+      "id": "university-of-rizal-system",
+      "name": "University of Rizal System",
+      "type": "public",
+      "city": "Rizal",
+      "lguId": "rizal",
+      "region": "Rizal",
+      "location": "Morong, Rizal",
+      "description": "State university system in Rizal with multiple campuses offering education, engineering, and business programs.",
+      "tuition": "Free tuition under RA 10931",
+      "popularCourses": [],
+      "website": "https://www.urs.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "engineering",
+        "business",
+        "criminology"
+      ]
+    },
+    {
+      "id": "ust",
+      "name": "University of Santo Tomas",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Asia's oldest existing university. Catholic university known for medicine, health sciences, law, and arts. One of the Big Four.",
+      "tuition": "Approximately P60,000-P80,000 per semester; scholarships available",
+      "popularCourses": [
+        "BS Nursing",
+        "BS Medical Technology",
+        "BS Architecture",
+        "BS Tourism Management"
+      ],
+      "website": "https://www.ust.edu.ph/",
+      "riasecTags": [
+        "A",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "medicine",
+        "nursing",
+        "allied-health",
+        "law",
+        "arts-and-design"
+      ]
+    },
+    {
+      "id": "ua",
+      "name": "University of the Assumption",
+      "type": "private",
+      "city": "Pampanga",
+      "lguId": "pampanga",
+      "region": "Pampanga",
+      "location": "San Fernando, Pampanga",
+      "description": "Catholic diocesan university in Pampanga known for education, business, and engineering.",
+      "tuition": "Approximately P25,000-P40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.ua.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "education",
+        "business",
+        "engineering"
+      ]
+    },
+    {
+      "id": "ue-caloocan",
+      "name": "University of the East - Caloocan",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan",
+      "description": "UE campus in Caloocan offering business, engineering, and arts programs.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.ue.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "engineering",
+        "arts"
+      ]
+    },
+    {
+      "id": "ue-manila",
+      "name": "University of the East - Manila",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "Private university known for dentistry, business, engineering, and computer studies.",
+      "tuition": "Approximately P40,000-P60,000 per semester",
+      "popularCourses": [
+        "Doctor of Dental Medicine",
+        "BS Computer Science",
+        "Juris Doctor"
+      ],
+      "website": "https://www.ue.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "dentistry",
+        "business",
+        "engineering",
+        "computer-studies",
+        "law"
+      ]
+    },
+    {
+      "id": "up-diliman",
+      "name": "University of the Philippines Diliman",
+      "type": "public",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "The flagship campus of the UP System and the national university of the Philippines. Known for academic excellence across all disciplines.",
+      "tuition": "Free tuition under RA 10931 for eligible students; approximately P37,000/semester without subsidy",
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Architecture",
+        "BA Psychology",
+        "BS Business Administration"
+      ],
+      "website": "https://upd.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "research",
+        "public-service",
+        "arts-and-humanities",
+        "engineering",
+        "social-sciences"
+      ]
+    },
+    {
+      "id": "uplb",
+      "name": "University of the Philippines Los Baños",
+      "type": "public",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Los Baños, Laguna",
+      "description": "Premier agricultural, environmental, and natural sciences university in the Philippines and a constituent university of the UP System.",
+      "tuition": "Free under RA 10931 for eligible students; socialized tuition support for others",
+      "popularCourses": [],
+      "website": "https://uplb.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "agriculture",
+        "forestry",
+        "environmental-science",
+        "biology",
+        "veterinary-medicine",
+        "statistics",
+        "development-communication",
+        "food-science"
+      ]
+    },
+    {
+      "id": "up-manila",
+      "name": "University of the Philippines Manila",
+      "type": "public",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila",
+      "description": "The health sciences campus of the UP System. Premier institution for medicine, nursing, and allied health sciences.",
+      "tuition": "Free tuition under RA 10931 for eligible students",
+      "popularCourses": [
+        "BS Nursing",
+        "Doctor of Medicine"
+      ],
+      "website": "https://www.upm.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "medicine",
+        "nursing",
+        "public-health",
+        "allied-health-sciences",
+        "research"
+      ]
+    },
+    {
+      "id": "valenzuela-city-school",
+      "name": "Valenzuela City School of Mathematics and Science",
+      "type": "shs",
+      "city": "Valenzuela",
+      "lguId": "valenzuela",
+      "region": "NCR",
+      "location": "Valenzuela",
+      "description": "Specialized science high school in Valenzuela offering STEM-focused senior high school programs.",
+      "tuition": "Free for Valenzuela residents",
+      "popularCourses": [],
+      "website": "https://www.valenzuela.gov.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "stem",
+        "science",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "vctc",
+      "name": "Valenzuela City Technical College",
+      "type": "public",
+      "city": "Valenzuela",
+      "lguId": "valenzuela",
+      "region": "NCR",
+      "location": "Valenzuela",
+      "description": "Technical college of Valenzuela offering technology and vocational programs.",
+      "tuition": "Subsidized tuition",
+      "popularCourses": [],
+      "website": "https://www.valenzuela.gov.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "technology",
+        "vocational-training"
+      ]
+    },
+    {
+      "id": "wcc-aeronautical",
+      "name": "WCC Aeronautical and Technological College - North Manila",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan",
+      "description": "Aeronautical college offering aviation, engineering, and tourism programs.",
+      "tuition": "Approximately P40,000-P60,000 per semester",
+      "popularCourses": [
+        "BS Aeronautical Engineering",
+        "Commercial Pilot Training"
+      ],
+      "website": "https://www.wccaviation.com/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "aviation",
+        "aeronautical-engineering",
+        "tourism",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "cavite-westpoint",
+      "name": "Westpoint College of Cavite",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Imus, Cavite",
+      "description": "Private college in Imus offering business, criminology, and education programs.",
+      "tuition": "Approximately P20,000-P35,000 per semester",
+      "popularCourses": [
+        "BS Criminology"
+      ],
+      "website": "https://www.westpoint.edu.ph/",
+      "riasecTags": [],
+      "strengthTags": [
+        "business",
+        "criminology",
+        "education"
+      ]
+    },
+    {
+      "id": "world-citi-colleges",
+      "name": "World Citi Colleges",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City",
+      "description": "Private college in Quezon City offering nursing, medical technology, and health sciences programs.",
+      "tuition": "Approximately P30,000-P50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.worldciti.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medical-technology",
+        "health-sciences"
+      ]
     }
   ]
 }
