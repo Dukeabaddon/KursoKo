@@ -331,10 +331,18 @@
       "level": [
         "college"
       ],
-      "riasecTags": [],
-      "careerTags": [],
+      "riasecTags": [
+        "E",
+        "I",
+        "S"
+      ],
+      "careerTags": [
+        "entrepreneur",
+        "lawyer",
+        "psychologist"
+      ],
       "institutionTags": [
-        "ateneo-de-manila"
+        "ateneo"
       ],
       "applicationLink": "https://www.ateneo.edu/admissions/undergraduate/financial-aid",
       "deadlineNotes": "Automatic consideration with ACET application Top ACET performers automatically considered; separate financial aid application available",
@@ -371,10 +379,17 @@
       "level": [
         "college"
       ],
-      "riasecTags": [],
-      "careerTags": [],
+      "riasecTags": [
+        "E",
+        "I",
+        "S"
+      ],
+      "careerTags": [
+        "entrepreneur",
+        "psychologist"
+      ],
       "institutionTags": [
-        "ateneo-de-manila"
+        "ateneo"
       ],
       "applicationLink": "https://www.ateneo.edu/admissions/undergraduate/financial-aid",
       "deadlineNotes": "Apply after admission; separate financial aid application Need-based; separate from merit scholarships; requires financial documentation",
@@ -1715,8 +1730,16 @@
       "level": [
         "college"
       ],
-      "riasecTags": [],
-      "careerTags": [],
+      "riasecTags": [
+        "E",
+        "I",
+        "C"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "accountant",
+        "entrepreneur"
+      ],
       "institutionTags": [
         "dlsu"
       ],
@@ -1803,8 +1826,15 @@
       "level": [
         "college"
       ],
-      "riasecTags": [],
-      "careerTags": [],
+      "riasecTags": [
+        "E",
+        "I",
+        "C"
+      ],
+      "careerTags": [
+        "software-engineer",
+        "accountant"
+      ],
       "institutionTags": [
         "dlsu"
       ],
@@ -1842,8 +1872,15 @@
       "level": [
         "college"
       ],
-      "riasecTags": [],
-      "careerTags": [],
+      "riasecTags": [
+        "A",
+        "E",
+        "S"
+      ],
+      "careerTags": [
+        "graphic-designer",
+        "content-creator"
+      ],
       "institutionTags": [
         "dlsu"
       ],
@@ -2340,8 +2377,16 @@
       "level": [
         "college"
       ],
-      "riasecTags": [],
-      "careerTags": [],
+      "riasecTags": [
+        "S",
+        "E",
+        "I"
+      ],
+      "careerTags": [
+        "nurse",
+        "teacher",
+        "accountant"
+      ],
       "institutionTags": [
         "feu"
       ],
@@ -3696,10 +3741,17 @@
         "college",
         "shs"
       ],
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "careerTags": [],
       "institutionTags": [
-        "national-university"
+        "nu"
       ],
       "applicationLink": "https://www.nu-manila.edu.ph/",
       "deadlineNotes": "Apply through NU Admissions Office SM Group affiliated; multiple NU campuses in NCR",
@@ -6259,8 +6311,16 @@
       "level": [
         "college"
       ],
-      "riasecTags": [],
-      "careerTags": [],
+      "riasecTags": [
+        "S",
+        "I",
+        "C"
+      ],
+      "careerTags": [
+        "nurse",
+        "pharmacist",
+        "lawyer"
+      ],
       "institutionTags": [
         "ust"
       ],
@@ -6298,8 +6358,17 @@
       "level": [
         "college"
       ],
-      "riasecTags": [],
-      "careerTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E"
+      ],
+      "careerTags": [
+        "nurse",
+        "pharmacist",
+        "lawyer",
+        "teacher"
+      ],
       "institutionTags": [
         "ust"
       ],

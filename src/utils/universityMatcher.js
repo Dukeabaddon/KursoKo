@@ -109,7 +109,7 @@ function resolveSchoolInsight(university, career) {
 }
 
 export function getUniversityMatchesForCareer(profile, career, limit = 3) {
-  return universitiesData.universities
+  const ranked = universitiesData.universities
     .map((uni) => {
       const relevanceScore = scoreUniversity(uni, profile, career)
       const match = matchLabel(relevanceScore)
@@ -125,7 +125,9 @@ export function getUniversityMatchesForCareer(profile, career, limit = 3) {
       }
     })
     .sort((a, b) => b.relevanceScore - a.relevanceScore)
-    .slice(0, limit)
+
+  if (limit == null) return ranked
+  return ranked.slice(0, limit)
 }
 
 export function getUniversityMatches(profile, topCareers = [], limit = 3) {

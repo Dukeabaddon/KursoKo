@@ -54,6 +54,54 @@ LOCATION_LGU = {
     "pampanga": ("Pampanga", "pampanga"),
 }
 
+SCHOLARSHIP_TAG_OVERRIDES = {
+    "ateneo-entrance-scholarship": {
+        "riasecTags": ["E", "I", "S"],
+        "institutionTags": ["ateneo"],
+        "careerTags": ["entrepreneur", "lawyer", "psychologist"],
+    },
+    "admu-financial-aid": {
+        "riasecTags": ["E", "I", "S"],
+        "institutionTags": ["ateneo"],
+        "careerTags": ["entrepreneur", "psychologist"],
+    },
+    "dlsu-archer-achiever-tier": {
+        "riasecTags": ["E", "I", "C"],
+        "institutionTags": ["dlsu"],
+        "careerTags": ["software-engineer", "accountant", "entrepreneur"],
+    },
+    "dlsu-star-scholarship": {
+        "riasecTags": ["E", "I", "C"],
+        "institutionTags": ["dlsu"],
+        "careerTags": ["software-engineer", "accountant"],
+    },
+    "dlsu-vaugirard": {
+        "riasecTags": ["A", "E", "S"],
+        "institutionTags": ["dlsu"],
+        "careerTags": ["graphic-designer", "content-creator"],
+    },
+    "feu-scholarship": {
+        "riasecTags": ["S", "E", "I"],
+        "institutionTags": ["feu"],
+        "careerTags": ["nurse", "teacher", "accountant"],
+    },
+    "nu-national-scholarship": {
+        "riasecTags": ["R", "I", "A", "S", "E", "C"],
+        "institutionTags": ["nu"],
+        "careerTags": [],
+    },
+    "ust-san-lorenzo-ruiz": {
+        "riasecTags": ["S", "I", "C"],
+        "institutionTags": ["ust"],
+        "careerTags": ["nurse", "pharmacist", "lawyer"],
+    },
+    "ust-santo-tomas-academic": {
+        "riasecTags": ["I", "S", "E"],
+        "institutionTags": ["ust"],
+        "careerTags": ["nurse", "pharmacist", "lawyer", "teacher"],
+    },
+}
+
 SCHOLARSHIP_ID_ALIASES = {
     "dlsu-archer-achiever": "dlsu-archer-achiever-tier",
     "ateneo-financial-aid": "admu-financial-aid",
@@ -112,10 +160,6 @@ def normalize_career_tags(raw: list | None) -> list[str]:
         else:
             out.append(slugify(tag))
     return list(dict.fromkeys(out))
-    text = text.lower().strip()
-    text = text.replace("ñ", "n").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")
-    text = re.sub(r"[^a-z0-9]+", "-", text)
-    return text.strip("-")
 
 
 def normalize_riasec_tags(raw: list | None) -> list[str]:
@@ -249,7 +293,13 @@ def normalize_scholarship(row: dict, report: dict) -> dict:
     if row.get("applicantNotes"):
         out["deadlineNotes"] = f"{out['deadlineNotes']} {row['applicantNotes']}".strip()
 
-    if not out["riasecTags"] and not out["careerTags"] and out["category"] in ("government", "private"):
+    overrides = SCHOLARSHIP_TAG_OVERRIDES.get(runtime_id) or SCHOLARSHIP_TAG_OVERRIDES.get(sch_id)
+    if overrides:
+        for key, value in overrides.items():
+            out[key] = value
+        report.setdefault("scholarships_tag_overrides", []).append(runtime_id)
+
+    if not out["riasecTags"] and not out["careerTags"] and out["category"] in ("government", "private", "university"):
         out["riasecTags"] = ["R", "I", "A", "S", "E", "C"]
         report.setdefault("scholarships_broad_riasec_fallback", []).append(runtime_id)
 

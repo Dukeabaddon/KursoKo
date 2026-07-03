@@ -94,7 +94,7 @@ function scoreScholarship(scholarship, profile, career, schools, userLocation) {
 }
 
 export function getScholarshipMatchesForCareer(profile, career, schools, limit = 5, userLocation = null) {
-  return scholarshipsData.scholarships
+  const ranked = scholarshipsData.scholarships
     .filter((item) => passesResidencyFilter(item, userLocation))
     .map((item) => ({
       ...item,
@@ -102,7 +102,9 @@ export function getScholarshipMatchesForCareer(profile, career, schools, limit =
     }))
     .filter((item) => item.relevanceScore > 0)
     .sort((a, b) => b.relevanceScore - a.relevanceScore)
-    .slice(0, limit)
+
+  if (limit == null) return ranked
+  return ranked.slice(0, limit)
 }
 
 export function getScholarshipMatches(profile, topCareers = [], limit = 5, userLocation = null) {

@@ -13,6 +13,8 @@ import RiasecBreakdown from './RiasecBreakdown'
 import CourseSection from './CourseSection'
 import ProfessionAccordionSection from './ProfessionAccordionSection'
 import ResultsFooter from './ResultsFooter'
+import ResultsSchoolsPage from './ResultsSchoolsPage'
+import ResultsScholarshipsPage from './ResultsScholarshipsPage'
 import ShareCard from './ShareCard'
 
 function Results({ responses, onRetake, onHome }) {
@@ -23,24 +25,29 @@ function Results({ responses, onRetake, onHome }) {
   const courseRecommendations = getCourseRecommendations(combination)
   const shsStrands = getShsStrands(combination, primaryDimension.code)
   const careerCards = careerMatches.map((career) => {
-    const schools = getUniversityMatchesForCareer(profile, career, 3)
+    const allSchools = getUniversityMatchesForCareer(profile, career, null)
+    const schools = allSchools.slice(0, 3)
     const topSchool = schools[0] ?? null
     const userLocation = inferUserLocationFromSchool(topSchool)
-    const scholarships = getScholarshipMatchesForCareer(profile, career, schools, 5, userLocation)
+    const allScholarships = getScholarshipMatchesForCareer(profile, career, schools, null, userLocation)
+    const scholarships = allScholarships.slice(0, 5)
 
     return {
       ...career,
       schools,
+      schoolTotal: allSchools.length,
       topSchool,
       scholarships,
+      scholarshipTotal: allScholarships.length,
     }
   })
 
   const [shareMessage, setShareMessage] = useState('')
   const [heroEnter] = useState(true)
+  const [detailView, setDetailView] = useState(null)
   const shareCardRef = useRef(null)
 
-  useResultsScrollReveal([combination])
+  useResultsScrollReveal([combination, detailView])
 
   const buildShareText = () => {
     const top = careerMatches[0]
@@ -79,9 +86,30 @@ function Results({ responses, onRetake, onHome }) {
     setTimeout(() => setShareMessage(''), 3000)
   }
 
+  if (detailView?.type === 'schools') {
+    return (
+      <ResultsSchoolsPage
+        responses={responses}
+        careerId={detailView.careerId}
+        onBack={() => setDetailView(null)}
+        onHome={onHome}
+      />
+    )
+  }
+
+  if (detailView?.type === 'scholarships') {
+    return (
+      <ResultsScholarshipsPage
+        responses={responses}
+        careerId={detailView.careerId}
+        onBack={() => setDetailView(null)}
+        onHome={onHome}
+      />
+    )
+  }
+
   return (
     <ResultsShell onHome={onHome}>
-      {/* Hybrid hero: identity + RIASEC */}
       <div className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-start lg:gap-8">
         <ResultHero
           archetype={archetype}
@@ -97,14 +125,17 @@ function Results({ responses, onRetake, onHome }) {
         />
       </div>
 
-      {/* Scroll sections */}
       <div className="mt-8 space-y-8">
         <CourseSection
           combination={combination}
           courseRecommendations={courseRecommendations}
           topCareers={careerMatches}
         />
-        <ProfessionAccordionSection careerCards={careerCards} />
+        <ProfessionAccordionSection
+          careerCards={careerCards}
+          onSeeAllSchools={(careerId) => setDetailView({ type: 'schools', careerId })}
+          onSeeAllScholarships={(careerId) => setDetailView({ type: 'scholarships', careerId })}
+        />
       </div>
 
       <ResultsFooter
@@ -112,22 +143,12 @@ function Results({ responses, onRetake, onHome }) {
         onRetake={onRetake}
         onShare={handleShare}
         shareMessage={shareMessage}
+        onDownloadCard={handleDownloadCard}
       />
 
-      {/* Hidden share card + optional download hook via share flow later */}
       <div className="fixed -left-[9999px] top-0 w-[360px] pointer-events-none" aria-hidden="true">
-        <ShareCard
-          cardRef={shareCardRef}
-          archetype={archetype}
-          topCareer={careerMatches[0]}
-        />
+        <ShareCard cardRef={shareCardRef} archetype={archetype} topCareer={careerMatches[0]} />
       </div>
-
-      <p className="sr-only">
-        <button type="button" onClick={handleDownloadCard}>
-          Download share card
-        </button>
-      </p>
     </ResultsShell>
   )
 }

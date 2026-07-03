@@ -380,6 +380,17 @@
     "bdo-foundation",
     "jollibee-group-foundation"
   ],
+  "scholarships_tag_overrides": [
+    "ateneo-entrance-scholarship",
+    "dlsu-archer-achiever-tier",
+    "dlsu-star-scholarship",
+    "dlsu-vaugirard",
+    "ust-santo-tomas-academic",
+    "ust-san-lorenzo-ruiz",
+    "feu-scholarship",
+    "nu-national-scholarship",
+    "admu-financial-aid"
+  ],
   "counts": {
     "universities": 165,
     "scholarships": 126
