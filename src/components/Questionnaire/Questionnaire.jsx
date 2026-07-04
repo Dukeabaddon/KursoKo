@@ -174,27 +174,25 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
 
   const navFooter = (
     <div className="assessment-nav-row">
-      <div className="flex items-center gap-2">
-        {currentQuestion > 0 ? (
-          <ClickSpark {...SPARK_ACCENT} className="inline-flex">
-            <button
-              type="button"
-              onClick={handlePrevious}
-              disabled={isAnimating}
-              className={`${assessmentGhostBtn} disabled:opacity-40`}
-            >
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              Previous
-            </button>
-          </ClickSpark>
-        ) : (
-          <span className="inline-block min-w-[5.5rem]" aria-hidden="true" />
-        )}
-      </div>
+      {currentQuestion > 0 ? (
+        <ClickSpark {...SPARK_ACCENT} className="inline-flex">
+          <button
+            type="button"
+            onClick={handlePrevious}
+            disabled={isAnimating}
+            className={`${assessmentGhostBtn} disabled:opacity-40`}
+          >
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Previous
+          </button>
+        </ClickSpark>
+      ) : (
+        <span className="inline-block min-w-[5.5rem]" aria-hidden="true" />
+      )}
 
-      <ClickSpark {...SPARK_PURPLE} className="ml-auto inline-flex">
+      <ClickSpark {...SPARK_PURPLE} className="inline-flex">
         <button
           type="button"
           onClick={handleNext}
@@ -231,7 +229,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
 
   return (
     <AssessmentShell onExitHome={handleExitHome} scrollRef={scrollRef} footer={navFooter}>
-      <div className="mx-auto flex w-full max-w-3xl flex-col px-3 pb-4 pt-2 sm:px-4">
+      <div className="mx-auto flex min-h-full w-full max-w-3xl flex-1 flex-col px-3 pb-4 pt-2 sm:px-4">
         {/* Progress */}
         <div className="mb-1.5 shrink-0 sm:mb-2">
           <div className="mb-1 flex items-center justify-between text-xs text-landing-muted sm:text-sm">
@@ -253,54 +251,56 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
           </div>
         </div>
 
-        {/* Prompt — reveals on scroll */}
-        <div key={`prompt-${questionId}`} className="assessment-reveal mb-1.5 shrink-0 text-center sm:mb-2">
-          <h2
-            id="question-prompt"
-            className="font-[family-name:var(--font-display)] text-sm font-bold leading-snug text-landing-ink sm:text-base md:text-lg"
-          >
-            {currentQ.text}
-          </h2>
-          <p className="mt-0.5 hidden text-xs text-landing-muted sm:block">
-            Pick one activity and rate how much you&apos;d enjoy it.
-          </p>
-        </div>
-
-        {/* Options — reveals on scroll */}
-        <div className="assessment-reveal assessment-reveal-delay-1 flex min-h-0 flex-col items-center justify-center py-2">
-          <div className="assessment-choices-panel w-full">
-            <div
-              key={`choices-${questionId}`}
-              className={`assessment-choices-grid ${gridMotionClass} ${isAnimating ? 'is-busy' : ''}`}
-              aria-busy={isAnimating}
+        <div className="assessment-question-body flex min-h-0 flex-1 flex-col justify-center">
+          {/* Prompt — reveals on scroll */}
+          <div key={`prompt-${questionId}`} className="assessment-reveal mb-1.5 shrink-0 text-center sm:mb-2">
+            <h2
+              id="question-prompt"
+              className="font-[family-name:var(--font-display)] text-sm font-bold leading-snug text-landing-ink sm:text-base md:text-lg"
             >
-              <AssessmentChoiceCard
-                optionKey="A"
-                title={currentQ.optionA.text}
-                imageSrc={getChoiceImage(questionId, 'A')}
-                isSelected={selectedOption === 'A'}
-                isDimmed={Boolean(selectedOption && selectedOption !== 'A')}
-                selectedRating={selectedOption === 'A' ? selectedRating : null}
-                onRate={(rating) => handleOptionRatingSelect('A', rating)}
-                disabled={isAnimating}
-              />
+              {currentQ.text}
+            </h2>
+            <p className="mt-0.5 hidden text-xs text-landing-muted sm:block">
+              Pick one activity and rate how much you&apos;d enjoy it.
+            </p>
+          </div>
 
-              <div className="questionnaire-or-wrap flex items-center justify-center self-center">
-                <div className="questionnaire-or-divider" aria-hidden="true">
-                  OR
+          {/* Options — reveals on scroll */}
+          <div className="assessment-reveal assessment-reveal-delay-1 flex min-h-0 flex-col items-center justify-center py-2">
+            <div className="assessment-choices-panel w-full">
+              <div
+                key={`choices-${questionId}`}
+                className={`assessment-choices-grid ${gridMotionClass} ${isAnimating ? 'is-busy' : ''}`}
+                aria-busy={isAnimating}
+              >
+                <AssessmentChoiceCard
+                  optionKey="A"
+                  title={currentQ.optionA.text}
+                  imageSrc={getChoiceImage(questionId, 'A')}
+                  isSelected={selectedOption === 'A'}
+                  isDimmed={Boolean(selectedOption && selectedOption !== 'A')}
+                  selectedRating={selectedOption === 'A' ? selectedRating : null}
+                  onRate={(rating) => handleOptionRatingSelect('A', rating)}
+                  disabled={isAnimating}
+                />
+
+                <div className="questionnaire-or-wrap flex items-center justify-center self-center">
+                  <div className="questionnaire-or-divider" aria-hidden="true">
+                    OR
+                  </div>
                 </div>
-              </div>
 
-              <AssessmentChoiceCard
-                optionKey="B"
-                title={currentQ.optionB.text}
-                imageSrc={getChoiceImage(questionId, 'B')}
-                isSelected={selectedOption === 'B'}
-                isDimmed={Boolean(selectedOption && selectedOption !== 'B')}
-                selectedRating={selectedOption === 'B' ? selectedRating : null}
-                onRate={(rating) => handleOptionRatingSelect('B', rating)}
-                disabled={isAnimating}
-              />
+                <AssessmentChoiceCard
+                  optionKey="B"
+                  title={currentQ.optionB.text}
+                  imageSrc={getChoiceImage(questionId, 'B')}
+                  isSelected={selectedOption === 'B'}
+                  isDimmed={Boolean(selectedOption && selectedOption !== 'B')}
+                  selectedRating={selectedOption === 'B' ? selectedRating : null}
+                  onRate={(rating) => handleOptionRatingSelect('B', rating)}
+                  disabled={isAnimating}
+                />
+              </div>
             </div>
           </div>
         </div>

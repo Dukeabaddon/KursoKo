@@ -90,13 +90,13 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                 index < 3 ? 'border-landing-accent/20 shadow-[0_18px_40px_rgba(122,92,194,0.08)]' : 'border-landing-ink/10'
               } ${index < 3 ? 'results-career-card' : ''}`}
             >
-              {index < 3 ? (
-                <div
-                  className={`results-career-card-splash results-career-card-splash--${index + 1}`}
-                  aria-hidden="true"
-                />
-              ) : null}
               <div className={index < 3 ? 'results-career-card-header' : undefined}>
+                {index < 3 ? (
+                  <div
+                    className={`results-career-card-splash results-career-card-splash--${index + 1}`}
+                    aria-hidden="true"
+                  />
+                ) : null}
                 <button
                   type="button"
                   className="relative z-[1] w-full text-left"

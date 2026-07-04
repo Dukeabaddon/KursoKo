@@ -1,22 +1,22 @@
 {
   "project": "KursoKo",
   "schema_version": 2,
-  "option": "1-faithful-reference",
-  "asset_set": "RIASEC sticker — letter E (Enterprising / The Visionary)",
-  "reference_match": {
-    "frame_border": "#FF8A65 coral — E exception, not lavender",
-    "clouds": "yellow and salmon peach",
-    "letter_fill": "#FF8A65"
-  },
+  "mode": "questionnaire-sticker-hybrid",
+  "asset_set": "RIASEC landing sticker — Enterprising / E / The Visionary",
   "deliverable": {
     "width_px": 512,
     "height_px": 512,
-    "format": "PNG-24 with alpha channel",
-    "safe_padding_px": 24
+    "format": "PNG-24",
+    "background_fill": "#FDFCF8"
+  },
+  "visual_lock": {
+    "keep": "same current sticker composition and border shape: upright rounded-square frame, large E on left, small E badge bottom-right",
+    "frame_border": "#FF8A65",
+    "letter_fill": "#FF8A65"
   },
   "generation": {
-    "chatgpt_note": "Fresh chat per letter. E uses CORAL frame like original — not lavender. Refresh character to Visionary style.",
-    "negative_prompt": "lavender frame border, teal clouds, letter R I A S C, wrench, skewed frame, teal jacket yellow tee boy, white sclera, full canvas black outside border"
+    "chatgpt_note": "Fresh chat. Keep the existing E sticker layout and coral frame; only update the character inside to questionnaire-style art.",
+    "negative_prompt": "transparent png, black background fill, dark interior, clouds, lavender frame, wrench, palette, clipboard as main prop, anime eyes, white sticker cutout around character, changing border shape"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — ENTERPRISING LETTER E ONLY. Large letter left MUST be capital E. Small E badge bottom-right. Match original KursoKo E sticker faithfully including E-only frame color: axis-aligned rounded square squircle, CORAL SALMON border hex FF8A65 on frame — not lavender — this is the only RIASEC letter with coral border. Black interior. Yellow and salmon peach soft cloud blobs on black like original E — not teal clouds. Large bold capital E left, coral fill hex FF8A65, dark outline, white offset on letter. Icons: glowing lightbulb, gold coins, yellow rising arrow flag, sparkles. TRANSPARENCY: true PNG alpha outside border. CHARACTER REFRESH ONLY — replace teal jacket yellow tee boy: young man light olive skin, short black hair, lineless Memphis, solid black oval bead eyes no white sclera. White collared shirt, coral vest hex FF8A65 with golden arrow lapel pin. Coral megaphone, brown briefcase with yellow arrow flag. Not anime."
+  "prompt_for_image_ai": "Create a 512 by 512 flat vector landing sticker for the Enterprising RIASEC type. Keep the current sticker composition exactly: upright rounded-square border frame, large capital E on the left, small circular E badge at bottom-right. Keep the large E treatment with its bold dark outline and current sticker-style separation. Keep the E frame coral, matching the current sticker. Fill the full canvas and the inside of the frame with KursoKo landing paper color #FDFCF8 — no transparency, no black fill, no cloud backdrop. Replace only the character with KursoKo questionnaire art style: unDraw-inspired student illustration, thin 2px dark outline #2D2D2D on the character, flat color fills, minimal dot eyes, natural black hair, simplified hands. Use a young Visionary student with light olive skin and short black hair. Body faces slightly inward-left toward the large letter. Right hand holds a coral megaphone close to the mouth angled inward-left. Left hand carries a slim folder or placard with a simple upward-arrow accent facing slightly left. Use the Enterprising results color #FF8A65 clearly in the vest or blazer and accessory accents: white collared shirt, coral vest or blazer, dark trousers, dark shoes. Keep props minimal — megaphone as hero prop and one small upward-arrow support prop only. No coins, no crowd, no white cutout around the character."
 }

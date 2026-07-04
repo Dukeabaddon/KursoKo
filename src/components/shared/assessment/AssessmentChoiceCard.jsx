@@ -51,7 +51,7 @@ const AssessmentChoiceCard = ({
             <ClickSpark
               key={`${optionKey}-${rating}`}
               {...SPARK_BY_RATING[rating]}
-              className="min-w-0 flex-1"
+              className="assessment-rating-spark min-w-0 flex-1"
             >
               <button
                 type="button"

@@ -18,30 +18,35 @@ Optional: skip steps 3–4 if reusing `src/assets/landing/placeholders/blobs/*.p
 
 ---
 
-## RIASEC landing stickers (2D) — v2.4 Option 1
+## RIASEC landing stickers (2D) — v2.5 questionnaire-sticker hybrid
 
 **Schema:** `_schema-riasec-landing-v2.json`  
-**Mode:** Faithful to original `placeholders/riasec/*.png` — frame, border, clouds, letter colors per letter. **Only character art** refreshes (lineless Memphis + bead eyes).
+**Mode:** Keep the current landing sticker composition, border shape, large letter, and corner badge. Replace only the inside character with questionnaire-style art.
 
-| Letter | Frame | Clouds | Letter fill |
-|--------|-------|--------|-------------|
-| R | Lavender | Teal-green | `#4DB6AC` |
-| I | Lavender | Mint teal | `#6E4FB8` |
-| A | Lavender | **Purple** | `#FFD54F` |
-| S | Lavender | Purple + yellow | `#9575CD` |
-| E | **Coral** | Peach + yellow | `#FF8A65` |
-| C | Lavender | Blue + lavender | `#81D4FA` |
+### Locked rules
 
-| Letter | Archetype | JSON |
-|--------|-----------|------|
-| R | The Builder | `riasec-r.json` |
-| I | The Pathfinder | `riasec-i.json` |
-| A | The Creator | `riasec-a.json` |
-| S | The Guardian | `riasec-s.json` |
-| E | The Visionary | `riasec-e.json` |
-| C | The Strategist | `riasec-c.json` |
+| Rule | Value |
+|------|-------|
+| Canvas fill | Full canvas `#FDFCF8` landing paper |
+| Transparency | Not required |
+| Inside frame | `#FDFCF8` paper fill, **not** black |
+| Character style | Questionnaire-style unDraw flat vector |
+| Outline | Thin `#2D2D2D` outline on **character only** |
+| Eyes | Minimal dot eyes |
+| Facing | Character angles slightly inward-left toward large letter |
+| Props | 1 hero prop + at most 1 support prop |
+| Forbidden | Cloud backdrops, black fill, white sticker cutout, extra clutter |
 
-**Output:** `placeholders/riasec/{r,i,a,s,e,c}.png` — 512×512, tight crop to border.
+| Letter | Archetype | Results color | JSON |
+|--------|-----------|---------------|------|
+| R | The Builder | `#4DB6AC` | `riasec-r.json` |
+| I | The Pathfinder | `#6E4FB8` | `riasec-i.json` |
+| A | The Creator | `#FFD54F` | `riasec-a.json` |
+| S | The Guardian | `#9575CD` | `riasec-s.json` |
+| E | The Visionary | `#FF8A65` | `riasec-e.json` |
+| C | The Strategist | `#81D4FA` | `riasec-c.json` |
+
+**Output:** `placeholders/riasec/{r,i,a,s,e,c}.png` — 512×512.
 
 ---
 

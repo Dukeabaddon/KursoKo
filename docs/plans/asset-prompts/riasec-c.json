@@ -1,22 +1,22 @@
 {
   "project": "KursoKo",
   "schema_version": 2,
-  "option": "1-faithful-reference",
-  "asset_set": "RIASEC sticker — letter C (Conventional / The Strategist)",
-  "reference_match": {
-    "frame_border": "#B39DDB lavender periwinkle",
-    "clouds": "light blue and pale lavender",
-    "letter_fill": "#81D4FA"
-  },
+  "mode": "questionnaire-sticker-hybrid",
+  "asset_set": "RIASEC landing sticker — Conventional / C / The Strategist",
   "deliverable": {
     "width_px": 512,
     "height_px": 512,
-    "format": "PNG-24 with alpha channel",
-    "safe_padding_px": 24
+    "format": "PNG-24",
+    "background_fill": "#FDFCF8"
+  },
+  "visual_lock": {
+    "keep": "same current sticker composition and border shape: upright rounded-square frame, large C on left, small C badge bottom-right",
+    "frame_border": "#B39DDB",
+    "letter_fill": "#81D4FA"
   },
   "generation": {
-    "chatgpt_note": "Fresh chat per letter. Match original C sticker — blue-lavender clouds, sky-blue C; refresh to Strategist woman.",
-    "negative_prompt": "letter R I A S E, objects only, lavender boy, skewed frame, uniform teal clouds only, white sclera, full canvas black outside border"
+    "chatgpt_note": "Fresh chat. Keep the existing C sticker layout; only update the character inside to questionnaire-style art.",
+    "negative_prompt": "transparent png, black background fill, dark interior, clouds, file box clutter, wrench, palette, megaphone, anime eyes, white sticker cutout around character, changing border shape"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — CONVENTIONAL LETTER C ONLY. Large letter left MUST be capital C. Small C badge bottom-right. Match original KursoKo C sticker faithfully: axis-aligned rounded square squircle, lavender periwinkle border hex B39DDB, black interior. Light blue and pale lavender two-tone cloud blobs on black like original C reference — not uniform teal-only clouds. Large bubbly capital C left, sky blue fill hex 81D4FA, dark outline, white offset on letter. Icons: tan file box with yellow purple folders, yellow pencil, sparkles. TRANSPARENCY: true PNG alpha outside border. CHARACTER REFRESH REQUIRED human — replace lavender shirt boy: young woman light peach skin, neat dark bob, lineless Memphis, solid black oval bead eyes no white sclera. White long-sleeve shirt, sky blue vest hex 81D4FA, purple pen, clipboard with purple checkmarks no text. Not objects-only. Not anime."
+  "prompt_for_image_ai": "Create a 512 by 512 flat vector landing sticker for the Conventional RIASEC type. Keep the current sticker composition exactly: upright rounded-square border frame, large capital C on the left, small circular C badge at bottom-right. Keep the large C treatment with its bold dark outline and current sticker-style separation. Fill the full canvas and the inside of the frame with KursoKo landing paper color #FDFCF8 — no transparency, no black fill, no cloud backdrop. Replace only the character with KursoKo questionnaire art style: unDraw-inspired student illustration, thin 2px dark outline #2D2D2D on the character, flat color fills, minimal dot eyes, natural dark hair, simplified hands. Use a young Strategist student with light peach skin and a neat dark bob. Body faces slightly inward-left toward the large letter. Left arm holds a clipboard close to the torso, with the clipboard angled slightly outward-left so the page feels readable. Right hand marks the top of the clipboard with a pen. Use the Conventional results color #81D4FA clearly in the vest and notebook accents: white long-sleeve shirt, sky-blue vest, dark trousers or skirt, dark shoes. Keep props minimal — clipboard as hero prop and pen as the only support prop. No stacks of boxes, no extra office clutter, no white cutout around the character."
 }

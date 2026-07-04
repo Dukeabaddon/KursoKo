@@ -1,22 +1,22 @@
 {
   "project": "KursoKo",
   "schema_version": 2,
-  "option": "1-faithful-reference",
-  "asset_set": "RIASEC sticker — letter A (Artistic / The Creator)",
-  "reference_match": {
-    "frame_border": "#B39DDB lavender",
-    "clouds": "purple lavender — not teal",
-    "letter_fill": "#FFD54F"
-  },
+  "mode": "questionnaire-sticker-hybrid",
+  "asset_set": "RIASEC landing sticker — Artistic / A / The Creator",
   "deliverable": {
     "width_px": 512,
     "height_px": 512,
-    "format": "PNG-24 with alpha channel",
-    "safe_padding_px": 24
+    "format": "PNG-24",
+    "background_fill": "#FDFCF8"
+  },
+  "visual_lock": {
+    "keep": "same current sticker composition and border shape: upright rounded-square frame, large A on left, small A badge bottom-right",
+    "frame_border": "#B39DDB",
+    "letter_fill": "#FFD54F"
   },
   "generation": {
-    "chatgpt_note": "Fresh chat per letter. Match original A sticker — purple clouds, yellow letter; only update character to Creator style.",
-    "negative_prompt": "letter R I S E C, teal green clouds, wrench, skewed frame, purple beret boy, white sclera, full canvas black outside border, thick white mat around entire icon"
+    "chatgpt_note": "Fresh chat. Keep the existing A sticker layout; only update the character inside to questionnaire-style art.",
+    "negative_prompt": "transparent png, black background fill, dark interior, clouds, purple beret, wrench, magnifying glass, megaphone, anime eyes, white sticker cutout around character, blue or purple hair, changing border shape"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — ARTISTIC LETTER A ONLY. Large letter left MUST be capital A not any other. Small A badge bottom-right. Match original KursoKo A sticker faithfully: axis-aligned rounded square squircle, lavender border hex B39DDB, black interior. Soft purple lavender cloud blobs on black like original A reference — important: purple clouds not teal-green clouds. Large bold capital A left, bright yellow fill hex FFD54F, dark outline, white offset on letter. Icons: small easel with landscape, yellow crayon pencil, two music notes, pink heart, yellow sparkles. TRANSPARENCY: true PNG alpha outside border. CHARACTER REFRESH ONLY — replace beret boy: young creative student warm tan skin, wavy auburn hair, lavender headband, lineless Memphis, solid black oval bead eyes no white sclera. White tee, open yellow overshirt hex FFD54F, dark jeans. Paintbrush lavender handle, flat palette. No beret. Not anime."
+  "prompt_for_image_ai": "Create a 512 by 512 flat vector landing sticker for the Artistic RIASEC type. Keep the current sticker composition exactly: upright rounded-square border frame, large capital A on the left, small circular A badge at bottom-right. Keep the large A treatment with its bold dark outline and current sticker-style separation. Fill the full canvas and the inside of the frame with KursoKo landing paper color #FDFCF8 — no transparency, no black fill, no purple cloud backdrop. Replace only the character with KursoKo questionnaire art style: unDraw-inspired student illustration, thin 2px dark outline #2D2D2D on the character, flat color fills, minimal dot eyes, natural auburn-brown hair, simplified hands. Use a young Creator student with warm tan skin and wavy auburn hair tied back by a lavender headband. Body faces slightly inward-left toward the large letter. Right hand raises a paintbrush above the shoulder angled inward-left. Left forearm supports a flat palette across the torso, with the palette surface facing slightly outward-left. Use the Artistic results color #FFD54F strongly in the overshirt and accents: white tee, open yellow overshirt, dark jeans, white sneakers. Keep props minimal — paintbrush and palette only. No beret, no easel, no floating music-note clutter, no white cutout around the character."
 }

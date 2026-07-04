@@ -108,7 +108,7 @@
 
 /* Career rank slanted bands — skew splash (constant angle at any card height) */
 .results-fold .results-career-card.results-surface {
-  background: transparent;
+  background: var(--results-surface);
 }
 
 .results-fold .results-career-card {
@@ -143,6 +143,7 @@
 
 .results-fold .results-career-card-header {
   position: relative;
+  overflow: hidden;
   z-index: 1;
 }
 

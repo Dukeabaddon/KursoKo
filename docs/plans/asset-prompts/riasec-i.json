@@ -1,22 +1,22 @@
 {
   "project": "KursoKo",
   "schema_version": 2,
-  "option": "1-faithful-reference",
-  "asset_set": "RIASEC sticker — letter I (Investigative / The Pathfinder)",
-  "reference_match": {
-    "frame_border": "#B39DDB lavender",
-    "clouds": "mint pale teal-green",
-    "letter_fill": "#6E4FB8 serif I"
-  },
+  "mode": "questionnaire-sticker-hybrid",
+  "asset_set": "RIASEC landing sticker — Investigative / I / The Pathfinder",
   "deliverable": {
     "width_px": 512,
     "height_px": 512,
-    "format": "PNG-24 with alpha channel",
-    "safe_padding_px": 24
+    "format": "PNG-24",
+    "background_fill": "#FDFCF8"
+  },
+  "visual_lock": {
+    "keep": "same current sticker composition and border shape: upright rounded-square frame, large serif I on left, small I badge bottom-right",
+    "frame_border": "#B39DDB",
+    "letter_fill": "#6E4FB8"
   },
   "generation": {
-    "chatgpt_note": "Fresh chat per letter. Match original I sticker layout and colors; only update character to Pathfinder style.",
-    "negative_prompt": "letter R A S E C, wrench, bolt, gear, skewed frame, white sclera, lab coat only boy, full canvas black outside border, thick white mat around entire icon"
+    "chatgpt_note": "Fresh chat. Keep the existing I sticker layout; only update the character inside to questionnaire-style art.",
+    "negative_prompt": "transparent png, black background fill, dark interior, clouds, lab coat, wrench, paintbrush, palette, anime eyes, white sticker cutout around character, yellow overshirt, purple hair, changing border shape"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — INVESTIGATIVE LETTER I ONLY. Large letter left MUST be capital serif letter I not R or any other. Small I badge bottom-right. Match original KursoKo I sticker faithfully: axis-aligned rounded square squircle, lavender border hex B39DDB, black interior. Mint pale teal-green soft cloud blobs on black like original I reference — not purple clouds. Large bold serif capital I left, purple fill hex 6E4FB8, dark outline, white offset on letter. Icons: yellow lightbulb, atom, question marks, green liquid beaker, microscope, clipboard with bar chart no text. TRANSPARENCY: true PNG alpha outside border, not full-canvas black. CHARACTER REFRESH ONLY — replace lab-coat boy: young woman light peach skin, dark ponytail, lineless Memphis, solid black oval bead eyes no white sclera. White blouse, deep purple cardigan hex 4B2C7F with teal buttons — not white lab coat. Magnifying glass with teal glint, open notebook. Not wrench. Not anime."
+  "prompt_for_image_ai": "Create a 512 by 512 flat vector landing sticker for the Investigative RIASEC type. Keep the current sticker composition exactly: upright rounded-square border frame, large serif capital I on the left, small circular I badge at bottom-right. Keep the large I treatment with its bold dark outline and current sticker-style separation. Fill the full canvas and the entire inside of the frame with KursoKo landing paper color #FDFCF8 — no transparency, no black fill, no cloud backdrop. Replace only the character with KursoKo questionnaire art style: unDraw-inspired student illustration, thin 2px dark outline #2D2D2D on the character, flat color fills, minimal dot eyes, natural dark hair, simplified hands. Use a young Pathfinder student with light peach skin and dark brown hair in a low ponytail. Body faces slightly inward-left toward the large letter. Right hand raises a magnifying glass near the face, angled inward-left. Left hand holds a notebook close to the torso with its front edge facing slightly left. Use the Investigative results color #6E4FB8 clearly in the outfit and accents: white blouse, deep purple cardigan family, dark trousers, dark shoes. Keep props minimal — magnifying glass as hero prop and notebook as the only support prop. No lab coat, no flasks, no microscope clutter, no white cutout around the character."
 }

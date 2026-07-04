@@ -1,22 +1,22 @@
 {
   "project": "KursoKo",
   "schema_version": 2,
-  "option": "1-faithful-reference",
-  "asset_set": "RIASEC sticker — letter R (Realistic / The Builder)",
-  "reference_match": {
-    "frame_border": "#B39DDB lavender",
-    "clouds": "teal-green mint #4DB6AC",
-    "letter_fill": "#4DB6AC"
-  },
+  "mode": "questionnaire-sticker-hybrid",
+  "asset_set": "RIASEC landing sticker — Realistic / R / The Builder",
   "deliverable": {
     "width_px": 512,
     "height_px": 512,
-    "format": "PNG-24 with alpha channel",
-    "safe_padding_px": 24
+    "format": "PNG-24",
+    "background_fill": "#FDFCF8"
+  },
+  "visual_lock": {
+    "keep": "same current sticker composition and border shape: upright rounded-square frame, big R on left, small R badge bottom-right",
+    "frame_border": "#B39DDB",
+    "letter_fill": "#4DB6AC"
   },
   "generation": {
-    "chatgpt_note": "Fresh chat per letter. Match original R sticker layout and colors; only update character to Builder style.",
-    "negative_prompt": "letter I A S E C, skewed frame, magnifying glass, lab coat, paintbrush, megaphone, white sclera, hard hat, overalls, full canvas black outside border, thick white mat around entire icon"
+    "chatgpt_note": "Fresh chat. Keep the existing R sticker layout; only update the character inside to questionnaire-style art.",
+    "negative_prompt": "transparent png, black background fill, dark interior, clouds, hard hat, overalls, lab coat, paintbrush, megaphone, anime eyes, white sticker cutout around character, purple hair, changing border shape"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — REALISTIC LETTER R ONLY. Large letter left MUST be capital R not any other letter. Small R badge bottom-right. Match original KursoKo R sticker composition faithfully: axis-aligned rounded square squircle frame, lavender purple border hex B39DDB, solid black interior. Soft mint teal-green cloud blobs hex 4DB6AC on black — same cloud style as original R reference. Large bold capital R left, teal fill hex 4DB6AC, thick dark outline, white offset stroke on letter only. Icons: silver wrench, bolt, nut, purple gear, yellow sparkles. TRANSPARENCY: true PNG alpha outside lavender border — checkerboard empty, not full-canvas black square. CHARACTER REFRESH ONLY — replace old boy with hard hat and overalls: young man medium warm beige skin, short curly dark brown hair, lineless Corporate Memphis flat vector, no black outline on body. Solid black vertical oval bead eyes, no white sclera. White tee, teal utility vest hex 4DB6AC with lavender pocket stripe, dark trousers. Wrench with lavender grip, small red toolbox. No hard hat, no overalls. Not anime."
+  "prompt_for_image_ai": "Create a 512 by 512 flat vector landing sticker for the Realistic RIASEC type. Keep the current sticker composition exactly: upright rounded-square border frame, large capital R on the left, small circular R badge at bottom-right. Keep the large R treatment with its bold dark outline and current sticker-style separation. Fill the entire canvas and the inside of the frame with KursoKo landing paper color #FDFCF8 — do not use transparency, do not use black fill, and do not add dark-mode styling. Replace only the character with KursoKo questionnaire art style: unDraw-inspired student illustration, thin 2px dark outline #2D2D2D on the character, flat color fills, minimal dot eyes, natural dark hair, simplified hands. Use a young student builder with medium warm beige skin and short curly dark brown hair. Body faces slightly inward-left toward the large letter. Right hand holds a wrench upright angled slightly inward-left. Left hand lowers a compact red toolbox beside the hip. Outfit uses the Realistic results color #4DB6AC as the main accent: white tee, teal utility vest with a small lavender pocket stripe, dark trousers, dark sneakers. Keep supporting props minimal — at most one small bolt or gear if needed. No hard hat, no overalls, no white die-cut cutout around the character, no extra clutter icons."
 }

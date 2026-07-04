@@ -1,28 +1,31 @@
 {
-  "$comment": "v2.4 — Option 1 Faithful: match original placeholder frame, border, clouds, letter colors per letter; only character art refreshes",
+  "$comment": "v2.5 — landing RIASEC stickers keep current sticker composition but switch to questionnaire-style characters and landing paper fill",
   "schema_version": 2,
-  "option": "1-faithful-reference",
-  "transparency_rules": {
-    "inside_frame": "solid black #000000 within icon border",
-    "outside_frame": "true PNG alpha — not full-canvas black square",
-    "note": "original placeholders shipped with black matte; regenerate with alpha when possible"
+  "mode": "questionnaire-sticker-hybrid",
+  "global_rules": {
+    "composition": "keep the current landing sticker layout — axis-aligned rounded-square border, large letter on the left, one character on the right, small corner badge bottom-right",
+    "background_fill": "full canvas filled with landing paper color #FDFCF8 — no transparency required, no black interior fill, no dark-mode treatment",
+    "character_style": "match KursoKo questionnaire art style: unDraw-inspired student character, thin 2px dark outline #2D2D2D on the character only, flat fills, minimal dot eyes, natural hair colors",
+    "outline_discipline": "large letter may keep its current dark outline and white separation; character keeps thin dark outline; supporting props stay simpler than the character and should not gain thick sticker cutouts",
+    "prop_density": "minimal — one hero prop and at most one small support prop/icon",
+    "facing": "characters angle slightly inward-left toward the large letter for consistency",
+    "forbidden": [
+      "transparent png requirement",
+      "black fill inside the frame",
+      "cloud blob backdrops",
+      "white sticker cutout around the character",
+      "anime eyes",
+      "unnatural purple or blue hair",
+      "extra floating clutter",
+      "changing the border shape or overall sticker composition"
+    ]
   },
-  "frame_global": {
-    "shape": "axis-aligned rounded square squircle — no skew, no slant",
-    "corner_badge": "small circular letter bottom-right",
-    "layout": "large letter left, character right, theme icons floating"
-  },
-  "per_letter_frame_and_clouds": {
-    "R": { "frame_border": "#B39DDB", "clouds": "teal-green #4DB6AC mint blobs on black" },
-    "I": { "frame_border": "#B39DDB", "clouds": "mint pale teal-green blobs on black" },
-    "A": { "frame_border": "#B39DDB", "clouds": "purple lavender blobs on black — not teal" },
-    "S": { "frame_border": "#B39DDB", "clouds": "purple and soft yellow two-tone blobs on black" },
-    "E": { "frame_border": "#FF8A65", "clouds": "yellow and salmon peach blobs on black — E uses coral frame like reference" },
-    "C": { "frame_border": "#B39DDB", "clouds": "light blue and pale lavender blobs on black" }
-  },
-  "eyes_global": {
-    "style": "solid black vertical oval bead eyes — no white sclera",
-    "forbidden": ["white eyeballs", "anime glints", "pupils with sclera"]
-  },
-  "character_refresh_only": "lineless Corporate Memphis cast — wardrobe from share archetypes, not original chibi boys"
+  "results_color_map": {
+    "R": "#4DB6AC",
+    "I": "#6E4FB8",
+    "A": "#FFD54F",
+    "S": "#9575CD",
+    "E": "#FF8A65",
+    "C": "#81D4FA"
+  }
 }

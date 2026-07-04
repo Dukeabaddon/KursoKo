@@ -146,7 +146,7 @@ const ClickSpark = ({
 
   return (
     <div
-      className={`relative h-full w-full ${className}`.trim()}
+      className={`relative ${className}`.trim()}
       onClick={handleClick}
     >
       <canvas
