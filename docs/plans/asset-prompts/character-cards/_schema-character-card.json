@@ -1,57 +1,36 @@
 {
-  "$comment": "KursoKo share character card — v1 schema for 6 RIASEC archetype exports",
-  "schema_version": 1,
+  "$comment": "KursoKo share character card — v2: no white sticker cutout, fully transparent interior",
+  "schema_version": 2,
   "asset_set": "Results share collectible — one PNG per primary RIASEC archetype",
-  "required_blocks": [
-    "character_card",
-    "deliverable",
-    "art_style",
-    "border_frame",
-    "color",
-    "character",
-    "pose",
-    "clothes",
-    "subject",
-    "composition",
-    "technical",
-    "generation",
-    "prompt_for_image_ai"
-  ],
   "global_rules": {
     "figure": "full-body young adult — head to feet visible inside frame",
-    "style": "flat vector illustration, Corporate Memphis–inspired, lineless — no ink outline on figure; shapes defined by flat color fills and minimal side cel-shade only",
-    "face": "minimal friendly face — small dot eyes, tiny nose tick, simple curved mouth; not photorealistic",
-    "background": "fully transparent PNG outside the border stroke — no white fill, no paper color, no floor box, no gradient backdrop",
-    "border": "wonky skewed rounded quadrilateral frame — medium-weight solid stroke in RIASEC primary accent; interior transparent except character and props",
-    "locale": "neutral global — SHS to college age, diverse cast across the six cards",
-    "forbidden_on_image": [
-      "readable words or numbers",
-      "RIASEC letter glyph",
-      "rectangular axis-aligned card border",
-      "photorealistic render",
-      "3D clay render",
-      "anime cel with heavy black outline",
-      "white or cream background fill",
-      "drop shadow on canvas edge",
-      "watermark or logo"
+    "style": "lineless flat vector Corporate Memphis — solid color fills only, no ink outline on figure",
+    "face": "minimal dot eyes, tiny nose tick, simple curved mouth",
+    "background": "fully transparent PNG inside AND outside border — only border stroke, figure, and up to two small props",
+    "border": "wonky skewed rounded quadrilateral — solid accent stroke only, no white offset, no interior fill",
+    "props": "maximum two small theme props per card — no large RIASEC letters, no landing-style icon clutter",
+    "forbidden_global": [
+      "white sticker cutout outline",
+      "white die-cut halo around figure or frame",
+      "black fill inside border",
+      "cloud blobs inside border",
+      "large RIASEC letter glyph",
+      "corner letter badge",
+      "readable text or numbers",
+      "axis-aligned rectangle border",
+      "photorealistic",
+      "3D render",
+      "anime heavy black outline"
     ],
     "size_px": "640x640",
-    "output_dir": "src/assets/characters/",
-    "naming": "{archetype_id}.png — builder, pathfinder, creator, guardian, visionary, strategist"
-  },
-  "border_frame_taxonomy": {
-    "shape_name": "wonky skewed rounded quadrilateral",
-    "plain_language": "A soft sticker-like frame that is NOT a straight rectangle — left edge nearly vertical, top edge slopes gently down left-to-right, right edge tapers inward toward the top, bottom edge slopes gently up left-to-right; all four corners heavily rounded like a inflated bubble",
-    "stroke": "solid 5px equivalent at 640px scale, no interior fill",
-    "character_placement": "figure offset toward the right half of the frame, vertical center or slightly low, leaving breathing room on the left",
-    "per_type_variation": "Each RIASEC type uses the same frame family but a unique skew direction or corner emphasis so cards feel related yet distinct"
+    "generation_tip": "fresh chat per archetype — models blend casts and props across letters"
   },
   "riasec_palette": {
-    "R": { "type": "Realistic", "accent": "#4DB6AC", "secondary": "#9575CD", "archetype": "The Builder" },
-    "I": { "type": "Investigative", "accent": "#4B2C7F", "secondary": "#4DB6AC", "archetype": "The Pathfinder" },
-    "A": { "type": "Artistic", "accent": "#FFD54F", "secondary": "#9575CD", "archetype": "The Creator" },
-    "S": { "type": "Social", "accent": "#9575CD", "secondary": "#4DB6AC", "archetype": "The Guardian" },
-    "E": { "type": "Enterprising", "accent": "#FF8A65", "secondary": "#FFD54F", "archetype": "The Visionary" },
-    "C": { "type": "Conventional", "accent": "#81D4FA", "secondary": "#4B2C7F", "archetype": "The Strategist" }
+    "R": { "accent": "#4DB6AC", "secondary": "#9575CD", "archetype": "The Builder" },
+    "I": { "accent": "#4B2C7F", "secondary": "#4DB6AC", "archetype": "The Pathfinder" },
+    "A": { "accent": "#FFD54F", "secondary": "#9575CD", "archetype": "The Creator" },
+    "S": { "accent": "#9575CD", "secondary": "#4DB6AC", "archetype": "The Guardian" },
+    "E": { "accent": "#FF8A65", "secondary": "#FFD54F", "archetype": "The Visionary" },
+    "C": { "accent": "#81D4FA", "secondary": "#4B2C7F", "archetype": "The Strategist" }
   }
 }

@@ -1,122 +1,22 @@
 {
   "project": "KursoKo",
-  "schema_version": 1,
+  "schema_version": 2,
   "asset_set": "Share character card — The Strategist (Conventional / C)",
   "character_card": {
     "archetype_id": "strategist",
     "archetype_name": "The Strategist",
     "riasec_code": "C",
-    "riasec_type": "Conventional",
-    "tagline": "You bring order to complexity.",
-    "card_label": "THE STRATEGIST"
+    "riasec_type": "Conventional"
   },
-  "deliverable": {
-    "filename": "src/assets/characters/strategist.png",
-    "width_px": 640,
-    "height_px": 640,
-    "aspect_ratio": "1:1",
-    "background": "fully transparent PNG — alpha outside border stroke only",
-    "safe_padding_px": 32
-  },
-  "art_style": {
-    "medium": "flat vector illustration",
-    "reference_description": "Modern Corporate Memphis edu illustration — lineless flat fills, organized student with checklist energy matching clipboard survey style",
-    "line_weight_px": 0,
-    "outline": "none on figure",
-    "fill": "solid flat color with minimal cel-shade on vest",
-    "mood": "calm, precise, dependable",
-    "forbidden": [
-      "black ink outline on body",
-      "readable text",
-      "letter C",
-      "straight rectangle border",
-      "white background fill",
-      "photorealistic",
-      "3D render",
-      "boring grey office cubicle"
-    ]
-  },
-  "border_frame": {
-    "shape": "wonky skewed rounded quadrilateral",
-    "geometry": {
-      "left_edge": "most vertical edge of the set — calm stability",
-      "top_edge": "slopes down 3 degrees left to right",
-      "right_edge": "subtle inward taper",
-      "bottom_edge": "slopes up 2 degrees left to right — most level bottom edge",
-      "corner_radius": "large rounded corners but slightly tighter than Creator card"
-    },
-    "stroke_hex": "#81D4FA",
-    "stroke_weight_px": 5,
-    "interior_fill": "transparent",
-    "exterior": "fully transparent alpha",
-    "unique_skew_note": "most balanced frame — order within playful asymmetry"
-  },
-  "color": {
-    "riasec_code": "C",
-    "primary_accent": {
-      "hex": "#81D4FA",
-      "use": "border stroke, vest, clipboard board edge"
-    },
-    "secondary_accent": {
-      "hex": "#4B2C7F",
-      "use": "pen cap, folder tab, checkmark icons"
-    },
-    "garment_neutrals": ["#FFFFFF", "#2D2D2D"],
-    "skin": {
-      "tone": "light peach",
-      "hex_approx": "#F0C9A8"
-    }
-  },
-  "character": {
-    "presentation": "young woman",
-    "age": "SHS to college",
-    "build": "neat upright posture",
-    "hair": "dark hair in neat bob",
-    "face": "minimal — dot eyes looking at clipboard, small satisfied smile",
-    "diversity_note": "distinct from other five archetype cards"
-  },
-  "pose": {
-    "stance": "full body standing straight",
-    "action": "holding purple clipboard with checklist and pen — four teal checkmarks, no words",
-    "facing": "slight three-quarter, attentive downward glance at list",
-    "energy": "organizing, planning, getting things right"
-  },
-  "clothes": {
-    "top": {
-      "garment": "white long-sleeve shirt under sky-blue vest",
-      "primary_hex": "#81D4FA",
-      "detail": "deep purple pen in chest pocket"
-    },
-    "bottom": {
-      "garment": "dark straight trousers",
-      "color_hex": "#2D2D2D"
-    },
-    "footwear": {
-      "garment": "simple black shoes",
-      "color_hex": "#2D2D2D"
-    }
-  },
-  "subject": {
-    "scene_narrative": "Organized student reviewing a checklist inside a playful sky-blue skewed sticker frame",
-    "hero_prop": "clipboard with four purple checkmarks on white paper — no readable text",
-    "supporting_props": ["slim purple pen", "two stacked folder tabs behind leg in purple"],
-    "environment": "none — transparent outside border only",
-    "symbolic": false
-  },
-  "composition": {
-    "layout": "wonky frame centered; figure offset right, clipboard as focal center mass",
-    "camera": "eye-level full-body",
-    "negative_space": "transparent outside sky-blue border",
-    "thumbnail_test": "blue skewed frame + clipboard readable at 120px"
-  },
-  "technical": {
-    "export": "PNG-24 alpha",
-    "max_file_kb": 400,
-    "crisp_edges": true
+  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG-24 alpha" },
+  "transparency": {
+    "inside_border": "fully transparent — no black, no clouds, no floor",
+    "outside_border": "fully transparent alpha",
+    "visible_layers": "sky-blue border stroke, figure, up to two props only"
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Ideogram", "Midjourney v6"],
-    "negative_prompt": "straight rectangle border, white background, black outline, photorealistic, text on paper, letter C, anime, office cubicle, watermark, numbers on checklist"
+    "chatgpt_note": "Fresh chat per archetype.",
+    "negative_prompt": "white sticker cutout, white outline, black interior, clouds, letter C, file box, folder stack, wrench, objects only no person, photorealistic, readable checklist"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, fully transparent PNG outside frame. Wonky skewed rounded quadrilateral border — NOT a straight rectangle: left edge nearly perfectly vertical for stability, top slopes down 3 degrees left-to-right, right edge subtle inward taper, bottom nearly level with 2 degree upslope, all corners rounded but slightly tighter than other cards. Border stroke sky blue #81D4FA, 5px solid, transparent interior. Lineless Corporate Memphis style — no black outlines on figure, flat fills, minimal cel-shade on sky-blue vest like a professional student survey illustration. Young woman, SHS-college, light peach skin, neat dark bob haircut, minimal dot eyes glancing at clipboard, small satisfied smile. White long-sleeve shirt, sky-blue #81D4FA vest, deep purple #4B2C7F pen in pocket, dark trousers, black shoes. Full body standing neat posture, holding clipboard with four purple checkmark icons and no readable text or numbers, pen in other hand. Two purple folder tabs visible near leg. Figure off-center right inside frame. Calm organized strategist energy. NO text, NO letters, NO background fill — transparent alpha outside sky-blue border."
+  "prompt_for_image_ai": "SUBJECT LOCK — THE STRATEGIST archetype only, Conventional RIASEC type. Human figure required. Flat vector full-body 640 by 640. TRANSPARENCY: transparent checkerboard inside and outside border — NO black fill, NO clouds, NO white die-cut halo. FRAME: wonky skewed rounded quadrilateral, sky blue stroke hex 81D4FA about 5 pixels, left edge nearly vertical, gently rounded corners. CHARACTER off-center right: young woman, light peach skin, neat dark bob, minimal dot eyes glancing at clipboard, small satisfied smile, lineless Memphis. White long-sleeve shirt, sky blue vest hex 81D4FA, deep purple pen hex 4B2C7F in pocket, dark trousers, black shoes. Full body. TWO PROPS ONLY: clipboard with four purple checkmark icons no text, slim purple pen in other hand. No file box, no folder tabs, no text, no letters."
 }

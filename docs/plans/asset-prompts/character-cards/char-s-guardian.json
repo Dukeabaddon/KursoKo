@@ -1,122 +1,22 @@
 {
   "project": "KursoKo",
-  "schema_version": 1,
+  "schema_version": 2,
   "asset_set": "Share character card — The Guardian (Social / S)",
   "character_card": {
     "archetype_id": "guardian",
     "archetype_name": "The Guardian",
     "riasec_code": "S",
-    "riasec_type": "Social",
-    "tagline": "You lift people up and keep communities strong.",
-    "card_label": "THE GUARDIAN"
+    "riasec_type": "Social"
   },
-  "deliverable": {
-    "filename": "src/assets/characters/guardian.png",
-    "width_px": 640,
-    "height_px": 640,
-    "aspect_ratio": "1:1",
-    "background": "fully transparent PNG — alpha outside border stroke only",
-    "safe_padding_px": 32
-  },
-  "art_style": {
-    "medium": "flat vector illustration",
-    "reference_description": "Modern Corporate Memphis edu illustration — lineless flat fills, warm approachable helper energy",
-    "line_weight_px": 0,
-    "outline": "none on figure",
-    "fill": "solid flat color with minimal cel-shade",
-    "mood": "empathetic, welcoming, community-minded",
-    "forbidden": [
-      "black ink outline on body",
-      "readable text",
-      "letter S",
-      "straight rectangle border",
-      "white background fill",
-      "photorealistic",
-      "3D render",
-      "clinical hospital scene"
-    ]
-  },
-  "border_frame": {
-    "shape": "wonky skewed rounded quadrilateral",
-    "geometry": {
-      "left_edge": "soft vertical with inward curve at mid-height",
-      "top_edge": "slopes down 4 degrees left to right",
-      "right_edge": "gentle inward taper",
-      "bottom_edge": "slopes up 3 degrees left to right",
-      "corner_radius": "large rounded corners — welcoming soft envelope shape"
-    },
-    "stroke_hex": "#9575CD",
-    "stroke_weight_px": 5,
-    "interior_fill": "transparent",
-    "exterior": "fully transparent alpha",
-    "unique_skew_note": "frame feels open on the left — space for reaching outward"
-  },
-  "color": {
-    "riasec_code": "S",
-    "primary_accent": {
-      "hex": "#9575CD",
-      "use": "border stroke, cardigan, heart icon accent"
-    },
-    "secondary_accent": {
-      "hex": "#4DB6AC",
-      "use": "supporting hand gesture highlight, small plus-care symbol"
-    },
-    "garment_neutrals": ["#FFFFFF", "#2D2D2D"],
-    "skin": {
-      "tone": "medium brown",
-      "hex_approx": "#C68642"
-    }
-  },
-  "character": {
-    "presentation": "young woman",
-    "age": "SHS to college",
-    "build": "average, open posture",
-    "hair": "black hair in shoulder-length curls",
-    "face": "minimal — warm dot eyes, gentle smile, approachable",
-    "diversity_note": "distinct from other five archetype cards"
-  },
-  "pose": {
-    "stance": "full body standing, one hand extended in welcoming gesture palm up",
-    "action": "other hand holding simple clipboard with abstract checkmarks — no readable text",
-    "facing": "slight three-quarter toward viewer",
-    "energy": "helping and listening"
-  },
-  "clothes": {
-    "top": {
-      "garment": "white tee under lavender cardigan",
-      "primary_hex": "#9575CD",
-      "detail": "teal heart pin on cardigan"
-    },
-    "bottom": {
-      "garment": "dark modest trousers",
-      "color_hex": "#2D2D2D"
-    },
-    "footwear": {
-      "garment": "simple flats",
-      "color_hex": "#2D2D2D"
-    }
-  },
-  "subject": {
-    "scene_narrative": "Social helper student offering support inside a playful lavender skewed sticker frame",
-    "hero_prop": "clipboard with three teal checkmark icons only — no words",
-    "supporting_props": ["small floating heart shape in teal", "subtle speech-bubble shape with no text"],
-    "environment": "none — transparent outside border only",
-    "symbolic": true
-  },
-  "composition": {
-    "layout": "wonky frame centered; figure offset right, extended hand toward left margin inside frame",
-    "camera": "eye-level full-body",
-    "negative_space": "transparent outside lavender border",
-    "thumbnail_test": "lavender skewed frame + open hand gesture readable at 120px"
-  },
-  "technical": {
-    "export": "PNG-24 alpha",
-    "max_file_kb": 400,
-    "crisp_edges": true
+  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG-24 alpha" },
+  "transparency": {
+    "inside_border": "fully transparent — no black, no clouds, no floor",
+    "outside_border": "fully transparent alpha",
+    "visible_layers": "lavender border stroke, figure, up to two props only"
   },
   "generation": {
-    "recommended_models": ["Flux Dev", "DALL-E 3", "Ideogram", "Midjourney v6"],
-    "negative_prompt": "straight rectangle border, white background, black outline, photorealistic, text on clipboard, letter S, hospital background, anime, watermark, sharp square corners"
+    "chatgpt_note": "Fresh chat per archetype.",
+    "negative_prompt": "white sticker cutout, white outline, black interior, clouds, letter S, two people, wrench, paintbrush, photorealistic, readable clipboard text"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, fully transparent PNG outside frame. Wonky skewed rounded quadrilateral border — NOT a straight rectangle: left edge soft vertical with slight inward curve, top slopes down left-to-right, right edge gently tapers inward, bottom slopes up left-to-right, all corners heavily rounded bubble corners. Border stroke lavender #9575CD, 5px solid, transparent interior. Lineless Corporate Memphis style, no black outlines, flat fills. Young woman, SHS-college, medium brown skin, shoulder-length black curls, warm minimal dot eyes and smile. White tee, lavender #9575CD cardigan with small teal heart pin, dark trousers, dark flats. Full body standing, one hand extended welcoming palm up, other hand holding clipboard showing three teal checkmark icons only with no readable text. Small teal heart and empty speech bubble shape floating nearby. Figure off-center right, hand reaching left inside frame. Empathetic guardian energy. NO text, NO letters, NO background fill — transparent outside lavender border."
+  "prompt_for_image_ai": "SUBJECT LOCK — THE GUARDIAN archetype only, Social RIASEC type. Single person only, NOT two kids. Flat vector full-body 640 by 640. TRANSPARENCY: transparent checkerboard inside and outside border — NO black fill, NO clouds, NO white die-cut outline. FRAME: wonky skewed rounded quadrilateral, lavender stroke hex 9575CD about 5 pixels, rounded bubble corners. CHARACTER off-center right: young woman, medium brown skin, shoulder-length black curls, minimal warm dot eyes and gentle smile, lineless Memphis. White tee, open lavender cardigan hex 9575CD with small teal heart pin on lapel, dark trousers, dark flats. Full body. Welcoming open hand gesture. TWO PROPS ONLY: clipboard with three teal checkmark icons no text, one small floating teal heart shape. No speech bubble, no text, no letters."
 }

@@ -1,47 +1,22 @@
 {
   "project": "KursoKo",
-  "asset_set": "RIASEC sticker — letter C (Conventional)",
+  "schema_version": 2,
+  "option": "1-faithful-reference",
+  "asset_set": "RIASEC sticker — letter C (Conventional / The Strategist)",
+  "reference_match": {
+    "frame_border": "#B39DDB lavender periwinkle",
+    "clouds": "light blue and pale lavender",
+    "letter_fill": "#81D4FA"
+  },
   "deliverable": {
-    "filename": "src/assets/landing/placeholders/riasec/c.png",
     "width_px": 512,
     "height_px": 512,
-    "aspect_ratio": "1:1",
-    "background": "transparent PNG",
-    "safe_padding_px": 48
+    "format": "PNG-24 with alpha channel",
+    "safe_padding_px": 24
   },
-  "art_direction": {
-    "style": "flat vector sticker, die-cut label, 2-3px dark outline (#2D2D2D)",
-    "mood": "friendly education, career exploration for any age — NOT SaaS, NOT corporate",
-    "reference_sites": ["https://josieai.com", "https://scope.sti.edu"],
-    "reference_vibe": "CreativeHive soft color blobs + flat edu stickers",
-    "match_existing": "Must match approved letter A sticker: same line weight, frame, outline, sticker card style. MUST include a friendly person like R I A S E stickers — not objects-only."
+  "generation": {
+    "chatgpt_note": "Fresh chat per letter. Match original C sticker — blue-lavender clouds, sky-blue C; refresh to Strategist woman.",
+    "negative_prompt": "letter R I A S E, objects only, lavender boy, skewed frame, uniform teal clouds only, white sclera, full canvas black outside border"
   },
-  "subject": {
-    "letter": "C",
-    "riasec_type": "Conventional",
-    "meaning": "Organization, data, detail, planning, structured work",
-    "scene": "Friendly young person (same illustration style as letter A) holding a clipboard with checklist and neat folders at their side — organized, calm, approachable. Optional small calendar or file box nearby. Person is the focal point, not just office props.",
-    "expression": "calm, organized, approachable, slight smile",
-    "must_include": ["human character", "clipboard or checklist", "letter C visible on sticker frame"],
-    "avoid": ["objects-only composition", "no people", "grey corporate office", "clip art folders without a person"]
-  },
-  "palette": {
-    "accent": "#81D4FA",
-    "secondary": "#9575CD",
-    "outline": "#2D2D2D",
-    "card_fill": "#FFFFFF",
-    "forbidden": ["purple-blue SaaS gradient", "neon cyber", "realistic 3D render", "stock photo", "boring grey office"]
-  },
-  "composition": {
-    "layout": "sticker on white rounded rect inside colored border frame — same as letter A",
-    "focal_point": "person with organizational props",
-    "text_on_image": "optional small 'C' bottom corner only — main label lives in HTML"
-  },
-  "technical": {
-    "export": "PNG-24 alpha",
-    "max_file_kb": 150,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
-  },
-  "prompt_for_image_ai": "Flat vector education sticker, RIASEC Conventional type letter C. Same art style as KursoKo letter A sticker: die-cut label, white rounded card, 2px dark outline #2D2D2D, friendly person included (NOT objects-only). Scene: approachable young person holding clipboard with green checkmarks, neat folders or file box nearby, planning/organization theme. Person has calm friendly expression like other RIASEC stickers. Accent sky blue #81D4FA and lavender #9575CD. Simple shapes, no photorealism, no SaaS UI, transparent background, 512x512px, safe margin 48px."
+  "prompt_for_image_ai": "SUBJECT LOCK — CONVENTIONAL LETTER C ONLY. Large letter left MUST be capital C. Small C badge bottom-right. Match original KursoKo C sticker faithfully: axis-aligned rounded square squircle, lavender periwinkle border hex B39DDB, black interior. Light blue and pale lavender two-tone cloud blobs on black like original C reference — not uniform teal-only clouds. Large bubbly capital C left, sky blue fill hex 81D4FA, dark outline, white offset on letter. Icons: tan file box with yellow purple folders, yellow pencil, sparkles. TRANSPARENCY: true PNG alpha outside border. CHARACTER REFRESH REQUIRED human — replace lavender shirt boy: young woman light peach skin, neat dark bob, lineless Memphis, solid black oval bead eyes no white sclera. White long-sleeve shirt, sky blue vest hex 81D4FA, purple pen, clipboard with purple checkmarks no text. Not objects-only. Not anime."
 }

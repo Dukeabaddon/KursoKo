@@ -1,0 +1,28 @@
+{
+  "$comment": "v2.4 — Option 1 Faithful: match original placeholder frame, border, clouds, letter colors per letter; only character art refreshes",
+  "schema_version": 2,
+  "option": "1-faithful-reference",
+  "transparency_rules": {
+    "inside_frame": "solid black #000000 within icon border",
+    "outside_frame": "true PNG alpha — not full-canvas black square",
+    "note": "original placeholders shipped with black matte; regenerate with alpha when possible"
+  },
+  "frame_global": {
+    "shape": "axis-aligned rounded square squircle — no skew, no slant",
+    "corner_badge": "small circular letter bottom-right",
+    "layout": "large letter left, character right, theme icons floating"
+  },
+  "per_letter_frame_and_clouds": {
+    "R": { "frame_border": "#B39DDB", "clouds": "teal-green #4DB6AC mint blobs on black" },
+    "I": { "frame_border": "#B39DDB", "clouds": "mint pale teal-green blobs on black" },
+    "A": { "frame_border": "#B39DDB", "clouds": "purple lavender blobs on black — not teal" },
+    "S": { "frame_border": "#B39DDB", "clouds": "purple and soft yellow two-tone blobs on black" },
+    "E": { "frame_border": "#FF8A65", "clouds": "yellow and salmon peach blobs on black — E uses coral frame like reference" },
+    "C": { "frame_border": "#B39DDB", "clouds": "light blue and pale lavender blobs on black" }
+  },
+  "eyes_global": {
+    "style": "solid black vertical oval bead eyes — no white sclera",
+    "forbidden": ["white eyeballs", "anime glints", "pupils with sclera"]
+  },
+  "character_refresh_only": "lineless Corporate Memphis cast — wardrobe from share archetypes, not original chibi boys"
+}

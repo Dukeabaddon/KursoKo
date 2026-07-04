@@ -18,20 +18,30 @@ Optional: skip steps 3–4 if reusing `src/assets/landing/placeholders/blobs/*.p
 
 ---
 
-## RIASEC stickers (2D)
+## RIASEC landing stickers (2D) — v2.4 Option 1
 
-**Reference:** letter **A** — all others must match.
+**Schema:** `_schema-riasec-landing-v2.json`  
+**Mode:** Faithful to original `placeholders/riasec/*.png` — frame, border, clouds, letter colors per letter. **Only character art** refreshes (lineless Memphis + bead eyes).
 
-| Letter | JSON | Drop file |
-|--------|------|-----------|
-| R | `riasec-r.json` | `placeholders/riasec/r.png` |
-| I | `riasec-i.json` | `placeholders/riasec/i.png` |
-| A | `riasec-a.json` | `placeholders/riasec/a.png` |
-| S | `riasec-s.json` | `placeholders/riasec/s.png` |
-| E | `riasec-e.json` | `placeholders/riasec/e.png` |
-| C | `riasec-c.json` | `placeholders/riasec/c.png` |
+| Letter | Frame | Clouds | Letter fill |
+|--------|-------|--------|-------------|
+| R | Lavender | Teal-green | `#4DB6AC` |
+| I | Lavender | Mint teal | `#6E4FB8` |
+| A | Lavender | **Purple** | `#FFD54F` |
+| S | Lavender | Purple + yellow | `#9575CD` |
+| E | **Coral** | Peach + yellow | `#FF8A65` |
+| C | Lavender | Blue + lavender | `#81D4FA` |
 
-**Specs:** 512×512 PNG, transparent, 48px safe padding.
+| Letter | Archetype | JSON |
+|--------|-----------|------|
+| R | The Builder | `riasec-r.json` |
+| I | The Pathfinder | `riasec-i.json` |
+| A | The Creator | `riasec-a.json` |
+| S | The Guardian | `riasec-s.json` |
+| E | The Visionary | `riasec-e.json` |
+| C | The Strategist | `riasec-c.json` |
+
+**Output:** `placeholders/riasec/{r,i,a,s,e,c}.png` — 512×512, tight crop to border.
 
 ---
 

@@ -1,45 +1,22 @@
 {
   "project": "KursoKo",
-  "asset_set": "RIASEC sticker — letter E (Enterprising)",
+  "schema_version": 2,
+  "option": "1-faithful-reference",
+  "asset_set": "RIASEC sticker — letter E (Enterprising / The Visionary)",
+  "reference_match": {
+    "frame_border": "#FF8A65 coral — E exception, not lavender",
+    "clouds": "yellow and salmon peach",
+    "letter_fill": "#FF8A65"
+  },
   "deliverable": {
-    "filename": "src/assets/landing/placeholders/riasec/e.png",
     "width_px": 512,
     "height_px": 512,
-    "aspect_ratio": "1:1",
-    "background": "transparent PNG",
-    "safe_padding_px": 48
+    "format": "PNG-24 with alpha channel",
+    "safe_padding_px": 24
   },
-  "art_direction": {
-    "style": "flat vector sticker, die-cut label, 2-3px dark outline (#2D2D2D)",
-    "mood": "friendly education, career exploration for any age — NOT SaaS, NOT corporate",
-    "reference_sites": ["https://josieai.com", "https://scope.sti.edu"],
-    "reference_vibe": "CreativeHive soft color blobs + flat edu stickers",
-    "match_existing": "Must match approved letter A sticker: same line weight, frame, outline, sticker card style"
+  "generation": {
+    "chatgpt_note": "Fresh chat per letter. E uses CORAL frame like original — not lavender. Refresh character to Visionary style.",
+    "negative_prompt": "lavender frame border, teal clouds, letter R I A S C, wrench, skewed frame, teal jacket yellow tee boy, white sclera, full canvas black outside border"
   },
-  "subject": {
-    "letter": "E",
-    "riasec_type": "Enterprising",
-    "meaning": "Leadership, persuasion, business, starting projects, taking initiative",
-    "scene": "Young person with small megaphone OR briefcase with upward arrow flag — energetic but friendly, readable at 120px",
-    "expression": "confident, optimistic, not aggressive corporate"
-  },
-  "palette": {
-    "accent": "#FF8A65",
-    "secondary": "#FFD54F",
-    "outline": "#2D2D2D",
-    "card_fill": "#FFFFFF",
-    "forbidden": ["purple-blue SaaS gradient", "neon cyber", "realistic 3D render", "stock photo", "wall street suit cliché"]
-  },
-  "composition": {
-    "layout": "sticker on white rounded rect inside colored border frame — same as letter A",
-    "focal_point": "center",
-    "text_on_image": "optional small 'E' bottom corner only — main label lives in HTML"
-  },
-  "technical": {
-    "export": "PNG-24 alpha",
-    "max_file_kb": 150,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
-  },
-  "prompt_for_image_ai": "Flat vector education sticker, RIASEC Enterprising type letter E. Same art style as KursoKo letter A sticker: die-cut label, white rounded card, 2px dark outline #2D2D2D. Friendly colorful career education vibe. Scene: teen with megaphone and small briefcase, leadership and initiative theme. Accent coral #FF8A65 and yellow #FFD54F. Simple shapes, no photorealism, no SaaS UI, transparent background, 512x512px, safe margin 48px."
+  "prompt_for_image_ai": "SUBJECT LOCK — ENTERPRISING LETTER E ONLY. Large letter left MUST be capital E. Small E badge bottom-right. Match original KursoKo E sticker faithfully including E-only frame color: axis-aligned rounded square squircle, CORAL SALMON border hex FF8A65 on frame — not lavender — this is the only RIASEC letter with coral border. Black interior. Yellow and salmon peach soft cloud blobs on black like original E — not teal clouds. Large bold capital E left, coral fill hex FF8A65, dark outline, white offset on letter. Icons: glowing lightbulb, gold coins, yellow rising arrow flag, sparkles. TRANSPARENCY: true PNG alpha outside border. CHARACTER REFRESH ONLY — replace teal jacket yellow tee boy: young man light olive skin, short black hair, lineless Memphis, solid black oval bead eyes no white sclera. White collared shirt, coral vest hex FF8A65 with golden arrow lapel pin. Coral megaphone, brown briefcase with yellow arrow flag. Not anime."
 }

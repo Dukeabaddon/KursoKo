@@ -1,45 +1,22 @@
 {
   "project": "KursoKo",
-  "asset_set": "RIASEC sticker — letter R (Realistic)",
+  "schema_version": 2,
+  "option": "1-faithful-reference",
+  "asset_set": "RIASEC sticker — letter R (Realistic / The Builder)",
+  "reference_match": {
+    "frame_border": "#B39DDB lavender",
+    "clouds": "teal-green mint #4DB6AC",
+    "letter_fill": "#4DB6AC"
+  },
   "deliverable": {
-    "filename": "src/assets/landing/placeholders/riasec/r.png",
     "width_px": 512,
     "height_px": 512,
-    "aspect_ratio": "1:1",
-    "background": "transparent PNG",
-    "safe_padding_px": 48
+    "format": "PNG-24 with alpha channel",
+    "safe_padding_px": 24
   },
-  "art_direction": {
-    "style": "flat vector sticker, die-cut label, 2-3px dark outline (#2D2D2D)",
-    "mood": "friendly education, career exploration for any age — NOT SaaS, NOT corporate",
-    "reference_sites": ["https://josieai.com", "https://scope.sti.edu"],
-    "reference_vibe": "CreativeHive soft color blobs + flat edu stickers",
-    "match_existing": "Must match approved letter A sticker: same line weight, frame, outline, sticker card style"
+  "generation": {
+    "chatgpt_note": "Fresh chat per letter. Match original R sticker layout and colors; only update character to Builder style.",
+    "negative_prompt": "letter I A S E C, skewed frame, magnifying glass, lab coat, paintbrush, megaphone, white sclera, hard hat, overalls, full canvas black outside border, thick white mat around entire icon"
   },
-  "subject": {
-    "letter": "R",
-    "riasec_type": "Realistic",
-    "meaning": "Hands-on work — tools, machines, building, physical problem-solving",
-    "scene": "Young person with wrench and gear OR hard hat with small toolbox — simple, readable at 120px width",
-    "expression": "capable, focused, approachable"
-  },
-  "palette": {
-    "accent": "#4DB6AC",
-    "secondary": "#9575CD",
-    "outline": "#2D2D2D",
-    "card_fill": "#FFFFFF",
-    "forbidden": ["purple-blue SaaS gradient", "neon cyber", "realistic 3D render", "stock photo"]
-  },
-  "composition": {
-    "layout": "sticker on white rounded rect inside colored border frame — same as letter A",
-    "focal_point": "center",
-    "text_on_image": "optional small 'R' bottom corner only — main label lives in HTML"
-  },
-  "technical": {
-    "export": "PNG-24 alpha",
-    "max_file_kb": 150,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
-  },
-  "prompt_for_image_ai": "Flat vector education sticker, RIASEC Realistic type letter R. Same art style as KursoKo letter A sticker: die-cut label, white rounded card, 2px dark outline #2D2D2D. Friendly colorful career education vibe. Scene: teen with wrench and gear, hands-on builder theme. Accent teal #4DB6AC and lavender #9575CD. Simple shapes, no photorealism, no SaaS UI, transparent background, 512x512px, safe margin 48px."
+  "prompt_for_image_ai": "SUBJECT LOCK — REALISTIC LETTER R ONLY. Large letter left MUST be capital R not any other letter. Small R badge bottom-right. Match original KursoKo R sticker composition faithfully: axis-aligned rounded square squircle frame, lavender purple border hex B39DDB, solid black interior. Soft mint teal-green cloud blobs hex 4DB6AC on black — same cloud style as original R reference. Large bold capital R left, teal fill hex 4DB6AC, thick dark outline, white offset stroke on letter only. Icons: silver wrench, bolt, nut, purple gear, yellow sparkles. TRANSPARENCY: true PNG alpha outside lavender border — checkerboard empty, not full-canvas black square. CHARACTER REFRESH ONLY — replace old boy with hard hat and overalls: young man medium warm beige skin, short curly dark brown hair, lineless Corporate Memphis flat vector, no black outline on body. Solid black vertical oval bead eyes, no white sclera. White tee, teal utility vest hex 4DB6AC with lavender pocket stripe, dark trousers. Wrench with lavender grip, small red toolbox. No hard hat, no overalls. Not anime."
 }

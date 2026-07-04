@@ -1,45 +1,22 @@
 {
   "project": "KursoKo",
-  "asset_set": "RIASEC sticker — letter I (Investigative)",
+  "schema_version": 2,
+  "option": "1-faithful-reference",
+  "asset_set": "RIASEC sticker — letter I (Investigative / The Pathfinder)",
+  "reference_match": {
+    "frame_border": "#B39DDB lavender",
+    "clouds": "mint pale teal-green",
+    "letter_fill": "#6E4FB8 serif I"
+  },
   "deliverable": {
-    "filename": "src/assets/landing/placeholders/riasec/i.png",
     "width_px": 512,
     "height_px": 512,
-    "aspect_ratio": "1:1",
-    "background": "transparent PNG",
-    "safe_padding_px": 48
+    "format": "PNG-24 with alpha channel",
+    "safe_padding_px": 24
   },
-  "art_direction": {
-    "style": "flat vector sticker, die-cut label, 2-3px dark outline (#2D2D2D)",
-    "mood": "friendly education, career exploration for any age — NOT SaaS, NOT corporate",
-    "reference_sites": ["https://josieai.com", "https://scope.sti.edu"],
-    "reference_vibe": "CreativeHive soft color blobs + flat edu stickers",
-    "match_existing": "Must match approved letter A sticker: same line weight, frame, outline, sticker card style"
+  "generation": {
+    "chatgpt_note": "Fresh chat per letter. Match original I sticker layout and colors; only update character to Pathfinder style.",
+    "negative_prompt": "letter R A S E C, wrench, bolt, gear, skewed frame, white sclera, lab coat only boy, full canvas black outside border, thick white mat around entire icon"
   },
-  "subject": {
-    "letter": "I",
-    "riasec_type": "Investigative",
-    "meaning": "Research, analysis, science, solving puzzles, learning how things work",
-    "scene": "Young person with magnifying glass over simple chart OR small microscope and beaker — readable at 120px",
-    "expression": "curious, thoughtful, not clinical"
-  },
-  "palette": {
-    "accent": "#4B2C7F",
-    "secondary": "#4DB6AC",
-    "outline": "#2D2D2D",
-    "card_fill": "#FFFFFF",
-    "forbidden": ["purple-blue SaaS gradient", "neon cyber", "realistic 3D render", "stock photo"]
-  },
-  "composition": {
-    "layout": "sticker on white rounded rect inside colored border frame — same as letter A",
-    "focal_point": "center",
-    "text_on_image": "optional small 'I' bottom corner only — main label lives in HTML"
-  },
-  "technical": {
-    "export": "PNG-24 alpha",
-    "max_file_kb": 150,
-    "crisp_edges": true,
-    "no_drop_shadow_on_canvas": true
-  },
-  "prompt_for_image_ai": "Flat vector education sticker, RIASEC Investigative type letter I. Same art style as KursoKo letter A sticker: die-cut label, white rounded card, 2px dark outline #2D2D2D. Friendly colorful career education vibe. Scene: teen with magnifying glass and simple data chart, science curiosity theme. Accent purple #4B2C7F and teal #4DB6AC. Simple shapes, no photorealism, no SaaS UI, transparent background, 512x512px, safe margin 48px."
+  "prompt_for_image_ai": "SUBJECT LOCK — INVESTIGATIVE LETTER I ONLY. Large letter left MUST be capital serif letter I not R or any other. Small I badge bottom-right. Match original KursoKo I sticker faithfully: axis-aligned rounded square squircle, lavender border hex B39DDB, black interior. Mint pale teal-green soft cloud blobs on black like original I reference — not purple clouds. Large bold serif capital I left, purple fill hex 6E4FB8, dark outline, white offset on letter. Icons: yellow lightbulb, atom, question marks, green liquid beaker, microscope, clipboard with bar chart no text. TRANSPARENCY: true PNG alpha outside border, not full-canvas black. CHARACTER REFRESH ONLY — replace lab-coat boy: young woman light peach skin, dark ponytail, lineless Memphis, solid black oval bead eyes no white sclera. White blouse, deep purple cardigan hex 4B2C7F with teal buttons — not white lab coat. Magnifying glass with teal glint, open notebook. Not wrench. Not anime."
 }
