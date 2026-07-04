@@ -4,19 +4,24 @@
   "mode": "questionnaire-sticker-hybrid",
   "asset_set": "RIASEC landing sticker — Artistic / A / The Creator",
   "deliverable": {
-    "width_px": 512,
-    "height_px": 512,
+    "width_px": 1024,
+    "height_px": 1024,
     "format": "PNG-24",
-    "background_fill": "#FDFCF8"
+    "background_fill": "#FDFCF8",
+    "sticker_frame_outer_width_px": 780,
+    "sticker_frame_outer_height_px": 640,
+    "size_warning": "Letter A is often generated too wide AND too short — force exact 780×640"
   },
   "visual_lock": {
-    "keep": "same current sticker composition and border shape: upright rounded-square frame, large A on left, small A badge bottom-right",
     "frame_border": "#B39DDB",
-    "letter_fill": "#FFD54F"
+    "letter_fill": "#FFD54F",
+    "letter_style_gold": "R / S / C bold rounded sans block",
+    "frame_size": "780×640 identical on every letter — A must not be wider or shorter",
+    "framing": "waist-up, torso flush to inner bottom border, character fills full frame height"
   },
   "generation": {
-    "chatgpt_note": "Fresh chat. Keep the existing A sticker layout; only update the character inside to questionnaire-style art.",
-    "negative_prompt": "transparent png, black background fill, dark interior, clouds, purple beret, wrench, magnifying glass, megaphone, anime eyes, white sticker cutout around character, blue or purple hair, changing border shape"
+    "chatgpt_note": "Fresh chat. A is the worst offender for size: often too wide and too short. Force frame exactly 780 wide AND 640 tall — same height as R/S/C. Frame border lavender, not yellow.",
+    "negative_prompt": "wide A frame, short A frame, landscape banner, frame wider than 780, frame shorter than 640, yellow frame border, orange frame border, different frame height, serif letter, blocky square A different from R/S/C, floating character, empty gap under waist, full body, shoes, feet, legs, beret, easel, music notes, anime eyes, white sticker cutout, black background, clouds, transparent png"
   },
-  "prompt_for_image_ai": "Create a 512 by 512 flat vector landing sticker for the Artistic RIASEC type. Keep the current sticker composition exactly: upright rounded-square border frame, large capital A on the left, small circular A badge at bottom-right. Keep the large A treatment with its bold dark outline and current sticker-style separation. Fill the full canvas and the inside of the frame with KursoKo landing paper color #FDFCF8 — no transparency, no black fill, no purple cloud backdrop. Replace only the character with KursoKo questionnaire art style: unDraw-inspired student illustration, thin 2px dark outline #2D2D2D on the character, flat color fills, minimal dot eyes, natural auburn-brown hair, simplified hands. Use a young Creator student with warm tan skin and wavy auburn hair tied back by a lavender headband. Body faces slightly inward-left toward the large letter. Right hand raises a paintbrush above the shoulder angled inward-left. Left forearm supports a flat palette across the torso, with the palette surface facing slightly outward-left. Use the Artistic results color #FFD54F strongly in the overshirt and accents: white tee, open yellow overshirt, dark jeans, white sneakers. Keep props minimal — paintbrush and palette only. No beret, no easel, no floating music-note clutter, no white cutout around the character."
+  "prompt_for_image_ai": "Create ONE flat vector landing sticker.\n\nSIZE LOCK — CRITICAL FOR LETTER A (A is often wrongly generated too wide AND too short):\n- Canvas: exactly 1024px wide × 1024px tall. Fill entire canvas with solid paper #FDFCF8. No transparency. No black background.\n- Sticker frame: exactly 780px OUTER WIDTH × 640px OUTER HEIGHT — THE SAME WIDTH AND THE SAME HEIGHT as letters R, S, and C.\n- Do NOT make A wider than R. Do NOT make A shorter than R. Do NOT make a landscape banner. Do NOT make a short wide card.\n- Aspect ratio of the frame is fixed at 780:640.\n- Corner radius ~48px. Border stroke ~10px lavender #B39DDB ONLY — frame border is NOT yellow and NOT orange.\n- Frame centered: left margin 122px, right margin 122px, top margin 192px, bottom margin 192px.\n- Interior fill #FDFCF8.\n\nHEIGHT LOCK: the frame outer height is 640px — identical to R/S/C. Character head sits near the top inner border (~24px padding). Character waist and props are flush to and cropped by the INNER bottom border. Character fills the full interior height — no floating, no short figure with empty paper above and below.\n\nLARGE LETTER LOCK (match gold R, S, C): left half, bold rounded SANS-SERIF block capital A. Fill #FFD54F yellow. Thin white inner offset stroke. Thick dark outer outline #2D2D2D. Letter height about 420px, vertically centered — same letter height as R/S/C. Only the letter is yellow; the frame stays lavender. NOT serif, NOT a different blockier style than R/S/C.\n\nCORNER BADGE: ~56px circle bottom-right inside frame, small capital A, yellow fill on lavender ring, same sans style.\n\nCHARACTER: young Creator, warm tan skin, wavy auburn-brown hair, lavender headband, thin 2px outline #2D2D2D, flat fills, minimal black dot eyes. Faces inward-left toward A. White tee, open yellow overshirt #FFD54F. Right hand: paintbrush at chest/shoulder. Left forearm: flat palette across torso. Waist flush to bottom border.\n\nStyle: KursoKo questionnaire unDraw flat vector. Minimal props. No beret, no easel, no music notes."
 }

@@ -18,24 +18,25 @@ Optional: skip steps 3–4 if reusing `src/assets/landing/placeholders/blobs/*.p
 
 ---
 
-## RIASEC landing stickers (2D) — v2.5 questionnaire-sticker hybrid
+## RIASEC landing stickers (2D) — v2.9 identical width + height
 
 **Schema:** `_schema-riasec-landing-v2.json`  
-**Mode:** Keep the current landing sticker composition, border shape, large letter, and corner badge. Replace only the inside character with questionnaire-style art.
+**Mode:** Every letter uses the **same frame width and height**. Large letters follow R/S/C recipe. Waist-up flush crop.
 
 ### Locked rules
 
 | Rule | Value |
 |------|-------|
-| Canvas fill | Full canvas `#FDFCF8` landing paper |
-| Transparency | Not required |
-| Inside frame | `#FDFCF8` paper fill, **not** black |
-| Character style | Questionnaire-style unDraw flat vector |
-| Outline | Thin `#2D2D2D` outline on **character only** |
-| Eyes | Minimal dot eyes |
-| Facing | Character angles slightly inward-left toward large letter |
-| Props | 1 hero prop + at most 1 support prop |
-| Forbidden | Cloud backdrops, black fill, white sticker cutout, extra clutter |
+| Canvas | Exact **1024×1024**, fill `#FDFCF8` |
+| Sticker frame | Exact **780 wide × 640 tall** on **every** letter (incl. A) |
+| Margins | Left/right **122px**, top/bottom **192px** |
+| Frame border | Lavender `#B39DDB` (E only: coral `#FF8A65`) |
+| Large letter | Bold rounded **sans** — fill + white inner + dark outer `#2D2D2D`; height ~**420px** |
+| Character height | Head near top inner border; waist **flush** to bottom inner border |
+| Letter A | Same **780×640** — never wider, never shorter; frame lavender |
+| Letter I | **Sans** block I — never serif/slab |
+| Letter C clipboard | **Back** faces viewer — not checklist front |
+| Forbidden | Different frame heights, short wide A, serif I, floating gap, full body |
 
 | Letter | Archetype | Results color | JSON |
 |--------|-----------|---------------|------|
