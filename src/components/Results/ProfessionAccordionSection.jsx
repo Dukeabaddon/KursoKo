@@ -101,7 +101,7 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                     <p className="mt-1 text-sm text-landing-muted normal-case">{career.learningPath}</p>
                   </div>
                   <ChevronDown
-                    className={`${hasRankAccent ? 'results-career-card-chevron' : ''} mt-1 h-5 w-5 shrink-0 text-landing-muted transition-transform duration-300 ease-out ${isOpen ? (hasRankAccent ? 'is-open' : 'rotate-180') : ''}`}
+                    className={`${hasRankAccent ? 'results-career-card-chevron' : 'results-accordion-chevron'} mt-1 h-5 w-5 shrink-0 text-landing-muted ${isOpen ? 'is-open' : ''}`}
                     aria-hidden="true"
                   />
                 </div>
@@ -167,7 +167,7 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                 data-open={isOpen ? 'true' : 'false'}
                 aria-hidden={!isOpen}
               >
-                <div>
+                <div className="results-accordion-panel__inner">
                   <div
                     className={
                       isFeaturedCareer
