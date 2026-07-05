@@ -231,12 +231,12 @@
 
 @keyframes assessment-choice-exit-fade {
   from {
-    opacity: 0.45;
-    transform: scale(0.97);
+    opacity: 0.55;
+    transform: scale(0.98);
   }
   to {
     opacity: 0;
-    transform: scale(0.92) translateY(8px);
+    transform: scale(0.96) translateY(6px);
   }
 }
 
@@ -298,7 +298,7 @@
 @keyframes assessment-reveal-up {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -309,25 +309,19 @@
 /* Hidden until scrolled into view (one-time via JS) */
 .assessment-fold .assessment-reveal {
   opacity: 0;
-  transform: translateY(18px);
+  transform: translateY(10px);
 }
 
 .assessment-fold .assessment-reveal.is-visible {
-  animation: assessment-reveal-up 520ms var(--assessment-ease) both;
-}
-
-.assessment-fold .assessment-reveal.is-visible.is-instant {
-  animation: none;
-  opacity: 1;
-  transform: none;
+  animation: assessment-reveal-up 380ms var(--assessment-ease) both;
 }
 
 .assessment-fold .assessment-reveal.is-visible.assessment-reveal-delay-1 {
-  animation-delay: 70ms;
+  animation-delay: 40ms;
 }
 
 .assessment-fold .assessment-reveal.is-visible.assessment-reveal-delay-2 {
-  animation-delay: 140ms;
+  animation-delay: 80ms;
 }
 
 .assessment-fold .assessment-prompt-enter {
@@ -352,15 +346,15 @@
 }
 
 .assessment-fold .assessment-choices-grid.is-exiting .questionnaire-card.selected {
-  animation: assessment-choice-exit-pop 420ms var(--assessment-ease) forwards;
+  animation: assessment-choice-exit-pop 340ms var(--assessment-ease) forwards;
 }
 
 .assessment-fold .assessment-choices-grid.is-exiting .questionnaire-card:not(.selected) {
-  animation: assessment-choice-exit-fade 420ms var(--assessment-ease) forwards;
+  animation: assessment-choice-exit-fade 340ms var(--assessment-ease) forwards;
 }
 
 .assessment-fold .assessment-choices-grid.is-exiting .questionnaire-or-wrap {
-  animation: assessment-or-exit 320ms var(--assessment-ease) forwards;
+  animation: assessment-or-exit 260ms var(--assessment-ease) forwards;
 }
 
 @media (min-width: 640px) {
@@ -415,7 +409,6 @@
   .assessment-fold .assessment-prompt-enter,
   .assessment-fold .assessment-reveal,
   .assessment-fold .assessment-reveal.is-visible,
-  .assessment-fold .assessment-reveal.is-visible.is-instant,
   .assessment-fold .assessment-choices-grid.is-entering .questionnaire-card,
   .assessment-fold .assessment-choices-grid.is-entering .questionnaire-or-wrap,
   .assessment-fold .assessment-choices-grid.is-exiting .questionnaire-card,

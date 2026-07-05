@@ -19,5 +19,5 @@ export const SPARK_BY_RATING = {
   3: SPARK_PURPLE
 }
 
-/** Cinematic easing — matches DESIGN.md assessment motion tokens */
-export const ASSESSMENT_EXIT_MS = 420
+/** Exit duration — keep in sync with assessment exit keyframes in questionnaire/index.css */
+export const ASSESSMENT_EXIT_MS = 340

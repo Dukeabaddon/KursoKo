@@ -3,9 +3,8 @@ import { useEffect } from 'react'
 /**
  * One-time scroll reveal inside the assessment scroll container.
  * Re-runs when resetKey changes (new question) — scroll position should reset first.
- * When instantRef.current is true, skip fade-in (used after Next/Previous transition).
  */
-export function useAssessmentScrollReveal(scrollRef, resetKey, instantRef) {
+export function useAssessmentScrollReveal(scrollRef, resetKey) {
   useEffect(() => {
     const root = scrollRef.current
     if (!root || resetKey == null) return undefined
@@ -14,17 +13,7 @@ export function useAssessmentScrollReveal(scrollRef, resetKey, instantRef) {
 
     const frameId = window.requestAnimationFrame(() => {
       const nodes = root.querySelectorAll('.assessment-reveal')
-
-      if (instantRef?.current) {
-        instantRef.current = false
-        nodes.forEach((node) => {
-          node.classList.remove('is-instant')
-          node.classList.add('is-visible', 'is-instant')
-        })
-        return
-      }
-
-      nodes.forEach((node) => node.classList.remove('is-visible', 'is-instant'))
+      nodes.forEach((node) => node.classList.remove('is-visible'))
 
       observer = new IntersectionObserver(
         (entries) => {
@@ -37,17 +26,26 @@ export function useAssessmentScrollReveal(scrollRef, resetKey, instantRef) {
         },
         {
           root,
-          threshold: 0.18,
-          rootMargin: '0px 0px -8% 0px',
+          threshold: 0.12,
+          rootMargin: '0px 0px -4% 0px',
         },
       )
 
-      nodes.forEach((node) => observer.observe(node))
+      const rootRect = root.getBoundingClientRect()
+      nodes.forEach((node) => {
+        const rect = node.getBoundingClientRect()
+        const inView = rect.bottom > rootRect.top + 8 && rect.top < rootRect.bottom - 8
+        if (inView) {
+          node.classList.add('is-visible')
+        } else {
+          observer.observe(node)
+        }
+      })
     })
 
     return () => {
       window.cancelAnimationFrame(frameId)
       observer?.disconnect()
     }
-  }, [resetKey, scrollRef, instantRef])
+  }, [resetKey, scrollRef])
 }
