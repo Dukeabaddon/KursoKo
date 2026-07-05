@@ -119,33 +119,41 @@
   margin-bottom: clamp(2rem, 5vw, 3rem);
 }
 
-/* Why KursoKo — purple intro band (experiment) */
-.landing-features-intro {
-  max-width: none;
+/* Why KursoKo — full section panel (#features inner) */
+.landing-section--features .landing-section__blobs {
+  display: none;
+}
+
+.landing-features-panel {
   background: var(--color-landing-accent-deep);
   border-radius: 1.25rem;
   padding: clamp(1.5rem, 4vw, 2.5rem);
 }
 
-.landing-features-intro__eyebrow,
-.landing-features-intro__heading,
-.landing-features-intro__lead {
+.landing-features-panel__header {
+  max-width: 40rem;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.landing-features-panel__eyebrow,
+.landing-features-panel__heading,
+.landing-features-panel__lead {
   color: #ffffff;
 }
 
-.landing-features-intro__eyebrow {
-  color: #ffffff;
+.landing-features-panel__eyebrow {
   opacity: 0.92;
 }
 
-.landing-features-intro__lead {
+.landing-features-panel__lead {
   color: rgba(255, 255, 255, 0.92);
   max-width: 42rem;
 }
 
 @media (min-width: 640px) {
-  .landing-features-intro {
+  .landing-features-panel {
     border-radius: 1.5rem;
+    padding: clamp(2rem, 4vw, 3rem);
   }
 }
 
