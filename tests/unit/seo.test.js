@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { FAQS } from '../../src/components/landing/faq/faq.data.js'
 import { buildHomepageJsonLd } from '../../src/utils/seoSchema.js'
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '../../src/config/site.js'
+import { resolveSiteUrl } from '../../scripts/resolve-site-url.mjs'
 
 const ROOT = join(import.meta.dirname, '../..')
 const PUBLIC = join(ROOT, 'public')
@@ -23,18 +24,34 @@ describe('SEO schema', () => {
   })
 })
 
+describe('resolveSiteUrl', () => {
+  it('ignores placeholder VITE_SITE_URL and uses VERCEL_URL', () => {
+    const prevSite = process.env.VITE_SITE_URL
+    const prevVercel = process.env.VERCEL_URL
+    process.env.VITE_SITE_URL = 'https://YOUR-DOMAIN.com'
+    process.env.VERCEL_URL = 'kurso-ko.vercel.app'
+    expect(resolveSiteUrl()).toBe('https://kurso-ko.vercel.app')
+    process.env.VITE_SITE_URL = prevSite
+    process.env.VERCEL_URL = prevVercel
+  })
+})
+
 describe('SEO public artifacts', () => {
   it('robots.txt allows AI crawlers and lists sitemap', () => {
     const robots = readFileSync(join(PUBLIC, 'robots.txt'), 'utf8')
+    const sitemap = readFileSync(join(PUBLIC, 'sitemap.xml'), 'utf8')
+    const locMatch = sitemap.match(/<loc>([^<]+)<\/loc>/)
+    expect(locMatch).not.toBeNull()
+    const homepageUrl = locMatch[1].replace(/\/$/, '')
     expect(robots).toMatch(/GPTBot/)
     expect(robots).toMatch(/ClaudeBot/)
     expect(robots).toMatch(/PerplexityBot/)
-    expect(robots).toMatch(/Sitemap: https:\/\/kursoko\.me\/sitemap\.xml/)
+    expect(robots).toContain(`Sitemap: ${homepageUrl}/sitemap.xml`)
   })
 
-  it('sitemap.xml includes homepage URL', () => {
+  it('sitemap.xml includes a valid homepage URL', () => {
     const sitemap = readFileSync(join(PUBLIC, 'sitemap.xml'), 'utf8')
-    expect(sitemap).toContain('<loc>https://kursoko.me/</loc>')
+    expect(sitemap).toMatch(/<loc>https:\/\/[^<]+\/<\/loc>/)
   })
 
   it('llms.txt documents KursoKo for agents', () => {

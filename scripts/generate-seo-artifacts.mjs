@@ -9,13 +9,14 @@ import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
 import { FAQS } from '../src/components/landing/faq/faq.data.js'
 import { buildHomepageJsonLd } from '../src/utils/seoSchema.js'
+import { resolveSiteUrl } from './resolve-site-url.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const PUBLIC = join(ROOT, 'public')
 const GENERATED = join(ROOT, 'src/generated')
 
-const SITE_URL = (process.env.VITE_SITE_URL || 'https://kursoko.me').replace(/\/$/, '')
+const SITE_URL = resolveSiteUrl()
 const SITE_NAME = 'KursoKo'
 const SITE_TITLE = 'KursoKo — Free RIASEC Career Test for Filipino SHS Students'
 const SITE_DESCRIPTION =
