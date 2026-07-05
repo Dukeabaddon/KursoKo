@@ -111,11 +111,37 @@ Folder plan:
 
 ---
 
-## Privacy & Language Notes
+## Landing navbar (smart pill)
 
-- No commercial claims (no "free"/"no sign-up" wording). Keep neutral.
-- Add a small privacy link near primary CTAs to `documentation/SECURITY.md`.
+Three scroll modes via `useScrollNavbar` + `nav.css`:
+
+| Mode | When | Look |
+|------|------|------|
+| **Rest** | `scrollY < 8px` | Full-width transparent bar |
+| **Pill** | Scrolled | Floating capsule, compressed link gaps |
+| **Hidden** | Scroll down 60px+ | Off-screen; returns on scroll up |
+
+- Fixed at page level (outside hero fold).
+- Links: Types, How it works, Why KursoKo, FAQ + Start Assessment CTA.
+- Mobile: pill + hamburger menu dropdown.
 
 ---
 
-Last updated: 2025-10-15
+## Landing footer (floating card)
+
+- Inset margins: `1rem` / `1.5rem` / `2rem` (left, right, bottom).
+- Card radius: `1.5rem` → `2rem` desktop; bg `--color-landing-accent-deep`.
+- Three columns: tool mission, RIASEC note, privacy/local data.
+- Giant wordmark layer + optional sticker slots (`src/assets/landing/footer/stickers/`).
+- Component: `src/components/landing/footer/LandingFooter.jsx`.
+
+---
+
+## Privacy & Language Notes
+
+- No commercial claims (no "free"/"no sign-up" wording). Keep neutral.
+- Footer links to FAQ for privacy; see also `docs/06-security.md`.
+
+---
+
+Last updated: 2026-07-05

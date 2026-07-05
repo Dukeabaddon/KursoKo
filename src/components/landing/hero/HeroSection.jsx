@@ -83,12 +83,13 @@ export function HeroSection({ onStart }) {
                 type="button"
                 onClick={onStart}
                 className={`landing-hero-cta mt-1 md:mt-0 ${landingHeroCta}`}
+                aria-label="Start Assessment"
                 {...ctaMotion}
               >
                 Start Assessment
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 md:h-[1.125rem] md:w-[1.125rem]"
+                  className="landing-hero-cta__icon h-4 w-4 md:h-[1.125rem] md:w-[1.125rem]"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"

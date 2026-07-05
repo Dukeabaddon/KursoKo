@@ -179,9 +179,17 @@
   transform: scale(1.05);
 }
 
-.landing-hero-cta svg {
+.landing-hero-cta svg,
+.landing-hero-cta__icon {
   color: inherit;
-  transition: color 320ms var(--ease-landing);
+  transition:
+    transform 260ms var(--ease-landing),
+    color 320ms var(--ease-landing);
+}
+
+.landing-hero-cta:hover .landing-hero-cta__icon,
+.landing-hero-cta:focus-visible .landing-hero-cta__icon {
+  transform: translateX(5px) scale(1.12);
 }
 
 @media (prefers-reduced-motion: reduce) {

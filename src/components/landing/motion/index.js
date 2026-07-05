@@ -1,4 +1,5 @@
 export { LenisProvider, useLenis } from './LenisProvider'
+export { useScrollNavbar, NAV_MODES } from './useScrollNavbar'
 export { Reveal } from './Reveal'
 export {
   decorMotionDelay,
@@ -7,3 +8,4 @@ export {
   LANDING_EASE,
   LANDING_VIEWPORT,
 } from './landingMotion'
+export { useSectionScrollParallax } from './useSectionScrollParallax'

@@ -1,103 +1,105 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { KursoKoLogo } from '../brand'
 import {
   landingBtnPrimary,
   landingBtnPrimaryMobile,
   landingGlowBlockProps,
   landingNavLink,
-  landingNavShell
 } from '../../landing/landingClasses'
-import { useLenis } from '../../landing/motion'
+import { useLenis, useScrollNavbar, NAV_MODES } from '../../landing/motion'
 import { smoothScrollToHash } from '../../../utils/smoothScroll'
 
 const navLinks = [
-  { href: '#hero', label: 'Home' },
+  { href: '#riasec', label: 'Types' },
   { href: '#how', label: 'How it works' },
-  { href: '#faq', label: 'FAQ' }
+  { href: '#features', label: 'Why KursoKo' },
+  { href: '#faq', label: 'FAQ' },
 ]
+
+/** Logo = Home on desktop. Mobile menu adds Home for clarity. */
+const mobileNavLinks = [{ href: '#hero', label: 'Home' }, ...navLinks]
 
 const Navbar = ({ onStart }) => {
   const [open, setOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
   const lenis = useLenis()
+  const { mode } = useScrollNavbar(lenis)
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24)
-    onScroll()
+  const handleAnchorClick = useCallback(
+    (event, href) => {
+      event.preventDefault()
+      smoothScrollToHash(href, { lenis })
+      setOpen(false)
+    },
+    [lenis],
+  )
 
-    if (lenis) {
-      const onLenisScroll = (instance) => setScrolled(instance.scroll > 24)
-      lenis.on('scroll', onLenisScroll)
-      return () => lenis.off('scroll', onLenisScroll)
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [lenis])
-
-  const handleAnchorClick = useCallback((event, href) => {
-    event.preventDefault()
-    smoothScrollToHash(href, { lenis })
-    setOpen(false)
-  }, [lenis])
+  const navModeClass = [
+    'landing-nav',
+    mode === NAV_MODES.REST ? 'landing-nav--rest' : 'landing-nav--pill',
+    mode === NAV_MODES.HIDDEN ? 'landing-nav--hidden' : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
 
   return (
-    <header className={landingNavShell(scrolled)} {...landingGlowBlockProps}>
-      <nav
-        id="navigation"
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 md:px-8"
-        aria-label="Primary"
-      >
-        <a
-          href="#hero"
-          onClick={(e) => handleAnchorClick(e, '#hero')}
-          className="flex shrink-0 items-center rounded-lg py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent"
-          aria-label="KursoKo Home"
-        >
-          <KursoKoLogo iconSize={26} />
-        </a>
-
-        <div className="hidden items-center gap-1 md:flex">
-          {navLinks.map(({ href, label }) => (
-            <a
-              key={href}
-              href={href}
-              onClick={(e) => handleAnchorClick(e, href)}
-              className={landingNavLink}
-            >
-              {label}
-            </a>
-          ))}
-        </div>
-
-        <div className="hidden md:block">
-          <button
-            type="button"
-            onClick={onStart}
-            className={landingBtnPrimary}
-            aria-label="Start Assessment"
+    <div className="landing-nav-host" {...landingGlowBlockProps}>
+      <header className={`landing-nav ${navModeClass}`}>
+        <nav id="navigation" className="landing-nav__inner" aria-label="Primary">
+          <a
+            href="#hero"
+            onClick={(e) => handleAnchorClick(e, '#hero')}
+            className="flex shrink-0 items-center rounded-lg py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent"
+            aria-label="KursoKo Home"
           >
-            Start Assessment
-          </button>
-        </div>
+            <KursoKoLogo iconSize={mode === NAV_MODES.PILL ? 24 : 26} />
+          </a>
 
-        <button
-          type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-landing-ink hover:bg-landing-ink/5 md:hidden"
-          aria-label="Open menu"
-          aria-expanded={open}
-          onClick={() => setOpen((value) => !value)}
-        >
-          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </nav>
+          <div className="landing-nav__links">
+            {navLinks.map(({ href, label }) => (
+              <a
+                key={href}
+                href={href}
+                onClick={(e) => handleAnchorClick(e, href)}
+                className={`${landingNavLink} landing-nav__link`}
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+
+          <div className="landing-nav__actions">
+            <button
+              type="button"
+              onClick={onStart}
+              className={`${landingBtnPrimary} landing-nav__cta`}
+              aria-label="Start Assessment"
+            >
+              Start Assessment
+            </button>
+
+            <button
+              type="button"
+              className="landing-nav__menu-btn"
+              aria-label={open ? 'Close menu' : 'Open menu'}
+              aria-expanded={open}
+              onClick={() => setOpen((value) => !value)}
+            >
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                {open ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
 
       {open && (
-        <div className="border-t border-landing-ink/10 bg-landing-paper md:hidden">
-          <div className="flex flex-col gap-1 px-4 py-3">
-            {navLinks.map(({ href, label }) => (
+        <div className="landing-nav-mobile-menu md:hidden">
+          <div className="landing-nav-mobile-menu__inner">
+            {mobileNavLinks.map(({ href, label }) => (
               <a
                 key={href}
                 href={href}
@@ -120,7 +122,7 @@ const Navbar = ({ onStart }) => {
           </div>
         </div>
       )}
-    </header>
+    </div>
   )
 }
 

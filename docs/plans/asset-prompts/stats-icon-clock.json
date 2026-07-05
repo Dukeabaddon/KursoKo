@@ -1,0 +1,82 @@
+{
+  "project": "KursoKo",
+  "asset": "stats_icon_clock",
+  "asset_set": "Stats bar — Quick facts",
+  "slot": "stat_1_time",
+  "schema_version": 2,
+  "generation_mode": "text_to_image",
+  "intent": "Stopwatch icon for ~10 min stat pill. KursoKo flat vector — solid fills, dark outline, transparent PNG.",
+
+  "reference_note": "External mockup used SUBJECT ONLY (stopwatch shape). Do NOT copy its purple-gold gradient, card layout, or button style.",
+
+  "output": {
+    "filename": "src/assets/landing/stats/stats-clock.png",
+    "format": "PNG-24 with alpha transparency",
+    "width_px": 256,
+    "height_px": 256,
+    "aspect_ratio": "1:1",
+    "framing": "single icon centered, ~32px safe padding all sides",
+    "background": "fully transparent — no white canvas, no paper fill, no gradient backdrop, no drop shadow plate, no glow bloom"
+  },
+
+  "art_style_lock": {
+    "family": "KursoKo landing / questionnaire unDraw flat vector",
+    "medium": "2D flat vector icon — die-cut sticker clarity",
+    "outline": {
+      "required": true,
+      "color": "#2D2D2D",
+      "weight_px": 2,
+      "coverage": "full outer perimeter of every shape"
+    },
+    "fills": "SOLID flat color only — NO gradients, NO mesh, NO metallic sheen, NO 3D bevel",
+    "shading": "optional ONE lighter solid facet max (same hue family) — never gradient blends",
+    "forbidden_style": [
+      "purple-to-gold gradient",
+      "linear gradient",
+      "radial gradient",
+      "3D render",
+      "claymorphism",
+      "glassmorphism",
+      "emoji",
+      "SaaS monochrome icon pack",
+      "photorealistic metal",
+      "neon glow",
+      "soft blur raster"
+    ]
+  },
+
+  "subject": {
+    "source": "reference mockup — stopwatch/timer silhouette only",
+    "object": "round stopwatch",
+    "details": "circular face, two small crown buttons on top, one simple hand pointing upper-right",
+    "dial": "blank — no numbers, no letters, no digit tick marks",
+    "count": "exactly one stopwatch",
+    "orientation": "upright, slight tilt OK"
+  },
+
+  "color_palette": {
+    "body_fill": "#6E4FB8",
+    "crown_buttons": "#FFD54F",
+    "hand_fill": "#4DB6AC",
+    "dial_face": "#FDFCF8",
+    "outline": "#2D2D2D",
+    "paper": "#FDFCF8",
+    "ink": "#2D2D2D",
+    "forbidden": ["gradients", "rainbow", "metallic silver", "black body fill", "orange #F97316"]
+  },
+
+  "forbidden_in_image": [
+    "any background color",
+    "white canvas behind icon",
+    "gradient fills",
+    "text or numbers on dial",
+    "multiple timers",
+    "character or hands holding watch",
+    "drop shadow on canvas",
+    "outer glow halo"
+  ],
+
+  "prompt_for_image_ai": "Single flat vector stopwatch icon for KursoKo — Filipino RIASEC career app stats bar.\n\nART STYLE (mandatory — KursoKo brand, NOT reference mockup):\n- unDraw-inspired 2D flat vector edu icon\n- 2px solid dark outline #2D2D2D on every outer edge\n- SOLID flat fills ONLY — absolutely NO gradients, NO purple-to-gold blends, NO 3D, NO emoji, NO photoreal metal\n\nCOLORS (solid):\n- Watch body: #6E4FB8\n- Crown buttons: #FFD54F\n- Clock hand: #4DB6AC\n- Dial face: #FDFCF8\n\nSUBJECT: exactly ONE round stopwatch centered. Circular face, two small buttons on crown, one minimal hand upper-right. Blank dial — NO numbers, NO letters.\n\nBACKGROUND: transparent PNG. No white square, no lavender panel, no shadow plate, no glow.\n\nOUTPUT: 256×256, ~32px safe padding, crisp vector edges, readable at 48px.",
+
+  "negative_prompt": "gradient, linear gradient, radial gradient, purple gold gradient, gold purple blend, background, white background, colored background, drop shadow, glow bloom, halo, 3D render, bevel, emboss, clay, glass, photorealistic, metallic, chrome, emoji, text, numbers, letters, multiple objects, character, hands, blur, soft raster, SaaS icon, neon, cyber, mockup card, UI screenshot"
+}

@@ -1,0 +1,73 @@
+{
+  "project": "KursoKo",
+  "asset": "stats_icon_graduation_cap",
+  "asset_set": "Stats bar — Quick facts",
+  "slot": "stat_2_free",
+  "schema_version": 2,
+  "generation_mode": "text_to_image",
+  "intent": "Graduation cap icon for Free stat pill. KursoKo flat vector — solid fills, dark outline, transparent PNG.",
+
+  "reference_note": "External mockup used SUBJECT ONLY (mortarboard shape). Do NOT copy its gradient fills or card chrome.",
+
+  "output": {
+    "filename": "src/assets/landing/stats/stat-graduation-cap.png",
+    "format": "PNG-24 with alpha transparency",
+    "width_px": 256,
+    "height_px": 256,
+    "aspect_ratio": "1:1",
+    "framing": "single icon centered, ~32px safe padding all sides",
+    "background": "fully transparent — no white canvas, no paper fill, no drop shadow plate"
+  },
+
+  "art_style_lock": {
+    "family": "KursoKo landing / questionnaire unDraw flat vector",
+    "medium": "2D flat vector icon",
+    "outline": {
+      "required": true,
+      "color": "#2D2D2D",
+      "weight_px": 2,
+      "coverage": "full outer perimeter"
+    },
+    "fills": "SOLID flat color only — NO gradients",
+    "forbidden_style": [
+      "purple-to-gold gradient",
+      "linear gradient",
+      "3D render",
+      "emoji",
+      "photorealistic fabric",
+      "SaaS icon pack"
+    ]
+  },
+
+  "subject": {
+    "source": "reference mockup — graduation cap silhouette only",
+    "object": "graduation mortarboard cap",
+    "details": "flat square top board, band below, one tassel hanging right with round tip",
+    "count": "exactly one cap",
+    "orientation": "slight 3/4 view OK — board reads clearly"
+  },
+
+  "color_palette": {
+    "cap_fill": "#9575CD",
+    "board_top": "#6E4FB8",
+    "tassel": "#FFD54F",
+    "band": "#4B2C7F",
+    "outline": "#2D2D2D",
+    "forbidden": ["gradients", "all-black cap", "school logo text"]
+  },
+
+  "forbidden_in_image": [
+    "background color",
+    "white canvas",
+    "gradient fills",
+    "text or logo on board",
+    "multiple caps",
+    "graduate character",
+    "diploma scroll",
+    "drop shadow on canvas"
+  ],
+
+  "prompt_for_image_ai": "Single flat vector graduation mortarboard cap for KursoKo stats bar — Free / no paywall.\n\nART STYLE (KursoKo brand — NOT reference mockup gradient):\n- unDraw flat vector edu icon\n- 2px solid outline #2D2D2D on all outer edges\n- SOLID flat fills ONLY — NO gradients, NO 3D, NO emoji\n\nCOLORS (solid):\n- Cap band: #4B2C7F\n- Square board top: #6E4FB8\n- Cap sides: #9575CD\n- Tassel: #FFD54F\n\nSUBJECT: exactly ONE mortarboard centered. Flat square top, band, one tassel right. NO logo, NO text on board.\n\nBACKGROUND: transparent PNG only.\n\nOUTPUT: 256×256, ~32px padding, crisp edges, readable at 48px.",
+
+  "negative_prompt": "gradient, linear gradient, purple gold gradient, background, white background, drop shadow, glow, 3D render, bevel, photorealistic, emoji, text, logo, letters, multiple caps, person, face, diploma, blur, SaaS icon, mockup card"
+}

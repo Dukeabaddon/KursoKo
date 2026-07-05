@@ -1,0 +1,45 @@
+{
+  "project": "KursoKo",
+  "asset": "stats_icon_sparkle_accent",
+  "asset_set": "Stats bar — Quick facts",
+  "slot": "section_decor_optional",
+  "schema_version": 2,
+  "generation_mode": "text_to_image",
+  "intent": "Optional stats-row sparkle decor. KursoKo flat vector — solid fill, dark outline, transparent PNG.",
+
+  "reference_note": "External mockup sparkle used for PLACEMENT idea only. Style must match KursoKo RIASEC accent stars.",
+
+  "output": {
+    "filename": "src/assets/landing/stats/stat-sparkle-accent.png",
+    "format": "PNG-24 with alpha transparency",
+    "width_px": 128,
+    "height_px": 128,
+    "aspect_ratio": "1:1",
+    "framing": "single sparkle centered, ~12px safe padding",
+    "background": "fully transparent"
+  },
+
+  "art_style_lock": {
+    "family": "KursoKo landing accent — matches hero-asset-star.json",
+    "medium": "2D flat vector",
+    "outline": { "color": "#2D2D2D", "weight_px": 2 },
+    "fills": "SOLID #FFD54F only — NO gradient",
+    "forbidden_style": ["3D star", "lens flare", "emoji blur", "gradient"]
+  },
+
+  "subject": {
+    "object": "four-point sparkle star",
+    "count": "exactly one",
+    "orientation": "one point upper-right"
+  },
+
+  "color_palette": {
+    "fill": "#FFD54F",
+    "highlight_facet_optional": "#FFE082",
+    "outline": "#2D2D2D"
+  },
+
+  "prompt_for_image_ai": "Single flat vector four-point sparkle for KursoKo stats section decor.\n\nSTYLE: unDraw edu accent — 2px outline #2D2D2D, SOLID fill #FFD54F (optional one lighter facet #FFE082). NO gradient, NO 3D, NO glow bloom.\n\nExactly ONE star centered.\n\nBACKGROUND: transparent PNG.\n\nOUTPUT: 128×128, sharp edges.",
+
+  "negative_prompt": "gradient, background, white background, drop shadow, glow, 3D, multiple stars, text, blur, emoji"
+}

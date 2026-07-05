@@ -12,7 +12,8 @@ export const landingGlowBlockProps = { 'data-landing-glow-block': true }
 /** @deprecated Spotlight no longer uses block zones — kept for import stability */
 export { spotlightScopeProps as landingSpotlightScopeProps } from '../shared/ui/spotlightConfig'
 
-export const landingFold = 'flex h-dvh max-h-dvh flex-col overflow-hidden bg-landing-paper'
+export const landingFold =
+  'flex h-dvh max-h-dvh flex-col overflow-hidden bg-landing-paper pt-16'
 
 export const landingBtnPrimary =
   'landing-nav-cta inline-flex items-center justify-center rounded-2xl border px-4 py-2 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent'
@@ -25,8 +26,10 @@ export const landingNavShell = (scrolled) =>
     'sticky top-0 z-50 border-b transition-all duration-300 ease-landing',
     scrolled
       ? 'border-landing-ink/10 bg-landing-paper/90 shadow-sm backdrop-blur-md'
-      : 'border-transparent bg-transparent'
+      : 'border-transparent bg-transparent',
   ].join(' ')
+
+/** @deprecated Use landing-nav CSS classes in nav.css */
 
 export const landingNavLink =
   'rounded-xl px-3 py-2 text-sm font-medium text-landing-muted transition-colors duration-300 ease-landing hover:bg-landing-ink/5 hover:text-landing-ink'

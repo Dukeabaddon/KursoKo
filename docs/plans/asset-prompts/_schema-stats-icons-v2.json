@@ -1,0 +1,39 @@
+{
+  "$comment": "Shared rules for stats-icon-*.json — v2 solid KursoKo style",
+  "schema_version": 2,
+  "asset_set": "Stats bar icons",
+  "reference_policy": "External mockups = SUBJECT / layout reference ONLY. Never copy mockup gradients, cards, or CTA chrome.",
+
+  "art_style_lock": {
+    "family": "KursoKo landing + questionnaire unDraw flat vector",
+    "outline": { "color": "#2D2D2D", "weight_px": 2 },
+    "fills": "solid flat only — NO gradients",
+    "background": "transparent PNG — no paper fill on icon export"
+  },
+
+  "brand_palette_solid": {
+    "paper": "#FDFCF8",
+    "ink": "#2D2D2D",
+    "accent": "#6E4FB8",
+    "accent_deep": "#4B2C7F",
+    "lavender": "#9575CD",
+    "teal": "#4DB6AC",
+    "yellow": "#FFD54F",
+    "chapter_border": "rgba(149, 117, 205, 0.35)"
+  },
+
+  "output_defaults": {
+    "format": "PNG-24 alpha",
+    "icon_size_px": 256,
+    "decor_size_px": 128,
+    "safe_padding_px": 32
+  },
+
+  "files": [
+    "stats-icon-clock.json",
+    "stats-icon-graduation-cap.json",
+    "stats-icon-riasec.json",
+    "stats-icon-lock.json",
+    "stats-icon-sparkle-accent.json"
+  ]
+}

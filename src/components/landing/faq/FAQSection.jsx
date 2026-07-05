@@ -57,7 +57,7 @@ const FAQSection = ({ onStart }) => {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="landing-section landing-section--faq landing-section--blobs scroll-mt-20"
+      className="landing-section landing-section--faq landing-section--blobs scroll-mt-24"
     >
       <LandingBlobs variant="lavender-teal" />
       <div className="landing-section__inner">

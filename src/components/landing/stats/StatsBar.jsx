@@ -1,19 +1,20 @@
-const stats = [
-  { value: '~10 min', label: 'Quick to finish', emoji: '⏱️' },
-  { value: 'Free', label: 'No paywall', emoji: '🎓' },
-  { value: 'RIASEC', label: 'Research-backed', emoji: '✨' },
-  { value: 'Private', label: 'Not stored', emoji: '🔒' },
-]
+import { statsItems } from './statsAssets'
 
 const StatsBar = () => (
   <section id="stats" aria-label="Quick facts" className="landing-section landing-section--stats">
     <div className="landing-section__inner">
       <ul className="landing-stats">
-        {stats.map((item) => (
+        {statsItems.map((item) => (
           <li key={item.label} className="landing-stats__pill">
-            <span className="landing-stats__emoji" aria-hidden="true">
-              {item.emoji}
-            </span>
+            <img
+              src={item.src}
+              alt={item.alt}
+              className="landing-stats__icon"
+              width={56}
+              height={56}
+              loading="lazy"
+              decoding="async"
+            />
             <span className="landing-stats__value">{item.value}</span>
             <span className="landing-stats__label">{item.label}</span>
           </li>

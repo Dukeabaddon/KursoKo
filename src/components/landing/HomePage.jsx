@@ -5,14 +5,16 @@ import { RiasecIntro } from './riasec'
 import { HowItWorks } from './how-it-works'
 import { FeaturesGrid } from './features'
 import { FAQSection } from './faq'
+import { LandingFooter } from './footer'
 import { LenisProvider } from './motion'
 import { landingFold, landingPage } from './landingClasses'
 
 const HomePage = ({ onStartQuestionnaire }) => (
   <LenisProvider>
     <div className={landingPage}>
+      <Navbar onStart={onStartQuestionnaire} />
+
       <div className={landingFold}>
-        <Navbar onStart={onStartQuestionnaire} />
         <HeroSection onStart={onStartQuestionnaire} />
       </div>
 
@@ -23,6 +25,8 @@ const HomePage = ({ onStartQuestionnaire }) => (
         <FeaturesGrid />
         <FAQSection onStart={onStartQuestionnaire} />
       </div>
+
+      <LandingFooter onStart={onStartQuestionnaire} />
     </div>
   </LenisProvider>
 )

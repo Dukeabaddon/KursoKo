@@ -1,0 +1,77 @@
+{
+  "project": "KursoKo",
+  "asset": "stats_icon_riasec",
+  "asset_set": "Stats bar — Quick facts",
+  "slot": "stat_3_riasec",
+  "schema_version": 2,
+  "generation_mode": "text_to_image",
+  "intent": "RIASEC research tool cluster for stat pill. KursoKo flat vector — solid fills per mini-icon, dark outline, transparent PNG.",
+
+  "reference_note": "External mockup used SUBJECT ONLY (gear + pencil + magnifier + compass grouping). Do NOT copy gradient style.",
+
+  "output": {
+    "filename": "src/assets/landing/stats/stat-riasec.png",
+    "format": "PNG-24 with alpha transparency",
+    "width_px": 256,
+    "height_px": 256,
+    "aspect_ratio": "1:1",
+    "framing": "four mini icons as one tight cluster, centered, ~28px safe padding",
+    "background": "fully transparent — no white canvas, no drop shadow plate"
+  },
+
+  "art_style_lock": {
+    "family": "KursoKo landing / questionnaire unDraw flat vector",
+    "medium": "2D flat vector icon cluster",
+    "outline": {
+      "required": true,
+      "color": "#2D2D2D",
+      "weight_px": 2,
+      "coverage": "each mini icon fully outlined"
+    },
+    "fills": "SOLID flat color per icon — NO gradients across or within icons",
+    "forbidden_style": [
+      "gradient",
+      "RIASEC letter badges",
+      "3D isometric toolkit",
+      "emoji sparkles replacing tools"
+    ]
+  },
+
+  "subject": {
+    "source": "reference mockup — four-tool cluster layout only",
+    "composition": "2×2 tight group reading as one emblem",
+    "icons": [
+      { "id": "gear", "position": "top-left", "fill": "#4DB6AC" },
+      { "id": "pencil", "position": "top-right", "fill": "#FFD54F" },
+      { "id": "magnifying_glass", "position": "bottom-left", "fill": "#9575CD" },
+      { "id": "compass", "position": "bottom-right", "fill": "#6E4FB8" }
+    ],
+    "count": "exactly four mini icons",
+    "overlap": "slight overlap OK"
+  },
+
+  "color_palette": {
+    "gear": "#4DB6AC",
+    "pencil": "#FFD54F",
+    "magnifying_glass": "#9575CD",
+    "compass": "#6E4FB8",
+    "outline": "#2D2D2D",
+    "forbidden": ["gradients", "rainbow blend", "one single gradient on all four"]
+  },
+
+  "forbidden_in_image": [
+    "background color",
+    "white canvas",
+    "gradient fills",
+    "letters R I A S E C",
+    "word RIASEC",
+    "numbers",
+    "character",
+    "single sparkle instead of four tools",
+    "drop shadow on canvas"
+  ],
+
+  "prompt_for_image_ai": "Single flat vector icon CLUSTER for KursoKo RIASEC stats pill — research-backed.\n\nART STYLE (KursoKo brand — NOT reference mockup):\n- unDraw flat vector mini icons grouped as ONE emblem\n- 2px solid outline #2D2D2D on each icon\n- SOLID flat fill per icon — NO gradients, NO 3D, NO emoji\n\nSUBJECT (reference layout only): four tools in 2×2 cluster, slight overlap OK:\n- Top-left gear cog: solid #4DB6AC\n- Top-right pencil: solid #FFD54F\n- Bottom-left magnifying glass: solid #9575CD\n- Bottom-right drawing compass: solid #6E4FB8\n\nFORBIDDEN: no letters R I A S E C, no word RIASEC, no numbers, no characters.\n\nBACKGROUND: transparent PNG only.\n\nOUTPUT: 256×256, ~28px padding, crisp edges, readable at 48px as one grouped icon.",
+
+  "negative_prompt": "gradient, linear gradient, purple gold gradient, background, white background, drop shadow, glow, 3D render, text, letters, RIASEC word, R I A S E C, numbers, character, emoji sparkles only, single object, blur, photorealistic, mockup card, rainbow gradient"
+}
