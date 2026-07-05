@@ -43,7 +43,7 @@ const AssessmentChoiceCard = ({
     </div>
 
     <div className="questionnaire-card-footer">
-      <h3 className="questionnaire-title line-clamp-2">{title}</h3>
+      <h3 className="questionnaire-title">{title}</h3>
       <div className="questionnaire-ratings">
         {RATINGS.map((rating) => {
           const isRatingSelected = isSelected && selectedRating === rating

@@ -27,4 +27,4 @@ Allow: /
 Disallow: /assess
 Disallow: /results
 
-Sitemap: https://kurso-ko.vercel.app/sitemap.xml
+Sitemap: https://kursoko.me/sitemap.xml
