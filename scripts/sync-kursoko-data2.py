@@ -11,8 +11,12 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from datetime import date
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from university_riasec_derive import derive_riasec_tags
 
 ROOT = Path(__file__).resolve().parents[1]
 STAGING = ROOT / "docs/plans/kursoko-data2"
@@ -486,8 +490,8 @@ def merge_universities(staging: list[dict], runtime: list[dict], report: dict) -
         if not norm.get("website"):
             report["universities_missing_website"].append(norm["id"])
         if not norm.get("riasecTags"):
-            norm["riasecTags"] = ["R", "I", "A", "S", "E", "C"]
-            report["universities_broad_riasec_fallback"].append(norm["id"])
+            norm["riasecTags"] = derive_riasec_tags(norm)
+            report.setdefault("universities_derived_riasec", []).append(norm["id"])
 
         # Drop SHS-* strength tags on HEI rows
         if norm["type"] == "private":
@@ -619,6 +623,9 @@ def main() -> None:
     }
 
     universities = merge_universities(staging_uni, runtime_uni.get("universities", []), report)
+    for uni in universities:
+        if not uni.get("riasecTags"):
+            uni["riasecTags"] = derive_riasec_tags(uni)
     scholarships = merge_scholarships(staging_sch, runtime_sch.get("scholarships", []), report)
     validate(universities, scholarships, report)
 

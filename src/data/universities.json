@@ -5,7 +5,8 @@
     "lastUpdated": "2026-07-04",
     "count": 205,
     "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site.",
-    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2"
+    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
+    "riasecTagsBackfill": "2026-07-05"
   },
   "universities": [
     {
@@ -277,7 +278,12 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "popularCourses": [],
       "website": "https://www.arellano.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "nursing",
         "education",
@@ -462,7 +468,14 @@
       "tuition": "Approximately P50,000-P70,000 per year",
       "popularCourses": [],
       "website": "https://www.assumptionantipolo.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "shs",
         "abm",
@@ -482,7 +495,14 @@
       "tuition": "Approximately P100,000-P130,000 per year; financial aid available",
       "popularCourses": [],
       "website": "https://www.ateneo.edu/junior-and-senior-high-school",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "shs",
         "stem",
@@ -506,7 +526,13 @@
         "BS Psychology"
       ],
       "website": "https://www.ateneo.edu/",
-      "riasecTags": [],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "S"
+      ],
       "strengthTags": [
         "liberal-arts",
         "business",
@@ -530,7 +556,13 @@
         "BS Criminology"
       ],
       "website": "https://www.baliuag.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -550,7 +582,12 @@
       "tuition": "Subsidized tuition",
       "popularCourses": [],
       "website": "https://www.bpc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "agriculture",
         "business",
@@ -596,7 +633,13 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.bestlink.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -642,7 +685,10 @@
         "BS Accountancy"
       ],
       "website": "https://www.bulsu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
       "strengthTags": [
         "engineering",
         "education",
@@ -662,7 +708,12 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.cefi.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -683,7 +734,13 @@
         "Bachelor of Elementary Education"
       ],
       "website": "https://www.canossa.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -857,7 +914,13 @@
       "tuition": "Approximately P15,000-P30,000 per semester",
       "popularCourses": [],
       "website": "https://www.cct.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -906,7 +969,13 @@
       "tuition": "Subsidized tuition for Malabon residents",
       "popularCourses": [],
       "website": "https://cmu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -925,7 +994,13 @@
       "tuition": "Subsidized tuition for Pasay residents",
       "popularCourses": [],
       "website": "https://cupasay.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "tourism",
@@ -944,7 +1019,12 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.csjmalolos.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -963,7 +1043,14 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "popularCourses": [],
       "website": "https://www.letran.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "engineering",
@@ -1006,7 +1093,13 @@
         "Bachelor of Elementary Education"
       ],
       "website": "https://www.cdsp.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -1025,7 +1118,13 @@
       "tuition": "Subsidized tuition",
       "popularCourses": [],
       "website": "https://www.clb.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -1046,7 +1145,13 @@
         "Bachelor of Elementary Education"
       ],
       "website": "https://www.csa.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -1113,7 +1218,14 @@
       "tuition": "Approximately P80,000-P100,000 per year",
       "popularCourses": [],
       "website": "https://www.dlszobel.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "shs",
         "stem",
@@ -1370,7 +1482,13 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.fcpc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -1415,7 +1533,13 @@
         "BS Criminology"
       ],
       "website": "https://www.gsc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -1434,7 +1558,13 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.grace.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -1682,7 +1812,11 @@
         "BS Industrial Engineering"
       ],
       "website": "https://www.jru.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -1724,7 +1858,12 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "popularCourses": [],
       "website": "https://www.lcc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -1746,7 +1885,13 @@
         "BS Nursing"
       ],
       "website": "https://www.lcup.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -1790,7 +1935,12 @@
         "BS Business Administration"
       ],
       "website": "https://www.lnc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -1812,7 +1962,10 @@
         "BS Computer Engineering"
       ],
       "website": "https://www.lspu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
       "strengthTags": [
         "engineering",
         "agriculture",
@@ -2105,7 +2258,13 @@
         "Juris Doctor"
       ],
       "website": "https://www.mseuf.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "law",
         "medicine",
@@ -2177,7 +2336,13 @@
         "BS Agriculture"
       ],
       "website": "https://www.mrfmc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -2198,7 +2363,13 @@
         "Bachelor of Secondary Education"
       ],
       "website": "https://www.mac.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -2217,7 +2388,12 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.meycauayancollege.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -2261,7 +2437,11 @@
         "BS Hospitality Management"
       ],
       "website": "https://www.nu-manila.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
       "strengthTags": [
         "business",
         "engineering",
@@ -2305,7 +2485,12 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "popularCourses": [],
       "website": "https://www.nu-moa.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "tourism",
@@ -2324,7 +2509,13 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "popularCourses": [],
       "website": "https://www.nu-santarosa.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -2346,7 +2537,12 @@
         "BS Accountancy"
       ],
       "website": "https://www.neu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -2481,7 +2677,13 @@
       "tuition": "Subsidized tuition for Marikina residents",
       "popularCourses": [],
       "website": "https://plmar.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -2503,7 +2705,13 @@
         "BS Architecture"
       ],
       "website": "https://www.plm.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "A",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
       "strengthTags": [
         "law",
         "medicine",
@@ -2524,7 +2732,13 @@
       "tuition": "Subsidized tuition for Muntinlupa residents",
       "popularCourses": [],
       "website": "https://plmun.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "criminology",
         "nursing",
@@ -2543,7 +2757,13 @@
       "tuition": "Subsidized tuition for Pasig residents",
       "popularCourses": [],
       "website": "https://www.plp.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "information-technology",
@@ -2562,7 +2782,13 @@
       "tuition": "Subsidized tuition for Valenzuela residents",
       "popularCourses": [],
       "website": "https://plv.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -2584,7 +2810,10 @@
         "BS Agricultural Engineering"
       ],
       "website": "https://www.psu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
       "strengthTags": [
         "agriculture",
         "engineering",
@@ -2604,7 +2833,10 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.psu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
       "strengthTags": [
         "engineering",
         "agriculture",
@@ -2624,7 +2856,10 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.psu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
       "strengthTags": [
         "agriculture",
         "engineering",
@@ -2644,7 +2879,12 @@
       "tuition": "Subsidized tuition for Pateros residents",
       "popularCourses": [],
       "website": "https://ptc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "information-technology",
@@ -2689,7 +2929,13 @@
         "Bachelor of Secondary Education"
       ],
       "website": "https://www.pcu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -2786,7 +3032,14 @@
         "BS Engineering"
       ],
       "website": "https://www.pup.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "A",
+        "C",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
       "strengthTags": [
         "business",
         "engineering",
@@ -2807,7 +3060,12 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.pup.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "engineering",
@@ -2826,7 +3084,12 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.pup.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "hospitality"
@@ -2844,7 +3107,10 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.pup.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I"
+      ],
       "strengthTags": [
         "engineering",
         "technology"
@@ -2862,7 +3128,12 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.pup.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "information-technology"
@@ -2880,7 +3151,14 @@
       "tuition": "Free tuition",
       "popularCourses": [],
       "website": "https://www.pup.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "shs",
         "stem",
@@ -2901,7 +3179,12 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.pup.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "entrepreneurship"
@@ -2944,7 +3227,13 @@
         "BS Hospitality Management"
       ],
       "website": "https://qcu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "information-technology",
         "business",
@@ -2991,7 +3280,13 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.rtu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education"
@@ -3009,7 +3304,12 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.roosevelt.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -3028,7 +3328,13 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.shc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -3047,7 +3353,12 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.saintclare.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -3066,7 +3377,13 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "popularCourses": [],
       "website": "https://www.sfac.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -3085,7 +3402,12 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.sjcb.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -3107,7 +3429,13 @@
         "BS Civil Engineering"
       ],
       "website": "https://www.smcl.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -3126,7 +3454,13 @@
       "tuition": "Approximately P60,000-P90,000 per year",
       "popularCourses": [],
       "website": "https://www.sanbeda.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "law",
@@ -3145,7 +3479,14 @@
       "tuition": "Approximately P45,000-P70,000 per semester",
       "popularCourses": [],
       "website": "https://www.sanbeda.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "law",
@@ -3167,7 +3508,11 @@
         "BS Business Administration"
       ],
       "website": "https://www.sanbeda.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "C",
+        "E",
+        "S"
+      ],
       "strengthTags": [
         "law",
         "business",
@@ -3210,7 +3555,12 @@
         "BS Nursing"
       ],
       "website": "https://www.spc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -3229,7 +3579,13 @@
       "tuition": "Approximately P35,000-P50,000 per semester",
       "popularCourses": [],
       "website": "https://www.sscr.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "law",
@@ -3249,7 +3605,12 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.sndp.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business"
@@ -3267,7 +3628,13 @@
       "tuition": "Approximately P80,000-P120,000 per year",
       "popularCourses": [],
       "website": "https://www.southville.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "information-technology",
@@ -3286,7 +3653,12 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "popularCourses": [],
       "website": "https://www.scc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -3353,7 +3725,13 @@
         "Bachelor of Secondary Education"
       ],
       "website": "https://www.sjct.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -3372,7 +3750,12 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "popularCourses": [],
       "website": "https://www.sls.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business"
@@ -3810,7 +4193,13 @@
       "tuition": "Free tuition for Taguig residents",
       "popularCourses": [],
       "website": "https://tcu.taguig.gov.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -3829,7 +4218,10 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.tsu.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "R"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -3849,7 +4241,12 @@
       "tuition": "Approximately P15,000-P30,000 per semester",
       "popularCourses": [],
       "website": "https://www.twa.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business"
@@ -3991,7 +4388,11 @@
         "Photography NC II"
       ],
       "website": "https://www.tesda.gov.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "C"
+      ],
       "strengthTags": [
         "technical-vocational",
         "skills-training"
@@ -4011,7 +4412,13 @@
         "BS Information Technology"
       ],
       "website": "https://www.tmccl.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "education",
@@ -4147,7 +4554,13 @@
       "tuition": "Subsidized tuition",
       "popularCourses": [],
       "website": "https://udm.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "criminology",
         "nursing",
@@ -4166,7 +4579,13 @@
       "tuition": "Approximately P25,000-P45,000 per semester",
       "popularCourses": [],
       "website": "https://www.ub.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "law",
         "engineering",
@@ -4186,7 +4605,13 @@
       "tuition": "Free tuition for Caloocan residents",
       "popularCourses": [],
       "website": "https://ucc.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "criminology",
         "business",
@@ -4208,7 +4633,13 @@
         "BS Nursing"
       ],
       "website": "https://www.umak.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "criminology",
         "nursing",
@@ -4325,7 +4756,13 @@
       "tuition": "Free tuition under RA 10931",
       "popularCourses": [],
       "website": "https://www.urs.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "engineering",
@@ -4375,7 +4812,13 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "popularCourses": [],
       "website": "https://www.ua.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "education",
         "business",
@@ -4394,7 +4837,13 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "popularCourses": [],
       "website": "https://www.ue.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I",
+        "A",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "engineering",
@@ -4417,7 +4866,11 @@
         "Juris Doctor"
       ],
       "website": "https://www.ue.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
       "strengthTags": [
         "dentistry",
         "business",
@@ -4443,7 +4896,13 @@
         "BS Business Administration"
       ],
       "website": "https://upd.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "A",
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
       "strengthTags": [
         "research",
         "public-service",
@@ -4541,7 +5000,10 @@
       "tuition": "Subsidized tuition",
       "popularCourses": [],
       "website": "https://www.valenzuela.gov.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "R",
+        "I"
+      ],
       "strengthTags": [
         "technology",
         "vocational-training"
@@ -4589,7 +5051,12 @@
         "BS Criminology"
       ],
       "website": "https://www.westpoint.edu.ph/",
-      "riasecTags": [],
+      "riasecTags": [
+        "I",
+        "S",
+        "E",
+        "C"
+      ],
       "strengthTags": [
         "business",
         "criminology",

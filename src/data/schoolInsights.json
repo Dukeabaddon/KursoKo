@@ -138,6 +138,51 @@
       "body": "FEU combines health sciences, business, and arts programs on a central Manila campus.",
       "verificationDate": "2026-07-02",
       "verificationSource": "https://www.feu.edu.ph/"
+    },
+    {
+      "id": "si-up-diliman-software-engineer",
+      "institutionId": "up-diliman",
+      "careerId": "software-engineer",
+      "headline": "National university CS and engineering depth",
+      "body": "UP Diliman offers BS Computer Science, engineering, and research programs through a national university system with RA 10931 free tuition for eligible students.",
+      "verificationDate": "2026-07-05",
+      "verificationSource": "https://upd.edu.ph/"
+    },
+    {
+      "id": "si-up-diliman-data-analyst",
+      "institutionId": "up-diliman",
+      "careerId": "data-analyst",
+      "headline": "Strong statistics and computing foundation",
+      "body": "UP Diliman trains analysts through statistics, computer science, and social science research programs — a flagship path for students who want rigorous data work in government, research, or industry.",
+      "verificationDate": "2026-07-05",
+      "verificationSource": "https://upd.edu.ph/"
+    },
+    {
+      "id": "si-up-diliman-_default",
+      "institutionId": "up-diliman",
+      "careerId": "_default",
+      "headline": "Philippines' national university (Quezon City)",
+      "body": "UP Diliman is the flagship campus of the University of the Philippines system — known for engineering, sciences, social sciences, and arts with accessible public tuition for eligible students.",
+      "verificationDate": "2026-07-05",
+      "verificationSource": "https://upd.edu.ph/"
+    },
+    {
+      "id": "si-up-manila-_default",
+      "institutionId": "up-manila",
+      "careerId": "_default",
+      "headline": "UP health sciences and medicine campus",
+      "body": "UP Manila specializes in medicine, nursing, allied health, and public health — the national university's health sciences hub in Ermita.",
+      "verificationDate": "2026-07-05",
+      "verificationSource": "https://www.upm.edu.ph/"
+    },
+    {
+      "id": "si-uplb-_default",
+      "institutionId": "uplb",
+      "careerId": "_default",
+      "headline": "UP Los Baños — agriculture and sciences",
+      "body": "UPLB is UP's agriculture, forestry, veterinary, and environmental sciences campus in Laguna — strong for research and applied science paths.",
+      "verificationDate": "2026-07-05",
+      "verificationSource": "https://www.uplb.edu.ph/"
     }
   ]
 }

@@ -31,7 +31,7 @@ function Results({ responses, onRetake, onHome }) {
     () =>
       careerMatches.map((career) => {
         const allSchools = getUniversityMatchesForCareer(profile, career, null)
-        const schools = allSchools.slice(0, 3)
+        const schools = allSchools.slice(0, 5)
         const topSchool = schools[0] ?? null
         const userLocation = inferUserLocationFromSchool(topSchool)
         const allScholarships = getScholarshipMatchesForCareer(profile, career, schools, null, userLocation)

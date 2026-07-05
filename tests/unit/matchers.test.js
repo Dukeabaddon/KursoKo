@@ -53,6 +53,26 @@ describe('matcher pipeline (no backend — client-side data)', () => {
     expect(getScholarshipsMetadata().count).toBe(303)
   })
 
+  it('every university has riasecTags after backfill', async () => {
+    const { default: universitiesData } = await import('../../src/data/universities.json')
+    const empty = universitiesData.universities.filter((u) => !(u.riasecTags?.length > 0))
+    expect(empty).toEqual([])
+  })
+
+  it('UP Diliman ranks in top 5 for software engineer (IC profile)', () => {
+    const profile = archetypeProfile('I', 'C')
+    const career = { id: 'software-engineer', title: 'Software Engineer' }
+    const schools = getUniversityMatchesForCareer(profile, career, 5)
+    const ids = schools.map((s) => s.id)
+    expect(ids).toContain('up-diliman')
+  })
+
+  it('IC profile does not always rank data-analyst first on pure I secondary shift', () => {
+    const profile = archetypeProfile('I', 'R')
+    const careers = getCareerMatches(profile, 5)
+    expect(careers[0].id).not.toBe('data-analyst')
+  })
+
   it('nurse-oriented profile surfaces healthcare-leaning careers', () => {
     const profile = archetypeProfile('S', 'I')
     const careers = getCareerMatches(profile, 10)

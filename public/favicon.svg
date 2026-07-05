@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KursoKo">
+  <title>KursoKo</title>
+  <!-- Cream container  matches assessment page paper -->
+  <rect width="64" height="64" rx="14" fill="#FDFCF8" stroke="#E5E0D8" stroke-width="1.5"/>
+  <!-- KursoKo K mark (from KursoKoLogo.jsx) -->
+  <g transform="translate(11 7) scale(0.085)">
+    <path d="M 120 110 L 120 490" stroke="#262626" stroke-width="106" stroke-linecap="round" fill="none"/>
+    <path d="M 120 110 L 120 490" stroke="#2CB1B1" stroke-width="90" stroke-linecap="round" fill="none"/>
+    <path d="M 120 298 C 158 242, 228 172, 310 140" stroke="#262626" stroke-width="106" stroke-linecap="round" fill="none"/>
+    <path d="M 120 298 C 158 242, 228 172, 310 140" stroke="#FBC64D" stroke-width="90" stroke-linecap="round" fill="none"/>
+    <path d="M 120 295 C 195 295, 265 360, 310 470" stroke="#262626" stroke-width="106" stroke-linecap="round" fill="none"/>
+    <path d="M 120 295 C 195 295, 265 360, 310 470" stroke="#9461BE" stroke-width="90" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

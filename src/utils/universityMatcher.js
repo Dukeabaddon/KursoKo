@@ -3,17 +3,43 @@ import schoolInsightsData from '../data/schoolInsights.json'
 
 const LEGACY_SCHOOL_TAGS = {
   'pup-manila': ['pup', 'pup-system', 'public', 'business', 'technology'],
+  'pup-quezon-city': ['pup', 'pup-system', 'public', 'engineering', 'technology'],
+  'pup-paranaque': ['pup', 'pup-system', 'public', 'business'],
+  'pup-san-juan': ['pup', 'pup-system', 'public', 'technology'],
+  'pup-tagui': ['pup', 'pup-system', 'public', 'entrepreneurship'],
   'ateneo-manila': ['ateneo', 'leadership', 'research', 'service'],
   'feu-manila': ['feu', 'healthcare', 'business', 'arts'],
   'dlsu-manila': ['dlsu', 'technology', 'business', 'research'],
+  'up-diliman': ['up', 'up-system', 'public', 'research', 'engineering', 'technology'],
+  'up-manila': ['up', 'up-system', 'public', 'medicine', 'health', 'research'],
+  uplb: ['up', 'up-system', 'public', 'agriculture', 'research'],
+  plm: ['plm', 'public', 'law', 'medicine', 'engineering'],
+  ust: ['ust', 'health', 'medicine', 'research'],
 }
+
+/** National / flagship SUC bonus — not a ranking claim, surfaces well-known options. */
+const PRESTIGE_TIER_BONUS = new Map([
+  ['up-diliman', 3],
+  ['up-manila', 3],
+  ['uplb', 3],
+  ['pup-manila', 2],
+  ['plm', 2],
+  ['ateneo-manila', 2],
+  ['dlsu-manila', 2],
+  ['ust', 2],
+  ['feu-manila', 1],
+])
 
 function getLegacySchoolTags(university) {
   return LEGACY_SCHOOL_TAGS[university.id] ?? []
 }
 
+function getPrestigeBonus(university) {
+  return PRESTIGE_TIER_BONUS.get(university.id) ?? 0
+}
+
 const CAREER_KEYWORDS = {
-  'software-engineer': ['computer science', 'it', 'technology', 'programming'],
+  'software-engineer': ['computer science', 'information technology', 'technology', 'programming'],
   'mechanical-engineer': ['engineering', 'mechanical', 'technology'],
   architect: ['architecture', 'design'],
   teacher: ['education', 'teaching'],
@@ -29,7 +55,7 @@ const CAREER_KEYWORDS = {
   'marketing-manager': ['marketing', 'business', 'communications'],
   'data-analyst': ['computer science', 'statistics', 'technology', 'business'],
   chef: ['hospitality', 'culinary', 'tourism'],
-  lawyer: ['political science', 'legal', 'social science'],
+  lawyer: ['political science', 'legal', 'social science', 'law'],
   'hr-specialist': ['psychology', 'business', 'management'],
   'content-creator': ['communications', 'arts', 'multimedia', 'design'],
   pharmacist: ['pharmacy', 'health', 'science'],
@@ -82,11 +108,21 @@ function matchLabel(score) {
   return { label: 'Good match', tone: 'fair' }
 }
 
+function haystackIncludesKeyword(haystack, keyword) {
+  const normalized = keyword.toLowerCase().trim()
+  if (!normalized) return false
+  const escaped = normalized.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  if (normalized.length <= 3) {
+    return new RegExp(`(?:^|[\\s,./\\-])${escaped}(?:$|[\\s,./\\-])`).test(haystack)
+  }
+  return haystack.includes(normalized)
+}
+
 function getUniversityTagBag(university) {
   return [
     ...(university.riasecTags ?? []),
     ...(university.strengthTags ?? []),
-    ...(getLegacySchoolTags(university)),
+    ...getLegacySchoolTags(university),
     ...(university.popularCourses ?? []),
     university.description ?? '',
     university.name ?? '',
@@ -106,16 +142,19 @@ function scoreUniversity(university, profile, career) {
   if (primary && tags.includes(primary)) score += 4
   if (secondary && tags.includes(secondary)) score += 3
   if (university.type === 'public') score += 1
+  score += getPrestigeBonus(university)
   keywords.forEach((keyword) => {
-    if (haystack.includes(keyword)) score += 2
+    if (haystackIncludesKeyword(haystack, keyword)) score += 2
   })
   if (career?.id === 'software-engineer' && university.id === 'dlsu-manila') score += 2
   if (career?.id === 'software-engineer' && university.id === 'ateneo-manila') score += 1
+  if (career?.id === 'software-engineer' && university.id === 'up-diliman') score += 2
   if (career?.id === 'graphic-designer' && university.id === 'feu-manila') score += 2
   if (career?.id === 'entrepreneur' && university.id === 'ateneo-manila') score += 2
   if (career?.id === 'accountant' && university.id === 'pup-manila') score += 2
   if (career?.id === 'nurse' && university.id === 'feu-manila') score += 3
   if (career?.id === 'data-analyst' && university.id === 'pup-manila') score += 2
+  if (career?.id === 'lawyer' && (university.id === 'ateneo-manila' || university.id === 'plm')) score += 2
 
   return score
 }
@@ -145,6 +184,13 @@ function resolveSchoolInsight(university, career) {
   }
 }
 
+function compareUniversities(a, b) {
+  if (b.relevanceScore !== a.relevanceScore) return b.relevanceScore - a.relevanceScore
+  const prestigeDiff = getPrestigeBonus(b) - getPrestigeBonus(a)
+  if (prestigeDiff !== 0) return prestigeDiff
+  return (a.name ?? '').localeCompare(b.name ?? '')
+}
+
 export function getUniversityMatchesForCareer(profile, career, limit = 3) {
   const ranked = universitiesData.universities
     .map((uni) => {
@@ -161,7 +207,7 @@ export function getUniversityMatchesForCareer(profile, career, limit = 3) {
         insightSource: insightData.source,
       }
     })
-    .sort((a, b) => b.relevanceScore - a.relevanceScore)
+    .sort(compareUniversities)
 
   if (limit == null) return ranked
   return ranked.slice(0, limit)

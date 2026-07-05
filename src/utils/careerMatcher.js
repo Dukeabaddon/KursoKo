@@ -166,6 +166,7 @@ export function getCareerMatches(profile, limit = 10) {
       return {
         ...career,
         matchPercent,
+        rawScore: raw,
         whyMatched: reasons,
         strengthsUsed: career.skills.slice(0, 2),
         narrative:
@@ -173,8 +174,12 @@ export function getCareerMatches(profile, limit = 10) {
           `This path aligns with your ${profile.primaryDimension?.info?.name?.toLowerCase() ?? 'top'} strengths and rewards the kinds of tasks you naturally lean toward.`,
       }
     })
-    .sort((a, b) => b.matchPercent - a.matchPercent)
+    .sort((a, b) => {
+      if (b.matchPercent !== a.matchPercent) return b.matchPercent - a.matchPercent
+      return (b.rawScore ?? 0) - (a.rawScore ?? 0)
+    })
     .slice(0, limit)
+    .map(({ rawScore: _raw, ...career }) => career)
 
   return ranked
 }

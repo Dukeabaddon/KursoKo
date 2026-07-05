@@ -7,7 +7,7 @@ export const RIASEC_BAR_COLORS = {
   C: '#9333EA',
 }
 
-export const RIASEC_MAX_POINTS = 25
+export const RIASEC_MAX_POINTS = 33
 
 export function getBarPercent(score, maxPoints = RIASEC_MAX_POINTS) {
   return Math.min(100, Math.round((score / maxPoints) * 100))
