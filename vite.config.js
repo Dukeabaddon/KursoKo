@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { buildHomepageJsonLd } from './src/utils/seoSchema.js'
 
-const SITE_URL = (process.env.VITE_SITE_URL || 'https://kursoko.ph').replace(/\/$/, '')
+const SITE_URL = (process.env.VITE_SITE_URL || 'https://kursoko.me').replace(/\/$/, '')
 const SITE_TITLE = 'KursoKo — Free RIASEC Career Test for Filipino SHS Students'
 const SITE_DESCRIPTION =
   'Take a free 10-minute RIASEC assessment. Discover college courses, careers, and scholarships in the Philippines that match your strengths. No sign-up required.'

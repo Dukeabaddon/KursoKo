@@ -1,5 +1,5 @@
 # KursoKo — search + AI agent crawl policy
-# https://kursoko.ph
+# https://kursoko.me
 
 User-agent: GPTBot
 Allow: /
@@ -27,4 +27,4 @@ Allow: /
 Disallow: /assess
 Disallow: /results
 
-Sitemap: https://kursoko.ph/sitemap.xml
+Sitemap: https://kursoko.me/sitemap.xml

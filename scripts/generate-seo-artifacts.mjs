@@ -15,7 +15,7 @@ const ROOT = join(__dirname, '..')
 const PUBLIC = join(ROOT, 'public')
 const GENERATED = join(ROOT, 'src/generated')
 
-const SITE_URL = (process.env.VITE_SITE_URL || 'https://kursoko.ph').replace(/\/$/, '')
+const SITE_URL = (process.env.VITE_SITE_URL || 'https://kursoko.me').replace(/\/$/, '')
 const SITE_NAME = 'KursoKo'
 const SITE_TITLE = 'KursoKo — Free RIASEC Career Test for Filipino SHS Students'
 const SITE_DESCRIPTION =
@@ -26,7 +26,7 @@ mkdirSync(GENERATED, { recursive: true })
 
 function writeRobotsTxt() {
   const body = `# KursoKo — search + AI agent crawl policy
-# https://kursoko.ph
+# https://kursoko.me
 
 User-agent: GPTBot
 Allow: /

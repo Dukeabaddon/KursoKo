@@ -161,13 +161,100 @@
   transform: translate(-28%, -52%);
 }
 
-/* Share export card — same frame on dark surface */
+/* Share export card — cream collectible on results page */
 .share-card-export .character-card-frame__border {
-  border-color: rgba(179, 157, 219, 0.85);
+  border-color: rgba(149, 117, 205, 0.85);
 }
 
 .share-card-export .character-card-frame__star {
   z-index: 3;
+}
+
+.share-result-modal-root {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.share-result-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  border: 0;
+  background: rgba(38, 38, 38, 0.45);
+}
+
+.share-result-modal {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 26rem);
+  max-height: min(92vh, 44rem);
+  overflow: auto;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(75, 44, 127, 0.12);
+  background: #fdfcf8;
+  padding: 1.25rem;
+  box-shadow: 0 24px 64px rgba(75, 44, 127, 0.18);
+}
+
+.share-result-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.share-result-modal__title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-landing-accent);
+}
+
+.share-result-modal__subtitle {
+  margin-top: 0.25rem;
+  font-size: 0.8125rem;
+  color: var(--color-landing-muted);
+}
+
+.share-result-modal__close {
+  flex-shrink: 0;
+  padding: 0.5rem;
+}
+
+.share-result-modal__preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.share-result-modal__status {
+  margin-bottom: 0.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #047857;
+}
+
+.share-result-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .share-result-modal__actions {
+    flex-direction: row;
+  }
+
+  .share-result-modal__actions > button {
+    flex: 1;
+    justify-content: center;
+  }
 }
 
 /* Featured profession cards (#1–10) — parent rounded rect; top 3 color band expands right on open */

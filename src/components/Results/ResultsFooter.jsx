@@ -3,7 +3,7 @@ import { ClickSpark } from '../shared/ui'
 import { SPARK_ACCENT, SPARK_PURPLE } from '../shared/assessment/assessmentClasses'
 import { resultsGhostBtn, resultsPrimaryBtn } from './resultsClasses'
 
-const ResultsFooter = ({ onHome, onRetake, onShare, onDownloadCard, shareMessage }) => (
+const ResultsFooter = ({ onHome, onRetake, onShareResult }) => (
   <footer className="results-footer mt-8 flex flex-col items-stretch gap-3 border-t border-landing-ink/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
     <ClickSpark {...SPARK_ACCENT} className="inline-flex">
       <button type="button" onClick={onHome} className={resultsGhostBtn}>
@@ -13,24 +13,12 @@ const ResultsFooter = ({ onHome, onRetake, onShare, onDownloadCard, shareMessage
     </ClickSpark>
 
     <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
-      {shareMessage && (
-        <p className="text-center text-sm text-emerald-700 sm:text-right" role="status">
-          {shareMessage}
-        </p>
-      )}
       <ClickSpark {...SPARK_ACCENT} className="inline-flex">
-        <button type="button" onClick={onShare} className={resultsGhostBtn}>
+        <button type="button" onClick={onShareResult} className={resultsGhostBtn}>
           <Share2 className="h-4 w-4" aria-hidden="true" />
-          Share
+          Share result
         </button>
       </ClickSpark>
-      {onDownloadCard ? (
-        <ClickSpark {...SPARK_ACCENT} className="inline-flex">
-          <button type="button" onClick={onDownloadCard} className={resultsGhostBtn}>
-            Download card
-          </button>
-        </ClickSpark>
-      ) : null}
       <ClickSpark {...SPARK_PURPLE} className="inline-flex">
         <button type="button" onClick={onRetake} className={resultsPrimaryBtn}>
           <RotateCcw className="h-4 w-4" aria-hidden="true" />

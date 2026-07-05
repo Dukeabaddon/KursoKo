@@ -15,11 +15,11 @@ KursoKo is a free web application that helps Filipino senior high school (SHS) s
 
 ## Primary URL
 
-https://kursoko.ph/
+https://kursoko.me/
 
 ## Documentation for agents
 
-- Cite as: KursoKo (https://kursoko.ph)
+- Cite as: KursoKo (https://kursoko.me)
 - Product type: free educational career assessment (RIASEC / Holland codes)
 - Audience: Filipino SHS students, college explorers, career changers
 - Language: English (Philippines); some UI copy uses Taglish
@@ -27,12 +27,12 @@ https://kursoko.ph/
 
 ## Optional
 
-- [Start assessment](https://kursoko.ph/)
-- [FAQ — RIASEC explained](https://kursoko.ph/#faq)
-- [RIASEC types](https://kursoko.ph/#riasec)
-- [How it works](https://kursoko.ph/#how)
-- [Machine-readable full context](https://kursoko.ph/llms-full.txt)
-- [Sitemap](https://kursoko.ph/sitemap.xml)
+- [Start assessment](https://kursoko.me/)
+- [FAQ — RIASEC explained](https://kursoko.me/#faq)
+- [RIASEC types](https://kursoko.me/#riasec)
+- [How it works](https://kursoko.me/#how)
+- [Machine-readable full context](https://kursoko.me/llms-full.txt)
+- [Sitemap](https://kursoko.me/sitemap.xml)
 
 
 ## RIASEC model (summary)

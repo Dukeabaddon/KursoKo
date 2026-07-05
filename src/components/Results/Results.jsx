@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { getPersonalityProfile } from '../../utils/riasecScoring'
 import { getCourseRecommendations } from '../../utils/courseRecommendations'
 import { getArchetypeForProfile } from '../../utils/archetypes'
@@ -6,7 +6,6 @@ import { getCareerMatches } from '../../utils/careerMatcher'
 import { getScholarshipMatchesForCareer, inferUserLocationFromSchool } from '../../utils/scholarshipMatcher'
 import { getUniversityMatchesForCareer } from '../../utils/universityMatcher'
 import { getShsStrands } from '../../utils/shsStrands'
-import { exportElementAsPng } from '../../utils/shareExport'
 import ResultsShell, { useResultsScrollReveal } from './ResultsShell'
 import ResultHero from './ResultHero'
 import RiasecBreakdown from './RiasecBreakdown'
@@ -16,7 +15,7 @@ import ResultsFooter from './ResultsFooter'
 import ResultsSidePanel from './ResultsSidePanel'
 import SchoolsSidePanelContent from './SchoolsSidePanelContent'
 import ScholarshipsSidePanelContent from './ScholarshipsSidePanelContent'
-import ShareCard from './ShareCard'
+import ShareResultModal from './ShareResultModal'
 
 function Results({ responses, onRetake, onHome }) {
   const profile = useMemo(() => getPersonalityProfile(responses), [responses])
@@ -50,49 +49,11 @@ function Results({ responses, onRetake, onHome }) {
     [profile, careerMatches],
   )
 
-  const [shareMessage, setShareMessage] = useState('')
+  const [shareOpen, setShareOpen] = useState(false)
   const [heroEnter] = useState(true)
   const [detailView, setDetailView] = useState(null)
-  const shareCardRef = useRef(null)
 
   useResultsScrollReveal([combination, detailView])
-
-  const buildShareText = () => {
-    const top = careerMatches[0]
-    const careerLine = top ? `${top.title} — ${top.matchPercent}% match` : 'Explore careers on KursoKo'
-    return `${archetype.name} — ${archetype.tagline}\n\n${archetype.summary}\n\nTop fit: ${careerLine}`
-  }
-
-  const handleShare = async () => {
-    const text = buildShareText()
-    try {
-      if (navigator.share) {
-        await navigator.share({
-          title: `My KursoKo result: ${archetype.name}`,
-          text,
-        })
-        setShareMessage('Shared!')
-      } else if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(text)
-        setShareMessage('Copied to clipboard!')
-      } else {
-        setShareMessage('Copy not supported on this browser.')
-      }
-    } catch {
-      setShareMessage('Share cancelled.')
-    }
-    setTimeout(() => setShareMessage(''), 3000)
-  }
-
-  const handleDownloadCard = async () => {
-    try {
-      await exportElementAsPng(shareCardRef.current, `kursoko-${archetype.id}.png`)
-      setShareMessage('Share card downloaded!')
-    } catch {
-      setShareMessage('Could not export image.')
-    }
-    setTimeout(() => setShareMessage(''), 3000)
-  }
 
   const panelCareer = detailView?.careerId
     ? careerCards.find((career) => career.id === detailView.careerId)
@@ -142,14 +103,16 @@ function Results({ responses, onRetake, onHome }) {
       <ResultsFooter
         onHome={onHome}
         onRetake={onRetake}
-        onShare={handleShare}
-        shareMessage={shareMessage}
-        onDownloadCard={handleDownloadCard}
+        onShareResult={() => setShareOpen(true)}
       />
 
-      <div className="fixed -left-[9999px] top-0 w-[360px] pointer-events-none" aria-hidden="true">
-        <ShareCard cardRef={shareCardRef} archetype={archetype} topCareer={careerMatches[0]} />
-      </div>
+      <ShareResultModal
+        open={shareOpen}
+        onClose={() => setShareOpen(false)}
+        archetype={archetype}
+        topCareer={careerMatches[0]}
+        combination={combination}
+      />
 
       <ResultsSidePanel
         key={detailView ? `${detailView.type}-${detailView.careerId}` : 'closed'}

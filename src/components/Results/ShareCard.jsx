@@ -1,38 +1,78 @@
 import { getCharacterImage } from '../../utils/characterAssets'
 import CharacterCardFrame from './CharacterCardFrame'
 
-function ShareCard({ archetype, topCareer, cardRef }) {
+const CARD = {
+  paper: '#FDFCF8',
+  ink: '#262626',
+  accent: '#4B2C7F',
+  muted: '#64748B',
+  gold: '#FBC64D',
+  border: 'rgba(75, 44, 127, 0.2)',
+}
+
+function ShareCard({ archetype, topCareer, combination, cardRef, className = '' }) {
   const characterSrc = getCharacterImage(archetype.id)
 
   return (
     <div
       ref={cardRef}
-      className="share-card-export w-full max-w-sm mx-auto rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-950 text-white shadow-2xl"
-      aria-hidden="true"
+      className={`share-card-export mx-auto overflow-hidden rounded-2xl border shadow-2xl ${className}`.trim()}
+      style={{
+        width: 360,
+        backgroundColor: CARD.paper,
+        color: CARD.ink,
+        borderColor: CARD.border,
+      }}
+      aria-hidden={className.includes('share-card-export--preview') ? undefined : 'true'}
     >
-      <div className="px-6 py-5 border-b border-neutral-800">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-amber-400 font-semibold">KursoKo</p>
+      <div className="px-6 py-5" style={{ borderBottom: `1px solid ${CARD.border}` }}>
         {characterSrc ? (
-          <CharacterCardFrame
-            src={characterSrc}
-            className="mx-auto mt-3 h-48 w-48"
-          />
+          <CharacterCardFrame src={characterSrc} className="mx-auto h-48 w-48" />
         ) : null}
-        <h3 className="font-display text-2xl font-bold mt-3">{archetype.name}</h3>
-        <p className="text-sm text-neutral-300 mt-1">{archetype.tagline}</p>
+
+        <h3
+          className="mt-3 font-[family-name:var(--font-display)] text-2xl font-bold"
+          style={{ color: CARD.accent }}
+        >
+          {archetype.name}
+        </h3>
+
+        {combination ? (
+          <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: CARD.muted }}>
+            RIASEC {combination}
+          </p>
+        ) : null}
+
+        <p className="mt-1 text-sm" style={{ color: CARD.muted }}>
+          {archetype.tagline}
+        </p>
       </div>
-      <div className="px-6 py-5 space-y-3">
-        {topCareer && (
-          <div className="rounded-xl bg-neutral-900 border border-neutral-800 p-4">
-            <p className="text-xs uppercase tracking-wider text-neutral-400">Top career match</p>
-            <p className="font-display text-lg font-semibold mt-1">{topCareer.title}</p>
-            <p className="text-amber-400 text-2xl font-bold mt-1">{topCareer.matchPercent}%</p>
+
+      <div className="space-y-3 px-6 py-5">
+        {topCareer ? (
+          <div className="rounded-xl p-4" style={{ backgroundColor: CARD.accent }}>
+            <p className="text-xs font-semibold uppercase tracking-wider text-white/70">
+              Top career match
+            </p>
+            <p className="mt-1 font-[family-name:var(--font-display)] text-lg font-semibold text-white">
+              {topCareer.title}
+            </p>
+            <p className="mt-1 text-2xl font-bold" style={{ color: CARD.gold }}>
+              {topCareer.matchPercent}%
+            </p>
           </div>
-        )}
-        <p className="text-xs text-neutral-400 leading-relaxed line-clamp-3">{archetype.summary}</p>
+        ) : null}
+
+        <p className="line-clamp-3 text-xs leading-relaxed" style={{ color: CARD.muted }}>
+          {archetype.summary}
+        </p>
       </div>
-      <div className="px-6 py-3 bg-neutral-900 text-[10px] text-neutral-500 text-center">
-        kursoko · career guidance for Filipino students
+
+      <div
+        className="px-6 py-3 text-center text-[10px] font-bold"
+        style={{ backgroundColor: CARD.accent, color: 'rgba(255,255,255,0.92)' }}
+      >
+        kursoko.me · career guidance for Filipino students
       </div>
     </div>
   )
