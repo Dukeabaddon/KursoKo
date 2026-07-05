@@ -25,6 +25,9 @@ STYLE_REFS = [
     ASSET_DIR / "01.2.png",
 ]
 SENSITIVE_SLOTS = {"17.1", "19.2", "23.2", "24.1", "27.1"}
+# v4.1 prop-orientation + hand fixes — regenerate even when PNG exists
+V41_REGEN_SLOTS = ("3.2", "9.2", "11.1", "11.2", "12.2", "22.2")
+ARCHIVE_DIR = ASSET_DIR / "_archive" / "pre-v41"
 SLOT_RE = re.compile(r"^q?(\d{1,2})\.(\d)$")
 
 
@@ -66,6 +69,28 @@ def inbox_path_for_stem(stem: str) -> Path:
 
 def slot_done(stem: str) -> bool:
     return output_path_for_stem(stem).is_file()
+
+
+def stem_for_slot(slot: str) -> str:
+    _, stem = normalize_slot(slot)
+    return stem
+
+
+def v41_regen_stems() -> list[str]:
+    return [stem_for_slot(slot) for slot in V41_REGEN_SLOTS]
+
+
+def archive_output(stem: str) -> Path | None:
+    src = output_path_for_stem(stem)
+    if not src.is_file():
+        return None
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    dst = ARCHIVE_DIR / f"{stem}.png"
+    if dst.is_file():
+        dst.unlink()
+    shutil.copy2(src, dst)
+    src.unlink()
+    return dst
 
 
 def parse_stem_from_png(name: str) -> str | None:
@@ -295,6 +320,8 @@ def cmd_status() -> int:
     done = 0
     missing = 0
     inbox_waiting = 0
+    regen_pending = 0
+    regen_stems = set(v41_regen_stems())
 
     print("slot   status    choice")
     print("----   ------    ------")
@@ -311,6 +338,9 @@ def cmd_status() -> int:
         elif inbox_path_for_stem(stem).is_file():
             status = "inbox"
             inbox_waiting += 1
+        elif stem in regen_stems:
+            status = "regen"
+            regen_pending += 1
         else:
             status = "missing"
             missing += 1
@@ -319,7 +349,50 @@ def cmd_status() -> int:
         print(f"{slot:<6} {status:<9} {choice}{flag}")
 
     print()
-    print(f"done={done}  inbox={inbox_waiting}  missing={missing}  total={done + inbox_waiting + missing}")
+    print(
+        f"done={done}  inbox={inbox_waiting}  regen={regen_pending}  "
+        f"missing={missing}  total={done + inbox_waiting + regen_pending + missing}"
+    )
+    return 0
+
+
+def cmd_regen(slots: list[str] | None, *, archive: bool, prep_only: bool) -> int:
+    """Archive v4.0 PNGs and prep ChatGPT commands for v4.1 regen slots."""
+    if slots:
+        target_stems = [stem_for_slot(s) for s in slots]
+    else:
+        target_stems = v41_regen_stems()
+
+    archived = 0
+    for stem in target_stems:
+        data = load_prompt_json(stem)
+        fix = data.get("regeneration_fix")
+        if fix and fix.get("version") != "4.1":
+            print(f"Warn {stem}: regeneration_fix.version is not 4.1")
+
+        if archive:
+            dst = archive_output(stem)
+            if dst:
+                print(f"Archived {stem} -> {dst.relative_to(ROOT)}")
+                archived += 1
+            elif not slot_done(stem):
+                print(f"No final PNG to archive for {stem}")
+
+        if prep_only:
+            print()
+            print_slot_brief(stem, data)
+            prompt_file = prompt_path_for_stem(stem)
+            command = chatgpt_command(prompt_file)
+            print(f"ChatGPT: {command}")
+            if copy_to_clipboard(command):
+                print("Clipboard: ready (last slot wins if batch)")
+            print()
+
+    print(f"v4.1 regen queue: {', '.join(V41_REGEN_SLOTS)}")
+    print(f"Archived: {archived} file(s)")
+    print()
+    print("After ChatGPT generation, save each PNG to _inbox/NN.M.png then:")
+    print("  npm run assets:install -- --all")
     return 0
 
 
@@ -348,6 +421,15 @@ def build_parser() -> argparse.ArgumentParser:
     process.add_argument("--all", action="store_true", dest="all_raw", help="Process every PNG in _inbox/raw")
 
     sub.add_parser("status", help="Show done / inbox / missing slots")
+
+    regen = sub.add_parser("regen", help="Archive + prep v4.1 regeneration slots")
+    regen.add_argument(
+        "slots",
+        nargs="*",
+        help="Optional slots (default: v4.1 queue 3.2 9.2 11.1 11.2 12.2 22.2)",
+    )
+    regen.add_argument("--no-archive", action="store_true", help="Skip archiving existing PNGs")
+    regen.add_argument("--prep-only", action="store_true", help="Print ChatGPT commands only")
     return parser
 
 
@@ -367,6 +449,8 @@ def main() -> int:
         return cmd_process(args.slot, all_raw=args.all_raw)
     if args.command == "status":
         return cmd_status()
+    if args.command == "regen":
+        return cmd_regen(args.slots or None, archive=not args.no_archive, prep_only=args.prep_only)
 
     parser.print_help()
     return 1

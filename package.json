@@ -22,6 +22,7 @@
     "assets:strip": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py strip",
     "assets:process": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py process",
     "assets:status": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py status",
+    "assets:regen-v41": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py regen",
     "assets:webp": "node scripts/convert-assets-webp.mjs",
     "predev": "node scripts/convert-assets-webp.mjs",
     "prebuild": "node scripts/convert-assets-webp.mjs",
