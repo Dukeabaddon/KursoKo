@@ -67,19 +67,20 @@
     "background": "solid flat fill #FDFCF8 — matches Questionnaire AssessmentShell bg-landing-paper; faint grey decorative circles allowed at 15% opacity"
   },
   "character": {
-    "presentation": "young man",
+    "presentation": "young woman",
     "age": "college-age",
-    "build": "lanky, relaxed",
+    "build": "slim, relaxed",
     "skin_tone": "warm light tan",
-    "hair": "messy curls",
+    "hair": "neat bun, dark hair",
     "face": "minimal — two dot eyes, small playful smile, no detailed nose",
-    "diversity_note": "unique cast per slot — male presentation, warm light tan skin, messy curls distinguishes from other slots"
+    "diversity_note": "unique cast per slot — female presentation, bun hairstyle distinguishes from other artistic slots"
   },
   "pose": {
-    "stance": "full body, seated drawing",
-    "action": "drawing pictures for a school handout",
-    "facing": "3/4 toward viewer, playful focused gaze between leaf and tablet",
-    "energy": "focused, playful, approachable"
+    "stance": "full body, seated drawing at desk",
+    "action": "drawing pictures for a school handout with colored pencil",
+    "facing": "3/4 toward desk, eyes on paper tilted toward face",
+    "energy": "focused, playful, approachable",
+    "prop_orientation": "Handout paper lies on desk with illustrated side facing CHARACTER; pencil draws the side facing them. Viewer sees blank back of paper, paper edge, or character's hands — NEVER a flat front-facing illustration readable upright from camera"
   },
   "clothes": {
     "top": {
@@ -126,7 +127,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, drawing readable from viewer, illustration flat toward camera, paper facing camera, reversed upside-down art toward viewer, three finger hand, mitt hand"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, warm light tan skin, messy curls, loose creative hoodie #4B2C7F with charcoal drawstrings, yellow paint-smear cuff, scattered lavender paint-fleck dots, relaxed joggers #2D2D2D, canvas sneakers #2D2D2D. Pose: full body, seated drawing, drawing pictures for a school handout. Hero prop: handout page with illustration. Supporting props: colored pencils, eraser, ruler. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Artistic RIASEC accent #FFD54F on props and trim, #9575CD secondary accents. Cheerful creative energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Handout illustration faced camera right-side up — reversed from character's drawing perspective",
+    "fix": "Paper art faces character at desk; viewer sees paper back or edge only"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, warm light tan skin, hair in neat bun, loose creative hoodie #4B2C7F with charcoal drawstrings, yellow paint-smear cuff, scattered lavender paint-fleck dots, relaxed joggers #2D2D2D, canvas sneakers #2D2D2D. Pose: full body, seated at purple desk drawing pictures for a school handout — character looks down at paper on desk tilted toward their face. CRITICAL PROP ORIENTATION: handout paper illustrated side faces the CHARACTER; colored pencil marks the side facing them. Viewer sees the BLANK BACK of the paper, a steep paper edge, or hands from side angle — NEVER a flat front-facing house/illustration readable upright from camera (no reversed drawing toward viewer). Hero prop: handout page with simple abstract shapes only (no words). Supporting props: colored pencils in cup, eraser, ruler. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Artistic RIASEC accent #FFD54F on props and trim, #9575CD secondary accents. Cheerful creative energy. Full head-to-feet visible. Hands: exactly five fingers when visible."
 }

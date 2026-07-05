@@ -77,8 +77,9 @@
   "pose": {
     "stance": "full body, reviewing sales chart",
     "action": "tracking which snack sold fastest at a fair",
-    "facing": "3/4 toward the chart panel, weight on back foot",
-    "energy": "analytical, curious, quietly confident"
+    "facing": "3/4 toward tablet or folder, eyes on chart tilted toward face",
+    "energy": "analytical, curious, quietly confident",
+    "prop_orientation": "Tablet screen or folder papers face CHARACTER; viewer sees BACK of tablet (grey device back) or folder rear cover — NEVER flat chart/screen readable from camera"
   },
   "clothes": {
     "top": {
@@ -125,7 +126,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter I, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, tablet screen facing camera, chart readable from viewer, folder open toward camera, three finger hand, mitt hand"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, warm tan skin, shoulder-length curly afro, dark brown, fitted short-sleeve blouse #4B2C7F with dark charcoal collar, teal cuff stripe, straight-leg trousers #2D2D2D, simple loafers #2D2D2D. Pose: full body, reviewing sales chart, tracking which snack sold fastest at a fair. Hero prop: tablet with simple bar chart. Supporting props: snack samples, notebook, timer icon. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Investigative RIASEC accent #4B2C7F on props and trim, #4DB6AC secondary accents. Analytical curious energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Tablet/folder showed chart front toward viewer instead of character-readable side",
+    "fix": "Screen or papers face character; viewer sees device/folder back or edge"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, warm tan skin, shoulder-length curly afro, dark brown, fitted short-sleeve blouse #4B2C7F with dark charcoal collar, teal cuff stripe, straight-leg trousers #2D2D2D, simple loafers #2D2D2D. Pose: full body, reviewing snack sales at a fair — character looks down at tablet or open folder tilted toward their face. CRITICAL PROP ORIENTATION: bar chart on screen or folder papers faces the CHARACTER; finger points at their side. Viewer sees the BACK of the tablet (grey device rear) or BACK cover of folder/manila envelope — NEVER a flat front-facing chart or screen readable from camera. Hero prop: abstract bar chart shapes only (no words). Supporting props: snack samples, notebook edge, timer icon. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Investigative RIASEC accent #4B2C7F on props and trim, #4DB6AC secondary accents. Analytical curious energy. Full head-to-feet visible. Hands: exactly five fingers when visible."
 }

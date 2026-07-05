@@ -76,9 +76,10 @@
   },
   "pose": {
     "stance": "full body, tallying at desk",
-    "action": "tallying quiz scores without mistakes",
-    "facing": "right profile, 3/4 toward the document stand",
-    "energy": "precise, orderly, quietly satisfied"
+    "action": "tallying quiz scores without mistakes on a clipboard",
+    "facing": "3/4 toward clipboard, eyes on score sheet tilted toward face",
+    "energy": "precise, orderly, quietly satisfied",
+    "prop_orientation": "Score sheet faces CHARACTER; pen marks their side. Viewer sees BACK of clipboard (grey board, metal clip) or steep edge — NEVER flat front-facing score sheet readable from camera"
   },
   "clothes": {
     "top": {
@@ -125,7 +126,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, clipboard facing camera, score sheet readable from viewer, form flat toward viewer, three finger hand, mitt hand"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, light olive skin, short straight side-part, dark brown, pressed button-front shirt #4B2C7F with dark charcoal collar, sky-blue cuff stripe, tailored trousers #2D2D2D, simple oxford shoes #2D2D2D. Pose: full body, tallying at desk, tallying quiz scores without mistakes. Hero prop: score sheet with neat marks. Supporting props: calculator, red pen, stopwatch. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Precise attentive energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Clipboard score sheet faced viewer instead of character-readable side",
+    "fix": "Score sheet tilted toward character; viewer sees board back or edge"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, light olive skin, short straight side-part, dark brown, pressed button-front shirt #4B2C7F with dark charcoal collar, sky-blue cuff stripe, tailored trousers #2D2D2D, simple oxford shoes #2D2D2D. Pose: full body, tallying at desk, tallying quiz scores without mistakes — character looks down at clipboard tilted toward their face. CRITICAL PROP ORIENTATION: score sheet paper faces the CHARACTER; red pen marks the side facing them. Viewer sees the BACK of the clipboard (grey board, metal clip) or a steep 3/4 edge — NEVER a flat front-facing score sheet readable from camera. Hero prop: clipboard with abstract tick marks only (no words). Supporting props: calculator, red pen, stopwatch. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Precise attentive energy. Full head-to-feet visible. Hands: exactly five fingers when visible."
 }

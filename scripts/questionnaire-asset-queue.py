@@ -27,6 +27,7 @@ STYLE_REFS = [
 SENSITIVE_SLOTS = {"17.1", "19.2", "23.2", "24.1", "27.1"}
 # v4.1 prop-orientation + hand fixes — regenerate even when PNG exists
 V41_REGEN_SLOTS = ("3.2", "9.2", "11.1", "11.2", "12.2", "22.2")
+V41_REGEN_SLOTS_BATCH2 = ("20.2", "21.1", "21.2")
 ARCHIVE_DIR = ASSET_DIR / "_archive" / "pre-v41"
 SLOT_RE = re.compile(r"^q?(\d{1,2})\.(\d)$")
 
@@ -78,6 +79,14 @@ def stem_for_slot(slot: str) -> str:
 
 def v41_regen_stems() -> list[str]:
     return [stem_for_slot(slot) for slot in V41_REGEN_SLOTS]
+
+
+def v41_regen_stems_batch2() -> list[str]:
+    return [stem_for_slot(slot) for slot in V41_REGEN_SLOTS_BATCH2]
+
+
+def v41_all_regen_stems() -> list[str]:
+    return v41_regen_stems() + v41_regen_stems_batch2()
 
 
 def archive_output(stem: str) -> Path | None:
@@ -321,7 +330,7 @@ def cmd_status() -> int:
     missing = 0
     inbox_waiting = 0
     regen_pending = 0
-    regen_stems = set(v41_regen_stems())
+    regen_stems = set(v41_all_regen_stems())
 
     print("slot   status    choice")
     print("----   ------    ------")
@@ -356,12 +365,17 @@ def cmd_status() -> int:
     return 0
 
 
-def cmd_regen(slots: list[str] | None, *, archive: bool, prep_only: bool) -> int:
+def cmd_regen(slots: list[str] | None, *, archive: bool, prep_only: bool, batch2: bool) -> int:
     """Archive v4.0 PNGs and prep ChatGPT commands for v4.1 regen slots."""
     if slots:
         target_stems = [stem_for_slot(s) for s in slots]
+        queue_label = ", ".join(slots)
+    elif batch2:
+        target_stems = v41_regen_stems_batch2()
+        queue_label = ", ".join(V41_REGEN_SLOTS_BATCH2)
     else:
         target_stems = v41_regen_stems()
+        queue_label = ", ".join(V41_REGEN_SLOTS)
 
     archived = 0
     for stem in target_stems:
@@ -388,7 +402,7 @@ def cmd_regen(slots: list[str] | None, *, archive: bool, prep_only: bool) -> int
                 print("Clipboard: ready (last slot wins if batch)")
             print()
 
-    print(f"v4.1 regen queue: {', '.join(V41_REGEN_SLOTS)}")
+    print(f"v4.1 regen queue: {queue_label}")
     print(f"Archived: {archived} file(s)")
     print()
     print("After ChatGPT generation, save each PNG to _inbox/NN.M.png then:")
@@ -430,6 +444,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     regen.add_argument("--no-archive", action="store_true", help="Skip archiving existing PNGs")
     regen.add_argument("--prep-only", action="store_true", help="Print ChatGPT commands only")
+    regen.add_argument("--batch2", action="store_true", help="Use batch2 queue: 20.2 21.1 21.2")
     return parser
 
 
@@ -450,7 +465,7 @@ def main() -> int:
     if args.command == "status":
         return cmd_status()
     if args.command == "regen":
-        return cmd_regen(args.slots or None, archive=not args.no_archive, prep_only=args.prep_only)
+        return cmd_regen(args.slots or None, archive=not args.no_archive, prep_only=args.prep_only, batch2=args.batch2)
 
     parser.print_help()
     return 1

@@ -46,6 +46,7 @@
 | `npm run assets:install -- --all` | Install every PNG waiting in `_inbox/` |
 | `npm run assets:status` | Done / inbox / missing table |
 | `npm run assets:regen-v41` | Archive v4.0 PNGs + prep v4.1 regen queue (3.2, 9.2, 11.1, 11.2, 12.2, 22.2) |
+| `npm run assets:regen-v41-b2` | Batch 2: prop-orientation fixes (20.2, 21.1, 21.2) |
 
 **Per slot:** paste in ChatGPT → download → save to `src/assets/questionnaire/_inbox/NN.M.png` → `npm run assets:install`.
 
