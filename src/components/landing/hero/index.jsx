@@ -1,4 +1,9 @@
-import { useId } from 'react'
+/**
+ * #hero — fold hero banner + character
+ * Exports: HeroSection
+ * Data: HERO_CHARACTER, HERO_DECOR (archived floating props), HERO_BANNER_PATH
+ */
+import { useId, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import {
   landingHeroBody,
@@ -7,11 +12,93 @@ import {
   landingHeroGlow,
   landingHeroTitle,
 } from '../landingClasses'
-import { heroEntranceMotionProps } from '../motion'
-import { HERO_CHARACTER, HERO_DECOR } from './heroDecor'
-import { HeroDecorItem } from './HeroDecorItem'
-import { HERO_BANNER_PATH } from './heroBannerPath'
-import { HERO_MOTION } from '../motion/landingMotion'
+import { decorMotionDelay, HERO_MOTION, heroEntranceMotionProps, Reveal } from '../motion'
+import heroCharacterScene from '../../../assets/landing/landing.webp'
+// import heroCloud from '../../../assets/landing/hero/cloud.webp'
+// import heroStar from '../../../assets/landing/hero/star.webp'
+import './index.css'
+
+/**
+ * Hero purple panel shape — viewBox 0 0 100 100 (matches SVG below).
+ * Used for background fill + clip-path so character/props hide outside the slant.
+ */
+const HERO_BANNER_PATH =
+  'M 0,7 Q 0,0 7,0 L 93,0 Q 100,0 100,7 L 96,85 Q 95.5,88.5 92.5,89 L 6,100 Q 3,100.5 3,93 Z'
+
+/**
+ * Hero decor — single source of truth. Resize: change widthRem. Position: top/left/right.
+ * Cloud/star decors archived while hero uses composite landing.webp scene.
+ * Restore entries into HERO_DECOR when split decor PNGs return.
+ */
+const HERO_DECOR = []
+
+const HERO_CHARACTER = {
+  src: heroCharacterScene,
+  alt: 'Filipino student guide with floating campus icons welcoming you to KursoKo',
+  width: 973,
+  height: 830,
+  className:
+    'pointer-events-none absolute bottom-0 left-1/2 z-20 h-[94%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom select-none md:h-[90%] lg:h-[110%]',
+}
+
+const decorImgBase = 'pointer-events-none block h-auto max-w-none select-none'
+
+function decorWrapperStyle(item) {
+  const style = { zIndex: item.zIndex }
+  if (item.top != null) style.top = item.top
+  if (item.left != null) {
+    style.left = typeof item.left === 'number' ? `${item.left}px` : item.left
+  }
+  if (item.right != null) style.right = item.right
+  return style
+}
+
+function decorImgStyle(item) {
+  const style = {
+    width: `${item.widthRem}rem`,
+    height: 'auto',
+    maxWidth: 'none',
+    opacity: item.opacity,
+  }
+  if (item.animate === 'animate-landing-hero-drift-mirror') {
+    style.transform = 'scaleX(-1)'
+    style.transformOrigin = 'center'
+  }
+  if (item.animationDuration) style.animationDuration = item.animationDuration
+  if (item.animationDelay) style.animationDelay = item.animationDelay
+  return style
+}
+
+function decorImgClassName(item, driftReady) {
+  return [decorImgBase, driftReady && item.animate].filter(Boolean).join(' ')
+}
+
+function HeroDecorItem({ item, index }) {
+  const reducedMotion = useReducedMotion()
+  const [driftReady, setDriftReady] = useState(reducedMotion)
+
+  return (
+    <Reveal
+      className="pointer-events-none absolute max-md:hidden"
+      style={decorWrapperStyle(item)}
+      delay={decorMotionDelay(index)}
+      y={HERO_MOTION.decorY}
+      duration={HERO_MOTION.decorDuration}
+      reducedMotion={reducedMotion}
+      mode="hero"
+      onEntranceComplete={() => setDriftReady(true)}
+    >
+      <img
+        src={item.src}
+        alt=""
+        className={decorImgClassName(item, driftReady)}
+        style={decorImgStyle(item)}
+        loading="lazy"
+        decoding="async"
+      />
+    </Reveal>
+  )
+}
 
 export function HeroSection({ onStart }) {
   const gradientId = useId().replace(/:/g, '')
