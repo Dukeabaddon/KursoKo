@@ -73,7 +73,7 @@ export function FAQSection({ onStart }) {
       aria-labelledby="faq-heading"
       className="scroll-mt-24 px-[clamp(1rem,4vw,2rem)] py-[clamp(3rem,8vw,5rem)]"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl" data-landing-inner>
         <header className="mb-[clamp(2rem,5vw,3rem)] max-w-[40rem]">
           <p className="mb-2 text-[0.8125rem] font-bold uppercase tracking-[0.08em] text-landing-accent">
             FAQ

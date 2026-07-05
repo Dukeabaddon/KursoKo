@@ -16,11 +16,12 @@ export function getLandingNavOffset() {
 }
 
 /**
- * Scroll anchor: `.landing-section__inner` (content box), not outer `<section>` padding/blobs.
+ * Scroll anchor: inner content box when present, else the outer `<section>`.
+ * Sections use symmetric block padding, so centering on the section is equivalent.
  * @param {HTMLElement} section
  */
 export function resolveSectionScrollAnchor(section) {
-  const inner = section.querySelector(':scope > .landing-section__inner')
+  const inner = section.querySelector(':scope > [data-landing-inner]')
   if (inner instanceof HTMLElement) return inner
 
   return section

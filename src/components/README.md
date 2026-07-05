@@ -41,7 +41,7 @@ src/components/
 
 See [`landing/README.md`](landing/README.md) — **one folder per section** (`hero/`, `stats/`, `riasec/`, `how-it-works/`, `features/`, `faq/`).
 
-Global at landing root: `landingClasses.js`, `LandingBlobs.jsx`, `index.css` + `tokens.css`, `effects.css`, `animations.css`, `sections.css`.
+Global at landing root: `landingClasses.js`, `index.css` + `tokens.css`, `effects.css`, `animations.css`, `sections.css`.
 
 ## Feature: `questionnaire/`
 

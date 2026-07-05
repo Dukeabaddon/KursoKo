@@ -87,7 +87,7 @@ export function RiasecIntro() {
         containerRef={sectionRef}
         reducedMotion={reducedMotion}
       />
-      <div className="relative z-[1] mx-auto max-w-6xl">
+      <div className="relative z-[1] mx-auto max-w-6xl" data-landing-inner>
         <header className="mb-[clamp(2rem,5vw,3rem)] max-w-[40rem]">
           <p className="mb-2 text-[0.8125rem] font-bold uppercase tracking-[0.08em] text-landing-accent">
             Know yourself
