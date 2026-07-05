@@ -7,7 +7,6 @@ import {
   BoltIcon,
 } from '@heroicons/react/24/outline'
 import LandingBlobs from '../LandingBlobs'
-import { landingFeaturesPanelRadius } from '../landingClasses'
 
 /** RIASEC accent per feature — flat outline icons, no icon container box */
 const features = [
@@ -55,10 +54,10 @@ const FeaturesGrid = () => (
   <section
     id="features"
     aria-labelledby="features-heading"
-    className="landing-section landing-section--features landing-section--blobs scroll-mt-24 px-[clamp(1rem,4vw,2rem)]"
+    className="landing-section landing-section--features landing-section--blobs scroll-mt-24"
   >
     <LandingBlobs variant="teal-yellow" />
-    <div className={`landing-features-panel ${landingFeaturesPanelRadius}`}>
+    <div className="landing-features-panel overflow-hidden rounded-features">
       <div className="landing-features-panel__content">
         <div className="landing-section__header landing-features-panel__header">
           <p className="landing-eyebrow landing-features-panel__eyebrow">Why KursoKo</p>

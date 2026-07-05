@@ -51,6 +51,3 @@ export const landingHeroCharacterCol =
 
 export const landingHeroGlow =
   'landing-hero-glow pointer-events-none absolute bottom-[24%] left-1/2 z-[1] hidden h-[80%] w-[min(68%,18rem)] -translate-x-1/2 rounded-full md:block'
-
-/** #features purple panel — edit radius here (rounded-none | rounded-xl | rounded-2xl | rounded-3xl) */
-export const landingFeaturesPanelRadius = 'rounded-2xl sm:rounded-3xl'

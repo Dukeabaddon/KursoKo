@@ -24,4 +24,7 @@
 
   /* Hero banner — desktop fixed height; mobile fills fold via flex */
   --landing-hero-height: min(85dvh, 700px);
+
+  /** #features purple panel — edit radius (e.g. 1.25rem, 2rem, 0) */
+  --radius-features: 2rem;
 }
