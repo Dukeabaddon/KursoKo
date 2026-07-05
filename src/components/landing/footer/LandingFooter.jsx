@@ -1,31 +1,9 @@
-/**
- * Landing footer — floating card, big wordmark, optional floating stickers
- * Exports: LandingFooter
- * Data: FOOTER_STICKERS (drop PNGs in assets/landing/footer/stickers/, run npm run assets:webp)
- */
-import { useCallback } from 'react'
-import { useLenis } from '../motion'
-import { smoothScrollToHash } from '../../../utils/smoothScroll'
+import { FOOTER_STICKERS } from './footer.data'
+import { useFooterScroll } from './footer.hooks'
 import './index.css'
 
-const FOOTER_STICKERS = [
-  { id: 'footer-sticker-1', src: null, className: 'landing-footer-sticker landing-footer-sticker--1' },
-  { id: 'footer-sticker-2', src: null, className: 'landing-footer-sticker landing-footer-sticker--2' },
-  { id: 'footer-sticker-3', src: null, className: 'landing-footer-sticker landing-footer-sticker--3' },
-  { id: 'footer-sticker-4', src: null, className: 'landing-footer-sticker landing-footer-sticker--4' },
-  { id: 'footer-sticker-5', src: null, className: 'landing-footer-sticker landing-footer-sticker--5' },
-]
-
 export function LandingFooter({ onStart }) {
-  const lenis = useLenis()
-
-  const scrollTo = useCallback(
-    (event, href) => {
-      event.preventDefault()
-      smoothScrollToHash(href, { lenis })
-    },
-    [lenis],
-  )
+  const scrollTo = useFooterScroll()
 
   return (
     <div className="landing-footer-wrap">
