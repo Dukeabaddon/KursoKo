@@ -367,6 +367,10 @@
   text-align: left;
 }
 
+.results-fold .results-career-card-metrics {
+  min-width: 0;
+}
+
 @media (min-width: 640px) {
   .results-fold .results-career-card-trigger {
     padding: 1.5rem;

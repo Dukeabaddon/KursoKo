@@ -1,8 +1,70 @@
-import { useEffect, useRef, useState } from 'react'
-import { Award, Briefcase, ChevronDown, ExternalLink } from 'lucide-react'
+import { useEffect, useId, useRef, useState } from 'react'
+import { Award, ChevronDown, ExternalLink, Info } from 'lucide-react'
 import { resultsMeta, resultsSurface } from './resultsClasses'
 import { observeScrollReveal } from './scrollReveal'
 import SchoolMatchCard from './SchoolMatchCard'
+
+const FIT_SCORE_HELP =
+  'Fit score (40–99) shows how closely your RIASEC answers match this career\'s interest pattern. Higher means stronger alignment. It is a guide for exploring paths—not a percent chance of getting hired or admitted.'
+
+function FitScoreSectionHelp() {
+  const [open, setOpen] = useState(false)
+  const helpId = useId()
+  const panelRef = useRef(null)
+
+  useEffect(() => {
+    if (!open) return undefined
+
+    function handlePointerDown(event) {
+      if (panelRef.current?.contains(event.target)) return
+      setOpen(false)
+    }
+
+    function handleKeyDown(event) {
+      if (event.key === 'Escape') setOpen(false)
+    }
+
+    document.addEventListener('pointerdown', handlePointerDown)
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [open])
+
+  return (
+    <span className="group relative inline-flex align-middle">
+      <button
+        type="button"
+        className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-full text-landing-muted transition-colors hover:bg-landing-ink/5 hover:text-landing-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent"
+        aria-expanded={open}
+        aria-controls={helpId}
+        aria-label="What is fit score?"
+        onClick={() => setOpen((current) => !current)}
+      >
+        <Info className="h-4 w-4" aria-hidden="true" />
+      </button>
+
+      <span
+        role="tooltip"
+        className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 hidden w-[min(18rem,calc(100vw-2rem))] -translate-x-1/2 rounded-xl border border-landing-ink/10 bg-white px-3 py-2 text-left text-xs font-normal normal-case leading-relaxed text-landing-ink opacity-0 shadow-lg transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 sm:block"
+      >
+        {FIT_SCORE_HELP}
+      </span>
+
+      {open ? (
+        <span
+          ref={panelRef}
+          id={helpId}
+          role="tooltip"
+          className="absolute bottom-full left-1/2 z-20 mb-2 w-[min(18rem,calc(100vw-2rem))] -translate-x-1/2 rounded-xl border border-landing-ink/10 bg-white px-3 py-2 text-left text-xs font-normal normal-case leading-relaxed text-landing-ink shadow-lg sm:hidden"
+        >
+          {FIT_SCORE_HELP}
+        </span>
+      ) : null}
+    </span>
+  )
+}
 
 function TopBadge({ index }) {
   if (index > 2) return null
@@ -25,14 +87,11 @@ function AffinityBar({ label, percent, progress = 0 }) {
   const width = percent * progress
 
   return (
-    <div className="sm:w-[180px]">
+    <div>
       <div className="flex items-baseline justify-between gap-3">
         <span className={`${resultsMeta} text-landing-teal`}>Fit score</span>
         <span className="text-lg font-bold tabular-nums text-landing-accent">{percent}</span>
       </div>
-      <p className="mt-0.5 text-[0.625rem] leading-snug text-landing-muted normal-case">
-        Heuristic, not a probability
-      </p>
       <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-landing-ink/10">
         <div
           className="results-affinity-bar h-full rounded-full bg-gradient-to-r from-landing-lavender to-landing-accent"
@@ -76,11 +135,14 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
   return (
     <section ref={sectionRef} className="results-reveal" aria-labelledby="profession-results-heading">
       <div className="mb-4">
-        <h2 id="profession-results-heading" className="text-lg font-bold text-landing-ink">
-          Profession matches for you
-        </h2>
+        <div className="flex flex-wrap items-center gap-2">
+          <h2 id="profession-results-heading" className="text-lg font-bold text-landing-ink">
+            Profession matches for you
+          </h2>
+          <FitScoreSectionHelp />
+        </div>
         <p className="mt-1 text-sm text-landing-muted normal-case">
-          Ranked by RIASEC fit score — a guide, not a guarantee of admission or hiring.
+          Ranked by fit score — a guide for exploring paths, not a job or admission guarantee.
         </p>
       </div>
 
@@ -113,18 +175,21 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                 </div>
               </div>
 
-              <div data-affinity-bar={career.id}>
+              <div
+                className="results-career-card-metrics w-full shrink-0 sm:w-[180px]"
+                data-affinity-bar={career.id}
+              >
                 <AffinityBar
                   label={`${career.title} fit score`}
                   percent={career.matchPercent}
                   progress={barProgress.get(career.id) ?? 0}
                 />
                 {career.whyMatched?.length ? (
-                  <ul className="mt-2 flex flex-wrap gap-1.5">
+                  <ul className="mt-2 flex flex-col gap-1">
                     {career.whyMatched.map((reason) => (
                       <li
                         key={reason}
-                        className="rounded-full border border-landing-teal/20 bg-landing-teal/5 px-2 py-0.5 text-[0.625rem] font-medium text-landing-teal"
+                        className="rounded-lg border border-landing-teal/20 bg-landing-teal/5 px-2 py-1 text-[0.625rem] font-medium leading-snug text-landing-teal"
                       >
                         {reason}
                       </li>
