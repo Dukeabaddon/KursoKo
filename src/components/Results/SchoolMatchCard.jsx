@@ -15,7 +15,7 @@ function SchoolMatchCard({ school, rank }) {
               <h4 className="text-lg font-bold text-landing-ink">{school.name}</h4>
             </div>
           </div>
-          <span className="rounded-full bg-landing-ink px-2.5 py-1 text-[0.625rem] font-bold uppercase tracking-wide text-white">
+          <span className="rounded-full border border-landing-accent/20 bg-landing-accent/5 px-2.5 py-1 text-[0.625rem] font-bold uppercase tracking-wide text-landing-accent">
             {school.matchLabel}
           </span>
         </div>
@@ -45,10 +45,10 @@ function SchoolMatchCard({ school, rank }) {
           href={school.website}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-landing-ink px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-landing-ink/90"
+          className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-landing-accent/20 bg-landing-accent/5 px-4 py-2.5 text-sm font-semibold text-landing-accent transition-colors hover:bg-landing-accent/10"
         >
           Visit school website
-          <ExternalLink className="h-4 w-4 text-white" aria-hidden="true" />
+          <ExternalLink className="h-4 w-4" aria-hidden="true" />
         </a>
       </div>
     </article>
