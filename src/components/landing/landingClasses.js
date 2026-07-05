@@ -16,7 +16,7 @@ export const landingFold =
   'flex h-dvh max-h-dvh flex-col overflow-hidden bg-landing-paper pt-16'
 
 export const landingBtnPrimary =
-  'landing-nav-cta inline-flex items-center justify-center rounded-2xl border px-4 py-2 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent'
+  'landing-nav-cta inline-flex cursor-pointer items-center justify-center rounded-2xl border px-4 py-2 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent'
 
 export const landingBtnPrimaryMobile =
   'landing-nav-cta mt-2 w-full px-4 py-2.5 text-sm font-semibold'
@@ -41,7 +41,7 @@ export const landingHeroBody =
   'text-[clamp(0.9375rem,0.45vw+0.75rem,1.125rem)] leading-[1.55] max-[767px]:text-[clamp(1rem,2.5vw+0.65rem,1.125rem)] max-[767px]:leading-[1.6] md:text-lg md:leading-[1.65] lg:text-[1.1875rem] lg:leading-[1.7]'
 
 export const landingHeroCta =
-  'landing-hero-cta inline-flex items-center justify-center gap-2 rounded-full border-2 px-6 py-2.5 text-sm font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:px-7 md:py-3 md:text-base'
+  'landing-hero-cta inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border-2 px-6 py-2.5 text-sm font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:px-7 md:py-3 md:text-base'
 
 /**
  * Hero character column — relative canvas. Decor sizes: hero/heroDecor.js

@@ -1,15 +1,14 @@
 import { ChevronLeft } from 'lucide-react'
 import { getPersonalityProfile } from '../../utils/riasecScoring'
-import { getUniversityMatchesForCareer } from '../../utils/universityMatcher'
 import { getCareerMatches } from '../../utils/careerMatcher'
 import ResultsShell from './ResultsShell'
-import SchoolMatchCard from './SchoolMatchCard'
+import SchoolsSidePanelContent from './SchoolsSidePanelContent'
 import { resultsMeta } from './resultsClasses'
 
+/** Full-page fallback — primary UX is ResultsSidePanel in Results.jsx */
 function ResultsSchoolsPage({ responses, careerId, onBack, onHome }) {
   const profile = getPersonalityProfile(responses)
   const career = getCareerMatches(profile, 10).find((item) => item.id === careerId)
-  const schools = career ? getUniversityMatchesForCareer(profile, career, null) : []
 
   return (
     <ResultsShell onHome={onHome}>
@@ -28,22 +27,9 @@ function ResultsSchoolsPage({ responses, careerId, onBack, onHome }) {
           <h1 className="font-[family-name:var(--font-display)] text-2xl font-bold text-landing-ink sm:text-3xl">
             {career?.title ?? 'This path'}
           </h1>
-          <p className="mt-2 text-sm text-landing-muted normal-case">
-            {schools.length} schools ranked by program fit for your RIASEC profile
-          </p>
         </header>
 
-        {schools.length > 0 ? (
-          <ol className="space-y-4">
-            {schools.map((school, index) => (
-              <li key={school.id}>
-                <SchoolMatchCard school={school} rank={index} />
-              </li>
-            ))}
-          </ol>
-        ) : (
-          <p className="text-sm text-landing-muted normal-case">No school matches for this path yet.</p>
-        )}
+        <SchoolsSidePanelContent responses={responses} careerId={careerId} />
       </div>
     </ResultsShell>
   )

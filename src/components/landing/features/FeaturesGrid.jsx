@@ -58,12 +58,12 @@ const FeaturesGrid = () => (
   >
     <LandingBlobs variant="teal-yellow" />
     <div className="landing-section__inner">
-      <div className="landing-section__header">
-        <p className="landing-eyebrow">Why KursoKo</p>
-        <h2 id="features-heading" className="landing-heading">
+      <div className="landing-features-intro landing-section__header">
+        <p className="landing-eyebrow landing-features-intro__eyebrow">Why KursoKo</p>
+        <h2 id="features-heading" className="landing-heading landing-features-intro__heading">
           Clarity for any career crossroads
         </h2>
-        <p className="landing-lead">
+        <p className="landing-lead landing-features-intro__lead">
           For students picking a track, graduates choosing a major, or anyone who wants to know
           which interests run strongest — not another generic personality quiz.
         </p>

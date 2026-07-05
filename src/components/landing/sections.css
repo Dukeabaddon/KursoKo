@@ -119,6 +119,36 @@
   margin-bottom: clamp(2rem, 5vw, 3rem);
 }
 
+/* Why KursoKo — purple intro band (experiment) */
+.landing-features-intro {
+  max-width: none;
+  background: var(--color-landing-accent-deep);
+  border-radius: 1.25rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.landing-features-intro__eyebrow,
+.landing-features-intro__heading,
+.landing-features-intro__lead {
+  color: #ffffff;
+}
+
+.landing-features-intro__eyebrow {
+  color: #ffffff;
+  opacity: 0.92;
+}
+
+.landing-features-intro__lead {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 42rem;
+}
+
+@media (min-width: 640px) {
+  .landing-features-intro {
+    border-radius: 1.5rem;
+  }
+}
+
 .landing-eyebrow {
   font-size: 0.8125rem;
   font-weight: 700;

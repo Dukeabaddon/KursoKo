@@ -13,8 +13,9 @@ import RiasecBreakdown from './RiasecBreakdown'
 import CourseSection from './CourseSection'
 import ProfessionAccordionSection from './ProfessionAccordionSection'
 import ResultsFooter from './ResultsFooter'
-import ResultsSchoolsPage from './ResultsSchoolsPage'
-import ResultsScholarshipsPage from './ResultsScholarshipsPage'
+import ResultsSidePanel from './ResultsSidePanel'
+import SchoolsSidePanelContent from './SchoolsSidePanelContent'
+import ScholarshipsSidePanelContent from './ScholarshipsSidePanelContent'
 import ShareCard from './ShareCard'
 
 function Results({ responses, onRetake, onHome }) {
@@ -93,27 +94,20 @@ function Results({ responses, onRetake, onHome }) {
     setTimeout(() => setShareMessage(''), 3000)
   }
 
-  if (detailView?.type === 'schools') {
-    return (
-      <ResultsSchoolsPage
-        responses={responses}
-        careerId={detailView.careerId}
-        onBack={() => setDetailView(null)}
-        onHome={onHome}
-      />
-    )
-  }
-
-  if (detailView?.type === 'scholarships') {
-    return (
-      <ResultsScholarshipsPage
-        responses={responses}
-        careerId={detailView.careerId}
-        onBack={() => setDetailView(null)}
-        onHome={onHome}
-      />
-    )
-  }
+  const panelCareer = detailView?.careerId
+    ? careerCards.find((career) => career.id === detailView.careerId)
+    : null
+  const panelOpen = detailView?.type === 'schools' || detailView?.type === 'scholarships'
+  const panelTitle =
+    detailView?.type === 'scholarships'
+      ? (panelCareer?.title ?? 'Scholarship matches')
+      : (panelCareer?.title ?? 'School matches')
+  const panelSubtitle =
+    detailView?.type === 'scholarships' && panelCareer
+      ? `${panelCareer.scholarshipTotal} programs ranked by fit · verify eligibility on official sites`
+      : panelCareer
+        ? `${panelCareer.schoolTotal} schools ranked by program fit for your RIASEC profile`
+        : undefined
 
   return (
     <ResultsShell onHome={onHome}>
@@ -156,6 +150,21 @@ function Results({ responses, onRetake, onHome }) {
       <div className="fixed -left-[9999px] top-0 w-[360px] pointer-events-none" aria-hidden="true">
         <ShareCard cardRef={shareCardRef} archetype={archetype} topCareer={careerMatches[0]} />
       </div>
+
+      <ResultsSidePanel
+        key={detailView ? `${detailView.type}-${detailView.careerId}` : 'closed'}
+        open={panelOpen}
+        onClose={() => setDetailView(null)}
+        title={panelTitle}
+        subtitle={panelSubtitle}
+      >
+        {detailView?.type === 'schools' ? (
+          <SchoolsSidePanelContent responses={responses} careerId={detailView.careerId} />
+        ) : null}
+        {detailView?.type === 'scholarships' ? (
+          <ScholarshipsSidePanelContent responses={responses} careerId={detailView.careerId} />
+        ) : null}
+      </ResultsSidePanel>
     </ResultsShell>
   )
 }

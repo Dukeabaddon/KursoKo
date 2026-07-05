@@ -141,6 +141,7 @@
   background-color: var(--color-landing-accent);
   border-color: rgba(255, 255, 255, 0.4);
   color: #fff;
+  cursor: pointer;
 }
 
 .landing-nav-cta::before {
@@ -162,6 +163,7 @@
   background-color: #fff;
   border-color: #fff;
   color: var(--color-landing-accent);
+  cursor: pointer;
 }
 
 .landing-hero-cta::before {

@@ -263,7 +263,7 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                                     href={scholarship.applicationLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-emerald-600 px-3.5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
+                                    className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-xl bg-emerald-600 px-3.5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
                                   >
                                     Open scholarship
                                     <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -281,7 +281,7 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                           <button
                             type="button"
                             onClick={() => onSeeAllScholarships?.(career.id)}
-                            className="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-xl border border-emerald-600/25 bg-emerald-600/5 px-4 py-2.5 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-600/10"
+                            className="mt-3 inline-flex min-h-11 w-full cursor-pointer items-center justify-center rounded-xl border border-emerald-600/25 bg-emerald-600/5 px-4 py-2.5 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-600/10"
                           >
                             See all {career.scholarshipTotal} scholarships for this path
                           </button>
