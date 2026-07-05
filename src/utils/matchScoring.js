@@ -18,8 +18,15 @@ export function cosineSimilarity(scores, weights) {
   return dot / (Math.sqrt(magA) * Math.sqrt(magB))
 }
 
-/** Map cosine (0–1) to a display fit score (40–99). Not a probability. */
+/** Map cosine (0–1) to a 0–100 alignment meter. Not a hiring or admission probability. */
 export function toFitPercent(cosine) {
   const clamped = Math.min(1, Math.max(0, cosine))
-  return Math.min(99, Math.max(40, Math.round(40 + clamped * 59)))
+  return Math.min(100, Math.max(0, Math.round(clamped * 100)))
+}
+
+/** Student-friendly tier from rank within the user's result list (0 = best). */
+export function getFitTierLabel(rankIndex) {
+  if (rankIndex === 0) return 'Top match'
+  if (rankIndex <= 2) return 'Strong match'
+  return 'Good match'
 }

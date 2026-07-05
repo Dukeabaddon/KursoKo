@@ -1,4 +1,5 @@
 import { SITE_URL } from '../config/site.js'
+import { getFitTierLabel } from './matchScoring.js'
 
 export const KURSOKO_SHARE_URL = SITE_URL
 
@@ -22,7 +23,7 @@ function getExportSize(element) {
 export function buildShareText({ archetype, topCareer, combination }) {
   const typeLabel = combination ? ` (${combination})` : ''
   const careerLine = topCareer
-    ? `${topCareer.title} — fit score ${topCareer.matchPercent}`
+    ? `${topCareer.title} — ${getFitTierLabel(0)}`
     : 'Explore careers on KursoKo'
 
   return [

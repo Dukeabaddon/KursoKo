@@ -125,7 +125,7 @@ function compareCareers(a, b) {
 }
 
 /**
- * Rank careers by RIASEC cosine fit. matchPercent is a display fit score (40–99), not a probability.
+ * Rank careers by RIASEC cosine fit. matchPercent is a 0–100 alignment meter, not a probability.
  */
 export function getCareerMatches(profile, limit = 10) {
   const scores = profile.scores ?? {}

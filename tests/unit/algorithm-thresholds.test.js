@@ -79,11 +79,11 @@ describe('career algorithm thresholds', () => {
     expect(delta).toBeLessThan(0.5) // negligible vs score scale (~10–40)
   })
 
-  it('matchPercent (fit score) is clamped to [40, 99]', () => {
+  it('matchPercent is a 0–100 alignment meter', () => {
     const matches = getCareerMatches(investigativeProfile, 57)
     for (const m of matches) {
-      expect(m.matchPercent).toBeGreaterThanOrEqual(40)
-      expect(m.matchPercent).toBeLessThanOrEqual(99)
+      expect(m.matchPercent).toBeGreaterThanOrEqual(0)
+      expect(m.matchPercent).toBeLessThanOrEqual(100)
     }
   })
 

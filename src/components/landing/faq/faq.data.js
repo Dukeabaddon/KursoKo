@@ -38,9 +38,9 @@ export const FAQS = [
     answer: 'Yes. No hidden fees, subscriptions, or paywalled results.',
   },
   {
-    question: 'Can I retake it?',
+    question: 'How does KursoKo rank career matches?',
     answer:
-      'Yes. Interests can shift as you gain experience. Retake after a few months if you want to compare.',
+      'After you finish the quiz, we compare your RIASEC pattern to each career’s interest profile. You’ll see a simple label—Top match, Strong match, or Good match—and a 0–100 bar that shows alignment (higher = closer fit). These are guides for exploring paths, not grades and not your chance of getting hired or admitted. Use them with school research, parents, or a counselor.',
   },
 ]
 

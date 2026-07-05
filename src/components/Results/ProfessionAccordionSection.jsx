@@ -4,8 +4,10 @@ import { resultsMeta, resultsSurface } from './resultsClasses'
 import { observeScrollReveal } from './scrollReveal'
 import SchoolMatchCard from './SchoolMatchCard'
 
+import { getFitTierLabel } from '../../utils/matchScoring'
+
 const FIT_SCORE_HELP =
-  'Fit score (40–99) shows how closely your RIASEC answers match this career\'s interest pattern. Higher means stronger alignment. It is a guide for exploring paths—not a percent chance of getting hired or admitted.'
+  'Each career gets a simple match level—Top, Strong, or Good—and a 0–100 bar for how closely your quiz answers fit that path. Higher bar = better alignment. This is for exploring options, not your chance of getting hired or admitted.'
 
 function FitScoreSectionHelp() {
   const [open, setOpen] = useState(false)
@@ -39,7 +41,7 @@ function FitScoreSectionHelp() {
         className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-full text-landing-muted transition-colors hover:bg-landing-ink/5 hover:text-landing-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent"
         aria-expanded={open}
         aria-controls={helpId}
-        aria-label="What is fit score?"
+        aria-label="How does career matching work?"
         onClick={() => setOpen((current) => !current)}
       >
         <Info className="h-4 w-4" aria-hidden="true" />
@@ -83,24 +85,21 @@ function TopBadge({ index }) {
   )
 }
 
-function AffinityBar({ label, percent, progress = 0 }) {
+function AffinityBar({ label, tierLabel, percent, progress = 0 }) {
   const width = percent * progress
 
   return (
     <div>
-      <div className="flex items-baseline justify-between gap-3">
-        <span className={`${resultsMeta} text-landing-teal`}>Fit score</span>
-        <span className="text-lg font-bold tabular-nums text-landing-accent">{percent}</span>
-      </div>
+      <p className={`${resultsMeta} text-landing-teal`}>{tierLabel}</p>
       <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-landing-ink/10">
         <div
           className="results-affinity-bar h-full rounded-full bg-gradient-to-r from-landing-lavender to-landing-accent"
           style={{ width: `${width}%` }}
           role="progressbar"
           aria-valuenow={percent}
-          aria-valuemin={40}
-          aria-valuemax={99}
-          aria-label={label}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={`${label}: ${tierLabel}, ${percent} out of 100 alignment`}
         />
       </div>
     </div>
@@ -142,7 +141,7 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
           <FitScoreSectionHelp />
         </div>
         <p className="mt-1 text-sm text-landing-muted normal-case">
-          Ranked by fit score — a guide for exploring paths, not a job or admission guarantee.
+          Ranked by how well each path fits you — not a job or admission guarantee.
         </p>
       </div>
 
@@ -180,22 +179,11 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                 data-affinity-bar={career.id}
               >
                 <AffinityBar
-                  label={`${career.title} fit score`}
+                  label={career.title}
+                  tierLabel={getFitTierLabel(index)}
                   percent={career.matchPercent}
                   progress={barProgress.get(career.id) ?? 0}
                 />
-                {career.whyMatched?.length ? (
-                  <ul className="mt-2 flex flex-col gap-1">
-                    {career.whyMatched.map((reason) => (
-                      <li
-                        key={reason}
-                        className="rounded-lg border border-landing-teal/20 bg-landing-teal/5 px-2 py-1 text-[0.625rem] font-medium leading-snug text-landing-teal"
-                      >
-                        {reason}
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
               </div>
             </div>
           )
@@ -261,6 +249,18 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                     <div className="results-surface-muted p-4">
                       <p className={`mb-2 ${resultsMeta} text-landing-accent`}>Why this path feels promising</p>
                       <p className="text-sm leading-relaxed text-landing-ink normal-case sm:text-base">{career.narrative}</p>
+                      {career.whyMatched?.length ? (
+                        <ul className="mt-3 flex flex-wrap gap-1.5">
+                          {career.whyMatched.map((reason) => (
+                            <li
+                              key={reason}
+                              className="rounded-lg border border-landing-teal/20 bg-landing-teal/5 px-2.5 py-1 text-xs font-medium leading-snug text-landing-teal"
+                            >
+                              {reason}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
                     </div>
 
                     <div className="grid gap-4 xl:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">

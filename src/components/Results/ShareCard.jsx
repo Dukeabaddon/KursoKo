@@ -1,4 +1,5 @@
 import { getCharacterImage } from '../../utils/characterAssets'
+import { getFitTierLabel } from '../../utils/matchScoring'
 import { SITE_URL } from '../../config/site.js'
 import CharacterCardFrame from './CharacterCardFrame'
 
@@ -62,8 +63,21 @@ function ShareCard({ archetype, topCareer, combination, className = '' }) {
             {topCareer.title}
           </p>
           <p className="mt-1 text-2xl font-bold" style={{ color: CARD.gold }}>
-            Fit score {topCareer.matchPercent}
+            {getFitTierLabel(0)}
           </p>
+          <div
+            className="mt-2 h-2 overflow-hidden rounded-full bg-white/20"
+            role="progressbar"
+            aria-valuenow={topCareer.matchPercent}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label={`${topCareer.title} alignment`}
+          >
+            <div
+              className="h-full rounded-full bg-[#FBC64D]"
+              style={{ width: `${topCareer.matchPercent}%` }}
+            />
+          </div>
         </div>
       ) : null}
 
