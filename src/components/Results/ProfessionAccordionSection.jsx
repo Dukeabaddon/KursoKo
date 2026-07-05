@@ -82,21 +82,74 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
         {careerCards.map((career, index) => {
           const isOpen = openId === career.id
           const schools = career.schools ?? []
+          const isFeaturedCareer = index < 10
+          const hasRankAccent = index < 3
+
+          const triggerContent = (
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div className="min-w-0 flex-1">
+                <div className="mb-3 flex flex-wrap items-center gap-2">
+                  <p className={`${resultsMeta} text-landing-accent`}>Profession #{index + 1}</p>
+                  <TopBadge index={index} />
+                </div>
+
+                <div className="flex items-start justify-between gap-4">
+                  <div className="min-w-0">
+                    <h3 className="font-[family-name:var(--font-display)] text-xl font-bold text-landing-ink">
+                      {career.title}
+                    </h3>
+                    <p className="mt-1 text-sm text-landing-muted normal-case">{career.learningPath}</p>
+                  </div>
+                  <ChevronDown
+                    className={`${hasRankAccent ? 'results-career-card-chevron' : ''} mt-1 h-5 w-5 shrink-0 text-landing-muted transition-transform duration-300 ease-out ${isOpen ? (hasRankAccent ? 'is-open' : 'rotate-180') : ''}`}
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+
+              <div data-affinity-bar={career.id}>
+                <AffinityBar
+                  label={`${career.title} affinity`}
+                  percent={career.matchPercent}
+                  progress={barProgress.get(career.id) ?? 0}
+                />
+              </div>
+            </div>
+          )
 
           return (
             <article
               key={career.id}
-              className={`${resultsSurface} relative overflow-hidden border transition-colors ${
-                index < 3 ? 'border-landing-accent/20 shadow-[0_18px_40px_rgba(122,92,194,0.08)]' : 'border-landing-ink/10'
-              } ${index < 3 ? 'results-career-card' : ''}`}
+              {...(hasRankAccent
+                ? {
+                    'data-rank': index + 1,
+                    'data-open': isOpen ? 'true' : 'false',
+                  }
+                : {})}
+              className={
+                isFeaturedCareer
+                  ? `results-career-card${hasRankAccent ? ' results-career-card--ranked shadow-[0_18px_40px_rgba(122,92,194,0.08)]' : ''}`
+                  : `${resultsSurface} border-landing-ink/10`
+              }
             >
-              <div className={index < 3 ? 'results-career-card-header' : undefined}>
-                {index < 3 ? (
-                  <div
-                    className={`results-career-card-splash results-career-card-splash--${index + 1}`}
-                    aria-hidden="true"
-                  />
-                ) : null}
+              {isFeaturedCareer ? (
+                <div className="results-career-card-header">
+                  {hasRankAccent ? (
+                    <div className="results-career-card-bg" aria-hidden="true">
+                      <div className="results-career-card-bg__band" />
+                    </div>
+                  ) : null}
+                  <button
+                    type="button"
+                    className="results-career-card-trigger"
+                    onClick={() => setOpenId((current) => (current === career.id ? null : career.id))}
+                    aria-expanded={isOpen}
+                    aria-controls={`career-panel-${career.id}`}
+                  >
+                    {triggerContent}
+                  </button>
+                </div>
+              ) : (
                 <button
                   type="button"
                   className="relative z-[1] w-full text-left"
@@ -104,49 +157,23 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                   aria-expanded={isOpen}
                   aria-controls={`career-panel-${career.id}`}
                 >
-                <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                  <div className="min-w-0 flex-1">
-                    <div className="mb-3 flex flex-wrap items-center gap-2">
-                      <p className={`${resultsMeta} text-landing-accent`}>Profession #{index + 1}</p>
-                      <TopBadge index={index} />
-                    </div>
-
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="min-w-0">
-                        <h3 className="font-[family-name:var(--font-display)] text-xl font-bold text-landing-ink">
-                          {career.title}
-                        </h3>
-                        <p className="mt-1 text-sm text-landing-muted normal-case">{career.learningPath}</p>
-                      </div>
-                      <ChevronDown
-                        className={`mt-1 h-5 w-5 shrink-0 text-landing-muted transition-transform duration-300 ease-out ${isOpen ? 'rotate-180' : ''}`}
-                        aria-hidden="true"
-                      />
-                    </div>
-                  </div>
-
-                  <div data-affinity-bar={career.id}>
-                    <AffinityBar
-                      label={`${career.title} affinity`}
-                      percent={career.matchPercent}
-                      progress={barProgress.get(career.id) ?? 0}
-                    />
-                  </div>
-                </div>
-              </button>
-              </div>
+                  {triggerContent}
+                </button>
+              )}
 
               <div
                 id={`career-panel-${career.id}`}
-                className="results-accordion-panel results-career-card-body"
+                className={`results-accordion-panel ${isFeaturedCareer ? 'results-career-card-body' : ''}`}
                 data-open={isOpen ? 'true' : 'false'}
                 aria-hidden={!isOpen}
               >
                 <div>
                   <div
-                    className={`mt-5 space-y-5 border-t border-landing-ink/10 pt-5 ${
-                      index < 3 ? 'results-career-card-body-inner' : ''
-                    }`}
+                    className={
+                      isFeaturedCareer
+                        ? 'results-career-card-body-inner space-y-5'
+                        : 'mt-5 space-y-5 border-t border-landing-ink/10 pt-5'
+                    }
                   >
                     <div className="results-surface-muted p-4">
                       <p className={`mb-2 ${resultsMeta} text-landing-accent`}>Why this path feels promising</p>

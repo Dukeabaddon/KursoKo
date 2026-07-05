@@ -16,26 +16,9 @@ const RiasecIntro = () => (
           What is RIASEC?
         </h2>
         <p className="landing-lead">
-          KursoKo uses the same Holland Code framework trusted by tools like{' '}
-          <a
-            href="https://scope.sti.edu/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="landing-link"
-          >
-            SCOPE
-          </a>{' '}
-          and the U.S.{' '}
-          <a
-            href="https://www.mynextmove.org/explore/ip"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="landing-link"
-          >
-            O*NET Interest Profiler
-          </a>
-          . Six interest types help you see which work environments and paths fit you best — at any
-          stage of life.
+          There&apos;s no single &ldquo;right&rdquo; student type. RIASEC shows six ways people lean
+          — building, researching, creating, helping, leading, organizing — so you can explore paths
+          that actually fit you, not what everyone else is doing.
         </p>
       </div>
 

@@ -1,28 +1,42 @@
 {
   "project": "KursoKo",
-  "asset_set": "How it works — Step 2 (Kilalanin ang profile mo)",
+  "schema_version": 2,
+  "mode": "object-only",
+  "asset_set": "How it works — Step 2 (See your profile)",
   "deliverable": {
-    "filename": "src/assets/landing/placeholders/steps/step-02-profile.png",
+    "filename": "src/assets/landing/placeholders/steps/step-2.png",
     "width_px": 640,
     "height_px": 480,
     "aspect_ratio": "4:3",
-    "background": "transparent PNG",
+    "format": "PNG-24",
+    "background_fill": "#FDFCF8",
     "safe_padding_px": 32
   },
-  "subject": {
-    "step_number": "02",
-    "title_taglish": "Kilalanin ang profile mo",
-    "scene": "Simple RIASEC radar or hexagon with 6 colored dots (R I A S E C), center glow showing 'your type'. Holland Code career assessment.",
-    "story": "Scores reveal your dominant interest types"
-  },
   "palette": {
+    "paper": "#FDFCF8",
+    "ink": "#2D2D2D",
     "r": "#4DB6AC",
-    "i": "#4B2C7F",
+    "i": "#6E4FB8",
     "a": "#FFD54F",
     "s": "#9575CD",
     "e": "#FF8A65",
     "c": "#81D4FA",
-    "ink": "#2D2D2D"
+    "purple_deep": "#4B2C7F",
+    "cursor": "#2D2D2D"
   },
-  "prompt_for_image_ai": "Flat vector education infographic sticker. RIASEC Holland Code hexagon or radar chart with six labeled color dots, center highlight for student profile result. Friendly not clinical, purple teal yellow palette, 2px outlines, 640x480 transparent background, career guidance for Philippine high school students, no wall of text."
+  "art_direction": {
+    "style": "flat vector, unDraw / questionnaire style",
+    "outline": "thin 2px #2D2D2D on objects",
+    "composition": "1 hero object + 1 small support prop (mouse cursor), centered, no characters",
+    "text_on_image": "none"
+  },
+  "subject": {
+    "hero": "simple profile card or panel with six RIASEC-colored bars or dots, two or three taller",
+    "support": "classic mouse cursor pointer aiming at the tallest bar or profile card"
+  },
+  "generation": {
+    "chatgpt_note": "Fresh chat. Object-only — no people. Include mouse cursor on this step only. No text or RIASEC letters.",
+    "negative_prompt": "person, character, human, hands, face, body, text, numbers, letters, RIASEC labels, Tagalog, step badge, dashboard UI, screenshot, photorealistic, 3D render, dark background, clouds, clutter, anime"
+  },
+  "prompt_for_image_ai": "Flat vector illustration, 640x480, solid background #FDFCF8. KursoKo questionnaire art style: unDraw-inspired, thin 2px dark outline #2D2D2D, flat color fills. OBJECT-ONLY — no people, no characters, no hands, no faces. Hero object centered: a simple rounded profile card or panel showing six short vertical bars (or rounded dots) in a gentle row, each a different RIASEC color: teal #4DB6AC, purple #6E4FB8, yellow #FFD54F, lavender #9575CD, coral #FF8A65, sky #81D4FA. Two or three bars taller to show a clear top-types result. Support prop: one classic arrow mouse cursor #2D2D2D pointing at the tallest bar or the profile card edge. Metaphor only — not a real app screenshot. NO text, NO letters, NO numbers, NO RIASEC labels, NO step badge, NO Tagalog. Safe padding 32px from edges."
 }

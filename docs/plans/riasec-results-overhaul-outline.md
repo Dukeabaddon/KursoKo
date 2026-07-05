@@ -1,6 +1,6 @@
 # KursoKo RIASEC + Results overhaul — execution outline
 
-**Status:** Planning only — no `questions.json` edits until copy pilot approved.  
+**Status:** Phase B complete — all 35 Drawbridge tasks **done** (2026-07-05).  
 **Audience:** ~90% SHS (15–17), Philippines.  
 **Sources:** `.moat/moat-tasks.md`, gatemcp, graphify-out, subagent audits.
 
@@ -12,7 +12,7 @@
 |------|---------|
 | **graphify-out** | `Results()` god node (11 edges); report stale (`a770fac` vs HEAD) — refresh after structural edits |
 | **gatemcp** | `questions.json` compressed; matchers located via file paths below |
-| **Drawbridge** | 22 tasks — 3 done, **19 to do** (`.moat/moat-tasks-detail.json`) |
+| **Drawbridge** | **35 / 35 done** — `.moat/moat-tasks-detail.json` (last: #33 overflow, #34 CTA hover, #35 step frame, #22 RIASEC panel) |
 
 ### Touch files (by workstream)
 

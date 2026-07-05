@@ -298,60 +298,90 @@
   .landing-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
+    align-items: stretch;
   }
 }
 
 .landing-step-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  position: relative;
   border-radius: 1.5rem;
-  overflow: hidden;
   background: #fff;
   border: 2px solid var(--color-landing-chapter);
   box-shadow: 0 8px 24px rgba(75, 44, 127, 0.08);
+  animation: landing-rise 400ms var(--ease-landing) both;
+}
+
+.landing-step-card:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.landing-step-card:nth-child(3) {
+  animation-delay: 160ms;
 }
 
 .landing-step-card__media {
-  padding: 1rem 1rem 0;
-  background: linear-gradient(180deg, rgba(149, 117, 205, 0.12) 0%, transparent 100%);
+  padding: 1.25rem;
+}
+
+.landing-step-card__frame {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  border-radius: 1rem;
+  background: #fdfcf8;
+  border: 2px solid var(--color-landing-chapter);
+  overflow: hidden;
+}
+
+.landing-step-card__badge {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.625rem;
+  z-index: 1;
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-landing-lavender);
+  background: var(--color-landing-paper);
+  border: 1.5px solid var(--color-landing-chapter);
 }
 
 .landing-step-card__img {
   width: 100%;
-  max-width: 20rem;
-  height: auto;
-  margin-inline: auto;
+  height: 100%;
   display: block;
-  aspect-ratio: 4 / 3;
   object-fit: contain;
 }
 
 .landing-step-card__body {
-  padding: 1rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
   flex: 1;
-}
-
-.landing-step-card__num {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: var(--color-landing-lavender);
-  letter-spacing: 0.1em;
+  padding: 0 1.25rem 1.5rem;
 }
 
 .landing-step-card__title {
   font-family: var(--font-display);
   font-size: 1.125rem;
   font-weight: 700;
-  margin-top: 0.35rem;
+  margin: 0;
   color: var(--color-landing-ink);
+  text-wrap: balance;
 }
 
 .landing-step-card__text {
   margin-top: 0.5rem;
+  flex: 1;
   font-size: 0.875rem;
   line-height: 1.55;
   color: var(--color-landing-muted);
+  text-wrap: balance;
 }
 
 .landing-section__cta-row {
@@ -360,6 +390,7 @@
 }
 
 .landing-btn-primary {
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -373,23 +404,51 @@
   border: 2px solid rgba(255, 255, 255, 0.45);
   box-shadow: 0 4px 0 rgba(90, 63, 160, 0.55);
   cursor: pointer;
-  transition: transform 200ms var(--ease-landing), box-shadow 200ms var(--ease-landing), background 200ms var(--ease-landing);
+  transition:
+    transform 200ms var(--ease-landing),
+    background 200ms var(--ease-landing),
+    box-shadow 200ms var(--ease-landing),
+    text-shadow 200ms var(--ease-landing);
 }
 
 .landing-btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 0 rgba(90, 63, 160, 0.5);
-  background: linear-gradient(135deg, #7a5cc4, var(--color-landing-accent));
+  transform: translateY(2px);
+  background: linear-gradient(135deg, #5a3fa0, #3d2568);
+  box-shadow: 0 2px 0 rgba(58, 38, 110, 0.7);
+  text-shadow: 0 0 0.6px #fff, 0.025em 0 0 #fff, -0.025em 0 0 #fff;
 }
 
 .landing-btn-primary:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 rgba(90, 63, 160, 0.45);
+  transform: translateY(4px);
+  box-shadow: 0 0 0 rgba(58, 38, 110, 0);
 }
 
 .landing-btn-primary:focus-visible {
   outline: 2px solid var(--color-landing-teal);
   outline-offset: 3px;
+  transform: translateY(2px);
+  background: linear-gradient(135deg, #5a3fa0, #3d2568);
+  box-shadow: 0 2px 0 rgba(58, 38, 110, 0.7);
+  text-shadow: 0 0 0.6px #fff, 0.025em 0 0 #fff, -0.025em 0 0 #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-btn-primary,
+  .landing-btn-primary:hover,
+  .landing-btn-primary:active,
+  .landing-btn-primary:focus-visible {
+    transform: none;
+    transition: background 200ms var(--ease-landing), box-shadow 200ms var(--ease-landing);
+  }
+
+  .landing-btn-primary:hover,
+  .landing-btn-primary:focus-visible {
+    box-shadow: 0 2px 0 rgba(58, 38, 110, 0.7);
+  }
+
+  .landing-btn-primary:active {
+    box-shadow: 0 0 0 rgba(58, 38, 110, 0);
+  }
 }
 
 /* Features + FAQ shared */
@@ -398,12 +457,6 @@
   border: 2px solid var(--color-landing-chapter);
   background: rgba(255, 255, 255, 0.9);
   padding: 1.5rem;
-  transition: transform 200ms var(--ease-landing), box-shadow 200ms var(--ease-landing);
-}
-
-.landing-feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(75, 44, 127, 0.1);
 }
 
 .landing-faq-item {

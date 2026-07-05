@@ -33,8 +33,17 @@
       "3D clay render",
       "hands-only crop",
       "POV first-person desk view",
-      "SaaS dashboard UI screenshots"
+      "SaaS dashboard UI screenshots",
+      "clipboard or form flat toward viewer",
+      "three-finger or four-finger hands"
     ],
+    "prop_orientation": {
+      "rule": "Readable surfaces (clipboard paper, ledger, form, checklist, flyer stack) MUST face the CHARACTER who reads or writes — tilted toward their face and chest. Viewer sees the BACK of the board (grey backing, metal clip) or a steep 3/4 edge — NEVER a flat front-facing checklist readable from camera POV.",
+      "pen_rule": "Pen or pencil touches the paper side facing the character, not the side facing the viewer."
+    },
+    "hand_anatomy": {
+      "rule": "When fingers are visible, draw exactly five distinct fingers including thumb — simplified flat-vector shapes, not photorealistic. No three-finger mitts, no fused digits, no missing thumb."
+    },
     "size_px": "640x640",
     "output_dir": "src/assets/questionnaire/",
     "naming": "NN.M.png — zero-padded question id"

@@ -24,20 +24,22 @@ const HowItWorks = ({ onStart }) => (
         {howItWorksSteps.map((step, index) => (
           <li key={step.title} className="landing-step-card">
             <div className="landing-step-card__media">
-              <img
-                src={step.src}
-                alt={step.alt}
-                className="landing-step-card__img"
-                width={320}
-                height={240}
-                loading="lazy"
-                decoding="async"
-              />
+              <div className="landing-step-card__frame">
+                <span className="landing-step-card__badge" aria-hidden="true">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <img
+                  src={step.src}
+                  alt={step.alt}
+                  className="landing-step-card__img"
+                  width={320}
+                  height={240}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
             <div className="landing-step-card__body">
-              <span className="landing-step-card__num" aria-hidden="true">
-                {String(index + 1).padStart(2, '0')}
-              </span>
               <h3 className="landing-step-card__title">{step.title}</h3>
               <p className="landing-step-card__text">{step.description}</p>
             </div>

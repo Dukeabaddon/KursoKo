@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 
 /**
- * React Bits–style spotlight: radial glow follows the pointer inside a scope.
- * Vanilla refs + transform (no Framer). Blocks via CSS selector list.
+ * Ambient spotlight — purple mist follows the pointer inside scope.
+ * Renders behind content (see .spotlight-content-layer). No per-element hide.
  */
 const SpotlightCursor = ({
   scopeSelector = '[data-spotlight-scope]',
-  blockSelector,
   className = 'spotlight-cursor',
   orbClassName = 'spotlight-cursor__orb',
 }) => {
@@ -20,11 +19,9 @@ const SpotlightCursor = ({
 
     if (!finePointer.matches) return undefined
 
-    const isBlocked = (clientX, clientY) => {
+    const isInScope = (clientX, clientY) => {
       const hit = document.elementFromPoint(clientX, clientY)
-      if (!hit?.closest(scopeSelector)) return true
-      if (!blockSelector) return false
-      return Boolean(hit.closest(blockSelector))
+      return Boolean(hit?.closest(scopeSelector))
     }
 
     const applyFrame = () => {
@@ -35,7 +32,7 @@ const SpotlightCursor = ({
         orbRef.current.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%)`
       }
 
-      setVisible(!isBlocked(x, y))
+      setVisible(isInScope(x, y))
     }
 
     const onMove = (event) => {
@@ -61,7 +58,7 @@ const SpotlightCursor = ({
       finePointer.removeEventListener('change', onPointerChange)
       if (rafRef.current) cancelAnimationFrame(rafRef.current)
     }
-  }, [scopeSelector, blockSelector])
+  }, [scopeSelector])
 
   return (
     <div className={className} aria-hidden="true">

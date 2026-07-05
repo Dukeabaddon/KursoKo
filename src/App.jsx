@@ -8,6 +8,7 @@ import {
   ErrorState,
   SkipLinks,
 } from './components'
+import { SpotlightCursor, spotlightScopeProps } from './components/shared/ui'
 import { validateAndSanitize } from './utils/validation'
 import {
   startSession,
@@ -17,14 +18,15 @@ import {
   recordSubmission,
 } from './utils/sessionManager'
 import {
-  loadAssessmentProgress,
-  loadResultsSnapshot,
+  APP_PAGES,
+  resolveInitialAppState,
   saveResultsSnapshot,
+  saveAppRoute,
   clearAllAssessmentData,
 } from './utils/assessmentPersistence'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home')
+  const [currentPage, setCurrentPage] = useState(APP_PAGES.HOME)
   const [responses, setResponses] = useState([])
   const [isCalculating, setIsCalculating] = useState(false)
   const [error, setError] = useState(null)
@@ -36,21 +38,13 @@ function App() {
     if (hydratedRef.current) return
     hydratedRef.current = true
 
-    const savedResults = loadResultsSnapshot()
-    if (savedResults?.responses?.length) {
-      setResponses(savedResults.responses)
-      setCurrentPage('results')
-      setIsHydrating(false)
-      return
-    }
+    const initial = resolveInitialAppState()
+    setCurrentPage(initial.page)
+    setResponses(initial.responses)
+    setQuestionnaireRestore(initial.questionnaireRestore)
 
-    const savedProgress = loadAssessmentProgress()
-    if (savedProgress && savedProgress.responses.length >= 0) {
-      setQuestionnaireRestore(savedProgress)
-      setCurrentPage('questionnaire')
-      if (!isSessionValid()) {
-        startSession()
-      }
+    if (initial.page === APP_PAGES.QUESTIONNAIRE && !isSessionValid()) {
+      startSession()
     }
 
     setIsHydrating(false)
@@ -65,7 +59,8 @@ function App() {
     setQuestionnaireRestore(null)
     setResponses([])
     setError(null)
-    setCurrentPage('questionnaire')
+    saveAppRoute(APP_PAGES.QUESTIONNAIRE)
+    setCurrentPage(APP_PAGES.QUESTIONNAIRE)
   }, [])
 
   const completeQuestionnaire = useCallback(async (questionnaireResponses) => {
@@ -103,7 +98,7 @@ function App() {
       saveResultsSnapshot(validation.sanitizedResponses)
       clearSession()
       setQuestionnaireRestore(null)
-      setCurrentPage('results')
+      setCurrentPage(APP_PAGES.RESULTS)
     } catch (err) {
       console.error('Error completing questionnaire:', err)
       setError(err.message || 'Failed to submit questionnaire')
@@ -115,27 +110,34 @@ function App() {
     clearAllAssessmentData()
     clearSession()
     setQuestionnaireRestore(null)
-    setCurrentPage('home')
+    setCurrentPage(APP_PAGES.HOME)
     setResponses([])
     setError(null)
   }, [])
 
   const leaveQuestionnaire = useCallback(() => {
-    setCurrentPage('home')
+    saveAppRoute(APP_PAGES.HOME)
+    setCurrentPage(APP_PAGES.HOME)
     setError(null)
   }, [])
 
   const handleRetry = useCallback(() => {
     setError(null)
-    if (currentPage === 'questionnaire') {
+    if (currentPage === APP_PAGES.QUESTIONNAIRE) {
       startQuestionnaire()
     }
   }, [currentPage, startQuestionnaire])
 
   if (isHydrating) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-landing-paper">
-        <LoadingSpinner message="Loading…" size="md" />
+      <div
+        className="relative isolate flex min-h-screen flex-col bg-landing-paper"
+        {...spotlightScopeProps}
+      >
+        <SpotlightCursor />
+        <div className="spotlight-content-layer flex flex-1 items-center justify-center">
+          <LoadingSpinner message="Loading…" size="md" />
+        </div>
       </div>
     )
   }
@@ -144,13 +146,17 @@ function App() {
     <ErrorBoundary onReset={goHome}>
       <SkipLinks />
       <div
-        className="min-h-screen flex flex-col safe-area-padding"
+        className="relative isolate flex min-h-screen flex-col safe-area-padding"
         role="application"
         aria-label="KursoKo Career Assessment System"
+        {...spotlightScopeProps}
       >
+        <SpotlightCursor />
+
+        <div className="spotlight-content-layer">
         <main
           id="main"
-          className={`flex-1 ${currentPage === 'questionnaire' ? 'overflow-hidden' : 'mobile-spacing'}`}
+          className={`flex-1 ${currentPage === APP_PAGES.QUESTIONNAIRE ? 'overflow-hidden' : 'mobile-spacing'}`}
           aria-label="Main content"
         >
           {error && (
@@ -170,16 +176,16 @@ function App() {
 
           {!error && !isCalculating && (
             <div
-              className={currentPage === 'questionnaire' ? '' : 'mobile-spacing'}
+              className={currentPage === APP_PAGES.QUESTIONNAIRE ? '' : 'mobile-spacing'}
               role="region"
               aria-live="polite"
               aria-atomic="true"
             >
-              {currentPage === 'home' && (
+              {currentPage === APP_PAGES.HOME && (
                 <HomePage onStartQuestionnaire={startQuestionnaire} />
               )}
 
-              {currentPage === 'questionnaire' && (
+              {currentPage === APP_PAGES.QUESTIONNAIRE && (
                 <Questionnaire
                   key={questionnaireRestore?.updatedAt ?? 'fresh'}
                   initialProgress={questionnaireRestore}
@@ -188,7 +194,7 @@ function App() {
                 />
               )}
 
-              {currentPage === 'results' && responses.length > 0 && (
+              {currentPage === APP_PAGES.RESULTS && responses.length > 0 && (
                 <Results
                   responses={responses}
                   onRetake={startQuestionnaire}
@@ -196,7 +202,7 @@ function App() {
                 />
               )}
 
-              {currentPage === 'results' && responses.length === 0 && (
+              {currentPage === APP_PAGES.RESULTS && responses.length === 0 && (
                 <ErrorState
                   title="Walang resulta"
                   message="Magsimula muna ng assessment."
@@ -207,6 +213,7 @@ function App() {
             </div>
           )}
         </main>
+        </div>
       </div>
     </ErrorBoundary>
   )

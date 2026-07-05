@@ -1,15 +1,15 @@
 {
   "metadata": {
     "region": "NCR + CALABARZON + Central Luzon (partial)",
-    "version": "2.0.0",
-    "lastUpdated": "2026-07-03",
-    "count": 165,
+    "version": "2.1.0",
+    "lastUpdated": "2026-07-04",
+    "count": 205,
     "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site.",
-    "source": "docs/plans/kursoko-data/universities.json"
+    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2"
   },
   "universities": [
     {
-      "id": " access-computer",
+      "id": "access-computer",
       "name": "Access Computer College",
       "type": "private",
       "city": "Quezon City",
@@ -28,6 +28,90 @@
       "strengthTags": [
         "information-technology",
         "business"
+      ]
+    },
+    {
+      "id": "aclc-college-antipolo",
+      "name": "ACLC College - Antipolo",
+      "type": "private",
+      "city": "Antipolo",
+      "lguId": "antipolo",
+      "region": "Rizal",
+      "location": "Antipolo City, Rizal",
+      "description": "ACLC campus in Rizal.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-technology"
+      ]
+    },
+    {
+      "id": "aclc-college-dasmarinas",
+      "name": "ACLC College - Dasmariñas",
+      "type": "private",
+      "city": "Dasmariñas",
+      "lguId": "dasmarinas",
+      "region": "Cavite",
+      "location": "Dasmariñas, Cavite",
+      "description": "ACLC campus in Cavite.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-technology"
+      ]
+    },
+    {
+      "id": "aclc-college-malolos",
+      "name": "ACLC College - Malolos",
+      "type": "private",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Malolos City, Bulacan",
+      "description": "ACLC (AMA computer school brand) in Bulacan.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-technology"
+      ]
+    },
+    {
+      "id": "aclc-college-santa-rosa",
+      "name": "ACLC College - Santa Rosa",
+      "type": "private",
+      "city": "Santa Rosa",
+      "lguId": "santa-rosa",
+      "region": "Laguna",
+      "location": "Santa Rosa, Laguna",
+      "description": "ACLC campus in Laguna.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-technology"
       ]
     },
     {
@@ -203,6 +287,53 @@
       ]
     },
     {
+      "id": "arellano-university-malabon",
+      "name": "Arellano University - Malabon",
+      "type": "private",
+      "city": "Malabon",
+      "lguId": "malabon",
+      "region": "NCR",
+      "location": "Malabon City, NCR",
+      "description": "Arellano University campus in Malabon.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.arellano.edu.ph/",
+      "riasecTags": [
+        "E",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "education",
+        "criminology"
+      ]
+    },
+    {
+      "id": "arellano-university-pasay",
+      "name": "Arellano University - Pasay",
+      "type": "private",
+      "city": "Pasay",
+      "lguId": "pasay",
+      "region": "NCR",
+      "location": "Pasay City, NCR",
+      "description": "Arellano University campus in Pasay.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.arellano.edu.ph/",
+      "riasecTags": [
+        "E",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "education",
+        "arts-and-sciences",
+        "hospitality-management"
+      ]
+    },
+    {
       "id": "asia-pacific-aviation",
       "name": "Asia Pacific Aviation Center",
       "type": "private",
@@ -252,6 +383,48 @@
         "information-technology",
         "engineering",
         "multimedia"
+      ]
+    },
+    {
+      "id": "asian-institute-of-computer-studies-aics-antipolo",
+      "name": "Asian Institute of Computer Studies (AICS) - Antipolo",
+      "type": "private",
+      "city": "Antipolo",
+      "lguId": "antipolo",
+      "region": "Rizal",
+      "location": "Antipolo City, Rizal",
+      "description": "AICS branch serving the Rizal province area.",
+      "tuition": "Estimated PHP 18,000 - 28,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.aics.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ]
+    },
+    {
+      "id": "asian-institute-of-computer-studies-aics-quezon-city",
+      "name": "Asian Institute of Computer Studies (AICS) - Quezon City",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "Private computing college offering IT and computer science programs.",
+      "tuition": "Estimated PHP 18,000 - 28,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.aics.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
       ]
     },
     {
@@ -627,6 +800,52 @@
       ]
     },
     {
+      "id": "centro-escolar-university-makati",
+      "name": "Centro Escolar University - Makati",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati City, NCR",
+      "description": "CEU satellite campus in Makati focusing on business, accountancy, and SHS.",
+      "tuition": "Estimated PHP 40,000 - 60,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.ceu.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E"
+      ],
+      "strengthTags": [
+        "accountancy",
+        "business-administration",
+        "tourism-management"
+      ]
+    },
+    {
+      "id": "chiang-kai-shek-college",
+      "name": "Chiang Kai Shek College",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila, NCR",
+      "description": "Filipino-Chinese school offering college programs in business, IT, and education.",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.cksc.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "accountancy",
+        "information-technology",
+        "education"
+      ]
+    },
+    {
       "id": "christian-college-tanauan",
       "name": "Christian College of Tanauan",
       "type": "private",
@@ -753,6 +972,27 @@
       ]
     },
     {
+      "id": "colegio-de-san-pascual-baylon",
+      "name": "Colegio de San Pascual Baylon",
+      "type": "private",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Obando, Bulacan",
+      "description": "Catholic institution in Bulacan offering education, business, and arts programs.",
+      "tuition": "Estimated PHP 12,000 - 22,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.cspb.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "business-administration"
+      ]
+    },
+    {
       "id": "colegio-de-san-pedro",
       "name": "Colegio de San Pedro",
       "type": "private",
@@ -811,6 +1051,27 @@
         "education",
         "business",
         "engineering"
+      ]
+    },
+    {
+      "id": "datamex-institute-of-computer-technology-caloocan",
+      "name": "Datamex Institute of Computer Technology - Caloocan",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan City, NCR",
+      "description": "Datamex campus in Caloocan offering IT and computing programs.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.datamex.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
       ]
     },
     {
@@ -952,6 +1213,72 @@
       ]
     },
     {
+      "id": "diliman-college",
+      "name": "Diliman College",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "Private college in Quezon City offering education, business, and arts programs.",
+      "tuition": "Estimated PHP 20,000 - 30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.dilimancollege.edu.ph/",
+      "riasecTags": [
+        "A",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "communication",
+        "business-administration"
+      ]
+    },
+    {
+      "id": "don-bosco-college-canlubang",
+      "name": "Don Bosco College - Canlubang",
+      "type": "private",
+      "city": "Calamba",
+      "lguId": "calamba",
+      "region": "Laguna",
+      "location": "Calamba, Laguna",
+      "description": "Don Bosco institution in Laguna offering college engineering, IT, and tech-voc programs.",
+      "tuition": "Estimated PHP 30,000 - 50,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.dbcanlubang.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "industrial-technology"
+      ]
+    },
+    {
+      "id": "don-bosco-technical-institute-mandaluyong",
+      "name": "Don Bosco Technical Institute - Mandaluyong",
+      "type": "private",
+      "city": "Mandaluyong",
+      "lguId": "mandaluyong",
+      "region": "NCR",
+      "location": "Mandaluyong City, NCR",
+      "description": "Distinct from DBTI Makati, offers SHS TVL track and tech-voc programs for male students.",
+      "tuition": "Estimated PHP 45,000 - 70,000 per year",
+      "popularCourses": [],
+      "website": "https://www.dbmanila.org/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "mechanical-technology",
+        "electrical-technology",
+        "cnc-operations"
+      ]
+    },
+    {
       "id": "earist",
       "name": "Eulogio 'Amang' Rodriguez Institute of Science and Technology (EARIST)",
       "type": "public",
@@ -1051,6 +1378,30 @@
       ]
     },
     {
+      "id": "global-city-innovative-college",
+      "name": "Global City Innovative College",
+      "type": "private",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig City, NCR",
+      "description": "College in BGC offering senior high school and college programs.",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.gicc.edu.ph/",
+      "riasecTags": [
+        "E",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "tourism-management",
+        "information-technology",
+        "psychology"
+      ]
+    },
+    {
       "id": "golden-state",
       "name": "Golden State College",
       "type": "private",
@@ -1116,6 +1467,29 @@
         "hospitality",
         "architecture",
         "education"
+      ]
+    },
+    {
+      "id": "holy-cross-college-pampanga",
+      "name": "Holy Cross College - Pampanga",
+      "type": "private",
+      "city": "Pampanga",
+      "lguId": "pampanga",
+      "region": "Pampanga",
+      "location": "Sta. Ana, Pampanga",
+      "description": "Private Catholic college in Pampanga offering education, business, and IT.",
+      "tuition": "Estimated PHP 12,000 - 20,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.hccpampanga.edu.ph/",
+      "riasecTags": [
+        "E",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "business-administration",
+        "information-technology"
       ]
     },
     {
@@ -1317,6 +1691,28 @@
       ]
     },
     {
+      "id": "kingfisher-school-of-business-and-finance",
+      "name": "Kingfisher School of Business and Finance",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "Specialized college focusing purely on business, accountancy, and finance.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.kingfisher.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E"
+      ],
+      "strengthTags": [
+        "accountancy",
+        "business-administration",
+        "financial-management"
+      ]
+    },
+    {
       "id": "la-consolacion-bacolod",
       "name": "La Consolacion College - Bacolod",
       "type": "private",
@@ -1356,6 +1752,28 @@
         "education",
         "hospitality",
         "health-sciences"
+      ]
+    },
+    {
+      "id": "la-verdad-christian-college-apalit",
+      "name": "La Verdad Christian College - Apalit",
+      "type": "private",
+      "city": "Pampanga",
+      "lguId": "pampanga",
+      "region": "Pampanga",
+      "location": "Apalit, Pampanga",
+      "description": "Private institution in Pampanga known for criminology, education, and business.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.laverdad.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "criminology",
+        "education",
+        "business-administration"
       ]
     },
     {
@@ -1430,6 +1848,30 @@
       ]
     },
     {
+      "id": "lyceum-of-the-philippines-university-cavite",
+      "name": "Lyceum of the Philippines University - Cavite",
+      "type": "private",
+      "city": "General Trias",
+      "lguId": "general-trias",
+      "region": "Cavite",
+      "location": "Gen. Trias, Cavite",
+      "description": "LPU campus in Cavite.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.lyceum.edu.ph/",
+      "riasecTags": [
+        "E",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "criminology",
+        "hospitality-management",
+        "engineering"
+      ]
+    },
+    {
       "id": "lpu-laguna",
       "name": "Lyceum of the Philippines University - Laguna",
       "type": "private",
@@ -1479,6 +1921,29 @@
         "business",
         "maritime",
         "international-relations"
+      ]
+    },
+    {
+      "id": "lyceum-of-the-philippines-university-pampanga",
+      "name": "Lyceum of the Philippines University - Pampanga",
+      "type": "private",
+      "city": "San Fernando",
+      "lguId": "san-fernando",
+      "region": "Pampanga",
+      "location": "City of San Fernando, Pampanga",
+      "description": "LPU campus in Pampanga.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.lyceum.edu.ph/",
+      "riasecTags": [
+        "E",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "criminology",
+        "hospitality-management"
       ]
     },
     {
@@ -1578,6 +2043,30 @@
         "information-technology",
         "architecture",
         "business"
+      ]
+    },
+    {
+      "id": "manila-central-university",
+      "name": "Manila Central University",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan City, NCR",
+      "description": "One of the oldest private universities in the Philippines, known for health sciences and pharmacy.",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.mcu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "pharmacy",
+        "nursing",
+        "medical-technology",
+        "physical-therapy",
+        "optometry"
       ]
     },
     {
@@ -1736,6 +2225,28 @@
       ]
     },
     {
+      "id": "montessori-professional-college-quezon-city",
+      "name": "Montessori Professional College - Quezon City",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "Private college offering teacher education, business, and hospitality.",
+      "tuition": "Estimated PHP 18,000 - 28,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.mpc.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "business-administration",
+        "hospitality-management"
+      ]
+    },
+    {
       "id": "nu-manila",
       "name": "National University",
       "type": "private",
@@ -1756,6 +2267,30 @@
         "engineering",
         "health-sciences",
         "education"
+      ]
+    },
+    {
+      "id": "national-university-laguna",
+      "name": "National University - Laguna",
+      "type": "private",
+      "city": "Santa Rosa",
+      "lguId": "santa-rosa",
+      "region": "Laguna",
+      "location": "Santa Rosa, Laguna",
+      "description": "NU campus in Santa Rosa, Laguna.",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.nu.edu.ph/",
+      "riasecTags": [
+        "E",
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "business-administration",
+        "accountancy"
       ]
     },
     {
@@ -1820,6 +2355,28 @@
       ]
     },
     {
+      "id": "northlink-technological-college",
+      "name": "Northlink Technological College",
+      "type": "private",
+      "city": "Bulacan",
+      "lguId": "bulacan",
+      "region": "Bulacan",
+      "location": "Baliuag, Bulacan",
+      "description": "Technological college in Bulacan offering engineering, IT, and criminology.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.northlink.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "criminology"
+      ]
+    },
+    {
       "id": "nueva-ecija-university",
       "name": "Nueva Ecija University of Science and Technology",
       "type": "public",
@@ -1840,6 +2397,53 @@
         "agriculture",
         "education",
         "technology"
+      ]
+    },
+    {
+      "id": "our-lady-of-fatima-university-pampanga",
+      "name": "Our Lady of Fatima University - Pampanga",
+      "type": "private",
+      "city": "San Fernando",
+      "lguId": "san-fernando",
+      "region": "Pampanga",
+      "location": "City of San Fernando, Pampanga",
+      "description": "OLFU campus in Pampanga.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.fatima.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medical-technology",
+        "pharmacy",
+        "criminology"
+      ]
+    },
+    {
+      "id": "our-lady-of-fatima-university-quezon-city",
+      "name": "Our Lady of Fatima University - Quezon City",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "OLFU campus in QC (beside Grace Park, Caloocan border).",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.fatima.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medical-technology",
+        "pharmacy",
+        "physical-therapy",
+        "marine-transportation"
       ]
     },
     {
@@ -2690,6 +3294,28 @@
       ]
     },
     {
+      "id": "st-dominic-college-of-arts-and-sciences",
+      "name": "St. Dominic College of Arts and Sciences",
+      "type": "private",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Cavite City, Cavite",
+      "description": "Distinct from St. Dominic College of Asia. Offers nursing, education, and business.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sdcas.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "teacher-education",
+        "business-administration"
+      ]
+    },
+    {
       "id": "santisimo-rosario",
       "name": "St. Dominic College of Asia",
       "type": "private",
@@ -2799,6 +3425,29 @@
       ]
     },
     {
+      "id": "sti-college-dasmarinas",
+      "name": "STI College - Dasmariñas",
+      "type": "private",
+      "city": "Dasmariñas",
+      "lguId": "dasmarinas",
+      "region": "Cavite",
+      "location": "Dasmariñas, Cavite",
+      "description": "STI campus in Cavite.",
+      "tuition": "Estimated PHP 18,000 - 30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "hospitality-management"
+      ]
+    },
+    {
       "id": "sti-college-fairview",
       "name": "STI College - Fairview",
       "type": "private",
@@ -2819,6 +3468,207 @@
         "information-technology",
         "business",
         "hospitality"
+      ]
+    },
+    {
+      "id": "sti-college-global-city",
+      "name": "STI College - Global City",
+      "type": "private",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig City, NCR",
+      "description": "STI campus in Bonifacio Global City.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "multi-media-arts",
+        "business-administration"
+      ]
+    },
+    {
+      "id": "sti-college-las-pinas",
+      "name": "STI College - Las Piñas",
+      "type": "private",
+      "city": "Las Piñas",
+      "lguId": "las-pinas",
+      "region": "NCR",
+      "location": "Las Piñas City, NCR",
+      "description": "STI campus in Las Piñas.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration"
+      ]
+    },
+    {
+      "id": "sti-college-makati",
+      "name": "STI College - Makati",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati City, NCR",
+      "description": "STI campus in Makati CBD area.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "accountancy"
+      ]
+    },
+    {
+      "id": "sti-college-meycauayan",
+      "name": "STI College - Meycauayan",
+      "type": "private",
+      "city": "Meycauayan",
+      "lguId": "meycauayan",
+      "region": "Bulacan",
+      "location": "Meycauayan, Bulacan",
+      "description": "STI campus in Bulacan province.",
+      "tuition": "Estimated PHP 18,000 - 30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "business-administration",
+        "criminology"
+      ]
+    },
+    {
+      "id": "sti-college-munoz-edsa",
+      "name": "STI College - Muñoz-EDSA",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "STI campus along EDSA cor. Muñoz, offering IT, business, and SHS programs.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "accountancy"
+      ]
+    },
+    {
+      "id": "sti-college-novaliches",
+      "name": "STI College - Novaliches",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "STI campus in Novaliches area serving North QC residents.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "tourism-management"
+      ]
+    },
+    {
+      "id": "sti-college-ortigas",
+      "name": "STI College - Ortigas",
+      "type": "private",
+      "city": "Pasig",
+      "lguId": "pasig",
+      "region": "NCR",
+      "location": "Pasig City, NCR",
+      "description": "STI campus in the Ortigas Central Business District.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration"
+      ]
+    },
+    {
+      "id": "sti-college-paranaque",
+      "name": "STI College - Parañaque",
+      "type": "private",
+      "city": "Parañaque",
+      "lguId": "paranaque",
+      "region": "NCR",
+      "location": "Parañaque City, NCR",
+      "description": "STI campus in Parañaque serving the South Metro Manila area.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "tourism-management"
+      ]
+    },
+    {
+      "id": "sti-college-recto",
+      "name": "STI College - Recto",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "Manila, NCR",
+      "description": "STI campus in Manila's university belt area.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "hospitality-management"
       ]
     },
     {
@@ -3003,6 +3853,29 @@
       "strengthTags": [
         "education",
         "business"
+      ]
+    },
+    {
+      "id": "technological-institute-of-the-philippines-arca-south",
+      "name": "Technological Institute of the Philippines - Arca South",
+      "type": "private",
+      "city": "Taguig",
+      "lguId": "taguig",
+      "region": "NCR",
+      "location": "Taguig City, NCR",
+      "description": "TIP's newer campus in Arca South, Taguig.",
+      "tuition": "Estimated PHP 35,000 - 50,000 per semester",
+      "popularCourses": [],
+      "website": "https://tip.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R"
+      ],
+      "strengthTags": [
+        "engineering",
+        "architecture",
+        "information-technology",
+        "computing"
       ]
     },
     {
@@ -3743,6 +4616,28 @@
         "nursing",
         "medical-technology",
         "health-sciences"
+      ]
+    },
+    {
+      "id": "world-citi-colleges-antipolo",
+      "name": "World Citi Colleges - Antipolo",
+      "type": "private",
+      "city": "Antipolo",
+      "lguId": "antipolo",
+      "region": "Rizal",
+      "location": "Antipolo City, Rizal",
+      "description": "WCC branch in Antipolo offering nursing, tourism, and criminology.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.worldciti.edu.ph/",
+      "riasecTags": [
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "criminology",
+        "tourism-management"
       ]
     }
   ]

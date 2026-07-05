@@ -77,8 +77,10 @@
   "pose": {
     "stance": "full body, standing at health booth",
     "action": "handing out flyers at a local health fair booth",
-    "facing": "3/4 toward viewer, leaning toward the offered kit",
-    "energy": "caring, attentive, welcoming"
+    "facing": "3/4 toward visitor, offering flyer edge-on toward recipient",
+    "energy": "caring, attentive, welcoming",
+    "prop_orientation": "Flyer offered toward visitor face; table clipboard tilted toward staff or edge-on — not flat toward viewer",
+    "hand_anatomy": "Flyer-holding hand shows exactly five distinct fingers including thumb — no three-finger mitts"
   },
   "clothes": {
     "top": {
@@ -125,7 +127,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter S, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, flyer facing camera, clipboard facing camera, poster flat toward viewer, three finger hand, mitt hand"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, deep brown skin, natural curly afro, short-sleeve scrub top #4B2C7F with lavender collar trim, teal name-tag accent, straight-leg trousers #2D2D2D, simple sneakers #FFFFFF. Pose: full body, standing at health booth, handing out flyers at a local health fair booth. Hero prop: health fair flyer stack. Supporting props: first-aid kit, clipboard, water cups. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Social RIASEC accent #9575CD on props and trim, #4DB6AC secondary accents. Helpful calm energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Flyer hand had three fingers; table clipboard faced viewer",
+    "fix": "Five-finger hands; props angled toward characters not camera"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, deep brown skin, natural curly afro, short-sleeve scrub top #4B2C7F with lavender collar trim, teal name-tag accent, straight-leg trousers #2D2D2D, simple sneakers #FFFFFF. Pose: full body, standing at health booth, handing a flyer toward a visitor — flyer edge angled toward recipient, NOT flat poster facing camera. CRITICAL HAND ANATOMY: flyer-holding hand shows exactly five distinct fingers including thumb — no three-finger mitts. Table clipboard (if shown) tilted toward staff or edge-on; viewer sees board back — NEVER flat checklist readable from camera. Hero prop: health fair flyer stack. Supporting props: first-aid kit, clipboard, water cups. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Social RIASEC accent #9575CD on props and trim, #4DB6AC secondary accents. Helpful calm energy. Full head-to-feet visible."
 }

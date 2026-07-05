@@ -90,15 +90,17 @@
 /* RIASEC + affinity bars */
 .results-fold .results-riasec-bar-fill,
 .results-fold .results-affinity-bar {
-  transition: width 120ms linear;
+  transition: width 480ms var(--results-ease);
 }
 
 .results-fold .results-riasec-panel {
-  box-shadow: 0 12px 32px rgba(75, 44, 127, 0.06);
+  box-shadow: 0 8px 24px rgba(75, 44, 127, 0.05);
 }
 
 .results-fold .results-riasec-summary {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  background: var(--results-surface-muted);
+  border: 1px solid var(--results-border);
+  border-radius: 0.75rem;
 }
 
 /* Trait pills — no hover lift (cognitive calm) */
@@ -106,45 +108,92 @@
   transition: background-color 180ms var(--results-ease);
 }
 
-/* Career rank slanted bands — skew splash (constant angle at any card height) */
-.results-fold .results-career-card.results-surface {
-  background: var(--results-surface);
-}
-
+/* Featured profession cards (#1–10) — parent rounded rect; top 3 color band expands right on open */
 .results-fold .results-career-card {
+  --career-card-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --career-rank-color: #c4b0e8;
   position: relative;
   isolation: isolate;
+  padding: 0;
+  background: #ffffff;
+  border: 1px solid var(--results-border);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.results-fold .results-career-card-splash {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -26%;
-  width: 56%;
-  transform: skewX(-18deg);
-  transform-origin: top left;
-  pointer-events: none;
-  z-index: 0;
-  will-change: auto;
+.results-fold .results-career-card--ranked {
+  border-color: rgba(75, 44, 127, 0.15);
 }
 
-.results-fold .results-career-card-splash--1 {
-  background: #c4b0e8;
+.results-fold .results-career-card[data-rank='1'] {
+  --career-rank-color: #c4b0e8;
+  --career-band-width-closed: 56%;
 }
 
-.results-fold .results-career-card-splash--2 {
-  background: #86efac;
+.results-fold .results-career-card[data-rank='2'] {
+  --career-rank-color: #86efac;
+  --career-band-width-closed: 48%;
 }
 
-.results-fold .results-career-card-splash--3 {
-  background: #fde047;
+.results-fold .results-career-card[data-rank='3'] {
+  --career-rank-color: #fde047;
+  --career-band-width-closed: 40%;
 }
 
 .results-fold .results-career-card-header {
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+
+.results-fold .results-career-card-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Closed — solid color band only; gradient appears on open */
+.results-fold .results-career-card-bg__band {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--career-band-width-closed, 40%);
+  border-radius: 0 9999px 9999px 0;
+  background: var(--career-rank-color);
+  transition:
+    width 520ms var(--career-card-ease),
+    border-radius 520ms var(--career-card-ease),
+    background 520ms var(--career-card-ease);
+}
+
+.results-fold .results-career-card[data-open='true'] .results-career-card-bg__band {
+  width: 100%;
+  border-radius: 0;
+  background: linear-gradient(90deg, var(--career-rank-color) 0%, #ffffff 100%);
+}
+
+.results-fold .results-career-card-trigger {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .results-fold .results-career-card-trigger {
+    padding: 1.5rem;
+  }
+}
+
+.results-fold .results-career-card-chevron {
+  transition: transform 520ms var(--career-card-ease);
+}
+
+.results-fold .results-career-card-chevron.is-open {
+  transform: rotate(180deg);
 }
 
 .results-fold .results-career-rank--1 {
@@ -170,16 +219,22 @@
   transform: none;
 }
 
-/* Accordion body — transparent so left splash stays visible when open */
+/* Accordion body — white panel below gradient header */
 .results-fold .results-career-card-body {
   position: relative;
   z-index: 1;
-  background: transparent;
+  background: #ffffff;
 }
 
 .results-fold .results-career-card-body-inner {
-  padding-left: clamp(6.5rem, 36%, 11rem);
-  background: transparent;
+  padding: 0 1.25rem 1.25rem;
+  background: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .results-fold .results-career-card-body-inner {
+    padding: 0 1.5rem 1.5rem;
+  }
 }
 
 /* School cards — no rank neon borders */
@@ -216,11 +271,48 @@
   .results-fold .results-reveal.is-revealed,
   .results-fold .results-riasec-bar-fill,
   .results-fold .results-affinity-bar,
-  .results-fold .results-accordion-panel {
+  .results-fold .results-accordion-panel,
+  .results-fold .results-career-card,
+  .results-fold .results-career-card-bg__band,
+  .results-fold .results-career-card-chevron {
     animation: none !important;
     transition: none !important;
-    opacity: 1 !important;
     transform: none !important;
     filter: none !important;
+  }
+
+  .results-fold .results-main-enter,
+  .results-fold .results-hero-enter .results-hero-item,
+  .results-fold .results-reveal,
+  .results-fold .results-reveal.is-revealed {
+    opacity: 1 !important;
+  }
+
+  .results-fold .results-career-card[data-open='false'][data-rank='1'] .results-career-card-bg__band {
+    width: 56%;
+    background: var(--career-rank-color);
+    border-radius: 0 9999px 9999px 0;
+  }
+
+  .results-fold .results-career-card[data-open='false'][data-rank='2'] .results-career-card-bg__band {
+    width: 48%;
+    background: var(--career-rank-color);
+    border-radius: 0 9999px 9999px 0;
+  }
+
+  .results-fold .results-career-card[data-open='false'][data-rank='3'] .results-career-card-bg__band {
+    width: 40%;
+    background: var(--career-rank-color);
+    border-radius: 0 9999px 9999px 0;
+  }
+
+  .results-fold .results-career-card[data-open='true'] .results-career-card-bg__band {
+    width: 100%;
+    border-radius: 0;
+    background: linear-gradient(90deg, var(--career-rank-color) 0%, #ffffff 100%);
+  }
+
+  .results-fold .results-career-card-chevron.is-open {
+    transform: rotate(180deg);
   }
 }

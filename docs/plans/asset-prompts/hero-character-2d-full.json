@@ -1,0 +1,57 @@
+{
+  "project": "KursoKo",
+  "schema_version": 3,
+  "schema_reference": "docs/plans/asset-prompts/_schema-hero-landing-v3.json",
+  "mode": "questionnaire-hero-hybrid",
+  "asset_set": "Hero landing — generic Filipino student guide (full-body cutout)",
+  "deliverable": {
+    "filename": "src/assets/landing/kursoko-hero-2d-full-cutout.png",
+    "width_px": 1024,
+    "height_px": 1536,
+    "aspect_ratio": "2:3 portrait",
+    "format": "PNG-24 with alpha transparency",
+    "background": "fully transparent — no white fill, no floor, no gradient, no drop shadow blob",
+    "safe_padding_px": 48,
+    "framing": "full body head to both shoes; feet ~24px from bottom edge"
+  },
+  "palette": {
+    "paper": "#FDFCF8",
+    "ink": "#2D2D2D",
+    "purple": "#6E4FB8",
+    "lavender": "#9575CD",
+    "teal": "#4DB6AC",
+    "cream": "#F5F0E6",
+    "navy": "#1E2A4A",
+    "skin": "#E8B896",
+    "hair": "#2C1810"
+  },
+  "art_direction": {
+    "style": "flat vector, unDraw / RIASEC questionnaire style",
+    "outline": "thin 2px #2D2D2D on character, clothing, and prop",
+    "composition": "single character centered, one small tablet prop, generous transparent negative space",
+    "text_on_image": "none"
+  },
+  "character": {
+    "identity": "generic Filipino student guide — neutral, welcoming, not tied to one RIASEC letter",
+    "age_read": "17–22 college student",
+    "gender_presentation": "male youth",
+    "skin": "warm light tan Filipino youth",
+    "hair": "short dark brown, natural color",
+    "face": "minimal dot eyes, simple curved smile — RIASEC sticker face recipe",
+    "pose": "standing relaxed, three-quarter toward viewer's left, gentle welcoming energy — not thinking chin pose",
+    "wardrobe": "cream #F5F0E6 pullover hoodie, dark navy #1E2A4A straight-leg pants, simple white sneakers with one teal #4DB6AC accent stripe per shoe"
+  },
+  "subject": {
+    "hero": "full-body student figure",
+    "support": "one small rectangular tablet held at chest or waist — blank screen, no UI text"
+  },
+  "placement_hint": {
+    "component": "src/components/landing/hero/heroDecor.js — HERO_CHARACTER",
+    "layout": "bottom-aligned cutout on purple hero banner, object-bottom contain"
+  },
+  "generation": {
+    "chatgpt_note": "Fresh chat. Full-body 2D flat vector ONLY — NOT 3D chibi. Transparent PNG. Use RIASEC sticker + questionnaire 01.1 as style refs.",
+    "negative_prompt": "3D chibi, vinyl toy, photorealistic, Pixar, NPR 3D mesh, RIASEC letter, sticker frame, border card, clouds, stars, sparkles, speech bubble, text, logo, cropped feet, missing shoes, white background, colored background, gradient background, floor plane, drop shadow, anime heavy eyes, unnatural purple hair, blue hair, clipboard checklist, multiple characters"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration for Filipino education app KursoKo hero section. Canvas 1024×1536 portrait, FULLY TRANSPARENT PNG background — no white canvas, no floor, no shadow blob.\n\nSTYLE: unDraw-inspired edu marketing — same art DNA as KursoKo RIASEC landing stickers and questionnaire scenes. Thin 2px dark outline #2D2D2D on character, clothes, shoes, and prop. Flat solid color fills only. NOT 3D, NOT photoreal, NOT chibi vinyl toy.\n\nCHARACTER: generic welcoming Filipino student guide, age 17–22, warm light tan skin, short natural dark brown hair. Minimal friendly face — simple dot eyes and gentle curved smile. Standing relaxed full body from head to both shoes visible. Three-quarter pose facing viewer's left. Feet near bottom edge with ~24px padding.\n\nOUTFIT: cream #F5F0E6 pullover hoodie, dark navy #1E2A4A pants, white sneakers with one small teal #4DB6AC stripe per shoe.\n\nPROP: one small rectangular tablet at chest/waist — blank dark screen, no icons, no readable text.\n\nFORBIDDEN: RIASEC letter, frame border, clouds, stars, speech bubbles, any text, 3D render, cropped feet, white fill background.\n\nSafe padding ~48px sides and top."
+}

@@ -14,7 +14,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-landing-rise {
+  .animate-landing-rise,
+  .landing-step-card {
     animation: none;
     opacity: 1;
     transform: none;

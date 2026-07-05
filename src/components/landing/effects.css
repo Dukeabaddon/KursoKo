@@ -111,14 +111,30 @@
   );
 }
 
-/* Hero CTA + nav CTA — explicit defaults + smooth color transitions */
+/* Hero CTA + nav CTA — radial fill hover (center → edges), 320ms */
 .landing-nav-cta,
 .landing-hero-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   box-shadow: none !important;
   transition:
-    background-color 320ms var(--ease-landing),
-    border-color 320ms var(--ease-landing),
-    color 320ms var(--ease-landing);
+    border-color 260ms var(--ease-landing),
+    color 260ms var(--ease-landing),
+    transform 200ms var(--ease-landing);
+}
+
+.landing-nav-cta::before,
+.landing-hero-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 300ms var(--ease-landing);
+  pointer-events: none;
 }
 
 .landing-nav-cta {
@@ -127,11 +143,19 @@
   color: #fff;
 }
 
+.landing-nav-cta::before {
+  background-color: var(--color-landing-ink);
+}
+
 .landing-nav-cta:hover,
 .landing-nav-cta:focus-visible {
-  background-color: var(--color-landing-ink);
   border-color: var(--color-landing-ink);
   color: #fff;
+}
+
+.landing-nav-cta:hover::before,
+.landing-nav-cta:focus-visible::before {
+  transform: scale(1.05);
 }
 
 .landing-hero-cta {
@@ -140,11 +164,19 @@
   color: var(--color-landing-accent);
 }
 
+.landing-hero-cta::before {
+  background-color: var(--color-landing-yellow);
+}
+
 .landing-hero-cta:hover,
 .landing-hero-cta:focus-visible {
-  background-color: var(--color-landing-yellow);
   border-color: var(--color-landing-yellow);
   color: var(--color-landing-ink);
+}
+
+.landing-hero-cta:hover::before,
+.landing-hero-cta:focus-visible::before {
+  transform: scale(1.05);
 }
 
 .landing-hero-cta svg {
@@ -155,9 +187,43 @@
 @media (prefers-reduced-motion: reduce) {
   .landing-nav-cta,
   .landing-hero-cta,
+  .landing-nav-cta::before,
+  .landing-hero-cta::before,
   .landing-nav-cta svg,
   .landing-hero-cta svg {
-    transition-duration: 320ms !important;
+    transition-duration: 0ms !important;
+  }
+
+  .landing-nav-cta:hover::before,
+  .landing-nav-cta:focus-visible::before,
+  .landing-hero-cta:hover::before,
+  .landing-hero-cta:focus-visible::before {
+    transform: scale(1);
+  }
+}
+
+/* Step cards — hover lift */
+.landing-step-card {
+  transition:
+    transform 320ms var(--ease-landing),
+    box-shadow 320ms var(--ease-landing);
+}
+
+.landing-step-card:hover,
+.landing-step-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(75, 44, 127, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-step-card {
+    animation: none !important;
+    transition: box-shadow 320ms var(--ease-landing);
+  }
+
+  .landing-step-card:hover,
+  .landing-step-card:focus-within {
+    transform: none;
   }
 }
 
@@ -209,13 +275,23 @@
   top: 2.75rem;
 }
 
-/* Spotlight cursor — React Bits pattern, landing purple mist */
+/* Spotlight cursor — ambient layer behind all page content */
 .spotlight-cursor {
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
   overflow: hidden;
   pointer-events: none;
+}
+
+.spotlight-content-layer {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
 }
 
 .spotlight-cursor__orb {
@@ -248,6 +324,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .spotlight-cursor {
+    display: none;
+  }
+
   .spotlight-cursor__orb {
     transition: none;
   }

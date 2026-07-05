@@ -1,0 +1,74 @@
+{
+  "mergedAt": "2026-07-04",
+  "existing": 20,
+  "added": 37,
+  "total": 57,
+  "primaryWeightFixes": [
+    {
+      "id": "food-technologist",
+      "from": 0.88,
+      "to": 0.9
+    },
+    {
+      "id": "game-developer",
+      "from": 0.88,
+      "to": 0.9
+    },
+    {
+      "id": "journalist",
+      "from": 0.88,
+      "to": 0.9
+    },
+    {
+      "id": "physical-therapist",
+      "from": 0.88,
+      "to": 0.9
+    },
+    {
+      "id": "nutritionist-dietitian",
+      "from": 0.88,
+      "to": 0.9
+    },
+    {
+      "id": "criminology-graduate",
+      "from": 0.88,
+      "to": 0.9
+    },
+    {
+      "id": "hotel-manager",
+      "from": 0.88,
+      "to": 0.9
+    },
+    {
+      "id": "flight-attendant",
+      "from": 0.88,
+      "to": 0.9
+    }
+  ],
+  "softOverlapNotes": [
+    {
+      "newId": "data-scientist",
+      "vs": "data-analyst",
+      "note": "Keep both — analyst vs advanced ML path"
+    },
+    {
+      "newId": "multimedia-artist",
+      "vs": "graphic-designer / content-creator",
+      "note": "Broader media production"
+    },
+    {
+      "newId": "bookkeeper",
+      "vs": "accountant",
+      "note": "Non-CPA ops path — keep"
+    },
+    {
+      "newId": "criminology-graduate",
+      "note": "Title is degree-like; consider rename to police-officer or criminologist later"
+    }
+  ],
+  "wired": [
+    "src/data/careers.json",
+    "src/utils/careerMatcher.js narratives",
+    "src/utils/universityMatcher.js keywords"
+  ]
+}

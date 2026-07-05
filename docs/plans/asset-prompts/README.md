@@ -1,20 +1,23 @@
 # Landing asset prompts
 
-## Generate order (hero hybrid: 3D character + 2D props in code)
+## Generate order (hero v4 — waist-up scene composite)
 
-| Step | Asset | JSON | Output path | Style |
-|------|-------|------|-------------|-------|
-| **1** | Hero character | `hero-character.json` | `src/assets/landing/kursoko-hero-v4-cutout.png` | **3D** Play Together NPR — see `reference_visual_lock` in JSON (external tools: no repo paths) |
-| **2** | Star sparkle | `hero-asset-star.json` | `src/assets/landing/hero/star-sparkle.png` | **2D** flat |
-| **3** | Lavender blob | `hero-asset-blob-lavender.json` | `src/assets/landing/hero/blob-lavender.png` | **2D** flat |
-| **4** | Teal blob | `hero-asset-blob-teal.json` | `src/assets/landing/hero/blob-teal.png` | **2D** flat |
+**Schema:** `_schema-hero-landing-v3.json` (v4 `hero-scene-composite` mode)  
+**Style:** 2D flat vector — RIASEC sticker DNA. Thin 2px `#2D2D2D` outline. **One PNG** = waist-up character + floating campus props. Transparent background.
 
-**Code (no image gen):** radial glow behind character column, gentle float CSS, hide props on mobile `< md`.
+| Step | Asset | JSON | Output path |
+|------|-------|------|-------------|
+| **1** | Hero scene (all-in-one) | `hero-character-2d-waist-scene.json` (**v3** — crayon polo, no outlines, true alpha) | `src/assets/landing/landing.png` |
 
-**After step 1:** tell agent `wire hero v4`.  
-**After steps 2–4:** tell agent `wire hero floating assets`.
+**Gold ref:** `src/assets/landing/placeholders/riasec/s.png` (character). User poster refs = layout inspiration only (not grain/3D/faceless).
 
-Optional: skip steps 3–4 if reusing `src/assets/landing/placeholders/blobs/*.png` at smaller CSS scale.
+**After PNG exists:** tell agent `wire hero waist scene` — updates `heroDecor.js`, trims duplicate cloud/star decors.
+
+**Archived (do not use for new gen):**
+- `hero-character.json` (3D chibi)
+- `hero-character-2d-full.json` (full-body cutout)
+- `hero-asset-cloud-*.json`, `hero-asset-star-*.json` (split decors — scene is baked in)
+- `hero-asset-blob-*.json` (soft blobs)
 
 ---
 

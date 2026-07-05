@@ -1,0 +1,78 @@
+{
+  "$comment": "v4 — waist-up hero scene composite: character + floating campus props in one transparent PNG",
+  "schema_version": 4,
+  "mode": "hero-scene-composite",
+  "style_reference": [
+    "docs/plans/asset-prompts/_schema-riasec-landing-v2.json",
+    "src/assets/landing/placeholders/riasec/s.png"
+  ],
+  "global_rules": {
+    "line": {
+      "weight_px": 2,
+      "color": "#2D2D2D",
+      "coverage": "character AND every floating prop — crisp vector ink, not soft fade, not grain texture"
+    },
+    "fills": "flat solid color blocks only — no 3D shading, no photoreal gradients, no stipple grain, no claymorphism",
+    "palette": {
+      "paper": "#FDFCF8",
+      "ink": "#2D2D2D",
+      "purple_deep": "#4B2C7F",
+      "purple": "#6E4FB8",
+      "lavender": "#9575CD",
+      "lavender_light": "#B39DDB",
+      "teal": "#4DB6AC",
+      "yellow": "#FFD54F",
+      "cream": "#F5F0E6",
+      "navy": "#1E2A4A"
+    },
+    "character": {
+      "figure": "waist-up bust — head through mid-torso; no legs, no feet, no shoes",
+      "style": "unDraw-inspired flat vector — same face recipe as RIASEC stickers (minimal dot eyes, simple curved smile)",
+      "background": "fully transparent PNG — no paper frame, no floor plane, no shadow blob, no white canvas fill",
+      "hero_prop": "one held prop at chest — clipboard or tablet, blank, no readable UI",
+      "forbidden": [
+        "RIASEC letter glyph",
+        "sticker frame or border card",
+        "3D chibi or vinyl toy render",
+        "grainy noise texture",
+        "faceless blank face",
+        "photorealistic skin or eyes",
+        "full body or visible legs",
+        "readable text or logos",
+        "unnatural purple or blue hair"
+      ]
+    },
+    "scene_composite": {
+      "delivery": "single PNG — character + floating campus decor baked in",
+      "prop_count": "4 to 6 outlined floating objects around waist-up character",
+      "allowed_props": [
+        "open books",
+        "paper airplanes",
+        "pencil",
+        "graduation cap",
+        "small heart or sparkle accent"
+      ],
+      "composition": "character anchored center-bottom; props orbit upper-left and upper-right at varied sizes — playful, not plain empty space",
+      "style": "outlined flat vector on every prop — borrow creative floating layout from edu poster refs, keep KursoKo ink-outline rendering",
+      "forbidden": [
+        "cosmic dark navy sky fill",
+        "giant surreal props larger than character",
+        "soft blob clouds without outline",
+        "multiple characters",
+        "white or colored background fill",
+        "readable text on books or papers"
+      ]
+    },
+    "split_decors": {
+      "status": "archived for v4 composite — cloud/star JSONs not required when scene is baked in"
+    },
+    "generation": {
+      "fresh_chat_per_file": true,
+      "gold_references": [
+        "src/assets/landing/placeholders/riasec/s.png — character face, cardigan, waist-up scale",
+        "User reference images — composition energy only (floating campus), NOT grain/3D/faceless style"
+      ],
+      "critical_note": "Refs are creative for LAYOUT. Rendering must stay KursoKo: 2px outline, flat fills, dot eyes."
+    }
+  }
+}

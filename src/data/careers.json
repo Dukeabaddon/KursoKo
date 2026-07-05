@@ -1,149 +1,1037 @@
 {
   "metadata": {
-    "version": "1.0",
-    "lastUpdated": "2026-06-13",
-    "description": "Career titles mapped to RIASEC dimensions for match scoring"
+    "version": "2.0.0",
+    "lastUpdated": "2026-07-04",
+    "description": "Career titles mapped to RIASEC dimensions for match scoring",
+    "count": 57,
+    "source": "src/data/careers.json + docs/plans/kursoko-data2/careers-research.json"
   },
   "careers": [
     {
       "id": "software-engineer",
       "title": "Software Engineer",
-      "riasecWeights": { "R": 0.35, "I": 0.95, "A": 0.4, "S": 0.2, "E": 0.25, "C": 0.55 },
-      "skills": ["Programming", "Problem solving", "Systems thinking"],
+      "riasecWeights": {
+        "R": 0.35,
+        "I": 0.95,
+        "A": 0.4,
+        "S": 0.2,
+        "E": 0.25,
+        "C": 0.55
+      },
+      "skills": [
+        "Programming",
+        "Problem solving",
+        "Systems thinking"
+      ],
       "learningPath": "BS Computer Science, IT, or related STEM program"
     },
     {
       "id": "mechanical-engineer",
       "title": "Mechanical Engineer",
-      "riasecWeights": { "R": 0.95, "I": 0.75, "A": 0.35, "S": 0.15, "E": 0.2, "C": 0.45 },
-      "skills": ["CAD", "Mechanics", "Project planning"],
+      "riasecWeights": {
+        "R": 0.95,
+        "I": 0.75,
+        "A": 0.35,
+        "S": 0.15,
+        "E": 0.2,
+        "C": 0.45
+      },
+      "skills": [
+        "CAD",
+        "Mechanics",
+        "Project planning"
+      ],
       "learningPath": "BS Mechanical Engineering or related engineering track"
     },
     {
       "id": "architect",
       "title": "Architect",
-      "riasecWeights": { "R": 0.7, "I": 0.55, "A": 0.9, "S": 0.25, "E": 0.35, "C": 0.5 },
-      "skills": ["Design", "Spatial reasoning", "Technical drawing"],
+      "riasecWeights": {
+        "R": 0.7,
+        "I": 0.55,
+        "A": 0.9,
+        "S": 0.25,
+        "E": 0.35,
+        "C": 0.5
+      },
+      "skills": [
+        "Design",
+        "Spatial reasoning",
+        "Technical drawing"
+      ],
       "learningPath": "BS Architecture + licensure pathway"
     },
     {
       "id": "teacher",
       "title": "Teacher",
-      "riasecWeights": { "R": 0.2, "I": 0.45, "A": 0.4, "S": 0.95, "E": 0.5, "C": 0.55 },
-      "skills": ["Communication", "Patience", "Lesson planning"],
+      "riasecWeights": {
+        "R": 0.2,
+        "I": 0.45,
+        "A": 0.4,
+        "S": 0.95,
+        "E": 0.5,
+        "C": 0.55
+      },
+      "skills": [
+        "Communication",
+        "Patience",
+        "Lesson planning"
+      ],
       "learningPath": "Education degree (BEEd/BSEd) and LET for licensed teaching"
     },
     {
       "id": "psychologist",
       "title": "Psychologist",
-      "riasecWeights": { "R": 0.1, "I": 0.85, "A": 0.35, "S": 0.9, "E": 0.25, "C": 0.4 },
-      "skills": ["Active listening", "Research", "Ethical judgment"],
+      "riasecWeights": {
+        "R": 0.1,
+        "I": 0.85,
+        "A": 0.35,
+        "S": 0.9,
+        "E": 0.25,
+        "C": 0.4
+      },
+      "skills": [
+        "Active listening",
+        "Research",
+        "Ethical judgment"
+      ],
       "learningPath": "BS Psychology + graduate training and licensure"
     },
     {
       "id": "nurse",
       "title": "Registered Nurse",
-      "riasecWeights": { "R": 0.55, "I": 0.6, "A": 0.15, "S": 0.95, "E": 0.2, "C": 0.65 },
-      "skills": ["Patient care", "Clinical procedures", "Team coordination"],
+      "riasecWeights": {
+        "R": 0.55,
+        "I": 0.6,
+        "A": 0.15,
+        "S": 0.95,
+        "E": 0.2,
+        "C": 0.65
+      },
+      "skills": [
+        "Patient care",
+        "Clinical procedures",
+        "Team coordination"
+      ],
       "learningPath": "BS Nursing + board exam (PNLE)"
     },
     {
       "id": "graphic-designer",
       "title": "Graphic Designer",
-      "riasecWeights": { "R": 0.25, "I": 0.35, "A": 0.95, "S": 0.3, "E": 0.4, "C": 0.35 },
-      "skills": ["Visual design", "Typography", "Creative tools"],
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.35,
+        "A": 0.95,
+        "S": 0.3,
+        "E": 0.4,
+        "C": 0.35
+      },
+      "skills": [
+        "Visual design",
+        "Typography",
+        "Creative tools"
+      ],
       "learningPath": "Design, multimedia arts, or related creative program"
     },
     {
       "id": "entrepreneur",
       "title": "Entrepreneur",
-      "riasecWeights": { "R": 0.4, "I": 0.45, "A": 0.5, "S": 0.45, "E": 0.95, "C": 0.55 },
-      "skills": ["Sales", "Risk taking", "Business planning"],
+      "riasecWeights": {
+        "R": 0.4,
+        "I": 0.45,
+        "A": 0.5,
+        "S": 0.45,
+        "E": 0.95,
+        "C": 0.55
+      },
+      "skills": [
+        "Sales",
+        "Risk taking",
+        "Business planning"
+      ],
       "learningPath": "Business, entrepreneurship, or practical venture experience"
     },
     {
       "id": "accountant",
       "title": "Accountant",
-      "riasecWeights": { "R": 0.15, "I": 0.5, "A": 0.1, "S": 0.25, "E": 0.35, "C": 0.95 },
-      "skills": ["Numeracy", "Compliance", "Attention to detail"],
+      "riasecWeights": {
+        "R": 0.15,
+        "I": 0.5,
+        "A": 0.1,
+        "S": 0.25,
+        "E": 0.35,
+        "C": 0.95
+      },
+      "skills": [
+        "Numeracy",
+        "Compliance",
+        "Attention to detail"
+      ],
       "learningPath": "BS Accountancy + CPA licensure"
     },
     {
       "id": "civil-engineer",
       "title": "Civil Engineer",
-      "riasecWeights": { "R": 0.9, "I": 0.7, "A": 0.3, "S": 0.25, "E": 0.3, "C": 0.6 },
-      "skills": ["Structural analysis", "Site planning", "Safety standards"],
+      "riasecWeights": {
+        "R": 0.9,
+        "I": 0.7,
+        "A": 0.3,
+        "S": 0.25,
+        "E": 0.3,
+        "C": 0.6
+      },
+      "skills": [
+        "Structural analysis",
+        "Site planning",
+        "Safety standards"
+      ],
       "learningPath": "BS Civil Engineering + board exam"
     },
     {
       "id": "research-scientist",
       "title": "Research Scientist",
-      "riasecWeights": { "R": 0.45, "I": 0.95, "A": 0.35, "S": 0.3, "E": 0.2, "C": 0.5 },
-      "skills": ["Experiment design", "Data analysis", "Scientific writing"],
+      "riasecWeights": {
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.35,
+        "S": 0.3,
+        "E": 0.2,
+        "C": 0.5
+      },
+      "skills": [
+        "Experiment design",
+        "Data analysis",
+        "Scientific writing"
+      ],
       "learningPath": "STEM undergraduate + research-focused graduate study"
     },
     {
       "id": "social-worker",
       "title": "Social Worker",
-      "riasecWeights": { "R": 0.15, "I": 0.4, "A": 0.25, "S": 0.95, "E": 0.35, "C": 0.45 },
-      "skills": ["Empathy", "Case management", "Community outreach"],
+      "riasecWeights": {
+        "R": 0.15,
+        "I": 0.4,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.35,
+        "C": 0.45
+      },
+      "skills": [
+        "Empathy",
+        "Case management",
+        "Community outreach"
+      ],
       "learningPath": "BS Social Work + professional registration"
     },
     {
       "id": "electrician",
       "title": "Electrician / Technician",
-      "riasecWeights": { "R": 0.95, "I": 0.45, "A": 0.15, "S": 0.2, "E": 0.15, "C": 0.5 },
-      "skills": ["Wiring", "Troubleshooting", "Safety protocols"],
+      "riasecWeights": {
+        "R": 0.95,
+        "I": 0.45,
+        "A": 0.15,
+        "S": 0.2,
+        "E": 0.15,
+        "C": 0.5
+      },
+      "skills": [
+        "Wiring",
+        "Troubleshooting",
+        "Safety protocols"
+      ],
       "learningPath": "TESDA technical-vocational training + certification"
     },
     {
       "id": "marketing-manager",
       "title": "Marketing Manager",
-      "riasecWeights": { "R": 0.15, "I": 0.4, "A": 0.65, "S": 0.55, "E": 0.9, "C": 0.45 },
-      "skills": ["Persuasion", "Brand strategy", "Campaign planning"],
+      "riasecWeights": {
+        "R": 0.15,
+        "I": 0.4,
+        "A": 0.65,
+        "S": 0.55,
+        "E": 0.9,
+        "C": 0.45
+      },
+      "skills": [
+        "Persuasion",
+        "Brand strategy",
+        "Campaign planning"
+      ],
       "learningPath": "Marketing, communications, or business program"
     },
     {
       "id": "data-analyst",
       "title": "Data Analyst",
-      "riasecWeights": { "R": 0.2, "I": 0.9, "A": 0.25, "S": 0.2, "E": 0.25, "C": 0.85 },
-      "skills": ["Statistics", "SQL/spreadsheets", "Reporting"],
+      "riasecWeights": {
+        "R": 0.2,
+        "I": 0.9,
+        "A": 0.25,
+        "S": 0.2,
+        "E": 0.25,
+        "C": 0.85
+      },
+      "skills": [
+        "Statistics",
+        "SQL/spreadsheets",
+        "Reporting"
+      ],
       "learningPath": "Statistics, IT, or analytics-related degree"
     },
     {
       "id": "chef",
       "title": "Chef / Culinary Professional",
-      "riasecWeights": { "R": 0.85, "I": 0.25, "A": 0.7, "S": 0.45, "E": 0.4, "C": 0.35 },
-      "skills": ["Food prep", "Creativity", "Kitchen management"],
+      "riasecWeights": {
+        "R": 0.85,
+        "I": 0.25,
+        "A": 0.7,
+        "S": 0.45,
+        "E": 0.4,
+        "C": 0.35
+      },
+      "skills": [
+        "Food prep",
+        "Creativity",
+        "Kitchen management"
+      ],
       "learningPath": "Culinary arts or hospitality program + industry experience"
     },
     {
       "id": "lawyer",
       "title": "Lawyer",
-      "riasecWeights": { "R": 0.1, "I": 0.75, "A": 0.3, "S": 0.45, "E": 0.85, "C": 0.7 },
-      "skills": ["Argumentation", "Legal research", "Ethics"],
+      "riasecWeights": {
+        "R": 0.1,
+        "I": 0.75,
+        "A": 0.3,
+        "S": 0.45,
+        "E": 0.85,
+        "C": 0.7
+      },
+      "skills": [
+        "Argumentation",
+        "Legal research",
+        "Ethics"
+      ],
       "learningPath": "Pre-law + law school + bar exam"
     },
     {
       "id": "hr-specialist",
       "title": "HR Specialist",
-      "riasecWeights": { "R": 0.1, "I": 0.35, "A": 0.2, "S": 0.85, "E": 0.55, "C": 0.75 },
-      "skills": ["People skills", "Policy knowledge", "Organizing"],
+      "riasecWeights": {
+        "R": 0.1,
+        "I": 0.35,
+        "A": 0.2,
+        "S": 0.85,
+        "E": 0.55,
+        "C": 0.75
+      },
+      "skills": [
+        "People skills",
+        "Policy knowledge",
+        "Organizing"
+      ],
       "learningPath": "Psychology, HR management, or business program"
     },
     {
       "id": "content-creator",
       "title": "Content Creator",
-      "riasecWeights": { "R": 0.2, "I": 0.3, "A": 0.9, "S": 0.55, "E": 0.65, "C": 0.25 },
-      "skills": ["Storytelling", "Editing", "Audience building"],
+      "riasecWeights": {
+        "R": 0.2,
+        "I": 0.3,
+        "A": 0.9,
+        "S": 0.55,
+        "E": 0.65,
+        "C": 0.25
+      },
+      "skills": [
+        "Storytelling",
+        "Editing",
+        "Audience building"
+      ],
       "learningPath": "Media, communications, or self-directed portfolio building"
     },
     {
       "id": "pharmacist",
       "title": "Pharmacist",
-      "riasecWeights": { "R": 0.35, "I": 0.8, "A": 0.1, "S": 0.7, "E": 0.2, "C": 0.8 },
-      "skills": ["Chemistry", "Patient counseling", "Accuracy"],
+      "riasecWeights": {
+        "R": 0.35,
+        "I": 0.8,
+        "A": 0.1,
+        "S": 0.7,
+        "E": 0.2,
+        "C": 0.8
+      },
+      "skills": [
+        "Chemistry",
+        "Patient counseling",
+        "Accuracy"
+      ],
       "learningPath": "BS Pharmacy + board exam"
+    },
+    {
+      "id": "welder",
+      "title": "Welder",
+      "riasecWeights": {
+        "R": 0.95,
+        "I": 0.75,
+        "A": 0.35,
+        "S": 0.3,
+        "E": 0.4,
+        "C": 0.6
+      },
+      "skills": [
+        "Metal fabrication",
+        "Blueprint reading",
+        "SMAW/GMAW welding"
+      ],
+      "learningPath": "TESDA SMAW NC I–IV, then build hours for certification. Many welders start with NC II in 3–6 months and upgrade while working."
+    },
+    {
+      "id": "automotive-technician",
+      "title": "Automotive Technician",
+      "riasecWeights": {
+        "R": 0.92,
+        "I": 0.72,
+        "A": 0.3,
+        "S": 0.35,
+        "E": 0.45,
+        "C": 0.65
+      },
+      "skills": [
+        "Engine diagnostics",
+        "Vehicle maintenance",
+        "Electrical systems repair"
+      ],
+      "learningPath": "TESDA Automotive Servicing NC I–IV or BS Industrial Technology major in Automotive. Ladderized programs let you earn while upgrading."
+    },
+    {
+      "id": "hvac-technician",
+      "title": "HVAC Technician",
+      "riasecWeights": {
+        "R": 0.93,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.3,
+        "E": 0.4,
+        "C": 0.68
+      },
+      "skills": [
+        "Air-conditioning installation",
+        "Refrigeration repair",
+        "System troubleshooting"
+      ],
+      "learningPath": "TESDA RAC Servicing NC II or III, then on-the-job training with commercial HVAC firms. Some pursue BS Mechanical Technology."
+    },
+    {
+      "id": "seafarer-deck-officer",
+      "title": "Seafarer / Deck Officer",
+      "riasecWeights": {
+        "R": 0.9,
+        "I": 0.65,
+        "A": 0.3,
+        "S": 0.6,
+        "E": 0.78,
+        "C": 0.55
+      },
+      "skills": [
+        "Navigation",
+        "Cargo operations",
+        "Maritime safety protocols"
+      ],
+      "learningPath": "BS Marine Transportation at a MARINA-accredited maritime school, then sea time as a cadet, followed by PRC board exam for Officer-in-Charge of Navigational Watch."
+    },
+    {
+      "id": "agricultural-technician",
+      "title": "Agricultural Technician",
+      "riasecWeights": {
+        "R": 0.9,
+        "I": 0.72,
+        "A": 0.35,
+        "S": 0.4,
+        "E": 0.5,
+        "C": 0.6
+      },
+      "skills": [
+        "Crop management",
+        "Soil analysis",
+        "Farm equipment operation"
+      ],
+      "learningPath": "TESDA Agricultural Crops Production NC II/III or BS Agriculture. Many start with short TESDA courses and work on farms or agribusiness firms."
+    },
+    {
+      "id": "aircraft-maintenance-technician",
+      "title": "Aircraft Maintenance Technician",
+      "riasecWeights": {
+        "R": 0.92,
+        "I": 0.8,
+        "A": 0.3,
+        "S": 0.35,
+        "E": 0.45,
+        "C": 0.7
+      },
+      "skills": [
+        "Airframe inspection",
+        "Engine overhaul",
+        "Avionics troubleshooting"
+      ],
+      "learningPath": "BS Aircraft Maintenance Technology or TESDA-related aviation courses, then CAAP certification. Requires hands-on training at an approved aviation school."
+    },
+    {
+      "id": "medical-technologist",
+      "title": "Medical Technologist",
+      "riasecWeights": {
+        "R": 0.7,
+        "I": 0.92,
+        "A": 0.3,
+        "S": 0.65,
+        "E": 0.4,
+        "C": 0.72
+      },
+      "skills": [
+        "Laboratory analysis",
+        "Microscopy",
+        "Diagnostic testing"
+      ],
+      "learningPath": "BS Medical Technology/Medical Laboratory Science, then PRC board exam. Some hospitals hire lab assistants with related degrees and provide training."
+    },
+    {
+      "id": "cybersecurity-analyst",
+      "title": "Cybersecurity Analyst",
+      "riasecWeights": {
+        "R": 0.55,
+        "I": 0.9,
+        "A": 0.4,
+        "S": 0.45,
+        "E": 0.5,
+        "C": 0.82
+      },
+      "skills": [
+        "Network security",
+        "Threat detection",
+        "Incident response"
+      ],
+      "learningPath": "BS Information Technology, BS Computer Science, or BS Information Systems, then industry certs like CompTIA Security+, CEH, or CISSP. Experience in IT support is a common starting point."
+    },
+    {
+      "id": "data-scientist",
+      "title": "Data Scientist",
+      "riasecWeights": {
+        "R": 0.5,
+        "I": 0.92,
+        "A": 0.5,
+        "S": 0.4,
+        "E": 0.55,
+        "C": 0.8
+      },
+      "skills": [
+        "Machine learning",
+        "Statistical modeling",
+        "Data visualization"
+      ],
+      "learningPath": "BS Statistics, BS Mathematics, BS Computer Science, or BS Data Science, then graduate study or bootcamps. Strong math and programming skills required."
+    },
+    {
+      "id": "marine-engineer",
+      "title": "Marine Engineer",
+      "riasecWeights": {
+        "R": 0.82,
+        "I": 0.9,
+        "A": 0.3,
+        "S": 0.4,
+        "E": 0.6,
+        "C": 0.7
+      },
+      "skills": [
+        "Marine propulsion systems",
+        "Engine room operations",
+        "Naval architecture basics"
+      ],
+      "learningPath": "BS Marine Engineering at a MARINA-accredited school, then sea time and PRC board exam for Marine Engineer Officer."
+    },
+    {
+      "id": "food-technologist",
+      "title": "Food Technologist",
+      "riasecWeights": {
+        "R": 0.7,
+        "I": 0.9,
+        "A": 0.4,
+        "S": 0.45,
+        "E": 0.5,
+        "C": 0.72
+      },
+      "skills": [
+        "Food safety testing",
+        "Product development",
+        "Quality control"
+      ],
+      "learningPath": "BS Food Technology or BS Food Science, then optional PRC licensure as Food Technologist. Many work in manufacturing, R&D, or government inspection."
+    },
+    {
+      "id": "environmental-scientist",
+      "title": "Environmental Scientist",
+      "riasecWeights": {
+        "R": 0.65,
+        "I": 0.9,
+        "A": 0.4,
+        "S": 0.6,
+        "E": 0.5,
+        "C": 0.65
+      },
+      "skills": [
+        "Environmental impact assessment",
+        "Water quality testing",
+        "GIS mapping"
+      ],
+      "learningPath": "BS Environmental Science, BS Biology, or BS Chemistry, then possible licensure as Environmental Planner (PRC) or Pollution Control Officer (DENR)."
+    },
+    {
+      "id": "ui-ux-designer",
+      "title": "UI/UX Designer",
+      "riasecWeights": {
+        "R": 0.6,
+        "I": 0.75,
+        "A": 0.9,
+        "S": 0.55,
+        "E": 0.5,
+        "C": 0.6
+      },
+      "skills": [
+        "User research",
+        "Wireframing",
+        "Prototyping"
+      ],
+      "learningPath": "BS Multimedia Arts, BS Information Technology, or BS Computer Science, plus portfolio building through bootcamps and freelance projects."
+    },
+    {
+      "id": "game-developer",
+      "title": "Game Developer",
+      "riasecWeights": {
+        "R": 0.55,
+        "I": 0.85,
+        "A": 0.9,
+        "S": 0.4,
+        "E": 0.5,
+        "C": 0.6
+      },
+      "skills": [
+        "Game engine programming",
+        "3D modeling",
+        "Level design"
+      ],
+      "learningPath": "BS Computer Science, BS Information Technology, or BS Entertainment and Multimedia Computing, then portfolio building via game jams and indie projects."
+    },
+    {
+      "id": "multimedia-artist",
+      "title": "Multimedia Artist",
+      "riasecWeights": {
+        "R": 0.6,
+        "I": 0.7,
+        "A": 0.92,
+        "S": 0.45,
+        "E": 0.55,
+        "C": 0.6
+      },
+      "skills": [
+        "Digital illustration",
+        "Motion graphics",
+        "Video editing"
+      ],
+      "learningPath": "BS Multimedia Arts, AB Film, or related arts degree, then portfolio building. Many are self-taught and hired based on demo reels."
+    },
+    {
+      "id": "journalist",
+      "title": "Journalist",
+      "riasecWeights": {
+        "R": 0.4,
+        "I": 0.7,
+        "A": 0.9,
+        "S": 0.6,
+        "E": 0.72,
+        "C": 0.55
+      },
+      "skills": [
+        "News writing",
+        "Investigative reporting",
+        "Interviewing"
+      ],
+      "learningPath": "AB Journalism, AB Communication, or AB Broadcast Communication, then internship at newsrooms. Some start as stringers or content writers."
+    },
+    {
+      "id": "interior-designer",
+      "title": "Interior Designer",
+      "riasecWeights": {
+        "R": 0.55,
+        "I": 0.65,
+        "A": 0.9,
+        "S": 0.55,
+        "E": 0.7,
+        "C": 0.65
+      },
+      "skills": [
+        "Space planning",
+        "Material selection",
+        "3D rendering"
+      ],
+      "learningPath": "BS Interior Design, then PRC licensure exam. Some start as design assistants or CAD operators before taking the board."
+    },
+    {
+      "id": "photographer",
+      "title": "Photographer / Videographer",
+      "riasecWeights": {
+        "R": 0.65,
+        "I": 0.6,
+        "A": 0.92,
+        "S": 0.45,
+        "E": 0.6,
+        "C": 0.55
+      },
+      "skills": [
+        "Camera operation",
+        "Lighting setup",
+        "Photo/video editing"
+      ],
+      "learningPath": "Short courses, AB Film, or BS Multimedia Arts, then portfolio building. Many start as freelancers or studio assistants."
+    },
+    {
+      "id": "caregiver",
+      "title": "Caregiver",
+      "riasecWeights": {
+        "R": 0.65,
+        "I": 0.55,
+        "A": 0.3,
+        "S": 0.92,
+        "E": 0.45,
+        "C": 0.6
+      },
+      "skills": [
+        "Personal care assistance",
+        "Vital signs monitoring",
+        "Elderly care"
+      ],
+      "learningPath": "TESDA Caregiving NC II (6 months), then work experience. Some pursue BS Nursing or related health degrees later."
+    },
+    {
+      "id": "midwife",
+      "title": "Midwife",
+      "riasecWeights": {
+        "R": 0.7,
+        "I": 0.65,
+        "A": 0.35,
+        "S": 0.9,
+        "E": 0.5,
+        "C": 0.6
+      },
+      "skills": [
+        "Prenatal care",
+        "Delivery assistance",
+        "Neonatal care"
+      ],
+      "learningPath": "BS Midwifery or Licensed Midwife program, then PRC board exam. Some start as nursing aides and specialize."
+    },
+    {
+      "id": "guidance-counselor",
+      "title": "Guidance Counselor",
+      "riasecWeights": {
+        "R": 0.4,
+        "I": 0.72,
+        "A": 0.6,
+        "S": 0.9,
+        "E": 0.55,
+        "C": 0.65
+      },
+      "skills": [
+        "Counseling techniques",
+        "Career assessment",
+        "Crisis intervention"
+      ],
+      "learningPath": "AB Psychology or BS Psychology, then MA in Guidance and Counseling, then PRC licensure as Guidance Counselor."
+    },
+    {
+      "id": "physical-therapist",
+      "title": "Physical Therapist",
+      "riasecWeights": {
+        "R": 0.65,
+        "I": 0.75,
+        "A": 0.35,
+        "S": 0.9,
+        "E": 0.5,
+        "C": 0.6
+      },
+      "skills": [
+        "Therapeutic exercise",
+        "Manual therapy",
+        "Patient rehabilitation"
+      ],
+      "learningPath": "BS Physical Therapy, then PRC board exam. Some pursue specialization certificates or DPT abroad."
+    },
+    {
+      "id": "speech-language-pathologist",
+      "title": "Speech-Language Pathologist",
+      "riasecWeights": {
+        "R": 0.5,
+        "I": 0.72,
+        "A": 0.6,
+        "S": 0.9,
+        "E": 0.45,
+        "C": 0.65
+      },
+      "skills": [
+        "Speech therapy",
+        "Language assessment",
+        "Swallowing disorder management"
+      ],
+      "learningPath": "BS Speech-Language Pathology, then PRC board exam. Growing field in the Philippines."
+    },
+    {
+      "id": "nutritionist-dietitian",
+      "title": "Nutritionist-Dietitian",
+      "riasecWeights": {
+        "R": 0.5,
+        "I": 0.75,
+        "A": 0.4,
+        "S": 0.9,
+        "E": 0.5,
+        "C": 0.65
+      },
+      "skills": [
+        "Meal planning",
+        "Clinical nutrition assessment",
+        "Public health education"
+      ],
+      "learningPath": "BS Nutrition and Dietetics, then PRC board exam. Internship in hospitals or food service required."
+    },
+    {
+      "id": "criminology-graduate",
+      "title": "Criminology Graduate",
+      "riasecWeights": {
+        "R": 0.6,
+        "I": 0.82,
+        "A": 0.3,
+        "S": 0.9,
+        "E": 0.72,
+        "C": 0.65
+      },
+      "skills": [
+        "Crime investigation",
+        "Law enforcement procedures",
+        "Community safety planning"
+      ],
+      "learningPath": "BS Criminology, then PRC licensure exam. Graduates enter PNP, BFP, BJMP, NBI, or private security management."
+    },
+    {
+      "id": "sales-representative",
+      "title": "Sales Representative",
+      "riasecWeights": {
+        "R": 0.5,
+        "I": 0.55,
+        "A": 0.45,
+        "S": 0.75,
+        "E": 0.92,
+        "C": 0.6
+      },
+      "skills": [
+        "Client acquisition",
+        "Product demonstration",
+        "Negotiation"
+      ],
+      "learningPath": "Any business-related degree or even SHS graduate with strong communication skills. Sales is performance-based and values results over credentials."
+    },
+    {
+      "id": "business-development-manager",
+      "title": "Business Development Manager",
+      "riasecWeights": {
+        "R": 0.45,
+        "I": 0.75,
+        "A": 0.4,
+        "S": 0.6,
+        "E": 0.9,
+        "C": 0.68
+      },
+      "skills": [
+        "Market analysis",
+        "Partnership building",
+        "Strategic planning"
+      ],
+      "learningPath": "BS Business Administration, BS Marketing, or BS Economics, then mid-level experience in sales or operations. MBA is common for senior roles."
+    },
+    {
+      "id": "real-estate-broker",
+      "title": "Real Estate Broker",
+      "riasecWeights": {
+        "R": 0.5,
+        "I": 0.6,
+        "A": 0.4,
+        "S": 0.7,
+        "E": 0.92,
+        "C": 0.65
+      },
+      "skills": [
+        "Property valuation",
+        "Client negotiation",
+        "Market analysis"
+      ],
+      "learningPath": "BS Real Estate Management or related business degree, then PRC licensure as Real Estate Broker. Salesperson experience helps before taking the broker exam."
+    },
+    {
+      "id": "hotel-manager",
+      "title": "Hotel Manager",
+      "riasecWeights": {
+        "R": 0.55,
+        "I": 0.6,
+        "A": 0.45,
+        "S": 0.75,
+        "E": 0.9,
+        "C": 0.7
+      },
+      "skills": [
+        "Operations management",
+        "Guest relations",
+        "Revenue optimization"
+      ],
+      "learningPath": "BS Hospitality Management / BS Hotel and Restaurant Management, then climb from front desk or F&B supervisor to manager. Experience matters more than advanced degrees."
+    },
+    {
+      "id": "restaurant-manager",
+      "title": "Restaurant Manager",
+      "riasecWeights": {
+        "R": 0.6,
+        "I": 0.55,
+        "A": 0.4,
+        "S": 0.72,
+        "E": 0.9,
+        "C": 0.7
+      },
+      "skills": [
+        "Inventory control",
+        "Staff supervision",
+        "Customer service excellence"
+      ],
+      "learningPath": "BS Hotel and Restaurant Management or BS Hospitality Management, then work up from server or kitchen staff to supervisor to manager."
+    },
+    {
+      "id": "flight-attendant",
+      "title": "Flight Attendant",
+      "riasecWeights": {
+        "R": 0.55,
+        "I": 0.5,
+        "A": 0.45,
+        "S": 0.82,
+        "E": 0.9,
+        "C": 0.6
+      },
+      "skills": [
+        "Safety demonstration",
+        "Emergency response",
+        "Passenger service"
+      ],
+      "learningPath": "Any college degree preferred, plus training from airline academies or cabin crew schools. Height, grooming, and English fluency are key requirements."
+    },
+    {
+      "id": "supply-chain-manager",
+      "title": "Supply Chain Manager",
+      "riasecWeights": {
+        "R": 0.55,
+        "I": 0.7,
+        "A": 0.35,
+        "S": 0.5,
+        "E": 0.75,
+        "C": 0.9
+      },
+      "skills": [
+        "Inventory planning",
+        "Logistics coordination",
+        "Vendor management"
+      ],
+      "learningPath": "BS Industrial Engineering, BS Logistics Management, or BS Business Administration, then experience in procurement or warehouse operations. CPIM or CSCP certifications help."
+    },
+    {
+      "id": "bookkeeper",
+      "title": "Bookkeeper",
+      "riasecWeights": {
+        "R": 0.5,
+        "I": 0.7,
+        "A": 0.3,
+        "S": 0.4,
+        "E": 0.6,
+        "C": 0.92
+      },
+      "skills": [
+        "Financial recording",
+        "Payroll processing",
+        "Tax preparation support"
+      ],
+      "learningPath": "BS Accountancy, BS Accounting Technology, or TESDA Bookkeeping NC III. Many start as accounting clerks and advance."
+    },
+    {
+      "id": "logistics-coordinator",
+      "title": "Logistics Coordinator",
+      "riasecWeights": {
+        "R": 0.72,
+        "I": 0.6,
+        "A": 0.3,
+        "S": 0.5,
+        "E": 0.65,
+        "C": 0.9
+      },
+      "skills": [
+        "Shipment tracking",
+        "Warehouse coordination",
+        "Route planning"
+      ],
+      "learningPath": "BS Logistics Management, BS Industrial Engineering, or BS Business Administration. TESDA warehouse operations courses also help."
+    },
+    {
+      "id": "quality-assurance-analyst",
+      "title": "Quality Assurance Analyst",
+      "riasecWeights": {
+        "R": 0.6,
+        "I": 0.75,
+        "A": 0.35,
+        "S": 0.45,
+        "E": 0.5,
+        "C": 0.9
+      },
+      "skills": [
+        "Test case design",
+        "Bug tracking",
+        "Process documentation"
+      ],
+      "learningPath": "BS Information Technology, BS Computer Science, or BS Industrial Engineering, then QA certifications (ISTQB, Six Sigma). Common in IT and manufacturing."
+    },
+    {
+      "id": "customs-broker",
+      "title": "Customs Broker",
+      "riasecWeights": {
+        "R": 0.5,
+        "I": 0.65,
+        "A": 0.3,
+        "S": 0.45,
+        "E": 0.72,
+        "C": 0.9
+      },
+      "skills": [
+        "Tariff classification",
+        "Import documentation",
+        "Regulatory compliance"
+      ],
+      "learningPath": "BS Customs Administration or BS International Trade, then PRC licensure exam for Customs Broker."
+    },
+    {
+      "id": "administrative-assistant",
+      "title": "Administrative Assistant",
+      "riasecWeights": {
+        "R": 0.45,
+        "I": 0.55,
+        "A": 0.35,
+        "S": 0.6,
+        "E": 0.5,
+        "C": 0.92
+      },
+      "skills": [
+        "Document management",
+        "Scheduling coordination",
+        "Office software proficiency"
+      ],
+      "learningPath": "Any business-related course or TESDA Office Management / Computer Systems Servicing. Many start right after SHS with strong computer and communication skills."
     }
   ]
 }

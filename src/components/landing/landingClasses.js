@@ -9,22 +9,8 @@ export const landingPage =
 /** Marks UI blocks where the landing hover glow must not appear */
 export const landingGlowBlockProps = { 'data-landing-glow-block': true }
 
-/** Spotlight scope root on HomePage */
-export const landingSpotlightScopeProps = { 'data-spotlight-scope': true }
-
-/** Granular blocks — cards, text headers, links, buttons (not whole sections) */
-export const landingSpotlightBlockSelector = [
-  '[data-landing-glow-block]',
-  '.landing-section__header',
-  '.landing-stats__pill',
-  '.landing-riasec-tile',
-  '.landing-step-card',
-  '.landing-feature-card',
-  '.landing-faq-item',
-  '.landing-faq-cta',
-  'a',
-  'button',
-].join(', ')
+/** @deprecated Spotlight no longer uses block zones — kept for import stability */
+export { spotlightScopeProps as landingSpotlightScopeProps } from '../shared/ui/spotlightConfig'
 
 export const landingFold = 'flex h-dvh max-h-dvh flex-col overflow-hidden bg-landing-paper'
 
@@ -61,4 +47,4 @@ export const landingHeroCharacterCol =
   'pointer-events-none relative mt-auto flex w-full min-h-[9rem] max-h-[52%] flex-1 md:col-span-1 md:mt-0 md:h-full md:max-h-full md:min-h-0 lg:col-span-5'
 
 export const landingHeroGlow =
-  'landing-hero-glow pointer-events-none absolute bottom-[24%] left-1/2 z-[1] hidden h-[42%] w-[min(68%,18rem)] -translate-x-1/2 rounded-full md:block'
+  'landing-hero-glow pointer-events-none absolute bottom-[24%] left-1/2 z-[1] hidden h-[80%] w-[min(68%,18rem)] -translate-x-1/2 rounded-full md:block'

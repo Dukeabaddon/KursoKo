@@ -1,36 +1,38 @@
 {
   "project": "KursoKo",
-  "asset_set": "How it works — Step 1 (Sagot ka lang)",
+  "schema_version": 2,
+  "mode": "object-only",
+  "asset_set": "How it works — Step 1 (Answer honestly)",
   "deliverable": {
-    "filename": "src/assets/landing/placeholders/steps/step-01-quiz.png",
+    "filename": "src/assets/landing/placeholders/steps/step-1.png",
     "width_px": 640,
     "height_px": 480,
     "aspect_ratio": "4:3",
-    "background": "transparent PNG or soft #FDFCF8 card with transparent outer",
+    "format": "PNG-24",
+    "background_fill": "#FDFCF8",
     "safe_padding_px": 32
   },
+  "palette": {
+    "paper": "#FDFCF8",
+    "ink": "#2D2D2D",
+    "purple_deep": "#4B2C7F",
+    "purple": "#6E4FB8",
+    "teal": "#4DB6AC",
+    "lavender": "#9575CD"
+  },
   "art_direction": {
-    "style": "flat vector illustration, 2-3px outline, education app marketing",
-    "mood": "light, encouraging, bite-sized lesson (Josie AI pacing)",
-    "not": ["dashboard UI", "dark mode", "corporate SaaS", "3D clay render"]
+    "style": "flat vector, unDraw / questionnaire style",
+    "outline": "thin 2px #2D2D2D on objects",
+    "composition": "1 hero object + 1 small support prop, centered, no characters",
+    "text_on_image": "none"
   },
   "subject": {
-    "step_number": "01",
-    "title_taglish": "Sagot ka lang",
-    "scene": "Student on phone or tablet tapping between two scenario choices (A vs B cards). Checkmark on selected option.",
-    "story": "30 quick questions — pick what feels more like you"
+    "hero": "clipboard with blank checklist rows and teal checkmarks on two rows",
+    "support": "small pencil or pen resting beside the clipboard"
   },
-  "palette": {
-    "primary": "#4B2C7F",
-    "teal": "#4DB6AC",
-    "yellow": "#FFD54F",
-    "paper": "#FDFCF8",
-    "ink": "#2D2D2D"
+  "generation": {
+    "chatgpt_note": "Fresh chat. Object-only — no people, no hands, no faces. No text on image.",
+    "negative_prompt": "person, character, human, hands, face, body, text, numbers, letters, Tagalog, step badge, UI screenshot, photorealistic, 3D render, dark background, clouds, clutter, anime, mouse cursor"
   },
-  "composition": {
-    "layout": "device centered, choice cards visible, step badge '01' top-left optional",
-    "max_display_width_px": 320,
-    "leave_bottom_60px_clear": "for Taglish caption rendered in HTML"
-  },
-  "prompt_for_image_ai": "Flat vector illustration for education career app. Step 1: Filipino high school student answering a fun personality quiz on phone — two tap-to-choose scenario cards, one selected with checkmark. Purple #4B2C7F and teal #4DB6AC accents, friendly sticker style, 2px dark outlines, 640x480, 4:3, no text paragraphs on image, transparent or cream background, Josie-style warm edu marketing."
+  "prompt_for_image_ai": "Flat vector illustration, 640x480, solid background #FDFCF8. KursoKo questionnaire art style: unDraw-inspired, thin 2px dark outline #2D2D2D, flat color fills. OBJECT-ONLY — no people, no characters, no hands, no faces. Hero object centered: a simple clipboard with a metal clip at the top, blank checklist rows (empty lines only — no readable words), two rows marked with solid teal #4DB6AC checkmarks. Support prop: one small pencil or pen resting beside the clipboard at a slight angle. Brand accents #4B2C7F and #4DB6AC on clip and checkmarks. Clean, minimal, friendly education marketing. NO text, NO letters, NO numbers, NO step badge, NO Tagalog, NO mouse cursor. Safe padding 32px from edges."
 }

@@ -1,21 +1,49 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { RIASEC_BAR_COLORS, RIASEC_MAX_POINTS, getBarPercent } from '../../utils/riasecDisplay'
 import { resultsMeta, resultsSurface } from './resultsClasses'
 
 const ORDER = ['R', 'I', 'A', 'S', 'E', 'C']
 
+function prefersReducedMotion() {
+  if (typeof window === 'undefined') return false
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches
+}
+
 const RiasecBreakdown = ({ allDimensions, combination, primaryName, secondaryName }) => {
-  const [animate, setAnimate] = useState(false)
+  const panelRef = useRef(null)
+  const [animate, setAnimate] = useState(() => prefersReducedMotion())
 
   useEffect(() => {
-    const id = window.requestAnimationFrame(() => setAnimate(true))
-    return () => window.cancelAnimationFrame(id)
+    if (prefersReducedMotion()) {
+      setAnimate(true)
+      return undefined
+    }
+
+    const node = panelRef.current
+    if (!node) return undefined
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimate(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.25, rootMargin: '0px 0px -8% 0px' }
+    )
+
+    observer.observe(node)
+    return () => observer.disconnect()
   }, [combination])
 
   const byCode = Object.fromEntries(allDimensions.map((d) => [d.code, d]))
 
   return (
-    <section className={`${resultsSurface} results-riasec-panel h-full`} aria-labelledby="riasec-heading">
+    <section
+      ref={panelRef}
+      className={`${resultsSurface} results-riasec-panel h-full`}
+      aria-labelledby="riasec-heading"
+    >
       <div className="mb-4">
         <h2 id="riasec-heading" className="text-lg font-bold text-landing-ink">
           RIASEC scores
@@ -60,11 +88,12 @@ const RiasecBreakdown = ({ allDimensions, combination, primaryName, secondaryNam
         })}
       </ul>
 
-      <div className="results-riasec-summary mt-5 rounded-xl border border-landing-accent/15 bg-gradient-to-br from-landing-accent/5 to-white p-4 text-sm leading-relaxed text-landing-ink normal-case">
+      <div className="results-riasec-summary mt-5 p-4 text-sm leading-relaxed text-landing-ink normal-case">
         <p className={`mb-1 ${resultsMeta} text-landing-accent`}>Your pattern</p>
         <p>
-          Top combo: <strong>{combination}</strong> ({primaryName} + {secondaryName}). Schools and scholarships below follow this mix.
+          Top combo: <strong>{combination}</strong> ({primaryName} + {secondaryName}).
         </p>
+        <p className="mt-1 text-landing-muted">Schools and scholarships below follow this mix.</p>
       </div>
     </section>
   )

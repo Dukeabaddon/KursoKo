@@ -77,8 +77,9 @@
   "pose": {
     "stance": "full body, seated cross-legged",
     "action": "building a party playlist on a phone",
-    "facing": "3/4 toward viewer, head tilted slightly toward the mixer",
-    "energy": "joyful, in creative flow"
+    "facing": "3/4 toward phone screen tilted toward face",
+    "energy": "joyful, in creative flow",
+    "hand_anatomy": "Phone-holding hand shows exactly five distinct fingers including thumb — no three-finger mitts"
   },
   "clothes": {
     "top": {
@@ -125,7 +126,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter A, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, three finger hand, four finger hand, mitt hand, fused fingers, missing thumb"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, medium brown skin, short curly black hair, oversized hoodie #4B2C7F with yellow drawstring tips, dark charcoal kangaroo pocket, relaxed joggers #2D2D2D, low-top sneakers #E0E0E0. Pose: full body, seated cross-legged, building a party playlist on a phone. Hero prop: phone with music note icons. Supporting props: headphones, sticky song list, speaker icon. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Artistic RIASEC accent #FFD54F on props and trim, #9575CD secondary accents. Cheerful thoughtful energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Hand holding phone rendered with only three fingers",
+    "fix": "Exactly five simplified flat-vector fingers including thumb on any visible hand"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, medium brown skin, short curly black hair, oversized hoodie #4B2C7F with yellow drawstring tips, dark charcoal kangaroo pocket, relaxed joggers #2D2D2D, low-top sneakers #E0E0E0. Pose: full body, seated cross-legged, building a party playlist on a phone — phone screen tilted toward character face, not flat toward viewer. CRITICAL HAND ANATOMY: any visible hand shows exactly five distinct fingers including thumb in simplified flat-vector style — no three-finger mitts, no fused digits. Hero prop: phone with music note icons. Supporting props: headphones, sticky song list, speaker icon. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Artistic RIASEC accent #FFD54F on props and trim, #9575CD secondary accents. Cheerful thoughtful energy. Full head-to-feet visible."
 }

@@ -1,10 +1,17 @@
 /**
- * Client-side assessment progress + results restore (sessionStorage, tab-scoped).
+ * Client-side assessment progress, results, and route restore (sessionStorage, tab-scoped).
  */
 
 const PROGRESS_KEY = 'kursoko_assessment_progress'
 const RESULTS_KEY = 'kursoko_results_snapshot'
+const ROUTE_KEY = 'kursoko_app_route'
 const MAX_AGE_MS = 3600000 // 1 hour — matches sessionManager
+
+export const APP_PAGES = {
+  HOME: 'home',
+  QUESTIONNAIRE: 'questionnaire',
+  RESULTS: 'results',
+}
 
 function readJson(key) {
   try {
@@ -22,6 +29,30 @@ function isFresh(record) {
   return Date.now() - ts < MAX_AGE_MS
 }
 
+export function saveAppRoute(page) {
+  try {
+    sessionStorage.setItem(ROUTE_KEY, page)
+  } catch (error) {
+    console.error('Failed to save app route:', error)
+  }
+}
+
+export function loadAppRoute() {
+  try {
+    return sessionStorage.getItem(ROUTE_KEY)
+  } catch {
+    return null
+  }
+}
+
+export function clearAppRoute() {
+  try {
+    sessionStorage.removeItem(ROUTE_KEY)
+  } catch (error) {
+    console.error('Failed to clear app route:', error)
+  }
+}
+
 export function saveAssessmentProgress({ currentQuestion, responses }) {
   try {
     sessionStorage.setItem(
@@ -30,8 +61,9 @@ export function saveAssessmentProgress({ currentQuestion, responses }) {
         currentQuestion,
         responses,
         updatedAt: Date.now(),
-      })
+      }),
     )
+    saveAppRoute(APP_PAGES.QUESTIONNAIRE)
   } catch (error) {
     console.error('Failed to save assessment progress:', error)
   }
@@ -65,8 +97,9 @@ export function saveResultsSnapshot(responses) {
       JSON.stringify({
         responses,
         completedAt: Date.now(),
-      })
+      }),
     )
+    saveAppRoute(APP_PAGES.RESULTS)
     clearAssessmentProgress()
   } catch (error) {
     console.error('Failed to save results snapshot:', error)
@@ -97,4 +130,45 @@ export function clearResultsSnapshot() {
 export function clearAllAssessmentData() {
   clearAssessmentProgress()
   clearResultsSnapshot()
+  clearAppRoute()
+}
+
+/**
+ * Decide which page to show after a full reload.
+ * Landing stays landing when user explicitly navigated home; in-progress quiz still restores.
+ */
+export function resolveInitialAppState() {
+  const savedResults = loadResultsSnapshot()
+  if (savedResults?.responses?.length) {
+    return {
+      page: APP_PAGES.RESULTS,
+      responses: savedResults.responses,
+      questionnaireRestore: null,
+    }
+  }
+
+  const route = loadAppRoute()
+  const savedProgress = loadAssessmentProgress()
+
+  if (route === APP_PAGES.HOME) {
+    return {
+      page: APP_PAGES.HOME,
+      responses: [],
+      questionnaireRestore: null,
+    }
+  }
+
+  if (savedProgress && route !== APP_PAGES.HOME) {
+    return {
+      page: APP_PAGES.QUESTIONNAIRE,
+      responses: [],
+      questionnaireRestore: savedProgress,
+    }
+  }
+
+  return {
+    page: APP_PAGES.HOME,
+    responses: [],
+    questionnaireRestore: null,
+  }
 }

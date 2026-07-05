@@ -77,8 +77,9 @@
   "pose": {
     "stance": "full body, checking clipboard",
     "action": "double-checking every item on a checklist",
-    "facing": "3/4 toward the conveyor segment",
-    "energy": "focused, methodical, quietly approachable"
+    "facing": "3/4 toward clipboard, eyes on checklist tilted toward face",
+    "energy": "focused, methodical, quietly approachable",
+    "prop_orientation": "Checklist faces character; viewer sees back of board or steep edge — not front-facing checklist"
   },
   "clothes": {
     "top": {
@@ -125,7 +126,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, clipboard facing camera, checklist readable from viewer, form flat toward viewer, three finger hand, mitt hand"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, man, medium tan skin, short fade haircut, collared work shirt #4B2C7F with dark charcoal collar, sky-blue cuff stripe, sturdy work trousers #2D2D2D, simple work boots #2D2D2D. Pose: full body, checking clipboard, double-checking every item on a checklist. Hero prop: checklist clipboard with checkboxes. Supporting props: pen, supply bag, label stickers. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Thorough responsible energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Checklist clipboard faced viewer; character appeared behind wrong side",
+    "fix": "Checklist tilted toward character; viewer sees board back or edge"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, man, medium tan skin, short fade haircut, collared work shirt #4B2C7F with dark charcoal collar, sky-blue cuff stripe, sturdy work trousers #2D2D2D, simple work boots #2D2D2D. Pose: full body, standing, double-checking every item on a checklist — character looks down at checklist tilted toward their face. CRITICAL PROP ORIENTATION: checklist paper faces the CHARACTER; pen marks the side facing them. Viewer sees the BACK of the clipboard (grey board, metal clip) or a steep 3/4 edge — NEVER a flat front-facing checklist readable from camera. Hero prop: checklist clipboard with abstract checkbox rows (no words). Supporting props: pen, supply bag, label stickers. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Thorough responsible energy. Full head-to-feet visible. Hands: exactly five fingers when visible."
 }

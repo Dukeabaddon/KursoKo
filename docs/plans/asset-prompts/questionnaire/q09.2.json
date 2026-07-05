@@ -77,8 +77,9 @@
   "pose": {
     "stance": "full body, seated writing",
     "action": "marking paid vs unpaid on a snack money list",
-    "facing": "3/4 toward the box pallet prop",
-    "energy": "organized, methodical"
+    "facing": "3/4 toward ledger, gaze down at paper facing character",
+    "energy": "organized, methodical",
+    "prop_orientation": "Snack money ledger faces character; viewer sees back of board or steep edge — not front-facing list"
   },
   "clothes": {
     "top": {
@@ -125,7 +126,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, ledger facing camera, checklist readable from viewer, form flat toward viewer, three finger hand, mitt hand"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, olive tan skin, short buzz cut, shirt with safety vest #4B2C7F with sky-blue safety vest strap accent, work pants #2D2D2D, work boots #2D2D2D. Pose: full body, seated writing, marking paid vs unpaid on a snack money list. Hero prop: snack money ledger with paid and unpaid marks. Supporting props: pen, coin tray, receipt slips. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Responsible organized energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Snack ledger faced viewer; character appeared to write on wrong side",
+    "fix": "Ledger tilted toward character face; viewer sees board back or edge"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, olive tan skin, short buzz cut, shirt with safety vest #4B2C7F with sky-blue safety vest strap accent, work pants #2D2D2D, work boots #2D2D2D. Pose: full body, seated writing, marking paid vs unpaid on a snack money list — character looks down at ledger tilted toward their face. CRITICAL PROP ORIENTATION: ledger/paper faces the CHARACTER; pen marks the side facing them. Viewer sees the BACK of the clipboard or ledger (grey backing, metal clip) or a steep 3/4 edge — NEVER a flat front-facing list readable from camera. Hero prop: snack money ledger with abstract paid/unpaid marks (no words). Supporting props: pen, coin tray, receipt slips. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Responsible organized energy. Full head-to-feet visible. Hands: exactly five fingers when visible."
 }

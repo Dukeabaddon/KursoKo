@@ -77,8 +77,9 @@
   "pose": {
     "stance": "full body, seated upright",
     "action": "tracking who paid and who still owes for snacks on a clipboard list",
-    "facing": "3/4 toward laptop cart",
-    "energy": "calm, methodical, quietly satisfied"
+    "facing": "3/4 toward clipboard, eyes on paper tilted toward face",
+    "energy": "calm, methodical, quietly satisfied",
+    "prop_orientation": "Clipboard paper faces character; viewer sees back of board or steep edge — not front-facing checklist"
   },
   "clothes": {
     "top": {
@@ -125,7 +126,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, clipboard facing camera, checklist readable from viewer, form flat toward viewer, three finger hand, mitt hand"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, fair skin, neat side-part, short, sleeveless vest over collared shirt #4B2C7F with charcoal shirt sleeves, sky-blue vest trim, straight trousers #2D2D2D, loafers #2D2D2D. Pose: full body, seated upright, tracking who paid and who still owes for snacks on a clipboard list. Hero prop: clipboard with paid and unpaid snack rows. Supporting props: pen, coin tray, checkmark icons. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Organized calm energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Clipboard showed front toward viewer instead of character-readable side",
+    "fix": "Prop faces character; viewer sees board back or 3/4 edge only"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young man, fair skin, neat side-part, short, sleeveless vest over collared shirt #4B2C7F with charcoal shirt sleeves, sky-blue vest trim, straight trousers #2D2D2D, loafers #2D2D2D. Pose: full body, seated upright, tracking who paid and who still owes for snacks on a clipboard list — character looks down at the paper tilted toward their face. CRITICAL PROP ORIENTATION: clipboard paper faces the CHARACTER; pen marks the side facing them. Viewer sees the BACK of the clipboard (grey board, metal clip) or a steep 3/4 edge — NEVER a flat front-facing checklist readable from camera. Hero prop: clipboard with paid/unpaid snack rows (abstract tick marks only, no words). Supporting props: pen, coin tray, checkmark icons. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Organized calm energy. Full head-to-feet visible. Hands: exactly five fingers when visible."
 }

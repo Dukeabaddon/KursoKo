@@ -77,8 +77,9 @@
   "pose": {
     "stance": "full body, seated at desk",
     "action": "checking name spellings on a form with a pen",
-    "facing": "3/4 toward viewer, gaze on the clipboard",
-    "energy": "focused, meticulous, satisfied"
+    "facing": "3/4 toward clipboard, gaze down at form facing character",
+    "energy": "focused, meticulous, satisfied",
+    "prop_orientation": "Form on clipboard faces character; viewer sees back of board or steep edge — not front-facing form"
   },
   "clothes": {
     "top": {
@@ -125,7 +126,12 @@
       "DALL-E 3",
       "Midjourney v6"
     ],
-    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs"
+    "negative_prompt": "face photograph, realistic skin pores, text, watermark, letter C, border frame, sticker card, top-down POV hands only, white background fill, photorealistic, 3d render, cropped head, extra limbs, clipboard facing camera, form readable from viewer, checklist flat toward viewer, three finger hand, mitt hand"
   },
-  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, light peach skin, neat low bun, fitted cardigan over blouse #4B2C7F with sky-blue cuff stripe, white blouse collar, pencil trousers #2D2D2D, low flats #2D2D2D. Pose: full body, seated at desk, checking name spellings on a form with a pen. Hero prop: form on clipboard. Supporting props: pen, glasses, dictionary book. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Meticulous careful energy. Full head-to-feet visible."
+  "regeneration_fix": {
+    "version": "4.1",
+    "issue": "Form on clipboard reversed — readable side faced viewer not character",
+    "fix": "Form tilted toward character; viewer sees board back or edge"
+  },
+  "prompt_for_image_ai": "Flat vector full-body illustration, 640x640, solid page background fill exactly #FDFCF8 (warm off-white paper — must match KursoKo assessment UI, NOT pure white #FFFFFF). Style MUST match KursoKo reference assets 1.1.png and 1.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D, flat color fills, minimal dot-eye face. Young SHS-age figure, young woman, light peach skin, neat low bun, fitted cardigan over blouse #4B2C7F with sky-blue cuff stripe, white blouse collar, pencil trousers #2D2D2D, low flats #2D2D2D. Pose: full body, seated at desk, checking name spellings on a form with a pen — character looks down at form tilted toward their face. CRITICAL PROP ORIENTATION: form/clipboard paper faces the CHARACTER; pen touches the side facing them. Viewer sees the BACK of the clipboard (grey board, metal clip) or a steep 3/4 edge — NEVER a flat front-facing form readable from camera. Hero prop: form on clipboard with abstract line rows (no names). Supporting props: pen, glasses, dictionary book. Entire canvas filled with flat #FDFCF8 background plus thin grey floor line and faint grey decorative circles — NO text, NO letter, NO border frame, NO transparency. Subtle Conventional RIASEC accent #81D4FA on props and trim, #4B2C7F secondary accents. Meticulous careful energy. Full head-to-feet visible. Hands: exactly five fingers when visible."
 }
