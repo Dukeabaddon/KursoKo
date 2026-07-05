@@ -88,9 +88,7 @@ function AffinityBar({ label, tierLabel, percent }) {
   return (
     <div className="text-right sm:text-left">
       <p className="text-sm font-bold normal-case text-landing-accent">{tierLabel}</p>
-      <p className="mt-0.5 text-xs font-medium tabular-nums normal-case text-landing-muted">
-        {percent}/100 alignment
-      </p>
+      <p className="mt-0.5 text-lg font-bold tabular-nums text-landing-accent">{percent}%</p>
       <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-landing-ink/10">
         <div
           className="results-affinity-bar h-full rounded-full bg-gradient-to-r from-landing-lavender to-landing-accent"
@@ -99,7 +97,7 @@ function AffinityBar({ label, tierLabel, percent }) {
           aria-valuenow={percent}
           aria-valuemin={0}
           aria-valuemax={100}
-          aria-label={`${label}: ${tierLabel}, ${percent} out of 100 alignment`}
+          aria-label={`${label}: ${tierLabel}, ${percent}% alignment`}
         />
       </div>
     </div>
