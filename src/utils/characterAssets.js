@@ -5,7 +5,7 @@ import guardianImg from '../assets/character/guardian.webp'
 import visionaryImg from '../assets/character/visionary.webp'
 import strategistImg from '../assets/character/strategist.webp'
 
-/** Archetype id → share card PNG (wonky border baked in). */
+/** Archetype id → share card WebP. */
 export const CHARACTER_IMAGES = {
   builder: builderImg,
   pathfinder: pathfinderImg,

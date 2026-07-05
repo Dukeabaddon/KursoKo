@@ -1,22 +1,15 @@
 {
   "project": "KursoKo",
-  "schema_version": 2,
+  "schema_version": 5,
+  "schema_reference": "docs/plans/asset-prompts/character-cards/_schema-character-card.json",
+  "style_reference": ["src/assets/questionnaire/01.1.webp", "src/assets/questionnaire/01.2.png"],
+  "cast_reference": "docs/plans/asset-prompts/riasec-r.json",
   "asset_set": "Share character card — The Builder (Realistic / R)",
-  "character_card": {
-    "archetype_id": "builder",
-    "archetype_name": "The Builder",
-    "riasec_code": "R",
-    "riasec_type": "Realistic"
-  },
-  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG-24 alpha" },
-  "transparency": {
-    "inside_border": "fully transparent — no black, no clouds, no floor",
-    "outside_border": "fully transparent alpha",
-    "visible_layers": "teal border stroke, figure, up to two props only"
-  },
+  "character_card": { "archetype_id": "builder", "archetype_name": "The Builder", "riasec_code": "R", "riasec_type": "Realistic" },
+  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG or WebP", "output_path": "src/assets/character/builder.webp" },
   "generation": {
-    "chatgpt_note": "Fresh chat per archetype. Do not attach other RIASEC card images.",
-    "negative_prompt": "white sticker cutout, white outline on figure, black interior fill, clouds inside frame, letter R or any letter, magnifying glass, paintbrush, megaphone, skewed to landing sticker style, photorealistic"
+    "chatgpt_note": "Fresh chat. Attach 01.1.webp + riasec-r.json. CAST LOCK: landing Builder. Flat vector ONLY — NOT crayon, NOT chibi.",
+    "negative_prompt": "crayon, colored pencil, stipple grain, no outlines, 3D chibi, photorealistic, letter R, text, full body, legs, feet, hard hat, white background #FFFFFF, transparent png, sticker frame"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — THE BUILDER archetype only, Realistic RIASEC type. NOT Pathfinder, NOT Creator, NOT any other cast. Flat vector full-body illustration 640 by 640 pixels. TRANSPARENCY: true PNG alpha everywhere except the visible artwork — inside the wonky border must stay fully transparent checkerboard, NO black fill, NO cloud blobs, NO floor plane. Outside border also transparent. NO white sticker cutout outline anywhere — not on frame, not on character, not on props; solid flat color shapes only. FRAME: wonky skewed rounded quadrilateral border — left edge nearly vertical, top slopes down gently left to right, right edge tapers inward toward top, bottom slopes up left to right, heavily rounded bubble corners, NOT an axis-aligned rectangle. Border is solid teal stroke hex 4DB6AC only about 5 pixels thick — no white border layer. CHARACTER off-center right inside frame: young man, medium warm beige skin, short curly dark hair, minimal dot eyes and small confident smile, lineless Corporate Memphis flat fills no black body outline. White shirt, teal utility vest hex 4DB6AC with lavender pocket stripe, dark trousers, dark sneakers. Full body head to feet. TWO PROPS ONLY: adjustable wrench with lavender grip, compact red toolbox at side. No hard hat, no overalls. No text, no letters, no extra floating icons."
+  "prompt_for_image_ai": "Flat vector waist-up illustration, 640×640, KursoKo share card — THE BUILDER (R) only. Same character as landing riasec-r.json.\n\nSTYLE — MUST match src/assets/questionnaire/01.1.webp and 01.2.png: unDraw-inspired edu character, thin 2px dark outline #2D2D2D on figure and props, solid flat color fills, minimal dot-eye face. NOT crayon. NOT 3D. NOT chibi. Realistic young-adult proportions.\n\nBACKGROUND: cream #FDFCF8 with soft teal #4DB6AC accent wash ~20% opacity across full canvas. Optional 1–2 faint grey decorative circles ~15% opacity. NO text, NO letter R, NO border frame.\n\nFRAMING: waist-up only — head to waist/hips, torso fills height, waist near bottom. NO legs, NO feet.\n\nCHARACTER: young Filipino builder, medium warm beige flat skin, short curly dark brown hair. White tee, teal utility vest #4DB6AC with thin outline. Faces slightly left — confident friendly energy.\n\nPROPS (flat vector, outlined): silver wrench at chest; compact red toolbox at waist crop. Match landing sticker props.\n\nFORBIDDEN: crayon texture, black-outline-free art, photorealistic skin, readable text."
 }

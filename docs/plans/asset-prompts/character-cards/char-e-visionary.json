@@ -1,22 +1,15 @@
 {
   "project": "KursoKo",
-  "schema_version": 2,
+  "schema_version": 5,
+  "schema_reference": "docs/plans/asset-prompts/character-cards/_schema-character-card.json",
+  "style_reference": ["repo only — do not paste paths into external AI"],
+  "cast_reference": "docs/plans/asset-prompts/riasec-e.json",
   "asset_set": "Share character card — The Visionary (Enterprising / E)",
-  "character_card": {
-    "archetype_id": "visionary",
-    "archetype_name": "The Visionary",
-    "riasec_code": "E",
-    "riasec_type": "Enterprising"
-  },
-  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG-24 alpha" },
-  "transparency": {
-    "inside_border": "fully transparent — no black, no clouds, no floor",
-    "outside_border": "fully transparent alpha",
-    "visible_layers": "coral border stroke, figure, up to two props only"
-  },
+  "character_card": { "archetype_id": "visionary", "archetype_name": "The Visionary", "riasec_code": "E", "riasec_type": "Enterprising" },
+  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG or WebP", "output_path": "src/assets/character/visionary.webp" },
   "generation": {
-    "chatgpt_note": "Fresh chat per archetype.",
-    "negative_prompt": "white sticker cutout, white outline, black interior, peach clouds, letter E, wrench, paintbrush, teal jacket yellow tee, photorealistic, coins clutter"
+    "chatgpt_note": "Paste ONLY prompt_for_image_ai below. No attachments required. Fresh chat.",
+    "negative_prompt": "crayon, pencil texture, no outlines, chibi, letter E, text, coins, crowd, legs, feet, hips, floor line, ground line, horizontal black bar, bottom crop, sticker frame, cropped megaphone, tight zoom, photorealistic"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — THE VISIONARY archetype only, Enterprising RIASEC type. Flat vector full-body 640 by 640. TRANSPARENCY: fully transparent inside and outside wonky border — NO black fill, NO cloud blobs, NO white sticker outline anywhere. FRAME: wonky skewed rounded quadrilateral, coral orange stroke hex FF8A65 about 5 pixels, top edge slopes down left to right for forward energy, rounded corners. CHARACTER off-center right: young man, light olive skin, short neat black hair, minimal dot eyes and confident half-smile, lineless Memphis. White collared shirt, coral vest hex FF8A65 with tiny golden upward-arrow lapel pin, dark trousers, dark shoes. Full body. TWO PROPS ONLY: compact coral megaphone, one small floating golden upward arrow icon. NOT briefcase, NOT coins pile, NOT chart. No text, no letters."
+  "prompt_for_image_ai": "Square 640×640 flat vector illustration. ONE young Filipino man — The Visionary.\n\nART STYLE:\n- Clean 2D vector, unDraw edu style\n- Thin black outlines (~2px) on figure, blazer, megaphone, folder — color #2D2D2D\n- Flat solid fills — NO crayon, NO pencil, NO 3D, NO chibi\n- Face: dot eyes, confident smile, minimal features\n- Realistic young-adult proportions\n\nBACKGROUND:\n- Solid cream #FDFCF8 full square\n- Soft coral #FF8A65 wash behind shoulders (~20% opacity)\n- Optional faint grey circles\n- NO text, NO letter E, NO frame, NO border\n\nCOMPOSITION — MOST IMPORTANT:\n- Bust portrait: head + shoulders + upper chest + blazer only — STOP at mid-torso/ribcage\n- Do NOT draw waist, hips, or lower body\n- Character SMALL and centered (~55% width, ~60% height)\n- At least 25% empty cream below blazer hem — nothing touches bottom edge\n- ~10% empty cream above hair\n- NO floor line, NO ground, NO horizontal black bar, NO bottom crop\n- Full megaphone and folder must be 100% inside frame with margin\n\nCHARACTER:\n- Light olive skin, short neat black hair\n- White collared shirt, coral blazer #FF8A65\n- Confident friendly energy\n\nPROPS:\n- Right hand: coral megaphone at cheek/mouth — entire megaphone visible, not cut off\n- Left arm: slim coral folder tucked at upper chest — simple white upward-arrow icon on cover (no words)\n- Props held high at chest level, not hanging toward bottom\n\nREJECT IF: bottom cut off, floor line, props clipped, or hand-drawn/crayon style."
 }

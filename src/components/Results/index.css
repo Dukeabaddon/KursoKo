@@ -104,6 +104,72 @@
   transition: background-color 180ms var(--results-ease);
 }
 
+/* Character card — 3px rounded border + hero star corner accents */
+.character-card-frame {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+}
+
+.character-card-frame__border {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 3px solid rgba(179, 157, 219, 0.92);
+  border-radius: 1rem;
+  background: #fdfcf8;
+}
+
+.character-card-frame__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.character-card-frame__placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f0ede8;
+}
+
+.character-card-frame__star {
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+  height: auto;
+  max-width: none;
+  user-select: none;
+}
+
+/* Straddle top-left corner — half inside, half outside the border */
+.character-card-frame__star--primary {
+  top: 0;
+  left: 0;
+  width: 2.75rem;
+  transform: translate(-38%, -38%);
+}
+
+.character-card-frame__star--secondary {
+  top: 0.35rem;
+  left: 1.65rem;
+  width: 1.65rem;
+  opacity: 0.88;
+  transform: translate(-28%, -52%);
+}
+
+/* Share export card — same frame on dark surface */
+.share-card-export .character-card-frame__border {
+  border-color: rgba(179, 157, 219, 0.85);
+}
+
+.share-card-export .character-card-frame__star {
+  z-index: 3;
+}
+
 /* Featured profession cards (#1–10) — parent rounded rect; top 3 color band expands right on open */
 .results-fold .results-career-card {
   --career-card-ease: cubic-bezier(0.4, 0, 0.2, 1);

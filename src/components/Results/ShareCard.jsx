@@ -1,4 +1,5 @@
 import { getCharacterImage } from '../../utils/characterAssets'
+import CharacterCardFrame from './CharacterCardFrame'
 
 function ShareCard({ archetype, topCareer, cardRef }) {
   const characterSrc = getCharacterImage(archetype.id)
@@ -12,10 +13,9 @@ function ShareCard({ archetype, topCareer, cardRef }) {
       <div className="px-6 py-5 border-b border-neutral-800">
         <p className="text-[10px] uppercase tracking-[0.25em] text-amber-400 font-semibold">KursoKo</p>
         {characterSrc ? (
-          <img
+          <CharacterCardFrame
             src={characterSrc}
-            alt=""
-            className="mx-auto mt-3 h-48 w-48 object-contain"
+            className="mx-auto mt-3 h-48 w-48"
           />
         ) : null}
         <h3 className="font-display text-2xl font-bold mt-3">{archetype.name}</h3>

@@ -1,22 +1,15 @@
 {
   "project": "KursoKo",
-  "schema_version": 2,
+  "schema_version": 5,
+  "schema_reference": "docs/plans/asset-prompts/character-cards/_schema-character-card.json",
+  "style_reference": ["src/assets/questionnaire/02.1.png", "src/assets/questionnaire/02.1.webp"],
+  "cast_reference": "docs/plans/asset-prompts/riasec-a.json",
   "asset_set": "Share character card — The Creator (Artistic / A)",
-  "character_card": {
-    "archetype_id": "creator",
-    "archetype_name": "The Creator",
-    "riasec_code": "A",
-    "riasec_type": "Artistic"
-  },
-  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG-24 alpha" },
-  "transparency": {
-    "inside_border": "fully transparent — no black, no clouds, no floor",
-    "outside_border": "fully transparent alpha",
-    "visible_layers": "golden border stroke, figure, up to two props only"
-  },
+  "character_card": { "archetype_id": "creator", "archetype_name": "The Creator", "riasec_code": "A", "riasec_type": "Artistic" },
+  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG or WebP", "output_path": "src/assets/character/creator.webp" },
   "generation": {
-    "chatgpt_note": "Fresh chat per archetype.",
-    "negative_prompt": "white sticker cutout, white outline, black interior, clouds, letter A, magnifying glass, wrench, megaphone, purple beret, photorealistic, easel background scene"
+    "chatgpt_note": "Fresh chat. CAST LOCK: landing Creator. Use 02.1 as creative-scene vector ref.",
+    "negative_prompt": "crayon, colored pencil, no outlines, 3D chibi, photorealistic, letter A, beret, easel background scene, full body, legs, feet"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — THE CREATOR archetype only, Artistic RIASEC type. NOT Pathfinder, NOT Builder. Flat vector full-body 640 by 640. TRANSPARENCY: fully transparent inside and outside wonky border — NO black fill, NO clouds, NO white sticker cutout on anything. FRAME: wonky skewed rounded quadrilateral, golden yellow stroke hex FFD54F about 5 pixels, soft blob corners, NOT straight rectangle. CHARACTER off-center right: young creative student, warm tan skin, wavy auburn hair, lavender headband, minimal dot eyes and bright small smile, lineless Memphis. White tee, open yellow overshirt hex FFD54F, dark jeans, white sneakers. Full body. TWO PROPS ONLY: wooden paintbrush with lavender handle, flat palette with yellow lavender teal blobs. No easel, no star confetti, no text, no letters."
+  "prompt_for_image_ai": "Flat vector waist-up illustration, 640×640 — THE CREATOR (A) only. Same character as riasec-a.json.\n\nSTYLE: match questionnaire 02.1.png — unDraw flat vector, thin 2px outline #2D2D2D, flat fills, dot eyes, playful creative energy. NOT crayon. NOT chibi.\n\nBACKGROUND: #FDFCF8 + soft golden yellow #FFD54F wash ~20%. NO text, NO letter A.\n\nFRAMING: waist-up, NO legs or feet.\n\nCHARACTER: young Filipino Creator, warm tan skin, wavy auburn-brown hair, lavender headband. White tee, open yellow overshirt #FFD54F. Bright gentle smile.\n\nPROPS: paintbrush at shoulder; flat palette with color blobs on forearm. No full easel scene.\n\nFORBIDDEN: crayon texture, lineless, photorealistic, text."
 }

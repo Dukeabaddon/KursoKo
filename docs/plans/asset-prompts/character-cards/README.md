@@ -1,35 +1,44 @@
-# Character card prompts (share export) — v2
+# Character card prompts (share export) — v5
 
-Six RIASEC archetype PNGs for results **share collectible**. Generate externally, drop into `src/assets/character/`.
+Six RIASEC **flat vector 2D** poster cards for results **share collectible**. Same cast as landing `riasec-*.json` — **questionnaire art style** (not crayon, not chibi).
 
-## v2 changes
+## v5 direction
 
-| Rule | v2 |
+| Rule | v5 |
 |------|-----|
-| Interior inside border | **Fully transparent** — no black, no clouds |
-| White sticker cutout | **Removed** — solid flat colors only |
-| Props | **Max 2** small theme items per card |
-| Letters on image | **Forbidden** — no large glyph, no badge |
-| Eyes | **Minimal dot eyes** (unchanged) |
-| Frame | **Wonky skewed** quadrilateral stroke only |
+| Style | **Flat vector** — `01.1.webp`, `02.1.png` questionnaire refs |
+| Outline | **Thin 2px `#2D2D2D`** on figure + props |
+| Face | **Dot eyes**, small smile — minimal |
+| Proportions | **Realistic youth** — not chibi |
+| Poster | Cream `#FDFCF8` + **~20% RIASEC accent wash** |
+| Framing | **Loose waist-up** — ~70% height, **15% bottom safe zone** (see v5.1 regen for S/C/E) |
+| Cast | **Same** as `riasec-{letter}.json` |
+| Text / letter | **None** |
 
-## Specs
+## NOT this
 
-| Field | Value |
-|-------|--------|
-| Schema | `_schema-character-card.json` v2 |
-| Size | 640×640 PNG-24 alpha |
-| Generation | **Fresh chat per archetype** — avoids cast/prop bleed |
+- ~~Crayon / colored pencil~~ (v4)
+- ~~3D chibi vinyl~~ (v3)
+- ~~Lineless Memphis~~ (v2)
+
+## Style refs
+
+| File | Use |
+|------|-----|
+| `src/assets/questionnaire/01.1.webp` | Primary vector lock |
+| `src/assets/questionnaire/01.2.png` | Secondary vector lock |
+| `src/assets/questionnaire/02.1.png` | Creative scene ref |
+| `questionnaire/q01.1.json` | Prompt recipe |
 
 ## Files
 
-| Archetype | Border | JSON |
-|-----------|--------|------|
-| The Builder | `#4DB6AC` | `char-r-builder.json` |
-| The Pathfinder | `#4B2C7F` | `char-i-pathfinder.json` |
-| The Creator | `#FFD54F` | `char-a-creator.json` |
-| The Guardian | `#9575CD` | `char-s-guardian.json` |
-| The Visionary | `#FF8A65` | `char-e-visionary.json` |
-| The Strategist | `#81D4FA` | `char-c-strategist.json` |
+| Archetype | Wash | JSON |
+|-----------|------|------|
+| The Builder | teal | `char-r-builder.json` |
+| The Pathfinder | purple | `char-i-pathfinder.json` |
+| The Creator | yellow | `char-a-creator.json` |
+| The Guardian | lavender | `char-s-guardian.json` |
+| The Visionary | coral | `char-e-visionary.json` |
+| The Strategist | sky blue | `char-c-strategist.json` |
 
-Copy **`prompt_for_image_ai`** into your tool. After all six land: **wire character share card**.
+Attach **questionnaire refs** + **`riasec-{letter}.json`** when your tool supports images. Otherwise paste **`prompt_for_image_ai` only** — v5.2 prompts are self-contained (no file paths inside). Fresh chat per letter. WebP → `src/assets/character/`.

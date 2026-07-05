@@ -1,5 +1,6 @@
 import { CircleCheck } from 'lucide-react'
 import { getCharacterImage } from '../../utils/characterAssets'
+import CharacterCardFrame from './CharacterCardFrame'
 import { resultsMeta } from './resultsClasses'
 
 const ResultHero = ({ archetype, primaryCode, shsStrands, heroEnter }) => {
@@ -9,27 +10,18 @@ const ResultHero = ({ archetype, primaryCode, shsStrands, heroEnter }) => {
     <section
       className={`flex w-full min-w-0 flex-col items-center text-center lg:items-start lg:text-left ${heroEnter ? 'results-hero-enter' : ''}`}
     >
-      <div className="results-hero-item relative mx-auto mb-4 h-[200px] w-[200px] shrink-0 sm:h-[260px] sm:w-[260px]">
-        {characterSrc ? (
-          <img
-            src={characterSrc}
-            alt=""
-            className="h-full w-full object-contain object-center"
-          />
-        ) : (
-          <div
-            className="h-full w-full rounded-2xl border border-neutral-300 bg-neutral-200"
-            role="img"
-            aria-label={`${archetype.name} portrait placeholder`}
-          />
-        )}
+      <CharacterCardFrame
+        src={characterSrc}
+        className="results-hero-item mx-auto mb-4 h-[200px] w-[200px] shrink-0 sm:h-[260px] sm:w-[260px]"
+        placeholderLabel={`${archetype.name} portrait placeholder`}
+      >
         <span
-          className="absolute bottom-3 right-1 flex h-9 w-9 items-center justify-center rounded-full bg-landing-accent text-sm font-bold text-white shadow-sm"
+          className="absolute bottom-3 right-1 z-[4] flex h-9 w-9 items-center justify-center rounded-full bg-landing-accent text-sm font-bold text-white shadow-sm"
           aria-label={`Primary type ${primaryCode}`}
         >
           {primaryCode}
         </span>
-      </div>
+      </CharacterCardFrame>
 
       <h1 className="results-hero-item w-full font-[family-name:var(--font-display)] text-3xl font-extrabold text-landing-accent sm:text-4xl">
         {archetype.name}

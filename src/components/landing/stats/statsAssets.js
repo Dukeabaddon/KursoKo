@@ -1,7 +1,7 @@
-import statClock from '../../../assets/landing/stats/stats-clock.png'
-import statGraduationCap from '../../../assets/landing/stats/stat-graduation-cap.png'
-import statRiasec from '../../../assets/landing/stats/stat-riasec.png'
-import statLock from '../../../assets/landing/stats/stat-lock.png'
+import statClock from '../../../assets/landing/stats/stats-clock.webp'
+import statGraduationCap from '../../../assets/landing/stats/stat-graduation-cap.webp'
+import statRiasec from '../../../assets/landing/stats/stat-riasec.webp'
+import statLock from '../../../assets/landing/stats/stat-lock.webp'
 
 export const statsItems = [
   {

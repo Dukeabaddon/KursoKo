@@ -1,22 +1,15 @@
 {
   "project": "KursoKo",
-  "schema_version": 2,
+  "schema_version": 5,
+  "schema_reference": "docs/plans/asset-prompts/character-cards/_schema-character-card.json",
+  "style_reference": ["repo only — do not paste paths into external AI"],
+  "cast_reference": "docs/plans/asset-prompts/riasec-c.json",
   "asset_set": "Share character card — The Strategist (Conventional / C)",
-  "character_card": {
-    "archetype_id": "strategist",
-    "archetype_name": "The Strategist",
-    "riasec_code": "C",
-    "riasec_type": "Conventional"
-  },
-  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG-24 alpha" },
-  "transparency": {
-    "inside_border": "fully transparent — no black, no clouds, no floor",
-    "outside_border": "fully transparent alpha",
-    "visible_layers": "sky-blue border stroke, figure, up to two props only"
-  },
+  "character_card": { "archetype_id": "strategist", "archetype_name": "The Strategist", "riasec_code": "C", "riasec_type": "Conventional" },
+  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG or WebP", "output_path": "src/assets/character/strategist.webp" },
   "generation": {
-    "chatgpt_note": "Fresh chat per archetype.",
-    "negative_prompt": "white sticker cutout, white outline, black interior, clouds, letter C, file box, folder stack, wrench, objects only no person, photorealistic, readable checklist"
+    "chatgpt_note": "Paste ONLY prompt_for_image_ai below. No attachments required. Fresh chat.",
+    "negative_prompt": "crayon, pencil texture, no outlines, chibi, checklist facing camera, readable checkboxes, letter C, text, legs, feet, hips, floor line, ground line, horizontal black bar, bottom border, sticker frame, cropped edges, tight zoom, photorealistic"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — THE STRATEGIST archetype only, Conventional RIASEC type. Human figure required. Flat vector full-body 640 by 640. TRANSPARENCY: transparent checkerboard inside and outside border — NO black fill, NO clouds, NO white die-cut halo. FRAME: wonky skewed rounded quadrilateral, sky blue stroke hex 81D4FA about 5 pixels, left edge nearly vertical, gently rounded corners. CHARACTER off-center right: young woman, light peach skin, neat dark bob, minimal dot eyes glancing at clipboard, small satisfied smile, lineless Memphis. White long-sleeve shirt, sky blue vest hex 81D4FA, deep purple pen hex 4B2C7F in pocket, dark trousers, black shoes. Full body. TWO PROPS ONLY: clipboard with four purple checkmark icons no text, slim purple pen in other hand. No file box, no folder tabs, no text, no letters."
+  "prompt_for_image_ai": "Square 640×640 flat vector illustration. ONE young Filipino woman — The Strategist.\n\nART STYLE:\n- Clean 2D vector, unDraw edu style\n- Thin black outlines (~2px) on figure, clothes, clipboard, pen — outline color #2D2D2D\n- Flat solid color fills — NO crayon, NO pencil grain, NO 3D, NO chibi\n- Face: dot eyes, small smile, minimal features\n- Realistic young-adult proportions\n\nBACKGROUND:\n- Solid cream #FDFCF8 across full square\n- Soft sky-blue #81D4FA wash behind figure (~20% opacity)\n- Optional faint grey decorative circles\n- NO text, NO letter C, NO frame, NO border\n\nCOMPOSITION — MOST IMPORTANT:\n- Bust portrait: head + shoulders + upper chest + vest only — STOP at mid-torso/ribcage\n- Do NOT draw waist, hips, or lower body\n- Character SMALL and centered (~55% width, ~60% height)\n- At least 25% empty cream below the vest hem — nothing touches bottom edge\n- ~10% empty cream above hair\n- NO floor line, NO ground, NO horizontal black bar at bottom, NO shadow stripe\n- Figure floats on cream with generous padding all sides\n\nCHARACTER:\n- Light peach skin, neat dark bob haircut\n- White long-sleeve shirt under sky-blue vest #81D4FA\n- Calm focused expression, facing slightly toward viewer\n\nCLIPBOARD (critical):\n- Holds slim brown clipboard at upper chest\n- BACK of clipboard faces viewer — plain board back + silver clip visible\n- Checklist/paper faces HER only — viewer must NOT see checkboxes or lines\n- Blue pen in right hand, writing on her side\n- Entire clipboard and pen fully visible inside frame — not clipped\n\nREJECT IF: bottom cut off, floor line, checklist faces camera, or crayon look."
 }

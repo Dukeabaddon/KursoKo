@@ -1,22 +1,15 @@
 {
   "project": "KursoKo",
-  "schema_version": 2,
+  "schema_version": 5,
+  "schema_reference": "docs/plans/asset-prompts/character-cards/_schema-character-card.json",
+  "style_reference": ["src/assets/questionnaire/01.1.webp", "src/assets/questionnaire/02.1.png"],
+  "cast_reference": "docs/plans/asset-prompts/riasec-i.json",
   "asset_set": "Share character card — The Pathfinder (Investigative / I)",
-  "character_card": {
-    "archetype_id": "pathfinder",
-    "archetype_name": "The Pathfinder",
-    "riasec_code": "I",
-    "riasec_type": "Investigative"
-  },
-  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG-24 alpha" },
-  "transparency": {
-    "inside_border": "fully transparent — no black, no clouds, no floor",
-    "outside_border": "fully transparent alpha",
-    "visible_layers": "purple border stroke, figure, up to two props only"
-  },
+  "character_card": { "archetype_id": "pathfinder", "archetype_name": "The Pathfinder", "riasec_code": "I", "riasec_type": "Investigative" },
+  "deliverable": { "width_px": 640, "height_px": 640, "format": "PNG or WebP", "output_path": "src/assets/character/pathfinder.webp" },
   "generation": {
-    "chatgpt_note": "Fresh chat per archetype. Do not attach Creator or landing I sticker images.",
-    "negative_prompt": "white sticker cutout, white outline, black interior fill, cloud blobs, large letter I or any letter, corner badge, yellow overshirt, paintbrush, palette, headband, wrench, gear, photorealistic"
+    "chatgpt_note": "Fresh chat. CAST LOCK: landing Pathfinder. NOT Creator, NOT crayon.",
+    "negative_prompt": "crayon, colored pencil, no outlines, 3D chibi, photorealistic, letter I, paintbrush, palette, yellow shirt, full body, legs, feet, white #FFFFFF bg"
   },
-  "prompt_for_image_ai": "SUBJECT LOCK — THE PATHFINDER archetype only, Investigative RIASEC type. NOT Creator, NOT Builder, NOT landing sticker with large letter. Flat vector full-body illustration 640 by 640 pixels. TRANSPARENCY: true PNG alpha — inside wonky border fully transparent checkerboard, NO black band, NO teal cloud shapes, NO floor. Outside border transparent. NO white die-cut or sticker outline on frame, character, or props — solid flat colors only. FRAME: wonky skewed rounded quadrilateral, deep purple stroke hex 4B2C7F about 5 pixels, heavily rounded corners, NOT straight rectangle, NOT yellow border. CHARACTER off-center right: young woman, light peach skin, dark hair in low ponytail, minimal dot eyes looking at notes, small focused mouth, lineless Memphis no black body outline. White blouse under deep purple cardigan hex 4B2C7F with teal buttons, dark trousers, dark loafers. Full body head to feet. TWO PROPS ONLY: magnifying glass with small teal lens glint, open notebook in other hand. NOT paintbrush, NOT palette, NOT yellow shirt. No text, no letters, no flask, no floating stars."
+  "prompt_for_image_ai": "Flat vector waist-up illustration, 640×640 — THE PATHFINDER (I) only. Same character as riasec-i.json.\n\nSTYLE: match questionnaire 01.1.webp / 02.1.png — unDraw flat vector, thin 2px outline #2D2D2D, flat fills, dot eyes. NOT crayon. NOT chibi.\n\nBACKGROUND: #FDFCF8 cream + soft purple #6E4FB8 wash ~20%. Faint grey circles OK. NO text, NO letter I.\n\nFRAMING: waist-up, NO legs or feet.\n\nCHARACTER: young Filipino woman, light peach skin, dark brown low ponytail. White blouse, deep purple cardigan #6E4FB8. Focused friendly expression.\n\nPROPS: magnifying glass near face; closed notebook at torso. NOT paintbrush.\n\nFORBIDDEN: crayon, lineless art, photorealistic, text."
 }
