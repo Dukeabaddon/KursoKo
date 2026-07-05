@@ -1,15 +1,15 @@
-import heroCharacterScene from '../../../assets/landing/landing.png'
-// import heroCloud from '../../../assets/landing/hero/cloud.png'
-// import heroStar from '../../../assets/landing/hero/star.png'
+import heroCharacterScene from '../../../assets/landing/landing.webp'
+// import heroCloud from '../../../assets/landing/hero/cloud.webp'
+// import heroStar from '../../../assets/landing/hero/star.webp'
 
 /**
  * Hero decor — single source of truth.
  * Resize: change widthRem. Position: top/left/right. No Tailwind width classes.
  *
  * Cloud/star decors commented out while hero uses composite landing.png scene.
- * Restore HERO_DECOR_ARCHIVED entries when split decor PNGs return.
+ * Restore archived decor entries when split decor PNGs return.
  */
-export const HERO_DECOR_ARCHIVED = [
+const HERO_DECOR_ARCHIVED = [
   // {
   //   src: heroCloud,
   //   widthRem: 16,

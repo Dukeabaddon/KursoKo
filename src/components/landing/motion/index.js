@@ -6,5 +6,4 @@ export {
   heroEntranceMotionProps,
   LANDING_EASE,
   LANDING_VIEWPORT,
-  motionRevealProps,
 } from './landingMotion'

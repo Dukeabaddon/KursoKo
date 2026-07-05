@@ -1,9 +1,9 @@
-import builderImg from '../assets/character/builder.png'
-import pathfinderImg from '../assets/character/pathfinder.png'
-import creatorImg from '../assets/character/creator.png'
-import guardianImg from '../assets/character/guardian.png'
-import visionaryImg from '../assets/character/visionary.png'
-import strategistImg from '../assets/character/strategist.png'
+import builderImg from '../assets/character/builder.webp'
+import pathfinderImg from '../assets/character/pathfinder.webp'
+import creatorImg from '../assets/character/creator.webp'
+import guardianImg from '../assets/character/guardian.webp'
+import visionaryImg from '../assets/character/visionary.webp'
+import strategistImg from '../assets/character/strategist.webp'
 
 /** Archetype id → share card PNG (wonky border baked in). */
 export const CHARACTER_IMAGES = {

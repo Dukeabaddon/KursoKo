@@ -31,12 +31,10 @@
   from {
     opacity: 0;
     transform: translateY(12px);
-    filter: blur(6px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    filter: blur(0);
   }
 }
 
@@ -77,14 +75,12 @@
   --results-reveal-progress: 0;
   opacity: var(--results-reveal-progress);
   transform: translateY(calc((1 - var(--results-reveal-progress)) * 16px));
-  filter: blur(calc((1 - var(--results-reveal-progress)) * 4px));
 }
 
 .results-fold .results-reveal.is-revealed {
   --results-reveal-progress: 1;
   opacity: 1;
   transform: none;
-  filter: none;
 }
 
 /* RIASEC + affinity bars */
@@ -267,8 +263,12 @@
 @media (prefers-reduced-motion: reduce) {
   .results-fold .results-main-enter,
   .results-fold .results-hero-enter .results-hero-item,
-  .results-fold .results-reveal,
-  .results-fold .results-reveal.is-revealed,
+  .results-fold .results-reveal.is-revealed {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
   .results-fold .results-riasec-bar-fill,
   .results-fold .results-affinity-bar,
   .results-fold .results-accordion-panel,

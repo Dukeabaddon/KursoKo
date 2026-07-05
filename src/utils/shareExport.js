@@ -1,7 +1,7 @@
-import { toPng } from 'html-to-image'
-
 export async function exportElementAsPng(element, filename = 'kursoko-result.png') {
   if (!element) return { ok: false, error: 'Missing element' }
+
+  const { toPng } = await import('html-to-image')
 
   const dataUrl = await toPng(element, {
     cacheBust: true,

@@ -170,6 +170,27 @@ def cmd_prep(slot_arg: str | None, *, open_refs: bool) -> int:
     return 0
 
 
+def convert_png_to_webp(png_path: Path) -> None:
+    """Generate matching .webp for an installed questionnaire PNG."""
+    script = ROOT / "scripts/convert-assets-webp.mjs"
+    if not script.is_file():
+        return
+    rel = png_path.relative_to(ROOT)
+    try:
+        subprocess.run(
+            ["node", str(script), str(rel)],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        webp = png_path.with_suffix(".webp")
+        if webp.is_file():
+            print(f"WebP {webp.relative_to(ROOT)}")
+    except subprocess.CalledProcessError as exc:
+        print(f"WebP skip {rel}: {exc.stderr.strip() or exc}", file=sys.stderr)
+
+
 def cmd_install(slot_arg: str | None, *, all_inbox: bool) -> int:
     INBOX_DIR.mkdir(parents=True, exist_ok=True)
     installed = 0
@@ -198,6 +219,7 @@ def cmd_install(slot_arg: str | None, *, all_inbox: bool) -> int:
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(str(src), str(dst))
         print(f"Installed {dst.relative_to(ROOT)}")
+        convert_png_to_webp(dst)
         installed += 1
 
     if installed == 0:

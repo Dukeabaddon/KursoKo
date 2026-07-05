@@ -34,6 +34,9 @@ scripts/__pycache__/
 # Questionnaire asset staging (production PNGs live in src/assets/questionnaire/)
 src/assets/questionnaire/_inbox/
 
+# WebP delivery files (generated from PNG via npm run assets:webp)
+src/assets/**/*.webp
+
 # Drawbridge (visual UI annotations — local task queue + screenshots)
 .moat/
 

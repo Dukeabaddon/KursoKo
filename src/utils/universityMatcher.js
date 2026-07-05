@@ -167,11 +167,6 @@ export function getUniversityMatchesForCareer(profile, career, limit = 3) {
   return ranked.slice(0, limit)
 }
 
-export function getUniversityMatches(profile, topCareers = [], limit = 3) {
-  const topCareer = topCareers[0]
-  return getUniversityMatchesForCareer(profile, topCareer, limit)
-}
-
 export function getUniversitiesMetadata() {
   return universitiesData.metadata
 }

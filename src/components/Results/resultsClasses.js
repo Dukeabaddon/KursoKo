@@ -14,9 +14,3 @@ export const resultsPrimaryBtn =
 
 export const resultsNavBtn =
   'inline-flex items-center gap-1 rounded-lg px-2 py-1.5 text-xs font-semibold text-landing-muted transition-colors hover:bg-landing-ink/5 hover:text-landing-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-landing-accent sm:text-sm'
-
-export const MATCH_BADGE = {
-  excellent: 'bg-emerald-100 text-emerald-800 border-emerald-200',
-  good: 'bg-blue-100 text-blue-800 border-blue-200',
-  fair: 'bg-landing-surface text-landing-muted border-landing-ink/10',
-}

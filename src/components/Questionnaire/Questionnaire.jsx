@@ -10,7 +10,11 @@ import {
 } from '../shared/assessment/assessmentClasses'
 import { ClickSpark } from '../shared/ui'
 import { saveAssessmentProgress } from '../../utils/assessmentPersistence'
-import { getQuestionnaireImage } from './questionnaireAssets'
+import {
+  getQuestionnaireImage,
+  loadQuestionnaireImage,
+  prefetchQuestionImages,
+} from './questionnaireAssets'
 
 function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress = null }) {
   const [currentQuestion, setCurrentQuestion] = useState(() => initialProgress?.currentQuestion ?? 0)
@@ -20,6 +24,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
   const [questions, setQuestions] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [animPhase, setAnimPhase] = useState('idle')
+  const [choiceImages, setChoiceImages] = useState({ a: null, b: null })
   const timersRef = useRef([])
   const scrollRef = useRef(null)
 
@@ -61,6 +66,32 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
 
   const questionId = questions[currentQuestion]?.id
   useAssessmentScrollReveal(scrollRef, questionId)
+
+  useEffect(() => {
+    if (!questionId || questions.length === 0) return undefined
+
+    let cancelled = false
+    setChoiceImages({
+      a: getQuestionnaireImage(questionId, 'A'),
+      b: getQuestionnaireImage(questionId, 'B'),
+    })
+
+    Promise.all([
+      loadQuestionnaireImage(questionId, 'A'),
+      loadQuestionnaireImage(questionId, 'B'),
+    ]).then(([a, b]) => {
+      if (!cancelled) setChoiceImages({ a, b })
+    })
+
+    const nextQuestion = questions[currentQuestion + 1]
+    if (nextQuestion?.id) {
+      prefetchQuestionImages(nextQuestion.id)
+    }
+
+    return () => {
+      cancelled = true
+    }
+  }, [questionId, currentQuestion, questions])
 
   const isAnimating = animPhase !== 'idle'
 
@@ -170,7 +201,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
   const progress =
     questions.length > 0 ? Math.round((responses.length / questions.length) * 100) : 0
 
-  const getChoiceImage = (questionId, option) => getQuestionnaireImage(questionId, option)
+  const getChoiceImage = (option) => (option === 'A' ? choiceImages.a : choiceImages.b)
 
   const navFooter = (
     <div className="assessment-nav-row">
@@ -276,7 +307,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
                 <AssessmentChoiceCard
                   optionKey="A"
                   title={currentQ.optionA.text}
-                  imageSrc={getChoiceImage(questionId, 'A')}
+                  imageSrc={getChoiceImage('A')}
                   isSelected={selectedOption === 'A'}
                   isDimmed={Boolean(selectedOption && selectedOption !== 'A')}
                   selectedRating={selectedOption === 'A' ? selectedRating : null}
@@ -293,7 +324,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
                 <AssessmentChoiceCard
                   optionKey="B"
                   title={currentQ.optionB.text}
-                  imageSrc={getChoiceImage(questionId, 'B')}
+                  imageSrc={getChoiceImage('B')}
                   isSelected={selectedOption === 'B'}
                   isDimmed={Boolean(selectedOption && selectedOption !== 'B')}
                   selectedRating={selectedOption === 'B' ? selectedRating : null}

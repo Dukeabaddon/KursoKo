@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
+import { LANDING_HEADING, RESULTS_HEADING } from './helpers.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const screenshotDir = path.join(__dirname, 'screenshots')
@@ -20,7 +21,7 @@ test.describe('UI screenshots', () => {
 
   test('landing page screenshot', async ({ page }) => {
     await page.goto('/')
-    await expect(page.getByRole('heading', { name: /Find Your Perfect Career Path/i })).toBeVisible()
+    await expect(page.getByRole('heading', { name: LANDING_HEADING })).toBeVisible()
     await page.screenshot({
       path: path.join(screenshotDir, '01-landing.png'),
       fullPage: true,
@@ -42,14 +43,14 @@ test.describe('UI screenshots', () => {
     await page.goto('/')
     await page.getByRole('button', { name: /Start Assessment/i }).first().click()
     await answerAllQuestions(page)
-    await expect(page.getByRole('heading', { name: /Scholarships for you/i })).toBeVisible({
+    await expect(page.getByRole('heading', { name: RESULTS_HEADING })).toBeVisible({
       timeout: 20000,
     })
     await page.screenshot({
       path: path.join(screenshotDir, '03-results-full.png'),
       fullPage: true,
     })
-    await page.locator('.results-editorial').screenshot({
+    await page.locator('.results-main-enter').screenshot({
       path: path.join(screenshotDir, '04-results-viewport.png'),
     })
   })

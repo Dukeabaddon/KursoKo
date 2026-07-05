@@ -1,5 +1,36 @@
 import scholarshipsData from '../data/scholarships.json'
 
+const ALL_SCHOLARSHIPS = scholarshipsData.scholarships
+
+/** Pre-index scholarships by career id to avoid scanning all 300+ on every Results render. */
+const scholarshipsByCareerId = ALL_SCHOLARSHIPS.reduce((index, scholarship) => {
+  for (const careerId of scholarship.careerTags ?? []) {
+    if (!index.has(careerId)) index.set(careerId, [])
+    index.get(careerId).push(scholarship)
+  }
+  return index
+}, new Map())
+
+const universalScholarships = ALL_SCHOLARSHIPS.filter((item) => !(item.careerTags?.length > 0))
+
+function getScholarshipPool(career) {
+  if (!career?.id) return ALL_SCHOLARSHIPS
+
+  const tagged = scholarshipsByCareerId.get(career.id) ?? []
+  if (tagged.length === 0) return ALL_SCHOLARSHIPS
+
+  const seen = new Set()
+  const pool = []
+
+  for (const scholarship of [...tagged, ...universalScholarships]) {
+    if (seen.has(scholarship.id)) continue
+    seen.add(scholarship.id)
+    pool.push(scholarship)
+  }
+
+  return pool
+}
+
 const LEGACY_SCHOOL_TAGS = {
   'pup-manila': ['pup', 'pup-system', 'public', 'business', 'technology'],
   'ateneo-manila': ['ateneo', 'leadership', 'research', 'service'],
@@ -94,7 +125,7 @@ function scoreScholarship(scholarship, profile, career, schools, userLocation) {
 }
 
 export function getScholarshipMatchesForCareer(profile, career, schools, limit = 5, userLocation = null) {
-  const ranked = scholarshipsData.scholarships
+  const ranked = getScholarshipPool(career)
     .filter((item) => passesResidencyFilter(item, userLocation))
     .map((item) => ({
       ...item,
@@ -105,11 +136,6 @@ export function getScholarshipMatchesForCareer(profile, career, schools, limit =
 
   if (limit == null) return ranked
   return ranked.slice(0, limit)
-}
-
-export function getScholarshipMatches(profile, topCareers = [], limit = 5, userLocation = null) {
-  const topCareer = topCareers[0]
-  return getScholarshipMatchesForCareer(profile, topCareer, [], limit, userLocation)
 }
 
 export function getScholarshipsMetadata() {

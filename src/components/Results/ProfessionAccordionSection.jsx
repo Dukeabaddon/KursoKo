@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Award, Briefcase, ChevronDown, ExternalLink } from 'lucide-react'
-import { resultsMeta, resultsSectionTitle, resultsSurface } from './resultsClasses'
+import { resultsMeta, resultsSurface } from './resultsClasses'
 import { observeScrollReveal } from './scrollReveal'
 import SchoolMatchCard from './SchoolMatchCard'
 

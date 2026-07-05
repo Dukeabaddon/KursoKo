@@ -22,6 +22,9 @@
     "assets:strip": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py strip",
     "assets:process": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py process",
     "assets:status": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py status",
+    "assets:webp": "node scripts/convert-assets-webp.mjs",
+    "predev": "node scripts/convert-assets-webp.mjs",
+    "prebuild": "node scripts/convert-assets-webp.mjs",
     "drawbridge:install": "test -d .tools/drawbridge || git clone --depth 1 https://github.com/Dukeabaddon/drawbridge.git .tools/drawbridge",
     "drawbridge:extension-path": "node -e \"console.log(require('path').resolve('.tools/drawbridge/chrome-extension'))\""
   },
@@ -48,6 +51,7 @@
     "globals": "^16.3.0",
     "knip": "^6.23.0",
     "postcss": "^8.5.6",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4.1.14",
     "vite": "^7.0.4",
     "vitest": "^4.1.9"

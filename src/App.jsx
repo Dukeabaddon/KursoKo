@@ -1,8 +1,7 @@
-import { useState, useCallback, useEffect, useRef } from 'react'
+import { useState, useCallback, useEffect, useRef, lazy, Suspense } from 'react'
 import {
   HomePage,
   Questionnaire,
-  Results,
   ErrorBoundary,
   LoadingSpinner,
   ErrorState,
@@ -24,6 +23,8 @@ import {
   saveAppRoute,
   clearAllAssessmentData,
 } from './utils/assessmentPersistence'
+
+const Results = lazy(() => import('./components/results'))
 
 function App() {
   const [currentPage, setCurrentPage] = useState(APP_PAGES.HOME)
@@ -128,13 +129,15 @@ function App() {
     }
   }, [currentPage, startQuestionnaire])
 
+  const showSpotlight = isHydrating || currentPage === APP_PAGES.HOME
+
   if (isHydrating) {
     return (
       <div
         className="relative isolate flex min-h-screen flex-col bg-landing-paper"
-        {...spotlightScopeProps}
+        {...(showSpotlight ? spotlightScopeProps : {})}
       >
-        <SpotlightCursor />
+        {showSpotlight ? <SpotlightCursor /> : null}
         <div className="spotlight-content-layer flex flex-1 items-center justify-center">
           <LoadingSpinner message="Loading…" size="md" />
         </div>
@@ -149,11 +152,11 @@ function App() {
         className="relative isolate flex min-h-screen flex-col safe-area-padding"
         role="application"
         aria-label="KursoKo Career Assessment System"
-        {...spotlightScopeProps}
+        {...(showSpotlight ? spotlightScopeProps : {})}
       >
-        <SpotlightCursor />
+        {showSpotlight ? <SpotlightCursor /> : null}
 
-        <div className="spotlight-content-layer">
+        <div className={showSpotlight ? 'spotlight-content-layer' : undefined}>
         <main
           id="main"
           className={`flex-1 ${currentPage === APP_PAGES.QUESTIONNAIRE ? 'overflow-hidden' : 'mobile-spacing'}`}
@@ -195,11 +198,19 @@ function App() {
               )}
 
               {currentPage === APP_PAGES.RESULTS && responses.length > 0 && (
-                <Results
-                  responses={responses}
-                  onRetake={startQuestionnaire}
-                  onHome={goHome}
-                />
+                <Suspense
+                  fallback={
+                    <div className="flex min-h-screen items-center justify-center">
+                      <LoadingSpinner message="Loading results…" size="lg" />
+                    </div>
+                  }
+                >
+                  <Results
+                    responses={responses}
+                    onRetake={startQuestionnaire}
+                    onHome={goHome}
+                  />
+                </Suspense>
               )}
 
               {currentPage === APP_PAGES.RESULTS && responses.length === 0 && (

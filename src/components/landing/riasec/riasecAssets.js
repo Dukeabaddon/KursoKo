@@ -1,9 +1,9 @@
-import riasecR from '../../../assets/landing/placeholders/riasec/r.png'
-import riasecI from '../../../assets/landing/placeholders/riasec/i.png'
-import riasecA from '../../../assets/landing/placeholders/riasec/a.png'
-import riasecS from '../../../assets/landing/placeholders/riasec/s.png'
-import riasecE from '../../../assets/landing/placeholders/riasec/e.png'
-import riasecC from '../../../assets/landing/placeholders/riasec/c.png'
+import riasecR from '../../../assets/landing/placeholders/riasec/r.webp'
+import riasecI from '../../../assets/landing/placeholders/riasec/i.webp'
+import riasecA from '../../../assets/landing/placeholders/riasec/a.webp'
+import riasecS from '../../../assets/landing/placeholders/riasec/s.webp'
+import riasecE from '../../../assets/landing/placeholders/riasec/e.webp'
+import riasecC from '../../../assets/landing/placeholders/riasec/c.webp'
 
 export const riasecStickers = [
   {

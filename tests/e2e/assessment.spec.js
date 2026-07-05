@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test'
+import { acceptLeaveConfirm, LANDING_HEADING } from './helpers.js'
 
 test.describe('Assessment page', () => {
   test.beforeEach(async ({ page }) => {
+    acceptLeaveConfirm(page)
     await page.goto('/')
     await page.getByRole('button', { name: /Start Assessment/i }).first().click()
     await expect(page.getByText(/Question 1 of/i)).toBeVisible({ timeout: 15000 })
@@ -18,7 +20,7 @@ test.describe('Assessment page', () => {
 
   test('returns to landing from home button', async ({ page }) => {
     await page.getByRole('button', { name: /^Home$/i }).click()
-    await expect(page.getByRole('heading', { name: /Find the perfect path for your future/i })).toBeVisible()
+    await expect(page.getByRole('heading', { name: LANDING_HEADING })).toBeVisible()
   })
 
   test('stays on landing after refresh when user left questionnaire', async ({ page }) => {
@@ -27,10 +29,10 @@ test.describe('Assessment page', () => {
     await expect(page.getByText(/Question 2 of/i)).toBeVisible({ timeout: 10000 })
 
     await page.getByRole('button', { name: /^Home$/i }).click()
-    await expect(page.getByRole('heading', { name: /Find the perfect path for your future/i })).toBeVisible()
+    await expect(page.getByRole('heading', { name: LANDING_HEADING })).toBeVisible()
 
     await page.reload()
-    await expect(page.getByRole('heading', { name: /Find the perfect path for your future/i })).toBeVisible({
+    await expect(page.getByRole('heading', { name: LANDING_HEADING })).toBeVisible({
       timeout: 15000,
     })
     await expect(page.getByText(/Question 2 of/i)).not.toBeVisible()

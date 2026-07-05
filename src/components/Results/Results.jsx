@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { getPersonalityProfile } from '../../utils/riasecScoring'
 import { getCourseRecommendations } from '../../utils/courseRecommendations'
 import { getArchetypeForProfile } from '../../utils/archetypes'
@@ -18,29 +18,36 @@ import ResultsScholarshipsPage from './ResultsScholarshipsPage'
 import ShareCard from './ShareCard'
 
 function Results({ responses, onRetake, onHome }) {
-  const profile = getPersonalityProfile(responses)
+  const profile = useMemo(() => getPersonalityProfile(responses), [responses])
   const { primaryDimension, secondaryDimension, allDimensions, combination } = profile
-  const archetype = getArchetypeForProfile(profile)
-  const careerMatches = getCareerMatches(profile, 10)
-  const courseRecommendations = getCourseRecommendations(combination)
-  const shsStrands = getShsStrands(combination, primaryDimension.code)
-  const careerCards = careerMatches.map((career) => {
-    const allSchools = getUniversityMatchesForCareer(profile, career, null)
-    const schools = allSchools.slice(0, 3)
-    const topSchool = schools[0] ?? null
-    const userLocation = inferUserLocationFromSchool(topSchool)
-    const allScholarships = getScholarshipMatchesForCareer(profile, career, schools, null, userLocation)
-    const scholarships = allScholarships.slice(0, 5)
+  const archetype = useMemo(() => getArchetypeForProfile(profile), [profile])
+  const careerMatches = useMemo(() => getCareerMatches(profile, 10), [profile])
+  const courseRecommendations = useMemo(() => getCourseRecommendations(combination), [combination])
+  const shsStrands = useMemo(
+    () => getShsStrands(combination, primaryDimension.code),
+    [combination, primaryDimension.code],
+  )
+  const careerCards = useMemo(
+    () =>
+      careerMatches.map((career) => {
+        const allSchools = getUniversityMatchesForCareer(profile, career, null)
+        const schools = allSchools.slice(0, 3)
+        const topSchool = schools[0] ?? null
+        const userLocation = inferUserLocationFromSchool(topSchool)
+        const allScholarships = getScholarshipMatchesForCareer(profile, career, schools, null, userLocation)
+        const scholarships = allScholarships.slice(0, 5)
 
-    return {
-      ...career,
-      schools,
-      schoolTotal: allSchools.length,
-      topSchool,
-      scholarships,
-      scholarshipTotal: allScholarships.length,
-    }
-  })
+        return {
+          ...career,
+          schools,
+          schoolTotal: allSchools.length,
+          topSchool,
+          scholarships,
+          scholarshipTotal: allScholarships.length,
+        }
+      }),
+    [profile, careerMatches],
+  )
 
   const [shareMessage, setShareMessage] = useState('')
   const [heroEnter] = useState(true)

@@ -1,6 +1,6 @@
-import stepQuiz from '../../../assets/landing/placeholders/steps/step-1.png'
-import stepProfile from '../../../assets/landing/placeholders/steps/step-2.png'
-import stepPath from '../../../assets/landing/placeholders/steps/step-3.png'
+import stepQuiz from '../../../assets/landing/placeholders/steps/step-1.webp'
+import stepProfile from '../../../assets/landing/placeholders/steps/step-2.webp'
+import stepPath from '../../../assets/landing/placeholders/steps/step-3.webp'
 
 export const howItWorksSteps = [
   {
