@@ -25,7 +25,7 @@ import {
   clearAllAssessmentData,
 } from './utils/assessmentPersistence'
 
-const Results = lazy(() => import('./components/results'))
+const Results = lazy(() => import('./components/Results'))
 
 function App() {
   const [currentPage, setCurrentPage] = useState(APP_PAGES.HOME)
