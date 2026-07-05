@@ -1,7 +1,6 @@
-import { useEffect, useId, useRef, useState } from 'react'
+import { useId, useRef, useState, useEffect } from 'react'
 import { Award, ChevronDown, ExternalLink, Info } from 'lucide-react'
 import { resultsMeta, resultsSurface } from './resultsClasses'
-import { observeScrollReveal } from './scrollReveal'
 import SchoolMatchCard from './SchoolMatchCard'
 
 import { getFitTierLabel } from '../../utils/matchScoring'
@@ -85,16 +84,17 @@ function TopBadge({ index }) {
   )
 }
 
-function AffinityBar({ label, tierLabel, percent, progress = 0 }) {
-  const width = percent * progress
-
+function AffinityBar({ label, tierLabel, percent }) {
   return (
-    <div>
-      <p className={`${resultsMeta} text-landing-teal`}>{tierLabel}</p>
+    <div className="text-right sm:text-left">
+      <p className="text-sm font-bold normal-case text-landing-accent">{tierLabel}</p>
+      <p className="mt-0.5 text-xs font-medium tabular-nums normal-case text-landing-muted">
+        {percent}/100 alignment
+      </p>
       <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-landing-ink/10">
         <div
           className="results-affinity-bar h-full rounded-full bg-gradient-to-r from-landing-lavender to-landing-accent"
-          style={{ width: `${width}%` }}
+          style={{ width: `${percent}%` }}
           role="progressbar"
           aria-valuenow={percent}
           aria-valuemin={0}
@@ -108,26 +108,7 @@ function AffinityBar({ label, tierLabel, percent, progress = 0 }) {
 
 const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScholarships }) => {
   const [openId, setOpenId] = useState(null)
-  const [barProgress, setBarProgress] = useState(() => new Map())
   const sectionRef = useRef(null)
-
-  useEffect(() => {
-    const nodes = [...(sectionRef.current?.querySelectorAll('[data-affinity-bar]') ?? [])]
-    if (!nodes.length) return undefined
-
-    return observeScrollReveal(nodes, (node, progress) => {
-      const id = node.getAttribute('data-affinity-bar')
-      if (!id) return
-
-      setBarProgress((current) => {
-        const previous = current.get(id) ?? 0
-        if (previous === progress) return current
-        const next = new Map(current)
-        next.set(id, progress)
-        return next
-      })
-    })
-  }, [careerCards])
 
   if (!careerCards.length) return null
 
@@ -174,15 +155,11 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                 </div>
               </div>
 
-              <div
-                className="results-career-card-metrics w-full shrink-0 sm:w-[180px]"
-                data-affinity-bar={career.id}
-              >
+              <div className="results-career-card-metrics w-full shrink-0 sm:w-[180px]">
                 <AffinityBar
                   label={career.title}
                   tierLabel={getFitTierLabel(index)}
                   percent={career.matchPercent}
-                  progress={barProgress.get(career.id) ?? 0}
                 />
               </div>
             </div>
