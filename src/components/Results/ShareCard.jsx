@@ -1,4 +1,5 @@
 import { getCharacterImage } from '../../utils/characterAssets'
+import { SITE_URL } from '../../config/site.js'
 import CharacterCardFrame from './CharacterCardFrame'
 
 const CARD = {
@@ -12,6 +13,7 @@ const CARD = {
 
 function ShareCard({ archetype, topCareer, combination, className = '' }) {
   const characterSrc = getCharacterImage(archetype.id)
+  const shareHost = new URL(SITE_URL).host.replace(/^www\./, '')
 
   return (
     <div
@@ -76,7 +78,7 @@ function ShareCard({ archetype, topCareer, combination, className = '' }) {
         className="share-card-export__footer px-6 py-3 text-center text-[10px] font-bold"
         style={{ backgroundColor: CARD.accent, color: 'rgba(255,255,255,0.92)' }}
       >
-        kursoko.me · career guidance for Filipino students
+        {shareHost} · career guidance for Filipino students
       </div>
     </div>
   )

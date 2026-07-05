@@ -13,5 +13,5 @@ export function resolveSiteUrl() {
   if (process.env.VERCEL_URL) {
     return `https://${process.env.VERCEL_URL.replace(/\/$/, '')}`
   }
-  return 'https://kursoko.me'
+  return 'https://kursoko.vercel.app'
 }

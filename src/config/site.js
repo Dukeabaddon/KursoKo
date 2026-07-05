@@ -1,5 +1,5 @@
 /** Canonical site metadata — override at build with VITE_SITE_URL. */
-export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://kursoko.me').replace(/\/$/, '')
+export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://kursoko.vercel.app').replace(/\/$/, '')
 
 export const SITE_NAME = 'KursoKo'
 

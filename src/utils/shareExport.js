@@ -1,4 +1,6 @@
-export const KURSOKO_SHARE_URL = 'https://kursoko.me'
+import { SITE_URL } from '../config/site.js'
+
+export const KURSOKO_SHARE_URL = SITE_URL
 
 export const SHARE_CARD_EXPORT = {
   pixelRatio: 2,

@@ -11,13 +11,13 @@ const PUBLIC = join(ROOT, 'public')
 
 describe('SEO schema', () => {
   it('builds FAQPage with all FAQ entries', () => {
-    const graph = buildHomepageJsonLd('https://kursoko.me')['@graph']
+    const graph = buildHomepageJsonLd('https://kursoko.vercel.app')['@graph']
     const faq = graph.find((node) => node['@type'] === 'FAQPage')
     expect(faq.mainEntity).toHaveLength(FAQS.length)
   })
 
   it('includes Organization, WebSite, and WebApplication nodes', () => {
-    const types = buildHomepageJsonLd('https://kursoko.me')['@graph'].map((node) => node['@type'])
+    const types = buildHomepageJsonLd('https://kursoko.vercel.app')['@graph'].map((node) => node['@type'])
     expect(types).toEqual(
       expect.arrayContaining(['Organization', 'WebSite', 'WebApplication', 'FAQPage']),
     )

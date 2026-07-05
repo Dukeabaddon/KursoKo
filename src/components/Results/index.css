@@ -412,13 +412,13 @@
 }
 
 .results-fold .results-career-card-body-inner {
-  padding: 0 1.25rem 1.25rem;
+  padding: 10px 1.25rem 1.25rem;
   background: #ffffff;
 }
 
 @media (min-width: 640px) {
   .results-fold .results-career-card-body-inner {
-    padding: 0 1.5rem 1.5rem;
+    padding: 10px 1.5rem 1.5rem;
   }
 }
 

@@ -1,5 +1,5 @@
 # KursoKo — search + AI agent crawl policy
-# https://kursoko.me
+# https://kursoko.vercel.app
 
 User-agent: GPTBot
 Allow: /
@@ -27,4 +27,4 @@ Allow: /
 Disallow: /assess
 Disallow: /results
 
-Sitemap: https://kursoko.me/sitemap.xml
+Sitemap: https://kursoko.vercel.app/sitemap.xml

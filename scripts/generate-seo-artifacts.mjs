@@ -27,7 +27,7 @@ mkdirSync(GENERATED, { recursive: true })
 
 function writeRobotsTxt() {
   const body = `# KursoKo — search + AI agent crawl policy
-# https://kursoko.me
+# https://kursoko.vercel.app
 
 User-agent: GPTBot
 Allow: /
