@@ -14,6 +14,7 @@ export function Reveal({
   scale = 1,
   reducedMotion = false,
   onEntranceComplete,
+  mode = 'scroll',
 }) {
   if (reducedMotion) {
     return (
@@ -23,13 +24,23 @@ export function Reveal({
     )
   }
 
+  const motionProps =
+    mode === 'hero'
+      ? {
+          initial: { opacity: 0, y, scale },
+          animate: { opacity: 1, y: 0, scale: 1 },
+        }
+      : {
+          initial: { opacity: 0, y, scale },
+          whileInView: { opacity: 1, y: 0, scale: 1 },
+          viewport: LANDING_VIEWPORT,
+        }
+
   return (
     <motion.div
       className={className}
       style={style}
-      initial={{ opacity: 0, y, scale }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      viewport={LANDING_VIEWPORT}
+      {...motionProps}
       transition={{
         duration,
         delay,

@@ -16,6 +16,7 @@ export function HeroDecorItem({ item, index }) {
       y={HERO_MOTION.decorY}
       duration={HERO_MOTION.decorDuration}
       reducedMotion={reducedMotion}
+      mode="hero"
       onEntranceComplete={() => setDriftReady(true)}
     >
       <img

@@ -7,7 +7,7 @@ import {
   landingHeroGlow,
   landingHeroTitle,
 } from '../landingClasses'
-import { motionRevealProps } from '../motion'
+import { heroEntranceMotionProps } from '../motion'
 import { HERO_CHARACTER, HERO_DECOR } from './heroDecor'
 import { HeroDecorItem } from './HeroDecorItem'
 import { HERO_BANNER_PATH } from './heroBannerPath'
@@ -18,11 +18,11 @@ export function HeroSection({ onStart }) {
   const clipId = `${gradientId}-clip`
   const reducedMotion = useReducedMotion()
 
-  const titleMotion = motionRevealProps(HERO_MOTION.sequence.title, reducedMotion)
-  const bodyMotion = motionRevealProps(HERO_MOTION.sequence.body, reducedMotion)
-  const ctaMotion = motionRevealProps(HERO_MOTION.sequence.cta, reducedMotion)
-  const bustMotion = motionRevealProps(HERO_MOTION.sequence.bust, reducedMotion)
-  const glowMotion = motionRevealProps(HERO_MOTION.sequence.glow, reducedMotion)
+  const titleMotion = heroEntranceMotionProps(HERO_MOTION.sequence.title, reducedMotion)
+  const bodyMotion = heroEntranceMotionProps(HERO_MOTION.sequence.body, reducedMotion)
+  const ctaMotion = heroEntranceMotionProps(HERO_MOTION.sequence.cta, reducedMotion)
+  const bustMotion = heroEntranceMotionProps(HERO_MOTION.sequence.bust, reducedMotion)
+  const glowMotion = heroEntranceMotionProps(HERO_MOTION.sequence.glow, reducedMotion)
 
   return (
     <section

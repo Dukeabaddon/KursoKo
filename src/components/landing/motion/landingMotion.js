@@ -42,3 +42,19 @@ export function motionRevealProps(
     transition: { duration, delay, ease: LANDING_EASE },
   }
 }
+
+/** Hero fold — animate on mount; whileInView often never fires above the fold. */
+export function heroEntranceMotionProps(
+  { delay = 0, y = 28, duration = 0.6, scale = 1 },
+  reducedMotion,
+) {
+  if (reducedMotion) {
+    return {}
+  }
+
+  return {
+    initial: { opacity: 0, y, scale },
+    animate: { opacity: 1, y: 0, scale: 1 },
+    transition: { duration, delay, ease: LANDING_EASE },
+  }
+}

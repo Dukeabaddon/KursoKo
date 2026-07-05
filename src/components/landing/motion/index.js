@@ -3,6 +3,7 @@ export { Reveal } from './Reveal'
 export {
   decorMotionDelay,
   HERO_MOTION,
+  heroEntranceMotionProps,
   LANDING_EASE,
   LANDING_VIEWPORT,
   motionRevealProps,
