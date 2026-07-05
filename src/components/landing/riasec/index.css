@@ -1,0 +1,46 @@
+/**
+ * #riasec — cloud parallax decor + color-mix code badge
+ * (kept as CSS: parallax transforms, color-mix — not practical as Tailwind)
+ */
+
+.landing-section-clouds {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+
+.landing-section-cloud {
+  position: absolute;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.landing-section-cloud__img {
+  display: block;
+  height: auto;
+  max-width: none;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .landing-section-clouds {
+    display: none;
+  }
+}
+
+.landing-riasec-tile__code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.35rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-landing-ink);
+  background: color-mix(in srgb, var(--tile-accent) 35%, white);
+  border: 1.5px solid color-mix(in srgb, var(--tile-accent) 55%, var(--color-landing-chapter));
+}
