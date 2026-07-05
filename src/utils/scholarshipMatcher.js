@@ -99,11 +99,13 @@ function scoreScholarship(scholarship, profile, career, schools, userLocation) {
     schoolList.flatMap((school) => getSchoolInstitutionTags(school))
   )
 
-  if (primary && tags.includes(primary)) score += 3
-  if (secondary && tags.includes(secondary)) score += 2
-  if (tags.length === 6) score += 1
+  let riasecScore = 0
+  if (primary && tags.includes(primary)) riasecScore += 3
+  if (secondary && tags.includes(secondary)) riasecScore += 2
+  const tagBreadth = tags.length
+  const breadthFactor = tagBreadth >= 6 ? 0.5 : tagBreadth >= 5 ? 0.7 : 1
+  score += Math.round(riasecScore * breadthFactor)
   if (career?.id && careerTags.includes(career.id)) score += 6
-  if (careerTags.length === 0) score += 1
   if (scholarshipLevels.some((level) => preferredLevels.includes(level))) score += 3
 
   schoolTagSet.forEach((tag) => {
@@ -119,9 +121,22 @@ function scoreScholarship(scholarship, profile, career, schools, userLocation) {
   if (scholarship.category === 'government' && !scholarship.institutionTags?.includes('qcydo')) {
     score += 1
   }
-  if (scholarship.status === 'active') score += 1
 
   return score
+}
+
+function compareScholarships(a, b) {
+  if (b.relevanceScore !== a.relevanceScore) return b.relevanceScore - a.relevanceScore
+  const careerTagA = (a.careerTags ?? []).length > 0 ? 1 : 0
+  const careerTagB = (b.careerTags ?? []).length > 0 ? 1 : 0
+  if (careerTagB !== careerTagA) return careerTagB - careerTagA
+  const riasecA = (a.riasecTags ?? []).length
+  const riasecB = (b.riasecTags ?? []).length
+  if (riasecA !== riasecB) return riasecA - riasecB
+  const dateA = a.verificationDate ?? ''
+  const dateB = b.verificationDate ?? ''
+  if (dateB !== dateA) return dateB.localeCompare(dateA)
+  return (a.name ?? '').localeCompare(b.name ?? '')
 }
 
 export function getScholarshipMatchesForCareer(profile, career, schools, limit = 5, userLocation = null) {
@@ -132,7 +147,7 @@ export function getScholarshipMatchesForCareer(profile, career, schools, limit =
       relevanceScore: scoreScholarship(item, profile, career, schools, userLocation),
     }))
     .filter((item) => item.relevanceScore > 0)
-    .sort((a, b) => b.relevanceScore - a.relevanceScore)
+    .sort(compareScholarships)
 
   if (limit == null) return ranked
   return ranked.slice(0, limit)

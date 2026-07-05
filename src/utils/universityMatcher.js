@@ -102,10 +102,69 @@ const insightIndex = new Map(
   schoolInsightsData.insights.map((row) => [`${row.institutionId}:${row.careerId}`, row])
 )
 
+/** Minimum relevance score to appear in school recommendations. */
+export const MIN_SCHOOL_SCORE = 8
+
 function matchLabel(score) {
-  if (score >= 11) return { label: 'Excellent match', tone: 'excellent' }
-  if (score >= 7) return { label: 'Very good match', tone: 'good' }
-  return { label: 'Good match', tone: 'fair' }
+  if (score >= 14) return { label: 'Excellent fit', tone: 'excellent' }
+  if (score >= 10) return { label: 'Very good fit', tone: 'good' }
+  return { label: 'Good fit', tone: 'fair' }
+}
+
+function getInstitutionKey(university) {
+  const id = university.id ?? ''
+  if (id.startsWith('pup-')) return 'pup'
+  if (id.startsWith('feu-')) return 'feu'
+  return id
+}
+
+function dedupeCampuses(ranked) {
+  const bestByInstitution = new Map()
+  for (const uni of ranked) {
+    const key = getInstitutionKey(uni)
+    const prev = bestByInstitution.get(key)
+    if (!prev || compareUniversities(uni, prev) < 0) {
+      bestByInstitution.set(key, uni)
+    }
+  }
+  return [...bestByInstitution.values()].sort(compareUniversities)
+}
+
+function countKeywordHits(university, career) {
+  const haystack = getUniversityTagBag(university)
+  const keywords = CAREER_KEYWORDS[career?.id] ?? []
+  return keywords.filter((keyword) => haystackIncludesKeyword(haystack, keyword)).length
+}
+
+function buildMatchSignals(university, profile, career, keywordHits) {
+  const signals = []
+  const primary = profile.primaryDimension?.code
+  const secondary = profile.secondaryDimension?.code
+  const tags = university.riasecTags ?? []
+
+  if (primary && tags.includes(primary)) {
+    signals.push(`${profile.primaryDimension.info.name} campus fit`)
+  }
+  if (secondary && tags.includes(secondary)) {
+    signals.push(`${profile.secondaryDimension.info.name} alignment`)
+  }
+  if (keywordHits > 0) {
+    signals.push(`${keywordHits} program keyword${keywordHits > 1 ? 's' : ''}`)
+  }
+  if (getPrestigeBonus(university) > 0) {
+    signals.push('Flagship option')
+  }
+  return signals
+}
+
+function qualifiesForSchoolList(university, profile, career, relevanceScore, keywordHits) {
+  if (relevanceScore < MIN_SCHOOL_SCORE) return false
+  if (keywordHits >= 1) return true
+  if (insightIndex.has(`${university.id}:${career?.id}`)) return true
+  const primary = profile.primaryDimension?.code
+  const tags = university.riasecTags ?? []
+  if (primary && tags.includes(primary)) return true
+  return relevanceScore >= 12
 }
 
 function haystackIncludesKeyword(haystack, keyword) {
@@ -192,22 +251,28 @@ function compareUniversities(a, b) {
 }
 
 export function getUniversityMatchesForCareer(profile, career, limit = 3) {
-  const ranked = universitiesData.universities
-    .map((uni) => {
-      const relevanceScore = scoreUniversity(uni, profile, career)
-      const match = matchLabel(relevanceScore)
-      const insightData = resolveSchoolInsight(uni, career)
-      return {
-        ...uni,
-        relevanceScore,
-        matchLabel: match.label,
-        matchTone: match.tone,
-        insightHeadline: insightData.headline,
-        insight: insightData.body,
-        insightSource: insightData.source,
-      }
-    })
-    .sort(compareUniversities)
+  const ranked = dedupeCampuses(
+    universitiesData.universities
+      .map((uni) => {
+        const relevanceScore = scoreUniversity(uni, profile, career)
+        const keywordHits = countKeywordHits(uni, career)
+        const match = matchLabel(relevanceScore)
+        const insightData = resolveSchoolInsight(uni, career)
+        return {
+          ...uni,
+          relevanceScore,
+          keywordHits,
+          matchSignals: buildMatchSignals(uni, profile, career, keywordHits),
+          matchLabel: match.label,
+          matchTone: match.tone,
+          insightHeadline: insightData.headline,
+          insight: insightData.body,
+          insightSource: insightData.source,
+        }
+      })
+      .filter((uni) => qualifiesForSchoolList(uni, profile, career, uni.relevanceScore, uni.keywordHits))
+      .sort(compareUniversities)
+  )
 
   if (limit == null) return ranked
   return ranked.slice(0, limit)

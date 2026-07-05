@@ -56,13 +56,13 @@ function ShareCard({ archetype, topCareer, combination, className = '' }) {
       {topCareer ? (
         <div className="share-card-export__match px-6 py-4" style={{ backgroundColor: CARD.accent }}>
           <p className="text-xs font-semibold uppercase tracking-wider text-white/70">
-            Top career match
+            Top career fit
           </p>
           <p className="mt-1 font-[family-name:var(--font-display)] text-lg font-semibold text-white">
             {topCareer.title}
           </p>
           <p className="mt-1 text-2xl font-bold" style={{ color: CARD.gold }}>
-            {topCareer.matchPercent}%
+            Fit score {topCareer.matchPercent}
           </p>
         </div>
       ) : null}

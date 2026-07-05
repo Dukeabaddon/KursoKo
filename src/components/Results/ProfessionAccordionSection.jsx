@@ -27,17 +27,20 @@ function AffinityBar({ label, percent, progress = 0 }) {
   return (
     <div className="sm:w-[180px]">
       <div className="flex items-baseline justify-between gap-3">
-        <span className={`${resultsMeta} text-landing-teal`}>Affinity</span>
-        <span className="text-lg font-bold tabular-nums text-landing-accent">{percent}%</span>
+        <span className={`${resultsMeta} text-landing-teal`}>Fit score</span>
+        <span className="text-lg font-bold tabular-nums text-landing-accent">{percent}</span>
       </div>
+      <p className="mt-0.5 text-[0.625rem] leading-snug text-landing-muted normal-case">
+        Heuristic, not a probability
+      </p>
       <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-landing-ink/10">
         <div
           className="results-affinity-bar h-full rounded-full bg-gradient-to-r from-landing-lavender to-landing-accent"
           style={{ width: `${width}%` }}
           role="progressbar"
           aria-valuenow={percent}
-          aria-valuemin={0}
-          aria-valuemax={100}
+          aria-valuemin={40}
+          aria-valuemax={99}
           aria-label={label}
         />
       </div>
@@ -76,6 +79,9 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
         <h2 id="profession-results-heading" className="text-lg font-bold text-landing-ink">
           Profession matches for you
         </h2>
+        <p className="mt-1 text-sm text-landing-muted normal-case">
+          Ranked by RIASEC fit score — a guide, not a guarantee of admission or hiring.
+        </p>
       </div>
 
       <div className="space-y-4">
@@ -109,10 +115,22 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
 
               <div data-affinity-bar={career.id}>
                 <AffinityBar
-                  label={`${career.title} affinity`}
+                  label={`${career.title} fit score`}
                   percent={career.matchPercent}
                   progress={barProgress.get(career.id) ?? 0}
                 />
+                {career.whyMatched?.length ? (
+                  <ul className="mt-2 flex flex-wrap gap-1.5">
+                    {career.whyMatched.map((reason) => (
+                      <li
+                        key={reason}
+                        className="rounded-full border border-landing-teal/20 bg-landing-teal/5 px-2 py-0.5 text-[0.625rem] font-medium text-landing-teal"
+                      >
+                        {reason}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </div>
             </div>
           )
@@ -186,7 +204,7 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                           <p className={`${resultsMeta} text-landing-accent`}>Top schools for this path</p>
                           {career.schoolTotal > 0 ? (
                             <span className="text-xs font-medium text-landing-muted">
-                              {career.schoolTotal} matched
+                              {career.schoolTotal} strong fit{career.schoolTotal === 1 ? '' : 's'}
                             </span>
                           ) : null}
                         </div>
@@ -218,7 +236,7 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                           </div>
                           {career.scholarshipTotal > 0 ? (
                             <span className="text-xs font-medium text-landing-muted">
-                              {career.scholarshipTotal} matched
+                              {career.scholarshipTotal} ranked
                             </span>
                           ) : null}
                         </div>

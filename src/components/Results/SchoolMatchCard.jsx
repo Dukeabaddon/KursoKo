@@ -22,6 +22,19 @@ function SchoolMatchCard({ school, rank }) {
 
         <p className="text-sm text-landing-muted normal-case">{school.location}</p>
 
+        {school.matchSignals?.length ? (
+          <ul className="flex flex-wrap gap-1.5">
+            {school.matchSignals.map((signal) => (
+              <li
+                key={signal}
+                className="rounded-full border border-landing-accent/15 bg-landing-accent/5 px-2 py-0.5 text-[0.625rem] font-medium text-landing-accent"
+              >
+                {signal}
+              </li>
+            ))}
+          </ul>
+        ) : null}
+
         {school.insightHeadline ? (
           <p className="text-sm font-semibold text-landing-ink normal-case">{school.insightHeadline}</p>
         ) : null}

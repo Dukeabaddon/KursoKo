@@ -79,11 +79,18 @@ describe('career algorithm thresholds', () => {
     expect(delta).toBeLessThan(0.5) // negligible vs score scale (~10–40)
   })
 
-  it('matchPercent is clamped to [55, 99]', () => {
+  it('matchPercent (fit score) is clamped to [40, 99]', () => {
     const matches = getCareerMatches(investigativeProfile, 57)
     for (const m of matches) {
-      expect(m.matchPercent).toBeGreaterThanOrEqual(55)
+      expect(m.matchPercent).toBeGreaterThanOrEqual(40)
       expect(m.matchPercent).toBeLessThanOrEqual(99)
     }
+  })
+
+  it('cosine fit differentiates peaked profiles instead of flooring at 55', () => {
+    const peaked = profileFromScores({ R: 5, I: 40, A: 5, S: 5, E: 5, C: 5 })
+    const matches = getCareerMatches(peaked, 10)
+    const percents = new Set(matches.map((m) => m.matchPercent))
+    expect(percents.size).toBeGreaterThan(1)
   })
 })

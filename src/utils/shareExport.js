@@ -22,7 +22,7 @@ function getExportSize(element) {
 export function buildShareText({ archetype, topCareer, combination }) {
   const typeLabel = combination ? ` (${combination})` : ''
   const careerLine = topCareer
-    ? `${topCareer.title} — ${topCareer.matchPercent}% match`
+    ? `${topCareer.title} — fit score ${topCareer.matchPercent}`
     : 'Explore careers on KursoKo'
 
   return [

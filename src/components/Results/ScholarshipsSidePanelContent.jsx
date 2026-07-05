@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ExternalLink } from 'lucide-react'
+import careersData from '../../data/careers.json'
 import { getPersonalityProfile } from '../../utils/riasecScoring'
-import { getCareerMatches } from '../../utils/careerMatcher'
 import {
   getScholarshipMatchesForCareer,
   inferUserLocationFromSchool,
@@ -52,7 +52,7 @@ function ScholarshipListItem({ scholarship, index }) {
 function ScholarshipsSidePanelContent({ responses, careerId }) {
   const scholarships = useMemo(() => {
     const profile = getPersonalityProfile(responses)
-    const matchedCareer = getCareerMatches(profile, 10).find((item) => item.id === careerId)
+    const matchedCareer = careersData.careers.find((item) => item.id === careerId)
     if (!matchedCareer) return []
 
     const schools = getUniversityMatchesForCareer(profile, matchedCareer, 3)

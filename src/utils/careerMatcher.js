@@ -1,6 +1,6 @@
 import careersData from '../data/careers.json'
+import { cosineSimilarity, toFitPercent } from './matchScoring.js'
 
-const RIASEC_CODES = ['R', 'I', 'A', 'S', 'E', 'C']
 const CAREER_NARRATIVES = {
   'software-engineer':
     'You like figuring out how things work behind the screen — and making tools that actually help people. You probably enjoy puzzles, building small projects, and fixing problems until they finally click. This path rewards patience, curiosity, and the satisfaction of turning an idea into something real.',
@@ -118,39 +118,24 @@ const CAREER_NARRATIVES = {
     'You are the organizational backbone of every office, keeping schedules straight, files in order, and meetings running smoothly. From government agencies to BPOs to law firms, every workplace needs reliable admin staff. It is a great entry point for students who are organized, friendly, and tech-savvy.',
 }
 
-function weightedScore(scores, weights) {
-  let total = 0
-  let weightSum = 0
-
-  RIASEC_CODES.forEach((code) => {
-    const w = weights[code] ?? 0
-    total += (scores[code] ?? 0) * w
-    weightSum += w
-  })
-
-  if (weightSum === 0) return 0
-  return total / weightSum
-}
-
-function toPercent(rawScore, maxScore) {
-  if (maxScore <= 0) return 0
-  const ratio = rawScore / maxScore
-  return Math.min(99, Math.max(55, Math.round(ratio * 100)))
+function compareCareers(a, b) {
+  if (b.matchPercent !== a.matchPercent) return b.matchPercent - a.matchPercent
+  if ((b.rawScore ?? 0) !== (a.rawScore ?? 0)) return (b.rawScore ?? 0) - (a.rawScore ?? 0)
+  return (a.title ?? '').localeCompare(b.title ?? '')
 }
 
 /**
- * Rank careers by RIASEC-weighted fit. Preserves scoring engine — presentation only.
+ * Rank careers by RIASEC cosine fit. matchPercent is a display fit score (40–99), not a probability.
  */
 export function getCareerMatches(profile, limit = 10) {
   const scores = profile.scores ?? {}
-  const maxScore = Math.max(...Object.values(scores), 1)
   const primaryCode = profile.primaryDimension?.code
   const secondaryCode = profile.secondaryDimension?.code
 
   const ranked = careersData.careers
     .map((career) => {
-      const raw = weightedScore(scores, career.riasecWeights)
-      const matchPercent = toPercent(raw, maxScore)
+      const raw = cosineSimilarity(scores, career.riasecWeights)
+      const matchPercent = toFitPercent(raw)
       const reasons = []
 
       if (primaryCode && (career.riasecWeights[primaryCode] ?? 0) >= 0.7) {
@@ -166,6 +151,7 @@ export function getCareerMatches(profile, limit = 10) {
       return {
         ...career,
         matchPercent,
+        fitScore: matchPercent,
         rawScore: raw,
         whyMatched: reasons,
         strengthsUsed: career.skills.slice(0, 2),
@@ -174,12 +160,8 @@ export function getCareerMatches(profile, limit = 10) {
           `This path aligns with your ${profile.primaryDimension?.info?.name?.toLowerCase() ?? 'top'} strengths and rewards the kinds of tasks you naturally lean toward.`,
       }
     })
-    .sort((a, b) => {
-      if (b.matchPercent !== a.matchPercent) return b.matchPercent - a.matchPercent
-      return (b.rawScore ?? 0) - (a.rawScore ?? 0)
-    })
-    .slice(0, limit)
-    .map(({ rawScore: _raw, ...career }) => career)
+    .sort(compareCareers)
 
-  return ranked
+  const sliced = limit == null ? ranked : ranked.slice(0, limit)
+  return sliced.map(({ rawScore: _raw, ...career }) => career)
 }

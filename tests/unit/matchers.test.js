@@ -3,6 +3,7 @@ import { getCareerMatches } from '../../src/utils/careerMatcher.js'
 import {
   getUniversityMatchesForCareer,
   getUniversitiesMetadata,
+  MIN_SCHOOL_SCORE,
 } from '../../src/utils/universityMatcher.js'
 import {
   getScholarshipMatchesForCareer,
@@ -153,6 +154,17 @@ describe('matcher pipeline (no backend — client-side data)', () => {
       expect(ua.popularCourses?.length).toBeGreaterThanOrEqual(4)
     } else {
       expect(ids.has('ua')).toBe(true)
+    }
+  })
+
+  it('school list filters low-fit campuses instead of returning all 209', () => {
+    const profile = archetypeProfile('I', 'C')
+    const career = { id: 'software-engineer', title: 'Software Engineer' }
+    const all = getUniversityMatchesForCareer(profile, career, null)
+    expect(all.length).toBeLessThan(209)
+    expect(all.length).toBeGreaterThan(0)
+    for (const school of all) {
+      expect(school.relevanceScore).toBeGreaterThanOrEqual(MIN_SCHOOL_SCORE)
     }
   })
 
