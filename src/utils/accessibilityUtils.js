@@ -291,7 +291,9 @@ export class PerformanceOptimizer {
     const result = renderFn()
     const end = performance.now()
     
-    console.log(`${componentName} render time: ${(end - start).toFixed(2)}ms`)
+    if (import.meta.env.DEV) {
+      console.log(`${componentName} render time: ${(end - start).toFixed(2)}ms`)
+    }
     return result
   }
 

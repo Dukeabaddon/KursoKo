@@ -11,10 +11,10 @@ const RIASEC = new Set(['R', 'I', 'A', 'S', 'E', 'C'])
 describe('data integrity (static “API” / JSON catalogs)', () => {
   it('loads expected catalog sizes after data2 + careers merge', () => {
     expect(careers.careers.length).toBe(57)
-    expect(universities.universities.length).toBe(205)
+    expect(universities.universities.length).toBe(209)
     expect(scholarships.scholarships.length).toBe(303)
     expect(careers.metadata.count).toBe(57)
-    expect(universities.metadata.count).toBe(205)
+    expect(universities.metadata.count).toBe(209)
     expect(scholarships.metadata.count).toBe(303)
   })
 
@@ -78,19 +78,52 @@ describe('data integrity (static “API” / JSON catalogs)', () => {
     }
   })
 
-  it('scholarship careerTags: some exact career.id hits exist (matcher needs exact ids)', () => {
+  it('scholarship careerTags: all tags are valid career.id values after normalization', () => {
     const careerIds = new Set(careers.careers.map((c) => c.id))
     let exact = 0
     let freeform = 0
+    let empty = 0
     for (const sch of scholarships.scholarships) {
-      for (const tag of sch.careerTags ?? []) {
+      const tags = sch.careerTags ?? []
+      if (tags.length === 0) empty += 1
+      for (const tag of tags) {
         if (careerIds.has(tag)) exact += 1
         else freeform += 1
       }
     }
-    // Matcher only awards +6 on exact career.id — freeform tags never match.
-    expect(exact).toBeGreaterThan(50)
-    expect(freeform).toBeGreaterThan(0) // known data-quality debt from research dumps
+    expect(exact).toBeGreaterThan(200)
+    expect(freeform).toBe(0)
+    expect(empty).toBe(0)
+  })
+
+  it('courses.json covers all 30 RIASEC pair combinations', () => {
+    const codes = 'RIASEC'.split('')
+    const combos = []
+    for (const a of codes) {
+      for (const b of codes) {
+        if (a !== b) combos.push(a + b)
+      }
+    }
+    for (const combo of combos) {
+      const hit = courses.courseRecommendations[combo] ?? courses.courseRecommendations[combo.split('').reverse().join('')]
+      expect(hit, `missing course recommendation for ${combo}`).toBeTruthy()
+    }
+    expect(Object.keys(courses.courseRecommendations).length).toBeGreaterThanOrEqual(30)
+  })
+
+  it('popularCourses require official programSource (production gate)', () => {
+    const missingSource = universities.universities.filter(
+      (u) => (u.popularCourses?.length ?? 0) > 0 && u.programSource !== 'official_website',
+    )
+    expect(missingSource.map((u) => u.id)).toEqual([])
+  })
+
+  it('official popularCourses have 4–12 verified program names', () => {
+    for (const uni of universities.universities) {
+      if (uni.programSource !== 'official_website') continue
+      expect(uni.popularCourses?.length ?? 0).toBeGreaterThanOrEqual(4)
+      expect(uni.popularCourses?.length ?? 0).toBeLessThanOrEqual(12)
+    }
   })
 
   it('schoolInsights institutionIds exist in universities catalog', () => {

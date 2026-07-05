@@ -59,15 +59,15 @@ export function HeroSection({ onStart }) {
                 className={`mb-0 w-full max-w-full break-words text-pretty font-extrabold text-white md:mb-4 lg:mb-5 ${landingHeroTitle}`}
                 {...titleMotion}
               >
-                Find the perfect path <br className="hidden md:block" /> for your future.
+                Free RIASEC Career Test for Filipino Students
               </motion.h1>
 
               <motion.p
                 className={`mb-0 max-w-lg font-normal text-purple-100/90 md:mb-8 md:max-w-xl lg:mb-8 ${landingHeroBody}`}
                 {...bodyMotion}
               >
-                Take a free 10-minute personality assessment to discover the college courses and
-                scholarships in the Philippines that match your true strengths.
+                Find college courses and scholarships in the Philippines that match your strengths
+                — in about 10 minutes.
               </motion.p>
 
               <motion.button

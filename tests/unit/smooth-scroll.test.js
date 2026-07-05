@@ -15,7 +15,7 @@ describe('resolveSectionScrollAnchor', () => {
     const section = document.createElement('section')
     section.id = 'how'
     const inner = document.createElement('div')
-    inner.className = 'landing-section__inner'
+    inner.setAttribute('data-landing-inner', '')
     section.appendChild(inner)
     document.body.appendChild(section)
 
@@ -41,7 +41,7 @@ describe('resolveScrollTopForElement', () => {
   it('align start uses inner top below nav offset', () => {
     const section = document.createElement('section')
     const inner = document.createElement('div')
-    inner.className = 'landing-section__inner'
+    inner.setAttribute('data-landing-inner', '')
     section.appendChild(inner)
     document.body.appendChild(section)
 
@@ -67,7 +67,7 @@ describe('resolveScrollTopForElement', () => {
 
     const section = document.createElement('section')
     const inner = document.createElement('div')
-    inner.className = 'landing-section__inner'
+    inner.setAttribute('data-landing-inner', '')
     section.appendChild(inner)
     document.body.appendChild(section)
 
@@ -92,7 +92,7 @@ describe('resolveScrollTopForElement', () => {
   it('align center uses inner vertical middle when inner is short', () => {
     const section = document.createElement('section')
     const inner = document.createElement('div')
-    inner.className = 'landing-section__inner'
+    inner.setAttribute('data-landing-inner', '')
     section.appendChild(inner)
     document.body.appendChild(section)
 

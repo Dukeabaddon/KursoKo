@@ -49,7 +49,7 @@ describe('matcher pipeline (no backend — client-side data)', () => {
   })
 
   it('metadata helpers expose catalog counts', () => {
-    expect(getUniversitiesMetadata().count).toBe(205)
+    expect(getUniversitiesMetadata().count).toBe(209)
     expect(getScholarshipsMetadata().count).toBe(303)
   })
 
@@ -125,6 +125,35 @@ describe('matcher pipeline (no backend — client-side data)', () => {
     const nurseSchools = getUniversityMatchesForCareer(profile, nurse, 5).map((s) => s.id)
     const designSchools = getUniversityMatchesForCareer(profile, designer, 5).map((s) => s.id)
     expect(nurseSchools).not.toEqual(designSchools)
+  })
+
+  it('merged health schools have nursing strength and can rank for nurse career', () => {
+    const profile = archetypeProfile('S', 'I')
+    const career = { id: 'nurse', title: 'Registered Nurse' }
+    const schools = getUniversityMatchesForCareer(profile, career, 20)
+    const ids = schools.map((s) => s.id)
+    expect(ids.some((id) => ['emilio-aguinaldo-college', 'philippine-womens-university'].includes(id))).toBe(
+      true
+    )
+  })
+
+  it('top100 core gap schools exist in catalog', async () => {
+    const { default: universitiesData } = await import('../../src/data/universities.json')
+    const ids = new Set(universitiesData.universities.map((u) => u.id))
+    for (const id of [
+      'emilio-aguinaldo-college',
+      'philippine-womens-university',
+      'up-open-university',
+      'up-clark',
+    ]) {
+      expect(ids.has(id)).toBe(true)
+    }
+    const ua = universitiesData.universities.find((u) => u.id === 'ua')
+    if (ua?.programSource === 'official_website') {
+      expect(ua.popularCourses?.length).toBeGreaterThanOrEqual(4)
+    } else {
+      expect(ids.has('ua')).toBe(true)
+    }
   })
 
   it('residency filter blocks strict LGU scholarships for wrong city', () => {

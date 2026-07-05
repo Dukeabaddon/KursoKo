@@ -16,6 +16,7 @@ import {
   checkRateLimit,
   recordSubmission,
 } from './utils/sessionManager'
+import { devError, devLog, devWarn, logDevPageNotice } from './utils/devLogger'
 import {
   APP_PAGES,
   resolveInitialAppState,
@@ -51,11 +52,16 @@ function App() {
     setIsHydrating(false)
   }, [])
 
+  useEffect(() => {
+    if (isHydrating) return
+    logDevPageNotice(currentPage)
+  }, [currentPage, isHydrating])
+
   const startQuestionnaire = useCallback(() => {
     clearAllAssessmentData()
     clearSession()
-    const sessionId = startSession()
-    console.log('New assessment session started:', sessionId)
+    startSession()
+    devLog('New assessment session started')
 
     setQuestionnaireRestore(null)
     setResponses([])
@@ -81,12 +87,12 @@ function App() {
       const validation = validateAndSanitize(questionnaireResponses)
 
       if (!validation.isValid) {
-        console.error('Validation errors:', validation.errors)
+        devError('Validation failed')
         throw new Error('Invalid responses detected. Please try again.')
       }
 
       if (validation.errors.length > 0) {
-        console.warn('Validation warnings:', validation.errors)
+        devWarn('Validation warnings:', validation.errors)
       }
 
       setResponses(validation.sanitizedResponses)
@@ -101,7 +107,7 @@ function App() {
       setQuestionnaireRestore(null)
       setCurrentPage(APP_PAGES.RESULTS)
     } catch (err) {
-      console.error('Error completing questionnaire:', err)
+      devError('Error completing questionnaire:', err)
       setError(err.message || 'Failed to submit questionnaire')
       setIsCalculating(false)
     }

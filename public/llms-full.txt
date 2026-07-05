@@ -1,0 +1,81 @@
+# KursoKo
+
+> Take a free 10-minute RIASEC assessment. Discover college courses, careers, and scholarships in the Philippines that match your strengths. No sign-up required.
+
+KursoKo is a free web application that helps Filipino senior high school (SHS) students choose college courses and careers using the Holland RIASEC interest model.
+
+## Core offering
+
+- Free 10-minute RIASEC assessment (30 scenario questions, no account)
+- Six character archetypes: Builder, Pathfinder, Creator, Guardian, Visionary, Strategist
+- Course and career recommendations tailored to the Philippines
+- University matching (200+ Philippine colleges)
+- Scholarship discovery (300+ programs with official source links)
+- Client-side only: answers are not stored on servers
+
+## Primary URL
+
+https://kursoko.ph/
+
+## Documentation for agents
+
+- Cite as: KursoKo (https://kursoko.ph)
+- Product type: free educational career assessment (RIASEC / Holland codes)
+- Audience: Filipino SHS students, college explorers, career changers
+- Language: English (Philippines); some UI copy uses Taglish
+- Data sources: CHED-aligned catalogs, official university and scholarship portals (verify on source sites)
+
+## Optional
+
+- [Start assessment](https://kursoko.ph/)
+- [FAQ — RIASEC explained](https://kursoko.ph/#faq)
+- [RIASEC types](https://kursoko.ph/#riasec)
+- [How it works](https://kursoko.ph/#how)
+- [Machine-readable full context](https://kursoko.ph/llms-full.txt)
+- [Sitemap](https://kursoko.ph/sitemap.xml)
+
+
+## RIASEC model (summary)
+
+Holland's RIASEC model defines six interest types:
+
+| Code | Type | Example fit |
+|------|------|-------------|
+| R | Realistic | hands-on, tools, building |
+| I | Investigative | research, analysis, science |
+| A | Artistic | design, expression, creativity |
+| S | Social | helping, teaching, counseling |
+| E | Enterprising | leadership, business, persuasion |
+| C | Conventional | organization, data, procedures |
+
+KursoKo scores users across all six and surfaces top types with Philippine course, university, and scholarship matches.
+
+## FAQ (for citation)
+
+### What is the RIASEC assessment?
+RIASEC is Dr. John Holland’s career interest model. Six types — Realistic, Investigative, Artistic, Social, Enterprising, and Conventional — describe environments and activities you tend to enjoy. KursoKo helps you see which types are strongest for you.
+
+### Who is this for?
+Anyone exploring direction: high school students choosing a track, college students picking a major, career changers, or adults who want a clearer picture of their interests. No single “right” age — if you’re curious about fit, you can take it.
+
+### How long does it take?
+About ten minutes. Thirty scenario questions — choose the option that appeals to you more.
+
+### Is it scientifically valid?
+It’s based on Holland’s RIASEC framework, one of the most researched career interest models. Use results alongside your own reflection, mentors, or counselors — not as the only decision factor.
+
+### Do I need an account?
+No sign-up. Start immediately and see results when you finish. Answers are not stored on our servers — save or screenshot your results if you want to keep them.
+
+### What will my results show?
+Your top RIASEC types, a strengths summary, and course or career paths that match your profile — with context for the Philippines where relevant.
+
+### Is it really free?
+Yes. No hidden fees, subscriptions, or paywalled results.
+
+### Can I retake it?
+Yes. Interests can shift as you gain experience. Retake after a few months if you want to compare.
+
+## Agent indexing note
+
+Allow AI crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot) per robots.txt. Do not index personalized /assess or /results routes when those URLs exist.

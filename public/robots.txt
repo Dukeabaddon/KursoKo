@@ -1,0 +1,30 @@
+# KursoKo — search + AI agent crawl policy
+# https://kursoko.ph
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /assess
+Disallow: /results
+
+Sitemap: https://kursoko.ph/sitemap.xml

@@ -25,8 +25,8 @@
     "assets:regen-v41": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py regen",
     "assets:regen-v41-b2": ".venv-assets/bin/python scripts/questionnaire-asset-queue.py regen --batch2",
     "assets:webp": "node scripts/convert-assets-webp.mjs",
-    "predev": "node scripts/convert-assets-webp.mjs",
-    "prebuild": "node scripts/convert-assets-webp.mjs",
+    "predev": "node scripts/convert-assets-webp.mjs && node scripts/generate-seo-artifacts.mjs",
+    "prebuild": "node scripts/convert-assets-webp.mjs && node scripts/generate-seo-artifacts.mjs",
     "drawbridge:install": "test -d .tools/drawbridge || git clone --depth 1 https://github.com/Dukeabaddon/drawbridge.git .tools/drawbridge",
     "drawbridge:extension-path": "node -e \"console.log(require('path').resolve('.tools/drawbridge/chrome-extension'))\""
   },

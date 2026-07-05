@@ -3,7 +3,7 @@
     "version": "1.0",
     "lastUpdated": "2024-07-10",
     "description": "Comprehensive course recommendations based on RIASEC personality types",
-    "totalCombinations": 15,
+    "totalCombinations": 30,
     "dataSource": "Educational institutions, career counseling research, and industry analysis"
   },
   "riasecInfo": {
@@ -411,6 +411,166 @@
           "description": "Shape clay into functional and artistic pottery",
           "matchStrength": "Good"
         }
+      ]
+    },
+    "RS": {
+      "name": "Realistic-Social",
+      "description": "Hands-on care and community service roles",
+      "courses": [
+        {"title": "Nursing", "description": "Provide direct patient care in hospitals and clinics", "matchStrength": "Excellent"},
+        {"title": "Physical Therapy", "description": "Help people recover mobility through rehabilitation", "matchStrength": "Excellent"},
+        {"title": "Caregiving", "description": "Support daily living for elderly and patients at home", "matchStrength": "Very Good"},
+        {"title": "Emergency Medical Services", "description": "Respond to medical emergencies in the field", "matchStrength": "Very Good"}
+      ]
+    },
+    "RE": {
+      "name": "Realistic-Enterprising",
+      "description": "Technical skills with business and leadership drive",
+      "courses": [
+        {"title": "Construction Management", "description": "Lead building projects from planning to completion", "matchStrength": "Excellent"},
+        {"title": "Industrial Technology", "description": "Manage production systems and technical operations", "matchStrength": "Excellent"},
+        {"title": "Automotive Technology", "description": "Repair vehicles and run automotive service businesses", "matchStrength": "Very Good"},
+        {"title": "Agribusiness", "description": "Combine farming operations with business management", "matchStrength": "Very Good"}
+      ]
+    },
+    "IS": {
+      "name": "Investigative-Social",
+      "description": "Research and analysis focused on helping people",
+      "courses": [
+        {"title": "Psychology", "description": "Study human behavior and mental health", "matchStrength": "Excellent"},
+        {"title": "Public Health", "description": "Improve community health through research and programs", "matchStrength": "Excellent"},
+        {"title": "Medical Technology", "description": "Perform laboratory tests that guide patient care", "matchStrength": "Very Good"},
+        {"title": "Guidance and Counseling", "description": "Support students and clients through structured counseling", "matchStrength": "Very Good"}
+      ]
+    },
+    "IE": {
+      "name": "Investigative-Enterprising",
+      "description": "Analytical thinking applied to business and innovation",
+      "courses": [
+        {"title": "Business Analytics", "description": "Turn data into decisions for organizations", "matchStrength": "Excellent"},
+        {"title": "Information Systems", "description": "Design technology solutions for business problems", "matchStrength": "Excellent"},
+        {"title": "Applied Economics", "description": "Analyze markets and policy with quantitative methods", "matchStrength": "Very Good"},
+        {"title": "Technology Management", "description": "Lead tech teams and digital transformation projects", "matchStrength": "Very Good"}
+      ]
+    },
+    "IC": {
+      "name": "Investigative-Conventional",
+      "description": "Systematic analysis, data, and structured problem-solving",
+      "courses": [
+        {"title": "Statistics", "description": "Collect and interpret data for research and business", "matchStrength": "Excellent"},
+        {"title": "Computer Science", "description": "Build software and solve computational problems", "matchStrength": "Excellent"},
+        {"title": "Accountancy", "description": "Maintain financial records with precision and compliance", "matchStrength": "Very Good"},
+        {"title": "Quality Management", "description": "Ensure products and processes meet standards", "matchStrength": "Very Good"}
+      ]
+    },
+    "AE": {
+      "name": "Artistic-Enterprising",
+      "description": "Creative vision with business and persuasion skills",
+      "courses": [
+        {"title": "Advertising Arts", "description": "Create campaigns that connect brands with audiences", "matchStrength": "Excellent"},
+        {"title": "Fashion Business", "description": "Design and market clothing and lifestyle products", "matchStrength": "Excellent"},
+        {"title": "Film and Media Entrepreneurship", "description": "Produce and distribute creative content commercially", "matchStrength": "Very Good"},
+        {"title": "Creative Entrepreneurship", "description": "Build ventures around original ideas and design", "matchStrength": "Very Good"}
+      ]
+    },
+    "AC": {
+      "name": "Artistic-Conventional",
+      "description": "Creative work with structure, systems, and detail",
+      "courses": [
+        {"title": "Multimedia Arts", "description": "Produce digital content across visual and interactive media", "matchStrength": "Excellent"},
+        {"title": "Visual Communication Design", "description": "Design clear, branded visual messages for print and web", "matchStrength": "Excellent"},
+        {"title": "Technical Drafting", "description": "Create precise drawings for engineering and construction", "matchStrength": "Very Good"},
+        {"title": "Publishing and Digital Media", "description": "Manage editorial production and layout workflows", "matchStrength": "Very Good"}
+      ]
+    },
+    "SR": {
+      "name": "Social-Realistic",
+      "description": "Helping people through practical, hands-on service",
+      "courses": [
+        {"title": "Physical Education", "description": "Teach fitness, sports, and healthy movement", "matchStrength": "Excellent"},
+        {"title": "Occupational Therapy", "description": "Help clients regain daily living skills", "matchStrength": "Excellent"},
+        {"title": "Community Health", "description": "Deliver health programs in local communities", "matchStrength": "Very Good"},
+        {"title": "Caregiving", "description": "Provide hands-on support for patients and seniors", "matchStrength": "Very Good"}
+      ]
+    },
+    "SI": {
+      "name": "Social-Investigative",
+      "description": "Understanding people through research and counseling",
+      "courses": [
+        {"title": "Psychology", "description": "Study and support mental health and human behavior", "matchStrength": "Excellent"},
+        {"title": "Sociology", "description": "Research social patterns and community dynamics", "matchStrength": "Excellent"},
+        {"title": "Guidance and Counseling", "description": "Guide students and clients through life decisions", "matchStrength": "Very Good"},
+        {"title": "Human Development", "description": "Study growth across the lifespan in social contexts", "matchStrength": "Very Good"}
+      ]
+    },
+    "SC": {
+      "name": "Social-Conventional",
+      "description": "Organized roles that support people and institutions",
+      "courses": [
+        {"title": "Social Work", "description": "Assist individuals and families facing hardship", "matchStrength": "Excellent"},
+        {"title": "Office Administration", "description": "Keep organizations running with organized support", "matchStrength": "Excellent"},
+        {"title": "Public Administration", "description": "Manage government programs and public services", "matchStrength": "Very Good"},
+        {"title": "Library and Information Science", "description": "Organize knowledge resources for communities", "matchStrength": "Very Good"}
+      ]
+    },
+    "ER": {
+      "name": "Enterprising-Realistic",
+      "description": "Business leadership in technical and production fields",
+      "courses": [
+        {"title": "Industrial Management", "description": "Lead factory and production operations", "matchStrength": "Excellent"},
+        {"title": "Real Estate Management", "description": "Develop and manage property investments", "matchStrength": "Excellent"},
+        {"title": "Construction Entrepreneurship", "description": "Run contracting and building service firms", "matchStrength": "Very Good"},
+        {"title": "Supply Chain Management", "description": "Coordinate logistics from supplier to customer", "matchStrength": "Very Good"}
+      ]
+    },
+    "EI": {
+      "name": "Enterprising-Investigative",
+      "description": "Strategic leadership backed by analysis and research",
+      "courses": [
+        {"title": "Management Engineering", "description": "Optimize operations with engineering and business tools", "matchStrength": "Excellent"},
+        {"title": "Financial Technology", "description": "Build and manage digital finance products", "matchStrength": "Excellent"},
+        {"title": "Business Intelligence", "description": "Drive strategy with data dashboards and insights", "matchStrength": "Very Good"},
+        {"title": "Innovation Management", "description": "Lead R&D and new product development teams", "matchStrength": "Very Good"}
+      ]
+    },
+    "EA": {
+      "name": "Enterprising-Artistic",
+      "description": "Creative industries with marketing and leadership",
+      "courses": [
+        {"title": "Marketing Communication", "description": "Blend branding, storytelling, and media strategy", "matchStrength": "Excellent"},
+        {"title": "Event Management", "description": "Plan and execute live experiences and productions", "matchStrength": "Excellent"},
+        {"title": "Fashion Merchandising", "description": "Market and retail fashion products creatively", "matchStrength": "Very Good"},
+        {"title": "Entertainment Business", "description": "Manage artists, content, and media ventures", "matchStrength": "Very Good"}
+      ]
+    },
+    "CI": {
+      "name": "Conventional-Investigative",
+      "description": "Structured analysis of data, finance, and systems",
+      "courses": [
+        {"title": "Information Systems", "description": "Manage business technology and data workflows", "matchStrength": "Excellent"},
+        {"title": "Actuarial Science", "description": "Assess financial risk using mathematics and statistics", "matchStrength": "Excellent"},
+        {"title": "Finance", "description": "Analyze investments, budgets, and corporate money", "matchStrength": "Very Good"},
+        {"title": "Data Analytics", "description": "Extract insights from structured business data", "matchStrength": "Very Good"}
+      ]
+    },
+    "CA": {
+      "name": "Conventional-Artistic",
+      "description": "Organized creative production and design management",
+      "courses": [
+        {"title": "Information Design", "description": "Present complex information clearly and beautifully", "matchStrength": "Excellent"},
+        {"title": "Arts Administration", "description": "Manage galleries, theaters, and cultural programs", "matchStrength": "Excellent"},
+        {"title": "Publishing Studies", "description": "Oversee editorial, layout, and distribution workflows", "matchStrength": "Very Good"},
+        {"title": "Records and Archives Management", "description": "Preserve and organize institutional documents", "matchStrength": "Very Good"}
+      ]
+    },
+    "CS": {
+      "name": "Conventional-Social",
+      "description": "Support roles that keep people-focused organizations running",
+      "courses": [
+        {"title": "Office Administration", "description": "Coordinate schedules, records, and office operations", "matchStrength": "Excellent"},
+        {"title": "Human Resource Development", "description": "Support hiring, training, and employee programs", "matchStrength": "Excellent"},
+        {"title": "Secretarial Science", "description": "Provide executive and clerical support professionally", "matchStrength": "Very Good"},
+        {"title": "Customer Service Management", "description": "Lead front-line teams that serve clients daily", "matchStrength": "Very Good"}
       ]
     }
   }

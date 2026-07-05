@@ -3,6 +3,8 @@
  * Handles session creation, validation, and security
  */
 
+import { devError } from './devLogger.js'
+
 const SESSION_STORAGE_KEY = 'kursoko_assessment_session';
 const LAST_SUBMIT_KEY = 'kursoko_last_submit';
 
@@ -42,7 +44,7 @@ export const startSession = () => {
     sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(sessionData));
     return sessionId;
   } catch (error) {
-    console.error('Failed to create session:', error);
+    devError('Failed to create session:', error);
     return sessionId; // Return ID even if storage fails
   }
 };
@@ -71,7 +73,7 @@ export const getSession = () => {
     
     return session;
   } catch (error) {
-    console.error('Failed to get session:', error);
+    devError('Failed to get session:', error);
     return null;
   }
 };
@@ -94,7 +96,7 @@ export const clearSession = () => {
     sessionStorage.removeItem(SESSION_STORAGE_KEY);
     sessionStorage.removeItem(LAST_SUBMIT_KEY);
   } catch (error) {
-    console.error('Failed to clear session:', error);
+    devError('Failed to clear session:', error);
   }
 };
 
@@ -124,7 +126,7 @@ export const checkRateLimit = (minInterval = 5000) => {
     
     return { allowed: true, waitTime: 0 };
   } catch (error) {
-    console.error('Rate limit check failed:', error);
+    devError('Rate limit check failed:', error);
     return { allowed: true, waitTime: 0 }; // Allow on error
   }
 };
@@ -136,7 +138,7 @@ export const recordSubmission = () => {
   try {
     sessionStorage.setItem(LAST_SUBMIT_KEY, Date.now().toString());
   } catch (error) {
-    console.error('Failed to record submission:', error);
+    devError('Failed to record submission:', error);
   }
 };
 
@@ -152,7 +154,7 @@ export const getLastSubmitTime = () => {
     
     return parseInt(lastSubmit, 10);
   } catch (error) {
-    console.error('Failed to get last submit time:', error);
+    devError('Failed to get last submit time:', error);
     return null;
   }
 };

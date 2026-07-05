@@ -4,6 +4,7 @@
  */
 
 import { getSessionDuration, getLastSubmitTime } from './sessionManager'
+import { devWarn } from './devLogger.js'
 
 export const VALIDATION_CONFIG = {
   TOTAL_QUESTIONS: 30,
@@ -196,7 +197,7 @@ export const validateAndSanitize = (responses) => {
   const timingValidation = validateResponseTiming(responses)
   if (!timingValidation.isValid) {
     allErrors.push(...timingValidation.errors)
-    console.warn('Timing validation warnings:', timingValidation.errors)
+    devWarn('Timing validation warnings:', timingValidation.errors)
   }
 
   const sanitized = sanitizeResponses(responses)

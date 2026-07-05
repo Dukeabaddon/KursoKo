@@ -1,11 +1,12 @@
 {
   "metadata": {
     "version": "2.1.0",
-    "lastUpdated": "2026-07-04",
+    "lastUpdated": "2026-07-05",
     "count": 303,
     "disclaimer": "Verify eligibility, award amount, and application windows on each official provider site before applying. KursoKo does not process applications.",
     "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages.",
-    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2"
+    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
+    "careerTagsNormalized": "2026-07-05"
   },
   "scholarships": [
     {
@@ -51,7 +52,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -140,9 +146,9 @@
         "R"
       ],
       "careerTags": [
-        "electrical-engineer",
+        "electrician",
         "mechanical-engineer",
-        "renewable-energy-specialist"
+        "environmental-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -196,7 +202,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -239,7 +250,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -275,7 +291,12 @@
       "riasecTags": [
         "I"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "software-engineer",
+        "research-scientist",
+        "medical-technologist",
+        "data-scientist"
+      ],
       "institutionTags": [
         "ama"
       ],
@@ -316,7 +337,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -357,7 +383,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -402,7 +433,12 @@
         "R",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -486,7 +522,12 @@
         "R",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -527,7 +568,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -568,7 +614,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -609,7 +660,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "arellano"
       ],
@@ -650,7 +706,7 @@
       "careerTags": [
         "mechanical-engineer",
         "software-engineer",
-        "business-manager",
+        "marketing-manager",
         "research-scientist"
       ],
       "institutionTags": [
@@ -696,7 +752,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "ateneo",
         "need-based"
@@ -832,8 +893,7 @@
         "S"
       ],
       "careerTags": [
-        "public-servant",
-        "development-worker",
+        "social-worker",
         "research-scientist",
         "mechanical-engineer"
       ],
@@ -891,7 +951,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "ayala-foundation"
       ],
@@ -932,7 +997,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -973,7 +1043,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1014,7 +1089,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1055,7 +1135,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1096,7 +1181,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1147,7 +1237,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "bdo-foundation"
       ],
@@ -1193,10 +1288,9 @@
         "S"
       ],
       "careerTags": [
-        "design",
-        "arts",
+        "graphic-designer",
         "chef",
-        "business"
+        "entrepreneur"
       ],
       "institutionTags": [
         "benilde"
@@ -1243,11 +1337,10 @@
         "S"
       ],
       "careerTags": [
-        "fashion-design",
-        "interior-design",
+        "graphic-designer",
+        "interior-designer",
         "content-creator",
-        "animation",
-        "film"
+        "multimedia-artist"
       ],
       "institutionTags": [
         "benilde"
@@ -1289,7 +1382,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1330,7 +1428,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1368,7 +1471,7 @@
         "S"
       ],
       "careerTags": [
-        "criminologist",
+        "criminology-graduate",
         "social-worker",
         "teacher"
       ],
@@ -1412,7 +1515,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1506,7 +1614,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "bulacan-state-university"
       ],
@@ -1587,9 +1700,9 @@
         "S"
       ],
       "careerTags": [
-        "firefighter",
+        "welder",
         "mechanical-engineer",
-        "safety-officer"
+        "quality-assurance-analyst"
       ],
       "institutionTags": [
         "any-hei"
@@ -1631,7 +1744,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1672,7 +1790,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1713,7 +1836,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1757,7 +1885,12 @@
         "R",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1798,7 +1931,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1844,7 +1982,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "university-of-caloocan-city"
       ],
@@ -1885,7 +2028,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -1926,7 +2074,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -2019,7 +2172,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -2066,7 +2224,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "cavite-state-university"
       ],
@@ -2146,8 +2309,8 @@
         "R"
       ],
       "careerTags": [
-        "commercial-pilot",
-        "first-officer"
+        "flight-attendant",
+        "seafarer-deck-officer"
       ],
       "institutionTags": [
         "aviation-academies"
@@ -2200,8 +2363,8 @@
         "S"
       ],
       "careerTags": [
-        "aviation",
-        "tourism",
+        "aircraft-maintenance-technician",
+        "hotel-manager",
         "mechanical-engineer",
         "entrepreneur"
       ],
@@ -2245,7 +2408,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -2285,9 +2453,8 @@
         "S"
       ],
       "careerTags": [
-        "professor",
-        "research-scientist",
-        "academic-administrator"
+        "teacher",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei",
@@ -2343,9 +2510,8 @@
       ],
       "careerTags": [
         "psychologist",
-        "physical-therapy",
-        "occupational-therapy",
-        "speech-language-pathology"
+        "physical-therapist",
+        "speech-language-pathologist"
       ],
       "institutionTags": [
         "suc",
@@ -2401,7 +2567,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -2499,7 +2670,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -2540,9 +2716,8 @@
         "S"
       ],
       "careerTags": [
-        "public-servant",
-        "business-leader",
-        "ngo-worker",
+        "social-worker",
+        "business-development-manager",
         "research-scientist"
       ],
       "institutionTags": [
@@ -2593,7 +2768,7 @@
       ],
       "careerTags": [
         "mechanical-engineer",
-        "environmental-science"
+        "environmental-scientist"
       ],
       "institutionTags": [
         "chevron"
@@ -2635,8 +2810,8 @@
       "careerTags": [
         "mechanical-engineer",
         "software-engineer",
-        "business-manager",
-        "language-specialist"
+        "marketing-manager",
+        "teacher"
       ],
       "institutionTags": [
         "chinese-universities"
@@ -2684,8 +2859,8 @@
       ],
       "careerTags": [
         "content-creator",
-        "game-development",
-        "animation",
+        "game-developer",
+        "multimedia-artist",
         "software-engineer",
         "graphic-designer"
       ],
@@ -2734,7 +2909,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "ciit",
         "need-based"
@@ -2881,7 +3061,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -2924,7 +3109,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "partner-heis"
       ],
@@ -2962,9 +3152,8 @@
         "R"
       ],
       "careerTags": [
-        "telecom-engineer",
-        "network-engineer",
-        "it-specialist"
+        "software-engineer",
+        "cybersecurity-analyst"
       ],
       "institutionTags": [
         "partner-heis"
@@ -3003,9 +3192,8 @@
         "R"
       ],
       "careerTags": [
-        "chemist",
-        "chemical-engineer",
-        "packaging-engineer"
+        "research-scientist",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "any-hei"
@@ -3056,10 +3244,8 @@
         "R"
       ],
       "careerTags": [
-        "agriculture",
-        "fisheries",
-        "veterinary-medicine",
-        "agricultural-engineering"
+        "agricultural-technician",
+        "food-technologist"
       ],
       "institutionTags": [
         "suc",
@@ -3100,7 +3286,7 @@
       ],
       "careerTags": [
         "research-scientist",
-        "fisheries-technologist",
+        "food-technologist",
         "mechanical-engineer"
       ],
       "institutionTags": [
@@ -3184,7 +3370,12 @@
         "I",
         "R"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "software-engineer",
+        "research-scientist",
+        "medical-technologist",
+        "data-scientist"
+      ],
       "institutionTags": [
         "suc",
         "agriculture"
@@ -3229,7 +3420,12 @@
         "R",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -3282,7 +3478,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -3330,7 +3531,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "dlsu",
         "need-based"
@@ -3380,10 +3586,9 @@
         "R"
       ],
       "careerTags": [
-        "forestry",
-        "environmental-science",
-        "biology",
-        "geology"
+        "agricultural-technician",
+        "environmental-scientist",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -3426,7 +3631,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-school"
       ],
@@ -3514,8 +3724,7 @@
       ],
       "careerTags": [
         "mechanical-engineer",
-        "computer-engineering",
-        "electronics-engineering",
+        "software-engineer",
         "civil-engineer"
       ],
       "institutionTags": [
@@ -3652,8 +3861,8 @@
       "careerTags": [
         "teacher",
         "psychologist",
-        "biologist",
-        "business-manager",
+        "research-scientist",
+        "marketing-manager",
         "mechanical-engineer"
       ],
       "institutionTags": [
@@ -3694,7 +3903,6 @@
       ],
       "careerTags": [
         "civil-engineer",
-        "mining-engineer",
         "mechanical-engineer"
       ],
       "institutionTags": [
@@ -3748,10 +3956,9 @@
       ],
       "careerTags": [
         "nurse",
-        "medicine",
-        "midwifery",
-        "medical-technology",
-        "physical-therapy"
+        "midwife",
+        "medical-technologist",
+        "physical-therapist"
       ],
       "institutionTags": [
         "up-manila",
@@ -3792,9 +3999,8 @@
         "S"
       ],
       "careerTags": [
-        "medical-specialist",
-        "surgeon",
-        "public-health-specialist"
+        "medical-technologist",
+        "nurse"
       ],
       "institutionTags": [
         "doh-hospitals",
@@ -3851,7 +4057,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -3892,8 +4103,7 @@
       ],
       "careerTags": [
         "automotive-technician",
-        "electrical-technician",
-        "machinist",
+        "electrician",
         "welder"
       ],
       "institutionTags": [
@@ -3992,11 +4202,9 @@
         "R"
       ],
       "careerTags": [
-        "research",
-        "science",
+        "research-scientist",
         "mechanical-engineer",
-        "technology",
-        "academe"
+        "software-engineer"
       ],
       "institutionTags": [
         "up-diliman",
@@ -4170,12 +4378,10 @@
       "careerTags": [
         "mechanical-engineer",
         "software-engineer",
-        "mathematics",
-        "physics",
-        "chemistry",
-        "biology",
+        "data-analyst",
+        "research-scientist",
         "architect",
-        "agriculture"
+        "agricultural-technician"
       ],
       "institutionTags": [
         "up-diliman",
@@ -4225,7 +4431,12 @@
         "R",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "any-hei",
         "any-shs",
@@ -4303,9 +4514,9 @@
         "R"
       ],
       "careerTags": [
-        "electro-mechanical-technician",
-        "maintenance-technician",
-        "production-technician"
+        "mechanical-engineer",
+        "hvac-technician",
+        "welder"
       ],
       "institutionTags": [
         "dualtech"
@@ -4345,8 +4556,7 @@
       ],
       "careerTags": [
         "game-developer",
-        "esports-manager",
-        "streamer"
+        "content-creator"
       ],
       "institutionTags": [
         "partner-heis"
@@ -4387,7 +4597,7 @@
       "careerTags": [
         "nurse",
         "medical-technologist",
-        "criminologist",
+        "criminology-graduate",
         "teacher"
       ],
       "institutionTags": [
@@ -4440,7 +4650,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "jhs-private"
       ],
@@ -4480,8 +4695,8 @@
       "careerTags": [
         "civil-engineer",
         "mechanical-engineer",
-        "electrical-engineer",
-        "project-manager"
+        "electrician",
+        "business-development-manager"
       ],
       "institutionTags": [
         "any-hei"
@@ -4521,9 +4736,8 @@
         "R"
       ],
       "careerTags": [
-        "chemist",
-        "chemical-engineer",
-        "industrial-engineer",
+        "research-scientist",
+        "mechanical-engineer",
         "accountant"
       ],
       "institutionTags": [
@@ -4567,10 +4781,9 @@
       ],
       "careerTags": [
         "research-scientist",
-        "development-worker",
+        "social-worker",
         "mechanical-engineer",
-        "graphic-designer",
-        "public-servant"
+        "graphic-designer"
       ],
       "institutionTags": [
         "eu-universities"
@@ -4656,7 +4869,7 @@
         "E"
       ],
       "careerTags": [
-        "business-manager",
+        "marketing-manager",
         "accountant",
         "entrepreneur"
       ],
@@ -4697,7 +4910,7 @@
         "E"
       ],
       "careerTags": [
-        "business-manager",
+        "marketing-manager",
         "mechanical-engineer",
         "architect",
         "accountant"
@@ -4742,7 +4955,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -4795,7 +5013,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc"
@@ -4848,7 +5071,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "tesda",
         "public-tvi"
@@ -4890,7 +5118,7 @@
       "careerTags": [
         "graphic-designer",
         "mechanical-engineer",
-        "business-manager",
+        "marketing-manager",
         "chef"
       ],
       "institutionTags": [
@@ -4932,9 +5160,9 @@
         "S"
       ],
       "careerTags": [
-        "professor",
+        "teacher",
         "research-scientist",
-        "public-servant",
+        "social-worker",
         "graphic-designer",
         "journalist"
       ],
@@ -4978,7 +5206,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5031,7 +5264,7 @@
       ],
       "careerTags": [
         "software-engineer",
-        "digital-media",
+        "content-creator",
         "mechanical-engineer"
       ],
       "institutionTags": [
@@ -5074,7 +5307,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5113,10 +5351,8 @@
         "S"
       ],
       "careerTags": [
-        "broadcaster",
         "journalist",
-        "producer",
-        "media-professional"
+        "content-creator"
       ],
       "institutionTags": [
         "any-hei"
@@ -5166,8 +5402,8 @@
       ],
       "careerTags": [
         "mechanical-engineer",
-        "business",
-        "management"
+        "entrepreneur",
+        "business-development-manager"
       ],
       "institutionTags": [
         "up-diliman",
@@ -5224,7 +5460,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -5267,7 +5508,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5308,7 +5554,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5349,7 +5600,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5388,8 +5644,7 @@
       ],
       "careerTags": [
         "civil-engineer",
-        "materials-engineer",
-        "construction-manager"
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "any-hei"
@@ -5429,8 +5684,7 @@
       ],
       "careerTags": [
         "mechanical-engineer",
-        "automotive-technician",
-        "manufacturing-engineer"
+        "automotive-technician"
       ],
       "institutionTags": [
         "any-hei"
@@ -5484,7 +5738,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -5527,7 +5786,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5568,7 +5832,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5609,7 +5878,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5649,8 +5923,7 @@
       "careerTags": [
         "chef",
         "restaurant-manager",
-        "food-service-worker",
-        "hospitality-manager"
+        "hotel-manager"
       ],
       "institutionTags": [
         "jgf-partner-schools"
@@ -5705,7 +5978,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "jollibee"
       ],
@@ -5746,7 +6024,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5787,7 +6070,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -5877,7 +6165,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "laguna-state-polytechnic-university"
       ],
@@ -5930,7 +6223,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -5982,7 +6280,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [],
       "applicationLink": "https://laspinascity.gov.ph/",
       "deadlineNotes": "Annual application; check city government announcements Categories: Academic Excellence (GWA 90%+), Mayor's (GWA 88%+), Council (GWA 85%+), Need-Based (GWA 80%+)",
@@ -6021,7 +6324,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6062,7 +6370,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "lpu"
       ],
@@ -6101,10 +6414,10 @@
         "S"
       ],
       "careerTags": [
-        "business-manager",
+        "marketing-manager",
         "hotel-manager",
-        "marine-officer",
-        "criminologist"
+        "seafarer-deck-officer",
+        "criminology-graduate"
       ],
       "institutionTags": [
         "lpu"
@@ -6144,7 +6457,7 @@
       ],
       "careerTags": [
         "research-scientist",
-        "fisheries-technologist",
+        "food-technologist",
         "mechanical-engineer",
         "teacher"
       ],
@@ -6188,7 +6501,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6229,7 +6547,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6270,7 +6593,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6311,7 +6639,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6352,7 +6685,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6401,7 +6739,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "university-of-makati"
       ],
@@ -6447,7 +6790,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "city-of-malabon-university"
       ],
@@ -6488,7 +6836,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6535,7 +6888,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [],
       "applicationLink": "https://www.mandaluyong.gov.ph/",
       "deadlineNotes": "Check Mandaluyong City Government website for announcements City residents may also access ESGPPA and other national programs",
@@ -6581,7 +6939,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pamantasan-ng-lungsod-ng-maynila"
       ],
@@ -6622,7 +6985,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6661,9 +7029,8 @@
         "S"
       ],
       "careerTags": [
-        "environmental-engineer",
-        "civil-engineer",
-        "sanitation-specialist"
+        "environmental-scientist",
+        "civil-engineer"
       ],
       "institutionTags": [
         "any-hei"
@@ -6703,9 +7070,8 @@
         "E"
       ],
       "careerTags": [
-        "financial-advisor",
-        "business-manager",
-        "accountant"
+        "accountant",
+        "marketing-manager"
       ],
       "institutionTags": [
         "any-hei"
@@ -6793,7 +7159,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6840,7 +7211,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pamantasan-ng-lungsod-ng-marikina"
       ],
@@ -6881,7 +7257,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -6934,8 +7315,7 @@
       ],
       "careerTags": [
         "software-engineer",
-        "data-analyst",
-        "financial-technology"
+        "data-analyst"
       ],
       "institutionTags": [
         "maya"
@@ -6975,8 +7355,8 @@
       ],
       "careerTags": [
         "civil-engineer",
-        "environmental-engineer",
-        "chemical-engineer"
+        "environmental-scientist",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "any-hei"
@@ -7082,7 +7462,7 @@
         "mechanical-engineer",
         "architect",
         "accountant",
-        "hospitality-management",
+        "hotel-manager",
         "software-engineer",
         "entrepreneur"
       ],
@@ -7126,7 +7506,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -7167,7 +7552,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -7221,7 +7611,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "metrobank-foundation"
       ],
@@ -7262,7 +7657,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -7344,7 +7744,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -7382,10 +7787,10 @@
         "R"
       ],
       "careerTags": [
-        "industrial-technician",
-        "electrical-technician",
-        "mechanical-technician",
-        "it-technician"
+        "welder",
+        "electrician",
+        "automotive-technician",
+        "software-engineer"
       ],
       "institutionTags": [
         "mfi"
@@ -7474,7 +7879,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "miriam-college",
         "need-based"
@@ -7561,8 +7971,8 @@
       ],
       "careerTags": [
         "food-technologist",
-        "chemical-engineer",
-        "quality-assurance"
+        "mechanical-engineer",
+        "quality-assurance-analyst"
       ],
       "institutionTags": [
         "any-hei"
@@ -7604,7 +8014,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -7642,10 +8057,9 @@
         "I"
       ],
       "careerTags": [
-        "medical-doctor",
+        "nurse",
         "mechanical-engineer",
-        "business-manager",
-        "nurse"
+        "marketing-manager"
       ],
       "institutionTags": [
         "any-hei"
@@ -7694,7 +8108,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [],
       "applicationLink": "https://muntinlupacity.gov.ph/",
       "deadlineNotes": "Check city government website or scholarship office for schedule Over 110,000 scholars supported; one of the largest city scholarship programs in NCR",
@@ -7733,7 +8152,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -7774,7 +8198,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "nu"
       ],
@@ -7820,7 +8249,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [],
       "applicationLink": "https://www.navotas.gov.ph/",
       "deadlineNotes": "Check Navotas City Government website for announcements Annual application; priority for underprivileged residents",
@@ -7919,7 +8353,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -7961,8 +8400,8 @@
       "careerTags": [
         "food-technologist",
         "mechanical-engineer",
-        "nutritionist",
-        "business-manager"
+        "nutritionist-dietitian",
+        "marketing-manager"
       ],
       "institutionTags": [
         "any-hei"
@@ -8005,7 +8444,7 @@
         "research-scientist",
         "mechanical-engineer",
         "environmental-scientist",
-        "development-worker"
+        "social-worker"
       ],
       "institutionTags": [
         "new-zealand-universities"
@@ -8047,7 +8486,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -8088,7 +8532,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -8176,7 +8625,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "nu"
       ],
@@ -8215,7 +8669,7 @@
       ],
       "careerTags": [
         "food-technologist",
-        "industrial-engineer",
+        "mechanical-engineer",
         "supply-chain-manager"
       ],
       "institutionTags": [
@@ -8272,7 +8726,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -8312,8 +8771,7 @@
       ],
       "careerTags": [
         "teacher",
-        "social-worker",
-        "priest-religious"
+        "social-worker"
       ],
       "institutionTags": [
         "omi-partner-schools"
@@ -8356,7 +8814,7 @@
         "medical-technologist",
         "pharmacist",
         "physical-therapist",
-        "criminologist"
+        "criminology-graduate"
       ],
       "institutionTags": [
         "olfu"
@@ -8411,7 +8869,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -8466,7 +8929,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -8549,7 +9017,7 @@
       ],
       "careerTags": [
         "graphic-designer",
-        "woodcarver",
+        "welder",
         "teacher"
       ],
       "institutionTags": [
@@ -8598,7 +9066,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pampanga-state-university"
       ],
@@ -8680,7 +9153,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -8721,7 +9199,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -8762,7 +9245,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -8809,7 +9297,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [],
       "applicationLink": "https://www.paranaquecity.gov.ph/",
       "deadlineNotes": "Check Paranaque City Government website for announcements Annual application cycle; priority for low-income families",
@@ -8846,7 +9339,12 @@
         "I",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "paref-schools"
       ],
@@ -8892,7 +9390,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "city-university-of-pasay"
       ],
@@ -8940,7 +9443,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pamantasan-ng-lungsod-ng-pasig"
       ],
@@ -8986,7 +9494,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pateros-technological-college"
       ],
@@ -9041,7 +9554,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -9082,8 +9600,8 @@
       ],
       "careerTags": [
         "teacher",
-        "business-manager",
-        "criminologist",
+        "marketing-manager",
+        "criminology-graduate",
         "mechanical-engineer"
       ],
       "institutionTags": [
@@ -9122,9 +9640,8 @@
         "R"
       ],
       "careerTags": [
-        "various-tvet-careers",
-        "service-crew",
-        "technical-trainee"
+        "electrician",
+        "restaurant-manager"
       ],
       "institutionTags": [
         "tesda-accredited",
@@ -9177,7 +9694,7 @@
       ],
       "careerTags": [
         "mechanical-engineer",
-        "electrical-engineering"
+        "electrician"
       ],
       "institutionTags": [
         "bataan-peninsula-state-university"
@@ -9216,9 +9733,9 @@
         "R"
       ],
       "careerTags": [
-        "air-force-officer",
-        "pilot",
-        "aeronautical-engineer"
+        "seafarer-deck-officer",
+        "flight-attendant",
+        "aircraft-maintenance-technician"
       ],
       "institutionTags": [
         "suc",
@@ -9258,8 +9775,7 @@
         "R"
       ],
       "careerTags": [
-        "military-officer",
-        "army-officer"
+        "seafarer-deck-officer"
       ],
       "institutionTags": [
         "military-training-institution"
@@ -9298,9 +9814,8 @@
         "R"
       ],
       "careerTags": [
-        "naval-officer",
-        "marine-engineer",
-        "naval-architect"
+        "seafarer-deck-officer",
+        "marine-engineer"
       ],
       "institutionTags": [
         "suc",
@@ -9343,7 +9858,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "phinma-schools"
       ],
@@ -9384,7 +9904,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -9425,7 +9950,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -9466,7 +9996,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-school"
       ],
@@ -9507,7 +10042,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -9548,7 +10088,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -9656,7 +10201,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -9696,7 +10246,6 @@
       ],
       "careerTags": [
         "teacher",
-        "school-administrator",
         "guidance-counselor"
       ],
       "institutionTags": [
@@ -9739,7 +10288,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -9780,7 +10334,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -9871,7 +10430,12 @@
         "C",
         "I"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "accountant",
+        "bookkeeper",
+        "administrative-assistant",
+        "supply-chain-manager"
+      ],
       "institutionTags": [
         "pup"
       ],
@@ -9919,7 +10483,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pup"
       ],
@@ -10009,7 +10578,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pup-system",
         "work-study"
@@ -10056,7 +10630,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pup-system"
       ],
@@ -10097,7 +10676,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -10137,10 +10721,10 @@
       ],
       "careerTags": [
         "teacher",
-        "musician",
-        "nutritionist",
+        "content-creator",
+        "nutritionist-dietitian",
         "social-worker",
-        "business-manager"
+        "marketing-manager"
       ],
       "institutionTags": [
         "pwu"
@@ -10195,7 +10779,12 @@
         "R",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "qcydo",
         "qcitizen",
@@ -10246,7 +10835,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "qcydo",
         "qcitizen",
@@ -10295,7 +10889,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "qcydo",
         "qcitizen",
@@ -10393,7 +10992,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "qcydo",
         "qcitizen",
@@ -10442,7 +11046,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "qcydo",
         "qcitizen",
@@ -10492,7 +11101,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "qcydo",
         "qcitizen",
@@ -10541,7 +11155,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "qcydo",
         "qcitizen",
@@ -10638,7 +11257,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "university-of-rizal-system"
       ],
@@ -10679,7 +11303,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -10720,7 +11349,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -10761,7 +11395,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -10801,7 +11440,7 @@
       "careerTags": [
         "mechanical-engineer",
         "software-engineer",
-        "astronomer"
+        "research-scientist"
       ],
       "institutionTags": [
         "rtu"
@@ -10843,7 +11482,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -10884,7 +11528,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -10925,7 +11574,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -10971,7 +11625,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [],
       "applicationLink": "https://www.sanjuancity.gov.ph/",
       "deadlineNotes": "Check San Juan City Government website for announcements City residents may combine with national programs",
@@ -11010,7 +11669,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -11051,7 +11715,7 @@
       "careerTags": [
         "mechanical-engineer",
         "food-technologist",
-        "business-manager",
+        "marketing-manager",
         "research-scientist"
       ],
       "institutionTags": [
@@ -11094,7 +11758,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -11135,7 +11804,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -11176,7 +11850,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -11217,7 +11896,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -11258,7 +11942,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -11299,7 +11988,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -11340,7 +12034,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -11378,9 +12077,8 @@
         "E"
       ],
       "careerTags": [
-        "banker",
         "accountant",
-        "business-manager"
+        "marketing-manager"
       ],
       "institutionTags": [
         "partner-heis"
@@ -11434,7 +12132,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -11492,7 +12195,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "shs-private"
       ],
@@ -11545,9 +12253,8 @@
       ],
       "careerTags": [
         "mechanical-engineer",
-        "geology",
-        "chemistry",
-        "environmental-science"
+        "research-scientist",
+        "environmental-scientist"
       ],
       "institutionTags": [
         "up-diliman",
@@ -11667,10 +12374,9 @@
         "S"
       ],
       "careerTags": [
-        "retail",
-        "customer-service",
-        "food-and-beverage",
-        "visual-merchandising"
+        "sales-representative",
+        "administrative-assistant",
+        "restaurant-manager"
       ],
       "institutionTags": [
         "sm-foundation",
@@ -11712,8 +12418,7 @@
       "careerTags": [
         "software-engineer",
         "mechanical-engineer",
-        "telecom-specialist",
-        "digital-marketer"
+        "marketing-manager"
       ],
       "institutionTags": [
         "any-hei"
@@ -11752,9 +12457,8 @@
         "R"
       ],
       "careerTags": [
-        "electronics-engineer",
         "software-engineer",
-        "network-engineer"
+        "cybersecurity-analyst"
       ],
       "institutionTags": [
         "partner-heis"
@@ -11809,7 +12513,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "tesda"
       ],
@@ -11864,7 +12573,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -11905,7 +12619,7 @@
       ],
       "careerTags": [
         "teacher",
-        "musician",
+        "content-creator",
         "social-worker",
         "psychologist"
       ],
@@ -11949,7 +12663,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "sti"
       ],
@@ -11987,9 +12706,8 @@
         "E"
       ],
       "careerTags": [
-        "financial-advisor",
-        "business-manager",
-        "accountant"
+        "accountant",
+        "marketing-manager"
       ],
       "institutionTags": [
         "any-hei"
@@ -12036,7 +12754,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -12079,7 +12802,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -12127,7 +12855,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "taguig-city-university"
       ],
@@ -12168,7 +12901,7 @@
       "careerTags": [
         "mechanical-engineer",
         "software-engineer",
-        "business-manager"
+        "marketing-manager"
       ],
       "institutionTags": [
         "taiwanese-universities"
@@ -12210,7 +12943,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -12251,7 +12989,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -12292,7 +13035,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -12333,7 +13081,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -12388,7 +13141,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -12429,8 +13187,7 @@
       "careerTags": [
         "welder",
         "electrician",
-        "carpenter",
-        "food-service-worker"
+        "chef"
       ],
       "institutionTags": [
         "tesda-accredited"
@@ -12483,7 +13240,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "tesda"
       ],
@@ -12534,7 +13296,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "tesda",
         "private-tvi"
@@ -12574,7 +13341,7 @@
       ],
       "careerTags": [
         "entrepreneur",
-        "service-provider"
+        "administrative-assistant"
       ],
       "institutionTags": [
         "tesda-accredited"
@@ -12613,10 +13380,10 @@
         "R"
       ],
       "careerTags": [
-        "manufacturing-technician",
-        "construction-worker",
-        "it-support",
-        "service-crew"
+        "welder",
+        "civil-engineer",
+        "administrative-assistant",
+        "restaurant-manager"
       ],
       "institutionTags": [
         "tesda-accredited",
@@ -12656,9 +13423,7 @@
         "R"
       ],
       "careerTags": [
-        "automotive-technician",
-        "mechanic",
-        "service-advisor"
+        "automotive-technician"
       ],
       "institutionTags": [
         "tmp-tech-foundation"
@@ -12714,7 +13479,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "tesda"
       ],
@@ -12755,7 +13525,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -12811,7 +13586,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "petron-foundation"
       ],
@@ -12864,7 +13644,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc",
@@ -12905,7 +13690,7 @@
       ],
       "careerTags": [
         "mechanical-engineer",
-        "technologist",
+        "medical-technologist",
         "architect"
       ],
       "institutionTags": [
@@ -12948,7 +13733,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "suc",
         "luc"
@@ -13003,7 +13793,7 @@
       "careerTags": [
         "entrepreneur",
         "mechanical-engineer",
-        "chemistry",
+        "research-scientist",
         "marketing-manager"
       ],
       "institutionTags": [
@@ -13053,7 +13843,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "up-system",
         "slas"
@@ -13100,7 +13895,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "up-system",
         "slas",
@@ -13146,10 +13946,10 @@
         "R"
       ],
       "careerTags": [
-        "science",
+        "research-scientist",
         "mechanical-engineer",
-        "technology",
-        "mathematics"
+        "software-engineer",
+        "data-analyst"
       ],
       "institutionTags": [
         "up-diliman",
@@ -13198,7 +13998,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "up-diliman",
         "up-manila"
@@ -13245,7 +14050,12 @@
         "R",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "up-system"
       ],
@@ -13289,7 +14099,12 @@
         "R",
         "S"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
       "institutionTags": [
         "up-system"
       ],
@@ -13328,9 +14143,8 @@
       ],
       "careerTags": [
         "research-scientist",
-        "forester",
+        "agricultural-technician",
         "environmental-scientist",
-        "biologist",
         "nurse"
       ],
       "institutionTags": [
@@ -13372,9 +14186,8 @@
       ],
       "careerTags": [
         "food-technologist",
-        "chemical-engineer",
-        "industrial-engineer",
-        "business-manager"
+        "mechanical-engineer",
+        "marketing-manager"
       ],
       "institutionTags": [
         "any-hei"
@@ -13415,7 +14228,7 @@
       "careerTags": [
         "teacher",
         "software-engineer",
-        "business-manager",
+        "marketing-manager",
         "mechanical-engineer"
       ],
       "institutionTags": [
@@ -13559,7 +14372,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "pamantasan-ng-lungsod-ng-valenzuela"
       ],
@@ -13600,7 +14418,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -13641,7 +14464,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-hei"
       ],
@@ -13682,7 +14510,12 @@
         "E",
         "C"
       ],
-      "careerTags": [],
+      "careerTags": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
       "institutionTags": [
         "any-school"
       ],
@@ -13722,8 +14555,8 @@
       "careerTags": [
         "teacher",
         "social-worker",
-        "businesswoman",
-        "professional"
+        "entrepreneur",
+        "administrative-assistant"
       ],
       "institutionTags": [
         "any-hei"

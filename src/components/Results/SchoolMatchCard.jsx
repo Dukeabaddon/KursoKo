@@ -30,15 +30,21 @@ function SchoolMatchCard({ school, rank }) {
 
         <div>
           <p className={`mb-2 ${resultsMeta}`}>Programs you may explore here</p>
-          <ul className="flex flex-wrap gap-1.5">
-            {school.popularCourses.map((course) => (
-              <li key={course}>
-                <span className="rounded-full border border-landing-ink/10 px-2.5 py-1 text-xs text-landing-muted">
-                  {course}
-                </span>
-              </li>
-            ))}
-          </ul>
+          {school.popularCourses?.length ? (
+            <ul className="flex flex-wrap gap-1.5">
+              {school.popularCourses.map((course) => (
+                <li key={course}>
+                  <span className="rounded-full border border-landing-ink/10 px-2.5 py-1 text-xs text-landing-muted">
+                    {course}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-sm text-landing-muted normal-case">
+              Program list not yet verified — check the official site for current offerings.
+            </p>
+          )}
         </div>
 
         <a

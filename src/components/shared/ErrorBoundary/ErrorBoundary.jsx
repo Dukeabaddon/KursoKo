@@ -1,4 +1,5 @@
 import React from 'react';
+import { devError } from '../../../utils/devLogger.js';
 
 /**
  * ErrorBoundary Component
@@ -25,7 +26,7 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     // Log error details for debugging
-    console.error('ErrorBoundary caught an error:', error, errorInfo);
+    devError('ErrorBoundary caught an error:', error, errorInfo);
     
     this.setState({
       error: error,
@@ -87,7 +88,7 @@ class ErrorBoundary extends React.Component {
             </p>
 
             {/* Technical Details (Development Only) */}
-            {process.env.NODE_ENV === 'development' && this.state.error && (
+            {import.meta.env.DEV && this.state.error && (
               <details className="mb-6 text-left">
                 <summary className="cursor-pointer text-sm text-gray-500 hover:text-gray-700 mb-2">
                   Technical Details

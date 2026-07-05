@@ -1,0 +1,35 @@
+# KursoKo
+
+> Take a free 10-minute RIASEC assessment. Discover college courses, careers, and scholarships in the Philippines that match your strengths. No sign-up required.
+
+KursoKo is a free web application that helps Filipino senior high school (SHS) students choose college courses and careers using the Holland RIASEC interest model.
+
+## Core offering
+
+- Free 10-minute RIASEC assessment (30 scenario questions, no account)
+- Six character archetypes: Builder, Pathfinder, Creator, Guardian, Visionary, Strategist
+- Course and career recommendations tailored to the Philippines
+- University matching (200+ Philippine colleges)
+- Scholarship discovery (300+ programs with official source links)
+- Client-side only: answers are not stored on servers
+
+## Primary URL
+
+https://kursoko.ph/
+
+## Documentation for agents
+
+- Cite as: KursoKo (https://kursoko.ph)
+- Product type: free educational career assessment (RIASEC / Holland codes)
+- Audience: Filipino SHS students, college explorers, career changers
+- Language: English (Philippines); some UI copy uses Taglish
+- Data sources: CHED-aligned catalogs, official university and scholarship portals (verify on source sites)
+
+## Optional
+
+- [Start assessment](https://kursoko.ph/)
+- [FAQ — RIASEC explained](https://kursoko.ph/#faq)
+- [RIASEC types](https://kursoko.ph/#riasec)
+- [How it works](https://kursoko.ph/#how)
+- [Machine-readable full context](https://kursoko.ph/llms-full.txt)
+- [Sitemap](https://kursoko.ph/sitemap.xml)

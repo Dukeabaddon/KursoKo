@@ -2,6 +2,8 @@
  * Client-side assessment progress, results, and route restore (sessionStorage, tab-scoped).
  */
 
+import { devError } from './devLogger.js'
+
 const PROGRESS_KEY = 'kursoko_assessment_progress'
 const RESULTS_KEY = 'kursoko_results_snapshot'
 const ROUTE_KEY = 'kursoko_app_route'
@@ -33,7 +35,7 @@ export function saveAppRoute(page) {
   try {
     sessionStorage.setItem(ROUTE_KEY, page)
   } catch (error) {
-    console.error('Failed to save app route:', error)
+    devError('Failed to save app route:', error)
   }
 }
 
@@ -49,7 +51,7 @@ export function clearAppRoute() {
   try {
     sessionStorage.removeItem(ROUTE_KEY)
   } catch (error) {
-    console.error('Failed to clear app route:', error)
+    devError('Failed to clear app route:', error)
   }
 }
 
@@ -65,7 +67,7 @@ export function saveAssessmentProgress({ currentQuestion, responses }) {
     )
     saveAppRoute(APP_PAGES.QUESTIONNAIRE)
   } catch (error) {
-    console.error('Failed to save assessment progress:', error)
+    devError('Failed to save assessment progress:', error)
   }
 }
 
@@ -86,7 +88,7 @@ export function clearAssessmentProgress() {
   try {
     sessionStorage.removeItem(PROGRESS_KEY)
   } catch (error) {
-    console.error('Failed to clear assessment progress:', error)
+    devError('Failed to clear assessment progress:', error)
   }
 }
 
@@ -102,7 +104,7 @@ export function saveResultsSnapshot(responses) {
     saveAppRoute(APP_PAGES.RESULTS)
     clearAssessmentProgress()
   } catch (error) {
-    console.error('Failed to save results snapshot:', error)
+    devError('Failed to save results snapshot:', error)
   }
 }
 
@@ -123,7 +125,7 @@ export function clearResultsSnapshot() {
   try {
     sessionStorage.removeItem(RESULTS_KEY)
   } catch (error) {
-    console.error('Failed to clear results snapshot:', error)
+    devError('Failed to clear results snapshot:', error)
   }
 }
 
