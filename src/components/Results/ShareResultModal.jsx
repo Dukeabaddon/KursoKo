@@ -164,13 +164,14 @@ function ShareResultModal({ open, onClose, archetype, topCareer, combination }) 
         </div>
 
         <div className="share-result-modal__preview">
-          <ShareCard
-            cardRef={cardRef}
-            archetype={archetype}
-            topCareer={topCareer}
-            combination={combination}
-            className="share-card-export--preview"
-          />
+          <div ref={cardRef} className="share-card-capture">
+            <ShareCard
+              archetype={archetype}
+              topCareer={topCareer}
+              combination={combination}
+              className="share-card-export--preview"
+            />
+          </div>
         </div>
 
         {statusMessage ? (

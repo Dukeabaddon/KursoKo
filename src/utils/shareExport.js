@@ -1,13 +1,20 @@
 export const KURSOKO_SHARE_URL = 'https://kursoko.me'
 
 export const SHARE_CARD_EXPORT = {
-  backgroundColor: '#FDFCF8',
   pixelRatio: 2,
 }
 
 const DEFAULT_PNG_OPTIONS = {
   cacheBust: true,
   ...SHARE_CARD_EXPORT,
+}
+
+function getExportSize(element) {
+  const rect = element.getBoundingClientRect()
+  return {
+    width: Math.ceil(rect.width),
+    height: Math.ceil(rect.height),
+  }
 }
 
 export function buildShareText({ archetype, topCareer, combination }) {
@@ -23,18 +30,30 @@ export function buildShareText({ archetype, topCareer, combination }) {
   ].join('\n')
 }
 
+/** PNG export — omit backgroundColor for true alpha transparency outside the card. */
 export async function exportElementAsBlob(element, options = {}) {
   if (!element) return { ok: false, error: 'Missing element' }
 
   const { toBlob } = await import('html-to-image')
-  const blob = await toBlob(element, { ...DEFAULT_PNG_OPTIONS, ...options })
+  const { width, height } = getExportSize(element)
+  const { transparent = true, backgroundColor, ...rest } = options
+
+  const blob = await toBlob(element, {
+    ...DEFAULT_PNG_OPTIONS,
+    width,
+    height,
+    ...(transparent
+      ? {}
+      : { backgroundColor: backgroundColor ?? '#FDFCF8' }),
+    ...rest,
+  })
 
   if (!blob) return { ok: false, error: 'Export failed' }
   return { ok: true, blob }
 }
 
-export async function exportElementAsPng(element, filename = 'kursoko-result.png') {
-  const result = await exportElementAsBlob(element)
+export async function exportElementAsPng(element, filename = 'kursoko-result.png', options = {}) {
+  const result = await exportElementAsBlob(element, options)
   if (!result.ok) return result
 
   const dataUrl = URL.createObjectURL(result.blob)

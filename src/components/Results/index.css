@@ -233,6 +233,42 @@
   margin-bottom: 1rem;
 }
 
+/* Capture frame — padding for star bleed; transparent outside card in PNG export */
+.share-card-capture {
+  display: inline-block;
+  padding: 1rem 0.75rem 0.75rem 1.125rem;
+  line-height: 0;
+  background: transparent;
+}
+
+.share-result-modal__preview .share-card-capture {
+  filter: drop-shadow(0 20px 40px rgba(75, 44, 127, 0.16));
+}
+
+.share-card-export {
+  overflow: hidden;
+  line-height: normal;
+}
+
+.share-card-export__hero {
+  overflow: visible;
+}
+
+.share-card-export__match {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.share-card-export__summary {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.share-card-export__footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .share-result-modal__status {
   margin-bottom: 0.75rem;
   text-align: center;

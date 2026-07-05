@@ -10,22 +10,25 @@ const CARD = {
   border: 'rgba(75, 44, 127, 0.2)',
 }
 
-function ShareCard({ archetype, topCareer, combination, cardRef, className = '' }) {
+function ShareCard({ archetype, topCareer, combination, className = '' }) {
   const characterSrc = getCharacterImage(archetype.id)
 
   return (
     <div
-      ref={cardRef}
-      className={`share-card-export mx-auto overflow-hidden rounded-2xl border shadow-2xl ${className}`.trim()}
+      className={`share-card-export mx-auto rounded-2xl border ${className}`.trim()}
       style={{
         width: 360,
+        boxSizing: 'border-box',
         backgroundColor: CARD.paper,
         color: CARD.ink,
         borderColor: CARD.border,
       }}
       aria-hidden={className.includes('share-card-export--preview') ? undefined : 'true'}
     >
-      <div className="px-6 py-5" style={{ borderBottom: `1px solid ${CARD.border}` }}>
+      <div
+        className="share-card-export__hero px-6 pb-5 pt-6"
+        style={{ borderBottom: `1px solid ${CARD.border}` }}
+      >
         {characterSrc ? (
           <CharacterCardFrame src={characterSrc} className="mx-auto h-48 w-48" />
         ) : null}
@@ -48,28 +51,29 @@ function ShareCard({ archetype, topCareer, combination, cardRef, className = '' 
         </p>
       </div>
 
-      <div className="space-y-3 px-6 py-5">
-        {topCareer ? (
-          <div className="rounded-xl p-4" style={{ backgroundColor: CARD.accent }}>
-            <p className="text-xs font-semibold uppercase tracking-wider text-white/70">
-              Top career match
-            </p>
-            <p className="mt-1 font-[family-name:var(--font-display)] text-lg font-semibold text-white">
-              {topCareer.title}
-            </p>
-            <p className="mt-1 text-2xl font-bold" style={{ color: CARD.gold }}>
-              {topCareer.matchPercent}%
-            </p>
-          </div>
-        ) : null}
+      {topCareer ? (
+        <div className="share-card-export__match px-6 py-4" style={{ backgroundColor: CARD.accent }}>
+          <p className="text-xs font-semibold uppercase tracking-wider text-white/70">
+            Top career match
+          </p>
+          <p className="mt-1 font-[family-name:var(--font-display)] text-lg font-semibold text-white">
+            {topCareer.title}
+          </p>
+          <p className="mt-1 text-2xl font-bold" style={{ color: CARD.gold }}>
+            {topCareer.matchPercent}%
+          </p>
+        </div>
+      ) : null}
 
-        <p className="line-clamp-3 text-xs leading-relaxed" style={{ color: CARD.muted }}>
-          {archetype.summary}
-        </p>
-      </div>
+      <p
+        className="share-card-export__summary line-clamp-3 px-6 py-4 text-xs leading-relaxed"
+        style={{ color: CARD.muted }}
+      >
+        {archetype.summary}
+      </p>
 
       <div
-        className="px-6 py-3 text-center text-[10px] font-bold"
+        className="share-card-export__footer px-6 py-3 text-center text-[10px] font-bold"
         style={{ backgroundColor: CARD.accent, color: 'rgba(255,255,255,0.92)' }}
       >
         kursoko.me · career guidance for Filipino students
