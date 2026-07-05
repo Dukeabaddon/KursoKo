@@ -3,8 +3,9 @@ import { useEffect } from 'react'
 /**
  * One-time scroll reveal inside the assessment scroll container.
  * Re-runs when resetKey changes (new question) — scroll position should reset first.
+ * When instantRef.current is true, skip fade-in (used after Next/Previous transition).
  */
-export function useAssessmentScrollReveal(scrollRef, resetKey) {
+export function useAssessmentScrollReveal(scrollRef, resetKey, instantRef) {
   useEffect(() => {
     const root = scrollRef.current
     if (!root || resetKey == null) return undefined
@@ -13,7 +14,17 @@ export function useAssessmentScrollReveal(scrollRef, resetKey) {
 
     const frameId = window.requestAnimationFrame(() => {
       const nodes = root.querySelectorAll('.assessment-reveal')
-      nodes.forEach((node) => node.classList.remove('is-visible'))
+
+      if (instantRef?.current) {
+        instantRef.current = false
+        nodes.forEach((node) => {
+          node.classList.remove('is-instant')
+          node.classList.add('is-visible', 'is-instant')
+        })
+        return
+      }
+
+      nodes.forEach((node) => node.classList.remove('is-visible', 'is-instant'))
 
       observer = new IntersectionObserver(
         (entries) => {
@@ -28,7 +39,7 @@ export function useAssessmentScrollReveal(scrollRef, resetKey) {
           root,
           threshold: 0.18,
           rootMargin: '0px 0px -8% 0px',
-        }
+        },
       )
 
       nodes.forEach((node) => observer.observe(node))
@@ -38,5 +49,5 @@ export function useAssessmentScrollReveal(scrollRef, resetKey) {
       window.cancelAnimationFrame(frameId)
       observer?.disconnect()
     }
-  }, [resetKey, scrollRef])
+  }, [resetKey, scrollRef, instantRef])
 }

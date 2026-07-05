@@ -27,6 +27,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
   const [choiceImages, setChoiceImages] = useState({ a: null, b: null })
   const timersRef = useRef([])
   const scrollRef = useRef(null)
+  const instantRevealRef = useRef(false)
 
   const scrollToTop = useCallback(() => {
     scrollRef.current?.scrollTo({ top: 0, behavior: 'instant' })
@@ -65,7 +66,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
   }, [currentQuestion, responses, isLoading, questions.length])
 
   const questionId = questions[currentQuestion]?.id
-  useAssessmentScrollReveal(scrollRef, questionId)
+  useAssessmentScrollReveal(scrollRef, questionId, instantRevealRef)
 
   useEffect(() => {
     if (!questionId || questions.length === 0) return undefined
@@ -108,6 +109,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
 
   const advanceQuestion = useCallback(
     (updatedResponses, nextQuestion) => {
+      instantRevealRef.current = true
       scrollToTop()
       setResponses(updatedResponses)
       setCurrentQuestion(nextQuestion)
@@ -177,6 +179,7 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
 
     setAnimPhase('exit')
     schedule(() => {
+      instantRevealRef.current = true
       scrollToTop()
       const prevQuestion = currentQuestion - 1
       setResponses(responses.slice(0, -1))

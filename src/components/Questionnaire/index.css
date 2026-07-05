@@ -316,6 +316,12 @@
   animation: assessment-reveal-up 520ms var(--assessment-ease) both;
 }
 
+.assessment-fold .assessment-reveal.is-visible.is-instant {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
 .assessment-fold .assessment-reveal.is-visible.assessment-reveal-delay-1 {
   animation-delay: 70ms;
 }
@@ -409,6 +415,7 @@
   .assessment-fold .assessment-prompt-enter,
   .assessment-fold .assessment-reveal,
   .assessment-fold .assessment-reveal.is-visible,
+  .assessment-fold .assessment-reveal.is-visible.is-instant,
   .assessment-fold .assessment-choices-grid.is-entering .questionnaire-card,
   .assessment-fold .assessment-choices-grid.is-entering .questionnaire-or-wrap,
   .assessment-fold .assessment-choices-grid.is-exiting .questionnaire-card,
