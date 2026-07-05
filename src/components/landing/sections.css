@@ -109,7 +109,6 @@
 
 .landing-section--riasec,
 .landing-section--how,
-.landing-section--features,
 .landing-section--faq {
   padding-block: clamp(3rem, 8vw, 5rem);
 }
@@ -120,47 +119,6 @@
 }
 
 
-
-/* Why KursoKo — full-bleed purple panel (#features) */
-.landing-section--features .landing-section__blobs {
-  display: none;
-}
-
-.landing-features-panel {
-  width: 100%;
-  max-width: none;
-  margin-inline: 0;
-  background: var(--color-landing-accent-deep);
-  padding-block: clamp(2rem, 5vw, 3rem);
-  padding-inline: 0;
-}
-
-.landing-features-panel__content {
-  position: relative;
-  z-index: 1;
-  max-width: 72rem;
-  margin-inline: auto;
-  padding-inline: clamp(1rem, 4vw, 2rem);
-}
-
-.landing-features-panel__header {
-  max-width: 40rem;
-  margin-bottom: clamp(2rem, 5vw, 3rem);
-}
-
-.landing-features-panel__header .landing-eyebrow,
-.landing-features-panel__header .landing-heading,
-.landing-features-panel__header .landing-lead,
-.landing-features-panel__eyebrow,
-.landing-features-panel__heading,
-.landing-features-panel__lead {
-  color: #ffffff;
-}
-
-.landing-features-panel__header .landing-lead,
-.landing-features-panel__lead {
-  max-width: 42rem;
-}
 
 .landing-eyebrow {
   font-size: 0.8125rem;
@@ -529,21 +487,7 @@
   }
 }
 
-/* Features + FAQ shared */
-.landing-feature-card {
-  border-radius: 1.25rem;
-  border: 2px solid var(--color-landing-chapter);
-  background: rgba(255, 255, 255, 0.9);
-  padding: 1.5rem;
-}
-
-.landing-feature-icon {
-  width: 1.75rem;
-  height: 1.75rem;
-  flex-shrink: 0;
-  stroke-width: 2.5px;
-}
-
+/* FAQ shared */
 .landing-faq-item {
   border-radius: 1.25rem;
   border: 2px solid var(--color-landing-chapter);

@@ -3,7 +3,7 @@ import { HeroSection } from './hero'
 import { StatsBar } from './stats'
 import { RiasecIntro } from './riasec'
 import { HowItWorks } from './how-it-works'
-import { FeaturesGrid } from './features'
+import { FeaturesSection } from './features'
 import { FAQSection } from './faq'
 import { LandingFooter } from './footer'
 import { LenisProvider } from './motion'
@@ -22,7 +22,7 @@ const HomePage = ({ onStartQuestionnaire }) => (
         <StatsBar />
         <RiasecIntro />
         <HowItWorks onStart={onStartQuestionnaire} />
-        <FeaturesGrid />
+        <FeaturesSection />
         <FAQSection onStart={onStartQuestionnaire} />
       </div>
 
