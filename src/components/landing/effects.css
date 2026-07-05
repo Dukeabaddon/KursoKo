@@ -212,31 +212,6 @@
   }
 }
 
-/* Step cards — hover lift */
-.landing-step-card {
-  transition:
-    transform 320ms var(--ease-landing),
-    box-shadow 320ms var(--ease-landing);
-}
-
-.landing-step-card:hover,
-.landing-step-card:focus-within {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(75, 44, 127, 0.12);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .landing-step-card {
-    animation: none !important;
-    transition: box-shadow 320ms var(--ease-landing);
-  }
-
-  .landing-step-card:hover,
-  .landing-step-card:focus-within {
-    transform: none;
-  }
-}
-
 .landing-chapter-rule {
   height: 1px;
   background: linear-gradient(
