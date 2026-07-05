@@ -120,7 +120,7 @@
 }
 
 .landing-section--features {
-  padding-inline: 0;
+  padding-inline: clamp(1rem, 4vw, 2rem);
 }
 
 /* Why KursoKo — full-bleed purple panel (#features) */
@@ -133,9 +133,15 @@
   max-width: none;
   margin-inline: 0;
   background: var(--color-landing-accent-deep);
-  border-radius: 0;
+  border-radius: 1.25rem;
   padding-block: clamp(2rem, 5vw, 3rem);
   padding-inline: 0;
+}
+
+@media (min-width: 640px) {
+  .landing-features-panel {
+    border-radius: 1.5rem;
+  }
 }
 
 .landing-features-panel__content {
