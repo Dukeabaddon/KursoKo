@@ -57,30 +57,32 @@ const FeaturesGrid = () => (
     className="landing-section landing-section--features landing-section--blobs scroll-mt-24"
   >
     <LandingBlobs variant="teal-yellow" />
-    <div className="landing-section__inner landing-features-panel">
-      <div className="landing-section__header landing-features-panel__header">
-        <p className="landing-eyebrow landing-features-panel__eyebrow">Why KursoKo</p>
-        <h2 id="features-heading" className="landing-heading landing-features-panel__heading">
-          Clarity for any career crossroads
-        </h2>
-        <p className="landing-lead landing-features-panel__lead">
-          For students picking a track, graduates choosing a major, or anyone who wants to know
-          which interests run strongest — not another generic personality quiz.
-        </p>
-      </div>
+    <div className="landing-features-panel">
+      <div className="landing-features-panel__content">
+        <div className="landing-section__header landing-features-panel__header">
+          <p className="landing-eyebrow landing-features-panel__eyebrow">Why KursoKo</p>
+          <h2 id="features-heading" className="landing-heading landing-features-panel__heading">
+            Clarity for any career crossroads
+          </h2>
+          <p className="landing-lead landing-features-panel__lead">
+            For students picking a track, graduates choosing a major, or anyone who wants to know
+            which interests run strongest — not another generic personality quiz.
+          </p>
+        </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:gap-5">
-        {features.map(({ title, description, Icon, iconColor }) => (
-          <article key={title} className="landing-feature-card flex h-full flex-col gap-3">
-            <Icon
-              className="landing-feature-icon"
-              style={{ color: iconColor }}
-              aria-hidden="true"
-            />
-            <h3 className="text-lg font-bold text-[var(--color-landing-ink)]">{title}</h3>
-            <p className="text-sm leading-relaxed text-[var(--color-landing-muted)]">{description}</p>
-          </article>
-        ))}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:gap-5">
+          {features.map(({ title, description, Icon, iconColor }) => (
+            <article key={title} className="landing-feature-card flex h-full flex-col gap-3">
+              <Icon
+                className="landing-feature-icon"
+                style={{ color: iconColor }}
+                aria-hidden="true"
+              />
+              <h3 className="text-lg font-bold text-[var(--color-landing-ink)]">{title}</h3>
+              <p className="text-sm leading-relaxed text-[var(--color-landing-muted)]">{description}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </div>
   </section>
