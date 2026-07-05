@@ -1,0 +1,20 @@
+{
+  "research_id": "phase-b-arellano-university-malabon",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "arellano-university-malabon",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "arellano-university-malabon",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Nursing",
+      "BS Business Administration",
+      "BS Marketing Management",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Criminology",
+      "BS Forensic Science"
+    ]
+  }
+}

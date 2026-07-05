@@ -1,0 +1,32 @@
+{
+  "research_id": "official-phase-c-northlink-technological-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "northlink-technological-college",
+  "source_type": "official_website",
+  "university": {
+    "id": "northlink-technological-college",
+    "popularCourses": [
+      "BS Information Systems",
+      "Diploma in Information Technology",
+      "Bachelor of Technical-Vocational Teacher Education",
+      "Diploma in Hotel and Restaurant Technology"
+    ],
+    "strengthTags": [
+      "information-systems",
+      "information-technology",
+      "teacher-education",
+      "hospitality"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://northlink.edu.ph/lms/",
+      "note": "Official NTC LMS course categories (BSIS, DIT, BTVTED, DHRT)"
+    },
+    {
+      "url": "https://www.northlink.edu.ph/",
+      "note": "Official NTC homepage"
+    }
+  ]
+}

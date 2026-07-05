@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-qcu",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "qcu",
+  "source_type": "official_website",
+  "university": {
+    "id": "qcu",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration",
+      "BS Entrepreneurship",
+      "BS Information Systems",
+      "BS Electronics Engineering",
+      "BS Industrial Engineering",
+      "BS Hospitality Management",
+      "Bachelor of Early Childhood Education"
+    ],
+    "website": "https://qcu.edu.ph/",
+    "strengthTags": [
+      "accountancy",
+      "business",
+      "entrepreneurship",
+      "information-systems",
+      "engineering",
+      "hospitality",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://qcu.edu.ph/academics/",
+      "note": "Official QCU academics — colleges index"
+    },
+    {
+      "url": "https://qcu.edu.ph/academics/college-of-accountancy/",
+      "note": "Official College of Accountancy — BSA program"
+    },
+    {
+      "url": "https://qcu.edu.ph/academics/college-of-engineering/",
+      "note": "Official College of Engineering — BSECE and BSIE"
+    }
+  ]
+}

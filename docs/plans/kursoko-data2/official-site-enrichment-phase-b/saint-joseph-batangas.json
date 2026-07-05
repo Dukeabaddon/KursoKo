@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-saint-joseph-batangas",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "saint-joseph-batangas",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "saint-joseph-batangas",
+    "popularCourses": [
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Hospitality Management",
+      "BS Tourism Management"
+    ]
+  }
+}

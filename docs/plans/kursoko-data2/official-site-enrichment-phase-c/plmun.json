@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-plmun",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "plmun",
+  "source_type": "official_website",
+  "university": {
+    "id": "plmun",
+    "popularCourses": [
+      "Bachelor of Arts in Communication",
+      "Bachelor of Science in Psychology",
+      "Bachelor of Science in Accountancy",
+      "Bachelor of Science in Business Administration major in Marketing Management",
+      "Bachelor of Science in Criminology",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Information Technology",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education major in English",
+      "Bachelor of Arts in Political Science",
+      "Bachelor of Public Administration",
+      "Bachelor of Science in Social Work"
+    ],
+    "strengthTags": [
+      "bachelor-of-arts-in-communication",
+      "bachelor-of-science-in-psychology",
+      "bachelor-of-science-in-accountancy",
+      "bachelor-of-science-in-business-administration-major-in-marketing-management",
+      "bachelor-of-science-in-criminology",
+      "bachelor-of-science-in-computer-science",
+      "bachelor-of-science-in-information-technology",
+      "bachelor-of-elementary-education",
+      "bachelor-of-secondary-education-major-in-english",
+      "bachelor-of-arts-in-political-science",
+      "bachelor-of-public-administration",
+      "bachelor-of-science-in-social-work"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://plmun.edu.ph/program-offered.php",
+      "note": "Official PLMun academic programs page"
+    }
+  ]
+}

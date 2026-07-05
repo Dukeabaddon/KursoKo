@@ -2,7 +2,7 @@
   "metadata": {
     "region": "NCR + CALABARZON + Central Luzon (partial)",
     "version": "2.1.0",
-    "lastUpdated": "2026-07-05",
+    "lastUpdated": "2026-07-06",
     "count": 209,
     "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site.",
     "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
@@ -10,7 +10,7 @@
     "top100CoreGapsMerge": "2026-07-05",
     "edurankEnrichment": "2026-07-05",
     "edurankRetry": "2026-07-05",
-    "officialSiteEnrichment": "2026-07-05",
+    "officialSiteEnrichment": "2026-07-06",
     "productionCourseGate": "2026-07-05"
   },
   "universities": [
@@ -213,22 +213,38 @@
         "C"
       ],
       "strengthTags": [
+        "engineering",
+        "chemical-engineering",
+        "computer-science",
+        "information-technology",
+        "nursing",
+        "pharmacy",
+        "architecture",
+        "law",
         "liberal-arts",
         "environmental-science",
-        "computer-science",
-        "engineering",
         "psychology",
         "medicine",
         "political-science",
-        "law",
         "sociology",
         "mathematics",
         "biology",
         "physics",
         "chemistry",
-        "education",
-        "nursing"
-      ]
+        "education"
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Chemical Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Nursing",
+        "Bachelor of Science in Pharmacy",
+        "Bachelor of Science in Architecture",
+        "Juris Doctor"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ama-computer-college",
@@ -378,11 +394,21 @@
         "C"
       ],
       "strengthTags": [
+        "accountancy",
+        "business-administration",
+        "hospitality-management",
+        "tourism-management",
+        "computer-science",
+        "information-technology",
+        "multimedia",
+        "psychology",
+        "communication",
+        "human-biology",
+        "medical-technology",
+        "pharmacy",
         "medicine",
         "liberal-arts",
         "biology",
-        "psychology",
-        "computer-science",
         "political-science",
         "pathology",
         "law",
@@ -393,7 +419,22 @@
         "nursing",
         "engineering",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Business Administration major in Marketing Management",
+        "BS Hospitality Management",
+        "BS Tourism Management",
+        "BS Computer Science",
+        "BS Information Technology",
+        "Bachelor of Multimedia Arts",
+        "BS Psychology",
+        "AB in Communication",
+        "BS Human Biology",
+        "BS Medical Technology",
+        "BS Pharmacy"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "antipolo-science",
@@ -490,10 +531,25 @@
         "C"
       ],
       "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "nursing",
+        "business",
+        "criminology",
         "business-administration",
-        "education",
-        "criminology"
-      ]
+        "education"
+      ],
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Information Systems",
+        "BS Nursing",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Criminology",
+        "BS Psychology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "arellano-university-pasay",
@@ -515,11 +571,27 @@
         "C"
       ],
       "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "nursing",
+        "pharmacy",
+        "business",
         "business-administration",
         "education",
         "arts-and-sciences",
         "hospitality-management"
-      ]
+      ],
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Information Systems",
+        "BS Nursing",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Pharmacy",
+        "BS Physical Therapy"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "asia-pacific-aviation",
@@ -821,8 +893,13 @@
         "C"
       ],
       "strengthTags": [
+        "accountancy",
+        "business-administration",
         "engineering",
         "computer-science",
+        "information-technology",
+        "nursing",
+        "teacher-education",
         "physics",
         "environmental-science",
         "biology",
@@ -834,7 +911,20 @@
         "education",
         "law",
         "health-sciences"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Business Administration Major in Financial Management",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Nursing",
+        "Bachelor of Elementary Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "batangas-provincial",
@@ -879,11 +969,19 @@
         "C"
       ],
       "strengthTags": [
+        "engineering",
+        "chemical-engineering",
+        "civil-engineering",
+        "computer-engineering",
+        "electrical-engineering",
+        "electronics-engineering",
+        "industrial-engineering",
+        "mechanical-engineering",
+        "information-technology",
         "liberal-arts",
         "computer-science",
         "psychology",
         "environmental-science",
-        "engineering",
         "political-science",
         "mathematics",
         "law",
@@ -892,9 +990,20 @@
         "sociology",
         "physics",
         "architecture",
-        "sciences",
-        "information-technology"
-      ]
+        "sciences"
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Chemical Engineering",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Electronics Engineering",
+        "Bachelor of Science in Industrial Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Sanitary Engineering",
+        "Bachelor of Science in Information Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "bestlink",
@@ -977,6 +1086,14 @@
         "R"
       ],
       "strengthTags": [
+        "engineering",
+        "civil-engineering",
+        "computer-engineering",
+        "electrical-engineering",
+        "electronics-engineering",
+        "industrial-engineering",
+        "mechanical-engineering",
+        "information-technology",
         "liberal-arts",
         "political-science",
         "psychology",
@@ -987,11 +1104,20 @@
         "business",
         "medicine",
         "mathematics",
-        "engineering",
         "philosophy",
-        "education",
-        "information-technology"
-      ]
+        "education"
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Electronics Engineering",
+        "Bachelor of Science in Industrial Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Mechatronics Engineering",
+        "Bachelor of Science in Information Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "calayan-educational",
@@ -1012,10 +1138,22 @@
         "C"
       ],
       "strengthTags": [
+        "nursing",
+        "accountancy",
         "business",
-        "education",
-        "criminology"
-      ]
+        "information-systems",
+        "criminology",
+        "education"
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Accountancy",
+        "BS Business Administration",
+        "BS Information Systems",
+        "BS Criminology",
+        "BS Psychology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "canossa-college",
@@ -1084,23 +1222,45 @@
         "C"
       ],
       "strengthTags": [
+        "agriculture",
         "environmental-science",
         "biology",
+        "psychology",
+        "accountancy",
+        "business-management",
+        "computer-science",
+        "information-technology",
+        "civil-engineering",
+        "nursing",
+        "education",
+        "hospitality-management",
         "engineering",
         "liberal-arts",
         "ecology",
-        "computer-science",
         "geography-and-cartography",
         "physics",
         "geology",
         "medicine",
         "chemistry",
         "mathematics",
-        "agriculture",
-        "education",
         "business",
         "veterinary-medicine"
-      ]
+      ],
+      "popularCourses": [
+        "BS Agriculture",
+        "BS Environmental Science",
+        "BS Biology",
+        "BS Psychology",
+        "BS Accountancy",
+        "BS Business Management",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Civil Engineering",
+        "BS Nursing",
+        "Bachelor of Secondary Education",
+        "BS Hospitality Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "central-luzon-state-university",
@@ -1117,25 +1277,44 @@
         "R",
         "I",
         "A",
-        "S"
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
+        "agriculture",
+        "accountancy",
+        "engineering",
+        "information-technology",
+        "fisheries",
+        "hospitality-management",
         "biology",
+        "teacher-education",
+        "veterinary-medicine",
         "environmental-science",
         "chemistry",
         "liberal-arts",
         "ecology",
         "medicine",
         "geology",
-        "engineering",
         "botany",
         "genetics",
         "geography-and-cartography",
-        "agriculture",
-        "fisheries",
-        "veterinary-medicine",
         "education"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Agriculture",
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Fisheries",
+        "Bachelor of Science in Hospitality Management",
+        "Bachelor of Science in Biology - Biotechnology",
+        "Bachelor of Secondary Education - Science",
+        "Bachelor of Elementary Education",
+        "Doctor of Veterinary Medicine"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ceu",
@@ -1304,17 +1483,31 @@
       "tuition": "Approximately P45,000-P65,000 per semester",
       "website": "https://www.ciit.edu.ph/",
       "riasecTags": [
+        "R",
+        "I",
         "A",
-        "C",
-        "I"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "multimedia-arts",
+        "entertainment-multimedia-computing",
         "game-development",
+        "computer-science",
+        "information-systems",
+        "entrepreneurship",
         "animation",
         "software-engineering",
         "graphic-design"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Multimedia Arts",
+        "Bachelor of Science in Entertainment and Multimedia Computing",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Systems",
+        "Bachelor of Science in Entrepreneurship"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "cmu",
@@ -1326,7 +1519,7 @@
       "location": "Malabon",
       "description": "City university of Malabon offering business, education, and technology programs.",
       "tuition": "Subsidized tuition for Malabon residents",
-      "website": "https://cmu.edu.ph/",
+      "website": "https://cityofmalabonuniversity.edu.ph/",
       "riasecTags": [
         "R",
         "I",
@@ -1335,10 +1528,21 @@
         "C"
       ],
       "strengthTags": [
+        "information-technology",
         "business",
-        "education",
-        "information-technology"
-      ]
+        "criminology",
+        "computer-engineering",
+        "education"
+      ],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Criminology",
+        "BS Computer Engineering",
+        "BS Electronics Engineering"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "cup",
@@ -1464,6 +1668,7 @@
       "tuition": "Estimated PHP 12,000 - 22,000 per semester",
       "website": "https://www.cspb.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
         "A",
         "S",
@@ -1471,9 +1676,20 @@
         "C"
       ],
       "strengthTags": [
+        "computer-science",
+        "business",
+        "education",
         "teacher-education",
         "business-administration"
-      ]
+      ],
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Business Administration major in Financial Management",
+        "BS Business Administration major in Marketing Management",
+        "Bachelor of Early Childhood Education",
+        "BS Secondary Education major in English"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "colegio-de-san-pedro",
@@ -1494,10 +1710,27 @@
         "C"
       ],
       "strengthTags": [
+        "computer-technology",
+        "computer-science",
+        "office-administration",
+        "information-technology",
+        "accountancy",
+        "accounting-information-system",
+        "entrepreneurship",
         "education",
         "business",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "Associate in Computer Technology",
+        "Associate in Computer Science",
+        "BS Office Administration",
+        "BS Information Technology",
+        "BS Accountancy",
+        "BS Accounting Information System",
+        "BS Entrepreneurship"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "colegio-ng-lungsod-ng-batangas",
@@ -1518,10 +1751,19 @@
         "C"
       ],
       "strengthTags": [
-        "business",
         "education",
+        "accountancy",
+        "business",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Elementary Education",
+        "Bachelor of Technology and Livelihood Education",
+        "Bachelor of Physical Education",
+        "BS Accountancy",
+        "BS Business Administration"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "colegio-san-agustin-bacolod",
@@ -1533,7 +1775,7 @@
       "location": "Bacolod, Negros Occidental",
       "description": "Augustinian school in Bacolod offering education, business, and engineering programs.",
       "tuition": "Approximately P30,000-P50,000 per semester",
-      "website": "https://www.csa.edu.ph/",
+      "website": "https://www.csab.edu.ph/",
       "riasecTags": [
         "R",
         "I",
@@ -1542,10 +1784,24 @@
         "C"
       ],
       "strengthTags": [
+        "accountancy",
+        "information-technology",
+        "nursing",
+        "engineering",
+        "criminology",
         "education",
-        "business",
-        "engineering"
-      ]
+        "business"
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Information Technology",
+        "BS Business Administration",
+        "BS Nursing",
+        "BS Civil Engineering",
+        "BS Criminology",
+        "BS Psychology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "datamex-institute-of-computer-technology-caloocan",
@@ -1723,22 +1979,40 @@
         "C"
       ],
       "strengthTags": [
-        "liberal-arts",
+        "accountancy",
         "engineering",
-        "environmental-science",
         "computer-science",
+        "information-technology",
+        "architecture",
         "biology",
+        "psychology",
+        "criminology",
+        "hospitality-management",
+        "liberal-arts",
+        "environmental-science",
         "physics",
         "political-science",
         "law",
         "chemistry",
         "medicine",
         "philosophy",
-        "psychology",
         "sciences",
         "business",
         "education"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Architecture",
+        "Bachelor of Science in Biology with specialization in Medical Biology",
+        "Bachelor of Arts in Psychology",
+        "BS in Criminology",
+        "Bachelor of Science in International Hospitality Management with specialization in Culinary and Foodservice Administration"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "benilde",
@@ -1760,6 +2034,16 @@
         "C"
       ],
       "strengthTags": [
+        "architecture",
+        "animation",
+        "multimedia-arts",
+        "game-design",
+        "cybersecurity",
+        "information-systems",
+        "tourism-management",
+        "deaf-education",
+        "diplomacy",
+        "business-administration",
         "liberal-arts",
         "psychology",
         "political-science",
@@ -1774,9 +2058,21 @@
         "design",
         "arts",
         "hospitality",
-        "deaf-education",
         "film"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Architecture",
+        "Bachelor of Arts in Animation",
+        "Bachelor of Arts in Multimedia Arts",
+        "Bachelor of Science in Game Design and Development",
+        "Bachelor of Science in Cybersecurity",
+        "Bachelor of Science in Information Systems",
+        "Bachelor of Science in Tourism Management",
+        "Bachelor in Applied Deaf Studies",
+        "Bachelor of Arts Major in Diplomacy and International Affairs",
+        "Bachelor of Science in Business Administration Major in Marketing Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "diliman-college",
@@ -1866,6 +2162,11 @@
         "C"
       ],
       "strengthTags": [
+        "nursing",
+        "information-technology",
+        "computer-engineering",
+        "business",
+        "hospitality",
         "liberal-arts",
         "computer-science",
         "mathematics",
@@ -1878,7 +2179,6 @@
         "engineering",
         "philosophy",
         "education",
-        "nursing",
         "dentistry",
         "pharmacy",
         "medical-technology",
@@ -1886,10 +2186,19 @@
         "occupational-therapy",
         "radiologic-technology",
         "allied-health",
-        "criminology",
-        "business",
-        "hospitality"
-      ]
+        "criminology"
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Information Technology",
+        "BS Computer Engineering",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Criminology",
+        "BS Pharmacy",
+        "BS Hospitality Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "earist",
@@ -2006,20 +2315,37 @@
         "C"
       ],
       "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "cybersecurity",
+        "engineering",
+        "civil-engineering",
+        "computer-engineering",
+        "multimedia-arts",
         "environmental-science",
         "biology",
         "liberal-arts",
-        "engineering",
         "physics",
         "chemistry",
         "medicine",
         "political-science",
         "geography-and-cartography",
         "geology",
-        "computer-science",
-        "law",
-        "information-technology"
-      ]
+        "law"
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Cybersecurity",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Electronics Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Construction Engineering and Management",
+        "Bachelor of Multimedia Arts"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "first-city-providential",
@@ -2040,10 +2366,25 @@
         "C"
       ],
       "strengthTags": [
+        "accountancy",
+        "nursing",
+        "information-technology",
+        "computer-science",
+        "criminology",
         "business",
         "education",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Nursing",
+        "BS Information Technology",
+        "BS Computer Science",
+        "BS Criminology",
+        "BS Business Administration",
+        "BS Civil Engineering"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "global-city-innovative-college",
@@ -2177,7 +2518,7 @@
       "location": "Sta. Ana, Pampanga",
       "description": "Private Catholic college in Pampanga offering education, business, and IT.",
       "tuition": "Estimated PHP 12,000 - 20,000 per semester",
-      "website": "https://www.hccpampanga.edu.ph/",
+      "website": "https://holycrosscollegepampanga.edu.ph/",
       "riasecTags": [
         "R",
         "I",
@@ -2186,10 +2527,23 @@
         "C"
       ],
       "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "computer-engineering",
+        "criminology",
+        "business",
         "teacher-education",
-        "business-administration",
-        "information-technology"
-      ]
+        "business-administration"
+      ],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Computer Science",
+        "BS Computer Engineering",
+        "BS Civil Engineering",
+        "BS Criminology",
+        "BS Business Administration"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "i-academy",
@@ -2203,16 +2557,41 @@
       "tuition": "Approximately P50,000-P70,000 per semester",
       "website": "https://www.iacademy.edu.ph/",
       "riasecTags": [
+        "R",
+        "I",
         "A",
-        "C",
-        "I"
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
-        "software-engineering",
-        "game-development",
+        "computer-science",
+        "information-technology",
+        "entertainment-multimedia-computing",
+        "business-administration",
+        "accountancy",
+        "psychology",
         "multimedia-arts",
+        "animation",
+        "game-development",
+        "software-engineering",
+        "cloud-computing",
+        "web-development",
+        "multimedia",
+        "fashion-design",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Entertainment and Multimedia Computing",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BA Psychology",
+        "BA Multimedia Arts and Design",
+        "BA Animation"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ibm-philippines",
@@ -2226,15 +2605,30 @@
       "tuition": "Varies by program; corporate-sponsored",
       "website": "https://www.ibm.com/ph-en",
       "riasecTags": [
-        "C",
+        "R",
+        "I",
         "E",
-        "I"
+        "C"
       ],
       "strengthTags": [
+        "cybersecurity",
+        "data-analytics",
         "information-technology",
+        "project-management",
+        "web-development",
+        "artificial-intelligence",
         "professional-development",
         "corporate-training"
-      ]
+      ],
+      "popularCourses": [
+        "Cybersecurity Learning Path",
+        "Data Learning Path",
+        "Information Technology Learning Path",
+        "IT Project Management Learning Path",
+        "Web Development Learning Path",
+        "AI Fundamentals"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "icct",
@@ -2349,15 +2743,31 @@
       "tuition": "Varies by program; corporate-sponsored for some",
       "website": "https://www.infosys.com/",
       "riasecTags": [
-        "C",
+        "R",
+        "I",
         "E",
-        "I"
+        "C"
       ],
       "strengthTags": [
+        "artificial-intelligence",
+        "generative-ai",
+        "data-science",
+        "programming",
+        "masterclass",
+        "industry-readiness",
         "information-technology",
         "business-process-management",
         "corporate-training"
-      ]
+      ],
+      "popularCourses": [
+        "Introductory Course on AI and Generative AI",
+        "Masterclass on AI and the Impact of Generative AI",
+        "Citizens Data Science",
+        "Infosys CoderZen",
+        "Domain Masterclass Sessions",
+        "Lets Get Industry Ready"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ici-culinary",
@@ -2467,9 +2877,18 @@
       ],
       "strengthTags": [
         "business",
-        "education",
-        "hospitality"
-      ]
+        "hospitality",
+        "tourism",
+        "education"
+      ],
+      "popularCourses": [
+        "BS Business Administration major in Marketing Management",
+        "BS Business Administration major in Human Resource Management",
+        "BS Hospitality Management",
+        "BS Tourism Management",
+        "Bachelor of Secondary Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "la-consolacion-university",
@@ -2582,6 +3001,13 @@
         "R"
       ],
       "strengthTags": [
+        "agriculture",
+        "engineering",
+        "computer-science",
+        "information-technology",
+        "accountancy",
+        "hospitality-management",
+        "teacher-education",
         "liberal-arts",
         "mathematics",
         "psychology",
@@ -2591,12 +3017,22 @@
         "medicine",
         "law",
         "education",
-        "computer-science",
         "environmental-science",
-        "business",
-        "engineering",
-        "agriculture"
-      ]
+        "business"
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Agriculture",
+        "Bachelor of Science in Agricultural and Biosystems Engineering",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Hospitality Management",
+        "Bachelor of Secondary Education",
+        "Bachelor of Elementary Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "lyceum-batangas",
@@ -2618,6 +3054,18 @@
         "C"
       ],
       "strengthTags": [
+        "bs-accountancy",
+        "bs-computer-science",
+        "bs-information-technology",
+        "bs-cybersecurity",
+        "bachelor-of-arts-in-communication",
+        "bs-criminology",
+        "bs-nursing",
+        "bs-pharmacy",
+        "bs-marine-transportation",
+        "bs-marine-engineering",
+        "bs-international-hospitality-management",
+        "bs-international-tourism-management",
         "liberal-arts",
         "political-science",
         "law",
@@ -2632,7 +3080,22 @@
         "philosophy",
         "hospitality",
         "maritime"
-      ]
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Cybersecurity",
+        "Bachelor of Arts in Communication",
+        "BS Criminology",
+        "BS Nursing",
+        "BS Pharmacy",
+        "BS Marine Transportation",
+        "BS Marine Engineering",
+        "BS International Hospitality Management",
+        "BS International Tourism Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "lyceum-of-the-philippines-university-cavite",
@@ -2644,7 +3107,7 @@
       "location": "Gen. Trias, Cavite",
       "description": "LPU campus in Cavite.",
       "tuition": "Estimated PHP 30,000 - 45,000 per semester",
-      "website": "https://www.lyceum.edu.ph/",
+      "website": "https://cavite.lpu.edu.ph/",
       "riasecTags": [
         "R",
         "I",
@@ -2654,22 +3117,34 @@
         "C"
       ],
       "strengthTags": [
+        "nursing",
+        "computer-science",
+        "information-technology",
+        "accountancy",
+        "engineering",
         "liberal-arts",
         "political-science",
         "law",
         "business",
-        "computer-science",
         "environmental-science",
         "psychology",
         "geography-and-cartography",
-        "engineering",
         "sociology",
         "mathematics",
         "philosophy",
         "business-administration",
         "criminology",
         "hospitality-management"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Accountancy",
+        "BS Business Administration",
+        "BS Civil Engineering"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "lpu-laguna",
@@ -2691,21 +3166,35 @@
         "C"
       ],
       "strengthTags": [
+        "engineering",
+        "computer-engineering",
+        "information-technology",
+        "computer-science",
+        "accountancy",
         "liberal-arts",
         "political-science",
         "law",
         "business",
-        "computer-science",
         "environmental-science",
         "psychology",
         "geography-and-cartography",
-        "engineering",
         "sociology",
         "mathematics",
         "philosophy",
         "hospitality",
         "tourism"
-      ]
+      ],
+      "popularCourses": [
+        "BS Civil Engineering",
+        "BS Electrical Engineering",
+        "BS Computer Engineering",
+        "BS Industrial Engineering",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Accountancy",
+        "BS Business Administration major in Marketing Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "lpu-manila",
@@ -2727,13 +3216,21 @@
         "C"
       ],
       "strengthTags": [
+        "legal-management",
+        "multimedia-arts",
+        "psychology",
+        "business-administration",
+        "accountancy",
+        "hospitality-management",
+        "computer-science",
+        "information-technology",
+        "esports",
+        "tourism-management",
         "liberal-arts",
         "political-science",
         "law",
         "business",
-        "computer-science",
         "environmental-science",
-        "psychology",
         "geography-and-cartography",
         "engineering",
         "sociology",
@@ -2743,7 +3240,20 @@
         "tourism",
         "maritime",
         "international-relations"
-      ]
+      ],
+      "popularCourses": [
+        "AB Legal Management",
+        "AB Multimedia Arts",
+        "BS Major in Psychology",
+        "BS Business Administration Major in Business Management",
+        "BS Accountancy",
+        "BS International Hospitality Management with specialization in Hotel and Restaurant Administration",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Esports with specialization in Game Design and Development",
+        "BS International Tourism Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "lyceum-of-the-philippines-university-pampanga",
@@ -2753,7 +3263,7 @@
       "lguId": "san-fernando",
       "region": "Pampanga",
       "location": "City of San Fernando, Pampanga",
-      "description": "LPU campus in Pampanga.",
+      "description": "Catalog entry unverified: LPU official site lists Manila, Cavite, Laguna, and Batangas campuses only — no separate Pampanga campus or program page found.",
       "tuition": "Estimated PHP 30,000 - 45,000 per semester",
       "website": "https://www.lyceum.edu.ph/",
       "riasecTags": [
@@ -2794,16 +3304,30 @@
       "tuition": "Approximately P80,000-P150,000 per program",
       "website": "https://www.magsaysaycareers.com/",
       "riasecTags": [
-        "C",
+        "R",
+        "I",
+        "A",
+        "S",
         "E",
-        "S"
+        "C"
       ],
       "strengthTags": [
+        "ship-catering",
+        "food-and-beverage-services",
+        "housekeeping",
+        "caregiving",
         "culinary-arts",
         "hospitality",
         "maritime",
         "tourism"
-      ]
+      ],
+      "popularCourses": [
+        "Ship Catering Services NC I",
+        "Food and Beverage Services NC II",
+        "Housekeeping NC II",
+        "Caregiving (Elderly) NC II"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "mcc",
@@ -2817,16 +3341,28 @@
       "tuition": "Approximately P40,000-P60,000 per semester",
       "website": "https://www.mcc.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "information-technology",
+        "hospitality",
+        "tourism",
+        "education",
         "business",
-        "management",
-        "hospitality"
-      ]
+        "management"
+      ],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Hospitality Management",
+        "BS Tourism Management",
+        "Bachelor of Elementary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "makati-science",
@@ -2874,6 +3410,15 @@
       ],
       "strengthTags": [
         "engineering",
+        "civil-engineering",
+        "computer-engineering",
+        "electrical-engineering",
+        "electronics-engineering",
+        "industrial-engineering",
+        "mechanical-engineering",
+        "architecture",
+        "aeronautical-engineering",
+        "marine-engineering",
         "computer-science",
         "physics",
         "environmental-science",
@@ -2883,9 +3428,21 @@
         "medicine",
         "materials-science",
         "business",
-        "information-technology",
-        "architecture"
-      ]
+        "information-technology"
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Electronics Engineering",
+        "Bachelor of Science in Industrial Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Chemical Engineering",
+        "Bachelor of Science in Architecture",
+        "Bachelor of Science in Aeronautical Engineering",
+        "Bachelor of Science in Marine Engineering"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "manila-central-university",
@@ -2980,8 +3537,18 @@
         "C"
       ],
       "strengthTags": [
-        "liberal-arts",
+        "accountancy",
+        "business-administration",
         "computer-science",
+        "information-technology",
+        "nursing",
+        "criminology",
+        "hospitality-management",
+        "tourism-management",
+        "education",
+        "communication",
+        "civil-engineering",
+        "liberal-arts",
         "environmental-science",
         "biology",
         "mathematics",
@@ -2993,7 +3560,22 @@
         "philosophy",
         "business",
         "law"
-      ]
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Business Administration major in Marketing Management",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Nursing",
+        "BS Criminology",
+        "BS Hospitality Management",
+        "BS Tourism Management",
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education major in English",
+        "Bachelor of Arts in Communication",
+        "BS Civil Engineering"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "mit",
@@ -3054,7 +3636,13 @@
       ],
       "strengthTags": [
         "engineering",
+        "architecture",
+        "artificial-intelligence",
+        "information-technology",
         "computer-science",
+        "industrial-engineering",
+        "cybersecurity",
+        "data-science",
         "physics",
         "environmental-science",
         "biology",
@@ -3063,10 +3651,21 @@
         "medicine",
         "materials-science",
         "business",
-        "architecture",
-        "information-technology",
         "interior-design"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Artificial Intelligence Engineering",
+        "Bachelor of Science in Architecture",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Industrial Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Cybersecurity",
+        "Bachelor of Science in Data Science"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "marcelino-fule",
@@ -3100,7 +3699,7 @@
       "lguId": "laguna",
       "region": "Laguna",
       "location": "San Pablo, Laguna",
-      "description": "Private college in San Pablo offering education, business, and health sciences programs.",
+      "description": "Catalog entry unverified: no Maria Aurora College found in San Pablo, Laguna. Listed website (mac.edu.ph) is Manila Adventist College in Pasay. Undergraduate programs not verified.",
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.mac.edu.ph/",
       "riasecTags": [
@@ -3394,10 +3993,20 @@
         "C"
       ],
       "strengthTags": [
-        "engineering",
+        "information-systems",
         "information-technology",
+        "teacher-education",
+        "hospitality",
+        "engineering",
         "criminology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Information Systems",
+        "Diploma in Information Technology",
+        "Bachelor of Technical-Vocational Teacher Education",
+        "Diploma in Hotel and Restaurant Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "nueva-ecija-university",
@@ -3606,10 +4215,28 @@
         "C"
       ],
       "strengthTags": [
+        "nursing",
+        "criminology",
+        "hospitality-management",
+        "business-administration",
+        "entrepreneurship",
+        "secondary-education",
         "business",
         "education",
         "engineering"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Criminology",
+        "BS Hospitality Management",
+        "BS Business Administration major in Financial Management",
+        "BS Business Administration major in Human Resource Development Management",
+        "BS Business Administration major in Marketing Management",
+        "BS Entrepreneurship",
+        "Bachelor of Secondary Education major in Filipino",
+        "Bachelor of Secondary Education major in Mathematics"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "plm",
@@ -3669,15 +4296,43 @@
       "riasecTags": [
         "R",
         "I",
+        "A",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-arts-in-communication",
+        "bachelor-of-science-in-psychology",
+        "bachelor-of-science-in-accountancy",
+        "bachelor-of-science-in-business-administration-major-in-marketing-management",
+        "bachelor-of-science-in-criminology",
+        "bachelor-of-science-in-computer-science",
+        "bachelor-of-science-in-information-technology",
+        "bachelor-of-elementary-education",
+        "bachelor-of-secondary-education-major-in-english",
+        "bachelor-of-arts-in-political-science",
+        "bachelor-of-public-administration",
+        "bachelor-of-science-in-social-work",
         "criminology",
         "nursing",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Arts in Communication",
+        "Bachelor of Science in Psychology",
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Business Administration major in Marketing Management",
+        "Bachelor of Science in Criminology",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education major in English",
+        "Bachelor of Arts in Political Science",
+        "Bachelor of Public Administration",
+        "Bachelor of Science in Social Work"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "plp",
@@ -3689,19 +4344,47 @@
       "location": "Pasig",
       "description": "City university of Pasig offering business, education, and technology programs.",
       "tuition": "Subsidized tuition for Pasig residents",
-      "website": "https://www.plp.edu.ph/",
+      "website": "https://plpasig.edu.ph/",
       "riasecTags": [
         "R",
         "I",
+        "A",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-science-in-accountancy",
+        "bachelor-of-science-in-business-administration-major-in-marketing-management",
+        "bachelor-of-science-in-business-administration-major-in-entrepreneurship",
+        "bachelor-of-science-in-computer-science",
+        "bachelor-of-science-in-information-technology",
+        "bachelor-of-science-in-electronics-and-communications-engineering",
+        "bachelor-of-science-in-nursing",
+        "bachelor-of-science-in-hospitality-management",
+        "bachelor-of-science-in-mathematics-with-computer",
+        "bachelor-of-secondary-education-major-in-english",
+        "bachelor-of-secondary-education-major-in-filipino",
+        "bachelor-of-elementary-education",
         "business",
         "information-technology",
         "education"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Business Administration major in Marketing Management",
+        "Bachelor of Science in Business Administration major in Entrepreneurship",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Electronics and Communications Engineering",
+        "Bachelor of Science in Nursing",
+        "Bachelor of Science in Hospitality Management",
+        "Bachelor of Science in Mathematics with Computer",
+        "Bachelor of Secondary Education major in English",
+        "Bachelor of Secondary Education major in Filipino",
+        "Bachelor of Elementary Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "plv",
@@ -3722,10 +4405,37 @@
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-science-in-electrical-engineering",
+        "bachelor-of-science-in-civil-engineering",
+        "bachelor-of-science-in-information-technology",
+        "bachelor-of-science-in-accountancy",
+        "bachelor-of-science-in-business-administration-major-in-financial-management",
+        "bachelor-of-science-in-business-administration-major-in-marketing-management",
+        "bachelor-of-science-in-public-administration",
+        "bachelor-of-science-in-psychology",
+        "bachelor-of-science-in-social-work",
+        "bachelor-of-elementary-education",
+        "bachelor-of-secondary-education-major-in-english",
+        "bachelor-of-secondary-education-major-in-mathematics",
         "business",
         "education",
         "information-technology"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Business Administration major in Financial Management",
+        "Bachelor of Science in Business Administration major in Marketing Management",
+        "Bachelor of Science in Public Administration",
+        "Bachelor of Science in Psychology",
+        "Bachelor of Science in Social Work",
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education major in English",
+        "Bachelor of Secondary Education major in Mathematics"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "pampanga-state-university",
@@ -3956,15 +4666,41 @@
       "riasecTags": [
         "R",
         "I",
+        "A",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "business-administration",
+        "office-administration",
+        "criminology",
         "education",
+        "hospitality-management",
+        "tourism-management",
+        "computer-science",
+        "information-technology",
+        "information-systems",
+        "nursing",
+        "multimedia",
         "business",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Business Administration",
+        "Bachelor of Science in Office Administration",
+        "Bachelor of Science in Criminology",
+        "Bachelor of Early Childhood Education",
+        "Bachelor of Secondary Education major in English",
+        "Bachelor of Science in Hospitality Management",
+        "Bachelor of Science in Tourism Management",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Information System",
+        "Bachelor of Science in Nursing",
+        "Bachelor of Multimedia Arts"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "pnu",
@@ -3986,6 +4722,18 @@
         "C"
       ],
       "strengthTags": [
+        "english-education",
+        "filipino-education",
+        "literature-education",
+        "mathematics-education",
+        "science-education",
+        "social-science-education",
+        "early-childhood-education",
+        "elementary-education",
+        "information-technology-education",
+        "library-and-information-science",
+        "physical-education",
+        "music-and-art-education",
         "liberal-arts",
         "sociology",
         "psychology",
@@ -3999,9 +4747,23 @@
         "environmental-science",
         "computer-science",
         "teacher-education",
-        "education-research",
-        "early-childhood-education"
-      ]
+        "education-research"
+      ],
+      "popularCourses": [
+        "Bachelor in English Education",
+        "Bachelor in Filipino Education",
+        "Bachelor in Literature Education",
+        "Bachelor in Mathematics Education",
+        "Bachelor in Science Education",
+        "Bachelor in Social Science Education",
+        "Bachelor in Early Childhood Education",
+        "Bachelor of Elementary Education",
+        "Bachelor in Information Technology Education",
+        "Bachelor of Library and Information Science",
+        "Bachelor in Physical and Health Education",
+        "Bachelor in Music and Art Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "philippine-science",
@@ -4041,14 +4803,38 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.psca.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "R"
+        "A",
+        "E",
+        "C"
       ],
       "strengthTags": [
         "aeronautical-engineering",
-        "aviation-technology",
-        "aircraft-maintenance"
-      ]
+        "air-transportation",
+        "aircraft-maintenance",
+        "aviation-electronics",
+        "aviation-communication",
+        "aviation-safety",
+        "aviation-logistics",
+        "aviation-tourism",
+        "aviation-information-systems",
+        "aviation-information-technology",
+        "aviation-technology"
+      ],
+      "popularCourses": [
+        "BS Aeronautical Engineering",
+        "BS Air Transportation major in Advance Flying",
+        "BS Aircraft Maintenance Technology",
+        "BS Aviation Electronics Technology",
+        "BS Aviation Communication major in Flight Operations",
+        "BS Aviation Safety and Security Management",
+        "BS Aviation Logistics",
+        "BS Aviation Tourism major in Travel Management",
+        "BS Aviation Information System",
+        "BS Aviation Information Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "philippine-womens-university",
@@ -4062,22 +4848,42 @@
       "tuition": "Approximately P30,000-P60,000 per trimester (varies by program; allied health and laboratory programs tend higher; contact admissions for current rates)",
       "website": "https://www.pwu.edu.ph/",
       "riasecTags": [
-        "A",
-        "C",
-        "E",
+        "R",
         "I",
-        "S"
+        "A",
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
         "nursing",
         "pharmacy",
-        "medical-technology",
+        "communication",
+        "psychology",
+        "accountancy",
+        "business-administration",
+        "information-technology",
+        "environmental-science",
+        "teacher-education",
         "music",
+        "medical-technology",
         "hospitality",
         "business",
-        "teacher-education",
         "food-science"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Nursing",
+        "Bachelor of Science in Pharmacy",
+        "Bachelor of Arts in Communication",
+        "Bachelor of Arts in Psychology",
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Business Administration major in Marketing Management",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Environmental Science",
+        "Bachelor of Elementary Education",
+        "Bachelor of Music in Music Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "pup-manila",
@@ -4836,12 +5642,23 @@
         "S"
       ],
       "strengthTags": [
+        "accountancy",
+        "entrepreneurship",
+        "financial-management",
+        "human-resource-management",
+        "information-technology",
+        "legal-management",
+        "marketing-management",
+        "operations-management",
+        "psychology",
+        "human-biology",
+        "nursing",
+        "early-childhood-education",
         "liberal-arts",
         "medicine",
         "political-science",
         "sociology",
         "law",
-        "psychology",
         "environmental-science",
         "philosophy",
         "biology",
@@ -4849,9 +5666,23 @@
         "pathology",
         "mathematics",
         "business",
-        "arts-and-sciences",
-        "nursing"
-      ]
+        "arts-and-sciences"
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Entrepreneurship",
+        "BS Financial Management and Systems Development",
+        "BS Human Resource Development Management",
+        "BS Information and Communication Technology",
+        "BS Legal Management",
+        "BS Marketing Management and Corporate Communications",
+        "BS Operations Management",
+        "BS Psychology",
+        "BS Human Biology",
+        "Bachelor of Science in Nursing",
+        "Bachelor of Early Childhood Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "san-juan-de-dios",
@@ -4885,18 +5716,47 @@
       "location": "San Pablo, Laguna",
       "description": "Private college in San Pablo offering business, education, and criminology programs.",
       "tuition": "Approximately P20,000-P35,000 per semester",
-      "website": "https://www.spc.edu.ph/",
+      "website": "https://sanpablocolleges.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
+        "A",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "nursing",
+        "computer-science",
+        "information-technology",
+        "psychology",
+        "communication",
+        "financial-technology",
+        "human-resource-management",
+        "marketing-management",
+        "hospitality-management",
+        "elementary-education",
+        "secondary-education",
+        "real-estate-management",
         "business",
         "education",
         "criminology"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Nursing",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Psychology",
+        "Bachelor of Arts in Communication",
+        "BS Financial Technology",
+        "BS Human Resource Management",
+        "BS Marketing Management",
+        "BS Hospitality Management",
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education",
+        "BS Real Estate Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ssc-r",
@@ -4976,15 +5836,43 @@
       "riasecTags": [
         "R",
         "I",
+        "A",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "bs-accountancy",
+        "bs-business-administration",
+        "bs-information-technology",
+        "bs-nursing",
+        "bs-psychology",
+        "ab-communication",
+        "ab-multimedia-arts",
+        "bs-tourism",
+        "bs-entrepreneurship",
+        "bs-computer-engineering",
+        "bs-industrial-engineering",
+        "bachelor-in-elementary-education-major-in-special-education",
         "business",
         "information-technology",
         "international-programs"
-      ]
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Business Administration",
+        "BS Information Technology",
+        "BS Nursing",
+        "BS Psychology",
+        "AB Communication",
+        "AB Multimedia Arts",
+        "BS Tourism",
+        "BS Entrepreneurship",
+        "BS Computer Engineering",
+        "BS Industrial Engineering",
+        "Bachelor in Elementary Education major in Special Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "st-clare-caloocan",
@@ -5801,16 +6689,38 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "C",
+        "R",
+        "I",
+        "A",
         "E",
-        "I"
+        "C"
       ],
       "strengthTags": [
+        "computer-science",
         "information-technology",
+        "accounting-information-system",
+        "accountancy",
+        "hospitality-management",
+        "tourism-management",
+        "naval-architecture-and-marine-engineering",
+        "marine-engineering",
+        "marine-transportation",
         "business",
         "hospitality",
         "engineering"
-      ]
+      ],
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Accounting Information System",
+        "BS Accountancy",
+        "BS Hospitality Management",
+        "BS Tourism Management",
+        "BS Naval Architecture and Marine Engineering",
+        "BS Marine Engineering",
+        "BS Marine Transportation"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "sti-shs",
@@ -5911,14 +6821,42 @@
       "riasecTags": [
         "R",
         "I",
+        "A",
         "E",
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-science-in-computer-science",
+        "bachelor-of-science-in-information-technology",
+        "bachelor-of-science-in-information-systems",
+        "bachelor-of-science-in-entertainment-and-multimedia-computing",
+        "bachelor-of-science-in-computer-engineering",
+        "bachelor-of-science-in-electronics-and-communications-engineering",
+        "bachelor-of-science-in-accountancy",
+        "bachelor-of-science-in-business-administration",
+        "bachelor-of-science-in-customs-administration",
+        "bachelor-of-science-in-real-estate-management",
+        "bachelor-of-science-in-tourism",
+        "bachelor-of-science-in-hospitality-management",
         "information-technology",
         "business",
         "engineering"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Information Systems",
+        "Bachelor of Science in Entertainment and Multimedia Computing",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Electronics and Communications Engineering",
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Business Administration",
+        "Bachelor of Science in Customs Administration",
+        "Bachelor of Science in Real Estate Management",
+        "Bachelor of Science in Tourism",
+        "Bachelor of Science in Hospitality Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "tcu",
@@ -5939,10 +6877,37 @@
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-elementary-education",
+        "bachelor-of-secondary-education-major-in-english",
+        "bachelor-of-secondary-education-major-in-mathematics",
+        "bachelor-of-secondary-education-major-in-science",
+        "bachelor-of-science-in-business-administration-major-in-human-resource-management",
+        "bachelor-of-science-in-business-administration-major-in-marketing-management",
+        "bachelor-of-science-in-computer-science",
+        "bachelor-of-science-in-criminology",
+        "bachelor-of-science-in-entrepreneurship",
+        "bachelor-of-science-in-hospitality-management",
+        "bachelor-of-science-in-information-systems",
+        "bachelor-of-science-in-psychology",
         "business",
         "education",
         "criminology"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education major in English",
+        "Bachelor of Secondary Education major in Mathematics",
+        "Bachelor of Secondary Education major in Science",
+        "Bachelor of Science in Business Administration major in Human Resource Management",
+        "Bachelor of Science in Business Administration major in Marketing Management",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Criminology",
+        "Bachelor of Science in Entrepreneurship",
+        "Bachelor of Science in Hospitality Management",
+        "Bachelor of Science in Information Systems",
+        "Bachelor of Science in Psychology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "tarlac-state-university",
@@ -6087,8 +7052,16 @@
         "C"
       ],
       "strengthTags": [
-        "computer-science",
         "engineering",
+        "chemical-engineering",
+        "civil-engineering",
+        "computer-engineering",
+        "electrical-engineering",
+        "electronics-engineering",
+        "industrial-engineering",
+        "computer-science",
+        "information-systems",
+        "information-technology",
         "liberal-arts",
         "environmental-science",
         "mathematics",
@@ -6097,9 +7070,21 @@
         "biology",
         "philosophy",
         "business",
-        "information-technology",
         "architecture"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Chemical Engineering",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Electronics Engineering",
+        "Bachelor of Science in Industrial Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Systems",
+        "Bachelor of Science in Information Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "tip-quezon-city",
@@ -6170,23 +7155,40 @@
         "C"
       ],
       "strengthTags": [
+        "engineering",
+        "civil-engineering",
+        "electrical-engineering",
+        "computer-science",
+        "information-technology",
+        "architecture",
+        "environmental-science",
+        "laboratory-technology",
         "medicine",
         "biology",
         "liberal-arts",
         "pathology",
-        "environmental-science",
         "genetics",
         "psychology",
         "chemistry",
-        "computer-science",
         "political-science",
         "surgery",
         "law",
-        "engineering",
-        "architecture",
         "technology",
         "industrial-education"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Electronics Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Information System",
+        "Bachelor of Science in Architecture",
+        "Bachelor of Science in Environmental Science",
+        "Bachelor of Applied Science in Laboratory Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "tup-tagui",
@@ -6225,9 +7227,35 @@
         "C"
       ],
       "strengthTags": [
+        "automotive-servicing",
+        "bread-and-pastry-production",
+        "content-creation",
+        "cookery",
+        "dressmaking",
+        "electrical-installation-and-maintenance",
+        "electronics",
+        "food-and-beverage-services",
+        "welding",
+        "housekeeping",
+        "virtual-assistant-services",
         "technical-vocational",
         "skills-training"
-      ]
+      ],
+      "popularCourses": [
+        "Automotive Servicing NC I",
+        "Automotive Servicing NC II (Engine Repair)",
+        "Bread and Pastry Production NC II",
+        "Content Creation (Social Media) Level III",
+        "Cookery NC II",
+        "Dressmaking NC II",
+        "Electrical Installation and Maintenance NC II",
+        "Electronic Products Assembly and Servicing NC II",
+        "Food and Beverage Services NC II",
+        "Gas Metal Arc Welding NC II",
+        "Housekeeping NC II",
+        "Virtual Assistant Services Level II"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "trece-martires-city-college",
@@ -6400,14 +7428,43 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.ucl.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "S"
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
+        "criminology",
+        "tourism-management",
+        "psychology",
+        "accountancy",
+        "management-accounting",
+        "marketing-management",
+        "financial-management",
+        "secondary-education",
+        "elementary-education",
+        "hospitality-management",
+        "information-technology",
         "nursing",
         "education",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "BS Criminology",
+        "BS Tourism Management",
+        "BS Psychology",
+        "BS Accountancy",
+        "BS Management Accounting",
+        "BSBA Major in Marketing Management",
+        "BSBA Major in Financial Management",
+        "BSED Major in English",
+        "BSED Major in Filipino",
+        "Bachelor of Elementary Education",
+        "BS Hospitality Management",
+        "BS Information Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "udm",
@@ -6423,15 +7480,43 @@
       "riasecTags": [
         "R",
         "I",
+        "A",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-arts-in-communication",
+        "bachelor-of-science-in-psychology",
+        "bachelor-of-science-in-accountancy",
+        "bs-business-administration-major-in-marketing-management",
+        "bachelor-of-science-in-criminology",
+        "bachelor-of-science-in-nursing",
+        "bachelor-of-science-in-information-technology",
+        "bachelor-in-information-technology-with-specialization-in-cybersecurity",
+        "bachelor-of-science-in-computer-engineering",
+        "bachelor-of-secondary-education-major-in-english",
+        "bachelor-of-secondary-education-major-in-mathematics",
+        "bachelor-of-public-administration",
         "criminology",
         "nursing",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Arts in Communication",
+        "Bachelor of Science in Psychology",
+        "Bachelor of Science in Accountancy",
+        "BS Business Administration major in Marketing Management",
+        "Bachelor of Science in Criminology",
+        "Bachelor of Science in Nursing",
+        "Bachelor of Science in Information Technology",
+        "Bachelor in Information Technology with Specialization in Cybersecurity",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Secondary Education major in English",
+        "Bachelor of Secondary Education major in Mathematics",
+        "Bachelor of Public Administration"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "university-of-batangas",
@@ -6453,6 +7538,18 @@
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-science-in-accountancy",
+        "bachelor-of-science-in-business-administration",
+        "bachelor-of-science-in-computer-science",
+        "bachelor-of-science-in-information-technology",
+        "bachelor-of-science-in-information-systems",
+        "bachelor-of-arts-in-communication",
+        "bachelor-of-science-in-psychology",
+        "bachelor-of-elementary-education",
+        "bachelor-of-secondary-education",
+        "bachelor-of-early-childhood-education",
+        "bachelor-of-science-in-international-hospitality-management",
+        "bachelor-of-science-in-tourism-management",
         "liberal-arts",
         "medicine",
         "environmental-science",
@@ -6468,7 +7565,22 @@
         "engineering",
         "business",
         "education"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Business Administration",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Information Systems",
+        "Bachelor of Arts in Communication",
+        "Bachelor of Science in Psychology",
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education",
+        "Bachelor of Early Childhood Education",
+        "Bachelor of Science in International Hospitality Management",
+        "Bachelor of Science in Tourism Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ucc",
@@ -6480,19 +7592,41 @@
       "location": "Caloocan",
       "description": "City university of Caloocan offering business, education, and criminal justice programs.",
       "tuition": "Free tuition for Caloocan residents",
-      "website": "https://ucc.edu.ph/",
+      "website": "https://ucc-caloocan.edu.ph/",
       "riasecTags": [
         "R",
         "I",
+        "A",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-science-in-computer-science",
+        "bachelor-of-science-in-information-technology",
+        "bachelor-of-science-in-information-system",
+        "bachelor-of-science-in-entertainment-and-multimedia-computing",
+        "bachelor-of-science-in-psychology",
+        "bachelor-of-science-in-mathematics",
+        "ab-political-science",
+        "ba-communication",
+        "bachelor-of-public-administration",
         "criminology",
         "business",
         "education"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Information System",
+        "Bachelor of Science in Entertainment and Multimedia Computing",
+        "Bachelor of Science in Psychology",
+        "Bachelor of Science in Mathematics",
+        "AB Political Science",
+        "BA Communication",
+        "Bachelor of Public Administration"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "umak",
@@ -6539,11 +7673,21 @@
         "C"
       ],
       "strengthTags": [
+        "accountancy",
+        "business-administration",
+        "entrepreneurship",
+        "communication",
+        "psychology",
+        "multimedia-arts",
+        "nursing",
+        "civil-engineering",
+        "computer-engineering",
+        "mechanical-engineering",
+        "electronics-engineering",
         "liberal-arts",
         "medicine",
         "computer-science",
         "political-science",
-        "psychology",
         "law",
         "biology",
         "mathematics",
@@ -6551,11 +7695,25 @@
         "environmental-science",
         "engineering",
         "philosophy",
-        "nursing",
         "maritime",
         "education",
         "allied-health"
-      ]
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Business Administration major in Human Resource Management",
+        "BS Business Administration major in Marketing Management",
+        "BS Entrepreneurship",
+        "Bachelor of Arts in Communication",
+        "Bachelor of Arts in Psychology",
+        "Bachelor of Multimedia Arts",
+        "BS Nursing",
+        "BS Civil Engineering",
+        "BS Computer Engineering",
+        "BS Mechanical Engineering",
+        "BS Electronics Engineering"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "university-of-perpetual-help-calamba",
@@ -6836,26 +7994,48 @@
       "tuition": "Approximately P20,000–P45,000 per semester (regular programs; Nursing and Pharmacy typically higher — AY 2026-2027 initial enrollment P5,000 regular / P8,000 CONP; full assessment via SERP; verify with Finance Office)",
       "website": "https://www.ua.edu.ph/",
       "riasecTags": [
-        "C",
-        "E",
-        "I",
         "R",
-        "S"
+        "I",
+        "A",
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
-        "education",
         "accountancy",
+        "accounting-information-system",
+        "architecture",
+        "civil-engineering",
+        "computer-engineering",
+        "industrial-engineering",
+        "information-technology",
         "nursing",
         "pharmacy",
+        "criminology",
+        "psychology",
+        "communication",
+        "education",
         "engineering",
-        "architecture",
-        "information-technology",
         "business",
         "hospitality",
         "tourism",
-        "arts-and-sciences",
-        "criminology"
-      ]
+        "arts-and-sciences"
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Accounting Information System",
+        "BS Architecture",
+        "BS Civil Engineering",
+        "BS Computer Engineering",
+        "BS Industrial Engineering",
+        "BS Information Technology",
+        "BS Nursing",
+        "BS Pharmacy",
+        "BS Criminology",
+        "BS Psychology",
+        "AB Communication"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ue-caloocan",
@@ -6872,14 +8052,42 @@
         "R",
         "I",
         "A",
+        "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-science-in-accountancy",
+        "bs-business-administration-major-in-marketing-management",
+        "bs-business-administration-major-in-business-management",
+        "bachelor-of-arts-in-communication",
+        "bachelor-of-science-in-hospitality-management",
+        "bachelor-of-science-in-tourism-management",
+        "bachelor-of-science-in-psychology",
+        "bachelor-of-science-in-criminology-with-specialization-in-cybersecurity",
+        "bachelor-of-science-in-civil-engineering",
+        "bachelor-of-science-in-computer-engineering",
+        "bachelor-of-science-in-computer-science",
+        "bachelor-of-science-in-information-technology",
         "business",
         "engineering",
         "arts"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Accountancy",
+        "BS Business Administration major in Marketing Management",
+        "BS Business Administration major in Business Management",
+        "Bachelor of Arts in Communication",
+        "Bachelor of Science in Hospitality Management",
+        "Bachelor of Science in Tourism Management",
+        "Bachelor of Science in Psychology",
+        "Bachelor of Science in Criminology with specialization in Cybersecurity",
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ue-manila",
@@ -6898,20 +8106,36 @@
         "I"
       ],
       "strengthTags": [
+        "engineering",
+        "computer-studies",
+        "nursing",
+        "psychology",
+        "legal-management",
+        "hospitality-management",
         "computer-science",
         "liberal-arts",
         "medicine",
         "biology",
-        "engineering",
         "environmental-science",
         "political-science",
         "law",
         "mathematics",
-        "psychology",
         "business",
-        "dentistry",
-        "computer-studies"
-      ]
+        "dentistry"
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Civil Engineering",
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of Science in Electrical Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Nursing",
+        "Bachelor of Science in Psychology",
+        "Bachelor of Science in Legal Management",
+        "Bachelor of Science in Hospitality Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "up-clark",
@@ -6925,12 +8149,16 @@
       "tuition": "Free tuition under RA 10931 for eligible students; UP socialized tuition for others",
       "website": "https://upepp.upd.edu.ph/",
       "riasecTags": [
-        "C",
-        "E",
+        "R",
         "I",
-        "S"
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
+        "business-management",
+        "business-economics",
+        "applied-psychology",
         "business",
         "economics",
         "psychology",
@@ -7123,19 +8351,25 @@
       "tuition": "Free under RA 10931 for eligible UP System students; socialized tuition and fees apply for others (verify on official UPOU site)",
       "website": "https://www.upou.edu.ph/",
       "riasecTags": [
-        "A",
-        "C",
-        "E",
+        "R",
         "I",
-        "S"
+        "A",
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
+        "multimedia-studies",
         "education",
-        "distance-education",
+        "information-technology",
+        "digital-design",
+        "entrepreneurship",
+        "instructional-design",
+        "education-studies",
         "open-distance-learning",
+        "distance-education",
         "development-communication",
         "multimedia",
-        "multimedia-studies",
         "information-systems",
         "public-health",
         "international-health",
@@ -7146,7 +8380,17 @@
         "climate-and-disaster-resilience",
         "moocs",
         "continuing-education"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Arts in Multimedia Studies",
+        "Bachelor of Education Studies",
+        "Associate in Arts",
+        "Associate of Science in Information Technology",
+        "Associate of Arts in Digital Design and Art",
+        "Associate of Arts in Digital Entrepreneurship",
+        "Associate of Science in Instructional Design and Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "valenzuela-city-school",
@@ -7205,17 +8449,43 @@
       "tuition": "Approximately P40,000-P60,000 per semester",
       "website": "https://www.wccaviation.com/",
       "riasecTags": [
-        "C",
-        "E",
+        "R",
         "I",
-        "R"
+        "A",
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
-        "aviation",
+        "aircraft-maintenance-technology",
         "aeronautical-engineering",
+        "avionics-technology",
+        "tourism-management",
+        "hospitality-management",
+        "business-administration",
+        "information-technology",
+        "criminology",
+        "communication",
+        "psychology",
+        "aviation",
         "tourism",
         "hospitality"
-      ]
+      ],
+      "popularCourses": [
+        "BS Aircraft Maintenance Technology",
+        "BS Aeronautical Engineering",
+        "BS Avionics Technology",
+        "BS Tourism Management with Flight Attendant Course",
+        "BS Hospitality Management",
+        "BS Business Administration major in Operations Management",
+        "BS Business Administration major in Marketing Management",
+        "BS Information Technology",
+        "BS Criminology",
+        "BA Communication",
+        "BS Psychology",
+        "Diploma in Aircraft Maintenance Technology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "cavite-westpoint",
@@ -7255,13 +8525,41 @@
         "R",
         "I",
         "S",
+        "E",
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-science-in-nursing",
+        "bachelor-of-science-in-medical-technology",
+        "bachelor-of-science-in-pharmacy",
+        "bachelor-of-science-in-psychology",
+        "bachelor-of-science-in-information-technology-specialized-in-cyber-security",
+        "bachelor-of-science-in-business-administration-major-in-marketing-management",
+        "bachelor-of-science-in-tourism-management-leading-to-flight-attendant",
+        "bachelor-of-science-in-hospitality-management-specialized-in-cruise-ship-management",
+        "bachelor-of-public-administration",
+        "bachelor-of-science-in-biology",
+        "bachelor-of-science-in-radiologic-technology",
+        "bachelor-of-science-in-physical-therapy-specialized-in-sports-therapy",
         "nursing",
         "medical-technology",
         "health-sciences"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Nursing",
+        "Bachelor of Science in Medical Technology",
+        "Bachelor of Science in Pharmacy",
+        "Bachelor of Science in Psychology",
+        "Bachelor of Science in Information Technology specialized in Cyber Security",
+        "Bachelor of Science in Business Administration major in Marketing Management",
+        "Bachelor of Science in Tourism Management leading to Flight Attendant",
+        "Bachelor of Science in Hospitality Management specialized in Cruise Ship Management",
+        "Bachelor of Public Administration",
+        "Bachelor of Science in Biology",
+        "Bachelor of Science in Radiologic Technology",
+        "Bachelor of Science in Physical Therapy specialized in Sports Therapy"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "world-citi-colleges-antipolo",
@@ -7277,15 +8575,39 @@
       "riasecTags": [
         "R",
         "I",
+        "A",
         "S",
         "E",
         "C"
       ],
       "strengthTags": [
+        "bachelor-of-science-in-accountancy",
+        "bachelor-of-science-in-information-technology-specialized-in-cyber-security",
+        "bachelor-of-science-in-tourism-management-leading-to-flight-attendant",
+        "bachelor-of-science-in-hospitality-management-specialized-in-cruise-ship-management",
+        "bachelor-of-science-in-criminology",
+        "bachelor-of-science-in-business-administration-major-in-marketing-management",
+        "bachelor-of-arts-in-communication",
+        "bachelor-of-science-in-entertainment-and-multimedia-computing-major-in-game-development",
+        "bachelor-of-science-in-real-estate-management",
+        "bachelor-of-science-in-nursing",
         "nursing",
         "criminology",
         "tourism-management"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Science in Information Technology specialized in Cyber Security",
+        "Bachelor of Science in Tourism Management leading to Flight Attendant",
+        "Bachelor of Science in Hospitality Management specialized in Cruise Ship Management",
+        "Bachelor of Science in Criminology",
+        "Bachelor of Science in Business Administration major in Marketing Management",
+        "Bachelor of Arts in Communication",
+        "Bachelor of Science in Entertainment and Multimedia Computing major in Game Development",
+        "Bachelor of Science in Real Estate Management",
+        "Bachelor of Science in Nursing"
+      ],
+      "programSource": "official_website"
     }
   ]
 }

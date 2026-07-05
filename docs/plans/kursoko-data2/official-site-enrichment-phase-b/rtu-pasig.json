@@ -1,0 +1,16 @@
+{
+  "research_id": "phase-b-rtu-pasig",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "rtu-pasig",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "rtu-pasig",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education"
+    ]
+  }
+}

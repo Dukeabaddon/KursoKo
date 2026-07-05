@@ -1,0 +1,59 @@
+{
+  "research_id": "official-site-meycauayan-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "meycauayan-college",
+  "source_type": "official_website",
+  "university": {
+    "id": "meycauayan-college",
+    "name": "Meycauayan College",
+    "website": "https://www.meycauayancollege.edu.ph/",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration",
+      "Bachelor in Elementary Education",
+      "Bachelor of Secondary Education",
+      "BS Hospitality Management",
+      "BS Travel Management",
+      "BS Criminology",
+      "BS Accounting Information Systems",
+      "BS Legal Management",
+      "BS Business Management",
+      "BS Management Accounting",
+      "Bachelor of Physical Education"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "business",
+      "education",
+      "hospitality",
+      "travel-management",
+      "criminology",
+      "legal-management",
+      "physical-education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://meycauayancollege.edu.ph/area-of-accountancy-and-allied-courses/",
+      "note": "Accountancy, Accounting Information Systems, Management Accounting, Legal Management"
+    },
+    {
+      "url": "https://meycauayancollege.edu.ph/area-of-business-administration/",
+      "note": "BS Business Administration (Financial, Marketing), BS Business Management"
+    },
+    {
+      "url": "https://meycauayancollege.edu.ph/area-of-education-arts-and-sciences/",
+      "note": "BEEd, BSEd (Biological Science, English, Filipino, Math, Values Education), BPE"
+    },
+    {
+      "url": "https://meycauayancollege.edu.ph/area-of-hospitality-management-and-related-programs/",
+      "note": "BS Hospitality Management, BS Travel Management"
+    },
+    {
+      "url": "https://meycauayancollege.edu.ph/area-of-criminal-justice-education/",
+      "note": "BS Criminology"
+    }
+  ],
+  "courses_research_notes": "Programs organized by academic areas on official site. Education area also lists BPE (School PE, Sports and Wellness Management). Accountancy area includes BSAIS and BSMA in addition to BSA. Criminology is government-recognized (Level III per 2025 recognition post). Ten undergraduate programs selected as representative of all five academic areas."
+}

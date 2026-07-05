@@ -1,0 +1,28 @@
+{
+  "research_id": "official-phase-c-sti-shs",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "sti-shs",
+  "source_type": "official_website",
+  "university": {
+    "id": "sti-shs",
+    "popularCourses": [
+      "STEM Strand",
+      "Accountancy, Business and Management (ABM) Strand",
+      "Humanities and Social Sciences (HUMSS) Strand",
+      "General Academic Strand (GAS)"
+    ],
+    "strengthTags": [
+      "stem",
+      "abm",
+      "humss",
+      "general-academic"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.sti.edu/programs-shs.asp",
+      "note": "Official STI SHS academic track strands"
+    }
+  ]
+}

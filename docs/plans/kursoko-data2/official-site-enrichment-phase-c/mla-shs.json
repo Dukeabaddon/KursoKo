@@ -1,0 +1,20 @@
+{
+  "research_id": "official-phase-c-mla-shs",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "mla-shs",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "mla-shs",
+    "popularCourses": [],
+    "strengthTags": []
+  },
+  "sources": [
+    {
+      "url": "https://www.ue.edu.ph/mla/",
+      "note": "Official UE Manila SHS strand page not found after 2 tries"
+    }
+  ],
+  "blocked_note": "Official site unreachable after 2 fetch attempts"
+}

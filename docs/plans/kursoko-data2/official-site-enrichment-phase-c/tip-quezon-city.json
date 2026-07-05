@@ -1,0 +1,37 @@
+{
+  "research_id": "official-phase-c-tip-quezon-city",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "tip-quezon-city",
+  "source_type": "official_website",
+  "university": {
+    "id": "tip-quezon-city",
+    "popularCourses": [
+      "BS Civil Engineering",
+      "BS Computer Engineering",
+      "BS Electrical Engineering",
+      "BS Electronics Engineering",
+      "BS Mechanical Engineering",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Architecture",
+      "BS Hospitality Management",
+      "BS Tourism Management"
+    ],
+    "strengthTags": [
+      "engineering",
+      "computer-engineering",
+      "information-technology",
+      "computer-science",
+      "architecture",
+      "hospitality-management",
+      "tourism-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.tip.edu.ph/academic-programs",
+      "note": "Official TIP academic programs"
+    }
+  ]
+}

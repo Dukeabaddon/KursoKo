@@ -1,0 +1,28 @@
+{
+  "research_id": "official-phase-c-roosevelt-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "roosevelt-college",
+  "source_type": "official_website",
+  "university": {
+    "id": "roosevelt-college",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Business Administration",
+      "BS Multimedia Arts"
+    ],
+    "website": "https://feuroosevelt.edu.ph/",
+    "strengthTags": [
+      "information-technology",
+      "business",
+      "multimedia-arts"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://feuroosevelt.edu.ph/frequently-asked-questions/",
+      "note": "Official FEU Roosevelt FAQ — Marikina campus tertiary programs"
+    }
+  ],
+  "courses_research_notes": "Roosevelt College is now FEU Roosevelt. Marikina campus college programs per official FAQ."
+}

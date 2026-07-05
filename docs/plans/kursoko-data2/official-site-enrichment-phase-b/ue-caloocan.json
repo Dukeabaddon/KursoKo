@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-ue-caloocan",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ue-caloocan",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "ue-caloocan",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Civil Engineering",
+      "BS Mechanical Engineering",
+      "AB Multimedia Arts",
+      "AB Fine Arts"
+    ]
+  }
+}

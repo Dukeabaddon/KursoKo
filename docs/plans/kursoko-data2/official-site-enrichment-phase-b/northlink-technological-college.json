@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-northlink-technological-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "northlink-technological-college",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "northlink-technological-college",
+    "popularCourses": [
+      "BS Civil Engineering",
+      "BS Mechanical Engineering",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Criminology",
+      "BS Forensic Science"
+    ]
+  }
+}

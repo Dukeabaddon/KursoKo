@@ -1,0 +1,16 @@
+{
+  "research_id": "phase-b-world-citi-colleges",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "world-citi-colleges",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "world-citi-colleges",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Health Sciences",
+      "BS Medical Technology",
+      "BS Biology"
+    ]
+  }
+}

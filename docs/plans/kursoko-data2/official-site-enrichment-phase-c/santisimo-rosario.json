@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-santisimo-rosario",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "santisimo-rosario",
+  "source_type": "official_website",
+  "university": {
+    "id": "santisimo-rosario",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official sdca.edu.ph has no degree name catalog on fetched pages"
+}

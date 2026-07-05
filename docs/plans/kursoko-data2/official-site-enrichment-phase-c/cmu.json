@@ -1,0 +1,30 @@
+{
+  "research_id": "official-phase-c-cmu",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "cmu",
+  "source_type": "official_website",
+  "university": {
+    "id": "cmu",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Criminology",
+      "BS Computer Engineering",
+      "BS Electronics Engineering"
+    ],
+    "strengthTags": [
+      "information-technology",
+      "business",
+      "criminology",
+      "computer-engineering"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://cityofmalabonuniversity.edu.ph/program-offerings/",
+      "note": "Official City of Malabon University program offerings (correct site; cmu.edu.ph is Central Mindanao)"
+    }
+  ]
+}

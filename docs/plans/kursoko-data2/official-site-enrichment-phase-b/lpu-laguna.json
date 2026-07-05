@@ -1,0 +1,22 @@
+{
+  "research_id": "phase-b-lpu-laguna",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "lpu-laguna",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "lpu-laguna",
+    "popularCourses": [
+      "AB Communication",
+      "AB Political Science",
+      "BS Public Administration",
+      "Bachelor of Laws",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Environmental Science",
+      "BS Biology"
+    ]
+  }
+}

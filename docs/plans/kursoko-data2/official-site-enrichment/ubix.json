@@ -1,0 +1,55 @@
+{
+  "research_id": "official-site-ubix",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ubix",
+  "source_type": "official_website",
+  "university": {
+    "id": "ubix",
+    "name": "UBIX Institute of Technologies",
+    "website": "https://www.ubix.edu.ph/",
+    "popularCourses": [
+      "BS Hospitality Management",
+      "BS Tourism Management",
+      "BS Business Administration",
+      "BS Operations Management",
+      "Housekeeping NC II",
+      "Caregiving NC II"
+    ],
+    "strengthTags": [
+      "hospitality",
+      "tourism",
+      "business",
+      "operations-management",
+      "tesda",
+      "housekeeping",
+      "caregiving",
+      "service-industry"
+    ],
+    "description": "Corporate-affiliated college (U-BIX Colleges Inc., formerly U-BIX Institute of Technology) in Muntinlupa, focused on hospitality, tourism, business, and TESDA-accredited service programs with enrollment-to-employment pipelines through the U-BIX Group.",
+    "tuition": "Not published online on official site as of 2026-07-05 — contact admissions for current fee schedule"
+  },
+  "sources": [
+    {
+      "url": "https://ubixcollegesinc.edu.ph/higher-education/",
+      "note": "Official higher education page — BS Hospitality Management, BS Tourism Management, BS Business Administration"
+    },
+    {
+      "url": "https://ubixcollegesinc.edu.ph/",
+      "note": "Official homepage — U-BIX Colleges Inc.; alumni testimonial references BS Operations Management"
+    },
+    {
+      "url": "https://ubixcollegesinc.edu.ph/tesda/",
+      "note": "Official TESDA page — Housekeeping NC II, Caregiving NC II"
+    },
+    {
+      "url": "https://ubixcollegesinc.edu.ph/shs/",
+      "note": "Official SHS page — Academic and TechPro tracks (excluded from popularCourses)"
+    },
+    {
+      "url": "https://www.ubix.edu.ph/",
+      "note": "Runtime website URL (503 Service Unavailable during research; ubixcollegesinc.edu.ph is the live official site)"
+    }
+  ],
+  "courses_research_notes": "Institution rebranded to U-BIX Colleges Inc. (formerly U-BIX Institute of Technology, Inc.); campus at Km. 21 East Service Road, Sucat, Muntinlupa — not Mandaluyong as runtime states. Official site publicly lists only three baccalaureate programs; BS Operations Management corroborated by official alumni story on homepage. TESDA NC II programs included because they are prominently listed on the official TESDA page. Runtime strengthTags (information-technology, cybersecurity, digital-arts) are not supported by current official program pages — enrichment reflects hospitality/tourism/business/service focus only. Fewer than 8 popularCourses because the official public catalog is small; do not fabricate IT programs."
+}

@@ -1,0 +1,55 @@
+{
+  "research_id": "official-site-west-negros",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "west-negros",
+  "source_type": "official_website",
+  "university": {
+    "id": "west-negros",
+    "name": "STI West Negros University",
+    "website": "https://www.stiwnu.edu.ph/",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Information Systems",
+      "BS Civil Engineering",
+      "BS Mechanical Engineering",
+      "BS Electrical Engineering",
+      "BS Electronics Engineering",
+      "BS Chemical Engineering",
+      "BS Accountancy",
+      "BS Business Administration",
+      "BS Criminology",
+      "BS Hospitality Management"
+    ],
+    "strengthTags": [
+      "information-technology",
+      "computer-science",
+      "engineering",
+      "civil-engineering",
+      "mechanical-engineering",
+      "electrical-engineering",
+      "electronics-engineering",
+      "chemical-engineering",
+      "accountancy",
+      "business",
+      "criminology",
+      "hospitality"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.stiwnu.com/sti/admissionsti",
+      "note": "Official admissions handbook — full list of degree programs with board-exam and open-admission policies"
+    },
+    {
+      "url": "https://www.sti.edu/campuses-details.asp?campus_id=V05V",
+      "note": "STI network campus page — tertiary program inventory for Bacolod (STI WNU)"
+    },
+    {
+      "url": "https://www.stiwnu.edu.ph/",
+      "note": "Runtime primary website (returned 503 during research; stiwnu.com mirrors official admissions content)"
+    }
+  ],
+  "courses_research_notes": "Programs from official STI WNU admissions policy (stiwnu.com). Six colleges: CEAS, CCJE, CICT, CBMA, CHTM, COE. Also offers BS Tourism Management, BS Psychology, BS Mathematics, BS Management Accounting, BS Retail Technology and Consumer Science, BA Communication, BA English, and education degrees (BEEd, BSEd, BPEd, BECE) — omitted here in favor of engineering, IT, business, criminology, and hospitality flagship programs. Graduate MBA/MPA/MAEd/DBA/DPA/PhD offered but excluded."
+}

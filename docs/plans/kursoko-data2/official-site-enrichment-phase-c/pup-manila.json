@@ -1,0 +1,39 @@
+{
+  "research_id": "official-phase-c-pup-manila",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "pup-manila",
+  "source_type": "official_website",
+  "university": {
+    "id": "pup-manila",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Architecture",
+      "BS Civil Engineering",
+      "BS Computer Engineering",
+      "BS Electrical Engineering",
+      "BS Electronics Engineering",
+      "BS Industrial Engineering",
+      "BS Mechanical Engineering",
+      "BS Information Technology",
+      "BS Psychology",
+      "BS Business Administration Major in Marketing Management",
+      "BS Biology"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "architecture",
+      "engineering",
+      "information-technology",
+      "psychology",
+      "business-administration",
+      "biology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.pup.edu.ph/academic/undergrad",
+      "note": "Official PUP Sta. Mesa undergraduate programs"
+    }
+  ]
+}

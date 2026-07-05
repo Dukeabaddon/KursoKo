@@ -1,0 +1,28 @@
+{
+  "research_id": "official-phase-c-colegio-ng-lungsod-ng-batangas",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "colegio-ng-lungsod-ng-batangas",
+  "source_type": "official_website",
+  "university": {
+    "id": "colegio-ng-lungsod-ng-batangas",
+    "popularCourses": [
+      "Bachelor of Elementary Education",
+      "Bachelor of Technology and Livelihood Education",
+      "Bachelor of Physical Education",
+      "BS Accountancy",
+      "BS Business Administration"
+    ],
+    "strengthTags": [
+      "education",
+      "accountancy",
+      "business"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.clb.edu.ph/",
+      "note": "Official CLB homepage program list"
+    }
+  ]
+}

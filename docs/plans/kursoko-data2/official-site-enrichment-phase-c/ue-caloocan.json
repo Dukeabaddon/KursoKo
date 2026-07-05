@@ -1,0 +1,52 @@
+{
+  "research_id": "official-phase-c-ue-caloocan",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ue-caloocan",
+  "source_type": "official_website",
+  "university": {
+    "id": "ue-caloocan",
+    "popularCourses": [
+      "Bachelor of Science in Accountancy",
+      "BS Business Administration major in Marketing Management",
+      "BS Business Administration major in Business Management",
+      "Bachelor of Arts in Communication",
+      "Bachelor of Science in Hospitality Management",
+      "Bachelor of Science in Tourism Management",
+      "Bachelor of Science in Psychology",
+      "Bachelor of Science in Criminology with specialization in Cybersecurity",
+      "Bachelor of Science in Civil Engineering",
+      "Bachelor of Science in Computer Engineering",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Information Technology"
+    ],
+    "strengthTags": [
+      "bachelor-of-science-in-accountancy",
+      "bs-business-administration-major-in-marketing-management",
+      "bs-business-administration-major-in-business-management",
+      "bachelor-of-arts-in-communication",
+      "bachelor-of-science-in-hospitality-management",
+      "bachelor-of-science-in-tourism-management",
+      "bachelor-of-science-in-psychology",
+      "bachelor-of-science-in-criminology-with-specialization-in-cybersecurity",
+      "bachelor-of-science-in-civil-engineering",
+      "bachelor-of-science-in-computer-engineering",
+      "bachelor-of-science-in-computer-science",
+      "bachelor-of-science-in-information-technology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.ue.edu.ph/cal/college-of-arts-and-sciences-2/",
+      "note": "UE Caloocan CAS programs"
+    },
+    {
+      "url": "https://www.ue.edu.ph/cal/college-of-engineering-2/",
+      "note": "UE Caloocan College of Engineering"
+    },
+    {
+      "url": "https://www.ue.edu.ph/cal/bs-business-administration/",
+      "note": "UE Caloocan CBA programs"
+    }
+  ]
+}

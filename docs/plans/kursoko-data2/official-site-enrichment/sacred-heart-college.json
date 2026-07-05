@@ -1,0 +1,56 @@
+{
+  "research_id": "official-site-sacred-heart-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "sacred-heart-college",
+  "source_type": "official_website",
+  "university": {
+    "id": "sacred-heart-college",
+    "name": "Sacred Heart College",
+    "website": "https://www.shc.edu.ph/",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Pharmacy",
+      "BS Psychology",
+      "BS Computer Science",
+      "BA Communication",
+      "BS Accountancy",
+      "BS Management Accounting",
+      "BS Business Administration",
+      "BS Social Work",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education"
+    ],
+    "strengthTags": [
+      "nursing",
+      "pharmacy",
+      "psychology",
+      "computer-science",
+      "communication",
+      "accountancy",
+      "business",
+      "social-work",
+      "education",
+      "health-sciences"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.shc.edu.ph/",
+      "note": "Official homepage — Sacred Heart College of Lucena City, Inc.; Vincentian Catholic institution"
+    },
+    {
+      "url": "https://shc.edu.ph/higher-education-programs/",
+      "note": "Official higher education degree program index (BED, HED, graduate divisions)"
+    },
+    {
+      "url": "https://shc.edu.ph/courses/bachelor-of-science-in-business-administration-bsba/",
+      "note": "BSBA program page — majors in Financial Management, Marketing Management, HRM, Business Economics"
+    },
+    {
+      "url": "https://shc.edu.ph/graduate-education-programs/",
+      "note": "Graduate programs — MAEd, MSN (excluded from popularCourses)"
+    }
+  ],
+  "courses_research_notes": "URL verified: https://www.shc.edu.ph/ serves Sacred Heart College of Lucena City, Quezon (Cordians). This is NOT a Laguna campus — runtime region metadata appears misassigned. Official HED programs: AB Communication, BS Management Accounting, BSA, BSP, BSCS, BSN, BS Pharmacy, BSBA (FM/MM), BSSW, BEEd, BSEd (English, Science, Math, Filipino, Social Studies). BSEd listed as one entry with multiple majors. Graduate MAEd and MSN offered but excluded."
+}

@@ -1,0 +1,75 @@
+{
+  "research_id": "official-phase-a-arellano-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "arellano-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "arellano-university",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Criminology",
+      "BS Accountancy",
+      "BS Business Administration Major in Marketing Management",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Pharmacy",
+      "BS Medical Technology",
+      "BS Physical Therapy",
+      "BS Hospitality Management",
+      "BS Tourism Management",
+      "BS Psychology"
+    ],
+    "strengthTags": [
+      "nursing",
+      "criminology",
+      "accountancy",
+      "business-administration",
+      "computer-science",
+      "information-technology",
+      "pharmacy",
+      "medical-technology",
+      "physical-therapy",
+      "hospitality-management",
+      "tourism-management",
+      "psychology",
+      "education",
+      "law"
+    ],
+    "description": "Multi-campus Manila private university known for nursing, criminology, allied health, business, IT, and education programs across NCR campuses."
+  },
+  "sources": [
+    {
+      "url": "https://www.arellano.edu.ph/undergrad",
+      "note": "Official undergraduate colleges index"
+    },
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/college-nursing",
+      "note": "College of Nursing — BS Nursing"
+    },
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/college-criminal-justice-education",
+      "note": "College of Criminal Justice Education — BS Criminology"
+    },
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/school-business-administration",
+      "note": "School of Business Administration — BSBA majors"
+    },
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/information-technology-education-ite-cluster",
+      "note": "ITE Cluster — BS CS, BS IT, BS Information Systems"
+    },
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/institute-accountancy",
+      "note": "Institute of Accountancy — BS Accountancy"
+    },
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/college-pharmacy",
+      "note": "College of Pharmacy — BS Pharmacy"
+    },
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/college-medical-laboratory-science",
+      "note": "College of Medical Laboratory Science — BS Medical Technology"
+    }
+  ]
+}

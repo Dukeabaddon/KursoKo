@@ -1,0 +1,39 @@
+{
+  "research_id": "official-phase-c-pup-shs",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "pup-shs",
+  "source_type": "official_website",
+  "university": {
+    "id": "pup-shs",
+    "popularCourses": [
+      "Accountancy, Business and Management (ABM) Strand",
+      "Science, Technology, Engineering and Mathematics (STEM) Strand",
+      "Humanities and Social Sciences (HUMSS) Strand",
+      "General Academic (GAS) Strand",
+      "Arts and Design Track",
+      "TVL Information and Communications Technology Strand"
+    ],
+    "website": "https://www.pup.edu.ph/",
+    "strengthTags": [
+      "shs",
+      "abm",
+      "stem",
+      "humss",
+      "gas",
+      "arts-and-design",
+      "tvl"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.pup.edu.ph/shs/",
+      "note": "Official PUP SHS — STEM and ABM strands"
+    },
+    {
+      "url": "https://www.pup.edu.ph/academic/programs",
+      "note": "Official PUP academic programs — SHS tracks including TVL ICT"
+    }
+  ],
+  "courses_research_notes": "TVL ICT explicitly listed on official academic programs page."
+}

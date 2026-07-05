@@ -1,0 +1,56 @@
+{
+  "research_id": "official-phase-c-auf",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "auf",
+  "source_type": "official_website",
+  "university": {
+    "id": "auf",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration major in Marketing Management",
+      "BS Hospitality Management",
+      "BS Tourism Management",
+      "BS Computer Science",
+      "BS Information Technology",
+      "Bachelor of Multimedia Arts",
+      "BS Psychology",
+      "AB in Communication",
+      "BS Human Biology",
+      "BS Medical Technology",
+      "BS Pharmacy"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "business-administration",
+      "hospitality-management",
+      "tourism-management",
+      "computer-science",
+      "information-technology",
+      "multimedia",
+      "psychology",
+      "communication",
+      "human-biology",
+      "medical-technology",
+      "pharmacy"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.auf.edu.ph/home/articles.php?article=147",
+      "note": "College of Business Administration program catalog"
+    },
+    {
+      "url": "https://www.auf.edu.ph/home/articles.php?article=149",
+      "note": "College of Computer Studies program catalog"
+    },
+    {
+      "url": "https://www.auf.edu.ph/home/articles.php?article=151",
+      "note": "College of Arts and Sciences program catalog"
+    },
+    {
+      "url": "https://www.auf.edu.ph/home/articles.php?article=79",
+      "note": "College of Allied Medical Professions program catalog"
+    }
+  ]
+}

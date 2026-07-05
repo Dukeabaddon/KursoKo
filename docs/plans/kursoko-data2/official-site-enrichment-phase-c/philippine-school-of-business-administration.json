@@ -1,0 +1,34 @@
+{
+  "research_id": "official-phase-c-philippine-school-of-business-administration",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "philippine-school-of-business-administration",
+  "source_type": "official_website",
+  "university": {
+    "id": "philippine-school-of-business-administration",
+    "popularCourses": [
+      "Accountancy, Business and Management (ABM) Strand",
+      "Humanities and Social Sciences (HUMSS) Strand",
+      "General Academic (GAS) Strand"
+    ],
+    "website": "https://www.psba.edu/",
+    "strengthTags": [
+      "shs",
+      "abm",
+      "humss",
+      "gas",
+      "business"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.psba.edu/en/faqs/senior-hs-faqs/",
+      "note": "Official PSBA SHS FAQ — ABM, HUMSS, GAS strands; ABM classes conducted"
+    },
+    {
+      "url": "https://www.psba.edu/en/programs/",
+      "note": "Official PSBA programs index (Manila campus)"
+    }
+  ],
+  "courses_research_notes": "Official SHS strands verified. Undergraduate program names not listed on accessible official pages; college programs not included."
+}

@@ -1,0 +1,17 @@
+{
+  "research_id": "phase-b-manila-science",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "manila-science",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "manila-science",
+    "popularCourses": [
+      "STEM Strand",
+      "Accountancy, Business and Management (ABM) Strand",
+      "Humanities and Social Sciences (HUMSS) Strand",
+      "General Academic Strand (GAS)",
+      "Technical-Vocational-Livelihood (TVL) Strand"
+    ]
+  }
+}

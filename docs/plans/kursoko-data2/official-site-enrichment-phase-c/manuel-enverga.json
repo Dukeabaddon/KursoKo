@@ -1,0 +1,43 @@
+{
+  "research_id": "official-phase-c-manuel-enverga",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "manuel-enverga",
+  "source_type": "official_website",
+  "university": {
+    "id": "manuel-enverga",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration major in Marketing Management",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Nursing",
+      "BS Criminology",
+      "BS Hospitality Management",
+      "BS Tourism Management",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education major in English",
+      "Bachelor of Arts in Communication",
+      "BS Civil Engineering"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "business-administration",
+      "computer-science",
+      "information-technology",
+      "nursing",
+      "criminology",
+      "hospitality-management",
+      "tourism-management",
+      "education",
+      "communication",
+      "civil-engineering"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mseuf.edu.ph/programs",
+      "note": "Official MSEUF offered academic programs listing"
+    }
+  ]
+}

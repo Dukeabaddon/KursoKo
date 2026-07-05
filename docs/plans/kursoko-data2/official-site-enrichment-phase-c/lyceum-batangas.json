@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-lyceum-batangas",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "lyceum-batangas",
+  "source_type": "official_website",
+  "university": {
+    "id": "lyceum-batangas",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Cybersecurity",
+      "Bachelor of Arts in Communication",
+      "BS Criminology",
+      "BS Nursing",
+      "BS Pharmacy",
+      "BS Marine Transportation",
+      "BS Marine Engineering",
+      "BS International Hospitality Management",
+      "BS International Tourism Management"
+    ],
+    "strengthTags": [
+      "bs-accountancy",
+      "bs-computer-science",
+      "bs-information-technology",
+      "bs-cybersecurity",
+      "bachelor-of-arts-in-communication",
+      "bs-criminology",
+      "bs-nursing",
+      "bs-pharmacy",
+      "bs-marine-transportation",
+      "bs-marine-engineering",
+      "bs-international-hospitality-management",
+      "bs-international-tourism-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://lpubatangas.edu.ph/admissions/college-high-school-and-certificate-programs/",
+      "note": "Official LPU Batangas board and non-board program list"
+    }
+  ]
+}

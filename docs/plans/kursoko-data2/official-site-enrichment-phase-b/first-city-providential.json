@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-first-city-providential",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "first-city-providential",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "first-city-providential",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Industrial Technology",
+      "BS Engineering Technology"
+    ]
+  }
+}

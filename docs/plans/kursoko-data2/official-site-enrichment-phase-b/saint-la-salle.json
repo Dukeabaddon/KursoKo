@@ -1,0 +1,16 @@
+{
+  "research_id": "phase-b-saint-la-salle",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "saint-la-salle",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "saint-la-salle",
+    "popularCourses": [
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Business Administration",
+      "BS Accountancy"
+    ]
+  }
+}

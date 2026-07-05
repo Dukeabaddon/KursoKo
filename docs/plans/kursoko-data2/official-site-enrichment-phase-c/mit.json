@@ -1,0 +1,33 @@
+{
+  "research_id": "official-phase-c-mit",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "mit",
+  "source_type": "official_website",
+  "university": {
+    "id": "mit",
+    "popularCourses": [
+      "BS Computer Engineering",
+      "BS Electronics Engineering",
+      "BS Industrial Engineering",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Civil Engineering",
+      "BS Mechanical Engineering",
+      "BS Architecture"
+    ],
+    "strengthTags": [
+      "engineering",
+      "computer-engineering",
+      "information-technology",
+      "computer-science",
+      "architecture"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.mapua.edu.ph/pages/academics/undergraduate-programs",
+      "note": "Official Mapua undergraduate programs"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-datamex-institute-of-computer-technology-caloocan",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "datamex-institute-of-computer-technology-caloocan",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "datamex-institute-of-computer-technology-caloocan",
+    "popularCourses": []
+  },
+  "sources": [],
+  "blocked_note": "Official site https://www.datamex.edu.ph/ HTTP 503 on retry"
+}

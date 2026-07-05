@@ -1,0 +1,39 @@
+{
+  "research_id": "official-phase-c-bulacan-polytechnic",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "bulacan-polytechnic",
+  "source_type": "official_website",
+  "university": {
+    "id": "bulacan-polytechnic",
+    "popularCourses": [
+      "Associate in Computer Technology",
+      "BS Accounting Information System",
+      "BS Customs Administration",
+      "BS Information Systems",
+      "BS Office Management",
+      "BS Technical-Vocational Teacher Education",
+      "Diploma in Hotel and Restaurant Management Technology"
+    ],
+    "strengthTags": [
+      "information-systems",
+      "office-management",
+      "accounting-information-system",
+      "customs-administration",
+      "technical-vocational-teacher-education",
+      "hospitality-management",
+      "computer-technology"
+    ],
+    "website": "https://www.bpc.edu.ph/"
+  },
+  "sources": [
+    {
+      "url": "https://admission.bpc.edu.ph/",
+      "note": "Official Malolos campus CHED program list"
+    },
+    {
+      "url": "https://bpc.edu.ph/techvoc-programs/",
+      "note": "Official TESDA/TVET program offerings"
+    }
+  ]
+}

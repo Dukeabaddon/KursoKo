@@ -1,0 +1,61 @@
+{
+  "research_id": "official-phase-c-san-pablo-colleges",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "san-pablo-colleges",
+  "source_type": "official_website",
+  "university": {
+    "id": "san-pablo-colleges",
+    "popularCourses": [
+      "Bachelor of Science in Nursing",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Psychology",
+      "Bachelor of Arts in Communication",
+      "BS Financial Technology",
+      "BS Human Resource Management",
+      "BS Marketing Management",
+      "BS Hospitality Management",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education",
+      "BS Real Estate Management"
+    ],
+    "strengthTags": [
+      "nursing",
+      "computer-science",
+      "information-technology",
+      "psychology",
+      "communication",
+      "financial-technology",
+      "human-resource-management",
+      "marketing-management",
+      "hospitality-management",
+      "elementary-education",
+      "secondary-education",
+      "real-estate-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://sanpablocolleges.edu.ph/college-of-nursing",
+      "note": "College of Nursing BSN program"
+    },
+    {
+      "url": "https://sanpablocolleges.edu.ph/college-of-computer-studies",
+      "note": "College of Computer Studies programs"
+    },
+    {
+      "url": "https://sanpablocolleges.edu.ph/college-of-arts-and-science",
+      "note": "College of Arts and Sciences programs"
+    },
+    {
+      "url": "https://sanpablocolleges.edu.ph/college-of-business-administration",
+      "note": "College of Business Management programs"
+    },
+    {
+      "url": "https://sanpablocolleges.edu.ph/college-of-education",
+      "note": "College of Education programs"
+    }
+  ],
+  "courses_research_notes": "Runtime website lists spc.edu.ph (St. Peter's College Iligan). Verified programs sourced from sanpablocolleges.edu.ph (San Pablo City, Laguna)."
+}

@@ -1,0 +1,43 @@
+{
+  "research_id": "official-phase-c-philippine-christian-university-dasma",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "philippine-christian-university-dasma",
+  "source_type": "official_website",
+  "university": {
+    "id": "philippine-christian-university-dasma",
+    "popularCourses": [
+      "Bachelor of Science in Business Administration",
+      "Bachelor of Science in Office Administration",
+      "Bachelor of Science in Criminology",
+      "Bachelor of Early Childhood Education",
+      "Bachelor of Secondary Education major in English",
+      "Bachelor of Science in Hospitality Management",
+      "Bachelor of Science in Tourism Management",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Information Technology",
+      "Bachelor of Science in Information System",
+      "Bachelor of Science in Nursing",
+      "Bachelor of Multimedia Arts"
+    ],
+    "strengthTags": [
+      "business-administration",
+      "office-administration",
+      "criminology",
+      "education",
+      "hospitality-management",
+      "tourism-management",
+      "computer-science",
+      "information-technology",
+      "information-systems",
+      "nursing",
+      "multimedia"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://pcu.edu.ph/undergraduate-programs/",
+      "note": "Official PCU undergraduate programs catalog"
+    }
+  ]
+}

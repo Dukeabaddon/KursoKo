@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-colegio-de-san-jose",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "colegio-de-san-jose",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "colegio-de-san-jose",
+    "popularCourses": []
+  },
+  "sources": [],
+  "blocked_note": "Official site https://www.csjmalolos.edu.ph/ timeout on retry"
+}

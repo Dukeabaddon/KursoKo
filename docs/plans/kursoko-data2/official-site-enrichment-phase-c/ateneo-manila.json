@@ -1,0 +1,47 @@
+{
+  "research_id": "official-phase-c-ateneo-manila",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ateneo-manila",
+  "source_type": "official_website",
+  "university": {
+    "id": "ateneo-manila",
+    "popularCourses": [
+      "BS Management Engineering",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Applied Mathematics",
+      "AB Psychology",
+      "AB Economics",
+      "AB Political Science",
+      "BS Biology",
+      "BS Chemistry",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education",
+      "BS Legal Management"
+    ],
+    "strengthTags": [
+      "management-engineering",
+      "computer-science",
+      "information-technology",
+      "mathematics",
+      "psychology",
+      "economics",
+      "political-science",
+      "biology",
+      "chemistry",
+      "education",
+      "legal-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.ateneo.edu/ls",
+      "note": "Official Ateneo de Manila Loyola Schools programs"
+    },
+    {
+      "url": "https://www.ateneo.edu/ashs/academics",
+      "note": "Cross-reference Ateneo academic tracks"
+    }
+  ]
+}

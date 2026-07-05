@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-plp",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "plp",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "plp",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Information Technology",
+      "BS Computer Science",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education"
+    ]
+  }
+}

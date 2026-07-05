@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-marcelino-fule",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "marcelino-fule",
+  "source_type": "official_website",
+  "university": {
+    "id": "marcelino-fule",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official site unreachable; no verified program catalog fetched"
+}

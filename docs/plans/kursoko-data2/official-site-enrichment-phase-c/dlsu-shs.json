@@ -1,0 +1,26 @@
+{
+  "research_id": "official-phase-c-dlsu-shs",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "dlsu-shs",
+  "source_type": "official_website",
+  "university": {
+    "id": "dlsu-shs",
+    "popularCourses": [
+      "Academic Track — Engineering Elective Cluster",
+      "Academic Track — Computing Elective Cluster",
+      "Academic Track — Life Science Elective Cluster",
+      "Academic Track — Business Elective Cluster",
+      "Academic Track — Liberal Arts Elective Cluster"
+    ],
+    "strengthTags": [
+      "engineering"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.dlsu.edu.ph/admission/senior-high-school-admission/",
+      "note": "Official DLSU SHS admission FAQ — academic track clusters"
+    }
+  ]
+}

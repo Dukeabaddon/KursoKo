@@ -1,0 +1,38 @@
+{
+  "research_id": "official-phase-c-earist",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "earist",
+  "source_type": "official_website",
+  "university": {
+    "id": "earist",
+    "popularCourses": [
+      "BS Civil Engineering",
+      "BS Computer Engineering",
+      "BS Electrical Engineering",
+      "BS Mechanical Engineering",
+      "BS Computer Science",
+      "BS Business Administration Major in Marketing Management",
+      "BS Office Administration Major in Office Management",
+      "BS Architecture"
+    ],
+    "strengthTags": [
+      "engineering",
+      "computer-engineering",
+      "computer-science",
+      "business-administration",
+      "office-administration",
+      "architecture"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://earist.edu.ph/instruction/",
+      "note": "Official EARIST program offerings"
+    },
+    {
+      "url": "https://earist.edu.ph/college-of-engineering/cen-program-offerings/",
+      "note": "College of Engineering programs"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "research_id": "phase-b-perpetual-help-las-pinas",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "perpetual-help-las-pinas",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "perpetual-help-las-pinas",
+    "popularCourses": [
+      "AB Communication",
+      "AB Political Science",
+      "Doctor of Medicine",
+      "BS Biology",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Public Administration",
+      "BS Psychology",
+      "AB Psychology",
+      "Bachelor of Laws"
+    ]
+  }
+}

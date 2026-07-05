@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-unciano",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "unciano",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "unciano",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Health Sciences",
+      "Doctor of Medicine",
+      "BS Biology",
+      "BS Physical Therapy",
+      "BS Medical Technology"
+    ]
+  }
+}

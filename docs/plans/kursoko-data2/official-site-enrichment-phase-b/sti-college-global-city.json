@@ -1,0 +1,16 @@
+{
+  "research_id": "phase-b-sti-college-global-city",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "sti-college-global-city",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "sti-college-global-city",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Business Administration",
+      "BS Marketing Management"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-ue-manila",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ue-manila",
+  "source_type": "official_website",
+  "university": {
+    "id": "ue-manila",
+    "popularCourses": [
+      "Bachelor of Science in Civil Engineering",
+      "Bachelor of Science in Computer Engineering",
+      "Bachelor of Science in Electrical Engineering",
+      "Bachelor of Science in Mechanical Engineering",
+      "Bachelor of Science in Information Technology",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Nursing",
+      "Bachelor of Science in Psychology",
+      "Bachelor of Science in Legal Management",
+      "Bachelor of Science in Hospitality Management"
+    ],
+    "strengthTags": [
+      "engineering",
+      "computer-studies",
+      "nursing",
+      "psychology",
+      "legal-management",
+      "hospitality-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.ue.edu.ph/mla/cengg-mla-curricular-offerings/",
+      "note": "College of Engineering Manila curricular offerings"
+    },
+    {
+      "url": "https://www.ue.edu.ph/mla/ccss-curricular-offerings/",
+      "note": "College of Computer Studies and Systems programs"
+    },
+    {
+      "url": "https://www.ue.edu.ph/mla/cas-curricular-offerings-2/",
+      "note": "College of Arts and Sciences programs"
+    }
+  ]
+}

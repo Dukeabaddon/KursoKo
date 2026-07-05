@@ -1,0 +1,22 @@
+{
+  "research_id": "phase-b-arellano-university-pasay",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "arellano-university-pasay",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "arellano-university-pasay",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Criminology",
+      "BS Nursing",
+      "BS Business Administration",
+      "BS Marketing Management",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "AB Communication",
+      "BS Biology",
+      "BS Hospitality Management"
+    ]
+  }
+}

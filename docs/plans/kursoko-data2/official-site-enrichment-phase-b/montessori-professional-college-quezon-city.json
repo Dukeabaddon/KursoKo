@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-montessori-professional-college-quezon-city",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "montessori-professional-college-quezon-city",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "montessori-professional-college-quezon-city",
+    "popularCourses": [
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Business Administration",
+      "BS Marketing Management",
+      "BS Hospitality Management",
+      "BS Hotel and Restaurant Management"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-quezon-city-science",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "quezon-city-science",
+  "source_type": "official_website",
+  "university": {
+    "id": "quezon-city-science",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official qcscience.gov.ph unreachable; no SHS strand catalog"
+}

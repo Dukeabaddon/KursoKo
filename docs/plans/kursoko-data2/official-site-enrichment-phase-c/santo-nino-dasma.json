@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-santo-nino-dasma",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "santo-nino-dasma",
+  "source_type": "official_website",
+  "university": {
+    "id": "santo-nino-dasma",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official site unreachable; no verified program catalog fetched"
+}

@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-southville",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "southville",
+  "source_type": "official_website",
+  "university": {
+    "id": "southville",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration",
+      "BS Information Technology",
+      "BS Nursing",
+      "BS Pharmacy",
+      "BS Psychology",
+      "BS Medical Technology",
+      "BS Radiologic Technology",
+      "BS Tourism",
+      "AB Communication",
+      "AB Multimedia Arts",
+      "Bachelor of Elementary Education Special Education"
+    ],
+    "website": "https://www.southville.edu.ph/",
+    "strengthTags": [
+      "accountancy",
+      "business",
+      "information-technology",
+      "nursing",
+      "pharmacy",
+      "psychology",
+      "medical-technology",
+      "tourism",
+      "communication",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.southville.edu.ph/academics/college-programs/",
+      "note": "Official Southville college programs index"
+    }
+  ],
+  "courses_research_notes": "Maps to runtime id southville-international when synced."
+}

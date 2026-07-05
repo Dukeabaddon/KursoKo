@@ -1,0 +1,34 @@
+{
+  "research_id": "official-phase-c-pup-tagui",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "pup-tagui",
+  "source_type": "official_website",
+  "university": {
+    "id": "pup-tagui",
+    "popularCourses": [
+      "BS Business Administration Major in Human Resource Management",
+      "BS Business Administration Major in Marketing Management",
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Mechanical Engineering",
+      "Bachelor of Early Childhood Education",
+      "Bachelor of Secondary Education Major in English",
+      "Bachelor of Secondary Education Major in Mathematics",
+      "BS Office Administration Major in Legal Transcription"
+    ],
+    "website": "https://www.pup.edu.ph/",
+    "strengthTags": [
+      "business",
+      "information-technology",
+      "engineering",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.pup.edu.ph/academic/programs",
+      "note": "Official PUP academic programs — Taguig City branch list"
+    }
+  ]
+}

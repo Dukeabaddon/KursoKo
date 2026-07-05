@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-christian-college-tanauan",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "christian-college-tanauan",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "christian-college-tanauan",
+    "popularCourses": [
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Industrial Technology",
+      "BS Engineering Technology"
+    ]
+  }
+}

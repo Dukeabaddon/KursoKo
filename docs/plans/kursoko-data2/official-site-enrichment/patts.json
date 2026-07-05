@@ -1,0 +1,70 @@
+{
+  "research_id": "official-site-patts",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "patts",
+  "source_type": "official_website",
+  "university": {
+    "id": "patts",
+    "name": "PATTS College of Aeronautics",
+    "website": "https://www.patts.edu.ph/",
+    "popularCourses": [
+      "BS Aeronautical Engineering",
+      "BS Aircraft Maintenance Technology",
+      "BS Air Transportation",
+      "BS Avionics Technology",
+      "BS Industrial Engineering",
+      "BS Airline Business Administration",
+      "BS Tourism Management",
+      "Aircraft Technician Course"
+    ],
+    "strengthTags": [
+      "aeronautical-engineering",
+      "aircraft-maintenance",
+      "air-transportation",
+      "avionics",
+      "industrial-engineering",
+      "aviation",
+      "airline-business-administration",
+      "tourism-management",
+      "tourism",
+      "engineering",
+      "technology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.patts.edu.ph/academics/academic-programs",
+      "note": "Official academic programs hub — engineering, technology, management, diploma, and SHS pathways"
+    },
+    {
+      "url": "https://www.patts.edu.ph/programs/bs-aeronautical-engineering",
+      "note": "BS Aeronautical Engineering — Level III PACUCOA/FAAP; PRC AELE licensure track"
+    },
+    {
+      "url": "https://www.patts.edu.ph/programs/bs-aircraft-maintenance-technology",
+      "note": "BS Aircraft Maintenance Technology — CAAP-approved skill test facility"
+    },
+    {
+      "url": "https://www.patts.edu.ph/programs/bs-air-transportation",
+      "note": "BS Air Transportation — air traffic control and airline logistics"
+    },
+    {
+      "url": "https://www.patts.edu.ph/programs/bs-avionics-technology",
+      "note": "BS Avionics Technology — aviation electronics and instrumentation"
+    },
+    {
+      "url": "https://www.patts.edu.ph/programs/bs-industrial-engineering",
+      "note": "BS Industrial Engineering — aviation MRO and operations research"
+    },
+    {
+      "url": "https://www.patts.edu.ph/programs/bs-airline-business-administration",
+      "note": "BS Airline Business Administration — airline marketing and cargo operations"
+    },
+    {
+      "url": "https://www.patts.edu.ph/programs/bs-tourism-management",
+      "note": "BS Tourism Management — Level III PACUCOA; cabin crew and tour operations"
+    }
+  ],
+  "courses_research_notes": "PATTS publicly lists eight collegiate offerings (homepage: '8 Academic Programs'): six four-year BS degrees, BS Tourism Management, and the two-year Aircraft Technician Course diploma. CHED/TESDA/PRC/CAAP-accredited; CAAP ATO for airframe, powerplant, and avionics. SHS STEM and ABM strands feed into these programs but are excluded from popularCourses. Runtime already had BS Aeronautical Engineering; enrichment adds the full official aviation portfolio."
+}

@@ -1,0 +1,29 @@
+{
+  "research_id": "official-phase-c-mcc",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "mcc",
+  "source_type": "official_website",
+  "university": {
+    "id": "mcc",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Hospitality Management",
+      "BS Tourism Management",
+      "Bachelor of Elementary Education",
+      "BS Business Administration"
+    ],
+    "strengthTags": [
+      "information-technology",
+      "hospitality",
+      "tourism",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mcc.edu.ph/about-mcc/faqs",
+      "note": "Official Mabalacat City College FAQ program list"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "research_id": "official-phase-c-ateneo-shs",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ateneo-shs",
+  "source_type": "official_website",
+  "university": {
+    "id": "ateneo-shs",
+    "popularCourses": [
+      "Accountancy, Business and Management (ABM) Strand",
+      "General Academic (GA) Strand",
+      "Humanities and Social Sciences (HUMSS) Strand",
+      "Science, Technology, Engineering and Mathematics (STEM) Strand"
+    ],
+    "strengthTags": [
+      "shs",
+      "abm",
+      "humss",
+      "stem"
+    ],
+    "website": "https://www.ateneo.edu/junior-and-senior-high-school"
+  },
+  "sources": [
+    {
+      "url": "https://www.ateneo.edu/ashs/academics",
+      "note": "Official ASHS academic track strands — no TVL offered"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "research_id": "official-phase-c-up-open-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "up-open-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "up-open-university",
+    "popularCourses": [
+      "Bachelor of Arts in Multimedia Studies",
+      "Bachelor of Education Studies",
+      "Associate in Arts",
+      "Associate of Science in Information Technology",
+      "Associate of Arts in Digital Design and Art",
+      "Associate of Arts in Digital Entrepreneurship",
+      "Associate of Science in Instructional Design and Technology"
+    ],
+    "strengthTags": [
+      "multimedia-studies",
+      "education",
+      "information-technology",
+      "digital-design",
+      "entrepreneurship",
+      "instructional-design"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://registrar.upou.edu.ph/undergraduate-bulletin/",
+      "note": "Official UPOU undergraduate admissions bulletin listing all seven programs"
+    },
+    {
+      "url": "https://registrar.upou.edu.ph/bachelors-program/",
+      "note": "Official UPOU bachelor's degree programs"
+    },
+    {
+      "url": "https://registrar.upou.edu.ph/associate-degree-program/",
+      "note": "Official UPOU associate degree programs"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-valenzuela-city-school",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "valenzuela-city-school",
+  "source_type": "official_website",
+  "university": {
+    "id": "valenzuela-city-school",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official valenzuela.gov.ph blocked; no SHS strand catalog"
+}

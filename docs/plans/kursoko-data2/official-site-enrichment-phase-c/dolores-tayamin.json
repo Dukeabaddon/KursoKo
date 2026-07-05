@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-dolores-tayamin",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "dolores-tayamin",
+  "source_type": "official_website",
+  "university": {
+    "id": "dolores-tayamin",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official twa.edu.ph unreachable; no verified program catalog fetched"
+}

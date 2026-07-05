@@ -1,0 +1,22 @@
+{
+  "research_id": "phase-b-university-of-batangas",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "university-of-batangas",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "university-of-batangas",
+    "popularCourses": [
+      "AB Communication",
+      "AB Political Science",
+      "Doctor of Medicine",
+      "BS Biology",
+      "BS Environmental Science",
+      "BS Public Administration",
+      "BS Psychology",
+      "AB Psychology",
+      "AB Sociology",
+      "Bachelor of Laws"
+    ]
+  }
+}

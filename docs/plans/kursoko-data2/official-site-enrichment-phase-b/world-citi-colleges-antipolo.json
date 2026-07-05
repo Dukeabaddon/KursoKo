@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-world-citi-colleges-antipolo",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "world-citi-colleges-antipolo",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "world-citi-colleges-antipolo",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Health Sciences",
+      "BS Criminology",
+      "BS Forensic Science",
+      "BS Tourism Management",
+      "BS Hospitality Management"
+    ]
+  }
+}

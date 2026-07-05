@@ -1,0 +1,33 @@
+{
+  "research_id": "official-phase-c-san-beda-shs",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "san-beda-shs",
+  "source_type": "official_website",
+  "university": {
+    "id": "san-beda-shs",
+    "popularCourses": [
+      "STEM Health and Allied Sciences Cluster",
+      "STEM Engineering Cluster",
+      "Arts, Social Sciences and Humanities Cluster",
+      "Business and Entrepreneurship Cluster",
+      "Sports Health and Wellness Cluster",
+      "Tech-Pro Digital Services and Creative Technologies Cluster"
+    ],
+    "website": "https://sanbeda-alabang.edu.ph/",
+    "strengthTags": [
+      "shs",
+      "stem",
+      "humss",
+      "abm",
+      "tech-pro"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://sanbeda-alabang.edu.ph/programs/basic-education/integrated-pre-k-12-education-nursery-kindergarten-to-grade-12-high-school/",
+      "note": "Official San Beda College Alabang strengthened SHS curriculum SY 2026-2027"
+    }
+  ],
+  "courses_research_notes": "Strengthened SHS: Academic Track clusters and Tech-Pro track per official San Beda Alabang site. TVL/Tech-Pro explicitly offered."
+}

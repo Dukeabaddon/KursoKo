@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-roosevelt",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "roosevelt",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "roosevelt",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Criminology",
+      "BS Forensic Science"
+    ]
+  }
+}

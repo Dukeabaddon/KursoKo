@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-trinity-university-general-trias",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "trinity-university-general-trias",
+  "source_type": "official_website",
+  "university": {
+    "id": "trinity-university-general-trias",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "No General Trias campus program list on official tua.edu.ph"
+}

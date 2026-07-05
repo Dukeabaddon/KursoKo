@@ -1,0 +1,52 @@
+{
+  "research_id": "official-phase-c-university-of-batangas",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "university-of-batangas",
+  "source_type": "official_website",
+  "university": {
+    "id": "university-of-batangas",
+    "popularCourses": [
+      "Bachelor of Science in Accountancy",
+      "Bachelor of Science in Business Administration",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Information Technology",
+      "Bachelor of Science in Information Systems",
+      "Bachelor of Arts in Communication",
+      "Bachelor of Science in Psychology",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education",
+      "Bachelor of Early Childhood Education",
+      "Bachelor of Science in International Hospitality Management",
+      "Bachelor of Science in Tourism Management"
+    ],
+    "strengthTags": [
+      "bachelor-of-science-in-accountancy",
+      "bachelor-of-science-in-business-administration",
+      "bachelor-of-science-in-computer-science",
+      "bachelor-of-science-in-information-technology",
+      "bachelor-of-science-in-information-systems",
+      "bachelor-of-arts-in-communication",
+      "bachelor-of-science-in-psychology",
+      "bachelor-of-elementary-education",
+      "bachelor-of-secondary-education",
+      "bachelor-of-early-childhood-education",
+      "bachelor-of-science-in-international-hospitality-management",
+      "bachelor-of-science-in-tourism-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://ub.edu.ph/ubbc/college-of-business-accountancy-and-hospitality-management/",
+      "note": "UB Batangas CBAHM"
+    },
+    {
+      "url": "https://ub.edu.ph/ubbc/information-and-communications-technology/",
+      "note": "UB Batangas CICT"
+    },
+    {
+      "url": "https://ub.edu.ph/ubbc/college-of-education/",
+      "note": "UB Batangas College of Education"
+    }
+  ]
+}

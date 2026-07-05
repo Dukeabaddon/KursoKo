@@ -1,0 +1,63 @@
+{
+  "research_id": "official-phase-a-dls-medical",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "dls-medical",
+  "source_type": "official_website",
+  "university": {
+    "id": "dls-medical",
+    "popularCourses": [
+      "Doctor of Medicine",
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "BS Medical Laboratory Science",
+      "BS Physical Therapy",
+      "BS Occupational Therapy",
+      "BS Radiologic Technology",
+      "BS Biochemistry",
+      "BS Biotechnology",
+      "BS Speech and Language Pathology",
+      "BS Nuclear Medicine Technology"
+    ],
+    "strengthTags": [
+      "medicine",
+      "nursing",
+      "dentistry",
+      "pharmacy",
+      "medical-laboratory-science",
+      "physical-therapy",
+      "occupational-therapy",
+      "radiologic-technology",
+      "biochemistry",
+      "biotechnology",
+      "speech-language-pathology",
+      "nuclear-medicine",
+      "allied-health",
+      "sciences"
+    ],
+    "description": "Premier De La Salle health sciences institute in Dasmariñas, Cavite offering medicine, nursing, dentistry, pharmacy, and allied health undergraduate and graduate programs."
+  },
+  "sources": [
+    {
+      "url": "https://www.dlshsi.edu.ph/academics/",
+      "note": "Official academics hub — undergraduate degree program summary"
+    },
+    {
+      "url": "https://www.dlshsi.edu.ph/",
+      "note": "Official homepage — college listing and program overview"
+    },
+    {
+      "url": "https://www.dlshsi.edu.ph/academics/admission/undergraduate/course-offerings/course-offerings",
+      "note": "Official undergraduate course offerings / admissions"
+    },
+    {
+      "url": "https://www.dlshsi.edu.ph/academics/college-nursing/",
+      "note": "College of Nursing — BS Nursing"
+    },
+    {
+      "url": "https://www.dlshsi.edu.ph/academics/college-medicine/",
+      "note": "College of Medicine — Doctor of Medicine (postgraduate)"
+    }
+  ]
+}

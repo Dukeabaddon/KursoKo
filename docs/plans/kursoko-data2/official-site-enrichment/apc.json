@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-a-apc",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "apc",
+  "source_type": "official_website",
+  "university": {
+    "id": "apc",
+    "popularCourses": [
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Computer Engineering",
+      "BS Accountancy",
+      "BS Business Administration",
+      "Bachelor of Multimedia Arts",
+      "BS Civil Engineering",
+      "BA Psychology",
+      "BS Tourism Management"
+    ],
+    "strengthTags": [
+      "computer-science",
+      "information-technology",
+      "computer-engineering",
+      "accountancy",
+      "business-administration",
+      "multimedia",
+      "civil-engineering",
+      "psychology",
+      "tourism-management",
+      "engineering"
+    ],
+    "description": "Makati IT-focused college (IBM Philippines and SM Foundation joint venture) offering computing, engineering, business, multimedia arts, and tourism programs."
+  },
+  "sources": [
+    {
+      "url": "https://www.apc.edu.ph/programs/",
+      "note": "Official programs page — undergraduate degree list"
+    },
+    {
+      "url": "https://www.apc.edu.ph/",
+      "note": "Official homepage"
+    }
+  ]
+}

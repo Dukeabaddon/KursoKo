@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-makati-science",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "makati-science",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "makati-science",
+    "popularCourses": []
+  },
+  "sources": [],
+  "blocked_note": "No official SHS strand catalog on makati.gov.ph"
+}

@@ -1,0 +1,52 @@
+{
+  "research_id": "official-phase-c-philippine-womens-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "philippine-womens-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "philippine-womens-university",
+    "popularCourses": [
+      "Bachelor of Science in Nursing",
+      "Bachelor of Science in Pharmacy",
+      "Bachelor of Arts in Communication",
+      "Bachelor of Arts in Psychology",
+      "Bachelor of Science in Accountancy",
+      "Bachelor of Science in Business Administration major in Marketing Management",
+      "Bachelor of Science in Information Technology",
+      "Bachelor of Science in Environmental Science",
+      "Bachelor of Elementary Education",
+      "Bachelor of Music in Music Education"
+    ],
+    "strengthTags": [
+      "nursing",
+      "pharmacy",
+      "communication",
+      "psychology",
+      "accountancy",
+      "business-administration",
+      "information-technology",
+      "environmental-science",
+      "teacher-education",
+      "music"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.pwu.edu.ph/school-list/nursing/",
+      "note": "School of Nursing courses offered"
+    },
+    {
+      "url": "https://www.pwu.edu.ph/school-list/pharmacy/",
+      "note": "School of Pharmacy courses offered"
+    },
+    {
+      "url": "https://www.pwu.edu.ph/school-list/arts-and-sciences/",
+      "note": "School of Arts and Sciences undergraduate programs"
+    },
+    {
+      "url": "https://www.pwu.edu.ph/school-list/cbibe/",
+      "note": "Conrado Benitez Institute for Business Education programs"
+    }
+  ]
+}

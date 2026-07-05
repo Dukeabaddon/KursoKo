@@ -1,0 +1,43 @@
+{
+  "research_id": "official-phase-c-union-college-laguna",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "union-college-laguna",
+  "source_type": "official_website",
+  "university": {
+    "id": "union-college-laguna",
+    "popularCourses": [
+      "BS Criminology",
+      "BS Tourism Management",
+      "BS Psychology",
+      "BS Accountancy",
+      "BS Management Accounting",
+      "BSBA Major in Marketing Management",
+      "BSBA Major in Financial Management",
+      "BSED Major in English",
+      "BSED Major in Filipino",
+      "Bachelor of Elementary Education",
+      "BS Hospitality Management",
+      "BS Information Technology"
+    ],
+    "strengthTags": [
+      "criminology",
+      "tourism-management",
+      "psychology",
+      "accountancy",
+      "management-accounting",
+      "marketing-management",
+      "financial-management",
+      "secondary-education",
+      "elementary-education",
+      "hospitality-management",
+      "information-technology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://laguna.phinma.edu.ph/academics/",
+      "note": "PHINMA Union College of Laguna official academics page"
+    }
+  ]
+}

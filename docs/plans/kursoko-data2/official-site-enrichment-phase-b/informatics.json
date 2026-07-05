@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-informatics",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "informatics",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "informatics",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Business Administration",
+      "BS Accountancy",
+      "AB English Language Studies",
+      "Bachelor of Secondary Education Major in English"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "research_id": "official-phase-c-antipolo-science",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "antipolo-science",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "antipolo-science",
+    "popularCourses": [],
+    "strengthTags": []
+  },
+  "sources": [
+    {
+      "url": "https://www.antipolo.gov.ph/",
+      "note": "No official SHS program catalog URL"
+    }
+  ],
+  "blocked_note": "No official SHS program catalog on antipolo.gov.ph"
+}

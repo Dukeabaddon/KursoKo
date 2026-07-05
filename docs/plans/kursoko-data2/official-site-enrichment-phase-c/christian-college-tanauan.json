@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-christian-college-tanauan",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "christian-college-tanauan",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "christian-college-tanauan",
+    "popularCourses": []
+  },
+  "sources": [],
+  "blocked_note": "Official site https://www.cct.edu.ph/ timeout on retry"
+}

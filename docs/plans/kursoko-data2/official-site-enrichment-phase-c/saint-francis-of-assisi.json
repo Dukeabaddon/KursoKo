@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-saint-francis-of-assisi",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "saint-francis-of-assisi",
+  "source_type": "official_website",
+  "university": {
+    "id": "saint-francis-of-assisi",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Computer Science",
+      "BS Business Administration Major in Financial Management",
+      "BS Business Administration Major in Marketing Management",
+      "BS Business Administration Major in Operations Management",
+      "BS Hospitality Management",
+      "BS Electrical Engineering",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education",
+      "AB Psychology"
+    ],
+    "website": "https://stfrancis.edu.ph/",
+    "strengthTags": [
+      "nursing",
+      "computer-science",
+      "business",
+      "hospitality",
+      "engineering",
+      "education",
+      "psychology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://stfrancis.edu.ph/collegeprogram/",
+      "note": "Official SFAC college department — schools and degree programs"
+    },
+    {
+      "url": "https://stfrancis.edu.ph/college/sfac-course-offerings.html",
+      "note": "Official SFAC course offerings by department"
+    }
+  ]
+}

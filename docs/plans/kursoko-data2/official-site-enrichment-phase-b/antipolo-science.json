@@ -1,0 +1,17 @@
+{
+  "research_id": "phase-b-antipolo-science",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "antipolo-science",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "antipolo-science",
+    "popularCourses": [
+      "STEM Strand",
+      "Accountancy, Business and Management (ABM) Strand",
+      "Humanities and Social Sciences (HUMSS) Strand",
+      "General Academic Strand (GAS)",
+      "Technical-Vocational-Livelihood (TVL) Strand"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "research_id": "official-phase-c-pup-san-juan",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "pup-san-juan",
+  "source_type": "official_website",
+  "university": {
+    "id": "pup-san-juan",
+    "popularCourses": [
+      "BS Business Administration Major in Human Resource Management",
+      "BS Business Administration Major in Marketing Management",
+      "BS Information Technology",
+      "BS Office Administration",
+      "Bachelor of Secondary Education Major in English",
+      "Bachelor of Secondary Education Major in Mathematics"
+    ],
+    "strengthTags": [
+      "business-administration",
+      "information-technology",
+      "office-administration",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.pup.edu.ph/academic/programs",
+      "note": "Official PUP academic programs by campus"
+    }
+  ]
+}

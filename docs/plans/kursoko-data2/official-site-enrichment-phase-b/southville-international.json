@@ -1,0 +1,16 @@
+{
+  "research_id": "phase-b-southville-international",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "southville-international",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "southville-international",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Information Technology",
+      "BS Computer Science"
+    ]
+  }
+}

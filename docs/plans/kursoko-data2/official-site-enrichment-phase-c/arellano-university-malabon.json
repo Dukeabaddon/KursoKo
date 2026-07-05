@@ -1,0 +1,37 @@
+{
+  "research_id": "official-phase-c-arellano-university-malabon",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "arellano-university-malabon",
+  "source_type": "official_website",
+  "university": {
+    "id": "arellano-university-malabon",
+    "popularCourses": [
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Information Systems",
+      "BS Nursing",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Criminology",
+      "BS Psychology"
+    ],
+    "strengthTags": [
+      "information-technology",
+      "computer-science",
+      "nursing",
+      "business",
+      "criminology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/information-technology-education-ite-cluster/",
+      "note": "Official AU undergrad ITE cluster program list"
+    },
+    {
+      "url": "https://www.arellano.edu.ph/undergrad/",
+      "note": "Official AU undergraduate colleges overview"
+    }
+  ]
+}

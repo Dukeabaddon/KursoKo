@@ -1,0 +1,31 @@
+{
+  "research_id": "official-phase-c-informatics",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "informatics",
+  "source_type": "official_website",
+  "university": {
+    "id": "informatics",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Information Systems",
+      "BS Business Administration",
+      "BS Office Administration"
+    ],
+    "strengthTags": [
+      "information-technology",
+      "computer-science",
+      "information-systems",
+      "stem",
+      "business-administration",
+      "office-administration"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://informatics.edu.ph/programs/bachelors-degree-programs/",
+      "note": "Official Informatics bachelor's programs"
+    }
+  ]
+}

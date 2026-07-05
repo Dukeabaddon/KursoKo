@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-batangas-provincial",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "batangas-provincial",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "batangas-provincial",
+    "popularCourses": [
+      "BS Agriculture",
+      "BS Agribusiness",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Industrial Technology",
+      "BS Engineering Technology"
+    ]
+  }
+}

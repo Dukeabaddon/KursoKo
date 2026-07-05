@@ -1,0 +1,56 @@
+{
+  "research_id": "official-phase-c-ncst",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ncst",
+  "source_type": "official_website",
+  "university": {
+    "id": "ncst",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Architecture",
+      "BS Business Administration",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Criminology",
+      "BS Customs Administration",
+      "BS Electronics Engineering",
+      "BS Entrepreneurship",
+      "BS Hospitality Management",
+      "BS Industrial Engineering",
+      "BS Industrial Security Management",
+      "BS Information Technology",
+      "BS Management Accounting",
+      "BS Office Administration",
+      "BS Psychology",
+      "BS Public Administration",
+      "BS Real Estate Management",
+      "BS Tourism Management",
+      "Bachelor of Secondary Education"
+    ],
+    "website": "https://www.ncst.edu.ph/",
+    "strengthTags": [
+      "accountancy",
+      "architecture",
+      "business",
+      "engineering",
+      "computer-science",
+      "information-technology",
+      "criminology",
+      "hospitality",
+      "tourism",
+      "education",
+      "psychology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://admissions.ncst.edu.ph/CollegeRegistration",
+      "note": "Official NCST college registration — full desired course dropdown"
+    },
+    {
+      "url": "https://main.ncst.edu.ph/",
+      "note": "Official NCST Education System main site"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "research_id": "official-phase-c-icct-colleges-taytay",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "icct-colleges-taytay",
+  "source_type": "official_website",
+  "university": {
+    "id": "icct-colleges-taytay",
+    "popularCourses": [
+      "Bachelor of Science in Accountancy",
+      "Bachelor of Science in Information Technology",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Computer Engineering",
+      "Bachelor of Science in Psychology",
+      "Bachelor of Science in Legal Management"
+    ],
+    "strengthTags": [
+      "information-technology",
+      "computer-science",
+      "computer-engineering",
+      "accountancy",
+      "psychology",
+      "engineering",
+      "legal-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.icct.edu.ph/programs",
+      "note": "Official ICCT Colleges program catalog"
+    }
+  ]
+}

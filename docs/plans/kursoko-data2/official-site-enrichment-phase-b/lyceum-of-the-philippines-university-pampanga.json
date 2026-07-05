@@ -1,0 +1,22 @@
+{
+  "research_id": "phase-b-lyceum-of-the-philippines-university-pampanga",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "lyceum-of-the-philippines-university-pampanga",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "lyceum-of-the-philippines-university-pampanga",
+    "popularCourses": [
+      "AB Communication",
+      "AB Political Science",
+      "BS Public Administration",
+      "Bachelor of Laws",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Environmental Science",
+      "BS Biology"
+    ]
+  }
+}

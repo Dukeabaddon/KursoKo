@@ -1,0 +1,36 @@
+{
+  "research_id": "official-phase-c-colegio-san-agustin-bacolod",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "colegio-san-agustin-bacolod",
+  "source_type": "official_website",
+  "university": {
+    "id": "colegio-san-agustin-bacolod",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Information Technology",
+      "BS Business Administration",
+      "BS Nursing",
+      "BS Civil Engineering",
+      "BS Criminology",
+      "BS Psychology"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "information-technology",
+      "nursing",
+      "engineering",
+      "criminology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.csab.edu.ph/cabecs/",
+      "note": "Official CSA-Bacolod CABECS courses"
+    },
+    {
+      "url": "https://www.csab.edu.ph/programs-offered/",
+      "note": "Official CSA-Bacolod programs offered overview"
+    }
+  ]
+}

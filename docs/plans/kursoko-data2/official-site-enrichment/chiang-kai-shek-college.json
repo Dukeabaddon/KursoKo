@@ -1,0 +1,56 @@
+{
+  "research_id": "official-phase-a-chiang-kai-shek-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "chiang-kai-shek-college",
+  "source_type": "official_website",
+  "university": {
+    "id": "chiang-kai-shek-college",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration Major in Management",
+      "BS Business Administration Major in Marketing Management",
+      "BS Information Technology",
+      "BS Accounting Information System",
+      "BS Entrepreneurship",
+      "BS Hospitality Management",
+      "Bachelor of Secondary Education Major in Chinese Literature",
+      "Bachelor of Secondary Education Major in Teaching Chinese Language",
+      "Bachelor of Secondary Education Major in Mathematics with Computer Applications"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "business-administration",
+      "information-technology",
+      "accounting-information-system",
+      "entrepreneurship",
+      "hospitality-management",
+      "secondary-education",
+      "chinese-language",
+      "education"
+    ],
+    "description": "Filipino-Chinese institution in Manila offering business, accountancy, IT, hospitality, and Chinese-focused teacher education at its Narra Campus higher-education unit."
+  },
+  "sources": [
+    {
+      "url": "https://college.cksc.edu.ph/component/content/category/12-academic-programs",
+      "note": "Official CKS College (Narra Campus) undergraduate program list"
+    },
+    {
+      "url": "https://college.cksc.edu.ph/academic-programs/undergraduate/business-and-accountancy",
+      "note": "School of Business and Accountancy — BSA, BSAIS, BSBA, BSEnt"
+    },
+    {
+      "url": "https://college.cksc.edu.ph/academic-programs/undergraduate/information-technology-education/bs-in-info-tech",
+      "note": "Official BS Information Technology program page"
+    },
+    {
+      "url": "https://college.cksc.edu.ph/academic-programs/undergraduate/education/secondary-education",
+      "note": "Official Bachelor of Secondary Education majors"
+    },
+    {
+      "url": "https://www.cksc.edu.ph/",
+      "note": "Official CKSC main site — college admissions and program orientations"
+    }
+  ]
+}

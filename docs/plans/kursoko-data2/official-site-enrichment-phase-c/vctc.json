@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-vctc",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "vctc",
+  "source_type": "official_website",
+  "university": {
+    "id": "vctc",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official valenzuela.gov.ph blocked; no verified program catalog"
+}

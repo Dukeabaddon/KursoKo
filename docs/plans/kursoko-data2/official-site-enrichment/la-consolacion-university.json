@@ -1,0 +1,62 @@
+{
+  "research_id": "official-site-lcup",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "la-consolacion-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "la-consolacion-university",
+    "name": "La Consolacion University Philippines",
+    "website": "https://www.lcup.edu.ph/",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Accountancy",
+      "BS Business Administration",
+      "BS Hospitality Management",
+      "BS Tourism Management",
+      "BS Medical Technology",
+      "BS Radiologic Technology",
+      "BS Physical Therapy",
+      "BS Information Technology",
+      "BS Computer Engineering",
+      "BS Industrial Engineering",
+      "Bachelor of Secondary Education"
+    ],
+    "strengthTags": [
+      "nursing",
+      "accountancy",
+      "business",
+      "hospitality",
+      "tourism",
+      "medical-technology",
+      "radiologic-technology",
+      "physical-therapy",
+      "information-technology",
+      "engineering",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://lcup.edu.ph/admission_program_offered.php",
+      "note": "Official programs offered — CITHM, CBEA, CAMP, CASE, CITE colleges"
+    },
+    {
+      "url": "https://lcup.edu.ph/cithm.php",
+      "note": "College of International Tourism and Hospitality Management — BSHM, BSTM"
+    },
+    {
+      "url": "https://lcup.edu.ph/cbea_bsba.php",
+      "note": "CBEA — BS Accountancy, BSBA majors (Financial, Marketing, HRDM, Operations)"
+    },
+    {
+      "url": "https://www.lcup.edu.ph/camp_sidebar_bsrt.php",
+      "note": "College of Allied Medical Professions — Nursing, Medical Technology, Radiologic Technology, Physical Therapy"
+    },
+    {
+      "url": "https://lcup.edu.ph/cite.php",
+      "note": "College of Information Technology and Engineering — BSIT, BSIE, BSCpE"
+    }
+  ],
+  "courses_research_notes": "Undergraduate programs from official admission and college pages. LCUP organizes programs under CITHM, CBEA, CAMP, CASE, and CITE. CASE also offers BECEd, BS Social Work, AB Communication Arts, AB Psychology, and multiple BSEd majors. College of Medicine (MD) is graduate-level and excluded. CAMP RTLE has documented topnotcher performance."
+}

@@ -1,0 +1,40 @@
+{
+  "research_id": "official-phase-c-tip-manila",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "tip-manila",
+  "source_type": "official_website",
+  "university": {
+    "id": "tip-manila",
+    "popularCourses": [
+      "Bachelor of Science in Chemical Engineering",
+      "Bachelor of Science in Civil Engineering",
+      "Bachelor of Science in Computer Engineering",
+      "Bachelor of Science in Electrical Engineering",
+      "Bachelor of Science in Electronics Engineering",
+      "Bachelor of Science in Industrial Engineering",
+      "Bachelor of Science in Mechanical Engineering",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Information Systems",
+      "Bachelor of Science in Information Technology"
+    ],
+    "strengthTags": [
+      "engineering",
+      "chemical-engineering",
+      "civil-engineering",
+      "computer-engineering",
+      "electrical-engineering",
+      "electronics-engineering",
+      "industrial-engineering",
+      "computer-science",
+      "information-systems",
+      "information-technology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://dru.tip.edu.ph/",
+      "note": "Official TIP site listing ABET-accredited engineering and computing programs"
+    }
+  ]
+}

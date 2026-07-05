@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-cavite-state-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "cavite-state-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "cavite-state-university",
+    "popularCourses": [
+      "BS Agriculture",
+      "BS Environmental Science",
+      "BS Biology",
+      "BS Psychology",
+      "BS Accountancy",
+      "BS Business Management",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Civil Engineering",
+      "BS Nursing",
+      "Bachelor of Secondary Education",
+      "BS Hospitality Management"
+    ],
+    "strengthTags": [
+      "agriculture",
+      "environmental-science",
+      "biology",
+      "psychology",
+      "accountancy",
+      "business-management",
+      "computer-science",
+      "information-technology",
+      "civil-engineering",
+      "nursing",
+      "education",
+      "hospitality-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://cvsu.edu.ph/course-offerings/",
+      "note": "Official CvSU undergraduate and graduate course offerings"
+    }
+  ]
+}

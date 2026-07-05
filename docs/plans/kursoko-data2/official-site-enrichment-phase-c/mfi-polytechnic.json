@@ -1,0 +1,20 @@
+{
+  "research_id": "official-phase-c-mfi-polytechnic",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "mfi-polytechnic",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "mfi-polytechnic",
+    "popularCourses": [],
+    "strengthTags": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mfi.org.ph/",
+      "note": "Official program list not extractable after 2 tries"
+    }
+  ],
+  "blocked_note": "Official site unreachable after 2 fetch attempts"
+}

@@ -1,0 +1,51 @@
+{
+  "research_id": "official-phase-c-saint-paul-university-quezon",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "saint-paul-university-quezon",
+  "source_type": "official_website",
+  "university": {
+    "id": "saint-paul-university-quezon",
+    "popularCourses": [
+      "AB Communication",
+      "AB Political Science",
+      "AB Religious Education",
+      "BS Accountancy",
+      "BS Biology",
+      "BS Business Administration",
+      "BS Entrepreneurship",
+      "BS Hospitality Management",
+      "BS Information Technology",
+      "BS Management Accounting",
+      "BS Nursing",
+      "BS Psychology",
+      "BS Tourism Management",
+      "Bachelor of Science in Education"
+    ],
+    "website": "https://spuqc.edu.ph/",
+    "strengthTags": [
+      "communication",
+      "political-science",
+      "accountancy",
+      "biology",
+      "business",
+      "entrepreneurship",
+      "hospitality",
+      "information-technology",
+      "nursing",
+      "psychology",
+      "tourism",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://spuqc.edu.ph/",
+      "note": "Official SPUQC homepage — 14 undergraduate programs listed"
+    },
+    {
+      "url": "https://spuqc.edu.ph/bachelor-of-science/nursing/",
+      "note": "Official BS Nursing program page"
+    }
+  ]
+}

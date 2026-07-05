@@ -1,0 +1,22 @@
+{
+  "research_id": "phase-b-tip-quezon-city",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "tip-quezon-city",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "tip-quezon-city",
+    "popularCourses": [
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Civil Engineering",
+      "BS Mechanical Engineering",
+      "AB Communication",
+      "AB Political Science",
+      "BS Environmental Science",
+      "BS Biology",
+      "BS Mathematics",
+      "BS Applied Mathematics"
+    ]
+  }
+}

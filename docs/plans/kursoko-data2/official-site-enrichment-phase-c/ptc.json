@@ -1,0 +1,20 @@
+{
+  "research_id": "official-phase-c-ptc",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ptc",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "ptc",
+    "popularCourses": [],
+    "strengthTags": []
+  },
+  "sources": [
+    {
+      "url": "https://ptc.edu.ph/",
+      "note": "Official site lists only 3 four-year programs (BSIT, BSOA, BSAIS)"
+    }
+  ],
+  "blocked_note": "Only 3 verified four-year programs; below 4-program production minimum"
+}

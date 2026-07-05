@@ -1,0 +1,17 @@
+{
+  "research_id": "phase-b-mcc",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "mcc",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "mcc",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Management Accounting",
+      "BS Hospitality Management",
+      "BS Tourism Management"
+    ]
+  }
+}

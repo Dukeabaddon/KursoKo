@@ -1,0 +1,57 @@
+{
+  "research_id": "official-phase-a-cup",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "cup",
+  "source_type": "official_website",
+  "university": {
+    "id": "cup",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Business Administration Major in Marketing Management",
+      "BS Business Administration Major in Operations Management",
+      "BS Elementary Education",
+      "BS Secondary Education",
+      "BS Computer Technology",
+      "BS Office Administration",
+      "BS Political Science",
+      "Bachelor of Laws",
+      "BS Hospitality and Restaurant Management"
+    ],
+    "strengthTags": [
+      "nursing",
+      "business-administration",
+      "marketing-management",
+      "operations-management",
+      "elementary-education",
+      "secondary-education",
+      "computer-technology",
+      "office-administration",
+      "political-science",
+      "law",
+      "hospitality-management",
+      "education"
+    ],
+    "description": "Pasay City local university offering subsidized nursing, business, education, computer technology, political science, hospitality, and law programs for city residents.",
+    "tuition": "Subsidized per-unit rates for Pasay residents (official site unreachable at cupasay.edu.ph during research; verify current fees with registrar)"
+  },
+  "sources": [
+    {
+      "url": "https://sites.google.com/cup.edu.ph/city-university-of-pasay/offered-courses",
+      "note": "Official CUP Google Sites — college/school program index (cupasay.edu.ph returned no content during fetch)"
+    },
+    {
+      "url": "https://sites.google.com/cup.edu.ph/city-university-of-pasay/about-us/history",
+      "note": "Official history — teacher education, law, business, nursing, HRM, computer education"
+    },
+    {
+      "url": "https://sites.google.com/cup.edu.ph/city-university-of-pasay/about-us/academic-officials",
+      "note": "Official academic officials — department heads by program area"
+    },
+    {
+      "url": "https://cupasay.edu.ph/",
+      "note": "Runtime official website (unreachable during 2026-07-05 research — empty response)"
+    }
+  ],
+  "courses_research_notes": "Primary domain cupasay.edu.ph was unreachable during research. Program list derived from official CUP Google Sites (sites.google.com/cup.edu.ph) college structure and academic department heads. Runtime strengthTags included tourism; no dedicated BS Tourism found on reachable official pages — replaced with hospitality/restaurant management from official history."
+}

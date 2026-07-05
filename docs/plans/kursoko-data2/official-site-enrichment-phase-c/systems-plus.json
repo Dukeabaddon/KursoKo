@@ -1,0 +1,56 @@
+{
+  "research_id": "official-phase-c-systems-plus",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "systems-plus",
+  "source_type": "official_website",
+  "university": {
+    "id": "systems-plus",
+    "popularCourses": [
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Information Technology",
+      "Bachelor of Science in Information Systems",
+      "Bachelor of Science in Entertainment and Multimedia Computing",
+      "Bachelor of Science in Computer Engineering",
+      "Bachelor of Science in Electronics and Communications Engineering",
+      "Bachelor of Science in Accountancy",
+      "Bachelor of Science in Business Administration",
+      "Bachelor of Science in Customs Administration",
+      "Bachelor of Science in Real Estate Management",
+      "Bachelor of Science in Tourism",
+      "Bachelor of Science in Hospitality Management"
+    ],
+    "strengthTags": [
+      "bachelor-of-science-in-computer-science",
+      "bachelor-of-science-in-information-technology",
+      "bachelor-of-science-in-information-systems",
+      "bachelor-of-science-in-entertainment-and-multimedia-computing",
+      "bachelor-of-science-in-computer-engineering",
+      "bachelor-of-science-in-electronics-and-communications-engineering",
+      "bachelor-of-science-in-accountancy",
+      "bachelor-of-science-in-business-administration",
+      "bachelor-of-science-in-customs-administration",
+      "bachelor-of-science-in-real-estate-management",
+      "bachelor-of-science-in-tourism",
+      "bachelor-of-science-in-hospitality-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.spcf.edu.ph/academics/ccis",
+      "note": "SPCF College of Computing and Information Sciences"
+    },
+    {
+      "url": "https://spcf.edu.ph/academics/cob",
+      "note": "SPCF College of Business"
+    },
+    {
+      "url": "https://www.spcf.edu.ph/academics/coe",
+      "note": "SPCF College of Engineering"
+    },
+    {
+      "url": "https://spcf.edu.ph/academics/chm",
+      "note": "SPCF College of Hospitality Management"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "research_id": "official-phase-c-feu-manila",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "feu-manila",
+  "source_type": "official_website",
+  "university": {
+    "id": "feu-manila",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Medical Technology",
+      "BS Pharmacy",
+      "BS Accountancy",
+      "BS Business Administration",
+      "BS Information Technology",
+      "BS Tourism Management",
+      "BS Hospitality Management",
+      "AB Psychology"
+    ],
+    "strengthTags": [
+      "nursing",
+      "medical-technology",
+      "pharmacy",
+      "accountancy",
+      "business-administration",
+      "information-technology",
+      "tourism-management",
+      "hospitality-management",
+      "psychology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.feu.edu.ph/academics/",
+      "note": "Official FEU academic programs"
+    }
+  ]
+}

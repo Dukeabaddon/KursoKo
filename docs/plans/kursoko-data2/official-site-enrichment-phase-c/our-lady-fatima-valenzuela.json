@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-our-lady-fatima-valenzuela",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "our-lady-fatima-valenzuela",
+  "source_type": "official_website",
+  "university": {
+    "id": "our-lady-fatima-valenzuela",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Accountancy",
+      "BS Business Administration Major in Marketing Management",
+      "BS Entrepreneurship",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Criminology",
+      "BS Civil Engineering",
+      "BS Electronics Engineering",
+      "Bachelor of Elementary Education",
+      "BS International Hospitality Management"
+    ],
+    "strengthTags": [
+      "nursing",
+      "accountancy",
+      "business-administration",
+      "information-technology",
+      "computer-science",
+      "criminology",
+      "engineering",
+      "education",
+      "hospitality-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://fatima.edu.ph/our-lady-of-fatima-university-valenzuela/",
+      "note": "Official OLFU campus program offerings"
+    },
+    {
+      "url": "https://fatima.edu.ph/category/programs/",
+      "note": "Official OLFU baccalaureate program list"
+    }
+  ]
+}

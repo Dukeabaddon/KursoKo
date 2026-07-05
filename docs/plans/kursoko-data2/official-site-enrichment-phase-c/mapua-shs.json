@@ -1,0 +1,20 @@
+{
+  "research_id": "official-phase-c-mapua-shs",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "mapua-shs",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "mapua-shs",
+    "popularCourses": [],
+    "strengthTags": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mapua.edu.ph/academics/senior-high-school",
+      "note": "Official SHS program list not extractable after 2 tries"
+    }
+  ],
+  "blocked_note": "Official site unreachable after 2 fetch attempts"
+}

@@ -1,0 +1,47 @@
+{
+  "research_id": "official-phase-c-ust",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ust",
+  "source_type": "official_website",
+  "university": {
+    "id": "ust",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Pharmacy",
+      "BS Medical Technology",
+      "BS Psychology",
+      "BS Biology",
+      "BS Chemical Engineering",
+      "BS Civil Engineering",
+      "BS Computer Science",
+      "BS Accountancy",
+      "BS Business Administration",
+      "Doctor of Medicine",
+      "Bachelor of Elementary Education"
+    ],
+    "strengthTags": [
+      "nursing",
+      "pharmacy",
+      "medical-technology",
+      "psychology",
+      "biology",
+      "engineering",
+      "computer-science",
+      "accountancy",
+      "business-administration",
+      "medicine",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.ust.edu.ph/academics/programs/",
+      "note": "Official UST academic programs"
+    },
+    {
+      "url": "https://www.ust.edu.ph/engineering/",
+      "note": "Official UST Faculty of Engineering programs"
+    }
+  ]
+}

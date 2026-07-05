@@ -1,0 +1,20 @@
+{
+  "research_id": "official-phase-c-lyceum-of-the-philippines-university-pampanga",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "lyceum-of-the-philippines-university-pampanga",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "lyceum-of-the-philippines-university-pampanga",
+    "popularCourses": [],
+    "strengthTags": []
+  },
+  "sources": [
+    {
+      "url": "https://www.lyceum.edu.ph/",
+      "note": "Official LPU lists Manila, Cavite, Laguna, and Batangas campuses only — no Pampanga campus page"
+    }
+  ],
+  "blocked_note": "No verified LPU Pampanga campus or official program catalog; likely catalog duplicate of other LPU branches"
+}

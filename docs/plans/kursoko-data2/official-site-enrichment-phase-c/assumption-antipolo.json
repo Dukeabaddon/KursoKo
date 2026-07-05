@@ -1,0 +1,33 @@
+{
+  "research_id": "official-phase-c-assumption-antipolo",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "assumption-antipolo",
+  "source_type": "official_website",
+  "university": {
+    "id": "assumption-antipolo",
+    "popularCourses": [
+      "Accountancy, Business and Management (ABM) Strand",
+      "General Academic Strand (GAS)",
+      "Humanities and Social Sciences (HUMSS) Strand",
+      "STEM Strand"
+    ],
+    "strengthTags": [
+      "shs",
+      "abm",
+      "humss",
+      "stem"
+    ],
+    "website": "https://www.assumptionantipolo.edu.ph/"
+  },
+  "sources": [
+    {
+      "url": "https://sp.assumptionantipolo.edu.ph/register_now",
+      "note": "Official SHS registration strand options — STEM, HUMSS, ABM, GAS"
+    },
+    {
+      "url": "https://assumptionantipolo.edu.ph/",
+      "note": "Official homepage — senior high academic track"
+    }
+  ]
+}

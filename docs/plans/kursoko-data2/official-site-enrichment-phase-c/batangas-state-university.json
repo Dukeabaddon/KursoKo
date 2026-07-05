@@ -1,0 +1,38 @@
+{
+  "research_id": "official-phase-c-batangas-state-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "batangas-state-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "batangas-state-university",
+    "popularCourses": [
+      "Bachelor of Science in Chemical Engineering",
+      "Bachelor of Science in Civil Engineering",
+      "Bachelor of Science in Computer Engineering",
+      "Bachelor of Science in Electrical Engineering",
+      "Bachelor of Science in Electronics Engineering",
+      "Bachelor of Science in Industrial Engineering",
+      "Bachelor of Science in Mechanical Engineering",
+      "Bachelor of Science in Sanitary Engineering",
+      "Bachelor of Science in Information Technology"
+    ],
+    "strengthTags": [
+      "engineering",
+      "chemical-engineering",
+      "civil-engineering",
+      "computer-engineering",
+      "electrical-engineering",
+      "electronics-engineering",
+      "industrial-engineering",
+      "mechanical-engineering",
+      "information-technology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://global.batstateu.edu.ph/batangas-state-universitys-engineering-programs-achieve-highest-re-accreditation-from-global-accreditor-eac-abet/",
+      "note": "Official BatStateU global site listing ABET-accredited engineering programs"
+    }
+  ]
+}

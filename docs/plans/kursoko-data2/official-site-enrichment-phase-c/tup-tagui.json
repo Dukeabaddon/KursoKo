@@ -1,0 +1,13 @@
+{
+  "research_id": "official-phase-c-tup-tagui",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "tup-tagui",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "tup-tagui",
+    "popularCourses": []
+  },
+  "sources": []
+}

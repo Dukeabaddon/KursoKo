@@ -1,0 +1,17 @@
+{
+  "research_id": "phase-b-access-computer",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "access-computer",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "access-computer",
+    "popularCourses": [
+      "Associate in Computer Technology",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Business Administration",
+      "BS Accountancy"
+    ]
+  }
+}

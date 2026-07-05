@@ -1,0 +1,39 @@
+{
+  "research_id": "official-phase-c-up-manila",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "up-manila",
+  "source_type": "official_website",
+  "university": {
+    "id": "up-manila",
+    "popularCourses": [
+      "Doctor of Medicine",
+      "BS Nursing",
+      "BS Pharmacy",
+      "BS Physical Therapy",
+      "BS Occupational Therapy",
+      "BS Public Health",
+      "BS Biology",
+      "BS Psychology",
+      "Bachelor of Science in Midwifery"
+    ],
+    "strengthTags": [
+      "medicine",
+      "nursing",
+      "pharmacy",
+      "physical-therapy",
+      "occupational-therapy",
+      "public-health",
+      "biology",
+      "psychology",
+      "midwifery",
+      "health-sciences"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.upm.edu.ph/academics",
+      "note": "Official UP Manila health sciences and allied programs"
+    }
+  ]
+}

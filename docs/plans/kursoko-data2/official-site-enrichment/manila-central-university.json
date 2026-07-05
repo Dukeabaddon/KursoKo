@@ -1,0 +1,67 @@
+{
+  "research_id": "official-site-mcu",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "manila-central-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "manila-central-university",
+    "name": "Manila Central University",
+    "website": "https://www.mcu.edu.ph/",
+    "popularCourses": [
+      "BS Pharmacy",
+      "BS Nursing",
+      "BS Medical Technology",
+      "BS Radiologic Technology",
+      "BS Physical Therapy",
+      "BS Optometry",
+      "BS Accountancy",
+      "BS Business Administration",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Psychology",
+      "Bachelor of Secondary Education Major in English"
+    ],
+    "strengthTags": [
+      "pharmacy",
+      "nursing",
+      "medical-technology",
+      "radiologic-technology",
+      "physical-therapy",
+      "optometry",
+      "accountancy",
+      "business",
+      "computer-science",
+      "information-technology",
+      "psychology",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mcu.edu.ph/academic/college/",
+      "note": "Official colleges hub — health sciences, business, arts and sciences, education"
+    },
+    {
+      "url": "https://mcu.edu.ph/level/college/",
+      "note": "Official college program archive — undergraduate degree index"
+    },
+    {
+      "url": "https://mcu.edu.ph/academic/college/college-of-medical-technology/",
+      "note": "Medical Technology and Radiologic Technology programs"
+    },
+    {
+      "url": "https://mcu.edu.ph/academic/college/school-of-business-and-management/",
+      "note": "Accountancy, Business Administration, Entrepreneurship, Hospitality, Tourism"
+    },
+    {
+      "url": "https://mcu.edu.ph/academic/college/college-of-arts-and-sciences/",
+      "note": "Biology, Psychology, Computer Science, IT with Cybersecurity, BA Communication, BSEMC Digital Animation"
+    },
+    {
+      "url": "https://mcu.edu.ph/academic/college/institute-of-education/",
+      "note": "Bachelor of Secondary Education Major in English"
+    }
+  ],
+  "courses_research_notes": "MCU is historically strong in health sciences (pharmacy, nursing, medtech, radtech, PT, optometry). Undergraduate list from official college pages and program archive. College of Medicine and Dentistry are professional/graduate tracks excluded from popularCourses. SBM also offers Entrepreneurship, Hospitality Management, and Tourism Management. CAS offers BSEMC Digital Animation and Biology (Microbiology)."
+}

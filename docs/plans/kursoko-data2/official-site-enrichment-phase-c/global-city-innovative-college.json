@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-global-city-innovative-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "global-city-innovative-college",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "global-city-innovative-college",
+    "popularCourses": []
+  },
+  "sources": [],
+  "blocked_note": "Official site https://www.gicc.edu.ph/ timeout on retry"
+}

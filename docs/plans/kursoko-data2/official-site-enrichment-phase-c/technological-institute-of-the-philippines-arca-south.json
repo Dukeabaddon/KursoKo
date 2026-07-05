@@ -1,0 +1,37 @@
+{
+  "research_id": "official-phase-c-technological-institute-of-the-philippines-arca-south",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "technological-institute-of-the-philippines-arca-south",
+  "source_type": "official_website",
+  "university": {
+    "id": "technological-institute-of-the-philippines-arca-south",
+    "popularCourses": [
+      "BS Civil Engineering",
+      "BS Computer Engineering",
+      "BS Electrical Engineering",
+      "BS Electronics Engineering",
+      "BS Mechanical Engineering",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Architecture",
+      "BS Hospitality Management",
+      "BS Tourism Management"
+    ],
+    "strengthTags": [
+      "engineering",
+      "computer-engineering",
+      "information-technology",
+      "computer-science",
+      "architecture",
+      "hospitality-management",
+      "tourism-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.tip.edu.ph/academic-programs",
+      "note": "Official TIP academic programs"
+    }
+  ]
+}

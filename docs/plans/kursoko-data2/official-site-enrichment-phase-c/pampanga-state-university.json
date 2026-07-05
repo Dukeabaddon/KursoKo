@@ -1,0 +1,51 @@
+{
+  "research_id": "official-phase-c-pampanga-state-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "pampanga-state-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "pampanga-state-university",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration",
+      "BS Entrepreneurship",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Civil Engineering",
+      "BS Electrical Engineering",
+      "BS Electronics Engineering",
+      "BS Mechanical Engineering",
+      "BS Architecture",
+      "BS Hospitality Management",
+      "BS Tourism Management",
+      "BS Nursing",
+      "BS Psychology",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education",
+      "Juris Doctor"
+    ],
+    "website": "https://pampangastateu.edu.ph/",
+    "strengthTags": [
+      "accountancy",
+      "business",
+      "information-technology",
+      "computer-science",
+      "engineering",
+      "architecture",
+      "hospitality",
+      "tourism",
+      "nursing",
+      "psychology",
+      "education",
+      "law"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://pampangastateu.edu.ph/student-affairs-services/admissions/program-offerings",
+      "note": "Official PamSU curricular offerings AY 2026-2027 — Bacolor main campus"
+    }
+  ],
+  "courses_research_notes": "Formerly DHVSU; official domain pampangastateu.edu.ph. School of Law lists Juris Doctor (not Bachelor of Laws)."
+}

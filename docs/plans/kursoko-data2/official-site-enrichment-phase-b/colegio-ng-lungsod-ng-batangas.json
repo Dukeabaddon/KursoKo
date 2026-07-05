@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-colegio-ng-lungsod-ng-batangas",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "colegio-ng-lungsod-ng-batangas",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "colegio-ng-lungsod-ng-batangas",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Industrial Technology",
+      "BS Engineering Technology"
+    ]
+  }
+}

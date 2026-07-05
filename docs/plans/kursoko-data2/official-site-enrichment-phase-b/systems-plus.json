@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-systems-plus",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "systems-plus",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "systems-plus",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Civil Engineering",
+      "BS Mechanical Engineering"
+    ]
+  }
+}

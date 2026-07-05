@@ -1,0 +1,37 @@
+{
+  "research_id": "official-phase-c-university-of-perpetual-help-calamba",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "university-of-perpetual-help-calamba",
+  "source_type": "official_website",
+  "university": {
+    "id": "university-of-perpetual-help-calamba",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Accountancy",
+      "BS Business Administration Major in Human Resource Management",
+      "BS Business Administration Major in Marketing Management",
+      "BS Entrepreneurship",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education",
+      "BS Pharmacy",
+      "BS Physical Therapy"
+    ],
+    "strengthTags": [
+      "nursing",
+      "accountancy",
+      "business-administration",
+      "education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://perpetualdalta.edu.ph/new/college-programs-lp/",
+      "note": "Official UPHSD college programs"
+    },
+    {
+      "url": "https://perpetualdalta.edu.ph/new/college-of-business-administration-and-accountancy-lp/",
+      "note": "Official CBAA programs"
+    }
+  ]
+}

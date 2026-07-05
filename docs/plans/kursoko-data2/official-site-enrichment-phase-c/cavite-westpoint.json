@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-cavite-westpoint",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "cavite-westpoint",
+  "source_type": "official_website",
+  "university": {
+    "id": "cavite-westpoint",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official site unreachable; no verified program catalog fetched"
+}

@@ -1,0 +1,52 @@
+{
+  "research_id": "official-phase-c-san-beda-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "san-beda-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "san-beda-university",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Entrepreneurship",
+      "BS Financial Management and Systems Development",
+      "BS Human Resource Development Management",
+      "BS Information and Communication Technology",
+      "BS Legal Management",
+      "BS Marketing Management and Corporate Communications",
+      "BS Operations Management",
+      "BS Psychology",
+      "BS Human Biology",
+      "Bachelor of Science in Nursing",
+      "Bachelor of Early Childhood Education"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "entrepreneurship",
+      "financial-management",
+      "human-resource-management",
+      "information-technology",
+      "legal-management",
+      "marketing-management",
+      "operations-management",
+      "psychology",
+      "human-biology",
+      "nursing",
+      "early-childhood-education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.sanbeda.edu.ph/manila/academic-programs/college-of-arts-and-sciences",
+      "note": "CAS undergraduate degree programs"
+    },
+    {
+      "url": "https://www.sanbeda.edu.ph/manila/academic-programs/college-of-nursing/degree-programs",
+      "note": "College of Nursing BSN program"
+    },
+    {
+      "url": "https://www.sanbeda.edu.ph/manila/academic-programs/college-of-education/mnl-coe-degree-programs",
+      "note": "College of Education degree programs"
+    }
+  ]
+}

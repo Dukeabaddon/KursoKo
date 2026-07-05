@@ -1,0 +1,22 @@
+{
+  "research_id": "phase-b-pup-tagui",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "pup-tagui",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "pup-tagui",
+    "popularCourses": [
+      "AB Communication",
+      "AB Political Science",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Environmental Science",
+      "BS Biology",
+      "BS Civil Engineering",
+      "BS Mechanical Engineering",
+      "BS Public Administration",
+      "Bachelor of Laws"
+    ]
+  }
+}

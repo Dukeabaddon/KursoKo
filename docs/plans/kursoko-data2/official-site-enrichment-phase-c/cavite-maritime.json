@@ -1,0 +1,14 @@
+{
+  "research_id": "official-phase-c-cavite-maritime",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "cavite-maritime",
+  "source_type": "official_website",
+  "university": {
+    "id": "cavite-maritime",
+    "popularCourses": []
+  },
+  "sources": [],
+  "status": "blocked",
+  "blocked_note": "Official site unreachable; no verified program catalog fetched"
+}

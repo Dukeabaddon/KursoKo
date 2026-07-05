@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-st-dominic-college-of-arts-and-sciences",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "st-dominic-college-of-arts-and-sciences",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "st-dominic-college-of-arts-and-sciences",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Health Sciences",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education",
+      "BS Business Administration",
+      "BS Marketing Management"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "research_id": "official-phase-c-perpetual-help-binan",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "perpetual-help-binan",
+  "source_type": "official_website",
+  "university": {
+    "id": "perpetual-help-binan",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Management Accounting",
+      "BS Business Administration",
+      "BS Real Estate Management",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Entertainment and Multimedia Computing",
+      "BS Civil Engineering",
+      "BS Computer Engineering",
+      "BS Electrical Engineering",
+      "BS Electronics Engineering",
+      "BS Industrial Engineering",
+      "BS Mechanical Engineering",
+      "BS Architecture"
+    ],
+    "website": "https://www.uphsl.edu.ph/",
+    "strengthTags": [
+      "accountancy",
+      "business",
+      "information-technology",
+      "computer-science",
+      "engineering",
+      "architecture"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://uphsl.edu.ph/programs/business-accountancy",
+      "note": "Official UPHSL College of Business and Accountancy programs"
+    },
+    {
+      "url": "https://uphsl.edu.ph/programs/computer-studies",
+      "note": "Official UPHSL College of Computer Studies programs"
+    },
+    {
+      "url": "https://uphsl.edu.ph/programs/engineering-architecture",
+      "note": "Official UPHSL College of Engineering and Architecture programs"
+    }
+  ],
+  "courses_research_notes": "University of Perpetual Help System Laguna — Biñan campus. Juris Doctor at College of Law excluded."
+}

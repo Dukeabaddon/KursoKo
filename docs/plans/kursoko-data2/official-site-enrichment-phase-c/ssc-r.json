@@ -1,0 +1,40 @@
+{
+  "research_id": "official-phase-c-ssc-r",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ssc-r",
+  "source_type": "official_website",
+  "university": {
+    "id": "ssc-r",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration Major in Business Management",
+      "BS Business Administration Major in Financial Management",
+      "BS Business Administration Major in Marketing Management",
+      "BS Business Administration Major in Human Resource Development Management",
+      "BS Business Administration Major in Legal Management",
+      "BS Computer Science",
+      "BS Information Technology",
+      "Juris Doctor"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "business-administration",
+      "legal-management",
+      "computer-science",
+      "information-technology",
+      "law"
+    ],
+    "website": "https://sscrmnl.edu.ph/"
+  },
+  "sources": [
+    {
+      "url": "https://sscrmnl.edu.ph/academics/college/college-of-accountancy-business-administration-and-computer-studies/",
+      "note": "Official Manila campus CBA programs"
+    },
+    {
+      "url": "https://sscrmnl.edu.ph/academics/college-of-law/",
+      "note": "Official Juris Doctor program — Manila campus"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "research_id": "phase-b-our-lady-fatima-valenzuela",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "our-lady-fatima-valenzuela",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "our-lady-fatima-valenzuela",
+    "popularCourses": [
+      "Doctor of Medicine",
+      "BS Biology",
+      "BS Nursing",
+      "BS Health Sciences",
+      "BS Physical Therapy",
+      "BS Medical Technology",
+      "Bachelor of Secondary Education",
+      "Bachelor of Elementary Education"
+    ]
+  }
+}

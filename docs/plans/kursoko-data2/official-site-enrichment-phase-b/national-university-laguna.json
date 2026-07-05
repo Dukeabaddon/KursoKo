@@ -1,0 +1,19 @@
+{
+  "research_id": "phase-b-national-university-laguna",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "national-university-laguna",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "national-university-laguna",
+    "popularCourses": [
+      "BS Civil Engineering",
+      "BS Mechanical Engineering",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Business Administration",
+      "BS Marketing Management",
+      "BS Accountancy"
+    ]
+  }
+}

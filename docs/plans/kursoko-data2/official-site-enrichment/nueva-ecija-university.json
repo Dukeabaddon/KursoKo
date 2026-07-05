@@ -1,0 +1,61 @@
+{
+  "research_id": "official-site-neust",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "nueva-ecija-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "nueva-ecija-university",
+    "name": "Nueva Ecija University of Science and Technology",
+    "website": "https://www.neust.edu.ph/",
+    "popularCourses": [
+      "BS Civil Engineering",
+      "BS Electrical Engineering",
+      "BS Mechanical Engineering",
+      "BS Architecture",
+      "BS Agriculture",
+      "BS Nursing",
+      "BS Information Technology",
+      "BS Business Administration",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education",
+      "BS Criminology",
+      "BS Hospitality Management"
+    ],
+    "strengthTags": [
+      "engineering",
+      "architecture",
+      "agriculture",
+      "nursing",
+      "information-technology",
+      "business",
+      "education",
+      "criminology",
+      "hospitality",
+      "industrial-technology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://neust.edu.ph/sumacab-campus/",
+      "note": "Sumacab Campus — Architecture, Criminology, Education, Engineering, ICT, Management"
+    },
+    {
+      "url": "https://neust.edu.ph/gabaldon-campus/",
+      "note": "Gabaldon Campus — Agriculture, Education, IT, Hospitality Management"
+    },
+    {
+      "url": "https://neust.edu.ph/general-tinio-street-campus/",
+      "note": "Gen. Tinio Campus — Nursing, Biology, Chemistry, Food Technology, Industrial Technology"
+    },
+    {
+      "url": "http://admission.neust.edu.ph/",
+      "note": "NEUST Online Admission — cross-campus course list with board/non-board classification"
+    },
+    {
+      "url": "https://neust.edu.ph/enrollment-procedure-and-qualifications/",
+      "note": "Admission requirements — NEUST-CAT, GWA thresholds, height requirements for Nursing/Criminology/HM"
+    }
+  ],
+  "courses_research_notes": "NEUST is a multi-campus SUC; programs aggregated from official campus pages and admission portal. Sumacab hosts flagship Engineering (Civil, Electrical, Mechanical), Architecture, Criminology, and ICT. Gabaldon hosts Agriculture and rural education. Gen. Tinio hosts Nursing and Industrial Technology majors. Additional campuses (San Isidro, Atate, Fort Magsaysay) offer overlapping Business/IT/Education programs. Data Science and Public Administration also listed at Sumacab."
+}

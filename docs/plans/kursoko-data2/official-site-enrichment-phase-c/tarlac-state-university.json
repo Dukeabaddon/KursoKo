@@ -1,0 +1,39 @@
+{
+  "research_id": "official-phase-c-tarlac-state-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "tarlac-state-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "tarlac-state-university",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration Major in Marketing Management",
+      "BS Civil Engineering",
+      "BS Computer Science",
+      "BS Information Technology",
+      "BS Hospitality Management",
+      "Bachelor of Secondary Education Major in Mathematics",
+      "Bachelor of Elementary Education",
+      "BS Criminology",
+      "BS Architecture"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "business-administration",
+      "engineering",
+      "computer-science",
+      "information-technology",
+      "hospitality-management",
+      "education",
+      "criminology",
+      "architecture"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.tsu.edu.ph/academics/academic-programs/",
+      "note": "Official TSU baccalaureate programs"
+    }
+  ]
+}

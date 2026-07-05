@@ -1,0 +1,21 @@
+{
+  "research_id": "phase-b-our-lady-of-fatima-university-quezon-city",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "our-lady-of-fatima-university-quezon-city",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "our-lady-of-fatima-university-quezon-city",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Health Sciences",
+      "BS Medical Technology",
+      "BS Biology",
+      "Doctor of Pharmacy",
+      "BS Pharmacy",
+      "BS Physical Therapy",
+      "BS Marine Transportation",
+      "BS Marine Engineering"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "research_id": "official-phase-c-emilio-aguinaldo-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "emilio-aguinaldo-college",
+  "source_type": "official_website",
+  "university": {
+    "id": "emilio-aguinaldo-college",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Information Technology",
+      "BS Computer Engineering",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Criminology",
+      "BS Pharmacy",
+      "BS Hospitality Management"
+    ],
+    "strengthTags": [
+      "nursing",
+      "information-technology",
+      "computer-engineering",
+      "business",
+      "hospitality"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.eac.edu.ph/admsns_/",
+      "note": "Official EAC admissions academic programs list"
+    }
+  ]
+}

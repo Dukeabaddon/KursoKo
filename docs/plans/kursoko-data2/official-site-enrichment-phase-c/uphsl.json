@@ -1,0 +1,55 @@
+{
+  "research_id": "official-phase-c-uphsl",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "uphsl",
+  "source_type": "official_website",
+  "university": {
+    "id": "uphsl",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration major in Human Resource Management",
+      "BS Business Administration major in Marketing Management",
+      "BS Entrepreneurship",
+      "Bachelor of Arts in Communication",
+      "Bachelor of Arts in Psychology",
+      "Bachelor of Multimedia Arts",
+      "BS Nursing",
+      "BS Civil Engineering",
+      "BS Computer Engineering",
+      "BS Mechanical Engineering",
+      "BS Electronics Engineering"
+    ],
+    "strengthTags": [
+      "accountancy",
+      "business-administration",
+      "entrepreneurship",
+      "communication",
+      "psychology",
+      "multimedia-arts",
+      "nursing",
+      "civil-engineering",
+      "computer-engineering",
+      "mechanical-engineering",
+      "electronics-engineering"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://perpetualdalta.edu.ph/new/college-of-business-administration-and-accountancy-lp/",
+      "note": "College of Business Administration and Accountancy Las Pi\u00f1as"
+    },
+    {
+      "url": "https://perpetualdalta.edu.ph/new/college-of-arts-and-sciences-lp/",
+      "note": "College of Arts and Sciences Las Pi\u00f1as"
+    },
+    {
+      "url": "https://perpetualdalta.edu.ph/new/bachelor-of-science-in-nursing-lp/",
+      "note": "BS Nursing Las Pi\u00f1as Campus"
+    },
+    {
+      "url": "https://perpetualdalta.edu.ph/new/college-of-engineering-lp/",
+      "note": "College of Engineering Las Pi\u00f1as"
+    }
+  ]
+}

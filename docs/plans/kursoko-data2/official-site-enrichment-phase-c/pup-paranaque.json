@@ -1,0 +1,34 @@
+{
+  "research_id": "official-phase-c-pup-paranaque",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "pup-paranaque",
+  "source_type": "official_website",
+  "university": {
+    "id": "pup-paranaque",
+    "popularCourses": [
+      "BS Computer Engineering",
+      "BS Hospitality Management",
+      "BS Information Technology",
+      "BS Office Administration",
+      "Diploma in Office Management Technology - Legal Office Management"
+    ],
+    "strengthTags": [
+      "engineering",
+      "computer-engineering",
+      "hospitality-management",
+      "information-technology",
+      "office-administration"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.pup.edu.ph/academic/programs",
+      "note": "Official PUP academic programs by campus"
+    },
+    {
+      "url": "https://www.pup.edu.ph/paranaque/",
+      "note": "PUP Parañaque campus program list"
+    }
+  ]
+}

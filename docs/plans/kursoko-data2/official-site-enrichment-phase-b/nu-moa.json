@@ -1,0 +1,18 @@
+{
+  "research_id": "phase-b-nu-moa",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "nu-moa",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "nu-moa",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Tourism Management",
+      "BS Hospitality Management",
+      "BS Marine Transportation",
+      "BS Marine Engineering"
+    ]
+  }
+}

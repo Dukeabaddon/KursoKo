@@ -1,0 +1,20 @@
+{
+  "research_id": "official-phase-c-lyceum-northwestern",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "lyceum-northwestern",
+  "source_type": "official_website",
+  "status": "blocked",
+  "university": {
+    "id": "lyceum-northwestern",
+    "popularCourses": [],
+    "strengthTags": []
+  },
+  "sources": [
+    {
+      "url": "https://www.lnu.edu.ph/",
+      "note": "Official site unreachable (redirect/timeout)"
+    }
+  ],
+  "blocked_note": "Official site unreachable after 2 fetch attempts"
+}

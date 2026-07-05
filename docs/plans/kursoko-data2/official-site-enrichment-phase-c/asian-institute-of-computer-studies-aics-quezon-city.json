@@ -1,0 +1,41 @@
+{
+  "research_id": "official-phase-c-asian-institute-of-computer-studies-aics-quezon-city",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "asian-institute-of-computer-studies-aics-quezon-city",
+  "source_type": "official_website",
+  "university": {
+    "id": "asian-institute-of-computer-studies-aics-quezon-city",
+    "popularCourses": [
+      "BS Computer Science",
+      "BS Computer Engineering",
+      "BS Entrepreneurship",
+      "Associate in Computer Technology"
+    ],
+    "strengthTags": [
+      "computer-science",
+      "computer-engineering",
+      "entrepreneurship",
+      "computer-technology",
+      "engineering"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://aics.edu.ph/bscs/",
+      "note": "Official BS Computer Science program page"
+    },
+    {
+      "url": "https://aics.edu.ph/bscpe/",
+      "note": "Official BS Computer Engineering program page"
+    },
+    {
+      "url": "https://aics.edu.ph/bsentrep/",
+      "note": "Official BS Entrepreneurship program page"
+    },
+    {
+      "url": "https://aics.edu.ph/history/",
+      "note": "Official history — 2-year Computer Technology ladder to BSCpE"
+    }
+  ]
+}

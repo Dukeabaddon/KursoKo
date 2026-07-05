@@ -1,0 +1,44 @@
+{
+  "research_id": "official-phase-c-tcu",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "tcu",
+  "source_type": "official_website",
+  "university": {
+    "id": "tcu",
+    "popularCourses": [
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education major in English",
+      "Bachelor of Secondary Education major in Mathematics",
+      "Bachelor of Secondary Education major in Science",
+      "Bachelor of Science in Business Administration major in Human Resource Management",
+      "Bachelor of Science in Business Administration major in Marketing Management",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Criminology",
+      "Bachelor of Science in Entrepreneurship",
+      "Bachelor of Science in Hospitality Management",
+      "Bachelor of Science in Information Systems",
+      "Bachelor of Science in Psychology"
+    ],
+    "strengthTags": [
+      "bachelor-of-elementary-education",
+      "bachelor-of-secondary-education-major-in-english",
+      "bachelor-of-secondary-education-major-in-mathematics",
+      "bachelor-of-secondary-education-major-in-science",
+      "bachelor-of-science-in-business-administration-major-in-human-resource-management",
+      "bachelor-of-science-in-business-administration-major-in-marketing-management",
+      "bachelor-of-science-in-computer-science",
+      "bachelor-of-science-in-criminology",
+      "bachelor-of-science-in-entrepreneurship",
+      "bachelor-of-science-in-hospitality-management",
+      "bachelor-of-science-in-information-systems",
+      "bachelor-of-science-in-psychology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://portal.tcu.edu.ph/admission",
+      "note": "Official TCU admission program choices"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "research_id": "official-phase-c-university-of-rizal-system",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "university-of-rizal-system",
+  "source_type": "official_website",
+  "university": {
+    "id": "university-of-rizal-system",
+    "popularCourses": [
+      "BS Information Technology",
+      "BS Business Administration Major in Marketing Management",
+      "BS Accountancy",
+      "BS Civil Engineering",
+      "BS Computer Engineering",
+      "Bachelor of Secondary Education Major in Mathematics",
+      "Bachelor of Elementary Education",
+      "BS Agriculture Major in Crop Science",
+      "BS Hospitality Management"
+    ],
+    "strengthTags": [
+      "information-technology",
+      "business-administration",
+      "accountancy",
+      "engineering",
+      "computer-engineering",
+      "education",
+      "agriculture",
+      "hospitality-management"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.urs.edu.ph/courses-offered/",
+      "note": "Official URS courses offered by campus"
+    }
+  ]
+}

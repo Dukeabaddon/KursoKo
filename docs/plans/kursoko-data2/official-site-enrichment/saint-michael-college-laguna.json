@@ -1,0 +1,58 @@
+{
+  "research_id": "official-site-saint-michael-college-laguna",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "saint-michael-college-laguna",
+  "source_type": "official_website",
+  "university": {
+    "id": "saint-michael-college-laguna",
+    "name": "Saint Michael's College of Laguna",
+    "website": "https://www.smcl.edu.ph/",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Business Administration",
+      "BS Hospitality Management",
+      "BS Computer Science",
+      "Associate in Computer Technology",
+      "Bachelor of Elementary Education",
+      "Bachelor of Secondary Education",
+      "Bachelor in Early Childhood Education",
+      "BA English Language",
+      "BA Filipino Language",
+      "BS Psychology"
+    ],
+    "strengthTags": [
+      "nursing",
+      "business",
+      "hospitality",
+      "computer-science",
+      "information-technology",
+      "education",
+      "psychology",
+      "arts-and-humanities"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.smcl.edu.ph/academic/ted_sbmit.php",
+      "note": "School of Business, Management and Information Technology — BSBA, BSHM, BSCS, ACT"
+    },
+    {
+      "url": "https://www.smcl.edu.ph/academic/ted_son.php",
+      "note": "School of Nursing — BS Nursing"
+    },
+    {
+      "url": "https://www.smcl.edu.ph/academic/ted_seas.php",
+      "note": "School of Education, Arts and Sciences — education, AB English/Filipino, BS Psychology"
+    },
+    {
+      "url": "https://www.smcl.edu.ph/academic/ted_seas_educ.php",
+      "note": "Education program detail — BEEd, BSEd majors, BSECE"
+    },
+    {
+      "url": "https://www.smcl.edu.ph/",
+      "note": "Official homepage — Biñan, Laguna campus address and identity"
+    }
+  ],
+  "courses_research_notes": "Official tertiary schools: SBMIT (business, hospitality, computer studies), SON (nursing), SEAS (education, liberal arts, psychology). BSBA majors: Human Resource Management and Marketing Management. Runtime lists BS Civil Engineering but no engineering college or BSCE appears on official academic pages as of 2026-07-05 — excluded from enrichment. Associate in Computer Technology is a ladderized two-year program listed under SBMIT."
+}

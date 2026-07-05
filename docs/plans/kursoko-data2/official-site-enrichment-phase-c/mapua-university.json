@@ -1,0 +1,38 @@
+{
+  "research_id": "official-phase-c-mapua-university",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "mapua-university",
+  "source_type": "official_website",
+  "university": {
+    "id": "mapua-university",
+    "popularCourses": [
+      "Bachelor of Science in Civil Engineering",
+      "Bachelor of Science in Computer Engineering",
+      "Bachelor of Science in Artificial Intelligence Engineering",
+      "Bachelor of Science in Architecture",
+      "Bachelor of Science in Information Technology",
+      "Bachelor of Science in Computer Science",
+      "Bachelor of Science in Industrial Engineering",
+      "Bachelor of Science in Mechanical Engineering",
+      "Bachelor of Science in Cybersecurity",
+      "Bachelor of Science in Data Science"
+    ],
+    "strengthTags": [
+      "engineering",
+      "architecture",
+      "artificial-intelligence",
+      "information-technology",
+      "computer-science",
+      "industrial-engineering",
+      "cybersecurity",
+      "data-science"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.mapua.edu.ph/pages/academics/undergraduate/intramuros-campus",
+      "note": "Official undergraduate program listing by school"
+    }
+  ]
+}

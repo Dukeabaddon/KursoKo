@@ -1,0 +1,56 @@
+{
+  "research_id": "official-site-rtu",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "rtu",
+  "source_type": "official_website",
+  "university": {
+    "id": "rtu",
+    "name": "Rizal Technological University",
+    "website": "https://www.rtu.edu.ph/",
+    "popularCourses": [
+      "BS Astronomy",
+      "BS Mechanical Engineering",
+      "BS Civil Engineering",
+      "BS Electrical Engineering",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Information Technology",
+      "BS Architecture",
+      "BS Accountancy",
+      "BS Business Administration",
+      "BS Psychology",
+      "Bachelor of Secondary Education"
+    ],
+    "strengthTags": [
+      "astronomy",
+      "engineering",
+      "mechanical-engineering",
+      "civil-engineering",
+      "electrical-engineering",
+      "electronics-engineering",
+      "computer-engineering",
+      "information-technology",
+      "architecture",
+      "accountancy",
+      "business",
+      "education",
+      "psychology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.rtu.edu.ph/college/",
+      "note": "Official undergraduate course offerings by college and institute"
+    },
+    {
+      "url": "https://www.rtu.edu.ph/about/",
+      "note": "Institution overview — Mandaluyong main and Pasig branch campuses; pioneering astronomy and instrumentation programs"
+    },
+    {
+      "url": "https://www.rtu.edu.ph/masters-degree/",
+      "note": "Graduate programs cross-reference — MS Astronomy, MBA, MAPA (excluded from popularCourses)"
+    }
+  ],
+  "courses_research_notes": "Undergraduate list from official /college/ page (College of Engineering and Architecture, Institute of Computer Studies, Institute of Architecture, CBEA, CEd, CAS, IHK). RTU is the only Philippine university offering BS Astronomy. Some programs are campus-specific (e.g., BSIT Pasig, BSIE Boni). BTVTEd majors, BS Statistics, BS Biology, BS Physical Education, and BS Office Administration also listed officially but omitted here in favor of flagship board and high-enrollment programs."
+}

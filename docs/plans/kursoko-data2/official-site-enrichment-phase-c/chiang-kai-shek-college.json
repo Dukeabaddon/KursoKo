@@ -1,0 +1,34 @@
+{
+  "research_id": "official-phase-c-chiang-kai-shek-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "chiang-kai-shek-college",
+  "source_type": "official_website",
+  "university": {
+    "id": "chiang-kai-shek-college",
+    "popularCourses": [
+      "BS Accountancy",
+      "BS Business Administration Major in Management",
+      "BS Business Administration Major in Marketing Management",
+      "BS Information Technology",
+      "BS Accounting Information System",
+      "BS Entrepreneurship",
+      "BS Hospitality Management"
+    ],
+    "strengthTags": [
+      "information-technology",
+      "business-administration",
+      "accountancy",
+      "accounting-information-system",
+      "entrepreneurship",
+      "hospitality-management",
+      "stem"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://college.cksc.edu.ph/component/content/category/12-academic-programs",
+      "note": "Official CKS College undergraduate program list"
+    }
+  ]
+}

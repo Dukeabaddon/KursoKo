@@ -1,0 +1,33 @@
+{
+  "research_id": "official-phase-c-dlsu-manila",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "dlsu-manila",
+  "source_type": "official_website",
+  "university": {
+    "id": "dlsu-manila",
+    "popularCourses": [
+      "BS Computer Science Major in Computer Systems Engineering",
+      "BS Computer Science with Specialization in Software Technology",
+      "BS Computer Science with Specialization in Network Engineering",
+      "BS Information Systems",
+      "BS Interactive Entertainment Major in Game Development",
+      "BS Business Administration",
+      "BS Accountancy"
+    ],
+    "strengthTags": [
+      "computer-science",
+      "information-systems",
+      "game-development",
+      "business-administration",
+      "accountancy",
+      "technology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://computerstudies.dlsu.edu.ph/degreeprograms",
+      "note": "Official DLSU College of Computer Studies degree programs"
+    }
+  ]
+}

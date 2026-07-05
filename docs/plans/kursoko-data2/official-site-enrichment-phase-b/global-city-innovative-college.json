@@ -1,0 +1,20 @@
+{
+  "research_id": "phase-b-global-city-innovative-college",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "global-city-innovative-college",
+  "source_type": "strength_tags_derived",
+  "university": {
+    "id": "global-city-innovative-college",
+    "popularCourses": [
+      "BS Business Administration",
+      "BS Marketing Management",
+      "BS Tourism Management",
+      "BS Hospitality Management",
+      "BS Information Technology",
+      "BS Computer Science",
+      "BS Psychology",
+      "AB Psychology"
+    ]
+  }
+}
