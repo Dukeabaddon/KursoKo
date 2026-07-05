@@ -1,11 +1,22 @@
+/**
+ * Landing footer — floating card, big wordmark, optional floating stickers
+ * Exports: LandingFooter
+ * Data: FOOTER_STICKERS (drop PNGs in assets/landing/footer/stickers/, run npm run assets:webp)
+ */
 import { useCallback } from 'react'
 import { useLenis } from '../motion'
 import { smoothScrollToHash } from '../../../utils/smoothScroll'
-import FooterSticker from './FooterSticker'
-import { FOOTER_STICKERS } from './footerAssets'
 import './index.css'
 
-const LandingFooter = ({ onStart }) => {
+const FOOTER_STICKERS = [
+  { id: 'footer-sticker-1', src: null, className: 'landing-footer-sticker landing-footer-sticker--1' },
+  { id: 'footer-sticker-2', src: null, className: 'landing-footer-sticker landing-footer-sticker--2' },
+  { id: 'footer-sticker-3', src: null, className: 'landing-footer-sticker landing-footer-sticker--3' },
+  { id: 'footer-sticker-4', src: null, className: 'landing-footer-sticker landing-footer-sticker--4' },
+  { id: 'footer-sticker-5', src: null, className: 'landing-footer-sticker landing-footer-sticker--5' },
+]
+
+export function LandingFooter({ onStart }) {
   const lenis = useLenis()
 
   const scrollTo = useCallback(
@@ -20,9 +31,11 @@ const LandingFooter = ({ onStart }) => {
     <div className="landing-footer-wrap">
       <footer className="landing-footer-card" role="contentinfo" aria-label="Site footer">
         <div className="landing-footer-wordmark-layer" aria-hidden="true">
-          {FOOTER_STICKERS.map(({ id, src, className }) => (
-            <FooterSticker key={id} src={src} className={className} />
-          ))}
+          {FOOTER_STICKERS.map(({ id, src, className }) =>
+            src ? (
+              <img key={id} src={src} alt="" aria-hidden="true" className={className} loading="lazy" decoding="async" />
+            ) : null,
+          )}
           <p className="landing-footer-wordmark">
             Kurso<span className="landing-footer-wordmark-ko">Ko</span>
           </p>
@@ -85,5 +98,3 @@ const LandingFooter = ({ onStart }) => {
     </div>
   )
 }
-
-export default LandingFooter
