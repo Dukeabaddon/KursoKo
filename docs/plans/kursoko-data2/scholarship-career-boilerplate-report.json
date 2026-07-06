@@ -1,0 +1,288 @@
+{
+  "date": "2026-07-06",
+  "boilerplateSets": 2,
+  "fixed": 173,
+  "fourPlusCareerTagsAfter": 46,
+  "sample": [
+    {
+      "id": "4ps-scholarship",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "teacher",
+        "guidance-counselor"
+      ],
+      "source": "name"
+    },
+    {
+      "id": "afp-mba-scholarship",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "teacher",
+        "guidance-counselor"
+      ],
+      "source": "name"
+    },
+    {
+      "id": "sch-lgu-alfonso",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-amadeo",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-angat",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-092",
+      "before": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-098",
+      "before": [
+        "graphic-designer",
+        "photographer",
+        "multimedia-artist",
+        "ui-ux-designer"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-apalit",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-arayat",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-uni-arellano-grades",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "admu-magis",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "ayala-foundation",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "entrepreneur",
+        "sales-representative"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-101",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-balagtas",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-106",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-baras",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-bay",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "bdo-foundation",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "entrepreneur",
+        "sales-representative"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-binangonan",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    },
+    {
+      "id": "sch-lgu-110",
+      "before": [
+        "welder",
+        "mechanical-engineer",
+        "electrician",
+        "hvac-technician"
+      ],
+      "after": [
+        "software-engineer",
+        "research-scientist"
+      ],
+      "source": "riasec"
+    }
+  ]
+}

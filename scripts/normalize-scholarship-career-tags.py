@@ -137,7 +137,7 @@ FREEFORM_TO_CAREER: dict[str, str] = {
     "air-force-officer": "seafarer-deck-officer",
     "army-officer": "seafarer-deck-officer",
     "naval-officer": "seafarer-deck-officer",
-    "military-officer": "seafarer-deck-officer",
+    "military-officer": "military-officer",
     "renewable-energy-specialist": "environmental-scientist",
     "technologist": "medical-technologist",
 }

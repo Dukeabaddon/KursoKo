@@ -6,7 +6,8 @@
     "disclaimer": "Verify eligibility, award amount, and application windows on each official provider site before applying. KursoKo does not process applications.",
     "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages.",
     "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
-    "careerTagsNormalized": "2026-07-06"
+    "careerTagsNormalized": "2026-07-06",
+    "careerTagsBoilerplatePass": "2026-07-06"
   },
   "scholarships": [
     {
@@ -49,10 +50,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -195,10 +194,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -239,10 +236,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -322,10 +317,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -364,10 +357,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -410,10 +401,8 @@
         "C"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -495,10 +484,8 @@
         "C"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -537,10 +524,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -579,10 +564,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -621,10 +604,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "arellano"
@@ -709,10 +690,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "ateneo",
@@ -904,10 +883,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "ayala-foundation"
@@ -946,10 +923,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -988,10 +963,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1030,10 +1003,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1072,10 +1043,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1114,10 +1083,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1166,10 +1133,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "bdo-foundation"
@@ -1307,10 +1272,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1349,10 +1312,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1432,10 +1393,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1527,10 +1486,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "bulacan-state-university"
@@ -1653,10 +1610,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1695,10 +1650,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1737,10 +1690,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1782,10 +1733,8 @@
         "C"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1824,10 +1773,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1871,10 +1818,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "university-of-caloocan-city"
@@ -1913,10 +1858,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -1955,10 +1898,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -2049,10 +1990,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -2097,10 +2036,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "cavite-state-university"
@@ -2277,10 +2214,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -2432,10 +2367,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -2531,10 +2464,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -2766,10 +2697,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "ciit",
@@ -2914,10 +2843,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -2958,10 +2885,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "partner-heis"
@@ -3265,10 +3190,8 @@
         "C"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -3319,10 +3242,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -3368,10 +3289,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "dlsu",
@@ -3464,10 +3383,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "any-school"
@@ -3886,10 +3803,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -4256,10 +4171,8 @@
         "C"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "any-hei",
@@ -4471,10 +4384,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "jhs-private"
@@ -4772,10 +4683,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -4826,10 +4735,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -4880,10 +4787,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
         "electrician",
-        "hvac-technician"
+        "welder"
       ],
       "institutionTags": [
         "tesda",
@@ -5011,10 +4916,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5108,10 +5011,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5257,10 +5158,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -5301,10 +5200,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5343,10 +5240,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5385,10 +5280,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5519,10 +5412,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -5563,10 +5454,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5605,10 +5494,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5647,10 +5534,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5743,10 +5628,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "jollibee"
@@ -5785,10 +5668,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5827,10 +5708,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -5918,10 +5797,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "laguna-state-polytechnic-university"
@@ -5972,10 +5849,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -6025,10 +5900,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [],
       "applicationLink": "https://laspinascity.gov.ph/",
@@ -6065,10 +5938,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -6107,10 +5978,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "lpu"
@@ -6234,10 +6103,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -6276,10 +6143,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -6318,10 +6183,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -6360,10 +6223,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -6402,10 +6263,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -6452,10 +6311,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "university-of-makati"
@@ -6499,10 +6356,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "city-of-malabon-university"
@@ -6541,10 +6396,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -6589,10 +6442,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [],
       "applicationLink": "https://www.mandaluyong.gov.ph/",
@@ -6636,10 +6487,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "pamantasan-ng-lungsod-ng-maynila"
@@ -6678,10 +6527,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "any-hei"
@@ -6848,10 +6695,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -6896,10 +6741,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "pamantasan-ng-lungsod-ng-marikina"
@@ -6938,10 +6781,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -7183,10 +7024,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -7225,10 +7064,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "any-hei"
@@ -7280,10 +7117,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "metrobank-foundation"
@@ -7322,10 +7157,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -7405,10 +7238,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -7536,10 +7367,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "miriam-college",
@@ -7667,10 +7496,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -7757,10 +7584,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [],
       "applicationLink": "https://muntinlupacity.gov.ph/",
@@ -7797,10 +7622,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -7839,10 +7662,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "nu"
@@ -7886,10 +7707,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [],
       "applicationLink": "https://www.navotas.gov.ph/",
@@ -7986,10 +7805,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -8115,10 +7932,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -8157,10 +7972,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -8246,10 +8059,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "nu"
@@ -8343,10 +8154,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -8482,10 +8291,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -8538,10 +8345,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -8671,10 +8476,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "pampanga-state-university"
@@ -8754,10 +8557,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -8796,10 +8597,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -8838,10 +8637,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -8886,10 +8683,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [],
       "applicationLink": "https://www.paranaquecity.gov.ph/",
@@ -8928,10 +8723,8 @@
         "S"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "paref-schools"
@@ -8975,10 +8768,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "city-university-of-pasay"
@@ -9024,10 +8815,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "pamantasan-ng-lungsod-ng-pasig"
@@ -9071,10 +8860,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "pateros-technological-college"
@@ -9127,10 +8914,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -9467,10 +9252,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "phinma-schools"
@@ -9509,10 +9292,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -9551,10 +9332,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -9593,10 +9372,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "any-school"
@@ -9635,10 +9412,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -9677,10 +9452,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "any-hei"
@@ -9786,10 +9559,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "lawyer",
+        "criminology-graduate"
       ],
       "institutionTags": [
         "suc",
@@ -9869,10 +9640,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -9911,10 +9680,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -10056,10 +9823,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "pup"
@@ -10147,10 +9912,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "pup-system",
@@ -10195,10 +9958,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "pup-system"
@@ -10237,10 +9998,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "any-hei"
@@ -10336,10 +10095,8 @@
         "C"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "qcydo",
@@ -10388,10 +10145,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "qcydo",
@@ -10438,10 +10193,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "qcydo",
@@ -10537,10 +10290,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "qcydo",
@@ -10587,10 +10338,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "qcydo",
@@ -10638,10 +10387,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "qcydo",
@@ -10688,10 +10435,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "qcydo",
@@ -10786,10 +10531,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "university-of-rizal-system"
@@ -10828,10 +10571,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -10870,10 +10611,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -10912,10 +10651,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "any-hei"
@@ -10995,10 +10732,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11037,10 +10772,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11079,10 +10812,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11126,10 +10857,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [],
       "applicationLink": "https://www.sanjuancity.gov.ph/",
@@ -11166,10 +10895,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11251,10 +10978,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11293,10 +11018,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11335,10 +11058,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11377,10 +11098,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11419,10 +11138,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11461,10 +11178,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11503,10 +11218,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -11597,10 +11310,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -11656,10 +11367,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "shs-private"
@@ -11970,10 +11679,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
         "electrician",
-        "hvac-technician"
+        "welder"
       ],
       "institutionTags": [
         "tesda"
@@ -12026,10 +11733,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -12112,10 +11817,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "sti"
@@ -12199,10 +11902,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -12243,10 +11944,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -12292,10 +11991,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "taguig-city-university"
@@ -12376,10 +12073,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -12418,10 +12113,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -12460,10 +12153,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -12502,10 +12193,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -12558,10 +12247,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -12653,10 +12340,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
         "electrician",
-        "hvac-technician"
+        "welder"
       ],
       "institutionTags": [
         "tesda"
@@ -12705,10 +12390,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "tesda",
@@ -12884,10 +12567,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
         "electrician",
-        "hvac-technician"
+        "welder"
       ],
       "institutionTags": [
         "tesda"
@@ -12926,10 +12607,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "graphic-designer",
+        "multimedia-artist"
       ],
       "institutionTags": [
         "any-hei"
@@ -12983,10 +12662,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "petron-foundation"
@@ -13037,10 +12714,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "suc",
@@ -13122,10 +12797,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "suc",
@@ -13228,10 +12901,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "up-system",
@@ -13276,10 +12947,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "up-system",
@@ -13375,10 +13044,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "up-diliman",
@@ -13423,10 +13090,8 @@
         "C"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "software-engineer",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "up-system"
@@ -13468,10 +13133,8 @@
         "C"
       ],
       "careerTags": [
-        "graphic-designer",
-        "photographer",
-        "multimedia-artist",
-        "ui-ux-designer"
+        "software-engineer",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "up-system"
@@ -13737,10 +13400,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "pamantasan-ng-lungsod-ng-valenzuela"
@@ -13779,10 +13440,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "software-engineer",
+        "research-scientist"
       ],
       "institutionTags": [
         "any-hei"
@@ -13821,10 +13480,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "entrepreneur",
+        "sales-representative"
       ],
       "institutionTags": [
         "any-hei"
@@ -13863,10 +13520,8 @@
         "C"
       ],
       "careerTags": [
-        "welder",
-        "mechanical-engineer",
-        "electrician",
-        "hvac-technician"
+        "teacher",
+        "guidance-counselor"
       ],
       "institutionTags": [
         "any-school"

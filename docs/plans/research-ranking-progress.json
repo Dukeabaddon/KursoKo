@@ -24,14 +24,13 @@
       "matcher": "prior commit 8fbc016"
     },
     {
-      "id": "tests",
-      "signals": ["87 tests green", "riasec-tag-breadth.test.js added"],
-      "matcher": "CI gate"
+      "id": "scholarship-career-boilerplate",
+      "signals": ["173 scholarships de-boilerplated from 4-trade copy-paste", "name/RIASEC inference"],
+      "matcher": "scripts/audit-scholarship-career-boilerplate.py"
     }
   ],
   "gaps": [
-    "22 schools lack popularCourses (official sites blocked or thin catalog)",
-    "scholarship careerTags boilerplate on shared 4-career sets",
+    "46 scholarships still have 4+ careerTags (non-boilerplate sets)",
     "240+ school goal: at 227"
   ],
   "nextBatch": [
