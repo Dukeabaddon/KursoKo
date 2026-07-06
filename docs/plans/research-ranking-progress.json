@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-07-06",
+  "phase": "research-ranking-v1",
+  "approach": "Soft bonuses from sourced program strengths — not fake global rank numbers",
+  "completed": [
+    {
+      "id": "dentist",
+      "signals": ["DMD 6-year", "I+S RIASEC career added"],
+      "matcher": "CAREER_KEYWORDS + school bonuses"
+    },
+    {
+      "id": "bestlink",
+      "signals": ["BS Criminology", "CHED-accredited", "bcp.edu.ph"],
+      "matcher": "criminology keyword + score bonus"
+    },
+    {
+      "id": "nu-moa",
+      "signals": ["DMD model dentistry school (NU official)", "clinical DMD"],
+      "matcher": "dentistry keywords in strengthTags"
+    },
+    {
+      "id": "nu-manila",
+      "signals": ["College of Dentistry heritage", "allied health cluster"],
+      "matcher": "dentistry in popularCourses"
+    }
+  ],
+  "gaps": [
+    "No dentist career id in careers.json — dentistry schools cannot surface on career results yet",
+    "NU Cavite campus not in catalog — have Laguna/Santa Rosa (nu-santa-rosa, national-university-laguna)",
+    "programHighlights field not yet wired into universityMatcher score",
+    "156 schools still have 5+ broad riasecTags"
+  ],
+  "nextBatch": ["dentist career + RIASEC weights", "wire programHighlights bonus", "CEU/UE dentistry", "nursing volume schools"]
+}

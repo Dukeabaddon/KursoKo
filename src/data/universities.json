@@ -3973,15 +3973,17 @@
       "lguId": "manila",
       "region": "NCR",
       "location": "Manila",
-      "description": "Historic private university affiliated with SM Group. Known for business, engineering, health sciences, and education.",
+      "description": "Historic private university (SM Group). Strong in dentistry (College of Dentistry, 100+ years), nursing, pharmacy, allied health, engineering, and business. Manila flagship; DMD also offered at NU MOA campus.",
       "tuition": "Approximately P35,000-P55,000 per semester",
-      "website": "https://www.nu-manila.edu.ph/",
+      "website": "https://national-u.edu.ph/",
       "riasecTags": [
-        "C",
-        "E",
-        "I"
+        "I",
+        "S",
+        "C"
       ],
       "strengthTags": [
+        "dentistry",
+        "dental-medicine",
         "nursing",
         "accountancy",
         "hospitality",
@@ -3997,18 +3999,22 @@
         "education"
       ],
       "popularCourses": [
+        "Doctor of Dental Medicine",
         "BS Nursing",
         "BS Accountancy",
         "BS Hospitality Management",
         "BS Tourism Management",
         "BS Civil Engineering",
-        "BS Computer Engineering",
         "BS Information Technology",
         "BS Computer Science",
         "BS Pharmacy",
         "BS Medical Technology",
         "BS Architecture",
         "BS Business Administration"
+      ],
+      "programHighlights": [
+        "College of Dentistry cited among model dentistry schools nationally (NU MOA campus)",
+        "Long-running DMD program with clinical training pathway"
       ],
       "programSource": "official_website"
     },
@@ -4062,20 +4068,35 @@
       "lguId": "pasay",
       "region": "NCR",
       "location": "Pasay",
-      "description": "NU campus in MOA Complex offering business, tourism, and maritime programs.",
+      "description": "NU campus at MOA Complex, Pasay. Known nationally for Doctor of Dental Medicine (6-year DMD), dental hygiene, and dental technology programs with clinical training.",
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.nu-moa.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "E",
-        "C"
+        "S",
+        "R"
       ],
       "strengthTags": [
+        "dentistry",
+        "dental-medicine",
+        "dental-hygiene",
+        "dental-technology",
+        "health-sciences",
         "business",
         "tourism",
         "maritime"
-      ]
+      ],
+      "popularCourses": [
+        "Doctor of Dental Medicine",
+        "BS Dental Hygiene",
+        "Dental Technology NC IV",
+        "BS Hospitality Management"
+      ],
+      "programHighlights": [
+        "NU MOA College of Dentistry — model dentistry program cited by CHED reopening notices",
+        "Hands-on clinical training for DMD students"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "nu-santa-rosa",
@@ -8419,8 +8440,8 @@
         "Bachelor of Science in Computer Science",
         "Bachelor of Science in Nursing",
         "Bachelor of Science in Psychology",
-        "Bachelor of Science in Legal Management",
-        "Bachelor of Science in Hospitality Management"
+        "Bachelor of Science in Hospitality Management",
+        "Doctor of Dental Medicine"
       ],
       "programSource": "official_website"
     },

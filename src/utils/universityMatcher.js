@@ -59,6 +59,7 @@ const CAREER_KEYWORDS = {
   'hr-specialist': ['psychology', 'business', 'management'],
   'content-creator': ['communications', 'arts', 'multimedia', 'design'],
   pharmacist: ['pharmacy', 'health', 'science'],
+  dentist: ['dentistry', 'dental', 'dental medicine', 'doctor of dental', 'dmd', 'oral health', 'dental hygiene'],
   welder: ['welding', 'metal fabrication', 'industrial technology', 'tesda', 'engineering technology'],
   'automotive-technician': ['automotive', 'automotive servicing', 'industrial technology', 'tesda', 'mechanical'],
   'hvac-technician': ['hvac', 'refrigeration', 'air conditioning', 'mechanical technology', 'tesda', 'rac servicing'],
@@ -221,6 +222,13 @@ function scoreUniversity(university, profile, career) {
   if (career?.id === 'criminology-graduate' && university.id === 'bestlink') score += 4
   if (career?.id === 'criminology-graduate' && university.id === 'plm') score += 2
   if (career?.id === 'criminology-graduate' && university.id === 'plmun') score += 3
+  if (career?.id === 'dentist' && university.id === 'nu-moa') score += 5
+  if (career?.id === 'dentist' && university.id === 'ceu') score += 4
+  if (career?.id === 'dentist' && university.id === 'ue-manila') score += 4
+  if (career?.id === 'dentist' && university.id === 'nu-manila') score += 3
+  if (career?.id === 'dentist' && university.id === 'dlsu-dasmarinas') score += 2
+
+  if ((university.programHighlights?.length ?? 0) > 0 && keywordHits > 0) score += 1
 
   const tagBreadth = tags.length
   if (keywordHits === 0) {

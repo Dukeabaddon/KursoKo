@@ -3,7 +3,7 @@
     "version": "2.0.0",
     "lastUpdated": "2026-07-04",
     "description": "Career titles mapped to RIASEC dimensions for match scoring",
-    "count": 57,
+    "count": 58,
     "source": "src/data/careers.json + docs/plans/kursoko-data2/careers-research.json"
   },
   "careers": [
@@ -1032,6 +1032,24 @@
         "Office software proficiency"
       ],
       "learningPath": "Any business-related course or TESDA Office Management / Computer Systems Servicing. Many start right after SHS with strong computer and communication skills."
+    },
+    {
+      "id": "dentist",
+      "title": "Dentist (Doctor of Dental Medicine)",
+      "riasecWeights": {
+        "R": 0.55,
+        "I": 0.9,
+        "A": 0.35,
+        "S": 0.75,
+        "E": 0.45,
+        "C": 0.55
+      },
+      "skills": [
+        "Clinical dentistry",
+        "Patient communication",
+        "Diagnostic precision"
+      ],
+      "learningPath": "Doctor of Dental Medicine (6-year DMD) at a CHED-recognized dental college + dental board licensure"
     }
   ]
 }

@@ -42,6 +42,8 @@ const CAREER_NARRATIVES = {
     'You turn thoughts into videos, posts, or stories that connect. You experiment, learn in public, and enjoy audience feedback. Content creation fits expressive students who like media and momentum.',
   pharmacist:
     'You combine science with trust — medicine, dosage, and patient safety. You like precision and helping people stay healthy. Pharmacy suits detail-oriented students drawn to healthcare and chemistry.',
+  dentist:
+    'You work with steady hands and careful judgment to keep people healthy and confident about their smile. You enjoy science, patient care, and solving problems inside the clinic. Dentistry is a licensed professional path through a six-year Doctor of Dental Medicine program.',
   welder:
     'You turn raw metal into strong joints that hold buildings, ships, and vehicles together. With a TESDA certificate, you can work locally or abroad where Filipino welders are always in demand. It is a hands-on path that rewards precision and steady practice.',
   'automotive-technician':

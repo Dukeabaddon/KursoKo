@@ -24,8 +24,8 @@ describe('career algorithm thresholds', () => {
   })
 
   it('ranks by weighted average, not by primary-weight threshold', () => {
-    const matches = getCareerMatches(investigativeProfile, 57)
-    expect(matches.length).toBe(57)
+    const matches = getCareerMatches(investigativeProfile, 58)
+    expect(matches.length).toBe(58)
 
     // Top career should lean Investigative; full top-5 can mix secondary fits
     const topIds = matches.slice(0, 5).map((m) => m.id)
@@ -80,7 +80,7 @@ describe('career algorithm thresholds', () => {
   })
 
   it('matchPercent is a 0–100 alignment meter', () => {
-    const matches = getCareerMatches(investigativeProfile, 57)
+    const matches = getCareerMatches(investigativeProfile, 58)
     for (const m of matches) {
       expect(m.matchPercent).toBeGreaterThanOrEqual(0)
       expect(m.matchPercent).toBeLessThanOrEqual(100)
