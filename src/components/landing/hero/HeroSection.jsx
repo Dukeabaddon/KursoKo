@@ -53,8 +53,8 @@ export function HeroSection({ onStart }) {
             </svg>
           </div>
 
-          <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-4 pt-5 md:grid md:grid-cols-2 md:items-stretch md:gap-6 md:px-10 md:py-10 lg:gap-8 lg:px-14 lg:py-12">
-            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 flex-col items-start justify-start gap-[1.125rem] text-left md:h-full md:justify-center md:gap-0">
+          <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-0 pt-5 md:grid md:grid-cols-2 md:items-stretch md:gap-6 md:px-10 md:py-10 md:pb-4 lg:gap-8 lg:px-14 lg:py-12">
+            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 shrink-0 flex-col items-start justify-start gap-[1.125rem] text-left md:h-full md:justify-center md:gap-0">
               <motion.p
                 className={`mb-0 md:mb-3 ${landingHeroEyebrow}`}
                 {...eyebrowMotion}
@@ -102,7 +102,7 @@ export function HeroSection({ onStart }) {
               </motion.button>
             </div>
 
-            <div className={landingHeroCharacterCol}>
+            <div className={`landing-hero-character ${landingHeroCharacterCol}`}>
               <motion.div className={landingHeroGlow} {...glowMotion} aria-hidden="true" />
 
               {HERO_DECOR.map((item, index) => (

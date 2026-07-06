@@ -26,7 +26,7 @@ export const HERO_CHARACTER = {
   width: 973,
   height: 830,
   className:
-    'pointer-events-none absolute bottom-0 left-1/2 z-20 h-[94%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom select-none md:h-[90%] md:-translate-x-[52%] lg:h-[110%]',
+    'pointer-events-none absolute bottom-0 left-1/2 z-20 h-full w-auto max-w-[min(100%,22rem)] -translate-x-1/2 object-contain object-bottom select-none md:h-[90%] md:max-w-none md:-translate-x-[52%] lg:h-[110%]',
 }
 
 export const decorImgBase = 'pointer-events-none block h-auto max-w-none select-none'
