@@ -1,0 +1,110 @@
+{
+  "research_id": "top100-gap-pwu",
+  "generated": "2026-07-05",
+  "action": "add_new",
+  "university": {
+    "id": "philippine-womens-university",
+    "name": "Philippine Women's University",
+    "type": "private",
+    "city": "Manila",
+    "lguId": "manila",
+    "region": "NCR",
+    "location": "Malate, Manila",
+    "description": "Historic private university founded in 1919 and recognized in 1932 as the first women's university in Asia founded by Asians. Now fully co-educational despite its name. Main campus on Taft Avenue in Malate. Known for music (CHED Center of Excellence), nursing, nutrition and dietetics, pharmacy, hospitality management, and teacher education. Uses a trimestral academic calendar.",
+    "tuition": "Approximately P30,000-P60,000 per trimester (varies by program; allied health and laboratory programs tend higher; contact admissions for current rates)",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Nutrition and Dietetics",
+      "BS Pharmacy",
+      "BS Medical Technology",
+      "BS Food Technology",
+      "BS Business Administration",
+      "BS Hospitality Management",
+      "Bachelor of Music major in Music Education",
+      "Bachelor of Elementary Education",
+      "BA Communication Arts",
+      "BFA Advertising"
+    ],
+    "website": "https://www.pwu.edu.ph/",
+    "riasecTags": [
+      "S",
+      "A",
+      "C",
+      "I",
+      "E"
+    ],
+    "strengthTags": [
+      "nursing",
+      "pharmacy",
+      "medical-technology",
+      "music",
+      "hospitality",
+      "business",
+      "teacher-education",
+      "food-science"
+    ]
+  },
+  "sources": [
+    {
+      "title": "About PWU",
+      "url": "https://www.pwu.edu.ph/about-pwu/",
+      "notes": "History, co-ed status, mission and vision"
+    },
+    {
+      "title": "Contact Us – Manila Campus",
+      "url": "https://www.pwu.edu.ph/contact-us/",
+      "notes": "1743 Taft Avenue, Malate, Manila address"
+    },
+    {
+      "title": "PWU Schools",
+      "url": "https://www.pwu.edu.ph/school-list/",
+      "notes": "College-level schools list"
+    },
+    {
+      "title": "PWU Admissions",
+      "url": "https://www.pwu.edu.ph/admissions/",
+      "notes": "Trimestral calendar, open admission regardless of gender, undergraduate course offerings"
+    },
+    {
+      "title": "School of Nursing",
+      "url": "https://www.pwu.edu.ph/school-list/nursing/",
+      "notes": "BSN 8-trimester program since 1960"
+    },
+    {
+      "title": "School of Nutrition",
+      "url": "https://www.pwu.edu.ph/school-list/nutrition/",
+      "notes": "BS Nutrition and Dietetics; MSCN first in Philippines and Asia"
+    },
+    {
+      "title": "School of Music",
+      "url": "https://www.pwu.edu.ph/school-list/music/",
+      "notes": "CHED Center of Excellence; co-ed; BM and PhD programs"
+    },
+    {
+      "title": "School of Pharmacy",
+      "url": "https://www.pwu.edu.ph/school-list/pharmacy/",
+      "notes": "BS Pharmacy ladderized curriculum since 1926"
+    },
+    {
+      "title": "School of Hospitality Management",
+      "url": "https://www.pwu.edu.ph/school-list/hospitality-management/",
+      "notes": "BSHM specializations; roots in institutional food administration"
+    },
+    {
+      "title": "Conrado Benitez Institute for Business Education",
+      "url": "https://www.pwu.edu.ph/school-list/cbibe/",
+      "notes": "BSBA majors; MBA programs"
+    },
+    {
+      "title": "School of Food Science and Technology",
+      "url": "https://www.pwu.edu.ph/school-list/foodtech/",
+      "notes": "BS Food Technology program"
+    },
+    {
+      "title": "PACUCOA Level IV Accreditation",
+      "url": "https://www.pwu.edu.ph/pacu-newsletter-volume-xiii-no-1/",
+      "notes": "Level IV for BSBA, Food Technology, HRM; Level III for Nutrition and Dietetics"
+    }
+  ],
+  "courses_research_notes": "Undergraduate offerings verified across official school pages and admissions course list. Top programs reflect PWU's historic strengths (music, nutrition, nursing, pharmacy) plus PACUCOA Level IV accredited BSBA, Food Technology, and Hospitality Management. Homepage highlights recent board passers in pharmacy, nursing, and medical technology. Tuition not published as a flat rate on the official site; trimestral fee ranges cited from admissions guidance and secondary guides, flagged for merge-time verification. Scholarship runtime already references institution tag 'pwu' — align matcher id on merge. QS Asia 2026 rank 94 per top100 research file."
+}

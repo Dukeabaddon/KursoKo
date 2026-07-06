@@ -1,0 +1,67 @@
+{
+  "research_id": "top100-gap-ua",
+  "generated": "2026-07-05",
+  "action": "enrich_existing",
+  "existing_runtime_id": "ua",
+  "alias_names": ["University of Assumption"],
+  "university": {
+    "id": "ua",
+    "name": "University of the Assumption",
+    "type": "private",
+    "city": "Pampanga",
+    "lguId": "pampanga",
+    "region": "Pampanga",
+    "location": "Unisite Subd., Del Pilar, City of San Fernando, Pampanga 2000",
+    "description": "Archdiocesan Catholic university in San Fernando, Pampanga — the first archdiocesan Catholic university in Asia. Offers PAASCU-accredited undergraduate and graduate programs across eight schools and colleges, with strong board programs in nursing, pharmacy, accountancy, architecture, engineering, and teacher education.",
+    "tuition": "Approximately P20,000–P45,000 per semester (regular programs; Nursing and Pharmacy typically higher — AY 2026-2027 initial enrollment P5,000 regular / P8,000 CONP; full assessment via SERP; verify with Finance Office)",
+    "popularCourses": [
+      "BS Nursing",
+      "BS Accountancy",
+      "BS Architecture",
+      "BS Pharmacy",
+      "BS Civil Engineering",
+      "BS Information Technology",
+      "BS Psychology",
+      "BS Hospitality Management",
+      "Bachelor in Elementary Education",
+      "Bachelor of Secondary Education (Major in Values Education with Religious Education)",
+      "AB Communication",
+      "BS Criminology"
+    ],
+    "website": "https://www.ua.edu.ph/",
+    "riasecTags": ["R", "I", "S", "E", "C"],
+    "strengthTags": [
+      "education",
+      "accountancy",
+      "nursing",
+      "pharmacy",
+      "engineering",
+      "architecture",
+      "information-technology",
+      "business",
+      "hospitality",
+      "tourism",
+      "arts-and-sciences",
+      "criminology"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.ua.edu.ph/",
+      "note": "Official homepage — archdiocesan Catholic university identity, PAASCU accreditation, mission (Biasa, Maganaca, Mayap)"
+    },
+    {
+      "url": "https://web.ua.edu.ph/academics/",
+      "note": "Official Study Here page — eight schools/colleges: Accountancy; Engineering and Architecture; Hospitality and Tourism Management; IT, Computing and Library Science; Nursing and Pharmacy; Arts and Sciences; Business and Public Administration; Education"
+    },
+    {
+      "url": "https://web.ua.edu.ph/ua-first-semester-2026-2027/",
+      "note": "Official AY 2026-2027 freshman enrollment — program list per college, dean office locations, initial payment amounts (P5,000 regular / P8,000 CONP), UACET board vs non-board program requirements"
+    },
+    {
+      "url": "https://quickstart.ua.edu.ph/",
+      "note": "Official admissions hub — college unit links, application fee (P400), enrollment procedures"
+    }
+  ],
+  "courses_research_notes": "Crosswalk: uniRank top-100 rank 69 'University of Assumption' = runtime id 'ua' (University of the Assumption). Eight college units (official academics + enrollment): SAS — Communication, Criminology, Human Services, Psychology; CONP — Nursing, Pharmacy; SOB — Business Administration, Hospitality Management, Tourism Management; COA — Accountancy, Accounting Information System; SED — Elementary Education, Secondary Education (Values Education with Religious Education); CEA — Civil, Computer and Industrial Engineering, Architecture; CIT — Information Technology; BLIS listed under UACET board programs. Graduate school also offered (not in popularCourses). Homepage highlights strong licensure outcomes (Architecture, CPA). Tuition: UA does not publish full per-program fee tables online; enrollment memo gives initial-payment tiers only."
+}

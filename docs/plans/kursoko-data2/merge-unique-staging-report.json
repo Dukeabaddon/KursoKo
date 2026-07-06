@@ -1,12 +1,7 @@
 {
-  "added": [
-    "uni-shs-b3-001",
-    "uni-priv-b3-014",
-    "uni-tvet-b3-004",
-    "uni-priv-b3-016"
-  ],
-  "addedCount": 4,
+  "added": [],
+  "addedCount": 0,
   "removedIds": [],
-  "skippedCount": 54,
+  "skippedCount": 58,
   "finalCount": 226
 }

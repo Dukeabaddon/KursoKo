@@ -1,0 +1,59 @@
+{
+  "research_id": "top100-gap-up-clark",
+  "generated": "2026-07-05",
+  "action": "add_new",
+  "university": {
+    "id": "up-clark",
+    "name": "University of the Philippines Clark",
+    "type": "public",
+    "city": "Clark",
+    "lguId": "pampanga",
+    "region": "Central Luzon",
+    "location": "Clark Freeport Zone, Pampanga",
+    "description": "UP Diliman extension campus (UPDEPP) in Clark Freeport Zone, serving Central Luzon since 1979. Offers business, economics, and applied psychology at undergraduate level plus management and governance graduate programs. No engineering degrees at this campus—engineering remains at UP Diliman Quezon City.",
+    "tuition": "Free tuition under RA 10931 for eligible students; UP socialized tuition for others",
+    "popularCourses": [
+      "BS Business Management",
+      "BA Business Economics",
+      "BA Applied Psychology",
+      "Master of Management",
+      "Master in Governance and Innovative Leadership"
+    ],
+    "website": "https://upepp.upd.edu.ph/",
+    "riasecTags": [
+      "C",
+      "E",
+      "I",
+      "S"
+    ],
+    "strengthTags": [
+      "business",
+      "economics",
+      "psychology",
+      "management",
+      "public-service",
+      "research"
+    ]
+  },
+  "sources": [
+    {
+      "title": "UPDEPP Undergraduate Programs",
+      "url": "https://upepp.upd.edu.ph/academics/undergraduate-programs/",
+      "accessed": "2026-07-05",
+      "notes": "BS Business Management, BA Business Economics, BA Applied Psychology"
+    },
+    {
+      "title": "UPDEPP Graduate Programs",
+      "url": "https://upepp.upd.edu.ph/academics/graduate-program/",
+      "accessed": "2026-07-05",
+      "notes": "Master of Management (MM), Master in Governance and Innovative Leadership (MGIL)"
+    },
+    {
+      "title": "UP Diliman Extension Program in Pampanga — General Catalogue",
+      "url": "https://our.upd.edu.ph/files/catalogue/UPDEPP.pdf",
+      "accessed": "2026-07-05",
+      "notes": "Official registrar catalogue; Clark Freeport Zone location; three UG + MM graduate"
+    }
+  ],
+  "courses_research_notes": "Official unit name: UP Diliman Extension Program in Pampanga (UPDEPP). Also marketed as UP Clark. Campus moved to Clark Freeport Zone in 1996 after Pinatubo lahar. Undergraduate: BS Business Management (management/entrepreneurship/HRM/marketing/finance), BA Business Economics (regional/industrial economics focus), BA Applied Psychology (I-O, school, community, clinical psychology tracks). Graduate: Master of Management (non-thesis, trimestral; includes economic zone management elective), Master in Governance and Innovative Leadership (public sector, digital governance, capstone). No BS/MS engineering programs at Clark—College of Engineering is at UP Diliman main campus only. Admissions via UPCAT for undergrad; separate grad application via graduate.eppo.upd@up.edu.ph."
+}

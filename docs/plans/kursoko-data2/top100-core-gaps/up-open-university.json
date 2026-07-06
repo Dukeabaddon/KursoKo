@@ -1,0 +1,73 @@
+{
+  "research_id": "top100-gap-up-open-university",
+  "generated": "2026-07-05",
+  "action": "add_new",
+  "university": {
+    "id": "up-open-university",
+    "name": "University of the Philippines Open University",
+    "type": "public",
+    "city": "Los Baños",
+    "lguId": "los-banos",
+    "region": "CALABARZON",
+    "location": "Maahas, Los Baños, Laguna (nationwide open and distance learning)",
+    "description": "UP System constituent and the Philippines' pioneer in open, distance, and online learning (ODeL), headquartered in Los Baños. Delivers undergraduate and graduate degrees nationwide through distance education, MOOCs, continuing education, and microcredentials under RA 10650 (Open Distance Learning Law).",
+    "tuition": "Free under RA 10931 for eligible UP System students; socialized tuition and fees apply for others (verify on official UPOU site)",
+    "popularCourses": [
+      "Bachelor of Arts in Multimedia Studies (BAMS)",
+      "Bachelor of Education Studies (BES)",
+      "Master of Development Communication (MDC)",
+      "Master of Distance Education (MDE)",
+      "Master of Information Systems (MIS)",
+      "Master of Arts in Nursing (MAN)",
+      "Master of Public Management (MPM)",
+      "Master of International Health (MIH)",
+      "Master of Environment and Natural Resources Management (MENRM)",
+      "Master of Social Work (MSW)",
+      "Master of Climate and Disaster Resilience (MCDR)",
+      "Doctor of Philosophy in Education"
+    ],
+    "website": "https://www.upou.edu.ph/",
+    "riasecTags": ["I", "S", "A", "C", "E"],
+    "strengthTags": [
+      "education",
+      "distance-education",
+      "open-distance-learning",
+      "development-communication",
+      "multimedia",
+      "multimedia-studies",
+      "information-systems",
+      "public-health",
+      "international-health",
+      "nursing",
+      "public-management",
+      "social-work",
+      "environment-and-natural-resources",
+      "climate-and-disaster-resilience",
+      "moocs",
+      "continuing-education"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.upou.edu.ph/",
+      "note": "Official homepage — ODeL mandate, MOOCs, continuing education, microcredentials"
+    },
+    {
+      "url": "https://www.upou.edu.ph/about/",
+      "note": "Mission, vision, RA 10650 Open Distance Learning Law role"
+    },
+    {
+      "url": "https://registrar.upou.edu.ph/bachelors-program/",
+      "note": "Undergraduate degrees: BAMS, BES; associate pathways; Los Baños HQ address"
+    },
+    {
+      "url": "https://registrar.upou.edu.ph/masters-program/",
+      "note": "14 master's programs including MDC, MDE, MIS, MAN, MPM, MIH, MENRM, MSW, MCDR"
+    },
+    {
+      "url": "https://helpdesk.upou.edu.ph/support/solutions/articles/48001148314-what-programs-are-offered-by-upou-",
+      "note": "Full program inventory — undergraduate, diploma, master's, doctorate, non-formal"
+    }
+  ],
+  "courses_research_notes": "UPOU is distance-only (ODeL): 2 bachelor's (BAMS, BES), 14 master's (flagship MDC, MDE, MIS, MAN, MPM, MIH), 2 doctorates (Doctor of Communication, PhD Education), plus associate/diploma ladder programs and MOOCs/CEPs. HQ: National Highway, Maahas, Los Baños, Laguna 4031. uniRank rank 61; QS Asia 2026; P0 gap in core CALABARZON scope."
+}

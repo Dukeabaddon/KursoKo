@@ -1,0 +1,65 @@
+{
+  "research_id": "top100-gap-eac",
+  "generated": "2026-07-05",
+  "action": "add_new",
+  "university": {
+    "id": "emilio-aguinaldo-college",
+    "name": "Emilio Aguinaldo College",
+    "type": "private",
+    "city": "Manila",
+    "lguId": "manila",
+    "region": "NCR",
+    "location": "Paco, Manila (main campus; secondary campus in Dasmariñas, Cavite)",
+    "description": "Private non-sectarian university founded in 1957, with its main campus on San Marcelino Street in Manila. Known for allied health sciences, nursing, medicine, dentistry, pharmacy, and therapy programs, with hospital-affiliated clinical training.",
+    "tuition": "Approximately P40,000–P90,000 per semester (health sciences and lab-heavy programs higher; estimate — EAC does not publish official fee tables online; verify with finance/registrar)",
+    "popularCourses": [
+      "BS Nursing",
+      "Doctor of Medicine",
+      "Doctor of Dental Medicine",
+      "BS Medical Technology",
+      "BS Pharmacy",
+      "BS Physical Therapy",
+      "BS Occupational Therapy",
+      "BS Radiologic Technology",
+      "BS Respiratory Therapy",
+      "BS Criminology",
+      "BS Hospitality Management",
+      "BS Business Administration"
+    ],
+    "website": "https://www.eac.edu.ph/",
+    "riasecTags": ["I", "S", "R", "E"],
+    "strengthTags": [
+      "nursing",
+      "medicine",
+      "dentistry",
+      "pharmacy",
+      "medical-technology",
+      "physical-therapy",
+      "occupational-therapy",
+      "radiologic-technology",
+      "allied-health",
+      "criminology",
+      "business",
+      "hospitality"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.eac.edu.ph/admissions-eacm/",
+      "note": "Official Manila campus admissions page — undergraduate program list, address (1113–1117 San Marcelino St., Paco, Manila 1007)"
+    },
+    {
+      "url": "https://www.eac.edu.ph/",
+      "note": "Official EAC website — institution identity, Manila and Cavite campuses"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Emilio_Aguinaldo_College",
+      "note": "Campus verification — main campus Ermita/Paco Manila (NCR); Cavite campus Dasmariñas; history and academics overview"
+    },
+    {
+      "url": "https://www.eac.edu.ph/admsns_/",
+      "note": "Official admissions hub — cross-campus graduate and undergraduate program index"
+    }
+  ],
+  "courses_research_notes": "Manila campus schools/colleges (official admissions): School of Arts and Sciences (BA Communication, BS Psychology, BS Biology); School of Business Education (BS Business Administration — Financial/Marketing/Operations Management); School of Criminology (BS Criminology, BS Real Estate Management); School of Dentistry (Doctor of Dental Medicine); School of Engineering and Technology (BS Computer Engineering, BS Information Technology); School of Hospitality & Tourism Management (BS Hospitality Management); School of Medical Technology; Marian School of Nursing (BS Nursing); School of Nutrition and Dietetics (BS Nutrition and Dietetics); School of Pharmacy; School of Physical, Occupational, & Respiratory Therapy; School of Radiologic Technology; School of Midwifery & Caregiving (BS Midwifery); School of Teacher Education (BSEd English, BSEd Social Studies); School of Medicine (Doctor of Medicine); Graduate School (PhD Educational Management, MA Education, MA Nursing, ETEEAP). Cavite campus offers additional programs (e.g. JD) not listed on Manila admissions page."
+}

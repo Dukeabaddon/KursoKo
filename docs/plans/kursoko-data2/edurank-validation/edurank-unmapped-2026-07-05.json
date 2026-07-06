@@ -1,0 +1,1597 @@
+{
+  "generated": "2026-07-05",
+  "source": "https://edurank.org/geo/ph/",
+  "runtime_total": 209,
+  "patched_total": 51,
+  "patched_changed_this_run": 0,
+  "unmapped_total": 158,
+  "by_category": {
+    "chain_campus_no_edurank": 20,
+    "edurank_listed_no_publications": 22,
+    "campus_branch_unlisted": 28,
+    "tvet_shs_no_edurank": 15,
+    "not_on_edurank": 73
+  },
+  "schools": [
+    {
+      "id": "access-computer",
+      "name": "Access Computer College",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "access-computer-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "aclc-college-antipolo",
+      "name": "ACLC College - Antipolo",
+      "type": "private",
+      "region": "Rizal",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "aclc-college-antipolo",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "aclc-college-dasmarinas",
+      "name": "ACLC College - Dasmariñas",
+      "type": "private",
+      "region": "Cavite",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "aclc-college-dasmarinas",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "aclc-college-malolos",
+      "name": "ACLC College - Malolos",
+      "type": "private",
+      "region": "Bulacan",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "aclc-college-malolos",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "aclc-college-santa-rosa",
+      "name": "ACLC College - Santa Rosa",
+      "type": "private",
+      "region": "Laguna",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "aclc-college-santa-rosa",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "ama-computer-college",
+      "name": "AMA Computer College",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "ama-computer-university",
+      "resolve_method": "parent_inherit",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "ama-computer-santa-rosa",
+      "name": "AMA Computer College - Santa Rosa",
+      "type": "private",
+      "region": "Laguna",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "ama-computer-university",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "ama-shs",
+      "name": "AMA Senior High School",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "ama-senior-high-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "antipolo-science",
+      "name": "Antipolo Science High School",
+      "type": "shs",
+      "region": "Antipolo",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "antipolo-science-high-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "arellano-university",
+      "name": "Arellano University",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "arellano-university",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "arellano-university-malabon",
+      "name": "Arellano University - Malabon",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "arellano-university",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "arellano-university-pasay",
+      "name": "Arellano University - Pasay",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "arellano-university",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "asia-pacific-aviation",
+      "name": "Asia Pacific Aviation Center",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "asia-pacific-aviation-center",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "apc",
+      "name": "Asia Pacific College",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "asia-pacific-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "asian-institute-of-computer-studies-aics-antipolo",
+      "name": "Asian Institute of Computer Studies (AICS) - Antipolo",
+      "type": "private",
+      "region": "Rizal",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "asian-institute-of-computer-studies-aics-antipolo",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "asian-institute-of-computer-studies-aics-quezon-city",
+      "name": "Asian Institute of Computer Studies (AICS) - Quezon City",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "asian-institute-of-computer-studies-aics-quezon-city",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "asian-institute-science",
+      "name": "Asian Institute of Science and Technology",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "asian-institute-of-science-and-technology",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "assumption-antipolo",
+      "name": "Assumption Antipolo",
+      "type": "shs",
+      "region": "Antipolo",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "assumption-antipolo",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "ateneo-shs",
+      "name": "Ateneo de Manila Senior High School",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "ateneo-de-manila-senior-high-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "batangas-provincial",
+      "name": "Batangas Provincial College",
+      "type": "public",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "batangas-provincial-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "bestlink",
+      "name": "Bestlink College of the Philippines",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "bestlink-college-of-the-philippines",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "bulacan-polytechnic",
+      "name": "Bulacan Polytechnic College",
+      "type": "public",
+      "region": "Bulacan",
+      "category": "not_on_edurank",
+      "attempted_slug": "bulacan-polytechnic-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "calayan-educational",
+      "name": "Calayan Educational Foundation",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "calayan-educational-foundation",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "canossa-college",
+      "name": "Canossa College of San Pablo",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "canossa-college-of-san-pablo",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "cavite-maritime",
+      "name": "Cavite Maritime Academy",
+      "type": "private",
+      "region": "Cavite",
+      "category": "not_on_edurank",
+      "attempted_slug": "cavite-maritime-academy",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "ceu",
+      "name": "Centro Escolar University",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "centro-escolar-university",
+      "resolve_method": "exact_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "centro-escolar-university-makati",
+      "name": "Centro Escolar University - Makati",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "centro-escolar-university",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "chiang-kai-shek-college",
+      "name": "Chiang Kai Shek College",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "chiang-kai-shek-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "christian-college-tanauan",
+      "name": "Christian College of Tanauan",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "christian-college-of-tanauan",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "ciit-philippines",
+      "name": "CIIT College of Arts and Technology",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "ciit-college-of-arts-and-technology",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "cmu",
+      "name": "City of Malabon University",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "city-of-malabon-university",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "cup",
+      "name": "City University of Pasay",
+      "type": "public",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "trinity-university-of-asia",
+      "resolve_method": "fuzzy_match",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "colegio-de-san-jose",
+      "name": "Colegio de San Jose",
+      "type": "private",
+      "region": "Bulacan",
+      "category": "not_on_edurank",
+      "attempted_slug": "colegio-de-san-jose",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "lettran",
+      "name": "Colegio de San Juan de Letran",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "colegio-de-san-juan-de-letran",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "colegio-de-san-pascual-baylon",
+      "name": "Colegio de San Pascual Baylon",
+      "type": "private",
+      "region": "Bulacan",
+      "category": "not_on_edurank",
+      "attempted_slug": "colegio-de-san-pascual-baylon",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "colegio-de-san-pedro",
+      "name": "Colegio de San Pedro",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "colegio-de-san-pedro",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "colegio-ng-lungsod-ng-batangas",
+      "name": "Colegio ng Lungsod ng Batangas",
+      "type": "public",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "colegio-ng-lungsod-ng-batangas",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "colegio-san-agustin-bacolod",
+      "name": "Colegio San Agustin - Bacolod",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "colegio-san-agustin-bacolod",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "datamex-institute-of-computer-technology-caloocan",
+      "name": "Datamex Institute of Computer Technology - Caloocan",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "datamex-institute-of-computer-technology-caloocan",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "dls-medical",
+      "name": "De La Salle Medical and Health Sciences Institute",
+      "type": "private",
+      "region": "Cavite",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "de-la-salle-medical-and-health-sciences-institute",
+      "resolve_method": "exact_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "de-la-salle-zobel",
+      "name": "De La Salle Santiago Zobel School",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "de-la-salle-santiago-zobel-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "diliman-college",
+      "name": "Diliman College",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "diliman-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "don-bosco-college-canlubang",
+      "name": "Don Bosco College - Canlubang",
+      "type": "private",
+      "region": "Laguna",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "don-bosco-college-canlubang",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "don-bosco-technical-institute-mandaluyong",
+      "name": "Don Bosco Technical Institute - Mandaluyong",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "don-bosco-technical-institute-mandaluyong",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "earist",
+      "name": "Eulogio 'Amang' Rodriguez Institute of Science and Technology (EARIST)",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "eulogio-amang-rodriguez-institute-of-science-and-technology-earist",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "first-city-providential",
+      "name": "First City Providential College",
+      "type": "private",
+      "region": "Bulacan",
+      "category": "not_on_edurank",
+      "attempted_slug": "first-city-providential-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "global-city-innovative-college",
+      "name": "Global City Innovative College",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "global-city-innovative-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "golden-state",
+      "name": "Golden State College",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "golden-state-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "grace-pedro-laguna",
+      "name": "Grace College of San Pedro, Laguna",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "grace-college-of-san-pedro-laguna",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "hau",
+      "name": "Holy Angel University",
+      "type": "private",
+      "region": "Pampanga",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "holy-angel-university",
+      "resolve_method": "exact_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "holy-cross-college-pampanga",
+      "name": "Holy Cross College - Pampanga",
+      "type": "private",
+      "region": "Pampanga",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "holy-cross-college-pampanga",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "i-academy",
+      "name": "iACADEMY",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "iacademy",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "ibm-philippines",
+      "name": "IBM Philippines",
+      "type": "tvet",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "ibm-philippines",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "icct",
+      "name": "ICCT Colleges",
+      "type": "private",
+      "region": "Rizal",
+      "category": "not_on_edurank",
+      "attempted_slug": "icct-colleges",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "imus-computer-college",
+      "name": "Imus Computer College",
+      "type": "private",
+      "region": "Cavite",
+      "category": "not_on_edurank",
+      "attempted_slug": "imus-computer-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "informatics",
+      "name": "Informatics College",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "informatics-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "infosys",
+      "name": "Infosys Philippines",
+      "type": "tvet",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "infosys-philippines",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "ici-culinary",
+      "name": "International Culinary Institute",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "international-culinary-institute",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "jru",
+      "name": "Jose Rizal University",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "jose-rizal-university",
+      "resolve_method": "exact_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "kingfisher-school-of-business-and-finance",
+      "name": "Kingfisher School of Business and Finance",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "kingfisher-school-of-business-and-finance",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "la-consolacion-bacolod",
+      "name": "La Consolacion College - Bacolod",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "la-consolacion-college-bacolod",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "la-consolacion-university",
+      "name": "La Consolacion University Philippines",
+      "type": "private",
+      "region": "Bulacan",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "la-consolacion-university-philippines",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "la-verdad-christian-college-apalit",
+      "name": "La Verdad Christian College - Apalit",
+      "type": "private",
+      "region": "Pampanga",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "la-verdad-christian-college-apalit",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "laguna-northwestern-college",
+      "name": "Laguna Northwestern College",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "laguna-northwestern-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "magsaysay-center",
+      "name": "Magsaysay Center for Hospitality and Culinary Arts",
+      "type": "tvet",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "magsaysay-center-for-hospitality-and-culinary-arts",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "mcc",
+      "name": "Makati Commercial Center",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "makati-commercial-center",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "makati-science",
+      "name": "Makati Science High School",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "makati-science-high-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "manila-central-university",
+      "name": "Manila Central University",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "manila-central-university",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "manila-science",
+      "name": "Manila Science High School",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "manila-science-high-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "mit",
+      "name": "Mapua Institute of Technology - Makati (iMake)",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "mapua-institute-of-technology-makati-imake",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "marcelino-fule",
+      "name": "Marcelino R. Fule Memorial College",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "marcelino-r-fule-memorial-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "maria-aurora",
+      "name": "Maria Aurora College",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "maria-aurora-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "meycauayan-college",
+      "name": "Meycauayan College",
+      "type": "private",
+      "region": "Bulacan",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "meycauayan-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "montessori-professional-college-quezon-city",
+      "name": "Montessori Professional College - Quezon City",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "montessori-professional-college-quezon-city",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "nu-manila",
+      "name": "National University",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "national-university",
+      "resolve_method": "alias",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "national-university-laguna",
+      "name": "National University - Laguna",
+      "type": "private",
+      "region": "Laguna",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "national-university-laguna",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "nu-moa",
+      "name": "National University - Mall of Asia",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "national-university",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "nu-santa-rosa",
+      "name": "National University - Santa Rosa",
+      "type": "private",
+      "region": "Laguna",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "national-university",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "northlink-technological-college",
+      "name": "Northlink Technological College",
+      "type": "private",
+      "region": "Bulacan",
+      "category": "not_on_edurank",
+      "attempted_slug": "northlink-technological-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "nueva-ecija-university",
+      "name": "Nueva Ecija University of Science and Technology",
+      "type": "public",
+      "region": "Pampanga",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "nueva-ecija-university-of-science-and-technology",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "our-lady-of-fatima-university-pampanga",
+      "name": "Our Lady of Fatima University - Pampanga",
+      "type": "private",
+      "region": "Pampanga",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "our-lady-of-fatima-university",
+      "resolve_method": "short_name",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "our-lady-of-fatima-university-quezon-city",
+      "name": "Our Lady of Fatima University - Quezon City",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "our-lady-of-fatima-university",
+      "resolve_method": "short_name",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "our-lady-fatima-valenzuela",
+      "name": "Our Lady of Fatima University - Valenzuela",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "our-lady-of-fatima-university",
+      "resolve_method": "short_name",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "plmar",
+      "name": "Pamantasan ng Lungsod ng Marikina",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "pamantasan-ng-lungsod-ng-marikina",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "plm",
+      "name": "Pamantasan ng Lungsod ng Maynila",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "pamantasan-ng-lungsod-ng-maynila",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "plmun",
+      "name": "Pamantasan ng Lungsod ng Muntinlupa",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "pamantasan-ng-lungsod-ng-muntinlupa",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "plp",
+      "name": "Pamantasan ng Lungsod ng Pasig",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "pamantasan-ng-lungsod-ng-pasig",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "plv",
+      "name": "Pamantasan ng Lungsod ng Valenzuela",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "pamantasan-ng-lungsod-ng-valenzuela",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "don-honorio-ventura",
+      "name": "Pampanga State University (formerly Don Honorio Ventura State University)",
+      "type": "public",
+      "region": "Pampanga",
+      "category": "not_on_edurank",
+      "attempted_slug": "pampanga-state-university-formerly-don-honorio-ventura-state-university",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "ptc",
+      "name": "Pateros Technological College",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "pateros-technological-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "patts",
+      "name": "PATTS College of Aeronautics",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "patts-college-of-aeronautics",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "philippine-christian-university-dasma",
+      "name": "Philippine Christian University - Dasmarinas",
+      "type": "private",
+      "region": "Cavite",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "philippine-christian-university",
+      "resolve_method": "short_name",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "philippine-science",
+      "name": "Philippine Science High School System",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "philippine-science-high-school-system",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "psca",
+      "name": "Philippine State College of Aeronautics",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "philippine-state-college-of-aeronautics",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "philippine-womens-university",
+      "name": "Philippine Women's University",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "philippine-womens-university",
+      "resolve_method": "alias",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "quezon-city-science",
+      "name": "Quezon City Science High School",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "quezon-city-science-high-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "qcu",
+      "name": "Quezon City University",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "quezon-city-university",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "rtu",
+      "name": "Rizal Technological University",
+      "type": "public",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "rizal-technological-university",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "rtu-pasig",
+      "name": "Rizal Technological University - Pasig Campus",
+      "type": "public",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "rizal-technological-university",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "roosevelt",
+      "name": "Roosevelt College",
+      "type": "private",
+      "region": "Rizal",
+      "category": "not_on_edurank",
+      "attempted_slug": "roosevelt-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "sacred-heart-college",
+      "name": "Sacred Heart College",
+      "type": "private",
+      "region": "Laguna",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "sacred-heart-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "saint-clare",
+      "name": "Saint Clare College of Caloocan",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "saint-clare-college-of-caloocan",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "saint-francis-assisi",
+      "name": "Saint Francis of Assisi College",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "saint-francis-of-assisi-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "saint-joseph-batangas",
+      "name": "Saint Joseph's College of Batangas",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "saint-joseph-s-college-of-batangas",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "saint-michael-college-laguna",
+      "name": "Saint Michael's College of Laguna",
+      "type": "private",
+      "region": "Laguna",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "saint-michael-s-college-of-laguna",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "san-beda-college-alabang",
+      "name": "San Beda College Alabang",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "san-beda-college-alabang",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "san-beda-alabang",
+      "name": "San Beda College-Alabang",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "san-beda-college-alabang",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "san-juan-de-dios",
+      "name": "San Juan de Dios Educational Foundation",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "san-juan-de-dios-educational-foundation",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "san-pablo-colleges",
+      "name": "San Pablo Colleges",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "san-pablo-colleges",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "ssc-r",
+      "name": "San Sebastian College-Recoletos",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "san-sebastian-college-recoletos",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "santo-nino-dasma",
+      "name": "Santo Niño de Praga School",
+      "type": "private",
+      "region": "Cavite",
+      "category": "not_on_edurank",
+      "attempted_slug": "santo-nino-de-praga-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "southville-international",
+      "name": "Southville International School and Colleges",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "southville-international-school-and-colleges",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "st-clare-caloocan",
+      "name": "St. Clare College of Caloocan",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "st-clare-college-of-caloocan",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "st-dominic-college-of-arts-and-sciences",
+      "name": "St. Dominic College of Arts and Sciences",
+      "type": "private",
+      "region": "Cavite",
+      "category": "not_on_edurank",
+      "attempted_slug": "st-dominic-college-of-arts-and-sciences",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "santisimo-rosario",
+      "name": "St. Dominic College of Asia",
+      "type": "private",
+      "region": "Cavite",
+      "category": "not_on_edurank",
+      "attempted_slug": "st-dominic-college-of-asia",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "st-josephs-college",
+      "name": "St. Joseph's College of Tanauan",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "st-joseph-s-college-of-tanauan",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "saint-la-salle",
+      "name": "St. La Salle College",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "st-la-salle-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "sti-college-alabang",
+      "name": "STI College - Alabang",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-alabang",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-caloocan",
+      "name": "STI College - Caloocan",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-caloocan",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-dasmarinas",
+      "name": "STI College - Dasmariñas",
+      "type": "private",
+      "region": "Cavite",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-dasmarinas",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-fairview",
+      "name": "STI College - Fairview",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-fairview",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-global-city",
+      "name": "STI College - Global City",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-global-city",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-las-pinas",
+      "name": "STI College - Las Piñas",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-las-pinas",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-makati",
+      "name": "STI College - Makati",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-makati",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-meycauayan",
+      "name": "STI College - Meycauayan",
+      "type": "private",
+      "region": "Bulacan",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-meycauayan",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-munoz-edsa",
+      "name": "STI College - Muñoz-EDSA",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-munoz-edsa",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-novaliches",
+      "name": "STI College - Novaliches",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-novaliches",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-ortigas",
+      "name": "STI College - Ortigas",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-ortigas",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-paranaque",
+      "name": "STI College - Parañaque",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-paranaque",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-recto",
+      "name": "STI College - Recto",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-recto",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-santa-rosa",
+      "name": "STI College - Santa Rosa",
+      "type": "private",
+      "region": "Laguna",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-santa-rosa",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-college-shaw",
+      "name": "STI College - Shaw",
+      "type": "private",
+      "region": "NCR",
+      "category": "chain_campus_no_edurank",
+      "attempted_slug": "sti-college-shaw",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Keep umbrella entry or inherit parent if added later"
+    },
+    {
+      "id": "sti-shs",
+      "name": "STI Senior High School",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "sti-senior-high-school",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "west-negros",
+      "name": "STI West Negros University",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "sti-west-negros-university",
+      "resolve_method": "guessed_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "systems-plus",
+      "name": "Systems Plus Computer College",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "systems-plus-computer-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "tcu",
+      "name": "Taguig City University",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "taguig-city-university",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "dolores-tayamin",
+      "name": "Tayabas Western Academy",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "tayabas-western-academy",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "tup-tagui",
+      "name": "Technological University of the Philippines - Taguig",
+      "type": "public",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "technological-university-of-the-philippines",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "tesda-women-center",
+      "name": "TESDA Women's Center",
+      "type": "tvet",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "tesda-women-s-center",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "trece-martires-city-college",
+      "name": "Trece Martires City College",
+      "type": "public",
+      "region": "Cavite",
+      "category": "not_on_edurank",
+      "attempted_slug": "trece-martires-city-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "trinity-university",
+      "name": "Trinity University of Asia",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "trinity-university-of-asia",
+      "resolve_method": "exact_slug",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "trinity-university-general-trias",
+      "name": "Trinity University of Asia - General Trias Campus",
+      "type": "private",
+      "region": "Cavite",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "trinity-university-of-asia",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "ubix",
+      "name": "UBIX Institute of Technologies",
+      "type": "private",
+      "region": "NCR",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "cebu-institute-of-technology",
+      "resolve_method": "fuzzy_match",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "unciano",
+      "name": "Unciano Colleges and General Hospital",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "unciano-colleges-and-general-hospital",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "union-college-laguna",
+      "name": "Union College of Laguna",
+      "type": "private",
+      "region": "Laguna",
+      "category": "not_on_edurank",
+      "attempted_slug": "union-college-of-laguna",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "udm",
+      "name": "Universidad de Manila",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "universidad-de-manila",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "ucc",
+      "name": "University of Caloocan City",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "university-of-caloocan-city",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "umak",
+      "name": "University of Makati",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "university-of-makati",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "ua",
+      "name": "University of the Assumption",
+      "type": "private",
+      "region": "Pampanga",
+      "category": "edurank_listed_no_publications",
+      "attempted_slug": "university-of-the-assumption",
+      "resolve_method": "alias",
+      "recommendation": "EduRank page exists but no research majors table; keep official site tags"
+    },
+    {
+      "id": "ue-caloocan",
+      "name": "University of the East - Caloocan",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "university-of-the-east",
+      "resolve_method": "parent_inherit",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "up-clark",
+      "name": "University of the Philippines Clark",
+      "type": "public",
+      "region": "Central Luzon",
+      "category": "not_on_edurank",
+      "attempted_slug": null,
+      "resolve_method": "policy_skip",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "up-open-university",
+      "name": "University of the Philippines Open University",
+      "type": "public",
+      "region": "CALABARZON",
+      "category": "not_on_edurank",
+      "attempted_slug": "university-of-the-philippines-open-university",
+      "resolve_method": "alias",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "valenzuela-city-school",
+      "name": "Valenzuela City School of Mathematics and Science",
+      "type": "shs",
+      "region": "NCR",
+      "category": "tvet_shs_no_edurank",
+      "attempted_slug": "valenzuela-city-school-of-mathematics-and-science",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Out of EduRank scope; use official TESDA/DepEd sources"
+    },
+    {
+      "id": "vctc",
+      "name": "Valenzuela City Technical College",
+      "type": "public",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "valenzuela-city-technical-college",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "wcc-aeronautical",
+      "name": "WCC Aeronautical and Technological College - North Manila",
+      "type": "private",
+      "region": "NCR",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "wcc-aeronautical-and-technological-college-north-manila",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    },
+    {
+      "id": "cavite-westpoint",
+      "name": "Westpoint College of Cavite",
+      "type": "private",
+      "region": "Cavite",
+      "category": "not_on_edurank",
+      "attempted_slug": "westpoint-college-of-cavite",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "world-citi-colleges",
+      "name": "World Citi Colleges",
+      "type": "private",
+      "region": "NCR",
+      "category": "not_on_edurank",
+      "attempted_slug": "world-citi-colleges",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Not in EduRank PH index; official site only"
+    },
+    {
+      "id": "world-citi-colleges-antipolo",
+      "name": "World Citi Colleges - Antipolo",
+      "type": "private",
+      "region": "Rizal",
+      "category": "campus_branch_unlisted",
+      "attempted_slug": "world-citi-colleges-antipolo",
+      "resolve_method": "guessed_slug",
+      "recommendation": "Inherit parent institution EduRank tags or skip"
+    }
+  ]
+}

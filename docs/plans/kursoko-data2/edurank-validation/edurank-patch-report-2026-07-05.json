@@ -1,0 +1,971 @@
+{
+  "generated": "2026-07-05",
+  "pass": "retry_with_parent_inherit_and_fuzzy",
+  "patched": [],
+  "inherited_from_parent": [],
+  "retry_recovered": [],
+  "skipped_no_page": [
+    {
+      "id": "access-computer",
+      "name": "Access Computer College",
+      "slug": "access-computer-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "aclc-college-antipolo",
+      "name": "ACLC College - Antipolo",
+      "slug": "aclc-college-antipolo",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "aclc-college-dasmarinas",
+      "name": "ACLC College - Dasmariñas",
+      "slug": "aclc-college-dasmarinas",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "aclc-college-malolos",
+      "name": "ACLC College - Malolos",
+      "slug": "aclc-college-malolos",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "aclc-college-santa-rosa",
+      "name": "ACLC College - Santa Rosa",
+      "slug": "aclc-college-santa-rosa",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ama-shs",
+      "name": "AMA Senior High School",
+      "slug": "ama-senior-high-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "antipolo-science",
+      "name": "Antipolo Science High School",
+      "slug": "antipolo-science-high-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "asia-pacific-aviation",
+      "name": "Asia Pacific Aviation Center",
+      "slug": "asia-pacific-aviation-center",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "asian-institute-of-computer-studies-aics-antipolo",
+      "name": "Asian Institute of Computer Studies (AICS) - Antipolo",
+      "slug": "asian-institute-of-computer-studies-aics-antipolo",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "asian-institute-of-computer-studies-aics-quezon-city",
+      "name": "Asian Institute of Computer Studies (AICS) - Quezon City",
+      "slug": "asian-institute-of-computer-studies-aics-quezon-city",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "asian-institute-science",
+      "name": "Asian Institute of Science and Technology",
+      "slug": "asian-institute-of-science-and-technology",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "assumption-antipolo",
+      "name": "Assumption Antipolo",
+      "slug": "assumption-antipolo",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ateneo-shs",
+      "name": "Ateneo de Manila Senior High School",
+      "slug": "ateneo-de-manila-senior-high-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "batangas-provincial",
+      "name": "Batangas Provincial College",
+      "slug": "batangas-provincial-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "bestlink",
+      "name": "Bestlink College of the Philippines",
+      "slug": "bestlink-college-of-the-philippines",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "bulacan-polytechnic",
+      "name": "Bulacan Polytechnic College",
+      "slug": "bulacan-polytechnic-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "calayan-educational",
+      "name": "Calayan Educational Foundation",
+      "slug": "calayan-educational-foundation",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "canossa-college",
+      "name": "Canossa College of San Pablo",
+      "slug": "canossa-college-of-san-pablo",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "cavite-maritime",
+      "name": "Cavite Maritime Academy",
+      "slug": "cavite-maritime-academy",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "christian-college-tanauan",
+      "name": "Christian College of Tanauan",
+      "slug": "christian-college-of-tanauan",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ciit-philippines",
+      "name": "CIIT College of Arts and Technology",
+      "slug": "ciit-college-of-arts-and-technology",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "cmu",
+      "name": "City of Malabon University",
+      "slug": "city-of-malabon-university",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "colegio-de-san-jose",
+      "name": "Colegio de San Jose",
+      "slug": "colegio-de-san-jose",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "lettran",
+      "name": "Colegio de San Juan de Letran",
+      "slug": "colegio-de-san-juan-de-letran",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "colegio-de-san-pascual-baylon",
+      "name": "Colegio de San Pascual Baylon",
+      "slug": "colegio-de-san-pascual-baylon",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "colegio-de-san-pedro",
+      "name": "Colegio de San Pedro",
+      "slug": "colegio-de-san-pedro",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "colegio-ng-lungsod-ng-batangas",
+      "name": "Colegio ng Lungsod ng Batangas",
+      "slug": "colegio-ng-lungsod-ng-batangas",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "colegio-san-agustin-bacolod",
+      "name": "Colegio San Agustin - Bacolod",
+      "slug": "colegio-san-agustin-bacolod",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "datamex-institute-of-computer-technology-caloocan",
+      "name": "Datamex Institute of Computer Technology - Caloocan",
+      "slug": "datamex-institute-of-computer-technology-caloocan",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "de-la-salle-zobel",
+      "name": "De La Salle Santiago Zobel School",
+      "slug": "de-la-salle-santiago-zobel-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "diliman-college",
+      "name": "Diliman College",
+      "slug": "diliman-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "don-bosco-college-canlubang",
+      "name": "Don Bosco College - Canlubang",
+      "slug": "don-bosco-college-canlubang",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "don-bosco-technical-institute-mandaluyong",
+      "name": "Don Bosco Technical Institute - Mandaluyong",
+      "slug": "don-bosco-technical-institute-mandaluyong",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "earist",
+      "name": "Eulogio 'Amang' Rodriguez Institute of Science and Technology (EARIST)",
+      "slug": "eulogio-amang-rodriguez-institute-of-science-and-technology-earist",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "first-city-providential",
+      "name": "First City Providential College",
+      "slug": "first-city-providential-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "global-city-innovative-college",
+      "name": "Global City Innovative College",
+      "slug": "global-city-innovative-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "golden-state",
+      "name": "Golden State College",
+      "slug": "golden-state-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "grace-pedro-laguna",
+      "name": "Grace College of San Pedro, Laguna",
+      "slug": "grace-college-of-san-pedro-laguna",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "holy-cross-college-pampanga",
+      "name": "Holy Cross College - Pampanga",
+      "slug": "holy-cross-college-pampanga",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "i-academy",
+      "name": "iACADEMY",
+      "slug": "iacademy",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ibm-philippines",
+      "name": "IBM Philippines",
+      "slug": "ibm-philippines",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "icct",
+      "name": "ICCT Colleges",
+      "slug": "icct-colleges",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "imus-computer-college",
+      "name": "Imus Computer College",
+      "slug": "imus-computer-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "informatics",
+      "name": "Informatics College",
+      "slug": "informatics-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "infosys",
+      "name": "Infosys Philippines",
+      "slug": "infosys-philippines",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ici-culinary",
+      "name": "International Culinary Institute",
+      "slug": "international-culinary-institute",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "kingfisher-school-of-business-and-finance",
+      "name": "Kingfisher School of Business and Finance",
+      "slug": "kingfisher-school-of-business-and-finance",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "la-consolacion-bacolod",
+      "name": "La Consolacion College - Bacolod",
+      "slug": "la-consolacion-college-bacolod",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "la-verdad-christian-college-apalit",
+      "name": "La Verdad Christian College - Apalit",
+      "slug": "la-verdad-christian-college-apalit",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "laguna-northwestern-college",
+      "name": "Laguna Northwestern College",
+      "slug": "laguna-northwestern-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "magsaysay-center",
+      "name": "Magsaysay Center for Hospitality and Culinary Arts",
+      "slug": "magsaysay-center-for-hospitality-and-culinary-arts",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "mcc",
+      "name": "Makati Commercial Center",
+      "slug": "makati-commercial-center",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "makati-science",
+      "name": "Makati Science High School",
+      "slug": "makati-science-high-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "manila-science",
+      "name": "Manila Science High School",
+      "slug": "manila-science-high-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "mit",
+      "name": "Mapua Institute of Technology - Makati (iMake)",
+      "slug": "mapua-institute-of-technology-makati-imake",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "marcelino-fule",
+      "name": "Marcelino R. Fule Memorial College",
+      "slug": "marcelino-r-fule-memorial-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "maria-aurora",
+      "name": "Maria Aurora College",
+      "slug": "maria-aurora-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "montessori-professional-college-quezon-city",
+      "name": "Montessori Professional College - Quezon City",
+      "slug": "montessori-professional-college-quezon-city",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "national-university-laguna",
+      "name": "National University - Laguna",
+      "slug": "national-university-laguna",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "northlink-technological-college",
+      "name": "Northlink Technological College",
+      "slug": "northlink-technological-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "plmar",
+      "name": "Pamantasan ng Lungsod ng Marikina",
+      "slug": "pamantasan-ng-lungsod-ng-marikina",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "plm",
+      "name": "Pamantasan ng Lungsod ng Maynila",
+      "slug": "pamantasan-ng-lungsod-ng-maynila",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "plmun",
+      "name": "Pamantasan ng Lungsod ng Muntinlupa",
+      "slug": "pamantasan-ng-lungsod-ng-muntinlupa",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "plp",
+      "name": "Pamantasan ng Lungsod ng Pasig",
+      "slug": "pamantasan-ng-lungsod-ng-pasig",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "plv",
+      "name": "Pamantasan ng Lungsod ng Valenzuela",
+      "slug": "pamantasan-ng-lungsod-ng-valenzuela",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "don-honorio-ventura",
+      "name": "Pampanga State University (formerly Don Honorio Ventura State University)",
+      "slug": "pampanga-state-university-formerly-don-honorio-ventura-state-university",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ptc",
+      "name": "Pateros Technological College",
+      "slug": "pateros-technological-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "philippine-science",
+      "name": "Philippine Science High School System",
+      "slug": "philippine-science-high-school-system",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "psca",
+      "name": "Philippine State College of Aeronautics",
+      "slug": "philippine-state-college-of-aeronautics",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "philippine-womens-university",
+      "name": "Philippine Women's University",
+      "slug": "philippine-womens-university",
+      "method": "alias"
+    },
+    {
+      "id": "quezon-city-science",
+      "name": "Quezon City Science High School",
+      "slug": "quezon-city-science-high-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "qcu",
+      "name": "Quezon City University",
+      "slug": "quezon-city-university",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "roosevelt",
+      "name": "Roosevelt College",
+      "slug": "roosevelt-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "saint-clare",
+      "name": "Saint Clare College of Caloocan",
+      "slug": "saint-clare-college-of-caloocan",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "saint-francis-assisi",
+      "name": "Saint Francis of Assisi College",
+      "slug": "saint-francis-of-assisi-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "saint-joseph-batangas",
+      "name": "Saint Joseph's College of Batangas",
+      "slug": "saint-joseph-s-college-of-batangas",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "san-beda-college-alabang",
+      "name": "San Beda College Alabang",
+      "slug": "san-beda-college-alabang",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "san-beda-alabang",
+      "name": "San Beda College-Alabang",
+      "slug": "san-beda-college-alabang",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "san-juan-de-dios",
+      "name": "San Juan de Dios Educational Foundation",
+      "slug": "san-juan-de-dios-educational-foundation",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "san-pablo-colleges",
+      "name": "San Pablo Colleges",
+      "slug": "san-pablo-colleges",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ssc-r",
+      "name": "San Sebastian College-Recoletos",
+      "slug": "san-sebastian-college-recoletos",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "santo-nino-dasma",
+      "name": "Santo Niño de Praga School",
+      "slug": "santo-nino-de-praga-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "southville-international",
+      "name": "Southville International School and Colleges",
+      "slug": "southville-international-school-and-colleges",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "st-clare-caloocan",
+      "name": "St. Clare College of Caloocan",
+      "slug": "st-clare-college-of-caloocan",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "st-dominic-college-of-arts-and-sciences",
+      "name": "St. Dominic College of Arts and Sciences",
+      "slug": "st-dominic-college-of-arts-and-sciences",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "santisimo-rosario",
+      "name": "St. Dominic College of Asia",
+      "slug": "st-dominic-college-of-asia",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "st-josephs-college",
+      "name": "St. Joseph's College of Tanauan",
+      "slug": "st-joseph-s-college-of-tanauan",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "saint-la-salle",
+      "name": "St. La Salle College",
+      "slug": "st-la-salle-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-alabang",
+      "name": "STI College - Alabang",
+      "slug": "sti-college-alabang",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-caloocan",
+      "name": "STI College - Caloocan",
+      "slug": "sti-college-caloocan",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-dasmarinas",
+      "name": "STI College - Dasmariñas",
+      "slug": "sti-college-dasmarinas",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-fairview",
+      "name": "STI College - Fairview",
+      "slug": "sti-college-fairview",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-global-city",
+      "name": "STI College - Global City",
+      "slug": "sti-college-global-city",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-las-pinas",
+      "name": "STI College - Las Piñas",
+      "slug": "sti-college-las-pinas",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-makati",
+      "name": "STI College - Makati",
+      "slug": "sti-college-makati",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-meycauayan",
+      "name": "STI College - Meycauayan",
+      "slug": "sti-college-meycauayan",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-munoz-edsa",
+      "name": "STI College - Muñoz-EDSA",
+      "slug": "sti-college-munoz-edsa",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-novaliches",
+      "name": "STI College - Novaliches",
+      "slug": "sti-college-novaliches",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-ortigas",
+      "name": "STI College - Ortigas",
+      "slug": "sti-college-ortigas",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-paranaque",
+      "name": "STI College - Parañaque",
+      "slug": "sti-college-paranaque",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-recto",
+      "name": "STI College - Recto",
+      "slug": "sti-college-recto",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-santa-rosa",
+      "name": "STI College - Santa Rosa",
+      "slug": "sti-college-santa-rosa",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-college-shaw",
+      "name": "STI College - Shaw",
+      "slug": "sti-college-shaw",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "sti-shs",
+      "name": "STI Senior High School",
+      "slug": "sti-senior-high-school",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "systems-plus",
+      "name": "Systems Plus Computer College",
+      "slug": "systems-plus-computer-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "tcu",
+      "name": "Taguig City University",
+      "slug": "taguig-city-university",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "dolores-tayamin",
+      "name": "Tayabas Western Academy",
+      "slug": "tayabas-western-academy",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "tesda-women-center",
+      "name": "TESDA Women's Center",
+      "slug": "tesda-women-s-center",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "trece-martires-city-college",
+      "name": "Trece Martires City College",
+      "slug": "trece-martires-city-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "unciano",
+      "name": "Unciano Colleges and General Hospital",
+      "slug": "unciano-colleges-and-general-hospital",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "union-college-laguna",
+      "name": "Union College of Laguna",
+      "slug": "union-college-of-laguna",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "udm",
+      "name": "Universidad de Manila",
+      "slug": "universidad-de-manila",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ucc",
+      "name": "University of Caloocan City",
+      "slug": "university-of-caloocan-city",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "umak",
+      "name": "University of Makati",
+      "slug": "university-of-makati",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ue-caloocan",
+      "name": "University of the East - Caloocan",
+      "slug": "university-of-the-east",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "up-clark",
+      "name": "University of the Philippines Clark",
+      "reason": "policy_skip"
+    },
+    {
+      "id": "up-open-university",
+      "name": "University of the Philippines Open University",
+      "slug": "university-of-the-philippines-open-university",
+      "method": "alias"
+    },
+    {
+      "id": "valenzuela-city-school",
+      "name": "Valenzuela City School of Mathematics and Science",
+      "slug": "valenzuela-city-school-of-mathematics-and-science",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "vctc",
+      "name": "Valenzuela City Technical College",
+      "slug": "valenzuela-city-technical-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "wcc-aeronautical",
+      "name": "WCC Aeronautical and Technological College - North Manila",
+      "slug": "wcc-aeronautical-and-technological-college-north-manila",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "cavite-westpoint",
+      "name": "Westpoint College of Cavite",
+      "slug": "westpoint-college-of-cavite",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "world-citi-colleges",
+      "name": "World Citi Colleges",
+      "slug": "world-citi-colleges",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "world-citi-colleges-antipolo",
+      "name": "World Citi Colleges - Antipolo",
+      "slug": "world-citi-colleges-antipolo",
+      "method": "guessed_slug"
+    }
+  ],
+  "skipped_no_subjects": [
+    {
+      "id": "ama-computer-college",
+      "name": "AMA Computer College",
+      "slug": "ama-computer-university",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "ama-computer-santa-rosa",
+      "name": "AMA Computer College - Santa Rosa",
+      "slug": "ama-computer-university",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "arellano-university",
+      "name": "Arellano University",
+      "slug": "arellano-university",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "arellano-university-malabon",
+      "name": "Arellano University - Malabon",
+      "slug": "arellano-university",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "arellano-university-pasay",
+      "name": "Arellano University - Pasay",
+      "slug": "arellano-university",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "apc",
+      "name": "Asia Pacific College",
+      "slug": "asia-pacific-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "ceu",
+      "name": "Centro Escolar University",
+      "slug": "centro-escolar-university",
+      "method": "exact_slug"
+    },
+    {
+      "id": "centro-escolar-university-makati",
+      "name": "Centro Escolar University - Makati",
+      "slug": "centro-escolar-university",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "chiang-kai-shek-college",
+      "name": "Chiang Kai Shek College",
+      "slug": "chiang-kai-shek-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "cup",
+      "name": "City University of Pasay",
+      "slug": "trinity-university-of-asia",
+      "method": "fuzzy_match"
+    },
+    {
+      "id": "dls-medical",
+      "name": "De La Salle Medical and Health Sciences Institute",
+      "slug": "de-la-salle-medical-and-health-sciences-institute",
+      "method": "exact_slug"
+    },
+    {
+      "id": "hau",
+      "name": "Holy Angel University",
+      "slug": "holy-angel-university",
+      "method": "exact_slug"
+    },
+    {
+      "id": "jru",
+      "name": "Jose Rizal University",
+      "slug": "jose-rizal-university",
+      "method": "exact_slug"
+    },
+    {
+      "id": "la-consolacion-university",
+      "name": "La Consolacion University Philippines",
+      "slug": "la-consolacion-university-philippines",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "manila-central-university",
+      "name": "Manila Central University",
+      "slug": "manila-central-university",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "meycauayan-college",
+      "name": "Meycauayan College",
+      "slug": "meycauayan-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "nu-manila",
+      "name": "National University",
+      "slug": "national-university",
+      "method": "alias"
+    },
+    {
+      "id": "nu-moa",
+      "name": "National University - Mall of Asia",
+      "slug": "national-university",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "nu-santa-rosa",
+      "name": "National University - Santa Rosa",
+      "slug": "national-university",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "nueva-ecija-university",
+      "name": "Nueva Ecija University of Science and Technology",
+      "slug": "nueva-ecija-university-of-science-and-technology",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "our-lady-of-fatima-university-pampanga",
+      "name": "Our Lady of Fatima University - Pampanga",
+      "slug": "our-lady-of-fatima-university",
+      "method": "short_name"
+    },
+    {
+      "id": "our-lady-of-fatima-university-quezon-city",
+      "name": "Our Lady of Fatima University - Quezon City",
+      "slug": "our-lady-of-fatima-university",
+      "method": "short_name"
+    },
+    {
+      "id": "our-lady-fatima-valenzuela",
+      "name": "Our Lady of Fatima University - Valenzuela",
+      "slug": "our-lady-of-fatima-university",
+      "method": "short_name"
+    },
+    {
+      "id": "patts",
+      "name": "PATTS College of Aeronautics",
+      "slug": "patts-college-of-aeronautics",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "philippine-christian-university-dasma",
+      "name": "Philippine Christian University - Dasmarinas",
+      "slug": "philippine-christian-university",
+      "method": "short_name"
+    },
+    {
+      "id": "rtu",
+      "name": "Rizal Technological University",
+      "slug": "rizal-technological-university",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "rtu-pasig",
+      "name": "Rizal Technological University - Pasig Campus",
+      "slug": "rizal-technological-university",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "sacred-heart-college",
+      "name": "Sacred Heart College",
+      "slug": "sacred-heart-college",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "saint-michael-college-laguna",
+      "name": "Saint Michael's College of Laguna",
+      "slug": "saint-michael-s-college-of-laguna",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "west-negros",
+      "name": "STI West Negros University",
+      "slug": "sti-west-negros-university",
+      "method": "guessed_slug"
+    },
+    {
+      "id": "tup-tagui",
+      "name": "Technological University of the Philippines - Taguig",
+      "slug": "technological-university-of-the-philippines",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "trinity-university",
+      "name": "Trinity University of Asia",
+      "slug": "trinity-university-of-asia",
+      "method": "exact_slug"
+    },
+    {
+      "id": "trinity-university-general-trias",
+      "name": "Trinity University of Asia - General Trias Campus",
+      "slug": "trinity-university-of-asia",
+      "method": "parent_inherit"
+    },
+    {
+      "id": "ubix",
+      "name": "UBIX Institute of Technologies",
+      "slug": "cebu-institute-of-technology",
+      "method": "fuzzy_match"
+    },
+    {
+      "id": "ua",
+      "name": "University of the Assumption",
+      "slug": "university-of-the-assumption",
+      "method": "alias"
+    }
+  ],
+  "summary": {
+    "enriched_total": 51,
+    "patched_changed_this_run": 0,
+    "inherited_from_parent": 0,
+    "unmapped_total": 158,
+    "unmapped_by_category": {
+      "chain_campus_no_edurank": 20,
+      "edurank_listed_no_publications": 22,
+      "campus_branch_unlisted": 28,
+      "tvet_shs_no_edurank": 15,
+      "not_on_edurank": 73
+    }
+  }
+}

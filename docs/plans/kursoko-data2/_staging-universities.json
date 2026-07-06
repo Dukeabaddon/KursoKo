@@ -1,0 +1,1367 @@
+{
+  "universities": [
+    {
+      "id": "uni-priv-b2-001",
+      "name": "STI College - Muñoz-EDSA",
+      "type": "private-college",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "STI campus along EDSA cor. Muñoz, offering IT, business, and SHS programs.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "accountancy",
+        "SHS-ICT",
+        "SHS-ABM"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-002",
+      "name": "STI College - Novaliches",
+      "type": "private-college",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "STI campus in Novaliches area serving North QC residents.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "tourism-management",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-003",
+      "name": "STI College - Recto",
+      "type": "private-college",
+      "location": "Manila, NCR",
+      "region": "NCR",
+      "description": "STI campus in Manila's university belt area.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "hospitality-management",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-004",
+      "name": "STI College - Makati",
+      "type": "private-college",
+      "location": "Makati City, NCR",
+      "region": "NCR",
+      "description": "STI campus in Makati CBD area.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "accountancy",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-005",
+      "name": "STI College - Global City",
+      "type": "private-college",
+      "location": "Taguig City, NCR",
+      "region": "NCR",
+      "description": "STI campus in Bonifacio Global City.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "multi-media-arts",
+        "business-administration",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-006",
+      "name": "STI College - Ortigas",
+      "type": "private-college",
+      "location": "Pasig City, NCR",
+      "region": "NCR",
+      "description": "STI campus in the Ortigas Central Business District.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-007",
+      "name": "STI College - Parañaque",
+      "type": "private-college",
+      "location": "Parañaque City, NCR",
+      "region": "NCR",
+      "description": "STI campus in Parañaque serving the South Metro Manila area.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "tourism-management",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-008",
+      "name": "STI College - Las Piñas",
+      "type": "private-college",
+      "location": "Las Piñas City, NCR",
+      "region": "NCR",
+      "description": "STI campus in Las Piñas.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-009",
+      "name": "STI College - Meycauayan",
+      "type": "private-college",
+      "location": "Meycauayan, Bulacan",
+      "region": "Bulacan",
+      "description": "STI campus in Bulacan province.",
+      "tuition": "Estimated PHP 18,000 - 30,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "business-administration",
+        "criminology",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-010",
+      "name": "STI College - Dasmariñas",
+      "type": "private-college",
+      "location": "Dasmariñas, Cavite",
+      "region": "Cavite",
+      "description": "STI campus in Cavite.",
+      "tuition": "Estimated PHP 18,000 - 30,000 per semester",
+      "website": "https://www.sti.edu/",
+      "riasecTags": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "business-administration",
+        "hospitality-management",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "STI official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-011",
+      "name": "AMA Computer College - Makati",
+      "type": "private-college",
+      "location": "Makati City, NCR",
+      "region": "NCR",
+      "description": "AMA campus in Makati.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "computer-engineering"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-012",
+      "name": "AMA Computer College - Cubao",
+      "type": "private-college",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "AMA campus in Cubao, QC.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-013",
+      "name": "AMA Computer College - Parañaque",
+      "type": "private-college",
+      "location": "Parañaque City, NCR",
+      "region": "NCR",
+      "description": "AMA campus in Parañaque.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "SHS-ICT"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-014",
+      "name": "AMA Computer College - Las Piñas",
+      "type": "private-college",
+      "location": "Las Piñas City, NCR",
+      "region": "NCR",
+      "description": "AMA campus in Las Piñas.",
+      "tuition": "Estimated PHP 18,000 - 30,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-015",
+      "name": "AMA Computer College - Caloocan",
+      "type": "private-college",
+      "location": "Caloocan City, NCR",
+      "region": "NCR",
+      "description": "AMA campus in Caloocan.",
+      "tuition": "Estimated PHP 18,000 - 30,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "criminology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-016",
+      "name": "ACLC College - Malolos",
+      "type": "private-college",
+      "location": "Malolos City, Bulacan",
+      "region": "Bulacan",
+      "description": "ACLC (AMA computer school brand) in Bulacan.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-017",
+      "name": "ACLC College - Dasmariñas",
+      "type": "private-college",
+      "location": "Dasmariñas, Cavite",
+      "region": "Cavite",
+      "description": "ACLC campus in Cavite.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-018",
+      "name": "ACLC College - Santa Rosa",
+      "type": "private-college",
+      "location": "Santa Rosa, Laguna",
+      "region": "Laguna",
+      "description": "ACLC campus in Laguna.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-019",
+      "name": "ACLC College - Antipolo",
+      "type": "private-college",
+      "location": "Antipolo City, Rizal",
+      "region": "Rizal",
+      "description": "ACLC campus in Rizal.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AMAES official campus directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-020",
+      "name": "Arellano University - Pasay",
+      "type": "private-university",
+      "location": "Pasay City, NCR",
+      "region": "NCR",
+      "description": "Arellano University campus in Pasay.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "website": "https://www.arellano.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S",
+        "I"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "education",
+        "arts-and-sciences",
+        "hospitality-management"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Arellano University official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-021",
+      "name": "Arellano University - Malabon",
+      "type": "private-university",
+      "location": "Malabon City, NCR",
+      "region": "NCR",
+      "description": "Arellano University campus in Malabon.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "website": "https://www.arellano.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S",
+        "I"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "education",
+        "criminology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Arellano University official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-022",
+      "name": "Our Lady of Fatima University - Quezon City",
+      "type": "private-university",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "OLFU campus in QC (beside Grace Park, Caloocan border).",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "website": "https://www.fatima.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medical-technology",
+        "pharmacy",
+        "physical-therapy",
+        "marine-transportation"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "OLFU official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-023",
+      "name": "Our Lady of Fatima University - Pampanga",
+      "type": "private-university",
+      "location": "City of San Fernando, Pampanga",
+      "region": "Pampanga",
+      "description": "OLFU campus in Pampanga.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "website": "https://www.fatima.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medical-technology",
+        "pharmacy",
+        "criminology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "OLFU official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-024",
+      "name": "Lyceum of the Philippines University - Cavite",
+      "type": "private-university",
+      "location": "Gen. Trias, Cavite",
+      "region": "Cavite",
+      "description": "LPU campus in Cavite.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "website": "https://www.lyceum.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S",
+        "R"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "criminology",
+        "hospitality-management",
+        "engineering"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "LPU official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-025",
+      "name": "Lyceum of the Philippines University - Pampanga",
+      "type": "private-university",
+      "location": "City of San Fernando, Pampanga",
+      "region": "Pampanga",
+      "description": "LPU campus in Pampanga.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "website": "https://www.lyceum.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S",
+        "R"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "criminology",
+        "hospitality-management"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "LPU official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-026",
+      "name": "National University - Laguna",
+      "type": "private-university",
+      "location": "Santa Rosa, Laguna",
+      "region": "Laguna",
+      "description": "NU campus in Santa Rosa, Laguna.",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "website": "https://www.nu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "R",
+        "E"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "business-administration",
+        "accountancy"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "National University official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-027",
+      "name": "Technological Institute of the Philippines - Arca South",
+      "type": "private-university",
+      "location": "Taguig City, NCR",
+      "region": "NCR",
+      "description": "TIP's newer campus in Arca South, Taguig.",
+      "tuition": "Estimated PHP 35,000 - 50,000 per semester",
+      "website": "https://tip.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I"
+      ],
+      "strengthTags": [
+        "engineering",
+        "architecture",
+        "information-technology",
+        "computing"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "TIP official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-028",
+      "name": "Manila Central University",
+      "type": "private-university",
+      "location": "Caloocan City, NCR",
+      "region": "NCR",
+      "description": "One of the oldest private universities in the Philippines, known for health sciences and pharmacy.",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "website": "https://www.mcu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "pharmacy",
+        "nursing",
+        "medical-technology",
+        "physical-therapy",
+        "optometry"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "MCU official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-029",
+      "name": "Datamex Institute of Computer Technology - Caloocan",
+      "type": "private-college",
+      "location": "Caloocan City, NCR",
+      "region": "NCR",
+      "description": "Datamex campus in Caloocan offering IT and computing programs.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.datamex.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Datamex official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b2-030",
+      "name": "Global City Innovative College",
+      "type": "private-college",
+      "location": "Taguig City, NCR",
+      "region": "NCR",
+      "description": "College in BGC offering senior high school and college programs.",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "website": "https://www.gicc.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S",
+        "I"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "tourism-management",
+        "information-technology",
+        "psychology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "GCIC official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-001",
+      "name": "Access Computer College - Cubao",
+      "type": "private-college",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "Branch of ACC offering IT, business, and SHS programs in the Cubao area.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.accesscomputer.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C",
+        "E"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "business-administration",
+        "SHS-ICT"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Access Computer College official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-002",
+      "name": "Access Computer College - Caloocan",
+      "type": "private-college",
+      "location": "Caloocan City, NCR",
+      "region": "NCR",
+      "description": "Branch of ACC serving the Caloocan/Malabon/Navotas/Valenzuela area.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.accesscomputer.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "criminology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Access Computer College official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-003",
+      "name": "Asian Institute of Computer Studies (AICS) - Quezon City",
+      "type": "private-college",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "Private computing college offering IT and computer science programs.",
+      "tuition": "Estimated PHP 18,000 - 28,000 per semester",
+      "website": "https://www.aics.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AICS official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-004",
+      "name": "Asian Institute of Computer Studies (AICS) - Antipolo",
+      "type": "private-college",
+      "location": "Antipolo City, Rizal",
+      "region": "Rizal",
+      "description": "AICS branch serving the Rizal province area.",
+      "tuition": "Estimated PHP 18,000 - 28,000 per semester",
+      "website": "https://www.aics.edu.ph/",
+      "riasecTags": [
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "AICS official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-tvet-b3-001",
+      "name": "TESDA Provincial Training Center - Region IV-A (Gen. Trias, Cavite)",
+      "type": "TVET",
+      "location": "General Trias, Cavite",
+      "region": "Cavite",
+      "description": "Government-run TESDA training center offering free and subsidized tech-voc courses like welding, electrical, and machining.",
+      "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "welding",
+        "electrical-installation",
+        "machining",
+        "automotive"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "TESDA official directory of training centers",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-tvet-b3-002",
+      "name": "TESDA Provincial Training Center - Region III (Guiguinto, Bulacan)",
+      "type": "TVET",
+      "location": "Guiguinto, Bulacan",
+      "region": "Bulacan",
+      "description": "TESDA center in Bulacan providing TVET programs aligned with local industrial needs.",
+      "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "welding",
+        "fitter-machinist",
+        "pipefitting"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "TESDA Region III office directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-tvet-b3-003",
+      "name": "TESDA Provincial Training Center - Region IV-A (Binangonan, Rizal)",
+      "type": "TVET",
+      "location": "Binangonan, Rizal",
+      "region": "Rizal",
+      "description": "TESDA center in Rizal offering various tech-voc qualifications.",
+      "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "electrical-installation",
+        "masonry",
+        "carpentry"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "TESDA Region IV-A office directory",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-005",
+      "name": "Don Bosco Technical Institute - Mandaluyong",
+      "type": "private-school",
+      "location": "Mandaluyong City, NCR",
+      "region": "NCR",
+      "description": "Distinct from DBTI Makati, offers SHS TVL track and tech-voc programs for male students.",
+      "tuition": "Estimated PHP 45,000 - 70,000 per year",
+      "website": "https://www.dbmanila.org/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "SHS-TVL",
+        "mechanical-technology",
+        "electrical-technology",
+        "CNC-operations"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Don Bosco Mandaluyong official page",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-006",
+      "name": "Don Bosco College - Canlubang",
+      "type": "private-college",
+      "location": "Calamba, Laguna",
+      "region": "Laguna",
+      "description": "Don Bosco institution in Laguna offering college engineering, IT, and tech-voc programs.",
+      "tuition": "Estimated PHP 30,000 - 50,000 per semester",
+      "website": "https://www.dbcanlubang.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "industrial-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Don Bosco Canlubang official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-007",
+      "name": "La Verdad Christian College - Apalit",
+      "type": "private-college",
+      "location": "Apalit, Pampanga",
+      "region": "Pampanga",
+      "description": "Private institution in Pampanga known for criminology, education, and business.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.laverdad.edu.ph/",
+      "riasecTags": [
+        "S",
+        "E"
+      ],
+      "strengthTags": [
+        "criminology",
+        "education",
+        "business-administration"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "La Verdad Christian College official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-008",
+      "name": "World Citi Colleges - Antipolo",
+      "type": "private-college",
+      "location": "Antipolo City, Rizal",
+      "region": "Rizal",
+      "description": "WCC branch in Antipolo offering nursing, tourism, and criminology.",
+      "tuition": "Estimated PHP 25,000 - 40,000 per semester",
+      "website": "https://www.worldciti.edu.ph/",
+      "riasecTags": [
+        "S",
+        "R"
+      ],
+      "strengthTags": [
+        "nursing",
+        "criminology",
+        "tourism-management"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "World Citi Colleges official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-shs-b3-001",
+      "name": "De La Salle Santiago Zobel",
+      "type": "private-school",
+      "location": "Muntinlupa City, NCR",
+      "region": "NCR",
+      "description": "Premier Lasallian school offering excellent Senior High School tracks (STEM, ABM, HUMSS).",
+      "tuition": "Estimated PHP 90,000 - 120,000 per year (SHS)",
+      "website": "https://www.zobel.dlsu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "SHS-STEM",
+        "SHS-ABM",
+        "SHS-HUMSS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "DLSZ official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-009",
+      "name": "Centro Escolar University - Makati",
+      "type": "private-university",
+      "location": "Makati City, NCR",
+      "region": "NCR",
+      "description": "CEU satellite campus in Makati focusing on business, accountancy, and SHS.",
+      "tuition": "Estimated PHP 40,000 - 60,000 per semester",
+      "website": "https://www.ceu.edu.ph/",
+      "riasecTags": [
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "accountancy",
+        "business-administration",
+        "tourism-management"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "CEU official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-010",
+      "name": "Holy Cross College - Pampanga",
+      "type": "private-college",
+      "location": "Sta. Ana, Pampanga",
+      "region": "Pampanga",
+      "description": "Private Catholic college in Pampanga offering education, business, and IT.",
+      "tuition": "Estimated PHP 12,000 - 20,000 per semester",
+      "website": "https://www.hccpampanga.edu.ph/",
+      "riasecTags": [
+        "S",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "business-administration",
+        "information-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Holy Cross College Pampanga official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-011",
+      "name": "Montessori Professional College - Quezon City",
+      "type": "private-college",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "Private college offering teacher education, business, and hospitality.",
+      "tuition": "Estimated PHP 18,000 - 28,000 per semester",
+      "website": "https://www.mpc.edu.ph/",
+      "riasecTags": [
+        "S",
+        "E"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "business-administration",
+        "hospitality-management"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "MPC QC official Facebook and web presence",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-012",
+      "name": "Northlink Technological College",
+      "type": "private-college",
+      "location": "Baliuag, Bulacan",
+      "region": "Bulacan",
+      "description": "Technological college in Bulacan offering engineering, IT, and criminology.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "website": "https://www.northlink.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I"
+      ],
+      "strengthTags": [
+        "engineering",
+        "information-technology",
+        "criminology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Northlink Technological College official page",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-013",
+      "name": "Chiang Kai Shek College",
+      "type": "private-college",
+      "location": "Manila, NCR",
+      "region": "NCR",
+      "description": "Filipino-Chinese school offering college programs in business, IT, and education.",
+      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
+      "website": "https://www.cksc.edu.ph/",
+      "riasecTags": [
+        "E",
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "accountancy",
+        "information-technology",
+        "education"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "CKSC official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-shs-b3-002",
+      "name": "PAREF Southridge School",
+      "type": "private-school",
+      "location": "Muntinlupa City, NCR",
+      "region": "NCR",
+      "description": "All-boys private school offering strong Senior High School STEM and ABM tracks.",
+      "tuition": "Estimated PHP 90,000 - 130,000 per year (SHS)",
+      "website": "https://www.southridge.edu.ph/",
+      "riasecTags": [
+        "I",
+        "E"
+      ],
+      "strengthTags": [
+        "SHS-STEM",
+        "SHS-ABM"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "PAREF Southridge official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-shs-b3-003",
+      "name": "PAREF Woodrose School",
+      "type": "private-school",
+      "location": "Muntinlupa City, NCR",
+      "region": "NCR",
+      "description": "All-girls private school offering Senior High School HUMSS, STEM, and ABM.",
+      "tuition": "Estimated PHP 90,000 - 130,000 per year (SHS)",
+      "website": "https://www.woodrose.edu.ph/",
+      "riasecTags": [
+        "S",
+        "A",
+        "I"
+      ],
+      "strengthTags": [
+        "SHS-HUMSS",
+        "SHS-STEM",
+        "SHS-ABM"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "PAREF Woodrose official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-014",
+      "name": "St. Michael's College of Laguna - SHS & College",
+      "type": "private-college",
+      "location": "Laguna",
+      "region": "Laguna",
+      "description": "Already listed as 'saint-michael-college-laguna' in original, validating and updating status for SHS focus.",
+      "tuition": "Estimated PHP 20,000 - 30,000 per semester",
+      "website": "https://www.smcl.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "teacher-education",
+        "SHS"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "SMCL official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-015",
+      "name": "Colegio de San Pascual Baylon",
+      "type": "private-college",
+      "location": "Obando, Bulacan",
+      "region": "Bulacan",
+      "description": "Catholic institution in Bulacan offering education, business, and arts programs.",
+      "tuition": "Estimated PHP 12,000 - 22,000 per semester",
+      "website": "https://www.cspb.edu.ph/",
+      "riasecTags": [
+        "S",
+        "E"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "business-administration"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "CSPB official Facebook page and local listings",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-tvet-b3-004",
+      "name": "Tesda Women's Center (TWC)",
+      "type": "TVET",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "Premier TESDA training facility focused on empowering women through tech-voc skills like cookery, dressmaking, and wellness massage.",
+      "tuition": "Free for qualified scholars",
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [
+        "R",
+        "A"
+      ],
+      "strengthTags": [
+        "cookery",
+        "dressmaking",
+        "wellness-massage",
+        "bread-and-pastry"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "TESDA official TWC page",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-016",
+      "name": "ABE International College of Business and Economics - Makati",
+      "type": "private-college",
+      "location": "Makati City, NCR",
+      "region": "NCR",
+      "description": "Note: Many ABE branches were converted to iACADEMY or closed. This entry reflects historical presence; verify current operational status.",
+      "tuition": "Estimated PHP 25,000 - 35,000 per semester",
+      "website": "https://www.abe.edu.ph/",
+      "riasecTags": [
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "accountancy",
+        "HRM"
+      ],
+      "status": "stale",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Archived pages and AC Education transition notices",
+      "linkCheck": "stale",
+      "applicantNotes": "Verify if this specific campus is still operating as ABE or has been rebranded to iACADEMY."
+    },
+    {
+      "id": "uni-shs-b3-004",
+      "name": "Diliman Preparatory School",
+      "type": "private-school",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "Well-known preparatory and senior high school in QC offering STEM, ABM, HUMSS, GAS, and Sports Track.",
+      "tuition": "Estimated PHP 60,000 - 85,000 per year (SHS)",
+      "website": "https://www.dps.edu.ph/",
+      "riasecTags": [
+        "I",
+        "E",
+        "S",
+        "R"
+      ],
+      "strengthTags": [
+        "SHS-STEM",
+        "SHS-ABM",
+        "SHS-Sports"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "DPS official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-017",
+      "name": "St. Dominic College of Arts and Sciences",
+      "type": "private-college",
+      "location": "Cavite City, Cavite",
+      "region": "Cavite",
+      "description": "Distinct from St. Dominic College of Asia. Offers nursing, education, and business.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "website": "https://www.sdcas.edu.ph/",
+      "riasecTags": [
+        "S",
+        "I"
+      ],
+      "strengthTags": [
+        "nursing",
+        "teacher-education",
+        "business-administration"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "SDCAS official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-018",
+      "name": "San Lorenzo Ruiz Center of Studies and Trades",
+      "type": "TVET",
+      "location": "Silang, Cavite",
+      "region": "Cavite",
+      "description": "A Dominican institution offering technical-vocational education and short courses.",
+      "tuition": "Estimated PHP 10,000 - 20,000 per program",
+      "website": "https://www.slrct.edu.ph/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "technical-drafting",
+        "automotive",
+        "electrical-technology"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "SLRCT official page",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-019",
+      "name": "Diliman College",
+      "type": "private-college",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "Private college in Quezon City offering education, business, and arts programs.",
+      "tuition": "Estimated PHP 20,000 - 30,000 per semester",
+      "website": "https://www.dilimancollege.edu.ph/",
+      "riasecTags": [
+        "S",
+        "A",
+        "E"
+      ],
+      "strengthTags": [
+        "teacher-education",
+        "communication",
+        "business-administration"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Diliman College official website",
+      "linkCheck": "active"
+    },
+    {
+      "id": "uni-priv-b3-020",
+      "name": "Kingfisher School of Business and Finance",
+      "type": "private-college",
+      "location": "Quezon City, NCR",
+      "region": "NCR",
+      "description": "Specialized college focusing purely on business, accountancy, and finance.",
+      "tuition": "Estimated PHP 30,000 - 45,000 per semester",
+      "website": "https://www.kingfisher.edu.ph/",
+      "riasecTags": [
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "accountancy",
+        "business-administration",
+        "financial-management"
+      ],
+      "status": "active",
+      "verificationDate": "2025-06-29",
+      "verificationSource": "Kingfisher School official website",
+      "linkCheck": "active"
+    }
+  ]
+}
