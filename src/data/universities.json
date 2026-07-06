@@ -4019,48 +4019,6 @@
       "programSource": "official_website"
     },
     {
-      "id": "national-university-laguna",
-      "name": "National University - Laguna",
-      "type": "private",
-      "city": "Santa Rosa",
-      "lguId": "santa-rosa",
-      "region": "Laguna",
-      "location": "Santa Rosa, Laguna",
-      "description": "NU campus in Santa Rosa, Laguna.",
-      "tuition": "Estimated PHP 35,000 - 55,000 per semester",
-      "website": "https://www.nu.edu.ph/",
-      "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "strengthTags": [
-        "information-technology",
-        "computer-science",
-        "business-administration",
-        "accountancy",
-        "hospitality-management",
-        "tourism-management",
-        "nursing",
-        "architecture",
-        "engineering"
-      ],
-      "popularCourses": [
-        "BS Information Technology",
-        "BS Computer Science",
-        "BS Business Administration Major in Marketing Management",
-        "BS Accountancy",
-        "BS Hospitality Management",
-        "BS Tourism Management",
-        "BS Nursing",
-        "BS Architecture"
-      ],
-      "programSource": "official_website"
-    },
-    {
       "id": "nu-moa",
       "name": "National University - Mall of Asia",
       "type": "private",
@@ -4102,12 +4060,12 @@
       "id": "nu-santa-rosa",
       "name": "National University - Santa Rosa",
       "type": "private",
-      "city": "Laguna",
-      "lguId": "laguna",
+      "city": "Santa Rosa",
+      "lguId": "santa-rosa",
       "region": "Laguna",
       "location": "Santa Rosa, Laguna",
-      "description": "National University campus in Santa Rosa offering business, education, and health sciences programs.",
-      "tuition": "Approximately P30,000-P50,000 per semester",
+      "description": "NU campus in Santa Rosa, Laguna (Laguna province). Offers IT, business, hospitality, nursing, and architecture programs.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.nu-santarosa.edu.ph/",
       "riasecTags": [
         "R",
@@ -4117,10 +4075,28 @@
         "C"
       ],
       "strengthTags": [
-        "business",
+        "information-technology",
+        "computer-science",
+        "business-administration",
+        "accountancy",
+        "hospitality-management",
+        "tourism-management",
+        "nursing",
+        "architecture",
         "education",
         "health-sciences"
-      ]
+      ],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Computer Science",
+        "BS Business Administration Major in Marketing Management",
+        "BS Accountancy",
+        "BS Hospitality Management",
+        "BS Tourism Management",
+        "BS Nursing",
+        "BS Architecture"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "new-era-university",
@@ -4897,6 +4873,42 @@
         "BS Airline Business Administration",
         "BS Tourism Management",
         "Aircraft Technician Course"
+      ],
+      "programSource": "official_website"
+    },
+    {
+      "id": "philippine-military-academy",
+      "name": "Philippine Military Academy",
+      "type": "public",
+      "city": "Baguio",
+      "lguId": "baguio",
+      "region": "CAR",
+      "location": "Fort Gregorio del Pilar, Baguio City, Benguet",
+      "description": "Premier AFP officer training institution. Four-year cadetship grants BS Management Major in Security Studies and commissions graduates as Army, Air Force, or Navy officers via PMAEE — not standard college enrollment.",
+      "tuition": "Free (government-funded cadetship with pay and allowances)",
+      "website": "https://www.pma.edu.ph/",
+      "riasecTags": [
+        "E",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "military-science",
+        "national-security",
+        "security-studies",
+        "leadership",
+        "officer-training",
+        "service-academy"
+      ],
+      "popularCourses": [
+        "BS Management Major in Security Studies",
+        "Military Science and Leadership (cadetship curriculum)",
+        "Character Academics Military Physical Fitness (CAMP)",
+        "Leadership and Ethics in the Armed Forces"
+      ],
+      "programHighlights": [
+        "PMAEE admission at admission.pma.edu.ph — separate from UPCAT/college enrollment",
+        "Graduates commissioned as 2nd Lieutenant or Ensign in the AFP"
       ],
       "programSource": "official_website"
     },

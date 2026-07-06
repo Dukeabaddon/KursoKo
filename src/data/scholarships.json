@@ -2,7 +2,7 @@
   "metadata": {
     "version": "2.1.0",
     "lastUpdated": "2026-07-06",
-    "count": 303,
+    "count": 304,
     "disclaimer": "Verify eligibility, award amount, and application windows on each official provider site before applying. KursoKo does not process applications.",
     "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages.",
     "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2"
@@ -9345,7 +9345,7 @@
         "R"
       ],
       "careerTags": [
-        "criminology-graduate"
+        "military-officer"
       ],
       "institutionTags": [
         "military-training-institution"
@@ -9354,6 +9354,47 @@
       "deadlineNotes": "Multiple cycles per year; check PA Recruitment social media Not a traditional scholarship but a commissioning program with full financial support during training.",
       "verificationDate": "2025-06-28",
       "verificationSource": "Philippine Army official website"
+    },
+    {
+      "id": "sch-gov-pma-cadetship",
+      "provider": "Philippine Military Academy",
+      "category": "government",
+      "name": "PMA Cadetship (PMAEE)",
+      "status": "active",
+      "eligibility": [
+        "Natural-born Filipino citizen; SHS graduate with at least 85% GWA; 17-22 years old on admission day; single with no child; passes PMAEE, physical, medical, and neuro-psychiatric screening"
+      ],
+      "benefits": [
+        "Free tuition, board and lodging, monthly pay and allowances, BS degree, AFP commission upon graduation"
+      ],
+      "coverage": [
+        "Full tuition, lodging, pay, allowances, commissioning"
+      ],
+      "requirements": [
+        "PMAEE passer; height 5'0\"-6'4\"; no criminal or administrative case; physically and mentally fit"
+      ],
+      "location": [
+        "Baguio City"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "E",
+        "R",
+        "S"
+      ],
+      "careerTags": [
+        "military-officer"
+      ],
+      "institutionTags": [
+        "military-training-institution",
+        "philippine-military-academy"
+      ],
+      "applicationLink": "https://admission.pma.edu.ph/",
+      "deadlineNotes": "Annual PMAEE cycle; apply at admission.pma.edu.ph. Not standard college enrollment.",
+      "verificationDate": "2026-07-06",
+      "verificationSource": "https://www.pma.edu.ph/pages/join/requirements.html"
     },
     {
       "id": "sch-gov-099",

@@ -1,8 +1,18 @@
 {
   "generatedAt": "2026-07-06",
-  "phase": "research-ranking-v2-program-gate",
+  "phase": "research-ranking-v2-pma-military-officer",
   "approach": "Soft bonuses from sourced program strengths — not fake global rank numbers",
   "completed": [
+    {
+      "id": "philippine-military-academy",
+      "signals": ["BS Management Major in Security Studies", "PMAEE cadetship", "pma.edu.ph"],
+      "matcher": "military-officer keywords + +6 PMA bonus"
+    },
+    {
+      "id": "military-officer",
+      "signals": ["AFP commissioning career", "E+R+S RIASEC", "separate from criminology-graduate"],
+      "matcher": "CAREER_KEYWORDS + sch-gov-pma-cadetship"
+    },
     {
       "id": "dentist",
       "signals": ["DMD 6-year", "I+S RIASEC career added"],
@@ -19,15 +29,20 @@
       "matcher": "dentistry keywords in strengthTags"
     },
     {
-      "id": "nu-manila",
-      "signals": ["College of Dentistry heritage", "allied health cluster"],
-      "matcher": "dentistry in popularCourses"
+      "id": "nu-santa-rosa",
+      "signals": ["NU Laguna province campus Santa Rosa", "merged duplicate national-university-laguna"],
+      "matcher": "enriched popularCourses"
+    },
+    {
+      "id": "programHighlights",
+      "signals": ["+1 score when keywordHits > 0"],
+      "matcher": "universityMatcher.js wired"
     }
   ],
   "gaps": [
-    "NU Cavite campus not in catalog — have Laguna/Santa Rosa (nu-santa-rosa, national-university-laguna)",
-    "programHighlights field not yet wired into universityMatcher score",
-    "156 schools still have 5+ broad riasecTags"
+    "NU Dasmariñas (Cavite) not in catalog — user meant Laguna; Santa Rosa campus kept as nu-santa-rosa",
+    "156 schools still have 5+ broad riasecTags",
+    "scholarship careerTags boilerplate on many non-military entries"
   ],
-  "nextBatch": ["dentist career + RIASEC weights", "wire programHighlights bonus", "CEU/UE dentistry", "nursing volume schools"]
+  "nextBatch": ["CEU/UE dentistry polish", "nursing volume schools", "narrow broad riasecTags", "NU Dasmariñas campus research"]
 }

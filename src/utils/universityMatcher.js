@@ -85,6 +85,7 @@ const CAREER_KEYWORDS = {
   'speech-language-pathologist': ['speech language pathology', 'rehabilitation sciences', 'special education', 'psychology', 'health sciences'],
   'nutritionist-dietitian': ['nutrition and dietetics', 'food technology', 'public health', 'health sciences', 'home economics'],
   'criminology-graduate': ['criminology', 'public safety', 'law enforcement', 'forensic science', 'security management'],
+  'military-officer': ['military science', 'security studies', 'national security', 'officer training', 'leadership', 'military', 'service academy'],
   'sales-representative': ['business administration', 'marketing', 'entrepreneurship', 'sales', 'communication'],
   'business-development-manager': ['business administration', 'marketing', 'economics', 'management', 'entrepreneurship', 'business analytics'],
   'real-estate-broker': ['real estate', 'business administration', 'marketing', 'property management', 'finance'],
@@ -234,6 +235,7 @@ function scoreUniversity(university, profile, career) {
   if (career?.id === 'dentist' && university.id === 'ue-manila') score += 4
   if (career?.id === 'dentist' && university.id === 'nu-manila') score += 3
   if (career?.id === 'dentist' && university.id === 'dlsu-dasmarinas') score += 2
+  if (career?.id === 'military-officer' && university.id === 'philippine-military-academy') score += 6
 
   if ((university.programHighlights?.length ?? 0) > 0 && keywordHits > 0) score += 1
 
