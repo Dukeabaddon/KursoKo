@@ -17,7 +17,7 @@ const ResultsShell = ({ onHome, children }) => (
         </button>
       </ClickSpark>
 
-      <p className={`${resultsNavBtn} pointer-events-none text-landing-accent`}>Resulta</p>
+      <p className={`${resultsNavBtn} pointer-events-none text-landing-accent`}>Result</p>
 
       <ClickSpark {...SPARK_ACCENT} className="inline-flex">
         <button
