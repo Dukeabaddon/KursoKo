@@ -1,6 +1,6 @@
 /** Shared Playwright selectors and helpers for KursoKo e2e. */
 
-export const LANDING_HEADING = /The right course feels obvious/i
+export const LANDING_HEADING = /There's more than one path for you/i
 
 export const RESULTS_HEADING = /Profession matches for you/i
 

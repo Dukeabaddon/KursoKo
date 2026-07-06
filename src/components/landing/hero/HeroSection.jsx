@@ -53,8 +53,8 @@ export function HeroSection({ onStart }) {
             </svg>
           </div>
 
-          <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-4 pt-5 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:items-stretch md:gap-8 md:px-12 md:py-10 lg:grid-cols-12 lg:px-16 lg:py-12">
-            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 max-w-full flex-col items-start justify-start gap-[1.125rem] text-left md:col-span-1 md:h-full md:max-w-[34rem] md:justify-start md:gap-0 md:pt-4 lg:col-span-7 lg:pt-6">
+          <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-4 pt-5 md:grid md:grid-cols-2 md:items-stretch md:gap-6 md:px-10 md:py-10 lg:gap-8 lg:px-14 lg:py-12">
+            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 flex-col items-start justify-start gap-[1.125rem] text-left md:h-full md:justify-start md:gap-0 md:pt-4 lg:pt-6">
               <motion.p
                 className={`mb-0 md:mb-3 ${landingHeroEyebrow}`}
                 {...eyebrowMotion}
@@ -67,7 +67,7 @@ export function HeroSection({ onStart }) {
                 className={`mb-0 w-full max-w-full break-words text-pretty font-extrabold text-white md:mb-5 lg:mb-6 ${landingHeroTitle}`}
                 {...titleMotion}
               >
-                The right course feels obvious — after you see your map.
+                There&apos;s more than one path for you.
               </motion.h1>
 
               <motion.p

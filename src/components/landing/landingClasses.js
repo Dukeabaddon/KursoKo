@@ -50,7 +50,7 @@ export const landingHeroCta =
  * Hero character column — relative canvas. Decor sizes: hero/heroDecor.js
  */
 export const landingHeroCharacterCol =
-  'pointer-events-none relative mt-2 flex w-full min-h-[8rem] max-h-[48%] flex-1 md:col-span-1 md:mt-0 md:h-full md:max-h-full md:min-h-0 lg:col-span-5'
+  'pointer-events-none relative mt-2 flex w-full min-h-[8rem] max-h-[48%] flex-1 md:col-span-1 md:mt-0 md:h-full md:max-h-full md:min-h-0'
 
 export const landingHeroGlow =
   'landing-hero-glow pointer-events-none absolute bottom-[24%] left-1/2 z-[1] hidden h-[80%] w-[min(68%,18rem)] -translate-x-1/2 rounded-full md:block'
