@@ -162,6 +162,13 @@ function qualifiesForSchoolList(university, profile, career, relevanceScore, key
   if (relevanceScore < MIN_SCHOOL_SCORE) return false
   if (keywordHits >= 1) return true
   if (insightIndex.has(`${university.id}:${career?.id}`)) return true
+
+  const programKeywords = CAREER_KEYWORDS[career?.id] ?? []
+  if (programKeywords.length > 0) {
+    // Career has a known program vocabulary — RIASEC/prestige alone is not enough.
+    return false
+  }
+
   const primary = profile.primaryDimension?.code
   const tags = university.riasecTags ?? []
   if (primary && tags.includes(primary)) return true
