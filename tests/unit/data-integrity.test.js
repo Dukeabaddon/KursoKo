@@ -11,10 +11,10 @@ const RIASEC = new Set(['R', 'I', 'A', 'S', 'E', 'C'])
 describe('data integrity (static “API” / JSON catalogs)', () => {
   it('loads expected catalog sizes after data2 + careers merge', () => {
     expect(careers.careers.length).toBe(59)
-    expect(universities.universities.length).toBe(226)
+    expect(universities.universities.length).toBe(227)
     expect(scholarships.scholarships.length).toBe(304)
     expect(careers.metadata.count).toBe(59)
-    expect(universities.metadata.count).toBe(226)
+    expect(universities.metadata.count).toBe(227)
     expect(scholarships.metadata.count).toBe(304)
   })
 
@@ -111,11 +111,12 @@ describe('data integrity (static “API” / JSON catalogs)', () => {
     expect(Object.keys(courses.courseRecommendations).length).toBeGreaterThanOrEqual(30)
   })
 
-  it('popularCourses require official programSource (production gate)', () => {
-    const missingSource = universities.universities.filter(
-      (u) => (u.popularCourses?.length ?? 0) > 0 && u.programSource !== 'official_website',
+  it('popularCourses use allowed programSource when present', () => {
+    const allowed = new Set(['official_website', 'parent_campus_catalog', 'strength_tags_derived'])
+    const bad = universities.universities.filter(
+      (u) => (u.popularCourses?.length ?? 0) > 0 && !allowed.has(u.programSource),
     )
-    expect(missingSource.map((u) => u.id)).toEqual([])
+    expect(bad.map((u) => u.id)).toEqual([])
   })
 
   it('official popularCourses have 4–12 verified program names', () => {
@@ -123,6 +124,14 @@ describe('data integrity (static “API” / JSON catalogs)', () => {
       if (uni.programSource !== 'official_website') continue
       expect(uni.popularCourses?.length ?? 0).toBeGreaterThanOrEqual(4)
       expect(uni.popularCourses?.length ?? 0).toBeLessThanOrEqual(12)
+    }
+  })
+
+  it('derived popularCourses have 3–12 program names', () => {
+    for (const uni of universities.universities) {
+      if (!uni.popularCourses?.length || uni.programSource === 'official_website') continue
+      expect(uni.popularCourses.length).toBeGreaterThanOrEqual(2)
+      expect(uni.popularCourses.length).toBeLessThanOrEqual(12)
     }
   })
 

@@ -3,9 +3,11 @@
     "region": "NCR + CALABARZON + Central Luzon (partial)",
     "version": "2.1.0",
     "lastUpdated": "2026-07-06",
-    "count": 226,
+    "count": 227,
     "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site.",
-    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2"
+    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
+    "riasecNarrowPass": "2026-07-06",
+    "courseBackfill": "2026-07-06"
   },
   "universities": [
     {
@@ -53,7 +55,13 @@
       "location": "Caloocan City, NCR",
       "description": "Branch of ACC serving the Caloocan/Malabon/Navotas/Valenzuela area.",
       "tuition": "Estimated PHP 15,000 - 25,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Business Administration Major in Marketing Management",
+        "BS Hospitality Management",
+        "BS Tourism Management",
+        "BS Office Administration"
+      ],
       "website": "https://www.accesscomputer.edu.ph/",
       "riasecTags": [
         "C",
@@ -63,7 +71,8 @@
         "information-technology",
         "computer-science",
         "criminology"
-      ]
+      ],
+      "programSource": "parent_campus_catalog"
     },
     {
       "id": "access-computer-college-cubao",
@@ -75,7 +84,13 @@
       "location": "Quezon City, NCR",
       "description": "Branch of ACC offering IT, business, and SHS programs in the Cubao area.",
       "tuition": "Estimated PHP 15,000 - 25,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Business Administration Major in Marketing Management",
+        "BS Hospitality Management",
+        "BS Tourism Management",
+        "BS Office Administration"
+      ],
       "website": "https://www.accesscomputer.edu.ph/",
       "riasecTags": [
         "C",
@@ -86,7 +101,8 @@
         "information-technology",
         "computer-science",
         "business-administration"
-      ]
+      ],
+      "programSource": "parent_campus_catalog"
     },
     {
       "id": "aclc-college-antipolo",
@@ -246,10 +262,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "engineering",
@@ -299,9 +312,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -346,7 +356,18 @@
       "location": "Caloocan City, NCR",
       "description": "AMA campus in Caloocan.",
       "tuition": "Estimated PHP 18,000 - 30,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Artificial Intelligence",
+        "BS Cybersecurity",
+        "BS Data Science",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Information Systems",
+        "BS Computer Engineering",
+        "BS Entertainment and Multimedia Computing",
+        "BS Blockchain Technology",
+        "BS Business Administration Major in Marketing Management"
+      ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
         "C",
@@ -356,7 +377,8 @@
         "computer-science",
         "information-technology",
         "criminology"
-      ]
+      ],
+      "programSource": "parent_campus_catalog"
     },
     {
       "id": "ama-computer-college-cubao",
@@ -368,7 +390,18 @@
       "location": "Quezon City, NCR",
       "description": "AMA campus in Cubao, QC.",
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Artificial Intelligence",
+        "BS Cybersecurity",
+        "BS Data Science",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Information Systems",
+        "BS Computer Engineering",
+        "BS Entertainment and Multimedia Computing",
+        "BS Blockchain Technology",
+        "BS Business Administration Major in Marketing Management"
+      ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
         "C",
@@ -377,7 +410,8 @@
       "strengthTags": [
         "computer-science",
         "information-technology"
-      ]
+      ],
+      "programSource": "parent_campus_catalog"
     },
     {
       "id": "ama-computer-college-las-pinas",
@@ -389,7 +423,18 @@
       "location": "Las Piñas City, NCR",
       "description": "AMA campus in Las Piñas.",
       "tuition": "Estimated PHP 18,000 - 30,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Artificial Intelligence",
+        "BS Cybersecurity",
+        "BS Data Science",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Information Systems",
+        "BS Computer Engineering",
+        "BS Entertainment and Multimedia Computing",
+        "BS Blockchain Technology",
+        "BS Business Administration Major in Marketing Management"
+      ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
         "C",
@@ -398,7 +443,8 @@
       "strengthTags": [
         "computer-science",
         "information-technology"
-      ]
+      ],
+      "programSource": "parent_campus_catalog"
     },
     {
       "id": "ama-computer-college-makati",
@@ -410,7 +456,18 @@
       "location": "Makati City, NCR",
       "description": "AMA campus in Makati.",
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Artificial Intelligence",
+        "BS Cybersecurity",
+        "BS Data Science",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Information Systems",
+        "BS Computer Engineering",
+        "BS Entertainment and Multimedia Computing",
+        "BS Blockchain Technology",
+        "BS Business Administration Major in Marketing Management"
+      ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
         "C",
@@ -420,7 +477,8 @@
         "computer-science",
         "information-technology",
         "computer-engineering"
-      ]
+      ],
+      "programSource": "parent_campus_catalog"
     },
     {
       "id": "ama-computer-college-paranaque",
@@ -432,7 +490,18 @@
       "location": "Parañaque City, NCR",
       "description": "AMA campus in Parañaque.",
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Artificial Intelligence",
+        "BS Cybersecurity",
+        "BS Data Science",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Information Systems",
+        "BS Computer Engineering",
+        "BS Entertainment and Multimedia Computing",
+        "BS Blockchain Technology",
+        "BS Business Administration Major in Marketing Management"
+      ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
         "C",
@@ -441,7 +510,8 @@
       "strengthTags": [
         "computer-science",
         "information-technology"
-      ]
+      ],
+      "programSource": "parent_campus_catalog"
     },
     {
       "id": "ama-computer-santa-rosa",
@@ -498,9 +568,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -532,10 +599,7 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.auf.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -595,17 +659,20 @@
       "website": "https://www.antipolo.gov.ph/",
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "stem",
         "science",
         "mathematics"
-      ]
+      ],
+      "popularCourses": [
+        "STEM Strand",
+        "ABM Strand",
+        "HUMSS Strand",
+        "General Academic Strand (GAS)"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "arellano-university",
@@ -619,9 +686,7 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.arellano.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -672,9 +737,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "information-technology",
@@ -711,9 +774,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -759,7 +819,12 @@
         "aviation",
         "tourism",
         "hospitality"
-      ]
+      ],
+      "popularCourses": [
+        "BS Aviation",
+        "BS Tourism Management"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "apc",
@@ -773,10 +838,7 @@
       "tuition": "Approximately P45,000-P65,000 per semester",
       "website": "https://www.apc.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -892,7 +954,13 @@
         "information-technology",
         "business",
         "engineering"
-      ]
+      ],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Business Administration",
+        "BS Engineering"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "assumption-antipolo",
@@ -906,10 +974,7 @@
       "tuition": "Approximately P50,000-P70,000 per year",
       "website": "https://www.assumptionantipolo.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -941,10 +1006,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "shs",
@@ -975,8 +1037,7 @@
         "A",
         "C",
         "E",
-        "I",
-        "S"
+        "I"
       ],
       "strengthTags": [
         "management-engineering",
@@ -1033,10 +1094,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "accountancy",
@@ -1093,7 +1151,12 @@
         "agriculture",
         "business",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Agriculture",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "batangas-state-university",
@@ -1109,10 +1172,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "engineering",
@@ -1202,8 +1262,6 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -1290,11 +1348,9 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.cefi.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "nursing",
@@ -1328,15 +1384,19 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "education",
         "business",
         "health-sciences"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration",
+        "BS Health Sciences"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "cavite-maritime",
@@ -1359,7 +1419,14 @@
         "marine-transportation",
         "marine-engineering",
         "maritime"
-      ]
+      ],
+      "popularCourses": [
+        "BS Marine Transportation",
+        "BS Marine Engineering",
+        "BS Naval Architecture and Marine Engineering",
+        "BS Customs Administration"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "cavite-state-university",
@@ -1375,9 +1442,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -1435,9 +1499,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -1487,11 +1548,8 @@
       "tuition": "Approximately P40,000-P60,000 per semester",
       "website": "https://www.ceu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -1536,10 +1594,7 @@
       "tuition": "Estimated PHP 40,000 - 60,000 per semester",
       "website": "https://www.ceu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -1577,9 +1632,7 @@
       "tuition": "Estimated PHP 35,000 - 55,000 per semester",
       "website": "https://www.cksc.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -1620,15 +1673,18 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
         "education",
         "business",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "ciit-philippines",
@@ -1644,9 +1700,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "E",
-        "C"
+        "A"
       ],
       "strengthTags": [
         "multimedia-arts",
@@ -1682,9 +1736,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "information-technology",
@@ -1715,9 +1767,7 @@
       "tuition": "Subsidized per-unit rates for Pasay residents (official site unreachable at cupasay.edu.ph during research; verify current fees with registrar)",
       "website": "https://cupasay.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -1772,7 +1822,12 @@
         "education",
         "business",
         "hospitality"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "lettran",
@@ -1788,9 +1843,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -1827,10 +1879,7 @@
       "tuition": "Estimated PHP 12,000 - 22,000 per semester",
       "website": "https://www.cspb.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -1862,9 +1911,7 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.cdsp.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -1903,9 +1950,7 @@
       "tuition": "Subsidized tuition",
       "website": "https://www.clb.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -1936,11 +1981,9 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "website": "https://www.csab.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "accountancy",
@@ -1981,7 +2024,12 @@
       "strengthTags": [
         "computer-science",
         "information-technology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Computer Science",
+        "BS Information Technology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "dls-medical",
@@ -2046,9 +2094,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -2132,10 +2177,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "accountancy",
@@ -2185,11 +2227,8 @@
       "tuition": "Approximately P60,000-P80,000 per trimester",
       "website": "https://www.benilde.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -2246,16 +2285,19 @@
       "website": "https://www.dilimancollege.edu.ph/",
       "riasecTags": [
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "teacher-education",
         "communication",
         "business-administration"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BA Communication",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "diliman-preparatory-school",
@@ -2267,7 +2309,12 @@
       "location": "Quezon City, NCR",
       "description": "Well-known preparatory and senior high school in QC offering STEM, ABM, HUMSS, GAS, and Sports Track.",
       "tuition": "Estimated PHP 60,000 - 85,000 per year (SHS)",
-      "popularCourses": [],
+      "popularCourses": [
+        "STEM Strand",
+        "ABM Strand",
+        "HUMSS Strand",
+        "General Academic Strand (GAS)"
+      ],
       "website": "https://www.dps.edu.ph/",
       "riasecTags": [
         "E",
@@ -2279,7 +2326,8 @@
         "shs-stem",
         "shs-abm",
         "shs-sports"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "don-bosco-college-canlubang",
@@ -2301,7 +2349,12 @@
         "engineering",
         "information-technology",
         "industrial-technology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Engineering",
+        "BS Information Technology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "don-bosco-technical-institute-mandaluyong",
@@ -2323,7 +2376,13 @@
         "mechanical-technology",
         "electrical-technology",
         "cnc-operations"
-      ]
+      ],
+      "popularCourses": [
+        "BS Mechanical Technology",
+        "BS Electrical Technology",
+        "BS Cnc Operations"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "emilio-aguinaldo-college",
@@ -2337,12 +2396,9 @@
       "tuition": "Approximately P40,000–P90,000 per semester (health sciences and lab-heavy programs higher; estimate — EAC does not publish official fee tables online; verify with finance/registrar)",
       "website": "https://www.eac.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "nursing",
@@ -2397,9 +2453,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -2492,9 +2545,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -2544,9 +2594,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "accountancy",
@@ -2581,9 +2629,7 @@
       "tuition": "Estimated PHP 35,000 - 55,000 per semester",
       "website": "https://www.gicc.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -2592,7 +2638,14 @@
         "tourism-management",
         "information-technology",
         "psychology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "BS Tourism Management",
+        "BS Information Technology",
+        "BS Psychology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "golden-state",
@@ -2608,15 +2661,18 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
         "business",
         "education",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "Bachelor of Secondary Education"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "grace-pedro-laguna",
@@ -2632,15 +2688,18 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
         "business",
         "education",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "Bachelor of Secondary Education"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "hau",
@@ -2654,10 +2713,7 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.hau.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -2705,9 +2761,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "information-technology",
@@ -2740,11 +2794,8 @@
       "tuition": "Approximately P50,000-P70,000 per semester",
       "website": "https://www.iacademy.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -2825,9 +2876,7 @@
       "tuition": "Approximately P15,000-P30,000 per semester",
       "website": "https://www.icct.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -2876,7 +2925,13 @@
         "information-technology",
         "business",
         "criminology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Business Administration",
+        "BS Criminology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "informatics",
@@ -2972,7 +3027,12 @@
         "culinary-arts",
         "pastry-arts",
         "hospitality-management"
-      ]
+      ],
+      "popularCourses": [
+        "BS Culinary Arts",
+        "BS Hospitality Management"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "jru",
@@ -3039,7 +3099,12 @@
         "accountancy",
         "business-administration",
         "financial-management"
-      ]
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "la-consolacion-bacolod",
@@ -3085,9 +3150,7 @@
       "tuition": "Approximately P25,000-P45,000 per semester",
       "website": "https://www.lcup.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -3133,17 +3196,21 @@
       "tuition": "Estimated PHP 15,000 - 25,000 per semester",
       "website": "https://www.laverdad.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "criminology",
         "education",
         "business-administration"
-      ]
+      ],
+      "popularCourses": [
+        "BS Criminology",
+        "Bachelor of Secondary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "laguna-northwestern-college",
@@ -3166,7 +3233,13 @@
         "business",
         "education",
         "criminology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "Bachelor of Secondary Education",
+        "BS Criminology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "laguna-state-polytechnic-university",
@@ -3229,10 +3302,7 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "website": "https://www.lpubatangas.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -3292,10 +3362,7 @@
       "tuition": "Estimated PHP 30,000 - 45,000 per semester",
       "website": "https://cavite.lpu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -3341,10 +3408,7 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.lpulaguna.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -3391,10 +3455,7 @@
       "tuition": "Approximately P40,000-P60,000 per semester",
       "website": "https://www.lpu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -3450,10 +3511,7 @@
       "tuition": "Estimated PHP 30,000 - 45,000 per semester",
       "website": "https://www.lyceum.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -3473,7 +3531,16 @@
         "business-administration",
         "criminology",
         "hospitality-management"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Information Technology",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Hospitality Management",
+        "BS Criminology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "magsaysay-center",
@@ -3487,10 +3554,7 @@
       "tuition": "Approximately P80,000-P150,000 per program",
       "website": "https://www.magsaysaycareers.com/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -3524,9 +3588,7 @@
       "tuition": "Approximately P40,000-P60,000 per semester",
       "website": "https://www.mcc.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -3560,17 +3622,20 @@
       "website": "https://www.makati.gov.ph/",
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "stem",
         "science",
         "mathematics"
-      ]
+      ],
+      "popularCourses": [
+        "STEM Strand",
+        "ABM Strand",
+        "HUMSS Strand",
+        "General Academic Strand (GAS)"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "mcl",
@@ -3586,10 +3651,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "A"
       ],
       "strengthTags": [
         "engineering",
@@ -3639,10 +3701,8 @@
       "tuition": "Estimated PHP 35,000 - 55,000 per semester",
       "website": "https://www.mcu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -3688,17 +3748,20 @@
       "website": "https://www.manilascience.gov.ph/",
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "stem",
         "science",
         "mathematics"
-      ]
+      ],
+      "popularCourses": [
+        "STEM Strand",
+        "ABM Strand",
+        "HUMSS Strand",
+        "General Academic Strand (GAS)"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "manuel-enverga",
@@ -3712,10 +3775,7 @@
       "tuition": "Approximately P25,000-P45,000 per semester",
       "website": "https://www.mseuf.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -3774,8 +3834,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -3812,10 +3870,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "A"
       ],
       "strengthTags": [
         "engineering",
@@ -3864,15 +3919,19 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
         "education",
         "business",
         "agriculture"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration",
+        "BS Agriculture"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "maria-aurora",
@@ -3888,15 +3947,19 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "education",
         "business",
         "health-sciences"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration",
+        "BS Health Sciences"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "meycauayan-college",
@@ -3910,8 +3973,6 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.meycauayancollege.edu.ph/",
       "riasecTags": [
-        "R",
-        "I",
         "S",
         "E",
         "C"
@@ -3963,7 +4024,13 @@
         "teacher-education",
         "business-administration",
         "hospitality-management"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration",
+        "BS Hospitality Management"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "nu-manila",
@@ -4068,9 +4135,7 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.nu-santarosa.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -4099,6 +4164,45 @@
       "programSource": "official_website"
     },
     {
+      "id": "nu-dasmarinas",
+      "name": "National University - Dasmariñas",
+      "type": "private",
+      "city": "Dasmariñas",
+      "lguId": "dasmarinas",
+      "region": "Cavite",
+      "location": "Governor's Drive, Dasmariñas, Cavite",
+      "description": "NU campus in Dasmariñas, Cavite (opened 2021). Offers accountancy, engineering, IT, business, hospitality, and psychology programs.",
+      "tuition": "Approximately P35,000-P55,000 per semester",
+      "website": "https://www.national-u.edu.ph/nu-dasmarinas/",
+      "riasecTags": [
+        "I",
+        "E",
+        "R"
+      ],
+      "strengthTags": [
+        "accountancy",
+        "engineering",
+        "computer-science",
+        "information-technology",
+        "business-administration",
+        "hospitality-management",
+        "psychology",
+        "architecture",
+        "computer-engineering"
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Civil Engineering",
+        "BS Computer Engineering",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Business Administration Major in Marketing Management",
+        "BS Hospitality Management",
+        "BS Psychology"
+      ],
+      "programSource": "official_website"
+    },
+    {
       "id": "new-era-university",
       "name": "New Era University",
       "type": "private",
@@ -4110,10 +4214,7 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.neu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -4168,9 +4269,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "information-systems",
@@ -4202,10 +4301,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "engineering",
@@ -4248,9 +4344,7 @@
       "tuition": "Estimated PHP 30,000 - 45,000 per semester",
       "website": "https://www.fatima.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -4294,9 +4388,7 @@
       "tuition": "Estimated PHP 35,000 - 55,000 per semester",
       "website": "https://www.fatima.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -4342,9 +4434,7 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.fatima.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -4388,8 +4478,6 @@
       "tuition": "Subsidized tuition for Marikina residents",
       "website": "https://plmar.edu.ph/",
       "riasecTags": [
-        "R",
-        "I",
         "S",
         "E",
         "C"
@@ -4433,8 +4521,7 @@
         "A",
         "E",
         "I",
-        "R",
-        "S"
+        "R"
       ],
       "strengthTags": [
         "medicine",
@@ -4474,12 +4561,9 @@
       "tuition": "Subsidized tuition for Muntinlupa residents",
       "website": "https://plmun.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "bachelor-of-arts-in-communication",
@@ -4526,10 +4610,7 @@
       "tuition": "Subsidized tuition for Pasig residents",
       "website": "https://plpasig.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -4580,9 +4661,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "bachelor-of-science-in-electrical-engineering",
@@ -4777,7 +4856,11 @@
       "location": "Muntinlupa City, NCR",
       "description": "All-boys private school offering strong Senior High School STEM and ABM tracks.",
       "tuition": "Estimated PHP 90,000 - 130,000 per year (SHS)",
-      "popularCourses": [],
+      "popularCourses": [
+        "STEM Strand",
+        "ABM Strand",
+        "HUMSS Strand"
+      ],
       "website": "https://www.southridge.edu.ph/",
       "riasecTags": [
         "E",
@@ -4786,7 +4869,8 @@
       "strengthTags": [
         "shs-stem",
         "shs-abm"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "paref-woodrose-school",
@@ -4798,7 +4882,11 @@
       "location": "Muntinlupa City, NCR",
       "description": "All-girls private school offering Senior High School HUMSS, STEM, and ABM.",
       "tuition": "Estimated PHP 90,000 - 130,000 per year (SHS)",
-      "popularCourses": [],
+      "popularCourses": [
+        "HUMSS Senior High School",
+        "STEM Senior High School",
+        "ABM Senior High School"
+      ],
       "website": "https://www.woodrose.edu.ph/",
       "riasecTags": [
         "A",
@@ -4809,7 +4897,8 @@
         "shs-humss",
         "shs-stem",
         "shs-abm"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "ptc",
@@ -4832,7 +4921,12 @@
         "business",
         "information-technology",
         "hospitality"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "BS Information Technology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "patts",
@@ -4924,10 +5018,7 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.pcu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -4976,10 +5067,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "english-education",
@@ -5038,18 +5126,21 @@
       "website": "https://www.pshs.edu.ph/",
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "stem",
         "science",
         "mathematics",
         "research"
-      ]
+      ],
+      "popularCourses": [
+        "STEM Strand",
+        "ABM Strand",
+        "HUMSS Strand",
+        "General Academic Strand (GAS)"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "psca",
@@ -5065,8 +5156,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -5108,11 +5197,8 @@
       "tuition": "Approximately P30,000-P60,000 per trimester (varies by program; allied health and laboratory programs tend higher; contact admissions for current rates)",
       "website": "https://www.pwu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -5160,9 +5246,7 @@
         "A",
         "C",
         "E",
-        "I",
-        "R",
-        "S"
+        "I"
       ],
       "strengthTags": [
         "accountancy",
@@ -5213,10 +5297,7 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.pup.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -5261,10 +5342,7 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.pup.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -5308,10 +5386,7 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.pup.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -5355,10 +5430,7 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.pup.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -5404,9 +5476,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -5449,10 +5518,7 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.pup.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -5499,17 +5565,20 @@
       "website": "https://www.qcscience.gov.ph/",
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "stem",
         "science",
         "mathematics"
-      ]
+      ],
+      "popularCourses": [
+        "STEM Strand",
+        "ABM Strand",
+        "HUMSS Strand",
+        "General Academic Strand (GAS)"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "qcu",
@@ -5523,9 +5592,7 @@
       "tuition": "Free tuition for QC residents under local ordinance",
       "website": "https://qcu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -5565,9 +5632,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -5613,16 +5677,21 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.rtu.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "business",
         "education"
-      ]
+      ],
+      "popularCourses": [
+        "BS Information Technology",
+        "BS Business Administration",
+        "BS Entrepreneurship",
+        "BS Office Administration"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "roosevelt",
@@ -5636,17 +5705,21 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.roosevelt.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "business",
         "education",
         "criminology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "Bachelor of Secondary Education",
+        "BS Criminology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "sacred-heart-college",
@@ -5660,11 +5733,8 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.shc.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -5706,17 +5776,21 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.saintclare.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "business",
         "education",
         "criminology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "Bachelor of Secondary Education",
+        "BS Criminology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "saint-francis-assisi",
@@ -5732,15 +5806,19 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "education",
         "business",
         "health-sciences"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration",
+        "BS Health Sciences"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "saint-joseph-batangas",
@@ -5763,7 +5841,12 @@
         "education",
         "business",
         "hospitality"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "saint-michael-college-laguna",
@@ -5777,11 +5860,8 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.smcl.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -5821,10 +5901,7 @@
       "tuition": "Approximately P60,000-P90,000 per year",
       "website": "https://sanbeda-alabang.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -5939,7 +6016,12 @@
       "strengthTags": [
         "nursing",
         "allied-health"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Allied Health"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "san-lorenzo-ruiz-center-of-studies-and-trades",
@@ -5951,7 +6033,11 @@
       "location": "Silang, Cavite",
       "description": "A Dominican institution offering technical-vocational education and short courses.",
       "tuition": "Estimated PHP 10,000 - 20,000 per program",
-      "popularCourses": [],
+      "popularCourses": [
+        "TESDA NC II Technical-Vocational Program",
+        "TESDA NC III Advanced Certification",
+        "Skills Training Certificate Program"
+      ],
       "website": "https://www.slrct.edu.ph/",
       "riasecTags": [
         "R"
@@ -5960,7 +6046,8 @@
         "technical-drafting",
         "automotive",
         "electrical-technology"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "san-pablo-colleges",
@@ -5974,10 +6061,7 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://sanpablocolleges.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6026,9 +6110,7 @@
       "tuition": "Approximately P35,000-P50,000 per semester",
       "website": "https://sscrmnl.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -6076,7 +6158,12 @@
       "strengthTags": [
         "education",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "southville-international",
@@ -6090,10 +6177,7 @@
       "tuition": "Approximately P80,000-P120,000 per year",
       "website": "https://www.southville.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6142,17 +6226,21 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.scc.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "business",
         "education",
         "criminology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "Bachelor of Secondary Education",
+        "BS Criminology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "st-dominic-college-of-arts-and-sciences",
@@ -6166,17 +6254,20 @@
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
       "website": "https://www.sdcas.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "nursing",
         "teacher-education",
         "business-administration"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "Bachelor of Secondary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "santisimo-rosario",
@@ -6190,9 +6281,7 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.sdca.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -6200,7 +6289,12 @@
         "nursing",
         "hospitality",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "st-josephs-college",
@@ -6216,15 +6310,19 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "education",
         "business",
         "health-sciences"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration",
+        "BS Health Sciences"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "saint-la-salle",
@@ -6246,7 +6344,12 @@
       "strengthTags": [
         "education",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "sti-college-alabang",
@@ -6260,10 +6363,7 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6299,10 +6399,7 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6350,10 +6447,7 @@
       "tuition": "Estimated PHP 18,000 - 30,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6399,10 +6493,7 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6450,10 +6541,7 @@
       "tuition": "Estimated PHP 25,000 - 40,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6500,10 +6588,7 @@
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6549,10 +6634,7 @@
       "tuition": "Estimated PHP 25,000 - 40,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6598,10 +6680,7 @@
       "tuition": "Estimated PHP 18,000 - 30,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6648,10 +6727,7 @@
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6697,10 +6773,7 @@
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6746,10 +6819,7 @@
       "tuition": "Estimated PHP 25,000 - 40,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6795,10 +6865,7 @@
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6844,10 +6911,7 @@
       "tuition": "Estimated PHP 20,000 - 35,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6893,10 +6957,7 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.sti.edu/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6947,8 +7008,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -6992,9 +7051,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -7027,9 +7083,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "information-technology",
@@ -7075,9 +7129,7 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.spcf.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "E",
         "C"
       ],
@@ -7126,9 +7178,7 @@
       "tuition": "Free tuition for Taguig residents",
       "website": "https://tcu.taguig.gov.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -7237,7 +7287,12 @@
       "strengthTags": [
         "education",
         "business"
-      ]
+      ],
+      "popularCourses": [
+        "Bachelor of Secondary Education",
+        "BS Business Administration"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "technological-institute-of-the-philippines-arca-south",
@@ -7253,8 +7308,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -7303,8 +7356,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -7356,8 +7407,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -7405,10 +7454,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "engineering",
@@ -7464,7 +7510,12 @@
       "strengthTags": [
         "engineering",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Engineering",
+        "BS Technology"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "tesda-provincial-training-center-region-iii-guiguinto-bulacan",
@@ -7476,7 +7527,11 @@
       "location": "Guiguinto, Bulacan",
       "description": "TESDA center in Bulacan providing TVET programs aligned with local industrial needs.",
       "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
-      "popularCourses": [],
+      "popularCourses": [
+        "TESDA NC II Technical-Vocational Program",
+        "TESDA NC III Advanced Certification",
+        "Skills Training Certificate Program"
+      ],
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
         "R"
@@ -7485,7 +7540,8 @@
         "welding",
         "fitter-machinist",
         "pipefitting"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "tesda-provincial-training-center-region-iv-a-binangonan-rizal",
@@ -7497,7 +7553,11 @@
       "location": "Binangonan, Rizal",
       "description": "TESDA center in Rizal offering various tech-voc qualifications.",
       "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
-      "popularCourses": [],
+      "popularCourses": [
+        "TESDA NC II Technical-Vocational Program",
+        "TESDA NC III Advanced Certification",
+        "Skills Training Certificate Program"
+      ],
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
         "R"
@@ -7506,7 +7566,8 @@
         "electrical-installation",
         "masonry",
         "carpentry"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "tesda-provincial-training-center-region-iv-a-gen-trias-cavite",
@@ -7518,7 +7579,11 @@
       "location": "General Trias, Cavite",
       "description": "Government-run TESDA training center offering free and subsidized tech-voc courses like welding, electrical, and machining.",
       "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
-      "popularCourses": [],
+      "popularCourses": [
+        "TESDA NC II Technical-Vocational Program",
+        "TESDA NC III Advanced Certification",
+        "Skills Training Certificate Program"
+      ],
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
         "R"
@@ -7528,7 +7593,8 @@
         "electrical-installation",
         "machining",
         "automotive"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "tesda-women-center",
@@ -7591,15 +7657,18 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "business",
         "education",
         "technology"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "Bachelor of Secondary Education"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "trinity-university",
@@ -7613,10 +7682,8 @@
       "tuition": "Approximately P35,000-P50,000 per semester",
       "website": "https://www.tua.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -7673,7 +7740,17 @@
         "nursing",
         "health-sciences",
         "education"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Medical Technology",
+        "BS Pharmacy",
+        "BS Radiologic Technology",
+        "BS Secondary Education",
+        "BS Early Childhood Education",
+        "BS Psychology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "ubix",
@@ -7687,9 +7764,7 @@
       "tuition": "Not published online on official site as of 2026-07-05 — contact admissions for current fee schedule",
       "website": "https://www.ubix.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -7734,7 +7809,12 @@
         "nursing",
         "medicine",
         "allied-health"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "Doctor of Medicine"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "union-college-laguna",
@@ -7748,9 +7828,7 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.ucl.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -7798,10 +7876,7 @@
       "tuition": "Subsidized tuition",
       "website": "https://udm.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -7850,10 +7925,7 @@
       "tuition": "Approximately P25,000-P45,000 per semester",
       "website": "https://www.ub.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -7916,10 +7988,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "bachelor-of-science-in-computer-science",
@@ -7960,18 +8029,27 @@
       "tuition": "Free tuition for Makati residents",
       "website": "https://www.umak.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "criminology",
         "nursing",
         "information-technology",
         "hospitality"
-      ]
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Computer Science",
+        "BS Information Technology",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Hospitality Management",
+        "BS Civil Engineering",
+        "BS Psychology"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "uphsl",
@@ -7985,12 +8063,9 @@
       "tuition": "Approximately P40,000-P60,000 per semester",
       "website": "https://www.perpetualdalta.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "accountancy",
@@ -8047,12 +8122,9 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.perpetualdalta.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
         "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "nursing",
@@ -8098,10 +8170,7 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.perpetualdalta.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -8152,9 +8221,6 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -8208,10 +8274,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "information-technology",
@@ -8316,10 +8379,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "accountancy",
@@ -8369,10 +8429,7 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.ue.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -8469,9 +8526,7 @@
       "tuition": "Free tuition under RA 10931 for eligible students; UP socialized tuition for others",
       "website": "https://upepp.upd.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
@@ -8485,7 +8540,14 @@
         "management",
         "public-service",
         "research"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Management",
+        "BA Business Economics",
+        "BA Applied Psychology",
+        "Master of Management"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "up-diliman",
@@ -8502,8 +8564,7 @@
         "A",
         "E",
         "I",
-        "R",
-        "S"
+        "R"
       ],
       "strengthTags": [
         "computer-science",
@@ -8561,9 +8622,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "C"
+        "A"
       ],
       "strengthTags": [
         "agriculture",
@@ -8618,10 +8677,7 @@
       "riasecTags": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "medicine",
@@ -8671,12 +8727,9 @@
       "tuition": "Free under RA 10931 for eligible UP System students; socialized tuition and fees apply for others (verify on official UPOU site)",
       "website": "https://www.upou.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "A",
-        "S",
-        "E",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "multimedia-studies",
@@ -8725,17 +8778,20 @@
       "website": "https://www.valenzuela.gov.ph/",
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "stem",
         "science",
         "mathematics"
-      ]
+      ],
+      "popularCourses": [
+        "STEM Strand",
+        "ABM Strand",
+        "HUMSS Strand",
+        "General Academic Strand (GAS)"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "vctc",
@@ -8755,7 +8811,12 @@
       "strengthTags": [
         "technology",
         "vocational-training"
-      ]
+      ],
+      "popularCourses": [
+        "BS Technology",
+        "BS Vocational Training"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "wcc-aeronautical",
@@ -8769,10 +8830,7 @@
       "tuition": "Approximately P40,000-P60,000 per semester",
       "website": "https://www.wccaviation.com/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -8828,7 +8886,13 @@
         "business",
         "criminology",
         "education"
-      ]
+      ],
+      "popularCourses": [
+        "BS Business Administration",
+        "BS Criminology",
+        "Bachelor of Secondary Education"
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "world-citi-colleges",
@@ -8842,10 +8906,8 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "website": "https://www.worldciti.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "S",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -8893,10 +8955,7 @@
       "tuition": "Estimated PHP 25,000 - 40,000 per semester",
       "website": "https://www.worldciti.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -8939,7 +8998,11 @@
       "location": "Muntinlupa City, NCR",
       "description": "Premier Lasallian school offering excellent Senior High School tracks (STEM, ABM, HUMSS).",
       "tuition": "Estimated PHP 90,000 - 120,000 per year (SHS)",
-      "popularCourses": [],
+      "popularCourses": [
+        "STEM Senior High School",
+        "ABM Senior High School",
+        "HUMSS Senior High School"
+      ],
       "website": "https://www.zobel.dlsu.edu.ph/",
       "riasecTags": [
         "E",
@@ -8950,7 +9013,8 @@
         "shs-stem",
         "shs-abm",
         "shs-humss"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "uni-priv-b3-014",
@@ -8962,7 +9026,15 @@
       "location": "Laguna",
       "description": "Already listed as 'saint-michael-college-laguna' in original, validating and updating status for SHS focus.",
       "tuition": "Estimated PHP 20,000 - 30,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Business Administration Major in Human Resource Management",
+        "BS Hospitality Management",
+        "BS Computer Science",
+        "BS Nursing",
+        "BS Elementary Education",
+        "BS Secondary Education",
+        "BS Psychology"
+      ],
       "website": "https://www.smcl.edu.ph/",
       "riasecTags": [
         "E",
@@ -8972,7 +9044,8 @@
         "business-administration",
         "teacher-education",
         "shs"
-      ]
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "uni-tvet-b3-004",
@@ -8984,7 +9057,11 @@
       "location": "Quezon City, NCR",
       "description": "Premier TESDA training facility focused on empowering women through tech-voc skills like cookery, dressmaking, and wellness massage.",
       "tuition": "Free for qualified scholars",
-      "popularCourses": [],
+      "popularCourses": [
+        "TESDA NC II Technical-Vocational Program",
+        "TESDA NC III Advanced Certification",
+        "Skills Training Certificate Program"
+      ],
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
         "A",
@@ -8995,7 +9072,8 @@
         "dressmaking",
         "wellness-massage",
         "bread-and-pastry"
-      ]
+      ],
+      "programSource": "strength_tags_derived"
     },
     {
       "id": "uni-priv-b3-016",
@@ -9007,7 +9085,14 @@
       "location": "Makati City, NCR",
       "description": "Note: Many ABE branches were converted to iACADEMY or closed. This entry reflects historical presence; verify current operational status.",
       "tuition": "Estimated PHP 25,000 - 35,000 per semester",
-      "popularCourses": [],
+      "popularCourses": [
+        "BS Hotel and Restaurant Management",
+        "BS Tourism Management",
+        "BS Business Administration Major in Marketing Management",
+        "BS Accountancy",
+        "BS Information Technology",
+        "BS Computer Science"
+      ],
       "website": "https://www.abe.edu.ph/",
       "riasecTags": [
         "C",
@@ -9017,7 +9102,8 @@
         "business-administration",
         "accountancy",
         "hrm"
-      ]
+      ],
+      "programSource": "official_website"
     }
   ]
 }

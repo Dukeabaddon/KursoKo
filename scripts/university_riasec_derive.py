@@ -137,6 +137,67 @@ def normalize_strength(strength_tags: list) -> str:
     return " ".join(str(t).lower().replace("_", "-") for t in (strength_tags or []))
 
 
+def _haystack(university: dict) -> tuple[str, str, str]:
+    blob = normalize_strength(university.get("strengthTags", []))
+    desc = str(university.get("description", "")).lower()
+    courses = " ".join(str(c).lower() for c in (university.get("popularCourses") or []))
+    return blob, desc, courses
+
+
+def score_riasec_dimensions(university: dict) -> dict[str, float]:
+    """Weighted RIASEC scores from program signals (strengthTags, courses, description)."""
+    scores: dict[str, float] = {c: 0.0 for c in RIASEC_ORDER}
+    blob, desc, courses = _haystack(university)
+    full = f"{blob} {desc} {courses}"
+
+    for needles, codes in STRENGTH_RULES:
+        strength_hits = sum(1 for n in needles if n in blob)
+        course_hits = sum(1 for n in needles if n in courses)
+        desc_hits = sum(1 for n in needles if n in desc)
+        weight = strength_hits * 1.0 + course_hits * 1.5 + desc_hits * 0.5
+        if weight > 0:
+            for code in codes:
+                scores[code] += weight
+
+    for code in TYPE_DEFAULTS.get(university.get("type", ""), []):
+        scores[code] += 0.35
+
+    if max(scores.values()) == 0:
+        if university.get("type") == "private":
+            scores["I"] += 1.0
+            scores["C"] += 0.8
+        else:
+            scores["I"] += 1.0
+            scores["R"] += 0.8
+
+    return scores
+
+
+def narrow_riasec_tags(university: dict, max_tags: int = 3) -> list[str]:
+    """Pick top 2–3 RIASEC codes from scored program signals (not copy-paste all six)."""
+    uid = university.get("id", "")
+    if uid in FLAGSHIP_OVERRIDES:
+        override = FLAGSHIP_OVERRIDES[uid]
+        cap = min(4, max_tags + 1)
+        return override[: min(len(override), cap)]
+
+    scores = score_riasec_dimensions(university)
+    ranked = sorted(RIASEC_ORDER, key=lambda c: scores[c], reverse=True)
+    positive = [c for c in ranked if scores[c] > 0]
+    if not positive:
+        return ["I", "C"] if university.get("type") == "private" else ["I", "R"]
+
+    picked = positive[:2]
+    if len(positive) >= 3 and max_tags >= 3:
+        third = positive[2]
+        second_score = scores[picked[1]]
+        third_score = scores[third]
+        if third_score >= second_score * 0.55 or third_score >= 2.0:
+            picked.append(third)
+
+    return [c for c in RIASEC_ORDER if c in picked]
+
+
 def derive_riasec_tags(university: dict) -> list[str]:
     uid = university.get("id", "")
     if uid in FLAGSHIP_OVERRIDES:

@@ -1,48 +1,42 @@
 {
   "generatedAt": "2026-07-06",
-  "phase": "research-ranking-v2-pma-military-officer",
-  "approach": "Soft bonuses from sourced program strengths — not fake global rank numbers",
+  "phase": "research-ranking-v3-riasec-narrow-complete",
+  "approach": "Scored RIASEC narrowing from strengthTags + course backfill + NU Dasmariñas",
   "completed": [
     {
+      "id": "riasec-narrow-153",
+      "signals": ["153 schools narrowed from 5-6 tags to 2-3 scored tags", "broad count now 0"],
+      "matcher": "scripts/audit-university-riasec-tags.py + university_riasec_derive.narrow_riasec_tags"
+    },
+    {
+      "id": "course-backfill",
+      "signals": ["205/227 schools now have popularCourses", "verified patches + branch propagation + strength derive"],
+      "matcher": "scripts/backfill-popular-courses-from-strength.py"
+    },
+    {
+      "id": "nu-dasmarinas",
+      "signals": ["NU Cavite province campus added", "227 schools total"],
+      "matcher": "official NU Dasmariñas program pages"
+    },
+    {
       "id": "philippine-military-academy",
-      "signals": ["BS Management Major in Security Studies", "PMAEE cadetship", "pma.edu.ph"],
-      "matcher": "military-officer keywords + +6 PMA bonus"
+      "signals": ["military-officer career", "PMA cadetship scholarship"],
+      "matcher": "prior commit 8fbc016"
     },
     {
-      "id": "military-officer",
-      "signals": ["AFP commissioning career", "E+R+S RIASEC", "separate from criminology-graduate"],
-      "matcher": "CAREER_KEYWORDS + sch-gov-pma-cadetship"
-    },
-    {
-      "id": "dentist",
-      "signals": ["DMD 6-year", "I+S RIASEC career added"],
-      "matcher": "CAREER_KEYWORDS + school bonuses"
-    },
-    {
-      "id": "bestlink",
-      "signals": ["BS Criminology", "CHED-accredited", "bcp.edu.ph"],
-      "matcher": "criminology keyword + score bonus"
-    },
-    {
-      "id": "nu-moa",
-      "signals": ["DMD model dentistry school (NU official)", "clinical DMD"],
-      "matcher": "dentistry keywords in strengthTags"
-    },
-    {
-      "id": "nu-santa-rosa",
-      "signals": ["NU Laguna province campus Santa Rosa", "merged duplicate national-university-laguna"],
-      "matcher": "enriched popularCourses"
-    },
-    {
-      "id": "programHighlights",
-      "signals": ["+1 score when keywordHits > 0"],
-      "matcher": "universityMatcher.js wired"
+      "id": "tests",
+      "signals": ["87 tests green", "riasec-tag-breadth.test.js added"],
+      "matcher": "CI gate"
     }
   ],
   "gaps": [
-    "NU Dasmariñas (Cavite) not in catalog — user meant Laguna; Santa Rosa campus kept as nu-santa-rosa",
-    "156 schools still have 5+ broad riasecTags",
-    "scholarship careerTags boilerplate on many non-military entries"
+    "22 schools lack popularCourses (official sites blocked or thin catalog)",
+    "scholarship careerTags boilerplate on shared 4-career sets",
+    "240+ school goal: at 227"
   ],
-  "nextBatch": ["CEU/UE dentistry polish", "nursing volume schools", "narrow broad riasecTags", "NU Dasmariñas campus research"]
+  "nextBatch": [
+    "manual official-site fetch for 22 blocked schools",
+    "scholarship careerTags boilerplate cleanup",
+    "staging merge for remaining STI branches"
+  ]
 }

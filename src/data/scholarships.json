@@ -5,7 +5,8 @@
     "count": 304,
     "disclaimer": "Verify eligibility, award amount, and application windows on each official provider site before applying. KursoKo does not process applications.",
     "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages.",
-    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2"
+    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
+    "careerTagsNormalized": "2026-07-06"
   },
   "scholarships": [
     {

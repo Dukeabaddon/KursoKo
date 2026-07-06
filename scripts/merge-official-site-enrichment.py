@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from university_riasec_derive import derive_riasec_tags
+from university_riasec_derive import derive_riasec_tags, narrow_riasec_tags
 
 RUNTIME = ROOT / "src/data/universities.json"
 DEFAULT_DIRS = [
@@ -112,7 +112,7 @@ def main() -> None:
         uni["programSource"] = "official_website"
         if patch.get("strengthTags"):
             uni["strengthTags"] = merge_strengths(list(uni.get("strengthTags") or []), patch["strengthTags"])
-            uni["riasecTags"] = derive_riasec_tags(uni)
+            uni["riasecTags"] = narrow_riasec_tags(uni, max_tags=3)
         if patch.get("website"):
             uni["website"] = patch["website"]
         for key in ("description", "tuition"):

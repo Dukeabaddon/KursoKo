@@ -1,5 +1,5 @@
 {
-  "runtimeCount": 226,
+  "runtimeCount": 227,
   "stagingScanned": 88,
   "runtimeNameDupes": {},
   "stagingWouldDuplicate": [
@@ -104,10 +104,6 @@
       "name": "Lyceum of the Philippines University - Pampanga"
     },
     {
-      "id": "uni-priv-b2-026",
-      "name": "National University - Laguna"
-    },
-    {
       "id": "uni-priv-b2-027",
       "name": "Technological Institute of the Philippines - Arca South"
     },
@@ -122,12 +118,25 @@
     {
       "id": "uni-priv-b2-030",
       "name": "Global City Innovative College"
+    },
+    {
+      "id": "uni-priv-b3-001",
+      "name": "Access Computer College - Cubao"
     }
   ],
-  "stagingWouldDuplicateCount": 88,
-  "stagingWouldAdd": [],
-  "stagingWouldAddCount": 0,
-  "broadRiasecTagSchools": 154,
+  "stagingWouldDuplicateCount": 86,
+  "stagingWouldAdd": [
+    {
+      "id": "uni-priv-b2-026",
+      "name": "National University - Laguna"
+    },
+    {
+      "id": "uni-priv-b2-026",
+      "name": "National University - Laguna"
+    }
+  ],
+  "stagingWouldAddCount": 2,
+  "broadRiasecTagSchools": 0,
   "chineseNamedSchools": [
     {
       "id": "chiang-kai-shek-college",

@@ -50,7 +50,7 @@ describe('matcher pipeline (no backend — client-side data)', () => {
   })
 
   it('metadata helpers expose catalog counts', () => {
-    expect(getUniversitiesMetadata().count).toBe(226)
+    expect(getUniversitiesMetadata().count).toBe(227)
     expect(getScholarshipsMetadata().count).toBe(304)
   })
 
