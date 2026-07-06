@@ -18,7 +18,7 @@
         "A": 0.35,
         "S": 0.3,
         "E": 0.4,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "R",
       "secondaryRiasec": "I",
@@ -71,7 +71,7 @@
         "A": 0.3,
         "S": 0.35,
         "E": 0.45,
-        "C": 0.65
+        "C": 0.55
       },
       "primaryRiasec": "R",
       "secondaryRiasec": "I",
@@ -124,7 +124,7 @@
         "A": 0.25,
         "S": 0.3,
         "E": 0.4,
-        "C": 0.68
+        "C": 0.55
       },
       "primaryRiasec": "R",
       "secondaryRiasec": "I",
@@ -174,10 +174,10 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.9,
-        "I": 0.65,
+        "I": 0.55,
         "A": 0.3,
-        "S": 0.6,
-        "E": 0.78,
+        "S": 0.45,
+        "E": 0.6,
         "C": 0.55
       },
       "primaryRiasec": "R",
@@ -231,7 +231,7 @@
         "A": 0.35,
         "S": 0.4,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "R",
       "secondaryRiasec": "I",
@@ -281,11 +281,11 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.92,
-        "I": 0.8,
+        "I": 0.75,
         "A": 0.3,
         "S": 0.35,
         "E": 0.45,
-        "C": 0.7
+        "C": 0.55
       },
       "primaryRiasec": "R",
       "secondaryRiasec": "I",
@@ -333,10 +333,10 @@
       "title": "Medical Technologist",
       "status": "active",
       "riasecWeights": {
-        "R": 0.7,
+        "R": 0.55,
         "I": 0.92,
         "A": 0.3,
-        "S": 0.65,
+        "S": 0.55,
         "E": 0.4,
         "C": 0.72
       },
@@ -391,7 +391,7 @@
         "A": 0.4,
         "S": 0.45,
         "E": 0.5,
-        "C": 0.82
+        "C": 0.75
       },
       "primaryRiasec": "I",
       "secondaryRiasec": "C",
@@ -443,7 +443,7 @@
         "A": 0.5,
         "S": 0.4,
         "E": 0.55,
-        "C": 0.8
+        "C": 0.75
       },
       "primaryRiasec": "I",
       "secondaryRiasec": "C",
@@ -494,12 +494,12 @@
       "title": "Marine Engineer",
       "status": "active",
       "riasecWeights": {
-        "R": 0.82,
+        "R": 0.75,
         "I": 0.9,
         "A": 0.3,
         "S": 0.4,
-        "E": 0.6,
-        "C": 0.7
+        "E": 0.45,
+        "C": 0.55
       },
       "primaryRiasec": "I",
       "secondaryRiasec": "R",
@@ -547,7 +547,7 @@
       "title": "Food Technologist",
       "status": "active",
       "riasecWeights": {
-        "R": 0.7,
+        "R": 0.55,
         "I": 0.9,
         "A": 0.4,
         "S": 0.45,
@@ -602,12 +602,12 @@
       "title": "Environmental Scientist",
       "status": "active",
       "riasecWeights": {
-        "R": 0.65,
+        "R": 0.55,
         "I": 0.9,
         "A": 0.4,
-        "S": 0.6,
+        "S": 0.7,
         "E": 0.5,
-        "C": 0.65
+        "C": 0.55
       },
       "primaryRiasec": "I",
       "secondaryRiasec": "S",
@@ -656,12 +656,12 @@
       "title": "UI/UX Designer",
       "status": "active",
       "riasecWeights": {
-        "R": 0.6,
+        "R": 0.55,
         "I": 0.75,
         "A": 0.9,
         "S": 0.55,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "A",
       "secondaryRiasec": "I",
@@ -710,11 +710,11 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.85,
+        "I": 0.75,
         "A": 0.9,
         "S": 0.4,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "A",
       "secondaryRiasec": "I",
@@ -763,12 +763,12 @@
       "title": "Multimedia Artist",
       "status": "active",
       "riasecWeights": {
-        "R": 0.6,
+        "R": 0.55,
         "I": 0.7,
         "A": 0.92,
         "S": 0.45,
         "E": 0.55,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "A",
       "secondaryRiasec": "I",
@@ -818,9 +818,9 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.4,
-        "I": 0.7,
+        "I": 0.55,
         "A": 0.9,
-        "S": 0.6,
+        "S": 0.55,
         "E": 0.72,
         "C": 0.55
       },
@@ -871,11 +871,11 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.65,
+        "I": 0.55,
         "A": 0.9,
         "S": 0.55,
         "E": 0.7,
-        "C": 0.65
+        "C": 0.55
       },
       "primaryRiasec": "A",
       "secondaryRiasec": "E",
@@ -924,10 +924,10 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.65,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.92,
         "S": 0.45,
-        "E": 0.6,
+        "E": 0.55,
         "C": 0.55
       },
       "primaryRiasec": "A",
@@ -982,7 +982,7 @@
         "A": 0.3,
         "S": 0.92,
         "E": 0.45,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "S",
       "secondaryRiasec": "R",
@@ -1034,11 +1034,11 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.7,
-        "I": 0.65,
+        "I": 0.55,
         "A": 0.35,
         "S": 0.9,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "S",
       "secondaryRiasec": "R",
@@ -1088,10 +1088,10 @@
       "riasecWeights": {
         "R": 0.4,
         "I": 0.72,
-        "A": 0.6,
+        "A": 0.55,
         "S": 0.9,
         "E": 0.55,
-        "C": 0.65
+        "C": 0.55
       },
       "primaryRiasec": "S",
       "secondaryRiasec": "I",
@@ -1140,12 +1140,12 @@
       "title": "Physical Therapist",
       "status": "active",
       "riasecWeights": {
-        "R": 0.65,
+        "R": 0.55,
         "I": 0.75,
         "A": 0.35,
         "S": 0.9,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "S",
       "secondaryRiasec": "I",
@@ -1194,10 +1194,10 @@
       "riasecWeights": {
         "R": 0.5,
         "I": 0.72,
-        "A": 0.6,
+        "A": 0.55,
         "S": 0.9,
         "E": 0.45,
-        "C": 0.65
+        "C": 0.55
       },
       "primaryRiasec": "S",
       "secondaryRiasec": "I",
@@ -1250,7 +1250,7 @@
         "A": 0.4,
         "S": 0.9,
         "E": 0.5,
-        "C": 0.65
+        "C": 0.55
       },
       "primaryRiasec": "S",
       "secondaryRiasec": "I",
@@ -1300,12 +1300,12 @@
       "title": "Criminology Graduate",
       "status": "active",
       "riasecWeights": {
-        "R": 0.6,
-        "I": 0.82,
+        "R": 0.55,
+        "I": 0.7,
         "A": 0.3,
         "S": 0.9,
-        "E": 0.72,
-        "C": 0.65
+        "E": 0.55,
+        "C": 0.55
       },
       "primaryRiasec": "S",
       "secondaryRiasec": "I",
@@ -1358,7 +1358,7 @@
         "A": 0.45,
         "S": 0.75,
         "E": 0.92,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "E",
       "secondaryRiasec": "S",
@@ -1410,9 +1410,9 @@
         "R": 0.45,
         "I": 0.75,
         "A": 0.4,
-        "S": 0.6,
+        "S": 0.55,
         "E": 0.9,
-        "C": 0.68
+        "C": 0.55
       },
       "primaryRiasec": "E",
       "secondaryRiasec": "I",
@@ -1462,11 +1462,11 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.5,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.4,
         "S": 0.7,
         "E": 0.92,
-        "C": 0.65
+        "C": 0.55
       },
       "primaryRiasec": "E",
       "secondaryRiasec": "S",
@@ -1514,11 +1514,11 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.45,
         "S": 0.75,
         "E": 0.9,
-        "C": 0.7
+        "C": 0.55
       },
       "primaryRiasec": "E",
       "secondaryRiasec": "S",
@@ -1566,12 +1566,12 @@
       "title": "Restaurant Manager",
       "status": "active",
       "riasecWeights": {
-        "R": 0.6,
+        "R": 0.55,
         "I": 0.55,
         "A": 0.4,
         "S": 0.72,
         "E": 0.9,
-        "C": 0.7
+        "C": 0.55
       },
       "primaryRiasec": "E",
       "secondaryRiasec": "S",
@@ -1622,9 +1622,9 @@
         "R": 0.55,
         "I": 0.5,
         "A": 0.45,
-        "S": 0.82,
+        "S": 0.75,
         "E": 0.9,
-        "C": 0.6
+        "C": 0.55
       },
       "primaryRiasec": "E",
       "secondaryRiasec": "S",
@@ -1676,10 +1676,10 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.7,
+        "I": 0.55,
         "A": 0.35,
         "S": 0.5,
-        "E": 0.75,
+        "E": 0.65,
         "C": 0.9
       },
       "primaryRiasec": "C",
@@ -1730,10 +1730,10 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.5,
-        "I": 0.7,
+        "I": 0.55,
         "A": 0.3,
         "S": 0.4,
-        "E": 0.6,
+        "E": 0.4,
         "C": 0.92
       },
       "primaryRiasec": "C",
@@ -1784,10 +1784,10 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.72,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.3,
         "S": 0.5,
-        "E": 0.65,
+        "E": 0.5,
         "C": 0.9
       },
       "primaryRiasec": "C",
@@ -1837,7 +1837,7 @@
       "title": "Quality Assurance Analyst",
       "status": "active",
       "riasecWeights": {
-        "R": 0.6,
+        "R": 0.55,
         "I": 0.75,
         "A": 0.35,
         "S": 0.45,
@@ -1892,7 +1892,7 @@
       "status": "active",
       "riasecWeights": {
         "R": 0.5,
-        "I": 0.65,
+        "I": 0.55,
         "A": 0.3,
         "S": 0.45,
         "E": 0.72,

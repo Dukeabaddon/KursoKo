@@ -84,7 +84,7 @@
       "title": "Psychologist",
       "riasecWeights": {
         "R": 0.1,
-        "I": 0.85,
+        "I": 0.75,
         "A": 0.35,
         "S": 0.9,
         "E": 0.25,
@@ -102,7 +102,7 @@
       "title": "Registered Nurse",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.15,
         "S": 0.95,
         "E": 0.2,
@@ -178,7 +178,7 @@
         "A": 0.3,
         "S": 0.25,
         "E": 0.3,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Structural analysis",
@@ -300,11 +300,11 @@
       "title": "Lawyer",
       "riasecWeights": {
         "R": 0.1,
-        "I": 0.75,
+        "I": 0.7,
         "A": 0.3,
         "S": 0.45,
         "E": 0.85,
-        "C": 0.7
+        "C": 0.55
       },
       "skills": [
         "Argumentation",
@@ -322,7 +322,7 @@
         "A": 0.2,
         "S": 0.85,
         "E": 0.55,
-        "C": 0.75
+        "C": 0.7
       },
       "skills": [
         "People skills",
@@ -354,11 +354,11 @@
       "title": "Pharmacist",
       "riasecWeights": {
         "R": 0.35,
-        "I": 0.8,
+        "I": 0.85,
         "A": 0.1,
-        "S": 0.7,
+        "S": 0.55,
         "E": 0.2,
-        "C": 0.8
+        "C": 0.7
       },
       "skills": [
         "Chemistry",
@@ -376,7 +376,7 @@
         "A": 0.35,
         "S": 0.3,
         "E": 0.4,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Metal fabrication",
@@ -394,7 +394,7 @@
         "A": 0.3,
         "S": 0.35,
         "E": 0.45,
-        "C": 0.65
+        "C": 0.55
       },
       "skills": [
         "Engine diagnostics",
@@ -412,7 +412,7 @@
         "A": 0.25,
         "S": 0.3,
         "E": 0.4,
-        "C": 0.68
+        "C": 0.55
       },
       "skills": [
         "Air-conditioning installation",
@@ -426,10 +426,10 @@
       "title": "Seafarer / Deck Officer",
       "riasecWeights": {
         "R": 0.9,
-        "I": 0.65,
+        "I": 0.55,
         "A": 0.3,
-        "S": 0.6,
-        "E": 0.78,
+        "S": 0.45,
+        "E": 0.6,
         "C": 0.55
       },
       "skills": [
@@ -448,7 +448,7 @@
         "A": 0.35,
         "S": 0.4,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Crop management",
@@ -462,11 +462,11 @@
       "title": "Aircraft Maintenance Technician",
       "riasecWeights": {
         "R": 0.92,
-        "I": 0.8,
+        "I": 0.75,
         "A": 0.3,
         "S": 0.35,
         "E": 0.45,
-        "C": 0.7
+        "C": 0.55
       },
       "skills": [
         "Airframe inspection",
@@ -479,10 +479,10 @@
       "id": "medical-technologist",
       "title": "Medical Technologist",
       "riasecWeights": {
-        "R": 0.7,
+        "R": 0.55,
         "I": 0.92,
         "A": 0.3,
-        "S": 0.65,
+        "S": 0.55,
         "E": 0.4,
         "C": 0.72
       },
@@ -502,7 +502,7 @@
         "A": 0.4,
         "S": 0.45,
         "E": 0.5,
-        "C": 0.82
+        "C": 0.75
       },
       "skills": [
         "Network security",
@@ -520,7 +520,7 @@
         "A": 0.5,
         "S": 0.4,
         "E": 0.55,
-        "C": 0.8
+        "C": 0.75
       },
       "skills": [
         "Machine learning",
@@ -533,12 +533,12 @@
       "id": "marine-engineer",
       "title": "Marine Engineer",
       "riasecWeights": {
-        "R": 0.82,
+        "R": 0.75,
         "I": 0.9,
         "A": 0.3,
         "S": 0.4,
-        "E": 0.6,
-        "C": 0.7
+        "E": 0.45,
+        "C": 0.55
       },
       "skills": [
         "Marine propulsion systems",
@@ -551,7 +551,7 @@
       "id": "food-technologist",
       "title": "Food Technologist",
       "riasecWeights": {
-        "R": 0.7,
+        "R": 0.55,
         "I": 0.9,
         "A": 0.4,
         "S": 0.45,
@@ -569,12 +569,12 @@
       "id": "environmental-scientist",
       "title": "Environmental Scientist",
       "riasecWeights": {
-        "R": 0.65,
+        "R": 0.55,
         "I": 0.9,
         "A": 0.4,
-        "S": 0.6,
+        "S": 0.7,
         "E": 0.5,
-        "C": 0.65
+        "C": 0.55
       },
       "skills": [
         "Environmental impact assessment",
@@ -587,12 +587,12 @@
       "id": "ui-ux-designer",
       "title": "UI/UX Designer",
       "riasecWeights": {
-        "R": 0.6,
+        "R": 0.55,
         "I": 0.75,
         "A": 0.9,
         "S": 0.55,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "User research",
@@ -606,11 +606,11 @@
       "title": "Game Developer",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.85,
+        "I": 0.75,
         "A": 0.9,
         "S": 0.4,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Game engine programming",
@@ -623,12 +623,12 @@
       "id": "multimedia-artist",
       "title": "Multimedia Artist",
       "riasecWeights": {
-        "R": 0.6,
+        "R": 0.55,
         "I": 0.7,
         "A": 0.92,
         "S": 0.45,
         "E": 0.55,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Digital illustration",
@@ -642,9 +642,9 @@
       "title": "Journalist",
       "riasecWeights": {
         "R": 0.4,
-        "I": 0.7,
+        "I": 0.55,
         "A": 0.9,
-        "S": 0.6,
+        "S": 0.55,
         "E": 0.72,
         "C": 0.55
       },
@@ -660,11 +660,11 @@
       "title": "Interior Designer",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.65,
+        "I": 0.55,
         "A": 0.9,
         "S": 0.55,
         "E": 0.7,
-        "C": 0.65
+        "C": 0.55
       },
       "skills": [
         "Space planning",
@@ -678,10 +678,10 @@
       "title": "Photographer / Videographer",
       "riasecWeights": {
         "R": 0.65,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.92,
         "S": 0.45,
-        "E": 0.6,
+        "E": 0.55,
         "C": 0.55
       },
       "skills": [
@@ -700,7 +700,7 @@
         "A": 0.3,
         "S": 0.92,
         "E": 0.45,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Personal care assistance",
@@ -714,11 +714,11 @@
       "title": "Midwife",
       "riasecWeights": {
         "R": 0.7,
-        "I": 0.65,
+        "I": 0.55,
         "A": 0.35,
         "S": 0.9,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Prenatal care",
@@ -733,10 +733,10 @@
       "riasecWeights": {
         "R": 0.4,
         "I": 0.72,
-        "A": 0.6,
+        "A": 0.55,
         "S": 0.9,
         "E": 0.55,
-        "C": 0.65
+        "C": 0.55
       },
       "skills": [
         "Counseling techniques",
@@ -749,12 +749,12 @@
       "id": "physical-therapist",
       "title": "Physical Therapist",
       "riasecWeights": {
-        "R": 0.65,
+        "R": 0.55,
         "I": 0.75,
         "A": 0.35,
         "S": 0.9,
         "E": 0.5,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Therapeutic exercise",
@@ -769,10 +769,10 @@
       "riasecWeights": {
         "R": 0.5,
         "I": 0.72,
-        "A": 0.6,
+        "A": 0.55,
         "S": 0.9,
         "E": 0.45,
-        "C": 0.65
+        "C": 0.55
       },
       "skills": [
         "Speech therapy",
@@ -790,7 +790,7 @@
         "A": 0.4,
         "S": 0.9,
         "E": 0.5,
-        "C": 0.65
+        "C": 0.55
       },
       "skills": [
         "Meal planning",
@@ -803,12 +803,12 @@
       "id": "criminology-graduate",
       "title": "Criminology Graduate",
       "riasecWeights": {
-        "R": 0.6,
-        "I": 0.82,
+        "R": 0.55,
+        "I": 0.7,
         "A": 0.3,
         "S": 0.9,
-        "E": 0.72,
-        "C": 0.65
+        "E": 0.55,
+        "C": 0.55
       },
       "skills": [
         "Crime investigation",
@@ -826,7 +826,7 @@
         "A": 0.45,
         "S": 0.75,
         "E": 0.92,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Client acquisition",
@@ -842,9 +842,9 @@
         "R": 0.45,
         "I": 0.75,
         "A": 0.4,
-        "S": 0.6,
+        "S": 0.55,
         "E": 0.9,
-        "C": 0.68
+        "C": 0.55
       },
       "skills": [
         "Market analysis",
@@ -858,11 +858,11 @@
       "title": "Real Estate Broker",
       "riasecWeights": {
         "R": 0.5,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.4,
         "S": 0.7,
         "E": 0.92,
-        "C": 0.65
+        "C": 0.55
       },
       "skills": [
         "Property valuation",
@@ -876,11 +876,11 @@
       "title": "Hotel Manager",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.45,
         "S": 0.75,
         "E": 0.9,
-        "C": 0.7
+        "C": 0.55
       },
       "skills": [
         "Operations management",
@@ -893,12 +893,12 @@
       "id": "restaurant-manager",
       "title": "Restaurant Manager",
       "riasecWeights": {
-        "R": 0.6,
+        "R": 0.55,
         "I": 0.55,
         "A": 0.4,
         "S": 0.72,
         "E": 0.9,
-        "C": 0.7
+        "C": 0.55
       },
       "skills": [
         "Inventory control",
@@ -914,9 +914,9 @@
         "R": 0.55,
         "I": 0.5,
         "A": 0.45,
-        "S": 0.82,
+        "S": 0.75,
         "E": 0.9,
-        "C": 0.6
+        "C": 0.55
       },
       "skills": [
         "Safety demonstration",
@@ -930,10 +930,10 @@
       "title": "Supply Chain Manager",
       "riasecWeights": {
         "R": 0.55,
-        "I": 0.7,
+        "I": 0.55,
         "A": 0.35,
         "S": 0.5,
-        "E": 0.75,
+        "E": 0.65,
         "C": 0.9
       },
       "skills": [
@@ -948,10 +948,10 @@
       "title": "Bookkeeper",
       "riasecWeights": {
         "R": 0.5,
-        "I": 0.7,
+        "I": 0.55,
         "A": 0.3,
         "S": 0.4,
-        "E": 0.6,
+        "E": 0.4,
         "C": 0.92
       },
       "skills": [
@@ -966,10 +966,10 @@
       "title": "Logistics Coordinator",
       "riasecWeights": {
         "R": 0.72,
-        "I": 0.6,
+        "I": 0.55,
         "A": 0.3,
         "S": 0.5,
-        "E": 0.65,
+        "E": 0.5,
         "C": 0.9
       },
       "skills": [
@@ -983,7 +983,7 @@
       "id": "quality-assurance-analyst",
       "title": "Quality Assurance Analyst",
       "riasecWeights": {
-        "R": 0.6,
+        "R": 0.55,
         "I": 0.75,
         "A": 0.35,
         "S": 0.45,
@@ -1002,7 +1002,7 @@
       "title": "Customs Broker",
       "riasecWeights": {
         "R": 0.5,
-        "I": 0.65,
+        "I": 0.55,
         "A": 0.3,
         "S": 0.45,
         "E": 0.72,

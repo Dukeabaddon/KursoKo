@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-07-06",
+  "profilesTested": 436,
+  "breakdown": {
+    "pureArchetypes": 6,
+    "archetypePairs": 30,
+    "randomMonteCarlo": 400
+  },
+  "thresholds": {
+    "top1PrimaryAlignment": ">=90%",
+    "top3PrimaryAlignment": "100%",
+    "schoolCoverage": "100% with score >= MIN_SCHOOL_SCORE",
+    "scholarshipRelevance": ">=85%"
+  },
+  "fixesApplied": [
+    "Holland blend scoring (cosine + primary alignment)",
+    "42 career RIASEC weight normalizations",
+    "172 scholarship broad-tag reductions (6 tags -> 2-3)",
+    "Military/pilot scholarship careerTag corrections"
+  ],
+  "command": "npx vitest run tests/unit/matching-quality-scorecard.test.js"
+}

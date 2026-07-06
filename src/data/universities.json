@@ -3,15 +3,9 @@
     "region": "NCR + CALABARZON + Central Luzon (partial)",
     "version": "2.1.0",
     "lastUpdated": "2026-07-06",
-    "count": 209,
+    "count": 226,
     "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site.",
-    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
-    "riasecTagsBackfill": "2026-07-05",
-    "top100CoreGapsMerge": "2026-07-05",
-    "edurankEnrichment": "2026-07-05",
-    "edurankRetry": "2026-07-05",
-    "officialSiteEnrichment": "2026-07-06",
-    "productionCourseGate": "2026-07-05"
+    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2"
   },
   "universities": [
     {
@@ -48,6 +42,51 @@
         "BS Office Administration"
       ],
       "programSource": "official_website"
+    },
+    {
+      "id": "access-computer-college-caloocan",
+      "name": "Access Computer College - Caloocan",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan City, NCR",
+      "description": "Branch of ACC serving the Caloocan/Malabon/Navotas/Valenzuela area.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.accesscomputer.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "criminology"
+      ]
+    },
+    {
+      "id": "access-computer-college-cubao",
+      "name": "Access Computer College - Cubao",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "Branch of ACC offering IT, business, and SHS programs in the Cubao area.",
+      "tuition": "Estimated PHP 15,000 - 25,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.accesscomputer.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "information-technology",
+        "computer-science",
+        "business-administration"
+      ]
     },
     {
       "id": "aclc-college-antipolo",
@@ -296,6 +335,113 @@
         "BS Hospitality Management"
       ],
       "programSource": "official_website"
+    },
+    {
+      "id": "ama-computer-college-caloocan",
+      "name": "AMA Computer College - Caloocan",
+      "type": "private",
+      "city": "Caloocan",
+      "lguId": "caloocan",
+      "region": "NCR",
+      "location": "Caloocan City, NCR",
+      "description": "AMA campus in Caloocan.",
+      "tuition": "Estimated PHP 18,000 - 30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "criminology"
+      ]
+    },
+    {
+      "id": "ama-computer-college-cubao",
+      "name": "AMA Computer College - Cubao",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "AMA campus in Cubao, QC.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ]
+    },
+    {
+      "id": "ama-computer-college-las-pinas",
+      "name": "AMA Computer College - Las Piñas",
+      "type": "private",
+      "city": "Las Piñas",
+      "lguId": "las-pinas",
+      "region": "NCR",
+      "location": "Las Piñas City, NCR",
+      "description": "AMA campus in Las Piñas.",
+      "tuition": "Estimated PHP 18,000 - 30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ]
+    },
+    {
+      "id": "ama-computer-college-makati",
+      "name": "AMA Computer College - Makati",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati City, NCR",
+      "description": "AMA campus in Makati.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology",
+        "computer-engineering"
+      ]
+    },
+    {
+      "id": "ama-computer-college-paranaque",
+      "name": "AMA Computer College - Parañaque",
+      "type": "private",
+      "city": "Parañaque",
+      "lguId": "paranaque",
+      "region": "NCR",
+      "location": "Parañaque City, NCR",
+      "description": "AMA campus in Parañaque.",
+      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.amaes.edu.ph/",
+      "riasecTags": [
+        "C",
+        "I"
+      ],
+      "strengthTags": [
+        "computer-science",
+        "information-technology"
+      ]
     },
     {
       "id": "ama-computer-santa-rosa",
@@ -1012,22 +1158,35 @@
       "city": "Quezon City",
       "lguId": "quezon-city",
       "region": "NCR",
-      "location": "Quezon City",
-      "description": "Private college in Quezon City offering business, education, and technology programs.",
+      "location": "Novaliches, Quezon City",
+      "description": "Private college in Novaliches, Quezon City known for criminology, criminal justice education, IT, business, and teacher education. CHED-accredited BS Criminology with dedicated San Agustin campus facilities.",
       "tuition": "Approximately P20,000-P35,000 per semester",
-      "website": "https://www.bestlink.edu.ph/",
+      "website": "https://bcp.edu.ph/",
       "riasecTags": [
-        "R",
-        "I",
         "S",
         "E",
+        "I",
         "C"
       ],
       "strengthTags": [
+        "criminology",
+        "criminal-justice",
+        "law-enforcement",
+        "forensic-science",
         "business",
         "education",
-        "technology"
-      ]
+        "information-technology",
+        "psychology"
+      ],
+      "popularCourses": [
+        "BS Criminology",
+        "BS Information Technology",
+        "BS Business Administration",
+        "BS Psychology",
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education"
+      ],
+      "programSource": "official_website"
     },
     {
       "id": "bulacan-polytechnic",
@@ -2096,6 +2255,30 @@
         "teacher-education",
         "communication",
         "business-administration"
+      ]
+    },
+    {
+      "id": "diliman-preparatory-school",
+      "name": "Diliman Preparatory School",
+      "type": "shs",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "Well-known preparatory and senior high school in QC offering STEM, ABM, HUMSS, GAS, and Sports Track.",
+      "tuition": "Estimated PHP 60,000 - 85,000 per year (SHS)",
+      "popularCourses": [],
+      "website": "https://www.dps.edu.ph/",
+      "riasecTags": [
+        "E",
+        "I",
+        "R",
+        "S"
+      ],
+      "strengthTags": [
+        "shs-stem",
+        "shs-abm",
+        "shs-sports"
       ]
     },
     {
@@ -4588,6 +4771,50 @@
       "programSource": "official_website"
     },
     {
+      "id": "paref-southridge-school",
+      "name": "PAREF Southridge School",
+      "type": "shs",
+      "city": "Muntinlupa",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa City, NCR",
+      "description": "All-boys private school offering strong Senior High School STEM and ABM tracks.",
+      "tuition": "Estimated PHP 90,000 - 130,000 per year (SHS)",
+      "popularCourses": [],
+      "website": "https://www.southridge.edu.ph/",
+      "riasecTags": [
+        "E",
+        "I"
+      ],
+      "strengthTags": [
+        "shs-stem",
+        "shs-abm"
+      ]
+    },
+    {
+      "id": "paref-woodrose-school",
+      "name": "PAREF Woodrose School",
+      "type": "shs",
+      "city": "Muntinlupa",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa City, NCR",
+      "description": "All-girls private school offering Senior High School HUMSS, STEM, and ABM.",
+      "tuition": "Estimated PHP 90,000 - 130,000 per year (SHS)",
+      "popularCourses": [],
+      "website": "https://www.woodrose.edu.ph/",
+      "riasecTags": [
+        "A",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "shs-humss",
+        "shs-stem",
+        "shs-abm"
+      ]
+    },
+    {
       "id": "ptc",
       "name": "Pateros Technological College",
       "type": "public",
@@ -5601,31 +5828,6 @@
       "programSource": "official_website"
     },
     {
-      "id": "san-beda-alabang",
-      "name": "San Beda College-Alabang",
-      "type": "private",
-      "city": "Muntinlupa",
-      "lguId": "muntinlupa",
-      "region": "NCR",
-      "location": "Muntinlupa",
-      "description": "San Beda campus in Alabang offering business, law, and arts programs.",
-      "tuition": "Approximately P45,000-P70,000 per semester",
-      "website": "https://www.sanbeda.edu.ph/",
-      "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "strengthTags": [
-        "business",
-        "law",
-        "arts-and-sciences"
-      ]
-    },
-    {
       "id": "san-beda-university",
       "name": "San Beda University",
       "type": "private",
@@ -5704,6 +5906,27 @@
       "strengthTags": [
         "nursing",
         "allied-health"
+      ]
+    },
+    {
+      "id": "san-lorenzo-ruiz-center-of-studies-and-trades",
+      "name": "San Lorenzo Ruiz Center of Studies and Trades",
+      "type": "tvet",
+      "city": "Cavite",
+      "lguId": "cavite",
+      "region": "Cavite",
+      "location": "Silang, Cavite",
+      "description": "A Dominican institution offering technical-vocational education and short courses.",
+      "tuition": "Estimated PHP 10,000 - 20,000 per program",
+      "popularCourses": [],
+      "website": "https://www.slrct.edu.ph/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "technical-drafting",
+        "automotive",
+        "electrical-technology"
       ]
     },
     {
@@ -7211,6 +7434,70 @@
       ]
     },
     {
+      "id": "tesda-provincial-training-center-region-iii-guiguinto-bulacan",
+      "name": "TESDA Provincial Training Center - Region III (Guiguinto, Bulacan)",
+      "type": "tvet",
+      "city": "Guiguinto",
+      "lguId": "guiguinto",
+      "region": "Bulacan",
+      "location": "Guiguinto, Bulacan",
+      "description": "TESDA center in Bulacan providing TVET programs aligned with local industrial needs.",
+      "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
+      "popularCourses": [],
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "welding",
+        "fitter-machinist",
+        "pipefitting"
+      ]
+    },
+    {
+      "id": "tesda-provincial-training-center-region-iv-a-binangonan-rizal",
+      "name": "TESDA Provincial Training Center - Region IV-A (Binangonan, Rizal)",
+      "type": "tvet",
+      "city": "Binangonan",
+      "lguId": "binangonan",
+      "region": "Rizal",
+      "location": "Binangonan, Rizal",
+      "description": "TESDA center in Rizal offering various tech-voc qualifications.",
+      "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
+      "popularCourses": [],
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "electrical-installation",
+        "masonry",
+        "carpentry"
+      ]
+    },
+    {
+      "id": "tesda-provincial-training-center-region-iv-a-gen-trias-cavite",
+      "name": "TESDA Provincial Training Center - Region IV-A (Gen. Trias, Cavite)",
+      "type": "tvet",
+      "city": "General Trias",
+      "lguId": "general-trias",
+      "region": "Cavite",
+      "location": "General Trias, Cavite",
+      "description": "Government-run TESDA training center offering free and subsidized tech-voc courses like welding, electrical, and machining.",
+      "tuition": "Free (for TWSP/STEP scholars) or minimal fee",
+      "popularCourses": [],
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [
+        "R"
+      ],
+      "strengthTags": [
+        "welding",
+        "electrical-installation",
+        "machining",
+        "automotive"
+      ]
+    },
+    {
       "id": "tesda-women-center",
       "name": "TESDA Women's Center",
       "type": "tvet",
@@ -8608,6 +8895,96 @@
         "Bachelor of Science in Nursing"
       ],
       "programSource": "official_website"
+    },
+    {
+      "id": "uni-shs-b3-001",
+      "name": "De La Salle Santiago Zobel",
+      "type": "shs",
+      "city": "Muntinlupa",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa City, NCR",
+      "description": "Premier Lasallian school offering excellent Senior High School tracks (STEM, ABM, HUMSS).",
+      "tuition": "Estimated PHP 90,000 - 120,000 per year (SHS)",
+      "popularCourses": [],
+      "website": "https://www.zobel.dlsu.edu.ph/",
+      "riasecTags": [
+        "E",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "shs-stem",
+        "shs-abm",
+        "shs-humss"
+      ]
+    },
+    {
+      "id": "uni-priv-b3-014",
+      "name": "St. Michael's College of Laguna - SHS & College",
+      "type": "private",
+      "city": "Laguna",
+      "lguId": "laguna",
+      "region": "Laguna",
+      "location": "Laguna",
+      "description": "Already listed as 'saint-michael-college-laguna' in original, validating and updating status for SHS focus.",
+      "tuition": "Estimated PHP 20,000 - 30,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.smcl.edu.ph/",
+      "riasecTags": [
+        "E",
+        "S"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "teacher-education",
+        "shs"
+      ]
+    },
+    {
+      "id": "uni-tvet-b3-004",
+      "name": "Tesda Women's Center (TWC)",
+      "type": "tvet",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Quezon City, NCR",
+      "description": "Premier TESDA training facility focused on empowering women through tech-voc skills like cookery, dressmaking, and wellness massage.",
+      "tuition": "Free for qualified scholars",
+      "popularCourses": [],
+      "website": "https://www.tesda.gov.ph/",
+      "riasecTags": [
+        "A",
+        "R"
+      ],
+      "strengthTags": [
+        "cookery",
+        "dressmaking",
+        "wellness-massage",
+        "bread-and-pastry"
+      ]
+    },
+    {
+      "id": "uni-priv-b3-016",
+      "name": "ABE International College of Business and Economics - Makati",
+      "type": "private",
+      "city": "Makati",
+      "lguId": "makati",
+      "region": "NCR",
+      "location": "Makati City, NCR",
+      "description": "Note: Many ABE branches were converted to iACADEMY or closed. This entry reflects historical presence; verify current operational status.",
+      "tuition": "Estimated PHP 25,000 - 35,000 per semester",
+      "popularCourses": [],
+      "website": "https://www.abe.edu.ph/",
+      "riasecTags": [
+        "C",
+        "E"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "accountancy",
+        "hrm"
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 import careersData from '../data/careers.json'
-import { cosineSimilarity, toFitPercent } from './matchScoring.js'
+import { blendedCareerScore, toFitPercent } from './matchScoring.js'
 
 const CAREER_NARRATIVES = {
   'software-engineer':
@@ -132,9 +132,11 @@ export function getCareerMatches(profile, limit = 10) {
   const primaryCode = profile.primaryDimension?.code
   const secondaryCode = profile.secondaryDimension?.code
 
+  const userTop2 = [primaryCode, secondaryCode].filter(Boolean)
+
   const ranked = careersData.careers
     .map((career) => {
-      const raw = cosineSimilarity(scores, career.riasecWeights)
+      const raw = blendedCareerScore(scores, career.riasecWeights, userTop2)
       const matchPercent = toFitPercent(raw)
       const reasons = []
 

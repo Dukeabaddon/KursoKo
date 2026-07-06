@@ -132,20 +132,18 @@ NAME_SKIP_ALIASES = {
     "de la salle santiago zobel": "de-la-salle-zobel",
     "st michael s college of laguna shs college": "saint-michael-college-laguna",
     "st michaels college of laguna shs college": "saint-michael-college-laguna",
+    "tesda women s center twc": "tesda-women-center",
+    "tesda womens center twc": "tesda-women-center",
 }
 
-# Follow existing prod shape per brand (uni agent): STI campus-level OK;
-# AMA/Access stay umbrella — do not explode campuses.
-SKIP_UNIVERSITY_IDS = {
-    # AMA NCR campuses (prod has umbrella AMA Computer College)
-    "uni-priv-b2-011",
-    "uni-priv-b2-012",
-    "uni-priv-b2-013",
-    "uni-priv-b2-014",
-    "uni-priv-b2-015",
-    # Access campuses (prod has single Access entry)
-    "uni-priv-b3-001",
-    "uni-priv-b3-002",
+# Prod already carries campus-level AMA (ama-computer-santa-rosa), so
+# AMA/Access campuses now sync like STI campuses. Keep set for future policy skips.
+SKIP_UNIVERSITY_IDS: set[str] = set()
+
+# Runtime rows superseded by a richer duplicate (removed during merge)
+REMOVE_RUNTIME_IDS = {
+    # dup of san-beda-college-alabang (richer courses/strength tags)
+    "san-beda-alabang",
 }
 
 # Scholarship soft-dups / branding overlaps (sch agent)
@@ -429,11 +427,6 @@ def should_skip_university(row: dict, report: dict) -> bool:
     if rid in SKIP_UNIVERSITY_IDS:
         report["universities_skipped_policy"].append({"id": rid, "reason": "umbrella-brand-policy"})
         return True
-    # Skip TVET / SHS growth in this batch (uni agent)
-    mapped = map_type(row.get("type", "private"), rid)
-    if mapped in ("tvet", "shs"):
-        report["universities_skipped_policy"].append({"id": rid, "reason": f"skip-{mapped}"})
-        return True
     name_key = norm_name(row.get("name", ""))
     if "st michael" in name_key and "laguna" in name_key:
         report["universities_skipped_policy"].append({"id": rid, "reason": "near-dup-smcl"})
@@ -445,6 +438,9 @@ def merge_universities(staging: list[dict], runtime: list[dict], report: dict) -
     # Fix known prod id typo (leading space)
     cleaned_runtime = []
     for row in runtime:
+        if row.get("id") in REMOVE_RUNTIME_IDS:
+            report["universities_removed"].append(row["id"])
+            continue
         if row.get("id") == " access-computer":
             row = {**row, "id": "access-computer"}
             report["universities_id_fixes"].append({"from": " access-computer", "to": "access-computer"})
@@ -597,6 +593,7 @@ def main() -> None:
             "scholarships": len(staging_sch),
         },
         "universities_added": [],
+        "universities_removed": [],
         "universities_skipped_id_dup": [],
         "universities_skipped_name_dup": [],
         "universities_skipped_status": [],
@@ -617,7 +614,8 @@ def main() -> None:
         "notes": [
             "Careers/programs claimed in manifest.json are not present in data2 files — not synced.",
             "Misplaced scholarships recovered from universities*.json via scholarships-recovered.json.",
-            "Policy: STI campuses ADD; AMA/Access umbrella SKIP campuses; TVET/SHS SKIP this batch.",
+            "Policy: campus-level rows ADD (STI, AMA, Access); TVET/SHS staging rows ADD with mapped type.",
+            "Policy: san-beda-alabang removed — duplicate of richer san-beda-college-alabang.",
             "Policy: QCYDO soft-dups SKIP (prod has QCSP suite); non-active scholarships SKIP.",
         ],
     }

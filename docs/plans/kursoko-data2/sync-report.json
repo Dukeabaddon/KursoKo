@@ -1,299 +1,320 @@
 {
-  "syncedAt": "2026-07-04",
+  "syncedAt": "2026-07-06",
   "source": "docs/plans/kursoko-data2",
   "staging_counts": {
     "universities": 58,
     "scholarships": 210
   },
   "universities_added": [
-    "sti-college-munoz-edsa",
-    "sti-college-novaliches",
-    "sti-college-recto",
-    "sti-college-makati",
-    "sti-college-global-city",
-    "sti-college-ortigas",
-    "sti-college-paranaque",
-    "sti-college-las-pinas",
-    "sti-college-meycauayan",
-    "sti-college-dasmarinas",
-    "aclc-college-malolos",
-    "aclc-college-dasmarinas",
-    "aclc-college-santa-rosa",
-    "aclc-college-antipolo",
-    "arellano-university-pasay",
-    "arellano-university-malabon",
-    "our-lady-of-fatima-university-quezon-city",
-    "our-lady-of-fatima-university-pampanga",
-    "lyceum-of-the-philippines-university-cavite",
-    "lyceum-of-the-philippines-university-pampanga",
-    "national-university-laguna",
-    "technological-institute-of-the-philippines-arca-south",
-    "manila-central-university",
-    "datamex-institute-of-computer-technology-caloocan",
-    "global-city-innovative-college",
-    "asian-institute-of-computer-studies-aics-quezon-city",
-    "asian-institute-of-computer-studies-aics-antipolo",
-    "don-bosco-technical-institute-mandaluyong",
-    "don-bosco-college-canlubang",
-    "la-verdad-christian-college-apalit",
-    "world-citi-colleges-antipolo",
-    "centro-escolar-university-makati",
-    "holy-cross-college-pampanga",
-    "montessori-professional-college-quezon-city",
-    "northlink-technological-college",
-    "chiang-kai-shek-college",
-    "colegio-de-san-pascual-baylon",
-    "st-dominic-college-of-arts-and-sciences",
-    "diliman-college",
-    "kingfisher-school-of-business-and-finance"
+    "ama-computer-college-makati",
+    "ama-computer-college-cubao",
+    "ama-computer-college-paranaque",
+    "ama-computer-college-las-pinas",
+    "ama-computer-college-caloocan",
+    "access-computer-college-cubao",
+    "access-computer-college-caloocan",
+    "tesda-provincial-training-center-region-iv-a-gen-trias-cavite",
+    "tesda-provincial-training-center-region-iii-guiguinto-bulacan",
+    "tesda-provincial-training-center-region-iv-a-binangonan-rizal",
+    "paref-southridge-school",
+    "paref-woodrose-school",
+    "diliman-preparatory-school",
+    "san-lorenzo-ruiz-center-of-studies-and-trades"
+  ],
+  "universities_removed": [
+    "san-beda-alabang"
   ],
   "universities_skipped_id_dup": [],
-  "universities_skipped_name_dup": [],
+  "universities_skipped_name_dup": [
+    {
+      "staging": "uni-priv-b2-001",
+      "runtime": "sti-college-munoz-edsa",
+      "name": "STI College - Muñoz-EDSA"
+    },
+    {
+      "staging": "uni-priv-b2-002",
+      "runtime": "sti-college-novaliches",
+      "name": "STI College - Novaliches"
+    },
+    {
+      "staging": "uni-priv-b2-003",
+      "runtime": "sti-college-recto",
+      "name": "STI College - Recto"
+    },
+    {
+      "staging": "uni-priv-b2-004",
+      "runtime": "sti-college-makati",
+      "name": "STI College - Makati"
+    },
+    {
+      "staging": "uni-priv-b2-005",
+      "runtime": "sti-college-global-city",
+      "name": "STI College - Global City"
+    },
+    {
+      "staging": "uni-priv-b2-006",
+      "runtime": "sti-college-ortigas",
+      "name": "STI College - Ortigas"
+    },
+    {
+      "staging": "uni-priv-b2-007",
+      "runtime": "sti-college-paranaque",
+      "name": "STI College - Parañaque"
+    },
+    {
+      "staging": "uni-priv-b2-008",
+      "runtime": "sti-college-las-pinas",
+      "name": "STI College - Las Piñas"
+    },
+    {
+      "staging": "uni-priv-b2-009",
+      "runtime": "sti-college-meycauayan",
+      "name": "STI College - Meycauayan"
+    },
+    {
+      "staging": "uni-priv-b2-010",
+      "runtime": "sti-college-dasmarinas",
+      "name": "STI College - Dasmariñas"
+    },
+    {
+      "staging": "uni-priv-b2-016",
+      "runtime": "aclc-college-malolos",
+      "name": "ACLC College - Malolos"
+    },
+    {
+      "staging": "uni-priv-b2-017",
+      "runtime": "aclc-college-dasmarinas",
+      "name": "ACLC College - Dasmariñas"
+    },
+    {
+      "staging": "uni-priv-b2-018",
+      "runtime": "aclc-college-santa-rosa",
+      "name": "ACLC College - Santa Rosa"
+    },
+    {
+      "staging": "uni-priv-b2-019",
+      "runtime": "aclc-college-antipolo",
+      "name": "ACLC College - Antipolo"
+    },
+    {
+      "staging": "uni-priv-b2-020",
+      "runtime": "arellano-university-pasay",
+      "name": "Arellano University - Pasay"
+    },
+    {
+      "staging": "uni-priv-b2-021",
+      "runtime": "arellano-university-malabon",
+      "name": "Arellano University - Malabon"
+    },
+    {
+      "staging": "uni-priv-b2-022",
+      "runtime": "our-lady-of-fatima-university-quezon-city",
+      "name": "Our Lady of Fatima University - Quezon City"
+    },
+    {
+      "staging": "uni-priv-b2-023",
+      "runtime": "our-lady-of-fatima-university-pampanga",
+      "name": "Our Lady of Fatima University - Pampanga"
+    },
+    {
+      "staging": "uni-priv-b2-024",
+      "runtime": "lyceum-of-the-philippines-university-cavite",
+      "name": "Lyceum of the Philippines University - Cavite"
+    },
+    {
+      "staging": "uni-priv-b2-025",
+      "runtime": "lyceum-of-the-philippines-university-pampanga",
+      "name": "Lyceum of the Philippines University - Pampanga"
+    },
+    {
+      "staging": "uni-priv-b2-026",
+      "runtime": "national-university-laguna",
+      "name": "National University - Laguna"
+    },
+    {
+      "staging": "uni-priv-b2-027",
+      "runtime": "technological-institute-of-the-philippines-arca-south",
+      "name": "Technological Institute of the Philippines - Arca South"
+    },
+    {
+      "staging": "uni-priv-b2-028",
+      "runtime": "manila-central-university",
+      "name": "Manila Central University"
+    },
+    {
+      "staging": "uni-priv-b2-029",
+      "runtime": "datamex-institute-of-computer-technology-caloocan",
+      "name": "Datamex Institute of Computer Technology - Caloocan"
+    },
+    {
+      "staging": "uni-priv-b2-030",
+      "runtime": "global-city-innovative-college",
+      "name": "Global City Innovative College"
+    },
+    {
+      "staging": "uni-priv-b3-003",
+      "runtime": "asian-institute-of-computer-studies-aics-quezon-city",
+      "name": "Asian Institute of Computer Studies (AICS) - Quezon City"
+    },
+    {
+      "staging": "uni-priv-b3-004",
+      "runtime": "asian-institute-of-computer-studies-aics-antipolo",
+      "name": "Asian Institute of Computer Studies (AICS) - Antipolo"
+    },
+    {
+      "staging": "uni-priv-b3-005",
+      "runtime": "don-bosco-technical-institute-mandaluyong",
+      "name": "Don Bosco Technical Institute - Mandaluyong"
+    },
+    {
+      "staging": "uni-priv-b3-006",
+      "runtime": "don-bosco-college-canlubang",
+      "name": "Don Bosco College - Canlubang"
+    },
+    {
+      "staging": "uni-priv-b3-007",
+      "runtime": "la-verdad-christian-college-apalit",
+      "name": "La Verdad Christian College - Apalit"
+    },
+    {
+      "staging": "uni-priv-b3-008",
+      "runtime": "world-citi-colleges-antipolo",
+      "name": "World Citi Colleges - Antipolo"
+    },
+    {
+      "staging": "uni-shs-b3-001",
+      "runtime": "de-la-salle-zobel",
+      "name": "De La Salle Santiago Zobel"
+    },
+    {
+      "staging": "uni-priv-b3-009",
+      "runtime": "centro-escolar-university-makati",
+      "name": "Centro Escolar University - Makati"
+    },
+    {
+      "staging": "uni-priv-b3-010",
+      "runtime": "holy-cross-college-pampanga",
+      "name": "Holy Cross College - Pampanga"
+    },
+    {
+      "staging": "uni-priv-b3-011",
+      "runtime": "montessori-professional-college-quezon-city",
+      "name": "Montessori Professional College - Quezon City"
+    },
+    {
+      "staging": "uni-priv-b3-012",
+      "runtime": "northlink-technological-college",
+      "name": "Northlink Technological College"
+    },
+    {
+      "staging": "uni-priv-b3-013",
+      "runtime": "chiang-kai-shek-college",
+      "name": "Chiang Kai Shek College"
+    },
+    {
+      "staging": "uni-priv-b3-015",
+      "runtime": "colegio-de-san-pascual-baylon",
+      "name": "Colegio de San Pascual Baylon"
+    },
+    {
+      "staging": "uni-tvet-b3-004",
+      "runtime": "tesda-women-center",
+      "name": "Tesda Women's Center (TWC)"
+    },
+    {
+      "staging": "uni-priv-b3-017",
+      "runtime": "st-dominic-college-of-arts-and-sciences",
+      "name": "St. Dominic College of Arts and Sciences"
+    },
+    {
+      "staging": "uni-priv-b3-019",
+      "runtime": "diliman-college",
+      "name": "Diliman College"
+    },
+    {
+      "staging": "uni-priv-b3-020",
+      "runtime": "kingfisher-school-of-business-and-finance",
+      "name": "Kingfisher School of Business and Finance"
+    }
+  ],
   "universities_skipped_status": [
     "uni-priv-b3-016"
   ],
   "universities_skipped_policy": [
     {
-      "id": "uni-priv-b2-011",
-      "reason": "umbrella-brand-policy"
-    },
-    {
-      "id": "uni-priv-b2-012",
-      "reason": "umbrella-brand-policy"
-    },
-    {
-      "id": "uni-priv-b2-013",
-      "reason": "umbrella-brand-policy"
-    },
-    {
-      "id": "uni-priv-b2-014",
-      "reason": "umbrella-brand-policy"
-    },
-    {
-      "id": "uni-priv-b2-015",
-      "reason": "umbrella-brand-policy"
-    },
-    {
-      "id": "uni-priv-b3-001",
-      "reason": "umbrella-brand-policy"
-    },
-    {
-      "id": "uni-priv-b3-002",
-      "reason": "umbrella-brand-policy"
-    },
-    {
-      "id": "uni-tvet-b3-001",
-      "reason": "skip-tvet"
-    },
-    {
-      "id": "uni-tvet-b3-002",
-      "reason": "skip-tvet"
-    },
-    {
-      "id": "uni-tvet-b3-003",
-      "reason": "skip-tvet"
-    },
-    {
-      "id": "uni-shs-b3-001",
-      "reason": "skip-shs"
-    },
-    {
-      "id": "uni-shs-b3-002",
-      "reason": "skip-shs"
-    },
-    {
-      "id": "uni-shs-b3-003",
-      "reason": "skip-shs"
-    },
-    {
       "id": "uni-priv-b3-014",
       "reason": "near-dup-smcl"
-    },
-    {
-      "id": "uni-tvet-b3-004",
-      "reason": "skip-tvet"
-    },
-    {
-      "id": "uni-shs-b3-004",
-      "reason": "skip-shs"
-    },
-    {
-      "id": "uni-priv-b3-018",
-      "reason": "skip-tvet"
     }
   ],
   "universities_missing_website": [],
   "universities_broad_riasec_fallback": [],
-  "universities_id_fixes": [
-    {
-      "from": " access-computer",
-      "to": "access-computer"
-    }
-  ],
+  "universities_id_fixes": [],
   "universities_id_rewrites": [
     {
-      "from": "uni-priv-b2-001",
-      "to": "sti-college-munoz-edsa"
+      "from": "uni-priv-b2-011",
+      "to": "ama-computer-college-makati"
     },
     {
-      "from": "uni-priv-b2-002",
-      "to": "sti-college-novaliches"
+      "from": "uni-priv-b2-012",
+      "to": "ama-computer-college-cubao"
     },
     {
-      "from": "uni-priv-b2-003",
-      "to": "sti-college-recto"
+      "from": "uni-priv-b2-013",
+      "to": "ama-computer-college-paranaque"
     },
     {
-      "from": "uni-priv-b2-004",
-      "to": "sti-college-makati"
+      "from": "uni-priv-b2-014",
+      "to": "ama-computer-college-las-pinas"
     },
     {
-      "from": "uni-priv-b2-005",
-      "to": "sti-college-global-city"
+      "from": "uni-priv-b2-015",
+      "to": "ama-computer-college-caloocan"
     },
     {
-      "from": "uni-priv-b2-006",
-      "to": "sti-college-ortigas"
+      "from": "uni-priv-b3-001",
+      "to": "access-computer-college-cubao"
     },
     {
-      "from": "uni-priv-b2-007",
-      "to": "sti-college-paranaque"
+      "from": "uni-priv-b3-002",
+      "to": "access-computer-college-caloocan"
     },
     {
-      "from": "uni-priv-b2-008",
-      "to": "sti-college-las-pinas"
+      "from": "uni-tvet-b3-001",
+      "to": "tesda-provincial-training-center-region-iv-a-gen-trias-cavite"
     },
     {
-      "from": "uni-priv-b2-009",
-      "to": "sti-college-meycauayan"
+      "from": "uni-tvet-b3-002",
+      "to": "tesda-provincial-training-center-region-iii-guiguinto-bulacan"
     },
     {
-      "from": "uni-priv-b2-010",
-      "to": "sti-college-dasmarinas"
+      "from": "uni-tvet-b3-003",
+      "to": "tesda-provincial-training-center-region-iv-a-binangonan-rizal"
     },
     {
-      "from": "uni-priv-b2-016",
-      "to": "aclc-college-malolos"
+      "from": "uni-shs-b3-002",
+      "to": "paref-southridge-school"
     },
     {
-      "from": "uni-priv-b2-017",
-      "to": "aclc-college-dasmarinas"
+      "from": "uni-shs-b3-003",
+      "to": "paref-woodrose-school"
     },
     {
-      "from": "uni-priv-b2-018",
-      "to": "aclc-college-santa-rosa"
+      "from": "uni-shs-b3-004",
+      "to": "diliman-preparatory-school"
     },
     {
-      "from": "uni-priv-b2-019",
-      "to": "aclc-college-antipolo"
-    },
-    {
-      "from": "uni-priv-b2-020",
-      "to": "arellano-university-pasay"
-    },
-    {
-      "from": "uni-priv-b2-021",
-      "to": "arellano-university-malabon"
-    },
-    {
-      "from": "uni-priv-b2-022",
-      "to": "our-lady-of-fatima-university-quezon-city"
-    },
-    {
-      "from": "uni-priv-b2-023",
-      "to": "our-lady-of-fatima-university-pampanga"
-    },
-    {
-      "from": "uni-priv-b2-024",
-      "to": "lyceum-of-the-philippines-university-cavite"
-    },
-    {
-      "from": "uni-priv-b2-025",
-      "to": "lyceum-of-the-philippines-university-pampanga"
-    },
-    {
-      "from": "uni-priv-b2-026",
-      "to": "national-university-laguna"
-    },
-    {
-      "from": "uni-priv-b2-027",
-      "to": "technological-institute-of-the-philippines-arca-south"
-    },
-    {
-      "from": "uni-priv-b2-028",
-      "to": "manila-central-university"
-    },
-    {
-      "from": "uni-priv-b2-029",
-      "to": "datamex-institute-of-computer-technology-caloocan"
-    },
-    {
-      "from": "uni-priv-b2-030",
-      "to": "global-city-innovative-college"
-    },
-    {
-      "from": "uni-priv-b3-003",
-      "to": "asian-institute-of-computer-studies-aics-quezon-city"
-    },
-    {
-      "from": "uni-priv-b3-004",
-      "to": "asian-institute-of-computer-studies-aics-antipolo"
-    },
-    {
-      "from": "uni-priv-b3-005",
-      "to": "don-bosco-technical-institute-mandaluyong"
-    },
-    {
-      "from": "uni-priv-b3-006",
-      "to": "don-bosco-college-canlubang"
-    },
-    {
-      "from": "uni-priv-b3-007",
-      "to": "la-verdad-christian-college-apalit"
-    },
-    {
-      "from": "uni-priv-b3-008",
-      "to": "world-citi-colleges-antipolo"
-    },
-    {
-      "from": "uni-priv-b3-009",
-      "to": "centro-escolar-university-makati"
-    },
-    {
-      "from": "uni-priv-b3-010",
-      "to": "holy-cross-college-pampanga"
-    },
-    {
-      "from": "uni-priv-b3-011",
-      "to": "montessori-professional-college-quezon-city"
-    },
-    {
-      "from": "uni-priv-b3-012",
-      "to": "northlink-technological-college"
-    },
-    {
-      "from": "uni-priv-b3-013",
-      "to": "chiang-kai-shek-college"
-    },
-    {
-      "from": "uni-priv-b3-015",
-      "to": "colegio-de-san-pascual-baylon"
-    },
-    {
-      "from": "uni-priv-b3-017",
-      "to": "st-dominic-college-of-arts-and-sciences"
-    },
-    {
-      "from": "uni-priv-b3-019",
-      "to": "diliman-college"
-    },
-    {
-      "from": "uni-priv-b3-020",
-      "to": "kingfisher-school-of-business-and-finance"
+      "from": "uni-priv-b3-018",
+      "to": "san-lorenzo-ruiz-center-of-studies-and-trades"
     }
   ],
-  "scholarships_added": [
+  "scholarships_added": [],
+  "scholarships_skipped_id_dup": [
+    "sch-gov-092",
+    "sch-gov-093",
     "sch-gov-094",
+    "sch-gov-095",
+    "sch-gov-096",
+    "sch-gov-097",
     "sch-gov-098",
     "sch-gov-099",
     "sch-gov-100",
@@ -302,11 +323,15 @@
     "sch-gov-103",
     "sch-gov-104",
     "sch-gov-105",
+    "sch-lgu-092",
     "sch-lgu-093",
     "sch-lgu-094",
     "sch-lgu-095",
+    "sch-lgu-096",
     "sch-lgu-097",
+    "sch-lgu-098",
     "sch-lgu-099",
+    "sch-lgu-100",
     "sch-lgu-101",
     "sch-lgu-102",
     "sch-lgu-103",
@@ -321,10 +346,13 @@
     "sch-lgu-112",
     "sch-lgu-113",
     "sch-lgu-114",
+    "sch-priv-092",
     "sch-priv-093",
+    "sch-priv-094",
     "sch-priv-095",
     "sch-priv-096",
     "sch-priv-097",
+    "sch-priv-098",
     "sch-priv-099",
     "sch-priv-100",
     "sch-priv-101",
@@ -335,6 +363,9 @@
     "sch-priv-106",
     "sch-priv-107",
     "sch-priv-108",
+    "sch-uni-092",
+    "sch-uni-093",
+    "sch-uni-094",
     "sch-uni-095",
     "sch-uni-096",
     "sch-uni-097",
@@ -344,6 +375,7 @@
     "sch-uni-101",
     "sch-uni-102",
     "sch-uni-103",
+    "sch-uni-104",
     "sch-uni-106",
     "sch-intl-001",
     "sch-intl-002",
@@ -390,7 +422,6 @@
     "sch-uni-lpu-grades",
     "sch-uni-pup-grades",
     "sch-priv-ea-trishield",
-    "sch-lgu-rodriguez",
     "sch-lgu-binangonan",
     "sch-lgu-angono",
     "sch-lgu-marilao",
@@ -471,25 +502,13 @@
     "sch-gov-dost-carse",
     "sch-gov-dtic"
   ],
-  "scholarships_skipped_id_dup": [
-    "sch-gov-092",
-    "sch-gov-093",
-    "sch-gov-095",
-    "sch-gov-096",
-    "sch-gov-097",
-    "sch-lgu-092",
-    "sch-lgu-096",
-    "sch-lgu-098",
-    "sch-lgu-100",
-    "sch-priv-092",
-    "sch-priv-094",
-    "sch-priv-098",
-    "sch-uni-092",
-    "sch-uni-093",
-    "sch-uni-094",
-    "sch-uni-104"
+  "scholarships_skipped_name_dup": [
+    {
+      "staging": "sch-lgu-rod riguez",
+      "runtime": "sch-lgu-rodriguez",
+      "name": "Rodriguez (Montalban) Municipal Scholarship"
+    }
   ],
-  "scholarships_skipped_name_dup": [],
   "scholarships_skipped_status": [
     {
       "id": "sch-lgu-115",
@@ -547,119 +566,23 @@
     "sch-lgu-qcydo-pwd",
     "sch-uni-feu-grades"
   ],
-  "scholarships_broad_riasec_fallback": [
-    "sch-gov-098",
-    "sch-gov-105",
-    "sch-lgu-093",
-    "sch-lgu-094",
-    "sch-lgu-095",
-    "sch-lgu-097",
-    "sch-lgu-099",
-    "sch-lgu-101",
-    "sch-lgu-102",
-    "sch-lgu-103",
-    "sch-lgu-104",
-    "sch-lgu-105",
-    "sch-lgu-106",
-    "sch-lgu-107",
-    "sch-lgu-108",
-    "sch-lgu-109",
-    "sch-lgu-110",
-    "sch-lgu-111",
-    "sch-lgu-112",
-    "sch-lgu-113",
-    "sch-lgu-114",
-    "sch-priv-093",
-    "sch-priv-099",
-    "sch-priv-100",
-    "sch-priv-101",
-    "sch-uni-095",
-    "sch-priv-110",
-    "sch-gov-106",
-    "sch-gov-109",
-    "sch-priv-115",
-    "sch-uni-sti-grades",
-    "sch-uni-arellano-grades",
-    "sch-uni-nu-grades",
-    "sch-uni-lpu-grades",
-    "sch-lgu-rod riguez",
-    "sch-lgu-binangonan",
-    "sch-lgu-marilao",
-    "sch-lgu-stamaria",
-    "sch-lgu-guiguinto",
-    "sch-lgu-carmona",
-    "sch-lgu-mexico",
-    "sch-lgu-sansimon",
-    "sch-lgu-pulilan",
-    "sch-lgu-plaridel",
-    "sch-lgu-hagonoy",
-    "sch-lgu-bocaue",
-    "sch-lgu-balagtas",
-    "sch-lgu-pandi",
-    "sch-lgu-angat",
-    "sch-lgu-norzagaray",
-    "sch-lgu-sanrafael",
-    "sch-lgu-sanildefonso",
-    "sch-lgu-bustos",
-    "sch-lgu-tanza",
-    "sch-lgu-kawit",
-    "sch-lgu-rosario",
-    "sch-lgu-noveleta",
-    "sch-lgu-amadeo",
-    "sch-lgu-indang",
-    "sch-lgu-santamaria-lag",
-    "sch-lgu-victoria-lag",
-    "sch-lgu-pila",
-    "sch-lgu-nagcarlan",
-    "sch-lgu-pangil",
-    "sch-lgu-mabitac",
-    "sch-lgu-sanmateo-riz",
-    "sch-lgu-baras",
-    "sch-lgu-tanay",
-    "sch-lgu-jalajala",
-    "sch-lgu-pililla",
-    "sch-lgu-floridablanca",
-    "sch-lgu-lubao",
-    "sch-lgu-guagua",
-    "sch-lgu-porac",
-    "sch-lgu-apalit",
-    "sch-lgu-magalang",
-    "sch-lgu-arayat",
-    "sch-lgu-calumpit",
-    "sch-lgu-paombong",
-    "sch-lgu-gma",
-    "sch-lgu-ternate",
-    "sch-lgu-maragondon",
-    "sch-lgu-alfonso",
-    "sch-lgu-mendez",
-    "sch-lgu-calauan",
-    "sch-lgu-bay",
-    "sch-lgu-kalayaan",
-    "sch-lgu-luisiana",
-    "sch-lgu-rixal-morong",
-    "sch-lgu-cardona",
-    "sch-priv-employee-meralco",
-    "sch-priv-employee-pldt",
-    "sch-priv-employee-manilawater"
-  ],
-  "scholarships_link_fixes": [
-    "sch-gov-092",
-    "sch-gov-093"
-  ],
+  "scholarships_broad_riasec_fallback": [],
+  "scholarships_link_fixes": [],
   "validation_errors": [],
   "validation_warnings": [],
   "notes": [
     "Careers/programs claimed in manifest.json are not present in data2 files — not synced.",
     "Misplaced scholarships recovered from universities*.json via scholarships-recovered.json.",
-    "Policy: STI campuses ADD; AMA/Access umbrella SKIP campuses; TVET/SHS SKIP this batch.",
+    "Policy: campus-level rows ADD (STI, AMA, Access); TVET/SHS staging rows ADD with mapped type.",
+    "Policy: san-beda-alabang removed — duplicate of richer san-beda-college-alabang.",
     "Policy: QCYDO soft-dups SKIP (prod has QCSP suite); non-active scholarships SKIP."
   ],
   "counts": {
-    "universities_before": 165,
-    "universities_after": 205,
-    "universities_added": 40,
-    "scholarships_before": 126,
+    "universities_before": 209,
+    "universities_after": 222,
+    "universities_added": 14,
+    "scholarships_before": 303,
     "scholarships_after": 303,
-    "scholarships_added": 177
+    "scholarships_added": 0
   }
 }

@@ -1,12 +1,11 @@
 {
   "metadata": {
     "version": "2.1.0",
-    "lastUpdated": "2026-07-05",
+    "lastUpdated": "2026-07-06",
     "count": 303,
     "disclaimer": "Verify eligibility, award amount, and application windows on each official provider site before applying. KursoKo does not process applications.",
     "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages.",
-    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
-    "careerTagsNormalized": "2026-07-05"
+    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2"
   },
   "scholarships": [
     {
@@ -45,11 +44,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -196,10 +191,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -243,11 +234,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -330,11 +317,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -376,11 +359,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -426,12 +405,8 @@
         "college"
       ],
       "riasecTags": [
-        "A",
-        "C",
-        "E",
         "I",
-        "R",
-        "S"
+        "C"
       ],
       "careerTags": [
         "graphic-designer",
@@ -515,12 +490,8 @@
         "college"
       ],
       "riasecTags": [
-        "A",
-        "C",
-        "E",
         "I",
-        "R",
-        "S"
+        "C"
       ],
       "careerTags": [
         "graphic-designer",
@@ -561,11 +532,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -607,11 +574,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -653,11 +616,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -745,11 +704,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -944,10 +899,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -990,11 +941,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1036,11 +983,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1082,11 +1025,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1128,11 +1067,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1174,11 +1109,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1230,10 +1161,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -1375,11 +1302,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1421,11 +1344,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1508,11 +1427,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1607,11 +1522,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1737,11 +1648,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1783,11 +1690,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1829,11 +1732,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1878,12 +1777,8 @@
         "college"
       ],
       "riasecTags": [
-        "A",
-        "C",
-        "E",
         "I",
-        "R",
-        "S"
+        "C"
       ],
       "careerTags": [
         "graphic-designer",
@@ -1924,11 +1819,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -1975,11 +1866,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -2021,11 +1908,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -2067,11 +1950,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -2165,11 +2044,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -2217,11 +2092,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -2310,7 +2181,7 @@
       ],
       "careerTags": [
         "flight-attendant",
-        "seafarer-deck-officer"
+        "aircraft-maintenance-technician"
       ],
       "institutionTags": [
         "aviation-academies"
@@ -2401,11 +2272,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -2560,11 +2427,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -2663,11 +2526,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -2902,11 +2761,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -3054,11 +2909,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -3102,10 +2953,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -3413,12 +3260,8 @@
         "college"
       ],
       "riasecTags": [
-        "A",
-        "C",
-        "E",
         "I",
-        "R",
-        "S"
+        "C"
       ],
       "careerTags": [
         "graphic-designer",
@@ -3471,11 +3314,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -3524,11 +3363,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -3624,11 +3459,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -4050,11 +3881,7 @@
         "tvet"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -4424,12 +4251,8 @@
         "college"
       ],
       "riasecTags": [
-        "A",
-        "C",
-        "E",
         "I",
-        "R",
-        "S"
+        "C"
       ],
       "careerTags": [
         "graphic-designer",
@@ -4643,11 +4466,7 @@
         "shs"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -4948,11 +4767,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5006,11 +4821,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5065,10 +4876,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5199,11 +5006,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5300,11 +5103,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5453,11 +5252,7 @@
         "shs"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5501,11 +5296,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5547,11 +5338,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5593,11 +5380,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5731,11 +5514,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5779,11 +5558,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5825,11 +5600,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5871,11 +5642,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -5971,10 +5738,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -6017,11 +5780,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6063,11 +5822,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6158,11 +5913,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6216,11 +5967,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6273,11 +6020,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6317,11 +6060,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6363,11 +6102,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6416,8 +6151,8 @@
       "careerTags": [
         "marketing-manager",
         "hotel-manager",
-        "seafarer-deck-officer",
-        "criminology-graduate"
+        "entrepreneur",
+        "business-development-manager"
       ],
       "institutionTags": [
         "lpu"
@@ -6494,11 +6229,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6540,11 +6271,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6586,11 +6313,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6632,11 +6355,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6678,11 +6397,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6732,11 +6447,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6783,11 +6494,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6829,11 +6536,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6881,11 +6584,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6932,11 +6631,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -6978,10 +6673,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -7152,11 +6843,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -7204,11 +6891,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -7250,11 +6933,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -7499,11 +7178,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -7545,10 +7220,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -7604,10 +7275,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -7650,11 +7317,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -7737,11 +7400,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -7872,11 +7531,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8007,11 +7662,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8101,11 +7752,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8145,11 +7792,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8191,11 +7834,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8242,11 +7881,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8346,11 +7981,7 @@
         "shs"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8479,11 +8110,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8525,11 +8152,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8618,11 +8241,7 @@
         "shs"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8719,11 +8338,7 @@
         "shs"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8862,11 +8477,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -8922,11 +8533,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9059,11 +8666,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9146,11 +8749,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9192,11 +8791,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9238,11 +8833,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9290,11 +8881,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9383,11 +8970,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9436,11 +9019,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9487,11 +9066,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9547,11 +9122,7 @@
         "tvet"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9733,7 +9304,6 @@
         "R"
       ],
       "careerTags": [
-        "seafarer-deck-officer",
         "flight-attendant",
         "aircraft-maintenance-technician"
       ],
@@ -9775,7 +9345,7 @@
         "R"
       ],
       "careerTags": [
-        "seafarer-deck-officer"
+        "criminology-graduate"
       ],
       "institutionTags": [
         "military-training-institution"
@@ -9851,10 +9421,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -9897,11 +9463,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9943,11 +9505,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -9989,10 +9547,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -10035,11 +9589,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10081,10 +9631,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -10195,10 +9741,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10281,11 +9823,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10327,11 +9865,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10476,11 +10010,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10571,11 +10101,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10623,11 +10149,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10670,10 +10192,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10772,12 +10290,8 @@
         "graduate"
       ],
       "riasecTags": [
-        "A",
-        "C",
-        "E",
         "I",
-        "R",
-        "S"
+        "C"
       ],
       "careerTags": [
         "graphic-designer",
@@ -10828,11 +10342,7 @@
         "shs"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10882,11 +10392,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -10986,10 +10492,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11039,11 +10541,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11094,11 +10592,7 @@
         "graduate"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11148,11 +10642,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11250,11 +10740,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11296,11 +10782,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11342,11 +10824,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11388,10 +10866,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -11475,11 +10949,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11521,11 +10991,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11567,11 +11033,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11618,11 +11080,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11662,11 +11120,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11751,11 +11205,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11797,11 +11247,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11843,11 +11289,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11889,11 +11331,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11935,11 +11373,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -11981,11 +11415,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12027,11 +11457,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12125,11 +11551,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12188,11 +11610,7 @@
         "shs"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12507,10 +11925,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12566,11 +11980,7 @@
         "tvet"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12656,11 +12066,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12747,11 +12153,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12795,11 +12197,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12848,11 +12246,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12936,11 +12330,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -12982,11 +12372,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13028,11 +12414,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13074,11 +12456,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13134,11 +12512,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13234,10 +12608,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13290,10 +12660,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13473,10 +12839,6 @@
       ],
       "riasecTags": [
         "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13518,11 +12880,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13579,10 +12937,6 @@
         "shs"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -13637,11 +12991,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13726,11 +13076,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13836,11 +13182,7 @@
         "graduate"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13888,11 +13230,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -13991,11 +13329,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -14043,12 +13377,8 @@
         "college"
       ],
       "riasecTags": [
-        "A",
-        "C",
-        "E",
         "I",
-        "R",
-        "S"
+        "C"
       ],
       "careerTags": [
         "graphic-designer",
@@ -14092,12 +13422,8 @@
         "college"
       ],
       "riasecTags": [
-        "A",
-        "C",
-        "E",
         "I",
-        "R",
-        "S"
+        "C"
       ],
       "careerTags": [
         "graphic-designer",
@@ -14365,11 +13691,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -14411,11 +13733,7 @@
         "college"
       ],
       "riasecTags": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "careerTags": [
@@ -14457,10 +13775,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -14503,10 +13817,6 @@
         "college"
       ],
       "riasecTags": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],

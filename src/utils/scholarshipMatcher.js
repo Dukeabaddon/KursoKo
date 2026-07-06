@@ -103,9 +103,11 @@ function scoreScholarship(scholarship, profile, career, schools, userLocation) {
   if (primary && tags.includes(primary)) riasecScore += 3
   if (secondary && tags.includes(secondary)) riasecScore += 2
   const tagBreadth = tags.length
-  const breadthFactor = tagBreadth >= 6 ? 0.5 : tagBreadth >= 5 ? 0.7 : 1
+  const breadthFactor =
+    tagBreadth >= 6 ? 0.25 : tagBreadth >= 5 ? 0.55 : tagBreadth >= 4 ? 0.75 : 1
   score += Math.round(riasecScore * breadthFactor)
   if (career?.id && careerTags.includes(career.id)) score += 6
+  else if (tagBreadth >= 6) score -= 2
   if (scholarshipLevels.some((level) => preferredLevels.includes(level))) score += 3
 
   schoolTagSet.forEach((tag) => {

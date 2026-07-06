@@ -11,10 +11,10 @@ const RIASEC = new Set(['R', 'I', 'A', 'S', 'E', 'C'])
 describe('data integrity (static “API” / JSON catalogs)', () => {
   it('loads expected catalog sizes after data2 + careers merge', () => {
     expect(careers.careers.length).toBe(57)
-    expect(universities.universities.length).toBe(209)
+    expect(universities.universities.length).toBe(226)
     expect(scholarships.scholarships.length).toBe(303)
     expect(careers.metadata.count).toBe(57)
-    expect(universities.metadata.count).toBe(209)
+    expect(universities.metadata.count).toBe(226)
     expect(scholarships.metadata.count).toBe(303)
   })
 

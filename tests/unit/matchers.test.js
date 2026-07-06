@@ -50,7 +50,7 @@ describe('matcher pipeline (no backend — client-side data)', () => {
   })
 
   it('metadata helpers expose catalog counts', () => {
-    expect(getUniversitiesMetadata().count).toBe(209)
+    expect(getUniversitiesMetadata().count).toBe(226)
     expect(getScholarshipsMetadata().count).toBe(303)
   })
 
@@ -157,7 +157,7 @@ describe('matcher pipeline (no backend — client-side data)', () => {
     }
   })
 
-  it('school list filters low-fit campuses instead of returning all 209', () => {
+  it('school list filters low-fit campuses instead of returning all 226', () => {
     const profile = archetypeProfile('I', 'C')
     const career = { id: 'software-engineer', title: 'Software Engineer' }
     const all = getUniversityMatchesForCareer(profile, career, null)

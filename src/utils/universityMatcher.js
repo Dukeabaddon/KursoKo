@@ -202,8 +202,12 @@ function scoreUniversity(university, profile, career) {
   if (secondary && tags.includes(secondary)) score += 3
   if (university.type === 'public') score += 1
   score += getPrestigeBonus(university)
+  let keywordHits = 0
   keywords.forEach((keyword) => {
-    if (haystackIncludesKeyword(haystack, keyword)) score += 2
+    if (haystackIncludesKeyword(haystack, keyword)) {
+      score += 2
+      keywordHits += 1
+    }
   })
   if (career?.id === 'software-engineer' && university.id === 'dlsu-manila') score += 2
   if (career?.id === 'software-engineer' && university.id === 'ateneo-manila') score += 1
@@ -214,6 +218,15 @@ function scoreUniversity(university, profile, career) {
   if (career?.id === 'nurse' && university.id === 'feu-manila') score += 3
   if (career?.id === 'data-analyst' && university.id === 'pup-manila') score += 2
   if (career?.id === 'lawyer' && (university.id === 'ateneo-manila' || university.id === 'plm')) score += 2
+  if (career?.id === 'criminology-graduate' && university.id === 'bestlink') score += 4
+  if (career?.id === 'criminology-graduate' && university.id === 'plm') score += 2
+  if (career?.id === 'criminology-graduate' && university.id === 'plmun') score += 3
+
+  const tagBreadth = tags.length
+  if (keywordHits === 0) {
+    if (tagBreadth >= 6) score -= 2
+    else if (tagBreadth >= 5) score -= 1
+  }
 
   return score
 }
