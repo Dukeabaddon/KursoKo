@@ -38,7 +38,7 @@ export const landingHeroEyebrow =
   'text-[0.8125rem] font-bold uppercase tracking-[0.08em] text-purple-100/95 md:text-[0.875rem]'
 
 export const landingHeroTitle =
-  'text-[clamp(1.875rem,2.8vw+1rem,3rem)] leading-[1.08] max-[767px]:text-[clamp(2.125rem,6vw+0.5rem,2.625rem)] max-[767px]:leading-[1.1] md:text-[clamp(2.25rem,2.2vw+1.25rem,3rem)] md:leading-[1.06] lg:text-[clamp(2.5rem,1.6vw+1.5rem,3.25rem)]'
+  'text-[clamp(2rem,3vw+1rem,3.25rem)] leading-[1.08] max-[767px]:text-[clamp(2.25rem,6.5vw+0.5rem,2.875rem)] max-[767px]:leading-[1.1] md:text-[clamp(2.5rem,2.5vw+1.25rem,3.375rem)] md:leading-[1.06] lg:text-[clamp(2.75rem,1.8vw+1.5rem,3.625rem)]'
 
 export const landingHeroBody =
   'text-[clamp(0.9375rem,0.45vw+0.75rem,1.125rem)] leading-[1.55] max-[767px]:text-[clamp(1.0625rem,2.8vw+0.6rem,1.1875rem)] max-[767px]:leading-[1.65] md:text-lg md:leading-[1.65] lg:text-[1.1875rem] lg:leading-[1.7]'

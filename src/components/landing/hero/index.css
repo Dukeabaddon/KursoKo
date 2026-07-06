@@ -97,22 +97,23 @@
 
 .landing-hero-copy {
   width: 100%;
-  max-width: 34rem;
+  max-width: 36rem;
 }
 
 @media (min-width: 768px) {
   .landing-hero-copy {
     justify-self: center;
-    width: min(100%, 32rem);
+    align-self: center;
+    width: min(100%, 34rem);
     margin-inline: auto;
-    padding-inline: clamp(0.75rem, 2.5vw, 2rem) clamp(0.5rem, 1.5vw, 1rem);
+    padding-inline: clamp(1rem, 2.5vw, 2rem) clamp(0.5rem, 1.5vw, 1rem);
   }
 }
 
 @media (min-width: 1024px) {
   .landing-hero-copy {
-    width: min(100%, 34rem);
-    padding-inline: clamp(1.25rem, 3vw, 2.75rem) clamp(0.75rem, 2vw, 1.25rem);
+    width: min(100%, 38rem);
+    padding-inline: clamp(1.25rem, 3.5vw, 3rem) clamp(0.75rem, 1.5vw, 1rem);
   }
 }
 

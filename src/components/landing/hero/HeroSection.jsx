@@ -54,7 +54,7 @@ export function HeroSection({ onStart }) {
           </div>
 
           <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-4 pt-5 md:grid md:grid-cols-2 md:items-stretch md:gap-6 md:px-10 md:py-10 lg:gap-8 lg:px-14 lg:py-12">
-            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 flex-col items-start justify-start gap-[1.125rem] text-left md:h-full md:justify-start md:gap-0 md:pt-4 lg:pt-6">
+            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 flex-col items-start justify-start gap-[1.125rem] text-left md:h-full md:justify-center md:gap-0">
               <motion.p
                 className={`mb-0 md:mb-3 ${landingHeroEyebrow}`}
                 {...eyebrowMotion}
@@ -64,14 +64,14 @@ export function HeroSection({ onStart }) {
 
               <motion.h1
                 id="hero-heading"
-                className={`mb-0 w-full max-w-full break-words text-pretty font-extrabold text-white md:mb-5 lg:mb-6 ${landingHeroTitle}`}
+                className={`mb-0 w-full max-w-full break-words text-pretty font-extrabold text-white md:mb-5 md:max-w-[34rem] lg:mb-6 lg:max-w-[38rem] ${landingHeroTitle}`}
                 {...titleMotion}
               >
                 There&apos;s more than one path for you.
               </motion.h1>
 
               <motion.p
-                className={`mb-0 max-w-lg font-normal text-purple-100/90 md:mb-9 md:max-w-xl lg:mb-10 ${landingHeroBody}`}
+                className={`mb-0 max-w-lg font-normal text-purple-100/90 md:mb-9 md:max-w-md lg:mb-10 lg:max-w-lg ${landingHeroBody}`}
                 {...bodyMotion}
               >
                 Answer simple questions. Get course ideas, schools that fit, and scholarships worth
@@ -81,7 +81,7 @@ export function HeroSection({ onStart }) {
               <motion.button
                 type="button"
                 onClick={onStart}
-                className={`landing-hero-cta mt-0.5 md:mt-0 ${landingHeroCta}`}
+                className={`landing-hero-cta mt-0.5 self-start md:mt-0 ${landingHeroCta}`}
                 aria-label="Start Assessment"
                 {...ctaMotion}
               >
