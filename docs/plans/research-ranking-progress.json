@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-06",
-  "phase": "research-ranking-v3-riasec-narrow-complete",
+  "phase": "research-ranking-v4-scholarship-accuracy",
   "approach": "Scored RIASEC narrowing from strengthTags + course backfill + NU Dasmariñas",
   "completed": [
     {
@@ -24,14 +24,13 @@
       "matcher": "prior commit 8fbc016"
     },
     {
-      "id": "scholarship-career-boilerplate",
-      "signals": ["173 scholarships de-boilerplated from 4-trade copy-paste", "name/RIASEC inference"],
-      "matcher": "scripts/audit-scholarship-career-boilerplate.py"
+      "id": "scholarship-career-narrow-46",
+      "signals": ["46 scholarships curated to 1-3 accurate careerTags", "four_plus count 0"],
+      "matcher": "scripts/audit-scholarship-career-narrow.py + scholarship-career-tag-gate.test.js"
     }
   ],
   "gaps": [
-    "46 scholarships still have 4+ careerTags (non-boilerplate sets)",
-    "240+ school goal: at 227"
+    "240+ school goal: at 227 (P0 deferred)"
   ],
   "nextBatch": [
     "manual official-site fetch for 22 blocked schools",

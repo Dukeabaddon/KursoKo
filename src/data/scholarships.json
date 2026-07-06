@@ -7,7 +7,8 @@
     "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages.",
     "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
     "careerTagsNormalized": "2026-07-06",
-    "careerTagsBoilerplatePass": "2026-07-06"
+    "careerTagsBoilerplatePass": "2026-07-06",
+    "careerTagsNarrowPass": "2026-07-06"
   },
   "scholarships": [
     {
@@ -99,10 +100,9 @@
         "I"
       ],
       "careerTags": [
-        "software-engineer",
+        "civil-engineer",
         "mechanical-engineer",
-        "accountant",
-        "entrepreneur"
+        "accountant"
       ],
       "institutionTags": [
         "partner-heis"
@@ -276,9 +276,8 @@
       ],
       "careerTags": [
         "software-engineer",
-        "research-scientist",
-        "medical-technologist",
-        "data-scientist"
+        "data-scientist",
+        "cybersecurity-analyst"
       ],
       "institutionTags": [
         "ama"
@@ -645,10 +644,9 @@
         "I"
       ],
       "careerTags": [
-        "mechanical-engineer",
+        "research-scientist",
         "software-engineer",
-        "marketing-manager",
-        "research-scientist"
+        "accountant"
       ],
       "institutionTags": [
         "singapore-universities"
@@ -1232,7 +1230,6 @@
       "careerTags": [
         "graphic-designer",
         "interior-designer",
-        "content-creator",
         "multimedia-artist"
       ],
       "institutionTags": [
@@ -1528,7 +1525,6 @@
       ],
       "careerTags": [
         "mechanical-engineer",
-        "accountant",
         "software-engineer",
         "teacher"
       ],
@@ -2078,7 +2074,6 @@
       "careerTags": [
         "research-scientist",
         "mechanical-engineer",
-        "software-engineer",
         "teacher"
       ],
       "institutionTags": [
@@ -2172,10 +2167,8 @@
         "S"
       ],
       "careerTags": [
-        "aircraft-maintenance-technician",
-        "hotel-manager",
-        "mechanical-engineer",
-        "entrepreneur"
+        "flight-attendant",
+        "aircraft-maintenance-technician"
       ],
       "institutionTags": [
         "cebu-pacific"
@@ -2599,10 +2592,9 @@
         "R"
       ],
       "careerTags": [
-        "mechanical-engineer",
-        "software-engineer",
-        "marketing-manager",
-        "teacher"
+        "teacher",
+        "research-scientist",
+        "software-engineer"
       ],
       "institutionTags": [
         "chinese-universities"
@@ -2649,10 +2641,8 @@
         "I"
       ],
       "careerTags": [
-        "content-creator",
         "game-developer",
         "multimedia-artist",
-        "software-engineer",
         "graphic-designer"
       ],
       "institutionTags": [
@@ -3144,10 +3134,9 @@
         "R"
       ],
       "careerTags": [
-        "software-engineer",
+        "agricultural-technician",
         "research-scientist",
-        "medical-technologist",
-        "data-scientist"
+        "food-technologist"
       ],
       "institutionTags": [
         "suc",
@@ -3610,9 +3599,7 @@
       "careerTags": [
         "teacher",
         "psychologist",
-        "research-scientist",
-        "marketing-manager",
-        "mechanical-engineer"
+        "research-scientist"
       ],
       "institutionTags": [
         "dlsu-d"
@@ -3706,8 +3693,7 @@
       "careerTags": [
         "nurse",
         "midwife",
-        "medical-technologist",
-        "physical-therapist"
+        "medical-technologist"
       ],
       "institutionTags": [
         "up-manila",
@@ -4000,8 +3986,7 @@
       "careerTags": [
         "research-scientist",
         "software-engineer",
-        "mechanical-engineer",
-        "civil-engineer"
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "suc",
@@ -4056,9 +4041,7 @@
       "careerTags": [
         "research-scientist",
         "software-engineer",
-        "mechanical-engineer",
-        "civil-engineer",
-        "data-scientist"
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "suc",
@@ -4119,12 +4102,9 @@
         "R"
       ],
       "careerTags": [
-        "mechanical-engineer",
-        "software-engineer",
-        "data-analyst",
         "research-scientist",
-        "architect",
-        "agricultural-technician"
+        "software-engineer",
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "up-diliman",
@@ -4334,8 +4314,7 @@
       "careerTags": [
         "nurse",
         "medical-technologist",
-        "criminology-graduate",
-        "teacher"
+        "criminology-graduate"
       ],
       "institutionTags": [
         "eac"
@@ -4426,8 +4405,7 @@
       "careerTags": [
         "civil-engineer",
         "mechanical-engineer",
-        "electrician",
-        "business-development-manager"
+        "electrician"
       ],
       "institutionTags": [
         "any-hei"
@@ -4512,9 +4490,8 @@
       ],
       "careerTags": [
         "research-scientist",
-        "social-worker",
-        "mechanical-engineer",
-        "graphic-designer"
+        "teacher",
+        "social-worker"
       ],
       "institutionTags": [
         "eu-universities"
@@ -4642,9 +4619,8 @@
       ],
       "careerTags": [
         "marketing-manager",
-        "mechanical-engineer",
-        "architect",
-        "accountant"
+        "accountant",
+        "architect"
       ],
       "institutionTags": [
         "any-hei"
@@ -4830,9 +4806,8 @@
       ],
       "careerTags": [
         "graphic-designer",
-        "mechanical-engineer",
-        "marketing-manager",
-        "chef"
+        "chef",
+        "marketing-manager"
       ],
       "institutionTags": [
         "french-universities"
@@ -4874,10 +4849,8 @@
       ],
       "careerTags": [
         "teacher",
-        "research-scientist",
-        "social-worker",
-        "graphic-designer",
-        "journalist"
+        "journalist",
+        "research-scientist"
       ],
       "institutionTags": [
         "us-universities"
@@ -5749,10 +5722,9 @@
         "R"
       ],
       "careerTags": [
-        "mechanical-engineer",
+        "research-scientist",
         "software-engineer",
-        "graphic-designer",
-        "research-scientist"
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "korean-universities"
@@ -6019,10 +5991,9 @@
         "S"
       ],
       "careerTags": [
-        "marketing-manager",
         "hotel-manager",
         "entrepreneur",
-        "business-development-manager"
+        "marketing-manager"
       ],
       "institutionTags": [
         "lpu"
@@ -6061,10 +6032,9 @@
         "R"
       ],
       "careerTags": [
-        "research-scientist",
         "food-technologist",
-        "mechanical-engineer",
-        "teacher"
+        "agricultural-technician",
+        "research-scientist"
       ],
       "institutionTags": [
         "lspu"
@@ -6916,9 +6886,8 @@
         "R"
       ],
       "careerTags": [
-        "mechanical-engineer",
         "software-engineer",
-        "architect",
+        "mechanical-engineer",
         "accountant"
       ],
       "institutionTags": [
@@ -6980,12 +6949,9 @@
         "S"
       ],
       "careerTags": [
-        "mechanical-engineer",
         "architect",
-        "accountant",
         "hotel-manager",
-        "software-engineer",
-        "entrepreneur"
+        "accountant"
       ],
       "institutionTags": [
         "megaworld-foundation"
@@ -7280,8 +7246,7 @@
       "careerTags": [
         "welder",
         "electrician",
-        "automotive-technician",
-        "software-engineer"
+        "automotive-technician"
       ],
       "institutionTags": [
         "mfi"
@@ -7848,9 +7813,8 @@
       ],
       "careerTags": [
         "food-technologist",
-        "mechanical-engineer",
         "nutritionist-dietitian",
-        "marketing-manager"
+        "mechanical-engineer"
       ],
       "institutionTags": [
         "any-hei"
@@ -7890,10 +7854,9 @@
         "S"
       ],
       "careerTags": [
-        "research-scientist",
-        "mechanical-engineer",
         "environmental-scientist",
-        "social-worker"
+        "research-scientist",
+        "agricultural-technician"
       ],
       "institutionTags": [
         "new-zealand-universities"
@@ -8236,10 +8199,8 @@
       ],
       "careerTags": [
         "nurse",
-        "medical-technologist",
         "pharmacist",
-        "physical-therapist",
-        "criminology-graduate"
+        "medical-technologist"
       ],
       "institutionTags": [
         "olfu"
@@ -8388,10 +8349,9 @@
         "I"
       ],
       "careerTags": [
-        "mechanical-engineer",
-        "supply-chain-manager",
         "marketing-manager",
-        "software-engineer"
+        "supply-chain-manager",
+        "entrepreneur"
       ],
       "institutionTags": [
         "any-hei"
@@ -8957,9 +8917,8 @@
       ],
       "careerTags": [
         "teacher",
-        "marketing-manager",
         "criminology-graduate",
-        "mechanical-engineer"
+        "marketing-manager"
       ],
       "institutionTags": [
         "pcu"
@@ -9727,9 +9686,7 @@
       "careerTags": [
         "software-engineer",
         "accountant",
-        "entrepreneur",
-        "civil-engineer",
-        "data-analyst"
+        "teacher"
       ],
       "institutionTags": [
         "pup-system",
@@ -9776,8 +9733,7 @@
       "careerTags": [
         "accountant",
         "bookkeeper",
-        "administrative-assistant",
-        "supply-chain-manager"
+        "entrepreneur"
       ],
       "institutionTags": [
         "pup"
@@ -9869,8 +9825,7 @@
       "careerTags": [
         "software-engineer",
         "accountant",
-        "entrepreneur",
-        "civil-engineer"
+        "teacher"
       ],
       "institutionTags": [
         "pup-system"
@@ -10040,10 +9995,8 @@
       ],
       "careerTags": [
         "teacher",
-        "content-creator",
         "nutritionist-dietitian",
-        "social-worker",
-        "marketing-manager"
+        "social-worker"
       ],
       "institutionTags": [
         "pwu"
@@ -10936,10 +10889,9 @@
         "R"
       ],
       "careerTags": [
-        "mechanical-engineer",
         "food-technologist",
-        "marketing-manager",
-        "research-scientist"
+        "mechanical-engineer",
+        "marketing-manager"
       ],
       "institutionTags": [
         "any-hei"
@@ -11486,8 +11438,6 @@
       ],
       "careerTags": [
         "accountant",
-        "software-engineer",
-        "mechanical-engineer",
         "teacher",
         "entrepreneur"
       ],
@@ -11776,9 +11726,8 @@
       ],
       "careerTags": [
         "teacher",
-        "content-creator",
-        "social-worker",
-        "psychologist"
+        "psychologist",
+        "social-worker"
       ],
       "institutionTags": [
         "ssc-manila"
@@ -12472,9 +12421,8 @@
       ],
       "careerTags": [
         "welder",
-        "civil-engineer",
-        "administrative-assistant",
-        "restaurant-manager"
+        "electrician",
+        "automotive-technician"
       ],
       "institutionTags": [
         "tesda-accredited",
@@ -12852,10 +12800,9 @@
         "S"
       ],
       "careerTags": [
+        "marketing-manager",
         "entrepreneur",
-        "mechanical-engineer",
-        "research-scientist",
-        "marketing-manager"
+        "supply-chain-manager"
       ],
       "institutionTags": [
         "unilever"
@@ -12996,7 +12943,6 @@
       ],
       "careerTags": [
         "research-scientist",
-        "mechanical-engineer",
         "software-engineer",
         "data-analyst"
       ],
@@ -13173,10 +13119,9 @@
         "R"
       ],
       "careerTags": [
-        "research-scientist",
         "agricultural-technician",
         "environmental-scientist",
-        "nurse"
+        "research-scientist"
       ],
       "institutionTags": [
         "uplb"
@@ -13258,9 +13203,8 @@
       ],
       "careerTags": [
         "teacher",
-        "software-engineer",
-        "marketing-manager",
-        "mechanical-engineer"
+        "research-scientist",
+        "software-engineer"
       ],
       "institutionTags": [
         "urs"
@@ -13355,7 +13299,6 @@
       "careerTags": [
         "nurse",
         "pharmacist",
-        "lawyer",
         "teacher"
       ],
       "institutionTags": [
@@ -13562,8 +13505,7 @@
       "careerTags": [
         "teacher",
         "social-worker",
-        "entrepreneur",
-        "administrative-assistant"
+        "entrepreneur"
       ],
       "institutionTags": [
         "any-hei"

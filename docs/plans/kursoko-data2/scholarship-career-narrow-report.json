@@ -1,0 +1,708 @@
+{
+  "date": "2026-07-06",
+  "fixed": 46,
+  "fourPlusAfter": 0,
+  "rows": [
+    {
+      "id": "sch-priv-092",
+      "name": "Aboitiz Foundation College Scholarship Program",
+      "before": [
+        "software-engineer",
+        "mechanical-engineer",
+        "accountant",
+        "entrepreneur"
+      ],
+      "after": [
+        "civil-engineer",
+        "mechanical-engineer",
+        "accountant"
+      ]
+    },
+    {
+      "id": "sch-uni-ama-grades",
+      "name": "AMA Computer College Academic Scholarship (Grade-Based)",
+      "before": [
+        "software-engineer",
+        "research-scientist",
+        "medical-technologist",
+        "data-scientist"
+      ],
+      "after": [
+        "software-engineer",
+        "data-scientist",
+        "cybersecurity-analyst"
+      ]
+    },
+    {
+      "id": "sch-intl-008",
+      "name": "ASEAN Scholarship for Filipinos (Singapore)",
+      "before": [
+        "mechanical-engineer",
+        "software-engineer",
+        "marketing-manager",
+        "research-scientist"
+      ],
+      "after": [
+        "research-scientist",
+        "software-engineer",
+        "accountant"
+      ]
+    },
+    {
+      "id": "benilde-sda-scholarship",
+      "name": "Benilde School of Design and Arts Scholarship",
+      "before": [
+        "graphic-designer",
+        "interior-designer",
+        "content-creator",
+        "multimedia-artist"
+      ],
+      "after": [
+        "graphic-designer",
+        "interior-designer",
+        "multimedia-artist"
+      ]
+    },
+    {
+      "id": "sch-uni-100",
+      "name": "BulSU Academic Scholarship",
+      "before": [
+        "mechanical-engineer",
+        "accountant",
+        "software-engineer",
+        "teacher"
+      ],
+      "after": [
+        "mechanical-engineer",
+        "software-engineer",
+        "teacher"
+      ]
+    },
+    {
+      "id": "sch-uni-099",
+      "name": "CavSU Academic Scholarship",
+      "before": [
+        "research-scientist",
+        "mechanical-engineer",
+        "software-engineer",
+        "teacher"
+      ],
+      "after": [
+        "research-scientist",
+        "mechanical-engineer",
+        "teacher"
+      ]
+    },
+    {
+      "id": "cebu-pacific-scholarship",
+      "name": "Cebu Pacific Scholarship Program",
+      "before": [
+        "aircraft-maintenance-technician",
+        "hotel-manager",
+        "mechanical-engineer",
+        "entrepreneur"
+      ],
+      "after": [
+        "flight-attendant",
+        "aircraft-maintenance-technician"
+      ]
+    },
+    {
+      "id": "sch-intl-006",
+      "name": "Chinese Government Scholarship (CSC) for Filipinos",
+      "before": [
+        "mechanical-engineer",
+        "software-engineer",
+        "marketing-manager",
+        "teacher"
+      ],
+      "after": [
+        "teacher",
+        "research-scientist",
+        "software-engineer"
+      ]
+    },
+    {
+      "id": "ciit-scholarship",
+      "name": "CIIT College Scholarship",
+      "before": [
+        "content-creator",
+        "game-developer",
+        "multimedia-artist",
+        "software-engineer",
+        "graphic-designer"
+      ],
+      "after": [
+        "game-developer",
+        "multimedia-artist",
+        "graphic-designer"
+      ]
+    },
+    {
+      "id": "sch-gov-095",
+      "name": "DAR Agrarian Reform Community Scholarship Program",
+      "before": [
+        "software-engineer",
+        "research-scientist",
+        "medical-technologist",
+        "data-scientist"
+      ],
+      "after": [
+        "agricultural-technician",
+        "research-scientist",
+        "food-technologist"
+      ]
+    },
+    {
+      "id": "sch-uni-115",
+      "name": "DLSU-D Scholarship and Financial Assistance Program",
+      "before": [
+        "teacher",
+        "psychologist",
+        "research-scientist",
+        "marketing-manager",
+        "mechanical-engineer"
+      ],
+      "after": [
+        "teacher",
+        "psychologist",
+        "research-scientist"
+      ]
+    },
+    {
+      "id": "doh-scholarship",
+      "name": "DOH Health Scholarship Program",
+      "before": [
+        "nurse",
+        "midwife",
+        "medical-technologist",
+        "physical-therapist"
+      ],
+      "after": [
+        "nurse",
+        "midwife",
+        "medical-technologist"
+      ]
+    },
+    {
+      "id": "sch-gov-093",
+      "name": "DOST-SEI Junior Level Science Scholarship (JLSS)",
+      "before": [
+        "research-scientist",
+        "software-engineer",
+        "mechanical-engineer",
+        "civil-engineer"
+      ],
+      "after": [
+        "research-scientist",
+        "software-engineer",
+        "mechanical-engineer"
+      ]
+    },
+    {
+      "id": "sch-gov-092",
+      "name": "DOST-SEI RA 7687 Science and Technology Scholarship",
+      "before": [
+        "research-scientist",
+        "software-engineer",
+        "mechanical-engineer",
+        "civil-engineer",
+        "data-scientist"
+      ],
+      "after": [
+        "research-scientist",
+        "software-engineer",
+        "mechanical-engineer"
+      ]
+    },
+    {
+      "id": "dost-sei-undergraduate",
+      "name": "DOST-SEI Science and Technology Undergraduate Scholarship",
+      "before": [
+        "mechanical-engineer",
+        "software-engineer",
+        "data-analyst",
+        "research-scientist",
+        "architect",
+        "agricultural-technician"
+      ],
+      "after": [
+        "research-scientist",
+        "software-engineer",
+        "mechanical-engineer"
+      ]
+    },
+    {
+      "id": "sch-uni-108",
+      "name": "EAC Academic Scholarship",
+      "before": [
+        "nurse",
+        "medical-technologist",
+        "criminology-graduate",
+        "teacher"
+      ],
+      "after": [
+        "nurse",
+        "medical-technologist",
+        "criminology-graduate"
+      ]
+    },
+    {
+      "id": "sch-corp-eei",
+      "name": "EEI Corporation Engineering Scholarship",
+      "before": [
+        "civil-engineer",
+        "mechanical-engineer",
+        "electrician",
+        "business-development-manager"
+      ],
+      "after": [
+        "civil-engineer",
+        "mechanical-engineer",
+        "electrician"
+      ]
+    },
+    {
+      "id": "sch-intl-009",
+      "name": "Erasmus+ Mundus Joint Master Degree Scholarship",
+      "before": [
+        "research-scientist",
+        "social-worker",
+        "mechanical-engineer",
+        "graphic-designer"
+      ],
+      "after": [
+        "research-scientist",
+        "teacher",
+        "social-worker"
+      ]
+    },
+    {
+      "id": "sch-priv-108",
+      "name": "Filinvest Scholarship Program",
+      "before": [
+        "marketing-manager",
+        "mechanical-engineer",
+        "architect",
+        "accountant"
+      ],
+      "after": [
+        "marketing-manager",
+        "accountant",
+        "architect"
+      ]
+    },
+    {
+      "id": "sch-intl-012",
+      "name": "French Government Scholarship through Campus France Philippines",
+      "before": [
+        "graphic-designer",
+        "mechanical-engineer",
+        "marketing-manager",
+        "chef"
+      ],
+      "after": [
+        "graphic-designer",
+        "chef",
+        "marketing-manager"
+      ]
+    },
+    {
+      "id": "sch-intl-010",
+      "name": "Fulbright Philippines Scholarship",
+      "before": [
+        "teacher",
+        "research-scientist",
+        "social-worker",
+        "graphic-designer",
+        "journalist"
+      ],
+      "after": [
+        "teacher",
+        "journalist",
+        "research-scientist"
+      ]
+    },
+    {
+      "id": "sch-intl-005",
+      "name": "Korean Government Scholarship Program (KGSP) for Filipinos",
+      "before": [
+        "mechanical-engineer",
+        "software-engineer",
+        "graphic-designer",
+        "research-scientist"
+      ],
+      "after": [
+        "research-scientist",
+        "software-engineer",
+        "mechanical-engineer"
+      ]
+    },
+    {
+      "id": "sch-uni-113",
+      "name": "LPU Academic Scholarship (All Campuses)",
+      "before": [
+        "marketing-manager",
+        "hotel-manager",
+        "entrepreneur",
+        "business-development-manager"
+      ],
+      "after": [
+        "hotel-manager",
+        "entrepreneur",
+        "marketing-manager"
+      ]
+    },
+    {
+      "id": "sch-uni-101",
+      "name": "LSPU Academic Scholarship",
+      "before": [
+        "research-scientist",
+        "food-technologist",
+        "mechanical-engineer",
+        "teacher"
+      ],
+      "after": [
+        "food-technologist",
+        "agricultural-technician",
+        "research-scientist"
+      ]
+    },
+    {
+      "id": "sch-uni-114",
+      "name": "MCL Academic Scholarship",
+      "before": [
+        "mechanical-engineer",
+        "software-engineer",
+        "architect",
+        "accountant"
+      ],
+      "after": [
+        "software-engineer",
+        "mechanical-engineer",
+        "accountant"
+      ]
+    },
+    {
+      "id": "megaworld-foundation",
+      "name": "Megaworld Foundation Scholarship",
+      "before": [
+        "mechanical-engineer",
+        "architect",
+        "accountant",
+        "hotel-manager",
+        "software-engineer",
+        "entrepreneur"
+      ],
+      "after": [
+        "architect",
+        "hotel-manager",
+        "accountant"
+      ]
+    },
+    {
+      "id": "sch-tvet-003",
+      "name": "MFI Technological Institute Scholarship",
+      "before": [
+        "welder",
+        "electrician",
+        "automotive-technician",
+        "software-engineer"
+      ],
+      "after": [
+        "welder",
+        "electrician",
+        "automotive-technician"
+      ]
+    },
+    {
+      "id": "sch-priv-105",
+      "name": "Nestl\u00e9 Philippines Scholarship Program",
+      "before": [
+        "food-technologist",
+        "mechanical-engineer",
+        "nutritionist-dietitian",
+        "marketing-manager"
+      ],
+      "after": [
+        "food-technologist",
+        "nutritionist-dietitian",
+        "mechanical-engineer"
+      ]
+    },
+    {
+      "id": "sch-intl-011",
+      "name": "New Zealand Scholarships for Philippines",
+      "before": [
+        "research-scientist",
+        "mechanical-engineer",
+        "environmental-scientist",
+        "social-worker"
+      ],
+      "after": [
+        "environmental-scientist",
+        "research-scientist",
+        "agricultural-technician"
+      ]
+    },
+    {
+      "id": "sch-uni-109",
+      "name": "OLFU Academic Scholarship",
+      "before": [
+        "nurse",
+        "medical-technologist",
+        "pharmacist",
+        "physical-therapist",
+        "criminology-graduate"
+      ],
+      "after": [
+        "nurse",
+        "pharmacist",
+        "medical-technologist"
+      ]
+    },
+    {
+      "id": "sch-priv-103",
+      "name": "P&G Philippines Scholarship / Internship Program",
+      "before": [
+        "mechanical-engineer",
+        "supply-chain-manager",
+        "marketing-manager",
+        "software-engineer"
+      ],
+      "after": [
+        "marketing-manager",
+        "supply-chain-manager",
+        "entrepreneur"
+      ]
+    },
+    {
+      "id": "sch-uni-111",
+      "name": "PCU Scholarship and Financial Aid",
+      "before": [
+        "teacher",
+        "marketing-manager",
+        "criminology-graduate",
+        "mechanical-engineer"
+      ],
+      "after": [
+        "teacher",
+        "criminology-graduate",
+        "marketing-manager"
+      ]
+    },
+    {
+      "id": "pup-presidential-scholarship",
+      "name": "PUP Entrance / Presidential Scholarship",
+      "before": [
+        "software-engineer",
+        "accountant",
+        "entrepreneur",
+        "civil-engineer",
+        "data-analyst"
+      ],
+      "after": [
+        "software-engineer",
+        "accountant",
+        "teacher"
+      ]
+    },
+    {
+      "id": "sch-uni-pup-grades",
+      "name": "PUP Entrance Scholarship (Top PUPCET Passers)",
+      "before": [
+        "accountant",
+        "bookkeeper",
+        "administrative-assistant",
+        "supply-chain-manager"
+      ],
+      "after": [
+        "accountant",
+        "bookkeeper",
+        "entrepreneur"
+      ]
+    },
+    {
+      "id": "sch-uni-094",
+      "name": "PUP Presidential Scholarship",
+      "before": [
+        "software-engineer",
+        "accountant",
+        "entrepreneur",
+        "civil-engineer"
+      ],
+      "after": [
+        "software-engineer",
+        "accountant",
+        "teacher"
+      ]
+    },
+    {
+      "id": "sch-uni-110",
+      "name": "PWU Scholarship Program",
+      "before": [
+        "teacher",
+        "content-creator",
+        "nutritionist-dietitian",
+        "social-worker",
+        "marketing-manager"
+      ],
+      "after": [
+        "teacher",
+        "nutritionist-dietitian",
+        "social-worker"
+      ]
+    },
+    {
+      "id": "sch-priv-102",
+      "name": "San Miguel Corporation Scholarship Program",
+      "before": [
+        "mechanical-engineer",
+        "food-technologist",
+        "marketing-manager",
+        "research-scientist"
+      ],
+      "after": [
+        "food-technologist",
+        "mechanical-engineer",
+        "marketing-manager"
+      ]
+    },
+    {
+      "id": "sm-foundation-college",
+      "name": "SM College Scholarship Program",
+      "before": [
+        "accountant",
+        "software-engineer",
+        "mechanical-engineer",
+        "teacher",
+        "entrepreneur"
+      ],
+      "after": [
+        "accountant",
+        "teacher",
+        "entrepreneur"
+      ]
+    },
+    {
+      "id": "sch-uni-106",
+      "name": "St. Scholastica's College Scholarship Program",
+      "before": [
+        "teacher",
+        "content-creator",
+        "social-worker",
+        "psychologist"
+      ],
+      "after": [
+        "teacher",
+        "psychologist",
+        "social-worker"
+      ]
+    },
+    {
+      "id": "sch-tvet-005",
+      "name": "TESDA Training for Industry (TRAIN) Program",
+      "before": [
+        "welder",
+        "civil-engineer",
+        "administrative-assistant",
+        "restaurant-manager"
+      ],
+      "after": [
+        "welder",
+        "electrician",
+        "automotive-technician"
+      ]
+    },
+    {
+      "id": "unilever-scholarship",
+      "name": "Unilever Philippines Scholarship",
+      "before": [
+        "entrepreneur",
+        "mechanical-engineer",
+        "research-scientist",
+        "marketing-manager"
+      ],
+      "after": [
+        "marketing-manager",
+        "entrepreneur",
+        "supply-chain-manager"
+      ]
+    },
+    {
+      "id": "up-dost-scholarship",
+      "name": "UP DOST-SEI Scholarship",
+      "before": [
+        "research-scientist",
+        "mechanical-engineer",
+        "software-engineer",
+        "data-analyst"
+      ],
+      "after": [
+        "research-scientist",
+        "software-engineer",
+        "data-analyst"
+      ]
+    },
+    {
+      "id": "sch-uni-107",
+      "name": "UPLB Academic Scholarship (UP Oblation and UPLB-specific)",
+      "before": [
+        "research-scientist",
+        "agricultural-technician",
+        "environmental-scientist",
+        "nurse"
+      ],
+      "after": [
+        "agricultural-technician",
+        "environmental-scientist",
+        "research-scientist"
+      ]
+    },
+    {
+      "id": "sch-uni-103",
+      "name": "URS Academic Scholarship",
+      "before": [
+        "teacher",
+        "software-engineer",
+        "marketing-manager",
+        "mechanical-engineer"
+      ],
+      "after": [
+        "teacher",
+        "research-scientist",
+        "software-engineer"
+      ]
+    },
+    {
+      "id": "ust-santo-tomas-academic",
+      "name": "UST Santo Tomas Academic Scholarship",
+      "before": [
+        "nurse",
+        "pharmacist",
+        "lawyer",
+        "teacher"
+      ],
+      "after": [
+        "nurse",
+        "pharmacist",
+        "teacher"
+      ]
+    },
+    {
+      "id": "sch-priv-zonta-pamp",
+      "name": "Zonta Club Pampanga Women's Scholarship",
+      "before": [
+        "teacher",
+        "social-worker",
+        "entrepreneur",
+        "administrative-assistant"
+      ],
+      "after": [
+        "teacher",
+        "social-worker",
+        "entrepreneur"
+      ]
+    }
+  ]
+}
