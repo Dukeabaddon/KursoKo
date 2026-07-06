@@ -14,8 +14,9 @@ export const HERO_MOTION = {
   decorY: 16,
   decorDuration: 0.55,
   sequence: {
-    title: { delay: 0.05, y: 32, duration: 0.48 },
-    body: { delay: 0.18, y: 24, duration: 0.42 },
+    eyebrow: { delay: 0, y: 12, duration: 0.38 },
+    title: { delay: 0.08, y: 32, duration: 0.48 },
+    body: { delay: 0.2, y: 24, duration: 0.42 },
     bust: { delay: 1.05, y: 40, duration: 0.75 },
     cta: { delay: 0.45, y: 20, duration: 0.55, scale: 0.96 },
     glow: { delay: 0.95, y: 0, duration: 0.85 },

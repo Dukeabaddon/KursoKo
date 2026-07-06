@@ -132,8 +132,19 @@ function dedupeCampuses(ranked) {
   return [...bestByInstitution.values()].sort(compareUniversities)
 }
 
+function getProgramHaystack(university) {
+  return [
+    ...(university.popularCourses ?? []),
+    ...(university.programHighlights ?? []),
+    ...getLegacySchoolTags(university),
+    university.description ?? '',
+  ]
+    .join(' ')
+    .toLowerCase()
+}
+
 function countKeywordHits(university, career) {
-  const haystack = getUniversityTagBag(university)
+  const haystack = getProgramHaystack(university)
   const keywords = CAREER_KEYWORDS[career?.id] ?? []
   return keywords.filter((keyword) => haystackIncludesKeyword(haystack, keyword)).length
 }
@@ -186,25 +197,12 @@ function haystackIncludesKeyword(haystack, keyword) {
   return haystack.includes(normalized)
 }
 
-function getUniversityTagBag(university) {
-  return [
-    ...(university.riasecTags ?? []),
-    ...(university.strengthTags ?? []),
-    ...getLegacySchoolTags(university),
-    ...(university.popularCourses ?? []),
-    university.description ?? '',
-    university.name ?? '',
-  ]
-    .join(' ')
-    .toLowerCase()
-}
-
 function scoreUniversity(university, profile, career) {
   let score = 0
   const primary = profile.primaryDimension?.code
   const secondary = profile.secondaryDimension?.code
   const tags = university.riasecTags ?? []
-  const haystack = getUniversityTagBag(university)
+  const programHaystack = getProgramHaystack(university)
   const keywords = CAREER_KEYWORDS[career?.id] ?? []
 
   if (primary && tags.includes(primary)) score += 4
@@ -213,7 +211,7 @@ function scoreUniversity(university, profile, career) {
   score += getPrestigeBonus(university)
   let keywordHits = 0
   keywords.forEach((keyword) => {
-    if (haystackIncludesKeyword(haystack, keyword)) {
+    if (haystackIncludesKeyword(programHaystack, keyword)) {
       score += 2
       keywordHits += 1
     }

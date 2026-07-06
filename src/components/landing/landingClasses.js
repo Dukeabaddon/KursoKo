@@ -34,11 +34,14 @@ export const landingNavShell = (scrolled) =>
 export const landingNavLink =
   'rounded-xl px-3 py-2 text-sm font-medium text-landing-muted transition-colors duration-300 ease-landing hover:bg-landing-ink/5 hover:text-landing-ink'
 
+export const landingHeroEyebrow =
+  'text-[0.8125rem] font-bold uppercase tracking-[0.08em] text-purple-100/95 md:text-[0.875rem]'
+
 export const landingHeroTitle =
-  'text-[clamp(1.875rem,2.8vw+1rem,3rem)] leading-[1.08] max-[767px]:text-[clamp(2rem,5.5vw+0.75rem,2.5rem)] max-[767px]:leading-[1.12] md:text-[clamp(2.25rem,2.2vw+1.25rem,3rem)] md:leading-[1.06] lg:text-[clamp(2.5rem,1.6vw+1.5rem,3.25rem)]'
+  'text-[clamp(1.875rem,2.8vw+1rem,3rem)] leading-[1.08] max-[767px]:text-[clamp(2.125rem,6vw+0.5rem,2.625rem)] max-[767px]:leading-[1.1] md:text-[clamp(2.25rem,2.2vw+1.25rem,3rem)] md:leading-[1.06] lg:text-[clamp(2.5rem,1.6vw+1.5rem,3.25rem)]'
 
 export const landingHeroBody =
-  'text-[clamp(0.9375rem,0.45vw+0.75rem,1.125rem)] leading-[1.55] max-[767px]:text-[clamp(1rem,2.5vw+0.65rem,1.125rem)] max-[767px]:leading-[1.6] md:text-lg md:leading-[1.65] lg:text-[1.1875rem] lg:leading-[1.7]'
+  'text-[clamp(0.9375rem,0.45vw+0.75rem,1.125rem)] leading-[1.55] max-[767px]:text-[clamp(1.0625rem,2.8vw+0.6rem,1.1875rem)] max-[767px]:leading-[1.65] md:text-lg md:leading-[1.65] lg:text-[1.1875rem] lg:leading-[1.7]'
 
 export const landingHeroCta =
   'landing-hero-cta inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border-2 px-6 py-2.5 text-sm font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:px-7 md:py-3 md:text-base'
@@ -47,7 +50,7 @@ export const landingHeroCta =
  * Hero character column — relative canvas. Decor sizes: hero/heroDecor.js
  */
 export const landingHeroCharacterCol =
-  'pointer-events-none relative mt-auto flex w-full min-h-[9rem] max-h-[52%] flex-1 md:col-span-1 md:mt-0 md:h-full md:max-h-full md:min-h-0 lg:col-span-5'
+  'pointer-events-none relative mt-2 flex w-full min-h-[8rem] max-h-[48%] flex-1 md:col-span-1 md:mt-0 md:h-full md:max-h-full md:min-h-0 lg:col-span-5'
 
 export const landingHeroGlow =
   'landing-hero-glow pointer-events-none absolute bottom-[24%] left-1/2 z-[1] hidden h-[80%] w-[min(68%,18rem)] -translate-x-1/2 rounded-full md:block'

@@ -3,6 +3,7 @@ import {
   landingHeroBody,
   landingHeroCharacterCol,
   landingHeroCta,
+  landingHeroEyebrow,
   landingHeroGlow,
   landingHeroTitle,
 } from '../landingClasses'
@@ -12,7 +13,7 @@ import { HeroDecorItem } from './HeroDecorItem.jsx'
 import './index.css'
 
 export function HeroSection({ onStart }) {
-  const { gradientId, clipId, titleMotion, bodyMotion, ctaMotion, bustMotion, glowMotion } =
+  const { gradientId, clipId, eyebrowMotion, titleMotion, bodyMotion, ctaMotion, bustMotion, glowMotion } =
     useHeroSection()
 
   return (
@@ -52,28 +53,35 @@ export function HeroSection({ onStart }) {
             </svg>
           </div>
 
-          <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-5 pt-6 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:items-stretch md:gap-8 md:px-12 md:py-12 lg:grid-cols-12 lg:px-16">
-            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 max-w-full flex-col items-start justify-center gap-4 text-left md:col-span-1 md:h-full md:!min-h-[500px] md:gap-0 lg:col-span-7 lg:!min-h-[550px]">
+          <div className="landing-hero-content relative z-10 flex h-full min-h-0 w-full flex-col px-5 pb-4 pt-5 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:items-stretch md:gap-8 md:px-12 md:py-10 lg:grid-cols-12 lg:px-16 lg:py-12">
+            <div className="landing-hero-copy relative z-10 flex w-full min-w-0 max-w-full flex-col items-start justify-start gap-[1.125rem] text-left md:col-span-1 md:h-full md:max-w-[34rem] md:justify-start md:gap-0 md:pt-4 lg:col-span-7 lg:pt-6">
+              <motion.p
+                className={`mb-0 md:mb-3 ${landingHeroEyebrow}`}
+                {...eyebrowMotion}
+              >
+                Know yourself first
+              </motion.p>
+
               <motion.h1
                 id="hero-heading"
-                className={`mb-0 w-full max-w-full break-words text-pretty font-extrabold text-white md:mb-4 lg:mb-5 ${landingHeroTitle}`}
+                className={`mb-0 w-full max-w-full break-words text-pretty font-extrabold text-white md:mb-5 lg:mb-6 ${landingHeroTitle}`}
                 {...titleMotion}
               >
-                Free RIASEC Career Test for Filipino Students
+                The right course feels obvious — after you see your map.
               </motion.h1>
 
               <motion.p
-                className={`mb-0 max-w-lg font-normal text-purple-100/90 md:mb-8 md:max-w-xl lg:mb-8 ${landingHeroBody}`}
+                className={`mb-0 max-w-lg font-normal text-purple-100/90 md:mb-9 md:max-w-xl lg:mb-10 ${landingHeroBody}`}
                 {...bodyMotion}
               >
-                Find college courses and scholarships in the Philippines that match your strengths
-                — in about 10 minutes.
+                Answer simple questions. Get course ideas, schools that fit, and scholarships worth
+                checking.
               </motion.p>
 
               <motion.button
                 type="button"
                 onClick={onStart}
-                className={`landing-hero-cta mt-1 md:mt-0 ${landingHeroCta}`}
+                className={`landing-hero-cta mt-0.5 md:mt-0 ${landingHeroCta}`}
                 aria-label="Start Assessment"
                 {...ctaMotion}
               >

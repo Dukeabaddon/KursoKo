@@ -1,6 +1,6 @@
 /** Shared Playwright selectors and helpers for KursoKo e2e. */
 
-export const LANDING_HEADING = /Free RIASEC Career Test for Filipino Students/i
+export const LANDING_HEADING = /The right course feels obvious/i
 
 export const RESULTS_HEADING = /Profession matches for you/i
 

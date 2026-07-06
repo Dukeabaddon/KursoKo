@@ -15,6 +15,7 @@ export function useHeroSection() {
   return {
     gradientId,
     clipId,
+    eyebrowMotion: heroEntranceMotionProps(HERO_MOTION.sequence.eyebrow, reducedMotion),
     titleMotion: heroEntranceMotionProps(HERO_MOTION.sequence.title, reducedMotion),
     bodyMotion: heroEntranceMotionProps(HERO_MOTION.sequence.body, reducedMotion),
     ctaMotion: heroEntranceMotionProps(HERO_MOTION.sequence.cta, reducedMotion),

@@ -10,6 +10,7 @@ const PROGRAM_CAREERS = [
   'lawyer',
   'electrician',
   'military-officer',
+  'seafarer-deck-officer',
 ]
 
 describe('school program-keyword gate (no RIASEC-only false positives)', () => {
