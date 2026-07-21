@@ -1,22 +1,32 @@
 {
   "metadata": {
-    "version": "2.0.0",
-    "lastUpdated": "2026-07-06",
+    "version": "2.2.0",
+    "lastUpdated": "2026-07-21",
     "description": "Career titles mapped to RIASEC dimensions for match scoring",
-    "count": 59,
-    "source": "src/data/careers.json + docs/plans/kursoko-data2/careers-research.json"
+    "count": 88,
+    "source": "src/data/careers.json + docs/plans/kursoko-data2/careers-research.json",
+    "riasecProfileProvenance": {
+      "method": "KursoKo-authored occupational RIASEC heuristic",
+      "source": "Occupation-specific citations were not recorded in the legacy catalog",
+      "verificationDate": null,
+      "confidence": "unverified"
+    },
+    "careerCount": 88,
+    "notes": [
+      "2026-07-21: retuned social-care R weights; added military and PH career expansion batch; primary-peak matching gate"
+    ]
   },
   "careers": [
     {
       "id": "software-engineer",
       "title": "Software Engineer",
       "riasecWeights": {
-        "R": 0.35,
+        "R": 0.25,
         "I": 0.95,
-        "A": 0.4,
-        "S": 0.2,
+        "A": 0.45,
+        "S": 0.25,
         "E": 0.25,
-        "C": 0.55
+        "C": 0.7
       },
       "skills": [
         "Programming",
@@ -29,12 +39,12 @@
       "id": "mechanical-engineer",
       "title": "Mechanical Engineer",
       "riasecWeights": {
-        "R": 0.95,
+        "R": 0.9,
         "I": 0.75,
-        "A": 0.35,
-        "S": 0.15,
-        "E": 0.2,
-        "C": 0.45
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.35,
+        "C": 0.55
       },
       "skills": [
         "CAD",
@@ -48,11 +58,11 @@
       "title": "Architect",
       "riasecWeights": {
         "R": 0.7,
-        "I": 0.55,
-        "A": 0.9,
+        "I": 0.45,
+        "A": 0.95,
         "S": 0.25,
-        "E": 0.35,
-        "C": 0.5
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "Design",
@@ -65,12 +75,12 @@
       "id": "teacher",
       "title": "Teacher",
       "riasecWeights": {
-        "R": 0.2,
-        "I": 0.45,
-        "A": 0.4,
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.45,
         "S": 0.95,
-        "E": 0.5,
-        "C": 0.55
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "Communication",
@@ -83,12 +93,12 @@
       "id": "psychologist",
       "title": "Psychologist",
       "riasecWeights": {
-        "R": 0.1,
-        "I": 0.75,
-        "A": 0.35,
-        "S": 0.9,
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.95,
         "E": 0.25,
-        "C": 0.4
+        "C": 0.45
       },
       "skills": [
         "Active listening",
@@ -101,12 +111,12 @@
       "id": "nurse",
       "title": "Registered Nurse",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.55,
-        "A": 0.15,
+        "R": 0.25,
+        "I": 0.45,
+        "A": 0.25,
         "S": 0.95,
-        "E": 0.2,
-        "C": 0.65
+        "E": 0.25,
+        "C": 0.7
       },
       "skills": [
         "Patient care",
@@ -120,11 +130,11 @@
       "title": "Graphic Designer",
       "riasecWeights": {
         "R": 0.25,
-        "I": 0.35,
+        "I": 0.45,
         "A": 0.95,
-        "S": 0.3,
-        "E": 0.4,
-        "C": 0.35
+        "S": 0.25,
+        "E": 0.7,
+        "C": 0.25
       },
       "skills": [
         "Visual design",
@@ -137,10 +147,10 @@
       "id": "entrepreneur",
       "title": "Entrepreneur",
       "riasecWeights": {
-        "R": 0.4,
-        "I": 0.45,
-        "A": 0.5,
-        "S": 0.45,
+        "R": 0.45,
+        "I": 0.4,
+        "A": 0.35,
+        "S": 0.5,
         "E": 0.95,
         "C": 0.55
       },
@@ -155,11 +165,11 @@
       "id": "accountant",
       "title": "Accountant",
       "riasecWeights": {
-        "R": 0.15,
-        "I": 0.5,
-        "A": 0.1,
-        "S": 0.25,
-        "E": 0.35,
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.35,
+        "E": 0.55,
         "C": 0.95
       },
       "skills": [
@@ -173,11 +183,11 @@
       "id": "civil-engineer",
       "title": "Civil Engineer",
       "riasecWeights": {
-        "R": 0.9,
+        "R": 0.92,
         "I": 0.7,
         "A": 0.3,
         "S": 0.25,
-        "E": 0.3,
+        "E": 0.35,
         "C": 0.55
       },
       "skills": [
@@ -193,10 +203,10 @@
       "riasecWeights": {
         "R": 0.45,
         "I": 0.95,
-        "A": 0.35,
-        "S": 0.3,
-        "E": 0.2,
-        "C": 0.5
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.7
       },
       "skills": [
         "Experiment design",
@@ -209,11 +219,11 @@
       "id": "social-worker",
       "title": "Social Worker",
       "riasecWeights": {
-        "R": 0.15,
-        "I": 0.4,
+        "R": 0.25,
+        "I": 0.7,
         "A": 0.25,
         "S": 0.95,
-        "E": 0.35,
+        "E": 0.25,
         "C": 0.45
       },
       "skills": [
@@ -228,10 +238,10 @@
       "title": "Electrician / Technician",
       "riasecWeights": {
         "R": 0.95,
-        "I": 0.45,
-        "A": 0.15,
-        "S": 0.2,
-        "E": 0.15,
+        "I": 0.55,
+        "A": 0.2,
+        "S": 0.25,
+        "E": 0.25,
         "C": 0.5
       },
       "skills": [
@@ -245,12 +255,12 @@
       "id": "marketing-manager",
       "title": "Marketing Manager",
       "riasecWeights": {
-        "R": 0.15,
-        "I": 0.4,
-        "A": 0.65,
-        "S": 0.55,
-        "E": 0.9,
-        "C": 0.45
+        "R": 0.25,
+        "I": 0.45,
+        "A": 0.55,
+        "S": 0.5,
+        "E": 0.95,
+        "C": 0.55
       },
       "skills": [
         "Persuasion",
@@ -263,12 +273,12 @@
       "id": "data-analyst",
       "title": "Data Analyst",
       "riasecWeights": {
-        "R": 0.2,
-        "I": 0.9,
-        "A": 0.25,
-        "S": 0.2,
+        "R": 0.25,
+        "I": 0.95,
+        "A": 0.45,
+        "S": 0.25,
         "E": 0.25,
-        "C": 0.75
+        "C": 0.7
       },
       "skills": [
         "Statistics",
@@ -281,12 +291,12 @@
       "id": "chef",
       "title": "Chef / Culinary Professional",
       "riasecWeights": {
-        "R": 0.85,
+        "R": 0.7,
         "I": 0.25,
-        "A": 0.7,
+        "A": 0.95,
         "S": 0.45,
-        "E": 0.4,
-        "C": 0.35
+        "E": 0.35,
+        "C": 0.25
       },
       "skills": [
         "Food prep",
@@ -299,12 +309,12 @@
       "id": "lawyer",
       "title": "Lawyer",
       "riasecWeights": {
-        "R": 0.1,
+        "R": 0.25,
         "I": 0.7,
-        "A": 0.3,
-        "S": 0.45,
-        "E": 0.85,
-        "C": 0.55
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.95,
+        "C": 0.45
       },
       "skills": [
         "Argumentation",
@@ -317,11 +327,11 @@
       "id": "hr-specialist",
       "title": "HR Specialist",
       "riasecWeights": {
-        "R": 0.1,
-        "I": 0.35,
-        "A": 0.2,
-        "S": 0.85,
-        "E": 0.55,
+        "R": 0.25,
+        "I": 0.25,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.45,
         "C": 0.7
       },
       "skills": [
@@ -335,11 +345,11 @@
       "id": "content-creator",
       "title": "Content Creator",
       "riasecWeights": {
-        "R": 0.2,
-        "I": 0.3,
-        "A": 0.9,
-        "S": 0.55,
-        "E": 0.65,
+        "R": 0.25,
+        "I": 0.25,
+        "A": 0.95,
+        "S": 0.45,
+        "E": 0.7,
         "C": 0.25
       },
       "skills": [
@@ -353,11 +363,11 @@
       "id": "pharmacist",
       "title": "Pharmacist",
       "riasecWeights": {
-        "R": 0.35,
-        "I": 0.85,
-        "A": 0.1,
-        "S": 0.55,
-        "E": 0.2,
+        "R": 0.25,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.45,
+        "E": 0.25,
         "C": 0.7
       },
       "skills": [
@@ -372,11 +382,11 @@
       "title": "Welder",
       "riasecWeights": {
         "R": 0.95,
-        "I": 0.75,
-        "A": 0.35,
-        "S": 0.3,
-        "E": 0.4,
-        "C": 0.55
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.3,
+        "C": 0.45
       },
       "skills": [
         "Metal fabrication",
@@ -389,12 +399,12 @@
       "id": "automotive-technician",
       "title": "Automotive Technician",
       "riasecWeights": {
-        "R": 0.92,
-        "I": 0.72,
-        "A": 0.3,
-        "S": 0.35,
-        "E": 0.45,
-        "C": 0.55
+        "R": 0.95,
+        "I": 0.55,
+        "A": 0.25,
+        "S": 0.3,
+        "E": 0.4,
+        "C": 0.5
       },
       "skills": [
         "Engine diagnostics",
@@ -407,11 +417,11 @@
       "id": "hvac-technician",
       "title": "HVAC Technician",
       "riasecWeights": {
-        "R": 0.93,
-        "I": 0.7,
-        "A": 0.25,
+        "R": 0.95,
+        "I": 0.5,
+        "A": 0.2,
         "S": 0.3,
-        "E": 0.4,
+        "E": 0.35,
         "C": 0.55
       },
       "skills": [
@@ -425,11 +435,11 @@
       "id": "seafarer-deck-officer",
       "title": "Seafarer / Deck Officer",
       "riasecWeights": {
-        "R": 0.9,
+        "R": 0.92,
         "I": 0.55,
-        "A": 0.3,
-        "S": 0.45,
-        "E": 0.6,
+        "A": 0.25,
+        "S": 0.4,
+        "E": 0.55,
         "C": 0.55
       },
       "skills": [
@@ -444,11 +454,11 @@
       "title": "Agricultural Technician",
       "riasecWeights": {
         "R": 0.9,
-        "I": 0.72,
-        "A": 0.35,
-        "S": 0.4,
-        "E": 0.5,
-        "C": 0.55
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.45,
+        "E": 0.35,
+        "C": 0.45
       },
       "skills": [
         "Crop management",
@@ -461,11 +471,11 @@
       "id": "aircraft-maintenance-technician",
       "title": "Aircraft Maintenance Technician",
       "riasecWeights": {
-        "R": 0.92,
+        "R": 0.9,
         "I": 0.75,
-        "A": 0.3,
-        "S": 0.35,
-        "E": 0.45,
+        "A": 0.25,
+        "S": 0.3,
+        "E": 0.35,
         "C": 0.55
       },
       "skills": [
@@ -479,12 +489,12 @@
       "id": "medical-technologist",
       "title": "Medical Technologist",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.92,
-        "A": 0.3,
-        "S": 0.55,
-        "E": 0.4,
-        "C": 0.72
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.7
       },
       "skills": [
         "Laboratory analysis",
@@ -497,12 +507,12 @@
       "id": "cybersecurity-analyst",
       "title": "Cybersecurity Analyst",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.9,
-        "A": 0.4,
-        "S": 0.45,
-        "E": 0.5,
-        "C": 0.75
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.7
       },
       "skills": [
         "Network security",
@@ -515,12 +525,12 @@
       "id": "data-scientist",
       "title": "Data Scientist",
       "riasecWeights": {
-        "R": 0.5,
-        "I": 0.92,
-        "A": 0.5,
-        "S": 0.4,
-        "E": 0.55,
-        "C": 0.75
+        "R": 0.25,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.45,
+        "C": 0.7
       },
       "skills": [
         "Machine learning",
@@ -533,12 +543,12 @@
       "id": "marine-engineer",
       "title": "Marine Engineer",
       "riasecWeights": {
-        "R": 0.75,
-        "I": 0.9,
-        "A": 0.3,
-        "S": 0.4,
-        "E": 0.45,
-        "C": 0.55
+        "R": 0.7,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.45
       },
       "skills": [
         "Marine propulsion systems",
@@ -551,12 +561,12 @@
       "id": "food-technologist",
       "title": "Food Technologist",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.9,
-        "A": 0.4,
-        "S": 0.45,
-        "E": 0.5,
-        "C": 0.72
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.7
       },
       "skills": [
         "Food safety testing",
@@ -569,12 +579,12 @@
       "id": "environmental-scientist",
       "title": "Environmental Scientist",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.9,
-        "A": 0.4,
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.25,
         "S": 0.7,
-        "E": 0.5,
-        "C": 0.55
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "Environmental impact assessment",
@@ -587,12 +597,12 @@
       "id": "ui-ux-designer",
       "title": "UI/UX Designer",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.75,
-        "A": 0.9,
-        "S": 0.55,
-        "E": 0.5,
-        "C": 0.55
+        "R": 0.45,
+        "I": 0.7,
+        "A": 0.95,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "User research",
@@ -605,12 +615,12 @@
       "id": "game-developer",
       "title": "Game Developer",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.75,
-        "A": 0.9,
-        "S": 0.4,
-        "E": 0.5,
-        "C": 0.55
+        "R": 0.45,
+        "I": 0.7,
+        "A": 0.95,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "Game engine programming",
@@ -623,12 +633,12 @@
       "id": "multimedia-artist",
       "title": "Multimedia Artist",
       "riasecWeights": {
-        "R": 0.55,
+        "R": 0.45,
         "I": 0.7,
-        "A": 0.92,
-        "S": 0.45,
-        "E": 0.55,
-        "C": 0.55
+        "A": 0.95,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "Digital illustration",
@@ -641,12 +651,12 @@
       "id": "journalist",
       "title": "Journalist",
       "riasecWeights": {
-        "R": 0.4,
-        "I": 0.55,
-        "A": 0.9,
-        "S": 0.55,
-        "E": 0.72,
-        "C": 0.55
+        "R": 0.25,
+        "I": 0.45,
+        "A": 0.95,
+        "S": 0.25,
+        "E": 0.7,
+        "C": 0.25
       },
       "skills": [
         "News writing",
@@ -659,12 +669,12 @@
       "id": "interior-designer",
       "title": "Interior Designer",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.55,
-        "A": 0.9,
-        "S": 0.55,
+        "R": 0.45,
+        "I": 0.25,
+        "A": 0.95,
+        "S": 0.25,
         "E": 0.7,
-        "C": 0.55
+        "C": 0.25
       },
       "skills": [
         "Space planning",
@@ -677,12 +687,12 @@
       "id": "photographer",
       "title": "Photographer / Videographer",
       "riasecWeights": {
-        "R": 0.65,
-        "I": 0.55,
-        "A": 0.92,
-        "S": 0.45,
-        "E": 0.55,
-        "C": 0.55
+        "R": 0.7,
+        "I": 0.45,
+        "A": 0.95,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "Camera operation",
@@ -695,12 +705,12 @@
       "id": "caregiver",
       "title": "Caregiver",
       "riasecWeights": {
-        "R": 0.65,
-        "I": 0.55,
-        "A": 0.3,
-        "S": 0.92,
-        "E": 0.45,
-        "C": 0.55
+        "R": 0.25,
+        "I": 0.45,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.25,
+        "C": 0.7
       },
       "skills": [
         "Personal care assistance",
@@ -713,12 +723,12 @@
       "id": "midwife",
       "title": "Midwife",
       "riasecWeights": {
-        "R": 0.7,
+        "R": 0.3,
         "I": 0.55,
         "A": 0.35,
-        "S": 0.9,
-        "E": 0.5,
-        "C": 0.55
+        "S": 0.95,
+        "E": 0.35,
+        "C": 0.45
       },
       "skills": [
         "Prenatal care",
@@ -731,12 +741,12 @@
       "id": "guidance-counselor",
       "title": "Guidance Counselor",
       "riasecWeights": {
-        "R": 0.4,
-        "I": 0.72,
-        "A": 0.55,
-        "S": 0.9,
-        "E": 0.55,
-        "C": 0.55
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.25,
+        "C": 0.45
       },
       "skills": [
         "Counseling techniques",
@@ -749,12 +759,12 @@
       "id": "physical-therapist",
       "title": "Physical Therapist",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.75,
-        "A": 0.35,
-        "S": 0.9,
-        "E": 0.5,
-        "C": 0.55
+        "R": 0.45,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "Therapeutic exercise",
@@ -767,12 +777,12 @@
       "id": "speech-language-pathologist",
       "title": "Speech-Language Pathologist",
       "riasecWeights": {
-        "R": 0.5,
-        "I": 0.72,
-        "A": 0.55,
-        "S": 0.9,
-        "E": 0.45,
-        "C": 0.55
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.25,
+        "C": 0.45
       },
       "skills": [
         "Speech therapy",
@@ -785,12 +795,12 @@
       "id": "nutritionist-dietitian",
       "title": "Nutritionist-Dietitian",
       "riasecWeights": {
-        "R": 0.5,
-        "I": 0.75,
-        "A": 0.4,
-        "S": 0.9,
-        "E": 0.5,
-        "C": 0.55
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.25,
+        "C": 0.45
       },
       "skills": [
         "Meal planning",
@@ -803,12 +813,12 @@
       "id": "criminology-graduate",
       "title": "Criminology Graduate",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.7,
-        "A": 0.3,
-        "S": 0.9,
-        "E": 0.55,
-        "C": 0.55
+        "R": 0.88,
+        "I": 0.55,
+        "A": 0.2,
+        "S": 0.55,
+        "E": 0.45,
+        "C": 0.7
       },
       "skills": [
         "Crime investigation",
@@ -821,12 +831,12 @@
       "id": "sales-representative",
       "title": "Sales Representative",
       "riasecWeights": {
-        "R": 0.5,
-        "I": 0.55,
-        "A": 0.45,
-        "S": 0.75,
-        "E": 0.92,
-        "C": 0.55
+        "R": 0.3,
+        "I": 0.35,
+        "A": 0.4,
+        "S": 0.55,
+        "E": 0.95,
+        "C": 0.5
       },
       "skills": [
         "Client acquisition",
@@ -839,12 +849,12 @@
       "id": "business-development-manager",
       "title": "Business Development Manager",
       "riasecWeights": {
-        "R": 0.45,
-        "I": 0.75,
-        "A": 0.4,
-        "S": 0.55,
-        "E": 0.9,
-        "C": 0.55
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.45,
+        "E": 0.95,
+        "C": 0.25
       },
       "skills": [
         "Market analysis",
@@ -857,12 +867,12 @@
       "id": "real-estate-broker",
       "title": "Real Estate Broker",
       "riasecWeights": {
-        "R": 0.5,
-        "I": 0.55,
-        "A": 0.4,
+        "R": 0.25,
+        "I": 0.45,
+        "A": 0.25,
         "S": 0.7,
-        "E": 0.92,
-        "C": 0.55
+        "E": 0.95,
+        "C": 0.25
       },
       "skills": [
         "Property valuation",
@@ -875,12 +885,12 @@
       "id": "hotel-manager",
       "title": "Hotel Manager",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.55,
-        "A": 0.45,
-        "S": 0.75,
-        "E": 0.9,
-        "C": 0.55
+        "R": 0.45,
+        "I": 0.25,
+        "A": 0.25,
+        "S": 0.7,
+        "E": 0.95,
+        "C": 0.25
       },
       "skills": [
         "Operations management",
@@ -893,12 +903,12 @@
       "id": "restaurant-manager",
       "title": "Restaurant Manager",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.55,
-        "A": 0.4,
-        "S": 0.72,
-        "E": 0.9,
-        "C": 0.55
+        "R": 0.45,
+        "I": 0.25,
+        "A": 0.25,
+        "S": 0.7,
+        "E": 0.95,
+        "C": 0.25
       },
       "skills": [
         "Inventory control",
@@ -911,12 +921,12 @@
       "id": "flight-attendant",
       "title": "Flight Attendant",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.5,
+        "R": 0.35,
+        "I": 0.35,
         "A": 0.45,
-        "S": 0.75,
-        "E": 0.9,
-        "C": 0.55
+        "S": 0.7,
+        "E": 0.95,
+        "C": 0.45
       },
       "skills": [
         "Safety demonstration",
@@ -929,12 +939,12 @@
       "id": "supply-chain-manager",
       "title": "Supply Chain Manager",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.55,
-        "A": 0.35,
-        "S": 0.5,
-        "E": 0.65,
-        "C": 0.9
+        "R": 0.45,
+        "I": 0.25,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.7,
+        "C": 0.95
       },
       "skills": [
         "Inventory planning",
@@ -947,12 +957,12 @@
       "id": "bookkeeper",
       "title": "Bookkeeper",
       "riasecWeights": {
-        "R": 0.5,
+        "R": 0.35,
         "I": 0.55,
-        "A": 0.3,
+        "A": 0.25,
         "S": 0.4,
-        "E": 0.4,
-        "C": 0.92
+        "E": 0.25,
+        "C": 0.95
       },
       "skills": [
         "Financial recording",
@@ -965,12 +975,12 @@
       "id": "logistics-coordinator",
       "title": "Logistics Coordinator",
       "riasecWeights": {
-        "R": 0.72,
-        "I": 0.55,
-        "A": 0.3,
-        "S": 0.5,
-        "E": 0.5,
-        "C": 0.9
+        "R": 0.7,
+        "I": 0.45,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.95
       },
       "skills": [
         "Shipment tracking",
@@ -983,12 +993,12 @@
       "id": "quality-assurance-analyst",
       "title": "Quality Assurance Analyst",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.75,
-        "A": 0.35,
-        "S": 0.45,
-        "E": 0.5,
-        "C": 0.9
+        "R": 0.45,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.95
       },
       "skills": [
         "Test case design",
@@ -1001,12 +1011,12 @@
       "id": "customs-broker",
       "title": "Customs Broker",
       "riasecWeights": {
-        "R": 0.5,
-        "I": 0.55,
-        "A": 0.3,
-        "S": 0.45,
-        "E": 0.72,
-        "C": 0.9
+        "R": 0.25,
+        "I": 0.45,
+        "A": 0.25,
+        "S": 0.35,
+        "E": 0.7,
+        "C": 0.95
       },
       "skills": [
         "Tariff classification",
@@ -1019,11 +1029,11 @@
       "id": "administrative-assistant",
       "title": "Administrative Assistant",
       "riasecWeights": {
-        "R": 0.45,
-        "I": 0.55,
-        "A": 0.35,
-        "S": 0.6,
-        "E": 0.5,
+        "R": 0.25,
+        "I": 0.35,
+        "A": 0.25,
+        "S": 0.55,
+        "E": 0.45,
         "C": 0.92
       },
       "skills": [
@@ -1037,12 +1047,12 @@
       "id": "dentist",
       "title": "Dentist (Doctor of Dental Medicine)",
       "riasecWeights": {
-        "R": 0.55,
-        "I": 0.9,
-        "A": 0.35,
-        "S": 0.75,
-        "E": 0.45,
-        "C": 0.55
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.7,
+        "E": 0.25,
+        "C": 0.25
       },
       "skills": [
         "Clinical dentistry",
@@ -1053,21 +1063,765 @@
     },
     {
       "id": "military-officer",
-      "title": "Military Officer (AFP)",
+      "title": "AFP Commissioned Officer",
       "riasecWeights": {
-        "R": 0.45,
-        "I": 0.45,
+        "R": 0.92,
+        "I": 0.55,
         "A": 0.2,
-        "S": 0.7,
-        "E": 0.9,
+        "S": 0.4,
+        "E": 0.7,
+        "C": 0.55
+      },
+      "skills": [
+        "leadership",
+        "discipline",
+        "tactics",
+        "physical fitness",
+        "team command"
+      ],
+      "learningPath": [
+        "PMA / AFPOCS / OCS path",
+        "Commissioning program",
+        "Branch specialization"
+      ],
+      "suggestedCourses": [
+        "Bachelor programs accepted by PMA/AFPOCS",
+        "Criminology",
+        "Engineering",
+        "Management"
+      ],
+      "specialEligibility": {
+        "summary": "Age, medical, height, citizenship, and entrance-exam requirements apply. Verify on official AFP / PMA pages."
+      }
+    },
+    {
+      "id": "pma-cadet",
+      "title": "Philippine Military Academy Cadet",
+      "riasecWeights": {
+        "R": 0.9,
+        "I": 0.55,
+        "A": 0.2,
+        "S": 0.35,
+        "E": 0.5,
+        "C": 0.7
+      },
+      "skills": [
+        "academics",
+        "discipline",
+        "leadership",
+        "physical training"
+      ],
+      "learningPath": [
+        "PMA entrance exam",
+        "Cadetship",
+        "Commission as 2LT"
+      ],
+      "suggestedCourses": [
+        "PMA Cadetship (government-funded)"
+      ],
+      "specialEligibility": {
+        "summary": "Strict PMA eligibility, medical, and exam rules. Confirm on the official PMA site."
+      }
+    },
+    {
+      "id": "pnpa-cadet",
+      "title": "PNPA Cadet (Police)",
+      "riasecWeights": {
+        "R": 0.88,
+        "I": 0.5,
+        "A": 0.2,
+        "S": 0.55,
+        "E": 0.45,
+        "C": 0.7
+      },
+      "skills": [
+        "law enforcement",
+        "discipline",
+        "public safety",
+        "investigation basics"
+      ],
+      "learningPath": [
+        "PNPA entrance",
+        "Cadetship",
+        "PNP commission path"
+      ],
+      "suggestedCourses": [
+        "PNPA Cadetship"
+      ],
+      "specialEligibility": {
+        "summary": "PNPA has its own entrance and medical standards. Verify on official PNPA channels."
+      }
+    },
+    {
+      "id": "coast-guard-officer",
+      "title": "Philippine Coast Guard Officer",
+      "riasecWeights": {
+        "R": 0.9,
+        "I": 0.55,
+        "A": 0.2,
+        "S": 0.45,
+        "E": 0.5,
+        "C": 0.65
+      },
+      "skills": [
+        "maritime safety",
+        "search and rescue",
+        "navigation",
+        "discipline"
+      ],
+      "learningPath": [
+        "PCG officer candidate / academy path",
+        "Sea duty"
+      ],
+      "suggestedCourses": [
+        "Maritime-related degrees",
+        "PCG officer programs"
+      ]
+    },
+    {
+      "id": "enlisted-service-member",
+      "title": "AFP Enlisted Personnel",
+      "riasecWeights": {
+        "R": 0.95,
+        "I": 0.35,
+        "A": 0.15,
+        "S": 0.4,
+        "E": 0.35,
+        "C": 0.7
+      },
+      "skills": [
+        "field skills",
+        "equipment maintenance",
+        "teamwork",
+        "discipline"
+      ],
+      "learningPath": [
+        "AFP recruitment",
+        "Military occupational specialty training"
+      ],
+      "suggestedCourses": [
+        "SHS + AFP recruitment track",
+        "TESDA technical skills"
+      ]
+    },
+    {
+      "id": "firefighter",
+      "title": "Firefighter / BFP Personnel",
+      "riasecWeights": {
+        "R": 0.95,
+        "I": 0.4,
+        "A": 0.2,
+        "S": 0.55,
+        "E": 0.35,
         "C": 0.5
       },
       "skills": [
-        "Leadership under pressure",
-        "Strategic planning",
-        "Physical fitness and discipline"
+        "emergency response",
+        "physical fitness",
+        "rescue",
+        "teamwork"
       ],
-      "learningPath": "PMA cadetship via PMAEE (4-year BS Management Major in Security Studies) or officer commissioning programs (OCC, ROTC). Graduates serve as commissioned officers in the Army, Air Force, or Navy — not the civil criminology/PRC track."
+      "learningPath": [
+        "BFP recruitment / fire officer courses"
+      ],
+      "suggestedCourses": [
+        "Criminology",
+        "Public Safety",
+        "Fire technology programs"
+      ]
+    },
+    {
+      "id": "electrical-engineer",
+      "title": "Electrical Engineer",
+      "riasecWeights": {
+        "R": 0.7,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.45
+      },
+      "skills": [
+        "power systems",
+        "circuit design",
+        "math",
+        "safety codes"
+      ],
+      "learningPath": [
+        "BS Electrical Engineering",
+        "Board exam"
+      ],
+      "suggestedCourses": [
+        "BS Electrical Engineering"
+      ]
+    },
+    {
+      "id": "electronics-engineer",
+      "title": "Electronics Engineer",
+      "riasecWeights": {
+        "R": 0.7,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.45
+      },
+      "skills": [
+        "electronics",
+        "telecommunications",
+        "troubleshooting",
+        "design"
+      ],
+      "learningPath": [
+        "BS Electronics Engineering",
+        "Board exam"
+      ],
+      "suggestedCourses": [
+        "BS Electronics Engineering",
+        "BS ECE"
+      ]
+    },
+    {
+      "id": "architect-interior-tech",
+      "title": "Architecture Technologist",
+      "riasecWeights": {
+        "R": 0.7,
+        "I": 0.25,
+        "A": 0.95,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.45
+      },
+      "skills": [
+        "CAD",
+        "drafting",
+        "building codes",
+        "design support"
+      ],
+      "learningPath": [
+        "BS Architecture Technology / related"
+      ],
+      "suggestedCourses": [
+        "BS Architecture",
+        "Drafting technology"
+      ]
+    },
+    {
+      "id": "pharmacist-assistant",
+      "title": "Pharmacy Assistant",
+      "riasecWeights": {
+        "R": 0.3,
+        "I": 0.5,
+        "A": 0.25,
+        "S": 0.7,
+        "E": 0.25,
+        "C": 0.88
+      },
+      "skills": [
+        "inventory",
+        "customer service",
+        "medication basics",
+        "accuracy"
+      ],
+      "learningPath": [
+        "TESDA / pharmacy aide programs"
+      ],
+      "suggestedCourses": [
+        "Pharmacy Aide",
+        "BS Pharmacy pathway"
+      ]
+    },
+    {
+      "id": "accountant-auditor",
+      "title": "Internal Auditor",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.45,
+        "C": 0.95
+      },
+      "skills": [
+        "audit",
+        "controls",
+        "reporting",
+        "attention to detail"
+      ],
+      "learningPath": [
+        "BSA / BSMA",
+        "CIA pathway"
+      ],
+      "suggestedCourses": [
+        "BS Accountancy",
+        "BS Management Accounting"
+      ]
+    },
+    {
+      "id": "teacher-shs-stem",
+      "title": "SHS STEM Teacher",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.25,
+        "C": 0.45
+      },
+      "skills": [
+        "teaching",
+        "STEM content",
+        "classroom management"
+      ],
+      "learningPath": [
+        "Education degree / LET",
+        "Specialization"
+      ],
+      "suggestedCourses": [
+        "BSEd major in Math/Science",
+        "Certificate in Professional Teaching"
+      ]
+    },
+    {
+      "id": "veterinary-technologist",
+      "title": "Veterinary Technologist",
+      "riasecWeights": {
+        "R": 0.7,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.45,
+        "E": 0.25,
+        "C": 0.25
+      },
+      "skills": [
+        "animal care",
+        "lab skills",
+        "clinical support"
+      ],
+      "learningPath": [
+        "BS Veterinary Technology / related"
+      ],
+      "suggestedCourses": [
+        "BS Veterinary Technology",
+        "Doctor of Veterinary Medicine pathway"
+      ]
+    },
+    {
+      "id": "radiologic-technologist",
+      "title": "Radiologic Technologist",
+      "riasecWeights": {
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.7
+      },
+      "skills": [
+        "imaging",
+        "patient positioning",
+        "radiation safety"
+      ],
+      "learningPath": [
+        "BS Radiologic Technology",
+        "Board exam"
+      ],
+      "suggestedCourses": [
+        "BS Radiologic Technology"
+      ]
+    },
+    {
+      "id": "occupational-therapist",
+      "title": "Occupational Therapist",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.95,
+        "E": 0.25,
+        "C": 0.45
+      },
+      "skills": [
+        "rehab planning",
+        "patient coaching",
+        "adaptive tools"
+      ],
+      "learningPath": [
+        "BS Occupational Therapy",
+        "Board exam"
+      ],
+      "suggestedCourses": [
+        "BS Occupational Therapy"
+      ]
+    },
+    {
+      "id": "chemist",
+      "title": "Chemist",
+      "riasecWeights": {
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.7
+      },
+      "skills": [
+        "lab analysis",
+        "research",
+        "safety",
+        "documentation"
+      ],
+      "learningPath": [
+        "BS Chemistry",
+        "Licensure where required"
+      ],
+      "suggestedCourses": [
+        "BS Chemistry",
+        "BS Biochemistry"
+      ]
+    },
+    {
+      "id": "statistician",
+      "title": "Statistician",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.45,
+        "C": 0.7
+      },
+      "skills": [
+        "statistics",
+        "survey design",
+        "R/Python",
+        "reporting"
+      ],
+      "learningPath": [
+        "BS Statistics",
+        "Analytics certifications"
+      ],
+      "suggestedCourses": [
+        "BS Statistics",
+        "BS Applied Mathematics"
+      ]
+    },
+    {
+      "id": "librarian",
+      "title": "Librarian / Information Specialist",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.35,
+        "S": 0.55,
+        "E": 0.25,
+        "C": 0.95
+      },
+      "skills": [
+        "cataloging",
+        "research help",
+        "digital literacy"
+      ],
+      "learningPath": [
+        "BLIS",
+        "Licensure"
+      ],
+      "suggestedCourses": [
+        "Bachelor of Library and Information Science"
+      ]
+    },
+    {
+      "id": "lawyer-paralegal",
+      "title": "Paralegal / Legal Assistant",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.55,
+        "A": 0.25,
+        "S": 0.5,
+        "E": 0.45,
+        "C": 0.92
+      },
+      "skills": [
+        "legal research",
+        "document prep",
+        "organization"
+      ],
+      "learningPath": [
+        "Legal management / paralegal programs"
+      ],
+      "suggestedCourses": [
+        "BS Legal Management",
+        "Political Science"
+      ]
+    },
+    {
+      "id": "network-administrator",
+      "title": "Network Administrator",
+      "riasecWeights": {
+        "R": 0.45,
+        "I": 0.95,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.7
+      },
+      "skills": [
+        "networking",
+        "troubleshooting",
+        "security basics"
+      ],
+      "learningPath": [
+        "BS IT / CS",
+        "CCNA-style certs"
+      ],
+      "suggestedCourses": [
+        "BS Information Technology",
+        "BS Computer Science"
+      ]
+    },
+    {
+      "id": "mobile-app-developer",
+      "title": "Mobile App Developer",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.95,
+        "A": 0.45,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.7
+      },
+      "skills": [
+        "mobile frameworks",
+        "UI implementation",
+        "debugging"
+      ],
+      "learningPath": [
+        "BS IT / CS",
+        "Portfolio apps"
+      ],
+      "suggestedCourses": [
+        "BS Computer Science",
+        "BS Information Technology"
+      ]
+    },
+    {
+      "id": "product-manager",
+      "title": "Product Manager",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.25,
+        "S": 0.25,
+        "E": 0.95,
+        "C": 0.45
+      },
+      "skills": [
+        "roadmapping",
+        "stakeholder management",
+        "prioritization"
+      ],
+      "learningPath": [
+        "Business / IT degree",
+        "PM apprenticeships"
+      ],
+      "suggestedCourses": [
+        "BS Business Administration",
+        "BS IT"
+      ]
+    },
+    {
+      "id": "digital-marketer",
+      "title": "Digital Marketer",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.45,
+        "A": 0.7,
+        "S": 0.25,
+        "E": 0.95,
+        "C": 0.25
+      },
+      "skills": [
+        "campaigns",
+        "analytics",
+        "content",
+        "ads"
+      ],
+      "learningPath": [
+        "Marketing degree / certificates"
+      ],
+      "suggestedCourses": [
+        "BS Marketing Management",
+        "BS Communication"
+      ]
+    },
+    {
+      "id": "event-planner",
+      "title": "Event Planner",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.25,
+        "A": 0.25,
+        "S": 0.7,
+        "E": 0.95,
+        "C": 0.45
+      },
+      "skills": [
+        "coordination",
+        "vendor management",
+        "creativity"
+      ],
+      "learningPath": [
+        "Hospitality / tourism / business"
+      ],
+      "suggestedCourses": [
+        "BS Hospitality Management",
+        "BS Tourism"
+      ]
+    },
+    {
+      "id": "animator",
+      "title": "2D/3D Animator",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.7,
+        "A": 0.95,
+        "S": 0.25,
+        "E": 0.25,
+        "C": 0.45
+      },
+      "skills": [
+        "animation",
+        "storyboarding",
+        "software tools"
+      ],
+      "learningPath": [
+        "Multimedia / Fine Arts"
+      ],
+      "suggestedCourses": [
+        "BS Multimedia Arts",
+        "Animation programs"
+      ]
+    },
+    {
+      "id": "fashion-designer",
+      "title": "Fashion Designer",
+      "riasecWeights": {
+        "R": 0.45,
+        "I": 0.25,
+        "A": 0.95,
+        "S": 0.25,
+        "E": 0.7,
+        "C": 0.25
+      },
+      "skills": [
+        "design",
+        "pattern making",
+        "branding"
+      ],
+      "learningPath": [
+        "Fashion design programs"
+      ],
+      "suggestedCourses": [
+        "BS Fashion Design and Merchandising"
+      ]
+    },
+    {
+      "id": "musician-teacher",
+      "title": "Music Teacher / Performer",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.25,
+        "A": 0.95,
+        "S": 0.7,
+        "E": 0.45,
+        "C": 0.25
+      },
+      "skills": [
+        "performance",
+        "instruction",
+        "practice discipline"
+      ],
+      "learningPath": [
+        "Music degree / conservatory"
+      ],
+      "suggestedCourses": [
+        "Bachelor of Music",
+        "Music Education"
+      ]
+    },
+    {
+      "id": "tour-guide",
+      "title": "Tour Guide",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.25,
+        "A": 0.45,
+        "S": 0.95,
+        "E": 0.7,
+        "C": 0.25
+      },
+      "skills": [
+        "public speaking",
+        "local knowledge",
+        "hospitality"
+      ],
+      "learningPath": [
+        "Tourism programs",
+        "DOT accreditation where required"
+      ],
+      "suggestedCourses": [
+        "BS Tourism",
+        "BS Hospitality Management"
+      ]
+    },
+    {
+      "id": "call-center-team-lead",
+      "title": "BPO Team Leader",
+      "riasecWeights": {
+        "R": 0.2,
+        "I": 0.4,
+        "A": 0.3,
+        "S": 0.55,
+        "E": 0.95,
+        "C": 0.7
+      },
+      "skills": [
+        "coaching",
+        "metrics",
+        "customer ops"
+      ],
+      "learningPath": [
+        "Any degree + BPO experience"
+      ],
+      "suggestedCourses": [
+        "BS Business Administration",
+        "BS Communication"
+      ]
+    },
+    {
+      "id": "civil-service-analyst",
+      "title": "Government Administrative Officer",
+      "riasecWeights": {
+        "R": 0.25,
+        "I": 0.55,
+        "A": 0.25,
+        "S": 0.7,
+        "E": 0.45,
+        "C": 0.9
+      },
+      "skills": [
+        "policy support",
+        "records",
+        "public service"
+      ],
+      "learningPath": [
+        "Civil Service Eligibility",
+        "Public admin degree"
+      ],
+      "suggestedCourses": [
+        "BS Public Administration",
+        "BS Political Science"
+      ]
     }
   ]
 }

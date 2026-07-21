@@ -63,7 +63,7 @@ function ShareCard({ archetype, topCareer, combination, className = '' }) {
             {topCareer.title}
           </p>
           <p className="mt-1 text-2xl font-bold" style={{ color: CARD.gold }}>
-            {getFitTierLabel(0)}
+            {getFitTierLabel(topCareer.matchPercent)}
           </p>
           <div
             className="mt-2 h-2 overflow-hidden rounded-full bg-white/20"

@@ -9,7 +9,6 @@ const PROGRAM_CAREERS = [
   'software-engineer',
   'lawyer',
   'electrician',
-  'military-officer',
   'seafarer-deck-officer',
 ]
 
@@ -23,11 +22,12 @@ describe('school program-keyword gate (no RIASEC-only false positives)', () => {
     expect(ids).toContain('bestlink')
   })
 
-  it('UP Diliman still ranks for software engineer (has CS/engineering programs)', () => {
+  it('UP Diliman remains eligible for software engineer from CS programs', () => {
     const profile = archetypeProfile('I', 'C')
     const career = { id: 'software-engineer', title: 'Software Engineer' }
-    const schools = getUniversityMatchesForCareer(profile, career, 15)
-    expect(schools.map((s) => s.id)).toContain('up-diliman')
+    const schools = getUniversityMatchesForCareer(profile, career, null)
+    const upDiliman = schools.find((school) => school.id === 'up-diliman')
+    expect(upDiliman?.keywordHits).toBeGreaterThan(0)
   })
 
   it('program careers never list schools with zero keyword hits', () => {

@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react'
 import { getPersonalityProfile } from '../../utils/riasecScoring'
-import { getCourseRecommendations } from '../../utils/courseRecommendations'
+import { getCourseRecommendationsForCombinations } from '../../utils/courseRecommendations'
 import { getArchetypeForProfile } from '../../utils/archetypes'
 import { getCareerMatches } from '../../utils/careerMatcher'
-import { getScholarshipMatchesForCareer, inferUserLocationFromSchool } from '../../utils/scholarshipMatcher'
+import { getScholarshipMatchesForCareer } from '../../utils/scholarshipMatcher'
 import { getUniversityMatchesForCareer } from '../../utils/universityMatcher'
 import { getShsStrands } from '../../utils/shsStrands'
 import ResultsShell, { useResultsScrollReveal } from './ResultsShell'
@@ -19,10 +19,16 @@ import ShareResultModal from './ShareResultModal'
 
 function Results({ responses, onRetake, onHome }) {
   const profile = useMemo(() => getPersonalityProfile(responses), [responses])
-  const { primaryDimension, secondaryDimension, allDimensions, combination } = profile
+  const { primaryDimension, allDimensions, combination } = profile
+  const [shareOpen, setShareOpen] = useState(false)
+  const [heroEnter] = useState(true)
+  const [detailView, setDetailView] = useState(null)
   const archetype = useMemo(() => getArchetypeForProfile(profile), [profile])
   const careerMatches = useMemo(() => getCareerMatches(profile, 10), [profile])
-  const courseRecommendations = useMemo(() => getCourseRecommendations(combination), [combination])
+  const courseRecommendations = useMemo(
+    () => getCourseRecommendationsForCombinations(profile.combinationCandidates),
+    [profile.combinationCandidates],
+  )
   const shsStrands = useMemo(
     () => getShsStrands(combination, primaryDimension.code),
     [combination, primaryDimension.code],
@@ -31,11 +37,10 @@ function Results({ responses, onRetake, onHome }) {
     () =>
       careerMatches.map((career) => {
         const allSchools = getUniversityMatchesForCareer(profile, career, null)
-        const schools = allSchools.slice(0, 5)
+        const schools = allSchools.slice(0, 10)
         const topSchool = schools[0] ?? null
-        const userLocation = inferUserLocationFromSchool(topSchool)
-        const allScholarships = getScholarshipMatchesForCareer(profile, career, schools, null, userLocation)
-        const scholarships = allScholarships.slice(0, 5)
+        const allScholarships = getScholarshipMatchesForCareer(profile, career, schools, null, null)
+        const scholarships = allScholarships.slice(0, 10)
 
         return {
           ...career,
@@ -48,10 +53,6 @@ function Results({ responses, onRetake, onHome }) {
       }),
     [profile, careerMatches],
   )
-
-  const [shareOpen, setShareOpen] = useState(false)
-  const [heroEnter] = useState(true)
-  const [detailView, setDetailView] = useState(null)
 
   useResultsScrollReveal([combination, detailView])
 
@@ -82,16 +83,14 @@ function Results({ responses, onRetake, onHome }) {
         <RiasecBreakdown
           allDimensions={allDimensions}
           combination={combination}
-          primaryName={primaryDimension.info?.name}
-          secondaryName={secondaryDimension.info?.name}
+          patternLabel={profile.patternLabel}
         />
       </div>
 
       <div className="mt-8 space-y-8">
         <CourseSection
-          combination={combination}
+          patternLabel={profile.patternLabel}
           courseRecommendations={courseRecommendations}
-          topCareers={careerMatches}
         />
         <ProfessionAccordionSection
           careerCards={careerCards}
@@ -111,7 +110,7 @@ function Results({ responses, onRetake, onHome }) {
         onClose={() => setShareOpen(false)}
         archetype={archetype}
         topCareer={careerMatches[0]}
-        combination={combination}
+        combination={profile.patternLabel}
       />
 
       <ResultsSidePanel

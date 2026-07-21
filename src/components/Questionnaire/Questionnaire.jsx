@@ -256,6 +256,9 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
   }
 
   const currentQ = questions[currentQuestion]
+  const optionOrder = questionsData.metadata.reverseDisplayQuestionIds.includes(currentQ.id)
+    ? ['B', 'A']
+    : ['A', 'B']
   const gridMotionClass = animPhase === 'exit' ? 'is-exiting' : ''
 
   return (
@@ -305,13 +308,13 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
                 aria-busy={isAnimating}
               >
                 <AssessmentChoiceCard
-                  optionKey="A"
-                  title={currentQ.optionA.text}
-                  imageSrc={getChoiceImage('A')}
-                  isSelected={selectedOption === 'A'}
-                  isDimmed={Boolean(selectedOption && selectedOption !== 'A')}
-                  selectedRating={selectedOption === 'A' ? selectedRating : null}
-                  onRate={(rating) => handleOptionRatingSelect('A', rating)}
+                  optionKey={optionOrder[0]}
+                  title={(optionOrder[0] === 'A' ? currentQ.optionA : currentQ.optionB).text}
+                  imageSrc={getChoiceImage(optionOrder[0])}
+                  isSelected={selectedOption === optionOrder[0]}
+                  isDimmed={Boolean(selectedOption && selectedOption !== optionOrder[0])}
+                  selectedRating={selectedOption === optionOrder[0] ? selectedRating : null}
+                  onRate={(rating) => handleOptionRatingSelect(optionOrder[0], rating)}
                   disabled={isAnimating}
                 />
 
@@ -322,13 +325,13 @@ function Questionnaire({ onComplete, onBack, onProgressUpdate, initialProgress =
                 </div>
 
                 <AssessmentChoiceCard
-                  optionKey="B"
-                  title={currentQ.optionB.text}
-                  imageSrc={getChoiceImage('B')}
-                  isSelected={selectedOption === 'B'}
-                  isDimmed={Boolean(selectedOption && selectedOption !== 'B')}
-                  selectedRating={selectedOption === 'B' ? selectedRating : null}
-                  onRate={(rating) => handleOptionRatingSelect('B', rating)}
+                  optionKey={optionOrder[1]}
+                  title={(optionOrder[1] === 'A' ? currentQ.optionA : currentQ.optionB).text}
+                  imageSrc={getChoiceImage(optionOrder[1])}
+                  isSelected={selectedOption === optionOrder[1]}
+                  isDimmed={Boolean(selectedOption && selectedOption !== optionOrder[1])}
+                  selectedRating={selectedOption === optionOrder[1] ? selectedRating : null}
+                  onRate={(rating) => handleOptionRatingSelect(optionOrder[1], rating)}
                   disabled={isAnimating}
                 />
               </div>

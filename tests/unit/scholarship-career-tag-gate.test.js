@@ -21,4 +21,14 @@ describe('scholarship careerTag accuracy gate', () => {
       expect(n, sch.id).toBeLessThanOrEqual(MAX_CAREER_TAGS)
     }
   })
+
+  it('untagged scholarships declare broad undergraduate eligibility', () => {
+    const untagged = scholarships.scholarships.filter(
+      (scholarship) => (scholarship.careerTags?.length ?? 0) === 0,
+    )
+    expect(untagged).toHaveLength(4)
+    expect(untagged.every((scholarship) => scholarship.courseScope === 'all-undergraduate')).toBe(
+      true,
+    )
+  })
 })

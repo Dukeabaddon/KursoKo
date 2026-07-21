@@ -8,7 +8,9 @@ import { resultsMeta } from './resultsClasses'
 /** Full-page fallback — primary UX is ResultsSidePanel in Results.jsx */
 function ResultsSchoolsPage({ responses, careerId, onBack, onHome }) {
   const profile = getPersonalityProfile(responses)
-  const career = getCareerMatches(profile, 10).find((item) => item.id === careerId)
+  const career = getCareerMatches(profile, null).find(
+    (item) => item.id === careerId,
+  )
 
   return (
     <ResultsShell onHome={onHome}>

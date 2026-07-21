@@ -33,6 +33,24 @@ src/
 tests/e2e/         # Playwright specs
 ```
 
+
+## Catalog (NCR + nearby Luzon)
+
+| Dataset | Count |
+|---------|------:|
+| Careers | 88 |
+| Universities / campuses | 240 |
+| Scholarships | 301 |
+
+Includes SUC, private, LUC, TESDA, and military paths (PMA, PNPA, Coast Guard, enlisted).
+
+## Matching (no AI)
+
+- RIASEC → careers: primary Holland code must be the career’s peak code (blocks Builder → Midwife-style mismatches).
+- Results show top **10** careers, then schools (with suggested programs) and scholarships; each list has See all.
+- Specialty academies (PMA / PNPA / PCG) are allowlisted to related careers only.
+- School lists prefer program keyword hits; RIASEC campus fit is a fallback when catalogs lack keywords yet.
+
 ## Deploy
 
 Single **static** deployment (Vercel, GitLab Pages, Netlify):

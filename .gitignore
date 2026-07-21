@@ -20,6 +20,7 @@ src/generated/
 
 # Local tooling (not for git)
 .gate-mcp/
+.graphify/
 graphify-out/
 .agent/
 .antigravity-kit/
@@ -59,3 +60,7 @@ tests/e2e/screenshots/
 
 # Codex CLI configuration
 .codex/
+
+# Local research inputs (verified integration artifacts remain tracked)
+docs/plans/kursoko-data3/newData.json
+docs/plans/kursoko-data3/popularCourse.json

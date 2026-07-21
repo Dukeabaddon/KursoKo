@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-06",
-  "scanned": 226,
-  "fixedCount": 153,
-  "broadBefore": 153,
+  "generatedAt": "2026-07-17",
+  "scanned": 230,
+  "fixedCount": 109,
+  "broadBefore": 0,
   "broadAfter": 0,
   "topTagSetsAfter": [
     [
       "IEC",
-      66
+      64
     ],
     [
       "RIC",
@@ -15,211 +15,175 @@
     ],
     [
       "RIS",
-      16
+      27
     ],
     [
-      "ISE",
-      12
-    ],
-    [
-      "RIEC",
-      11
-    ],
-    [
-      "ISEC",
-      9
-    ],
-    [
-      "RI",
-      8
+      "SEC",
+      27
     ],
     [
       "RIE",
-      8
+      18
+    ],
+    [
+      "RI",
+      17
+    ],
+    [
+      "ISE",
+      11
     ],
     [
       "ISC",
+      9
+    ],
+    [
+      "RIA",
       8
     ],
     [
-      "CI",
-      6
+      "REC",
+      7
     ],
     [
-      "IR",
-      6
+      "IAC",
+      2
     ],
     [
-      "CEI",
-      4
+      "ASE",
+      2
     ]
   ],
   "sample": [
     {
-      "id": "adamson-university",
-      "name": "Adamson University",
+      "id": "access-computer",
+      "name": "Access Computer College",
       "before": [
         "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
       "after": [
-        "R",
         "I",
-        "S"
-      ],
-      "strengthCount": 19,
-      "courseCount": 9,
-      "flagship": false
-    },
-    {
-      "id": "ama-computer-college",
-      "name": "AMA Computer College",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
-        "C"
-      ],
-      "after": [
-        "R",
-        "I",
-        "C"
-      ],
-      "strengthCount": 14,
-      "courseCount": 12,
-      "flagship": false
-    },
-    {
-      "id": "ama-shs",
-      "name": "AMA Senior High School",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "R",
-        "I",
         "C"
       ],
       "strengthCount": 7,
-      "courseCount": 4,
-      "flagship": false
+      "courseCount": 5
     },
     {
-      "id": "auf",
-      "name": "Angeles University Foundation",
+      "id": "access-computer-college-caloocan",
+      "name": "Access Computer College - Caloocan",
       "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthCount": 25,
-      "courseCount": 12,
-      "flagship": false
-    },
-    {
-      "id": "antipolo-science",
-      "name": "Antipolo Science High School",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "R",
+        "C",
         "I"
       ],
+      "after": [
+        "I",
+        "E",
+        "C"
+      ],
       "strengthCount": 3,
-      "courseCount": 0,
-      "flagship": false
+      "courseCount": 5
     },
     {
-      "id": "arellano-university",
-      "name": "Arellano University",
+      "id": "access-computer-college-cubao",
+      "name": "Access Computer College - Cubao",
       "before": [
-        "R",
-        "I",
-        "S",
+        "C",
         "E",
-        "C"
+        "I"
       ],
       "after": [
         "I",
         "E",
         "C"
       ],
-      "strengthCount": 15,
-      "courseCount": 12,
-      "flagship": false
+      "strengthCount": 3,
+      "courseCount": 5
     },
     {
-      "id": "arellano-university-malabon",
-      "name": "Arellano University - Malabon",
+      "id": "ama-computer-college-caloocan",
+      "name": "AMA Computer College - Caloocan",
       "before": [
-        "R",
-        "I",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "R",
-        "I",
-        "S"
-      ],
-      "strengthCount": 7,
-      "courseCount": 8,
-      "flagship": false
-    },
-    {
-      "id": "arellano-university-pasay",
-      "name": "Arellano University - Pasay",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
+        "C",
+        "I"
       ],
       "after": [
         "R",
         "I",
         "C"
       ],
-      "strengthCount": 9,
-      "courseCount": 8,
-      "flagship": false
+      "strengthCount": 3,
+      "courseCount": 10
     },
     {
-      "id": "apc",
-      "name": "Asia Pacific College",
+      "id": "ama-computer-college-cubao",
+      "name": "AMA Computer College - Cubao",
+      "before": [
+        "C",
+        "I"
+      ],
+      "after": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthCount": 2,
+      "courseCount": 10
+    },
+    {
+      "id": "ama-computer-college-las-pinas",
+      "name": "AMA Computer College - Las Pi\u00f1as",
+      "before": [
+        "C",
+        "I"
+      ],
+      "after": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthCount": 2,
+      "courseCount": 10
+    },
+    {
+      "id": "ama-computer-college-makati",
+      "name": "AMA Computer College - Makati",
+      "before": [
+        "C",
+        "I"
+      ],
+      "after": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthCount": 3,
+      "courseCount": 10
+    },
+    {
+      "id": "ama-computer-college-paranaque",
+      "name": "AMA Computer College - Para\u00f1aque",
+      "before": [
+        "C",
+        "I"
+      ],
+      "after": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthCount": 2,
+      "courseCount": 10
+    },
+    {
+      "id": "ama-computer-santa-rosa",
+      "name": "AMA Computer College - Santa Rosa",
       "before": [
         "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
@@ -229,48 +193,122 @@
         "C"
       ],
       "strengthCount": 10,
-      "courseCount": 9,
-      "flagship": false
+      "courseCount": 8
+    },
+    {
+      "id": "ama-shs",
+      "name": "AMA Senior High School",
+      "before": [
+        "R",
+        "I",
+        "C"
+      ],
+      "after": [
+        "R",
+        "E",
+        "C"
+      ],
+      "strengthCount": 7,
+      "courseCount": 4
+    },
+    {
+      "id": "asia-pacific-aviation",
+      "name": "Asia Pacific Aviation Center",
+      "before": [
+        "C",
+        "E",
+        "S"
+      ],
+      "after": [
+        "R",
+        "E",
+        "C"
+      ],
+      "strengthCount": 3,
+      "courseCount": 2
+    },
+    {
+      "id": "apc",
+      "name": "Asia Pacific College",
+      "before": [
+        "I",
+        "E",
+        "C"
+      ],
+      "after": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthCount": 10,
+      "courseCount": 9
+    },
+    {
+      "id": "asian-institute-of-computer-studies-aics-antipolo",
+      "name": "Asian Institute of Computer Studies (AICS) - Antipolo",
+      "before": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
+      "after": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthCount": 6,
+      "courseCount": 4
+    },
+    {
+      "id": "asian-institute-of-computer-studies-aics-quezon-city",
+      "name": "Asian Institute of Computer Studies (AICS) - Quezon City",
+      "before": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
+      "after": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthCount": 6,
+      "courseCount": 4
+    },
+    {
+      "id": "asian-institute-science",
+      "name": "Asian Institute of Science and Technology",
+      "before": [
+        "R",
+        "I",
+        "E",
+        "C"
+      ],
+      "after": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthCount": 3,
+      "courseCount": 3
     },
     {
       "id": "assumption-antipolo",
       "name": "Assumption Antipolo",
       "before": [
-        "R",
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthCount": 4,
-      "courseCount": 4,
-      "flagship": false
-    },
-    {
-      "id": "ateneo-shs",
-      "name": "Ateneo de Manila Senior High School",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
       "after": [
         "R",
-        "I",
-        "E"
+        "E",
+        "C"
       ],
       "strengthCount": 4,
-      "courseCount": 4,
-      "flagship": false
+      "courseCount": 4
     },
     {
       "id": "ateneo-manila",
@@ -279,86 +317,40 @@
         "A",
         "C",
         "E",
-        "I",
-        "S"
-      ],
-      "after": [
-        "A",
-        "C",
-        "E",
         "I"
       ],
+      "after": [
+        "I",
+        "S",
+        "E"
+      ],
       "strengthCount": 23,
-      "courseCount": 12,
-      "flagship": true
+      "courseCount": 12
     },
     {
-      "id": "baliuag-university",
-      "name": "Baliuag University",
+      "id": "batangas-provincial",
+      "name": "Batangas Provincial College",
       "before": [
         "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
       "after": [
         "R",
         "I",
-        "S"
+        "E"
       ],
-      "strengthCount": 18,
-      "courseCount": 10,
-      "flagship": false
+      "strengthCount": 3,
+      "courseCount": 2
     },
     {
-      "id": "batangas-state-university",
-      "name": "Batangas State University",
+      "id": "bestlink",
+      "name": "Bestlink College of the Philippines",
       "before": [
-        "R",
-        "I",
-        "A",
         "S",
         "E",
-        "C"
-      ],
-      "after": [
-        "R",
         "I",
-        "S"
-      ],
-      "strengthCount": 22,
-      "courseCount": 9,
-      "flagship": false
-    },
-    {
-      "id": "bulacan-polytechnic",
-      "name": "Bulacan Polytechnic College",
-      "before": [
-        "R",
-        "I",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "R",
-        "I",
-        "C"
-      ],
-      "strengthCount": 10,
-      "courseCount": 7,
-      "flagship": false
-    },
-    {
-      "id": "calayan-educational",
-      "name": "Calayan Educational Foundation",
-      "before": [
-        "R",
-        "I",
-        "S",
-        "E",
         "C"
       ],
       "after": [
@@ -366,127 +358,39 @@
         "S",
         "E"
       ],
-      "strengthCount": 6,
-      "courseCount": 6,
-      "flagship": false
+      "strengthCount": 8,
+      "courseCount": 6
     },
     {
-      "id": "canossa-college",
-      "name": "Canossa College of San Pablo",
+      "id": "bulacan-state-university",
+      "name": "Bulacan State University",
       "before": [
-        "R",
         "I",
-        "S",
-        "E",
-        "C"
+        "R"
       ],
       "after": [
         "R",
         "I",
         "S"
       ],
+      "strengthCount": 20,
+      "courseCount": 8
+    },
+    {
+      "id": "cavite-maritime",
+      "name": "Cavite Maritime Academy",
+      "before": [
+        "C",
+        "E",
+        "I",
+        "R"
+      ],
+      "after": [
+        "R",
+        "I"
+      ],
       "strengthCount": 3,
-      "courseCount": 0,
-      "flagship": false
-    },
-    {
-      "id": "cavite-state-university",
-      "name": "Cavite State University",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "R",
-        "I",
-        "C"
-      ],
-      "strengthCount": 23,
-      "courseCount": 12,
-      "flagship": false
-    },
-    {
-      "id": "central-luzon-state-university",
-      "name": "Central Luzon State University",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "R",
-        "I",
-        "C"
-      ],
-      "strengthCount": 19,
-      "courseCount": 10,
-      "flagship": false
-    },
-    {
-      "id": "ceu",
-      "name": "Centro Escolar University",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "I",
-        "S",
-        "C"
-      ],
-      "strengthCount": 12,
-      "courseCount": 12,
-      "flagship": false
-    },
-    {
-      "id": "centro-escolar-university-makati",
-      "name": "Centro Escolar University - Makati",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthCount": 9,
-      "courseCount": 7,
-      "flagship": false
-    },
-    {
-      "id": "chiang-kai-shek-college",
-      "name": "Chiang Kai Shek College",
-      "before": [
-        "R",
-        "I",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthCount": 10,
-      "courseCount": 7,
-      "flagship": false
+      "courseCount": 4
     },
     {
       "id": "christian-college-tanauan",
@@ -494,172 +398,97 @@
       "before": [
         "R",
         "I",
-        "S",
-        "E",
         "C"
       ],
       "after": [
-        "R",
-        "I",
+        "S",
+        "E",
         "C"
       ],
       "strengthCount": 3,
-      "courseCount": 0,
-      "flagship": false
-    },
-    {
-      "id": "ciit-philippines",
-      "name": "CIIT College of Arts and Technology",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "E",
-        "C"
-      ],
-      "after": [
-        "R",
-        "I",
-        "A"
-      ],
-      "strengthCount": 9,
-      "courseCount": 5,
-      "flagship": false
-    },
-    {
-      "id": "cmu",
-      "name": "City of Malabon University",
-      "before": [
-        "R",
-        "I",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "R",
-        "I",
-        "E"
-      ],
-      "strengthCount": 5,
-      "courseCount": 6,
-      "flagship": false
+      "courseCount": 2
     },
     {
       "id": "cup",
       "name": "City University of Pasay",
       "before": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
       "after": [
-        "I",
+        "S",
         "E",
         "C"
       ],
       "strengthCount": 14,
-      "courseCount": 10,
-      "flagship": false
+      "courseCount": 10
     },
     {
-      "id": "lettran",
-      "name": "Colegio de San Juan de Letran",
+      "id": "colegio-de-san-jose",
+      "name": "Colegio de San Jose",
       "before": [
-        "R",
         "I",
-        "A",
         "S",
         "E",
         "C"
       ],
       "after": [
-        "R",
-        "I",
+        "S",
+        "E",
         "C"
       ],
-      "strengthCount": 7,
-      "courseCount": 9,
-      "flagship": false
+      "strengthCount": 3,
+      "courseCount": 2
     },
     {
       "id": "colegio-de-san-pascual-baylon",
       "name": "Colegio de San Pascual Baylon",
       "before": [
-        "R",
         "I",
-        "A",
-        "S",
         "E",
         "C"
       ],
       "after": [
-        "I",
+        "S",
         "E",
         "C"
       ],
       "strengthCount": 5,
-      "courseCount": 5,
-      "flagship": false
-    },
-    {
-      "id": "colegio-de-san-pedro",
-      "name": "Colegio de San Pedro",
-      "before": [
-        "R",
-        "I",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthCount": 10,
-      "courseCount": 7,
-      "flagship": false
+      "courseCount": 5
     },
     {
       "id": "colegio-ng-lungsod-ng-batangas",
       "name": "Colegio ng Lungsod ng Batangas",
       "before": [
-        "R",
         "I",
-        "S",
         "E",
         "C"
       ],
       "after": [
-        "I",
+        "R",
         "E",
         "C"
       ],
       "strengthCount": 4,
-      "courseCount": 5,
-      "flagship": false
+      "courseCount": 5
     },
     {
-      "id": "colegio-san-agustin-bacolod",
-      "name": "Colegio San Agustin - Bacolod",
+      "id": "dls-medical",
+      "name": "De La Salle Medical and Health Sciences Institute",
       "before": [
         "R",
         "I",
         "S",
-        "E",
         "C"
       ],
       "after": [
+        "R",
         "I",
-        "S",
-        "E"
+        "S"
       ],
-      "strengthCount": 7,
-      "courseCount": 7,
-      "flagship": false
+      "strengthCount": 14,
+      "courseCount": 12
     },
     {
       "id": "de-la-salle-zobel",
@@ -667,117 +496,110 @@
       "before": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "after": [
         "R",
-        "I",
+        "E",
         "C"
       ],
       "strengthCount": 6,
-      "courseCount": 4,
-      "flagship": false
+      "courseCount": 4
     },
     {
-      "id": "dlsu-dasmarinas",
-      "name": "De La Salle University - Dasmarinas",
+      "id": "dlsu-manila",
+      "name": "De La Salle University",
       "before": [
-        "R",
-        "I",
-        "A",
-        "S",
+        "C",
         "E",
-        "C"
+        "I",
+        "S"
       ],
       "after": [
         "R",
         "I",
-        "E"
-      ],
-      "strengthCount": 20,
-      "courseCount": 10,
-      "flagship": false
-    },
-    {
-      "id": "benilde",
-      "name": "De La Salle-College of Saint Benilde",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
-      "after": [
-        "I",
-        "A",
-        "C"
-      ],
-      "strengthCount": 25,
-      "courseCount": 10,
-      "flagship": false
+      "strengthCount": 21,
+      "courseCount": 7
     },
     {
       "id": "diliman-college",
       "name": "Diliman College",
       "before": [
         "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
-      "after": [
-        "I",
         "S"
       ],
-      "strengthCount": 3,
-      "courseCount": 0,
-      "flagship": false
-    },
-    {
-      "id": "emilio-aguinaldo-college",
-      "name": "Emilio Aguinaldo College",
-      "before": [
-        "R",
-        "I",
-        "A",
-        "S",
-        "E",
-        "C"
-      ],
       "after": [
-        "I",
+        "A",
         "S",
         "E"
       ],
-      "strengthCount": 25,
-      "courseCount": 8,
-      "flagship": false
+      "strengthCount": 3,
+      "courseCount": 3
     },
     {
-      "id": "earist",
-      "name": "Eulogio 'Amang' Rodriguez Institute of Science and Technology (EARIST)",
+      "id": "diliman-preparatory-school",
+      "name": "Diliman Preparatory School",
       "before": [
-        "R",
-        "I",
-        "A",
-        "S",
         "E",
-        "C"
+        "I",
+        "R",
+        "S"
       ],
       "after": [
         "R",
         "I",
+        "E"
+      ],
+      "strengthCount": 3,
+      "courseCount": 4
+    },
+    {
+      "id": "don-bosco-college-canlubang",
+      "name": "Don Bosco College - Canlubang",
+      "before": [
+        "R",
+        "I",
         "C"
       ],
-      "strengthCount": 9,
-      "courseCount": 8,
-      "flagship": false
+      "after": [
+        "R",
+        "I"
+      ],
+      "strengthCount": 3,
+      "courseCount": 2
+    },
+    {
+      "id": "don-bosco-technical-institute-mandaluyong",
+      "name": "Don Bosco Technical Institute - Mandaluyong",
+      "before": [
+        "R",
+        "I",
+        "C"
+      ],
+      "after": [
+        "R",
+        "I"
+      ],
+      "strengthCount": 3,
+      "courseCount": 3
+    },
+    {
+      "id": "feu-manila",
+      "name": "Far Eastern University",
+      "before": [
+        "A",
+        "I",
+        "S"
+      ],
+      "after": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthCount": 22,
+      "courseCount": 9
     },
     {
       "id": "feu-institute-of-technology",
@@ -785,57 +607,96 @@
       "before": [
         "R",
         "I",
-        "A",
-        "S",
-        "E",
         "C"
       ],
       "after": [
         "R",
         "I",
-        "C"
+        "A"
       ],
       "strengthCount": 17,
-      "courseCount": 10,
-      "flagship": false
+      "courseCount": 10
     },
     {
-      "id": "first-city-providential",
-      "name": "First City Providential College",
+      "id": "golden-state",
+      "name": "Golden State College",
       "before": [
         "R",
         "I",
+        "C"
+      ],
+      "after": [
         "S",
+        "E",
+        "C"
+      ],
+      "strengthCount": 3,
+      "courseCount": 2
+    },
+    {
+      "id": "grace-pedro-laguna",
+      "name": "Grace College of San Pedro, Laguna",
+      "before": [
+        "R",
+        "I",
+        "C"
+      ],
+      "after": [
+        "S",
+        "E",
+        "C"
+      ],
+      "strengthCount": 3,
+      "courseCount": 2
+    },
+    {
+      "id": "imus-computer-college",
+      "name": "Imus Computer College",
+      "before": [
+        "C",
+        "E",
+        "I"
+      ],
+      "after": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthCount": 3,
+      "courseCount": 3
+    },
+    {
+      "id": "informatics",
+      "name": "Informatics College",
+      "before": [
+        "R",
+        "I",
         "E",
         "C"
       ],
       "after": [
         "R",
         "I",
-        "E"
+        "C"
       ],
       "strengthCount": 8,
-      "courseCount": 7,
-      "flagship": false
+      "courseCount": 5
     },
     {
-      "id": "global-city-innovative-college",
-      "name": "Global City Innovative College",
+      "id": "ici-culinary",
+      "name": "International Culinary Institute",
       "before": [
-        "R",
-        "I",
-        "S",
-        "E",
-        "C"
+        "A",
+        "C",
+        "E"
       ],
       "after": [
-        "I",
+        "A",
         "E",
         "C"
       ],
-      "strengthCount": 4,
-      "courseCount": 0,
-      "flagship": false
+      "strengthCount": 3,
+      "courseCount": 2
     }
   ]
 }

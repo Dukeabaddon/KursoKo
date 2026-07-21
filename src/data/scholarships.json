@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "2.1.0",
-    "lastUpdated": "2026-07-06",
-    "count": 304,
+    "version": "2.2.0",
+    "lastUpdated": "2026-07-17",
+    "count": 301,
     "disclaimer": "Verify eligibility, award amount, and application windows on each official provider site before applying. KursoKo does not process applications.",
     "verificationPolicy": "Entries include verificationDate and verificationSource from official scholarship, university, or government pages.",
     "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
@@ -8216,6 +8216,7 @@
       "category": "government",
       "name": "OWWA Education for Development Scholarship Program (EDSP)",
       "status": "active",
+      "courseScope": "all-undergraduate",
       "eligibility": [
         "Child of active OWWA member OFW",
         "Grade 12 graduate",
@@ -8251,10 +8252,7 @@
         "I",
         "C"
       ],
-      "careerTags": [
-        "teacher",
-        "guidance-counselor"
-      ],
+      "careerTags": [],
       "institutionTags": [
         "suc",
         "luc",
@@ -8271,6 +8269,7 @@
       "category": "government",
       "name": "OWWA OFW Dependent Scholarship Program (ODSP)",
       "status": "active",
+      "courseScope": "all-undergraduate",
       "eligibility": [
         "Child of active OWWA member OFW with monthly salary of US$600 or less",
         "Grade 12 graduate",
@@ -8305,10 +8304,7 @@
         "I",
         "C"
       ],
-      "careerTags": [
-        "software-engineer",
-        "research-scientist"
-      ],
+      "careerTags": [],
       "institutionTags": [
         "suc",
         "luc",
@@ -8440,7 +8436,7 @@
         "research-scientist"
       ],
       "institutionTags": [
-        "pampanga-state-university"
+        "don-honorio-ventura"
       ],
       "applicationLink": "https://pampanga.gov.ph/",
       "deadlineNotes": "Check Pampanga provincial government website for announcements Pampanga residents may also access PSAU at subsidized rates",
@@ -9019,168 +9015,6 @@
       "deadlineNotes": "Apply through BPSU scholarship office Since 2008, 300+ scholars, 200+ employed at Petron. Open to BPSU engineering students.",
       "verificationDate": "2026-07-02",
       "verificationSource": "https://www.petron.com/petron-foundation-inc/"
-    },
-    {
-      "id": "sch-gov-100",
-      "provider": "Philippine Air Force",
-      "category": "government",
-      "name": "Philippine Air Force Flying Scholarship / AFROTC Scholarship",
-      "status": "active",
-      "eligibility": [
-        "Qualified college students in AFROTC or aspiring PAF officers"
-      ],
-      "benefits": [
-        "Tuition assistance, monthly allowance, flight training subsidy for selected cadets"
-      ],
-      "coverage": [
-        "Partial to full tuition, allowances, flight training costs"
-      ],
-      "requirements": [
-        "Filipino citizen, physically fit (Class 1 flight physical for flying), meets PAF age and height requirements, enrolled in AFROTC"
-      ],
-      "location": [
-        "Philippines"
-      ],
-      "level": [
-        "college"
-      ],
-      "riasecTags": [
-        "I",
-        "R"
-      ],
-      "careerTags": [
-        "flight-attendant",
-        "aircraft-maintenance-technician"
-      ],
-      "institutionTags": [
-        "suc",
-        "private-university-with-rotc"
-      ],
-      "applicationLink": "https://www.paf.mil.ph/",
-      "deadlineNotes": "Coordinate with PAF Recruitment Center and university ROTC units Flying scholarship is highly competitive. AFROTC scholarship available at universities with active PAF-detached AFROTC units.",
-      "verificationDate": "2025-06-28",
-      "verificationSource": "Philippine Air Force official website"
-    },
-    {
-      "id": "sch-gov-101",
-      "provider": "Philippine Army",
-      "category": "government",
-      "name": "Philippine Army Officer Candidate Course (OCC) Scholarship",
-      "status": "active",
-      "eligibility": [
-        "College graduates or graduating students who want to become Philippine Army officers"
-      ],
-      "benefits": [
-        "Free military training, salary during training, commission as 2nd Lieutenant"
-      ],
-      "coverage": [
-        "Training costs, salary, allowances"
-      ],
-      "requirements": [
-        "Filipino citizen, baccalaureate degree holder, 21-29 years old, physically and mentally fit, no pending cases"
-      ],
-      "location": [
-        "Philippines"
-      ],
-      "level": [
-        "post-graduate-training"
-      ],
-      "riasecTags": [
-        "E",
-        "R"
-      ],
-      "careerTags": [
-        "military-officer"
-      ],
-      "institutionTags": [
-        "military-training-institution"
-      ],
-      "applicationLink": "https://www.army.mil.ph/",
-      "deadlineNotes": "Multiple cycles per year; check PA Recruitment social media Not a traditional scholarship but a commissioning program with full financial support during training.",
-      "verificationDate": "2025-06-28",
-      "verificationSource": "Philippine Army official website"
-    },
-    {
-      "id": "sch-gov-pma-cadetship",
-      "provider": "Philippine Military Academy",
-      "category": "government",
-      "name": "PMA Cadetship (PMAEE)",
-      "status": "active",
-      "eligibility": [
-        "Natural-born Filipino citizen; SHS graduate with at least 85% GWA; 17-22 years old on admission day; single with no child; passes PMAEE, physical, medical, and neuro-psychiatric screening"
-      ],
-      "benefits": [
-        "Free tuition, board and lodging, monthly pay and allowances, BS degree, AFP commission upon graduation"
-      ],
-      "coverage": [
-        "Full tuition, lodging, pay, allowances, commissioning"
-      ],
-      "requirements": [
-        "PMAEE passer; height 5'0\"-6'4\"; no criminal or administrative case; physically and mentally fit"
-      ],
-      "location": [
-        "Baguio City"
-      ],
-      "level": [
-        "college"
-      ],
-      "riasecTags": [
-        "E",
-        "R",
-        "S"
-      ],
-      "careerTags": [
-        "military-officer"
-      ],
-      "institutionTags": [
-        "military-training-institution",
-        "philippine-military-academy"
-      ],
-      "applicationLink": "https://admission.pma.edu.ph/",
-      "deadlineNotes": "Annual PMAEE cycle; apply at admission.pma.edu.ph. Not standard college enrollment.",
-      "verificationDate": "2026-07-06",
-      "verificationSource": "https://www.pma.edu.ph/pages/join/requirements.html"
-    },
-    {
-      "id": "sch-gov-099",
-      "provider": "Philippine Navy",
-      "category": "government",
-      "name": "Philippine Navy Scholarship Program (PNSP)",
-      "status": "active",
-      "eligibility": [
-        "Qualified Filipino citizens entering BS Naval Architecture, BS Marine Engineering, and related fields"
-      ],
-      "benefits": [
-        "Full tuition, monthly stipend, uniform allowance, guaranteed commission upon graduation"
-      ],
-      "coverage": [
-        "Full tuition, allowances, active duty pay during training"
-      ],
-      "requirements": [
-        "Filipino citizen, 17-22 years old, single, physically fit, meets PN height/weight standards, qualifying exam passer"
-      ],
-      "location": [
-        "Philippines"
-      ],
-      "level": [
-        "college"
-      ],
-      "riasecTags": [
-        "I",
-        "R"
-      ],
-      "careerTags": [
-        "seafarer-deck-officer",
-        "marine-engineer"
-      ],
-      "institutionTags": [
-        "suc",
-        "designated-pn-schools"
-      ],
-      "applicationLink": "https://www.navy.mil.ph/",
-      "deadlineNotes": "Usually 1st-2nd quarter annually Requires commitment to serve in the Philippine Navy after graduation. Designated schools include MEP-designated institutions.",
-      "verificationDate": "2025-06-28",
-      "verificationSource": "Philippine Navy official website and recruitment materials"
     },
     {
       "id": "sch-priv-093",
@@ -12159,6 +11993,7 @@
       "category": "government",
       "name": "Tertiary Education Subsidy (TES) under RA 10931",
       "status": "active",
+      "courseScope": "all-undergraduate",
       "eligibility": [
         "Filipino citizen",
         "Enrolled in CHED-recognized SUC/LUC/private HEI",
@@ -12195,10 +12030,7 @@
         "I",
         "C"
       ],
-      "careerTags": [
-        "teacher",
-        "guidance-counselor"
-      ],
+      "careerTags": [],
       "institutionTags": [
         "suc",
         "luc",
@@ -12627,6 +12459,7 @@
       "category": "government",
       "name": "Tulong Dunong Program (TDP)",
       "status": "active",
+      "courseScope": "all-undergraduate",
       "eligibility": [
         "Filipino citizen",
         "Enrolled in CHED-recognized HEI",
@@ -12661,10 +12494,7 @@
         "I",
         "C"
       ],
-      "careerTags": [
-        "software-engineer",
-        "research-scientist"
-      ],
+      "careerTags": [],
       "institutionTags": [
         "suc",
         "luc",
@@ -13514,6 +13344,58 @@
       "deadlineNotes": "Contact local Zonta Pampanga chapter Zonta focuses on empowering women. Application process is usually direct to the club.",
       "verificationDate": "2025-06-29",
       "verificationSource": "Zonta International local chapter announcements"
+    },
+    {
+      "id": "maap-cadetship-scholarship",
+      "provider": "Maritime Academy of Asia and the Pacific",
+      "category": "university",
+      "name": "MAAP Cadetship Scholarship",
+      "status": "active",
+      "eligibility": [
+        "Natural-born Filipino applicant",
+        "Senior high school graduate, graduating student, or qualified college-level applicant",
+        "Single and physically fit",
+        "Meets the academy's current age, conduct, admission, and financial-need requirements"
+      ],
+      "benefits": [
+        "Scholarship grant with free board and lodging",
+        "In-house shipboard training and insurance while enrolled",
+        "Training for possible placement with partner shipping companies"
+      ],
+      "coverage": [
+        "BS Marine Transportation",
+        "BS Marine Engineering",
+        "BS Marine Engineering and Electro-Technology"
+      ],
+      "requirements": [
+        "Current MAAP application documents",
+        "Proof of academic standing and household income",
+        "Pass the academy's admission and physical-fitness screening"
+      ],
+      "location": [
+        "Bataan",
+        "Philippines"
+      ],
+      "level": [
+        "college"
+      ],
+      "riasecTags": [
+        "R",
+        "I",
+        "C"
+      ],
+      "careerTags": [
+        "seafarer-deck-officer",
+        "marine-engineer"
+      ],
+      "institutionTags": [
+        "maap",
+        "maritime-academy-asia-pacific"
+      ],
+      "applicationLink": "https://maap.edu.ph/Academics-Admission.html",
+      "deadlineNotes": "Verify the current application window, birth-date range, and documentary requirements on MAAP's official admissions page.",
+      "verificationDate": "2026-07-17",
+      "verificationSource": "https://maap.edu.ph/Academics-Admission.html"
     }
   ]
 }

@@ -1,13 +1,16 @@
 {
   "metadata": {
-    "region": "NCR + CALABARZON + Central Luzon (partial)",
-    "version": "2.1.0",
-    "lastUpdated": "2026-07-06",
-    "count": 227,
+    "region": "NCR + CALABARZON + Central Luzon + Ilocos Region + Western Visayas (partial)",
+    "version": "2.4.0",
+    "lastUpdated": "2026-07-21",
+    "count": 240,
     "disclaimer": "Match labels are guidance only. Verify programs, fees, and admission on each school's official site.",
-    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2",
-    "riasecNarrowPass": "2026-07-06",
-    "courseBackfill": "2026-07-06"
+    "source": "docs/plans/kursoko-data + docs/plans/kursoko-data2 + docs/plans/kursoko-data3/verified-integration.json + docs/plans/kursoko-data3/verified-popular-course-integration.json",
+    "riasecNarrowPass": "2026-07-17",
+    "courseBackfill": "2026-07-06",
+    "data3Verification": "2026-07-17",
+    "popularCourseVerification": "2026-07-17",
+    "universityCount": 240
   },
   "universities": [
     {
@@ -22,7 +25,6 @@
       "tuition": "Approximately P15,000-P30,000 per semester",
       "website": "https://www.access.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "E",
         "C"
@@ -64,8 +66,9 @@
       ],
       "website": "https://www.accesscomputer.edu.ph/",
       "riasecTags": [
-        "C",
-        "I"
+        "I",
+        "E",
+        "C"
       ],
       "strengthTags": [
         "information-technology",
@@ -93,9 +96,9 @@
       ],
       "website": "https://www.accesscomputer.edu.ph/",
       "riasecTags": [
-        "C",
+        "I",
         "E",
-        "I"
+        "C"
       ],
       "strengthTags": [
         "information-technology",
@@ -344,7 +347,11 @@
         "BS Nursing",
         "BS Hospitality Management"
       ],
-      "programSource": "official_website"
+      "programSource": "official_website",
+      "status": "operational",
+      "advisory": "CHED ordered program closures at AMA Legazpi and Naga campuses effective AY 2025-2026. This is branch-specific and does not establish closure of the Quezon City or other AMA campuses.",
+      "advisorySource": "https://legacy.ched.gov.ph/notice-to-the-public-concerning-the-status-of-program-offerings-of-ama-computer-college-legazpi-and-naga-campuses/",
+      "verificationDate": "2026-07-17"
     },
     {
       "id": "ama-computer-college-caloocan",
@@ -370,8 +377,9 @@
       ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
-        "C",
-        "I"
+        "R",
+        "I",
+        "C"
       ],
       "strengthTags": [
         "computer-science",
@@ -404,8 +412,9 @@
       ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
-        "C",
-        "I"
+        "R",
+        "I",
+        "C"
       ],
       "strengthTags": [
         "computer-science",
@@ -437,8 +446,9 @@
       ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
-        "C",
-        "I"
+        "R",
+        "I",
+        "C"
       ],
       "strengthTags": [
         "computer-science",
@@ -470,8 +480,9 @@
       ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
-        "C",
-        "I"
+        "R",
+        "I",
+        "C"
       ],
       "strengthTags": [
         "computer-science",
@@ -504,8 +515,9 @@
       ],
       "website": "https://www.amaes.edu.ph/",
       "riasecTags": [
-        "C",
-        "I"
+        "R",
+        "I",
+        "C"
       ],
       "strengthTags": [
         "computer-science",
@@ -525,7 +537,6 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.ama.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "E",
         "C"
@@ -567,7 +578,7 @@
       "website": "https://www.ama.edu.ph/",
       "riasecTags": [
         "R",
-        "I",
+        "E",
         "C"
       ],
       "strengthTags": [
@@ -811,9 +822,9 @@
       "tuition": "Approximately P50,000-P80,000 per program",
       "website": "https://www.apac.edu.ph/",
       "riasecTags": [
-        "C",
+        "R",
         "E",
-        "S"
+        "C"
       ],
       "strengthTags": [
         "aviation",
@@ -838,8 +849,8 @@
       "tuition": "Approximately P45,000-P65,000 per semester",
       "website": "https://www.apc.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -881,7 +892,6 @@
       "riasecTags": [
         "R",
         "I",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -914,7 +924,6 @@
       "riasecTags": [
         "R",
         "I",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -947,7 +956,6 @@
       "riasecTags": [
         "R",
         "I",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -974,7 +982,7 @@
       "tuition": "Approximately P50,000-P70,000 per year",
       "website": "https://www.assumptionantipolo.edu.ph/",
       "riasecTags": [
-        "I",
+        "R",
         "E",
         "C"
       ],
@@ -1034,10 +1042,9 @@
       "tuition": "Approximately P90,000-P110,000 per semester; financial aid available",
       "website": "https://www.ateneo.edu/",
       "riasecTags": [
-        "A",
-        "C",
-        "E",
-        "I"
+        "I",
+        "S",
+        "E"
       ],
       "strengthTags": [
         "management-engineering",
@@ -1144,8 +1151,7 @@
       "riasecTags": [
         "R",
         "I",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "agriculture",
@@ -1223,10 +1229,9 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://bcp.edu.ph/",
       "riasecTags": [
-        "S",
-        "E",
-        "I",
-        "C"
+        "R",
+        "C",
+        "S"
       ],
       "strengthTags": [
         "criminology",
@@ -1299,8 +1304,9 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.bulsu.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "R"
+        "S"
       ],
       "strengthTags": [
         "engineering",
@@ -1410,10 +1416,8 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "website": "https://www.cma.edu.ph/",
       "riasecTags": [
-        "C",
-        "E",
-        "I",
-        "R"
+        "R",
+        "I"
       ],
       "strengthTags": [
         "marine-transportation",
@@ -1671,8 +1675,8 @@
       "tuition": "Approximately P15,000-P30,000 per semester",
       "website": "https://www.cct.edu.ph/",
       "riasecTags": [
-        "R",
-        "I",
+        "S",
+        "E",
         "C"
       ],
       "strengthTags": [
@@ -1767,7 +1771,7 @@
       "tuition": "Subsidized per-unit rates for Pasay residents (official site unreachable at cupasay.edu.ph during research; verify current fees with registrar)",
       "website": "https://cupasay.edu.ph/",
       "riasecTags": [
-        "I",
+        "S",
         "E",
         "C"
       ],
@@ -1813,7 +1817,6 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.csjmalolos.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -1879,7 +1882,7 @@
       "tuition": "Estimated PHP 12,000 - 22,000 per semester",
       "website": "https://www.cspb.edu.ph/",
       "riasecTags": [
-        "I",
+        "S",
         "E",
         "C"
       ],
@@ -1950,7 +1953,7 @@
       "tuition": "Subsidized tuition",
       "website": "https://www.clb.edu.ph/",
       "riasecTags": [
-        "I",
+        "R",
         "E",
         "C"
       ],
@@ -1973,10 +1976,10 @@
       "id": "colegio-san-agustin-bacolod",
       "name": "Colegio San Agustin - Bacolod",
       "type": "private",
-      "city": "Bacolod, Negros Occidental",
-      "lguId": "bacolod-negros-occidental",
-      "region": "NCR",
-      "location": "Bacolod, Negros Occidental",
+      "city": "Bacolod City, Negros Occidental",
+      "lguId": "bacolod-city",
+      "region": "Western Visayas (Region VI)",
+      "location": "Bacolod City, Negros Occidental",
       "description": "Augustinian school in Bacolod offering education, business, and engineering programs.",
       "tuition": "Approximately P30,000-P50,000 per semester",
       "website": "https://www.csab.edu.ph/",
@@ -2003,7 +2006,9 @@
         "BS Criminology",
         "BS Psychology"
       ],
-      "programSource": "official_website"
+      "programSource": "official_website",
+      "verificationSource": "https://www.csab.edu.ph/contact/",
+      "verificationDate": "2026-07-17"
     },
     {
       "id": "datamex-institute-of-computer-technology-caloocan",
@@ -2045,8 +2050,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "medicine",
@@ -2093,7 +2097,7 @@
       "website": "https://www.dlszobel.edu.ph/",
       "riasecTags": [
         "R",
-        "I",
+        "E",
         "C"
       ],
       "strengthTags": [
@@ -2124,10 +2128,9 @@
       "tuition": "Approximately P71,000-P102,000 per trimester; scholarships available",
       "website": "https://www.dlsu.edu.ph/",
       "riasecTags": [
-        "C",
-        "E",
+        "R",
         "I",
-        "S"
+        "C"
       ],
       "strengthTags": [
         "computer-science",
@@ -2284,8 +2287,9 @@
       "tuition": "Estimated PHP 20,000 - 30,000 per semester",
       "website": "https://www.dilimancollege.edu.ph/",
       "riasecTags": [
-        "I",
-        "S"
+        "A",
+        "S",
+        "E"
       ],
       "strengthTags": [
         "teacher-education",
@@ -2317,10 +2321,9 @@
       ],
       "website": "https://www.dps.edu.ph/",
       "riasecTags": [
-        "E",
-        "I",
         "R",
-        "S"
+        "I",
+        "E"
       ],
       "strengthTags": [
         "shs-stem",
@@ -2342,8 +2345,7 @@
       "website": "https://www.dbcanlubang.edu.ph/",
       "riasecTags": [
         "R",
-        "I",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "engineering",
@@ -2369,8 +2371,7 @@
       "website": "https://www.dbmanila.org/",
       "riasecTags": [
         "R",
-        "I",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "mechanical-technology",
@@ -2490,9 +2491,9 @@
       "tuition": "Approximately P45,000-P65,000 per semester",
       "website": "https://www.feu.edu.ph/",
       "riasecTags": [
-        "A",
         "I",
-        "S"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "nursing",
@@ -2527,7 +2528,8 @@
         "BS Information Technology",
         "BS Tourism Management",
         "BS Hospitality Management",
-        "AB Psychology"
+        "AB Psychology",
+        "Bachelor of Library and Information Science"
       ],
       "programSource": "official_website"
     },
@@ -2545,7 +2547,7 @@
       "riasecTags": [
         "R",
         "I",
-        "C"
+        "A"
       ],
       "strengthTags": [
         "computer-science",
@@ -2659,8 +2661,8 @@
       "tuition": "Approximately P15,000-P30,000 per semester",
       "website": "https://www.gsc.edu.ph/",
       "riasecTags": [
-        "R",
-        "I",
+        "S",
+        "E",
         "C"
       ],
       "strengthTags": [
@@ -2686,8 +2688,8 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.grace.edu.ph/",
       "riasecTags": [
-        "R",
-        "I",
+        "S",
+        "E",
         "C"
       ],
       "strengthTags": [
@@ -2823,44 +2825,8 @@
         "BS Accountancy",
         "BA Psychology",
         "BA Multimedia Arts and Design",
-        "BA Animation"
-      ],
-      "programSource": "official_website"
-    },
-    {
-      "id": "ibm-philippines",
-      "name": "IBM Philippines",
-      "type": "tvet",
-      "city": "Makati",
-      "lguId": "makati",
-      "region": "NCR",
-      "location": "Makati",
-      "description": "IBM corporate training offering IT and professional development programs.",
-      "tuition": "Varies by program; corporate-sponsored",
-      "website": "https://www.ibm.com/ph-en",
-      "riasecTags": [
-        "R",
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthTags": [
-        "cybersecurity",
-        "data-analytics",
-        "information-technology",
-        "project-management",
-        "web-development",
-        "artificial-intelligence",
-        "professional-development",
-        "corporate-training"
-      ],
-      "popularCourses": [
-        "Cybersecurity Learning Path",
-        "Data Learning Path",
-        "Information Technology Learning Path",
-        "IT Project Management Learning Path",
-        "Web Development Learning Path",
-        "AI Fundamentals"
+        "BA Animation",
+        "Bachelor of Fine Arts in Fashion Design"
       ],
       "programSource": "official_website"
     },
@@ -2917,9 +2883,9 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.icci.edu.ph/",
       "riasecTags": [
-        "C",
+        "I",
         "E",
-        "I"
+        "C"
       ],
       "strengthTags": [
         "information-technology",
@@ -2947,7 +2913,6 @@
       "riasecTags": [
         "R",
         "I",
-        "E",
         "C"
       ],
       "strengthTags": [
@@ -2970,44 +2935,6 @@
       "programSource": "official_website"
     },
     {
-      "id": "infosys",
-      "name": "Infosys Philippines",
-      "type": "tvet",
-      "city": "Makati",
-      "lguId": "makati",
-      "region": "NCR",
-      "location": "Makati",
-      "description": "Corporate training center offering IT and business process management training programs.",
-      "tuition": "Varies by program; corporate-sponsored for some",
-      "website": "https://www.infosys.com/",
-      "riasecTags": [
-        "R",
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthTags": [
-        "artificial-intelligence",
-        "generative-ai",
-        "data-science",
-        "programming",
-        "masterclass",
-        "industry-readiness",
-        "information-technology",
-        "business-process-management",
-        "corporate-training"
-      ],
-      "popularCourses": [
-        "Introductory Course on AI and Generative AI",
-        "Masterclass on AI and the Impact of Generative AI",
-        "Citizens Data Science",
-        "Infosys CoderZen",
-        "Domain Masterclass Sessions",
-        "Lets Get Industry Ready"
-      ],
-      "programSource": "official_website"
-    },
-    {
       "id": "ici-culinary",
       "name": "International Culinary Institute",
       "type": "private",
@@ -3020,8 +2947,8 @@
       "website": "https://www.ici-culinary.com/",
       "riasecTags": [
         "A",
-        "C",
-        "E"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "culinary-arts",
@@ -3046,9 +2973,9 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.jru.edu.ph/",
       "riasecTags": [
-        "C",
+        "S",
         "E",
-        "I"
+        "C"
       ],
       "strengthTags": [
         "accountancy",
@@ -3091,7 +3018,6 @@
       "tuition": "Estimated PHP 30,000 - 45,000 per semester",
       "website": "https://www.kingfisher.edu.ph/",
       "riasecTags": [
-        "I",
         "E",
         "C"
       ],
@@ -3118,7 +3044,6 @@
       "tuition": "Approximately P25,000-P40,000 per semester",
       "website": "https://www.lcc.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -3196,9 +3121,9 @@
       "tuition": "Estimated PHP 15,000 - 25,000 per semester",
       "website": "https://www.laverdad.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
-        "E"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "criminology",
@@ -3224,7 +3149,6 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.lnc.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -3253,8 +3177,9 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.lspu.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "R"
+        "E"
       ],
       "strengthTags": [
         "agriculture",
@@ -3362,9 +3287,9 @@
       "tuition": "Estimated PHP 30,000 - 45,000 per semester",
       "website": "https://cavite.lpu.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "nursing",
@@ -3408,9 +3333,9 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.lpulaguna.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "engineering",
@@ -3511,7 +3436,7 @@
       "tuition": "Estimated PHP 30,000 - 45,000 per semester",
       "website": "https://www.lyceum.edu.ph/",
       "riasecTags": [
-        "I",
+        "S",
         "E",
         "C"
       ],
@@ -3577,39 +3502,6 @@
       "programSource": "official_website"
     },
     {
-      "id": "mcc",
-      "name": "Makati Commercial Center",
-      "type": "private",
-      "city": "Makati",
-      "lguId": "makati",
-      "region": "NCR",
-      "location": "Makati",
-      "description": "Commercial and educational center in Makati offering business and management programs.",
-      "tuition": "Approximately P40,000-P60,000 per semester",
-      "website": "https://www.mcc.edu.ph/",
-      "riasecTags": [
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthTags": [
-        "information-technology",
-        "hospitality",
-        "tourism",
-        "education",
-        "business",
-        "management"
-      ],
-      "popularCourses": [
-        "BS Information Technology",
-        "BS Hospitality Management",
-        "BS Tourism Management",
-        "Bachelor of Elementary Education",
-        "BS Business Administration"
-      ],
-      "programSource": "official_website"
-    },
-    {
       "id": "makati-science",
       "name": "Makati Science High School",
       "type": "shs",
@@ -3639,13 +3531,13 @@
     },
     {
       "id": "mcl",
-      "name": "Malayan Colleges Laguna",
+      "name": "Mapúa Malayan Colleges Laguna",
       "type": "private",
-      "city": "Laguna",
-      "lguId": "laguna",
+      "city": "Cabuyao City, Laguna",
+      "lguId": "cabuyao-laguna",
       "region": "Laguna",
-      "location": "Cabuyao, Laguna",
-      "description": "Premier Mapua branch campus in Laguna offering engineering, IT, and business programs.",
+      "location": "Cabuyao City, Laguna",
+      "description": "Mapúa-affiliated college in Laguna offering engineering, architecture, computing, business, health science, arts, aviation, and maritime programs.",
       "tuition": "Approximately P45,000-P65,000 per semester",
       "website": "https://www.mcl.edu.ph/",
       "riasecTags": [
@@ -3687,7 +3579,12 @@
         "Bachelor of Science in Aeronautical Engineering",
         "Bachelor of Science in Marine Engineering"
       ],
-      "programSource": "official_website"
+      "programSource": "official_website",
+      "verificationSource": "https://mcl.edu.ph/",
+      "verificationDate": "2026-07-17",
+      "formerNames": [
+        "Malayan Colleges Laguna"
+      ]
     },
     {
       "id": "manila-central-university",
@@ -3919,7 +3816,7 @@
       "riasecTags": [
         "R",
         "I",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "education",
@@ -4015,7 +3912,6 @@
       "tuition": "Estimated PHP 18,000 - 28,000 per semester",
       "website": "https://www.mpc.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -4098,8 +3994,8 @@
       "website": "https://www.nu-moa.edu.ph/",
       "riasecTags": [
         "I",
-        "S",
-        "R"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "dentistry",
@@ -4177,7 +4073,7 @@
       "riasecTags": [
         "I",
         "E",
-        "R"
+        "C"
       ],
       "strengthTags": [
         "accountancy",
@@ -4518,10 +4414,9 @@
       "tuition": "Free tuition for Manila residents; subsidized for non-residents",
       "website": "https://www.plm.edu.ph/",
       "riasecTags": [
-        "A",
-        "E",
+        "R",
         "I",
-        "R"
+        "S"
       ],
       "strengthTags": [
         "medicine",
@@ -4545,7 +4440,8 @@
         "BS Accountancy",
         "BS Business Administration",
         "BS Information Technology",
-        "Bachelor of Secondary Education"
+        "Bachelor of Secondary Education",
+        "Bachelor of Library and Information Science"
       ],
       "programSource": "official_website"
     },
@@ -4561,9 +4457,9 @@
       "tuition": "Subsidized tuition for Muntinlupa residents",
       "website": "https://plmun.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
-        "E"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "bachelor-of-arts-in-communication",
@@ -4697,73 +4593,20 @@
       "programSource": "official_website"
     },
     {
-      "id": "pampanga-state-university",
+      "id": "don-honorio-ventura",
       "name": "Pampanga State University",
       "type": "public",
-      "city": "Pampanga",
-      "lguId": "pampanga",
-      "region": "Pampanga",
-      "location": "San Fernando, Pampanga",
-      "description": "Premier state university in Pampanga offering agriculture, engineering, education, and business programs.",
-      "tuition": "Free tuition under RA 10931",
-      "website": "https://pampangastateu.edu.ph/",
-      "riasecTags": [
-        "I",
-        "R"
-      ],
-      "strengthTags": [
-        "accountancy",
-        "business",
-        "information-technology",
-        "computer-science",
-        "engineering",
-        "architecture",
-        "hospitality",
-        "tourism",
-        "nursing",
-        "psychology",
-        "education",
-        "law",
-        "liberal-arts",
-        "environmental-science",
-        "political-science",
-        "mathematics",
-        "medicine",
-        "biology",
-        "sociology",
-        "physics",
-        "agriculture"
-      ],
-      "popularCourses": [
-        "BS Accountancy",
-        "BS Business Administration",
-        "BS Entrepreneurship",
-        "BS Information Technology",
-        "BS Computer Science",
-        "BS Civil Engineering",
-        "BS Electrical Engineering",
-        "BS Electronics Engineering",
-        "BS Mechanical Engineering",
-        "BS Architecture",
-        "BS Hospitality Management",
-        "BS Tourism Management"
-      ],
-      "programSource": "official_website"
-    },
-    {
-      "id": "don-honorio-ventura",
-      "name": "Pampanga State University (formerly Don Honorio Ventura State University)",
-      "type": "public",
-      "city": "Pampanga",
-      "lguId": "pampanga",
-      "region": "Pampanga",
+      "city": "Bacolor, Pampanga",
+      "lguId": "bacolor-pampanga",
+      "region": "Central Luzon (Region III)",
       "location": "Bacolor, Pampanga",
-      "description": "State university in Pampanga offering engineering, agriculture, education, and business programs.",
+      "description": "State university formerly known as Don Honorio Ventura State University, offering engineering, technology, architecture, education, business, and agriculture programs.",
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.dhvsu.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "R"
+        "C"
       ],
       "strengthTags": [
         "architecture",
@@ -4792,7 +4635,12 @@
         "BS Accountancy",
         "BS Business Administration Major in Marketing Management"
       ],
-      "programSource": "official_website"
+      "programSource": "official_website",
+      "verificationSource": "https://dhvsu.edu.ph/",
+      "verificationDate": "2026-07-17",
+      "formerNames": [
+        "Don Honorio Ventura State University"
+      ]
     },
     {
       "id": "pangasinan-state-university",
@@ -4800,14 +4648,15 @@
       "type": "public",
       "city": "Lingayen, Pangasinan",
       "lguId": "lingayen-pangasinan",
-      "region": "Pampanga",
+      "region": "Ilocos Region (Region I)",
       "location": "Lingayen, Pangasinan",
       "description": "Major state university in Pangasinan offering agriculture, engineering, education, and business programs.",
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.psu.edu.ph/",
       "riasecTags": [
+        "R",
         "I",
-        "R"
+        "S"
       ],
       "strengthTags": [
         "liberal-arts",
@@ -4844,7 +4693,9 @@
         "Bachelor of Technology and Livelihood Education",
         "BS Industrial Technology"
       ],
-      "programSource": "official_website"
+      "programSource": "official_website",
+      "verificationSource": "https://main.psu.edu.ph/contact-us/",
+      "verificationDate": "2026-07-17"
     },
     {
       "id": "paref-southridge-school",
@@ -4863,8 +4714,9 @@
       ],
       "website": "https://www.southridge.edu.ph/",
       "riasecTags": [
-        "E",
-        "I"
+        "R",
+        "I",
+        "E"
       ],
       "strengthTags": [
         "shs-stem",
@@ -4889,9 +4741,9 @@
       ],
       "website": "https://www.woodrose.edu.ph/",
       "riasecTags": [
-        "A",
+        "R",
         "I",
-        "S"
+        "A"
       ],
       "strengthTags": [
         "shs-humss",
@@ -4912,7 +4764,6 @@
       "tuition": "Subsidized tuition for Pateros residents",
       "website": "https://ptc.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
         "E",
         "C"
@@ -4942,8 +4793,7 @@
       "riasecTags": [
         "R",
         "I",
-        "E",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "aeronautical-engineering",
@@ -4967,42 +4817,6 @@
         "BS Airline Business Administration",
         "BS Tourism Management",
         "Aircraft Technician Course"
-      ],
-      "programSource": "official_website"
-    },
-    {
-      "id": "philippine-military-academy",
-      "name": "Philippine Military Academy",
-      "type": "public",
-      "city": "Baguio",
-      "lguId": "baguio",
-      "region": "CAR",
-      "location": "Fort Gregorio del Pilar, Baguio City, Benguet",
-      "description": "Premier AFP officer training institution. Four-year cadetship grants BS Management Major in Security Studies and commissions graduates as Army, Air Force, or Navy officers via PMAEE — not standard college enrollment.",
-      "tuition": "Free (government-funded cadetship with pay and allowances)",
-      "website": "https://www.pma.edu.ph/",
-      "riasecTags": [
-        "E",
-        "R",
-        "S"
-      ],
-      "strengthTags": [
-        "military-science",
-        "national-security",
-        "security-studies",
-        "leadership",
-        "officer-training",
-        "service-academy"
-      ],
-      "popularCourses": [
-        "BS Management Major in Security Studies",
-        "Military Science and Leadership (cadetship curriculum)",
-        "Character Academics Military Physical Fitness (CAMP)",
-        "Leadership and Ethics in the Armed Forces"
-      ],
-      "programHighlights": [
-        "PMAEE admission at admission.pma.edu.ph — separate from UPCAT/college enrollment",
-        "Graduates commissioned as 2nd Lieutenant or Ensign in the AFP"
       ],
       "programSource": "official_website"
     },
@@ -5243,10 +5057,9 @@
       "tuition": "Free tuition under RA 10931; known for very low cost education",
       "website": "https://www.pup.edu.ph/",
       "riasecTags": [
-        "A",
-        "C",
-        "E",
-        "I"
+        "R",
+        "I",
+        "E"
       ],
       "strengthTags": [
         "accountancy",
@@ -5474,8 +5287,8 @@
       "tuition": "Free tuition",
       "website": "https://www.pup.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
+        "E",
         "C"
       ],
       "strengthTags": [
@@ -5677,9 +5490,8 @@
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.rtu.edu.ph/",
       "riasecTags": [
-        "I",
-        "S",
-        "E"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "business",
@@ -5705,9 +5517,9 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.roosevelt.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
-        "E"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "business",
@@ -5776,9 +5588,9 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.saintclare.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
-        "E"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "business",
@@ -5832,7 +5644,6 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.sjcb.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -5949,9 +5760,9 @@
       "tuition": "Approximately P50,000-P80,000 per semester",
       "website": "https://www.sanbeda.edu.ph/",
       "riasecTags": [
-        "C",
-        "E",
-        "S"
+        "I",
+        "S",
+        "E"
       ],
       "strengthTags": [
         "accountancy",
@@ -6008,10 +5819,8 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "website": "https://www.sjd.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "nursing",
@@ -6040,7 +5849,8 @@
       ],
       "website": "https://www.slrct.edu.ph/",
       "riasecTags": [
-        "R"
+        "R",
+        "I"
       ],
       "strengthTags": [
         "technical-drafting",
@@ -6062,7 +5872,7 @@
       "website": "https://sanpablocolleges.edu.ph/",
       "riasecTags": [
         "I",
-        "E",
+        "S",
         "C"
       ],
       "strengthTags": [
@@ -6150,7 +5960,6 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.sndp.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -6178,8 +5987,8 @@
       "website": "https://www.southville.edu.ph/",
       "riasecTags": [
         "I",
-        "E",
-        "C"
+        "S",
+        "E"
       ],
       "strengthTags": [
         "bs-accountancy",
@@ -6226,9 +6035,9 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.scc.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
-        "E"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "business",
@@ -6255,7 +6064,8 @@
       "website": "https://www.sdcas.edu.ph/",
       "riasecTags": [
         "I",
-        "S"
+        "S",
+        "E"
       ],
       "strengthTags": [
         "nursing",
@@ -6336,7 +6146,6 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "website": "https://www.sls.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -6900,52 +6709,6 @@
       "programSource": "official_website"
     },
     {
-      "id": "sti-college-recto",
-      "name": "STI College - Recto",
-      "type": "private",
-      "city": "Manila",
-      "lguId": "manila",
-      "region": "NCR",
-      "location": "Manila, NCR",
-      "description": "STI campus in Manila's university belt area.",
-      "tuition": "Estimated PHP 20,000 - 35,000 per semester",
-      "website": "https://www.sti.edu/",
-      "riasecTags": [
-        "I",
-        "E",
-        "C"
-      ],
-      "strengthTags": [
-        "information-technology",
-        "computer-science",
-        "information-systems",
-        "business-administration",
-        "accountancy",
-        "accounting-information-system",
-        "hospitality-management",
-        "tourism-management",
-        "computer-engineering",
-        "communication",
-        "multimedia",
-        "psychology"
-      ],
-      "popularCourses": [
-        "BS Information Technology",
-        "BS Computer Science",
-        "BS Information Systems",
-        "BS Business Administration",
-        "BS Accountancy",
-        "BS Accounting Information System",
-        "BS Hospitality Management",
-        "BS Tourism Management",
-        "BS Computer Engineering",
-        "BA Communication",
-        "Bachelor of Multimedia Arts",
-        "Bachelor of Arts in Psychology"
-      ],
-      "programSource": "official_website"
-    },
-    {
       "id": "sti-college-santa-rosa",
       "name": "STI College - Santa Rosa",
       "type": "private",
@@ -7050,7 +6813,7 @@
       "website": "https://www.sti.edu/",
       "riasecTags": [
         "R",
-        "I",
+        "E",
         "C"
       ],
       "strengthTags": [
@@ -7221,14 +6984,15 @@
       "type": "public",
       "city": "Tarlac City, Tarlac",
       "lguId": "tarlac-city-tarlac",
-      "region": "Pampanga",
+      "region": "Central Luzon (Region III)",
       "location": "Tarlac City, Tarlac",
       "description": "State university in Tarlac offering business, education, engineering, and technology programs.",
       "tuition": "Free tuition under RA 10931",
       "website": "https://www.tsu.edu.ph/",
       "riasecTags": [
         "I",
-        "R"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "accountancy",
@@ -7265,7 +7029,9 @@
         "BS Criminology",
         "BS Architecture"
       ],
-      "programSource": "official_website"
+      "programSource": "official_website",
+      "verificationSource": "https://www.tsu.edu.ph/contact-us/",
+      "verificationDate": "2026-07-17"
     },
     {
       "id": "dolores-tayamin",
@@ -7279,7 +7045,6 @@
       "tuition": "Approximately P15,000-P30,000 per semester",
       "website": "https://www.twa.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -7534,7 +7299,8 @@
       ],
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
-        "R"
+        "R",
+        "I"
       ],
       "strengthTags": [
         "welding",
@@ -7560,7 +7326,8 @@
       ],
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
-        "R"
+        "R",
+        "I"
       ],
       "strengthTags": [
         "electrical-installation",
@@ -7586,7 +7353,8 @@
       ],
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
-        "R"
+        "R",
+        "I"
       ],
       "strengthTags": [
         "welding",
@@ -7609,8 +7377,7 @@
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
         "R",
-        "I",
-        "C"
+        "I"
       ],
       "strengthTags": [
         "automotive-servicing",
@@ -7655,9 +7422,9 @@
       "tuition": "Free or subsidized tuition",
       "website": "https://www.tmccl.edu.ph/",
       "riasecTags": [
-        "R",
-        "I",
-        "S"
+        "S",
+        "E",
+        "C"
       ],
       "strengthTags": [
         "business",
@@ -7733,8 +7500,7 @@
       "riasecTags": [
         "R",
         "I",
-        "S",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "nursing",
@@ -7800,10 +7566,8 @@
       "tuition": "Approximately P30,000-P50,000 per semester",
       "website": "https://www.unciano.edu.ph/",
       "riasecTags": [
-        "R",
         "I",
-        "S",
-        "C"
+        "S"
       ],
       "strengthTags": [
         "nursing",
@@ -7828,7 +7592,7 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.ucl.edu.ph/",
       "riasecTags": [
-        "I",
+        "S",
         "E",
         "C"
       ],
@@ -7877,8 +7641,8 @@
       "website": "https://udm.edu.ph/",
       "riasecTags": [
         "I",
-        "E",
-        "C"
+        "S",
+        "E"
       ],
       "strengthTags": [
         "bachelor-of-arts-in-communication",
@@ -8030,8 +7794,8 @@
       "website": "https://www.umak.edu.ph/",
       "riasecTags": [
         "I",
-        "S",
-        "E"
+        "E",
+        "C"
       ],
       "strengthTags": [
         "criminology",
@@ -8170,7 +7934,7 @@
       "tuition": "Approximately P35,000-P55,000 per semester",
       "website": "https://www.perpetualdalta.edu.ph/",
       "riasecTags": [
-        "I",
+        "S",
         "E",
         "C"
       ],
@@ -8221,7 +7985,7 @@
       "riasecTags": [
         "R",
         "I",
-        "C"
+        "E"
       ],
       "strengthTags": [
         "accountancy",
@@ -8323,7 +8087,7 @@
       "tuition": "Approximately P60,000-P80,000 per semester; scholarships available",
       "website": "https://www.ust.edu.ph/",
       "riasecTags": [
-        "A",
+        "R",
         "I",
         "S"
       ],
@@ -8478,9 +8242,9 @@
       "tuition": "Approximately P40,000-P60,000 per semester",
       "website": "https://www.ue.edu.ph/",
       "riasecTags": [
-        "C",
-        "E",
-        "I"
+        "R",
+        "I",
+        "S"
       ],
       "strengthTags": [
         "engineering",
@@ -8510,7 +8274,8 @@
         "Bachelor of Science in Nursing",
         "Bachelor of Science in Psychology",
         "Bachelor of Science in Hospitality Management",
-        "Doctor of Dental Medicine"
+        "Doctor of Dental Medicine",
+        "Bachelor of Library and Information Science"
       ],
       "programSource": "official_website"
     },
@@ -8561,10 +8326,9 @@
       "tuition": "Free tuition under RA 10931 for eligible students; approximately P37,000/semester without subsidy",
       "website": "https://upd.edu.ph/",
       "riasecTags": [
-        "A",
-        "E",
+        "R",
         "I",
-        "R"
+        "S"
       ],
       "strengthTags": [
         "computer-science",
@@ -8877,7 +8641,6 @@
       "tuition": "Approximately P20,000-P35,000 per semester",
       "website": "https://www.westpoint.edu.ph/",
       "riasecTags": [
-        "I",
         "S",
         "E",
         "C"
@@ -8907,7 +8670,7 @@
       "website": "https://www.worldciti.edu.ph/",
       "riasecTags": [
         "I",
-        "S",
+        "E",
         "C"
       ],
       "strengthTags": [
@@ -9005,9 +8768,9 @@
       ],
       "website": "https://www.zobel.dlsu.edu.ph/",
       "riasecTags": [
-        "E",
+        "R",
         "I",
-        "S"
+        "A"
       ],
       "strengthTags": [
         "shs-stem",
@@ -9037,8 +8800,9 @@
       ],
       "website": "https://www.smcl.edu.ph/",
       "riasecTags": [
+        "S",
         "E",
-        "S"
+        "C"
       ],
       "strengthTags": [
         "business-administration",
@@ -9064,8 +8828,8 @@
       ],
       "website": "https://www.tesda.gov.ph/",
       "riasecTags": [
-        "A",
-        "R"
+        "R",
+        "I"
       ],
       "strengthTags": [
         "cookery",
@@ -9095,14 +8859,780 @@
       ],
       "website": "https://www.abe.edu.ph/",
       "riasecTags": [
-        "C",
-        "E"
+        "R",
+        "E",
+        "C"
       ],
       "strengthTags": [
         "business-administration",
         "accountancy",
         "hrm"
       ],
+      "programSource": "official_website"
+    },
+    {
+      "id": "marikina-polytechnic-college",
+      "name": "Marikina Polytechnic College",
+      "type": "public",
+      "city": "Marikina City",
+      "lguId": "marikina",
+      "region": "NCR",
+      "location": "2 Mayor Chanyungco Street, Sta. Elena, Marikina City",
+      "description": "State college focused on industrial technology, technical-vocational teacher education, electronics engineering, and entrepreneurship.",
+      "tuition": "Free tuition for eligible students under RA 10931",
+      "website": "https://mpc.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "industrial-technology",
+        "technical-vocational-education",
+        "electronics-engineering",
+        "entrepreneurship"
+      ],
+      "popularCourses": [
+        "Bachelor of Industrial Technology",
+        "Bachelor of Technical-Vocational Teacher Education",
+        "BS Electronics Engineering",
+        "BS Entrepreneurship",
+        "Certificate of Technology"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://mpc.edu.ph/2024/07/11/undergraduate-programs-2nd-to-4th-year/",
+        "https://unifast.gov.ph/hei-list.html"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "navotas-polytechnic-college",
+      "name": "Navotas Polytechnic College",
+      "type": "public",
+      "city": "Navotas City",
+      "lguId": "navotas",
+      "region": "NCR",
+      "location": "North Bay Boulevard South, Navotas City",
+      "description": "Navotas local college offering business administration, teacher education, and information systems programs.",
+      "tuition": "Free Higher Education for eligible Navotas residents; current admissions are limited to Navoteños",
+      "website": "https://navotaspolytechniccollege.edu.ph/",
+      "riasecTags": [
+        "I",
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "business-administration",
+        "marketing",
+        "human-resource-management",
+        "financial-management",
+        "education",
+        "information-systems"
+      ],
+      "popularCourses": [
+        "BS Business Administration Major in Marketing Management",
+        "BS Business Administration Major in Human Resource Development and Management",
+        "BS Business Administration Major in Financial Management",
+        "Bachelor of Secondary Education",
+        "Bachelor of Elementary Education",
+        "Associate in Information Systems"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://navotaspolytechniccollege.edu.ph/programs-offered/",
+        "https://navotaspolytechniccollege.edu.ph/governance/citizens-charter/",
+        "https://legacy.ched.gov.ph/more-filipino-students-can-avail-free-higher-education-with-27-newly-ched-recognized-lucs/"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "dr-filemon-c-aguilar-memorial-college",
+      "name": "Dr. Filemon C. Aguilar Memorial College of Las Piñas",
+      "type": "public",
+      "city": "Las Piñas City",
+      "lguId": "las-pinas",
+      "region": "NCR",
+      "location": "Golden Gate Subdivision, Talon Tres, Las Piñas City",
+      "description": "Las Piñas local college providing city-funded business, computing, and engineering education.",
+      "tuition": "Tuition-free for qualified Las Piñas scholars; verify current residency and admission rules",
+      "website": "https://laspinascity.gov.ph/",
+      "riasecTags": [
+        "E",
+        "C"
+      ],
+      "strengthTags": [
+        "accountancy",
+        "business-administration"
+      ],
+      "popularCourses": [
+        "BS Accountancy",
+        "BS Business Administration"
+      ],
+      "programSource": "official_website",
+      "programVerificationNote": "Current official city evidence confirms accountancy and business courses. Verify exact majors with admissions.",
+      "verificationSources": [
+        "https://laspinascity.gov.ph/news-and-events/news/135/dfcamc-las-pinas-graduate-places-no3-in-cpa-board-exam",
+        "https://legacy.ched.gov.ph/more-filipino-students-can-avail-free-higher-education-with-27-newly-ched-recognized-lucs/"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "colegio-de-muntinlupa",
+      "name": "Colegio de Muntinlupa",
+      "type": "public",
+      "city": "Muntinlupa City",
+      "lguId": "muntinlupa",
+      "region": "NCR",
+      "location": "Muntinlupa City",
+      "description": "Muntinlupa local college specializing in architecture and engineering programs.",
+      "tuition": "Free tuition for eligible students; admission and other fees may apply",
+      "website": "https://www.cdm.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "A"
+      ],
+      "strengthTags": [
+        "architecture",
+        "civil-engineering",
+        "computer-engineering",
+        "electrical-engineering",
+        "electronics-engineering",
+        "environmental-engineering",
+        "industrial-engineering",
+        "mechanical-engineering"
+      ],
+      "popularCourses": [
+        "BS Architecture",
+        "BS Civil Engineering",
+        "BS Computer Engineering",
+        "BS Electrical Engineering",
+        "BS Electronics Engineering",
+        "BS Environmental and Sanitary Engineering",
+        "BS Industrial Engineering",
+        "BS Mechanical Engineering"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://www.cdm.edu.ph/CDM-Website-and-CMS/academics/",
+        "https://www.cdm.edu.ph/CDM-Website-and-CMS/admission/"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "mandaluyong-college-science-technology",
+      "name": "Mandaluyong College of Science and Technology",
+      "type": "public",
+      "city": "Mandaluyong City",
+      "lguId": "mandaluyong",
+      "region": "NCR",
+      "location": "Mandaluyong City",
+      "description": "Mandaluyong local college offering communication, information systems, mathematics, nursing, physical education, and public administration.",
+      "tuition": "City-funded; verify current tuition and residency policy with admissions",
+      "website": "https://mandaluyongcollege.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "communication",
+        "information-systems",
+        "mathematics",
+        "nursing",
+        "physical-education",
+        "public-administration"
+      ],
+      "popularCourses": [
+        "BA Communication",
+        "BS Information Systems",
+        "BS Mathematics",
+        "BS Nursing",
+        "Bachelor of Physical Education",
+        "Bachelor of Public Administration"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://mandaluyongcollege.edu.ph/site/program-offerings"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "miriam-college",
+      "name": "Miriam College",
+      "type": "private",
+      "city": "Quezon City",
+      "lguId": "quezon-city",
+      "region": "NCR",
+      "location": "Katipunan Avenue, Loyola Heights, Quezon City",
+      "description": "Private higher education institution known for communication, psychology, business, education, design, and sustainability programs.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://mc.edu.ph/",
+      "riasecTags": [
+        "A",
+        "S",
+        "E"
+      ],
+      "strengthTags": [
+        "communication",
+        "psychology",
+        "business-administration",
+        "entrepreneurship",
+        "education",
+        "design",
+        "sustainability"
+      ],
+      "popularCourses": [
+        "BA Communication",
+        "BS Psychology",
+        "Bachelor of Design",
+        "Bachelor of Early Childhood Education",
+        "BS Business Administration",
+        "BS Entrepreneurship and Innovation",
+        "BS Sustainability and Environment"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://mc.edu.ph/heu/undergraduate/"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "university-asia-pacific",
+      "name": "University of Asia and the Pacific",
+      "type": "private",
+      "city": "Pasig City",
+      "lguId": "pasig",
+      "region": "NCR",
+      "location": "Pearl Drive, Ortigas Center, Pasig City",
+      "description": "Private university offering humanities, economics, management, data science, engineering, information technology, and psychology.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://uap.asia/",
+      "riasecTags": [
+        "R",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "humanities",
+        "economics",
+        "management",
+        "data-science",
+        "engineering",
+        "information-technology",
+        "psychology"
+      ],
+      "popularCourses": [
+        "BA Humanities",
+        "BA Political Economy",
+        "BS Accountancy",
+        "BS Business Economics",
+        "BS Civil Engineering",
+        "BS Data Science",
+        "BS Information Technology",
+        "BS Psychology"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://uap.asia/programs/bachelors/"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "st-paul-university-manila",
+      "name": "St. Paul University Manila",
+      "type": "private",
+      "city": "Manila",
+      "lguId": "manila",
+      "region": "NCR",
+      "location": "680 Pedro Gil Street, Malate, Manila",
+      "description": "Private Catholic university offering nursing, communication, psychology, education, business, computing, hospitality, and music.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://spumanila.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S",
+        "C"
+      ],
+      "strengthTags": [
+        "nursing",
+        "communication",
+        "psychology",
+        "education",
+        "business",
+        "information-technology",
+        "hospitality",
+        "music"
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BA Communication",
+        "BS Psychology",
+        "Bachelor of Secondary Education",
+        "BS Business Administration",
+        "BS Computer Science",
+        "BS Hospitality Management",
+        "Bachelor of Music"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://spumanila.edu.ph/college/",
+        "https://spumanila.edu.ph/accreditations-and-quality-assurance/"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "bulacan-agricultural-state-college",
+      "name": "Bulacan Agricultural State College",
+      "type": "public",
+      "city": "San Ildefonso, Bulacan",
+      "lguId": "san-ildefonso-bulacan",
+      "region": "Central Luzon (Region III)",
+      "location": "Barangay Pinaod, San Ildefonso, Bulacan",
+      "description": "State agricultural college offering agriculture, veterinary medicine, engineering, food technology, information technology, business, hospitality, education, and development communication.",
+      "tuition": "Free tuition for eligible students under RA 10931",
+      "website": "https://basc.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "agriculture",
+        "veterinary-medicine",
+        "agricultural-engineering",
+        "geodetic-engineering",
+        "food-technology",
+        "information-technology",
+        "agribusiness",
+        "business-administration",
+        "hospitality-management",
+        "education",
+        "development-communication"
+      ],
+      "popularCourses": [
+        "Doctor of Veterinary Medicine",
+        "BS Agriculture",
+        "BS Agricultural and Biosystems Engineering",
+        "BS Geodetic Engineering",
+        "BS Food Technology",
+        "BS Information Technology",
+        "BS Agribusiness",
+        "BS Business Administration",
+        "BS Hospitality Management",
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education",
+        "BS Development Communication"
+      ],
+      "programSource": "official_website",
+      "status": "operational",
+      "conversionStatus": "RA 11783 authorizes conversion to Bulacan State Agricultural University; official implementation remains pending confirmation",
+      "legalConversionName": "Bulacan State Agricultural University",
+      "verificationSources": [
+        "https://basc.edu.ph/program-offerings/",
+        "https://basc.edu.ph/accreditation/",
+        "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95283"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "adventist-university-philippines",
+      "name": "Adventist University of the Philippines",
+      "type": "private",
+      "city": "Silang, Cavite",
+      "lguId": "silang-cavite",
+      "region": "Cavite",
+      "location": "Puting Kahoy, Silang, Cavite",
+      "description": "Private Adventist university offering arts, education, nursing, business, health sciences, dentistry, medicine, theology, and science and technology.",
+      "tuition": "See the official AY 2026-2027 program fee schedule",
+      "website": "https://www.aup.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medicine",
+        "dentistry",
+        "medical-laboratory-science",
+        "nutrition",
+        "business",
+        "information-technology",
+        "electronics-engineering",
+        "biology",
+        "psychology",
+        "music",
+        "education"
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "Doctor of Medicine",
+        "Doctor of Dental Medicine",
+        "BS Medical Laboratory Science",
+        "BS Nutrition and Dietetics",
+        "BS Accountancy",
+        "BS Information Technology",
+        "BS Electronics Engineering",
+        "BS Biology",
+        "BS Psychology",
+        "Bachelor of Music in Music Education",
+        "Bachelor of Secondary Education"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://www.aup.edu.ph/?page_id=7470",
+        "https://www.aup.edu.ph/?page_id=4560"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "centro-escolar-university-malolos",
+      "name": "Centro Escolar University - Malolos",
+      "type": "private",
+      "city": "Malolos City, Bulacan",
+      "lguId": "malolos-bulacan",
+      "region": "Bulacan",
+      "location": "Km. 44 MacArthur Highway, Malolos City, Bulacan",
+      "description": "CEU's Malolos campus offering health sciences, dentistry, pharmacy, nursing, communication, business, hospitality, tourism, computing, psychology, and education.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://www.ceu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S",
+        "C"
+      ],
+      "strengthTags": [
+        "dentistry",
+        "pharmacy",
+        "nursing",
+        "medical-technology",
+        "optometry",
+        "psychology",
+        "communication",
+        "accountancy",
+        "business",
+        "information-technology",
+        "hospitality",
+        "tourism"
+      ],
+      "popularCourses": [
+        "Doctor of Dental Medicine",
+        "BS Pharmacy",
+        "BS Nursing",
+        "BS Medical Technology",
+        "Doctor of Optometry",
+        "BS Psychology",
+        "BA Communication and Media",
+        "BS Accountancy",
+        "BS Business Administration",
+        "BS Information Technology",
+        "BS International Hospitality Management",
+        "BS International Tourism and Travel Management"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://www.ceu.edu.ph/academics/7"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "emilio-aguinaldo-college-cavite",
+      "name": "Emilio Aguinaldo College - Cavite",
+      "type": "private",
+      "city": "Dasmariñas City, Cavite",
+      "lguId": "dasmarinas-cavite",
+      "region": "Cavite",
+      "location": "Congressional East Avenue, Burol Main, Dasmariñas City, Cavite",
+      "description": "EAC's Cavite campus offering arts, business, criminology, dentistry, education, engineering, computing, hospitality, health sciences, nursing, and pharmacy.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://www.eac.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S",
+        "E"
+      ],
+      "strengthTags": [
+        "communication",
+        "psychology",
+        "business",
+        "accountancy",
+        "criminology",
+        "dentistry",
+        "computer-engineering",
+        "information-technology",
+        "hospitality",
+        "medical-technology",
+        "nursing",
+        "pharmacy"
+      ],
+      "popularCourses": [
+        "BA Communication",
+        "BS Psychology",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Criminology",
+        "Doctor of Dental Medicine",
+        "BS Computer Engineering",
+        "BS Information Technology",
+        "BS Hospitality Management",
+        "BS Medical Technology",
+        "BS Nursing",
+        "BS Pharmacy"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://www.eac.edu.ph/admsns_/"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "our-lady-fatima-antipolo",
+      "name": "Our Lady of Fatima University - Antipolo",
+      "type": "private",
+      "city": "Antipolo City, Rizal",
+      "lguId": "antipolo-rizal",
+      "region": "Rizal",
+      "location": "Antipolo City, Rizal",
+      "description": "OLFU's Antipolo campus offering nursing, pharmacy, medical laboratory science, physical therapy, psychology, business, accountancy, hospitality, tourism, computing, and education.",
+      "tuition": "AY 2026-2027 first-semester fees vary by program; verify the official schedule",
+      "website": "https://fatima.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S",
+        "C"
+      ],
+      "strengthTags": [
+        "nursing",
+        "pharmacy",
+        "medical-laboratory-science",
+        "physical-therapy",
+        "psychology",
+        "business",
+        "accountancy",
+        "hospitality",
+        "tourism",
+        "information-technology",
+        "education"
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Pharmacy",
+        "Bachelor in Medical Laboratory Science",
+        "BS Physical Therapy",
+        "BS Psychology",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Accounting Information System",
+        "BS International Hospitality Management",
+        "BS International Tourism Management",
+        "BS Information Technology",
+        "Bachelor of Elementary Education"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://fatima.edu.ph/college-undergraduate-programs-tuition-fees-antipolo-campus/",
+        "https://fatima.edu.ph/our-lady-of-fatima-university-antipolo"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "asian-institute-maritime-studies",
+      "name": "Asian Institute of Maritime Studies",
+      "type": "private",
+      "city": "Pasay City",
+      "lguId": "pasay",
+      "region": "NCR",
+      "location": "Roxas Boulevard corner Arnaiz Avenue, Pasay City",
+      "description": "Maritime higher education institution offering deck, engine, naval architecture, customs, and related programs.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://www.aims.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "A"
+      ],
+      "strengthTags": [
+        "marine-transportation",
+        "marine-engineering",
+        "naval-architecture-and-marine-engineering",
+        "customs-administration",
+        "maritime"
+      ],
+      "popularCourses": [
+        "BS Marine Transportation",
+        "BS Marine Engineering",
+        "BS Naval Architecture and Marine Engineering",
+        "BS Customs Administration",
+        "BS Business Administration",
+        "BS Computer Science"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://www.aims.edu.ph/",
+        "https://stcw.marina.gov.ph/wp-content/uploads/2016/02/List-of-Recognized-MHEIs-AY-2024-2025-as-of-Aug-2024.pdf"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "philippine-merchant-marine-school-las-pinas",
+      "name": "Philippine Merchant Marine School - Las Piñas",
+      "type": "private",
+      "city": "Las Piñas City",
+      "lguId": "las-pinas",
+      "region": "NCR",
+      "location": "San Antonio Valley Road, Las Piñas City",
+      "description": "CHED-MARINA accredited maritime school offering merchant marine and related degree programs.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://pmms.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "E"
+      ],
+      "strengthTags": [
+        "marine-transportation",
+        "marine-engineering",
+        "customs-administration",
+        "maritime"
+      ],
+      "popularCourses": [
+        "BS Marine Transportation",
+        "BS Marine Engineering",
+        "BS Customs Administration",
+        "BS Tourism Management",
+        "BS Hospitality Management",
+        "BS Entrepreneurship"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://pmms.edu.ph/",
+        "https://stcw.marina.gov.ph/wp-content/uploads/2016/02/List-of-Recognized-MHEIs-AY-2024-2025-as-of-Aug-2024.pdf"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "maritime-academy-asia-pacific",
+      "name": "Maritime Academy of Asia and the Pacific",
+      "type": "private",
+      "city": "Mariveles, Bataan",
+      "lguId": "mariveles-bataan",
+      "region": "Central Luzon",
+      "location": "Kamaya Point, Mariveles, Bataan",
+      "description": "Maritime academy offering scholarship-based deck, engine, and electro-technology programs for qualified cadets.",
+      "tuition": "Scholarship-based academy; verify current award and admission terms",
+      "website": "https://maap.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I"
+      ],
+      "strengthTags": [
+        "marine-transportation",
+        "marine-engineering",
+        "marine-electro-technology",
+        "maritime",
+        "maap"
+      ],
+      "popularCourses": [
+        "BS Marine Transportation",
+        "BS Marine Engineering",
+        "BS Marine Engineering and Electro-Technology"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://maap.edu.ph/Academics-Admission.html",
+        "https://stcw.marina.gov.ph/wp-content/uploads/2016/02/List-of-Recognized-MHEIs-AY-2024-2025-as-of-Aug-2024.pdf"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "pma-baguio",
+      "name": "Philippine Military Academy",
+      "shortName": "PMA",
+      "type": "public",
+      "region": "CAR",
+      "city": "Baguio City",
+      "province": "Benguet",
+      "website": "https://www.pma.edu.ph/",
+      "popularCourses": [
+        "Cadetship",
+        "Military science",
+        "Engineering track",
+        "Management"
+      ],
+      "programHighlights": [
+        "Commissioning pathway",
+        "Full scholarship cadetship"
+      ],
+      "riasecTags": [
+        "R",
+        "C",
+        "E"
+      ],
+      "strengthTags": [
+        "military academy",
+        "national defense"
+      ],
+      "lguId": "PH-BEN-BAGUIO",
+      "programSource": "official_website"
+    },
+    {
+      "id": "pnpa-laguna",
+      "name": "Philippine National Police Academy",
+      "shortName": "PNPA",
+      "type": "public",
+      "region": "CALABARZON",
+      "city": "Silang",
+      "province": "Cavite",
+      "website": "https://pnpa.edu.ph/",
+      "popularCourses": [
+        "Cadetship",
+        "Public safety",
+        "Law enforcement",
+        "Criminology foundation"
+      ],
+      "programHighlights": [
+        "PNP officer commissioning pathway"
+      ],
+      "riasecTags": [
+        "S",
+        "E"
+      ],
+      "strengthTags": [
+        "police academy",
+        "public safety"
+      ],
+      "lguId": "PH-CAV-SILANG",
+      "programSource": "official_website"
+    },
+    {
+      "id": "pcg-officer-path",
+      "name": "Philippine Coast Guard Officer Training Path",
+      "shortName": "PCG",
+      "type": "public",
+      "region": "NCR",
+      "city": "Manila",
+      "province": "Metro Manila",
+      "website": "https://coastguard.gov.ph/",
+      "popularCourses": [
+        "Coast Guard officer candidate",
+        "PCG training",
+        "Search and rescue",
+        "Marine safety operations"
+      ],
+      "programHighlights": [
+        "Coast Guard law enforcement career path"
+      ],
+      "riasecTags": [
+        "R",
+        "I"
+      ],
+      "strengthTags": [
+        "coast guard",
+        "maritime"
+      ],
+      "lguId": "PH-NCR-MNL",
       "programSource": "official_website"
     }
   ]

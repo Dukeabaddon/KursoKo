@@ -27,7 +27,6 @@ NAME_RULES: list[tuple[str, list[str]]] = [
     (r"engineer|stem|science|dost|tech", ["software-engineer", "mechanical-engineer"]),
     (r"business|entrepreneur|commerce|account", ["entrepreneur", "accountant"]),
     (r"law|legal|criminology|pnp|police", ["lawyer", "criminology-graduate"]),
-    (r"military|afp|army|navy|air force|pma|rotc", ["military-officer"]),
     (r"maritime|seafarer|marine", ["seafarer-deck-officer", "marine-engineer"]),
     (r"agri|farm|fisher", ["agricultural-technician", "food-technologist"]),
     (r"art|design|creative|media", ["graphic-designer", "multimedia-artist"]),

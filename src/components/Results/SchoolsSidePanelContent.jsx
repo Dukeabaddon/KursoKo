@@ -10,7 +10,9 @@ const BATCH_STEP = 25
 function SchoolsSidePanelContent({ responses, careerId }) {
   const { schools } = useMemo(() => {
     const profile = getPersonalityProfile(responses)
-    const matchedCareer = getCareerMatches(profile, 10).find((item) => item.id === careerId)
+    const matchedCareer = getCareerMatches(profile, null).find(
+      (item) => item.id === careerId,
+    )
     const matchedSchools = matchedCareer ? getUniversityMatchesForCareer(profile, matchedCareer, null) : []
 
     return { schools: matchedSchools }

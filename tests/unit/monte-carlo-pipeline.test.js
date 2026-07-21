@@ -3,7 +3,6 @@ import { getCareerMatches } from '../../src/utils/careerMatcher.js'
 import { getUniversityMatchesForCareer } from '../../src/utils/universityMatcher.js'
 import {
   getScholarshipMatchesForCareer,
-  inferUserLocationFromSchool,
 } from '../../src/utils/scholarshipMatcher.js'
 import { archetypeProfile, mulberry32, randomProfile, RIASEC } from './helpers.js'
 
@@ -19,8 +18,7 @@ describe('Monte Carlo recommendation pipeline', () => {
     const careers = getCareerMatches(profile, 5)
     const topCareer = careers[0]
     const schools = getUniversityMatchesForCareer(profile, topCareer, 3)
-    const location = inferUserLocationFromSchool(schools[0])
-    const funds = getScholarshipMatchesForCareer(profile, topCareer, schools, 5, location)
+    const funds = getScholarshipMatchesForCareer(profile, topCareer, schools, 5, null)
     return {
       careerIds: careers.map((c) => c.id),
       schoolIds: schools.map((s) => s.id),
@@ -54,6 +52,7 @@ describe('Monte Carlo recommendation pipeline', () => {
   it('Monte Carlo: career recommendations diversify across random profiles', () => {
     const rng = mulberry32(42)
     const topCareerCounts = new Map()
+    const topSchoolCounts = new Map()
     const schoolPairKeys = new Set()
     const scholarshipPairKeys = new Set()
     const careerSetKeys = new Set()
@@ -63,6 +62,8 @@ describe('Monte Carlo recommendation pipeline', () => {
       const result = runPipeline(profile)
 
       topCareerCounts.set(result.topCareerId, (topCareerCounts.get(result.topCareerId) ?? 0) + 1)
+      const topSchoolId = result.schoolIds[0]
+      topSchoolCounts.set(topSchoolId, (topSchoolCounts.get(topSchoolId) ?? 0) + 1)
       careerSetKeys.add(result.careerIds.slice().sort().join('|'))
       schoolPairKeys.add(result.schoolIds.slice().sort().join('|'))
       scholarshipPairKeys.add(result.scholarshipIds.slice().sort().join('|'))
@@ -77,13 +78,17 @@ describe('Monte Carlo recommendation pipeline', () => {
     // School top-3 sets vary
     expect(schoolPairKeys.size).toBeGreaterThanOrEqual(5)
 
-    // Scholarships may be less diverse (many empty careerTags + broad RIASEC)
-    // but must not be a single frozen list for all profiles
+    // Scholarships include a small broad-eligibility pool plus path-specific programs,
+    // but must not be a single frozen list for all profiles.
     expect(scholarshipPairKeys.size).toBeGreaterThanOrEqual(2)
 
     // No single career monopolizes >60% of random runs
     const maxShare = Math.max(...topCareerCounts.values()) / RUNS
     expect(maxShare).toBeLessThan(0.6)
+
+    // No school should dominate position one across representative profiles.
+    const maxSchoolShare = Math.max(...topSchoolCounts.values()) / RUNS
+    expect(maxSchoolShare).toBeLessThan(0.15)
   })
 
   it('Monte Carlo: same profile is deterministic', () => {
@@ -130,7 +135,6 @@ describe('Monte Carlo recommendation pipeline', () => {
       stats.byPrimaryTop[result.primary].add(result.topCareerId)
     }
 
-    // eslint-disable-next-line no-console
     console.log(
       '[monte-carlo]',
       JSON.stringify({

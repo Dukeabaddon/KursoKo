@@ -82,7 +82,20 @@ export function getArchetype(riasecCode) {
   return ARCHETYPES[riasecCode] ?? ARCHETYPES.R
 }
 
+const BUILDER_BLEND_SUMMARIES = {
+  I: 'Your Realistic and Investigative interests point to practical problem-solving. Engineering, repair, applied science, and technical work may fit this blend.',
+  A: 'Your Realistic and Artistic interests combine making with imagination. Design, architecture, culinary work, crafts, and creative production may fit this blend.',
+  S: 'Your Realistic and Social interests point to practical work that helps people directly. Hands-on healthcare, safety, maritime service, and skilled trades may fit this blend.',
+  E: 'Your Realistic and Enterprising interests combine action with leadership. Operations, construction, maritime work, technical sales, and business ownership may fit this blend.',
+  C: 'Your Realistic and Conventional interests favor reliable, structured work. Maintenance, logistics, quality control, technical operations, and skilled trades may fit this blend.',
+}
+
 export function getArchetypeForProfile(profile) {
   const code = profile?.primaryDimension?.code ?? 'R'
-  return getArchetype(code)
+  const archetype = getArchetype(code)
+  if (code !== 'R') return archetype
+
+  const secondaryCode = profile?.secondaryDimension?.code
+  const summary = BUILDER_BLEND_SUMMARIES[secondaryCode]
+  return summary ? { ...archetype, summary } : archetype
 }

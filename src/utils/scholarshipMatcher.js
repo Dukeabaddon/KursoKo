@@ -12,17 +12,34 @@ const scholarshipsByCareerId = ALL_SCHOLARSHIPS.reduce((index, scholarship) => {
 }, new Map())
 
 const universalScholarships = ALL_SCHOLARSHIPS.filter((item) => !(item.careerTags?.length > 0))
+const broadUndergraduateScholarships = ALL_SCHOLARSHIPS.filter(
+  (item) => item.courseScope === 'all-undergraduate',
+)
 
-function getScholarshipPool(career) {
+const INSTITUTION_ALIASES = {
+  'lyceum-batangas': ['lpu'],
+  'maritime-academy-asia-pacific': ['maap'],
+}
+
+function getScholarshipPool(career, schools) {
   if (!career?.id) return ALL_SCHOLARSHIPS
 
   const tagged = scholarshipsByCareerId.get(career.id) ?? []
-  if (tagged.length === 0) return ALL_SCHOLARSHIPS
+  const schoolList = Array.isArray(schools) ? schools : schools ? [schools] : []
+  const schoolTagSet = new Set(schoolList.flatMap((school) => getSchoolInstitutionTags(school)))
+  const institutionMatches = ALL_SCHOLARSHIPS.filter((scholarship) =>
+    (scholarship.institutionTags ?? []).some((tag) => schoolTagSet.has(tag)),
+  )
 
   const seen = new Set()
   const pool = []
 
-  for (const scholarship of [...tagged, ...universalScholarships]) {
+  for (const scholarship of [
+    ...tagged,
+    ...broadUndergraduateScholarships,
+    ...institutionMatches,
+    ...universalScholarships,
+  ]) {
     if (seen.has(scholarship.id)) continue
     seen.add(scholarship.id)
     pool.push(scholarship)
@@ -31,19 +48,12 @@ function getScholarshipPool(career) {
   return pool
 }
 
-const LEGACY_SCHOOL_TAGS = {
-  'pup-manila': ['pup', 'pup-system', 'public', 'business', 'technology'],
-  'ateneo-manila': ['ateneo', 'leadership', 'research', 'service'],
-  'feu-manila': ['feu', 'healthcare', 'business', 'arts'],
-  'dlsu-manila': ['dlsu', 'technology', 'business', 'research'],
-}
-
-function getSchoolInstitutionTags(school) {
+export function getSchoolInstitutionTags(school) {
   if (!school?.id) return []
-  const legacy = LEGACY_SCHOOL_TAGS[school.id] ?? []
   const slugPrefix = school.id.split('-')[0]
   const strength = (school.strengthTags ?? []).map((tag) => String(tag).toLowerCase())
-  return [...new Set([...legacy, slugPrefix, school.type, ...strength].filter(Boolean))]
+  const aliases = INSTITUTION_ALIASES[school.id] ?? []
+  return [...new Set([school.id, slugPrefix, school.type, ...aliases, ...strength].filter(Boolean))]
 }
 
 function getResidencyRule(scholarship) {
@@ -107,6 +117,7 @@ function scoreScholarship(scholarship, profile, career, schools, userLocation) {
     tagBreadth >= 6 ? 0.25 : tagBreadth >= 5 ? 0.55 : tagBreadth >= 4 ? 0.75 : 1
   score += Math.round(riasecScore * breadthFactor)
   if (career?.id && careerTags.includes(career.id)) score += 6
+  else if (scholarship.courseScope === 'all-undergraduate') score += 4
   else if (tagBreadth >= 6) score -= 2
   if (scholarshipLevels.some((level) => preferredLevels.includes(level))) score += 3
 
@@ -142,7 +153,7 @@ function compareScholarships(a, b) {
 }
 
 export function getScholarshipMatchesForCareer(profile, career, schools, limit = 5, userLocation = null) {
-  const ranked = getScholarshipPool(career)
+  const ranked = getScholarshipPool(career, schools)
     .filter((item) => passesResidencyFilter(item, userLocation))
     .map((item) => ({
       ...item,
@@ -157,14 +168,4 @@ export function getScholarshipMatchesForCareer(profile, career, schools, limit =
 
 export function getScholarshipsMetadata() {
   return scholarshipsData.metadata
-}
-
-export function inferUserLocationFromSchool(school) {
-  if (!school?.lguId) return null
-  return {
-    cityLguSlug: school.lguId,
-    cityLabel: school.city ?? school.location,
-    region: school.region ?? 'NCR',
-    source: 'inferred-from-school',
-  }
 }

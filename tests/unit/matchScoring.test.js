@@ -1,47 +1,43 @@
 import { describe, it, expect } from 'vitest'
 import {
-  cosineSimilarity,
+  profileCorrelation,
+  getProfileMatchDrivers,
   toFitPercent,
   getFitTierLabel,
-  hollandAlignmentBonus,
-  blendedCareerScore,
 } from '../../src/utils/matchScoring.js'
 
 describe('matchScoring', () => {
-  it('cosineSimilarity returns high value for aligned vectors', () => {
+  it('profileCorrelation returns 1 for the same RIASEC shape at different levels', () => {
     const scores = { R: 10, I: 40, A: 5, S: 5, E: 5, C: 5 }
-    const weights = { R: 0.1, I: 0.9, A: 0.1, S: 0.1, E: 0.1, C: 0.1 }
-    expect(cosineSimilarity(scores, weights)).toBeGreaterThan(0.98)
+    const weights = { R: 0.2, I: 0.8, A: 0.1, S: 0.1, E: 0.1, C: 0.1 }
+    expect(profileCorrelation(scores, weights)).toBeCloseTo(1, 10)
   })
 
-  it('toFitPercent maps 0–1 cosine to 0–100 alignment meter', () => {
+  it('toFitPercent maps positive correlation to a 0–100 alignment meter', () => {
     expect(toFitPercent(0)).toBe(0)
     expect(toFitPercent(1)).toBe(100)
     expect(toFitPercent(0.98)).toBe(98)
   })
 
-  it('getFitTierLabel maps rank index to student-friendly tiers', () => {
-    expect(getFitTierLabel(0)).toBe('Top match')
-    expect(getFitTierLabel(1)).toBe('Strong match')
-    expect(getFitTierLabel(3)).toBe('Good match')
+  it('getFitTierLabel maps correlation percentages to calibrated tiers', () => {
+    expect(getFitTierLabel(73)).toBe('Top match')
+    expect(getFitTierLabel(61)).toBe('Strong match')
+    expect(getFitTierLabel(43)).toBe('Good match')
+    expect(getFitTierLabel(42)).toBe('Explore match')
   })
 
-  it('hollandAlignmentBonus favors primary-primary match', () => {
-    const entrepreneur = { R: 0.35, I: 0.45, A: 0.4, S: 0.55, E: 0.95, C: 0.5 }
-    const seafarer = { R: 0.9, I: 0.65, A: 0.3, S: 0.45, E: 0.6, C: 0.55 }
-    const userTop2 = ['E', 'R']
-    expect(hollandAlignmentBonus(userTop2, entrepreneur)).toBeGreaterThan(
-      hollandAlignmentBonus(userTop2, seafarer)
-    )
+  it('returns high-interest drivers from the complete profile', () => {
+    const scores = { R: 29.7, I: 6, A: 0, S: 29.7, E: 33, C: 3 }
+    const enterprisingSocial = { R: 0.45, I: 0.45, A: 0.2, S: 0.7, E: 0.9, C: 0.5 }
+    expect(getProfileMatchDrivers(scores, enterprisingSocial)).toEqual(['E', 'S'])
   })
 
-  it('blendedCareerScore ranks entrepreneur above seafarer for E+R user', () => {
-    const scores = { R: 28, I: 12, A: 10, S: 14, E: 40, C: 18 }
-    const entrepreneur = { R: 0.35, I: 0.45, A: 0.4, S: 0.55, E: 0.95, C: 0.5 }
-    const seafarer = { R: 0.9, I: 0.65, A: 0.3, S: 0.45, E: 0.6, C: 0.55 }
-    const userTop2 = ['E', 'R']
-    expect(blendedCareerScore(scores, entrepreneur, userTop2)).toBeGreaterThan(
-      blendedCareerScore(scores, seafarer, userTop2)
+  it('changes continuously across a near-tie boundary', () => {
+    const enterprisingSocial = { R: 0.45, I: 0.45, A: 0.2, S: 0.7, E: 0.9, C: 0.5 }
+    const low = { R: 29.7, I: 6, A: 0, S: 29.69, E: 33, C: 3 }
+    const high = { ...low, S: 29.71 }
+    expect(Math.abs(profileCorrelation(high, enterprisingSocial) - profileCorrelation(low, enterprisingSocial))).toBeLessThan(
+      0.001,
     )
   })
 })

@@ -1,14 +1,14 @@
-import { Compass, Briefcase } from 'lucide-react'
+import { Compass } from 'lucide-react'
 import { resultsMeta, resultsSectionTitle, resultsSurface } from './resultsClasses'
 
-const CourseSection = ({ combination, courseRecommendations, topCareers }) => {
+const CourseSection = ({ patternLabel, courseRecommendations }) => {
   if (!courseRecommendations) return null
 
   const degrees = courseRecommendations.courses.slice(0, 4).map((c) => c.title)
-  const careers = topCareers.slice(0, 4).map((c) => c.title)
+  const combinations = courseRecommendations.combinations ?? []
   const whyText =
     courseRecommendations.description ??
-    `Programs aligned with your ${combination} interest pattern focus on skills you already lean toward.`
+    `Programs aligned with your ${patternLabel} interest pattern focus on skills you already lean toward.`
 
   return (
     <section className={`results-reveal ${resultsSurface}`} aria-labelledby="course-heading">
@@ -19,7 +19,8 @@ const CourseSection = ({ combination, courseRecommendations, topCareers }) => {
             Recommended college path
           </h2>
           <p className="mt-1 text-sm text-landing-muted normal-case">
-            Built for your top-2 combo: <span className="font-semibold text-landing-accent">{combination}</span>
+            Built for your strongest pattern{combinations.length > 1 ? 's' : ''}:{' '}
+            <span className="font-semibold text-landing-accent">{combinations.join(' + ')}</span>
           </p>
         </div>
       </div>
@@ -36,22 +37,6 @@ const CourseSection = ({ combination, courseRecommendations, topCareers }) => {
           <p className={`mb-1 ${resultsMeta} text-landing-teal`}>Why it fits you</p>
           <p className="text-sm leading-relaxed text-landing-ink normal-case sm:text-base">{whyText}</p>
         </div>
-
-        {careers.length > 0 && (
-          <div>
-            <p className={`mb-2 ${resultsMeta}`}>Careers to explore</p>
-            <ul className="flex flex-wrap gap-2">
-              {careers.map((career) => (
-                <li key={career}>
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-landing-ink/10 bg-white px-3 py-1.5 text-xs font-medium text-landing-ink">
-                    <Briefcase className="h-3.5 w-3.5 text-landing-lavender" aria-hidden="true" />
-                    {career}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
     </section>
   )

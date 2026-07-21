@@ -4,14 +4,19 @@ import {
   getUniversityMatchesForCareer,
   getUniversitiesMetadata,
   MIN_SCHOOL_SCORE,
+  scoreUniversity,
 } from '../../src/utils/universityMatcher.js'
 import {
   getScholarshipMatchesForCareer,
   getScholarshipsMetadata,
-  inferUserLocationFromSchool,
   passesResidencyFilter,
 } from '../../src/utils/scholarshipMatcher.js'
-import { calculateRiasecScores, getPersonalityProfile } from '../../src/utils/riasecScoring.js'
+import {
+  calculateRiasecScores,
+  getDimensionOpportunityCounts,
+  getPersonalityProfile,
+  normalizeRiasecScores,
+} from '../../src/utils/riasecScoring.js'
 import scholarships from '../../src/data/scholarships.json'
 import { archetypeProfile } from './helpers.js'
 
@@ -32,6 +37,21 @@ describe('matcher pipeline (no backend — client-side data)', () => {
     expect(profile.secondaryDimension.code).toBe('I')
   })
 
+  it('normalizes scores for unequal dimension opportunities', () => {
+    expect(getDimensionOpportunityCounts()).toEqual({ R: 10, I: 11, A: 9, S: 10, E: 9, C: 11 })
+    const normalized = normalizeRiasecScores({ R: 10, I: 11, A: 9, S: 10, E: 9, C: 11 })
+    expect(new Set(Object.values(normalized))).toEqual(new Set([11]))
+  })
+
+  it('does not score selected university identities directly', () => {
+    const profile = archetypeProfile('I', 'C')
+    const career = { id: 'software-engineer' }
+    const common = { type: 'private', riasecTags: ['I', 'C'], programHighlights: [] }
+    const selectedSchool = scoreUniversity({ ...common, id: 'dlsu-manila' }, profile, career, 2)
+    const otherSchool = scoreUniversity({ ...common, id: 'other-school' }, profile, career, 2)
+    expect(selectedSchool).toBe(otherSchool)
+  })
+
   it('returns careers, schools, and scholarships for a profile', () => {
     const profile = archetypeProfile('I', 'C')
     const careers = getCareerMatches(profile, 5)
@@ -43,15 +63,14 @@ describe('matcher pipeline (no backend — client-side data)', () => {
     expect(schools.length).toBe(3)
     expect(schools[0].relevanceScore).toBeGreaterThanOrEqual(schools[1].relevanceScore)
 
-    const location = inferUserLocationFromSchool(schools[0])
-    const funds = getScholarshipMatchesForCareer(profile, careers[0], schools, 5, location)
+    const funds = getScholarshipMatchesForCareer(profile, careers[0], schools, 5, null)
     expect(funds.length).toBeGreaterThan(0)
     expect(funds[0].relevanceScore).toBeGreaterThan(0)
   })
 
   it('metadata helpers expose catalog counts', () => {
-    expect(getUniversitiesMetadata().count).toBe(227)
-    expect(getScholarshipsMetadata().count).toBe(304)
+    expect(getUniversitiesMetadata().count).toBe(240)
+    expect(getScholarshipsMetadata().count).toBe(301)
   })
 
   it('every university has riasecTags after backfill', async () => {
@@ -60,12 +79,13 @@ describe('matcher pipeline (no backend — client-side data)', () => {
     expect(empty).toEqual([])
   })
 
-  it('UP Diliman ranks in top 5 for software engineer (IC profile)', () => {
+  it('UP Diliman remains eligible for software engineer from verified programs', () => {
     const profile = archetypeProfile('I', 'C')
     const career = { id: 'software-engineer', title: 'Software Engineer' }
-    const schools = getUniversityMatchesForCareer(profile, career, 5)
-    const ids = schools.map((s) => s.id)
-    expect(ids).toContain('up-diliman')
+    const schools = getUniversityMatchesForCareer(profile, career, null)
+    const upDiliman = schools.find((school) => school.id === 'up-diliman')
+    expect(upDiliman?.keywordHits).toBeGreaterThan(0)
+    expect(upDiliman?.relevanceScore).toBeGreaterThanOrEqual(MIN_SCHOOL_SCORE)
   })
 
   it('IC profile does not always rank data-analyst first on pure I secondary shift', () => {

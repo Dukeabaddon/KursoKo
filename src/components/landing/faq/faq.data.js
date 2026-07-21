@@ -40,7 +40,7 @@ export const FAQS = [
   {
     question: 'How does KursoKo rank career matches?',
     answer:
-      'After you finish the quiz, we compare your RIASEC pattern to each career’s interest profile. You’ll see a simple label—Top match, Strong match, or Good match—and a 0–100 bar that shows alignment (higher = closer fit). These are guides for exploring paths, not grades and not your chance of getting hired or admitted. Use them with school research, parents, or a counselor.',
+      'After you finish the quiz, we compare the shape of all six RIASEC scores to each career’s interest profile. Results must also be positively driven by your strongest interest area. You’ll see a simple label and a 0–100 alignment bar (higher = closer fit). These are exploration guides, not grades or your chance of getting hired or admitted. Use them with school research, parents, or a counselor.',
   },
 ]
 

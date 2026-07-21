@@ -2,10 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { ExternalLink } from 'lucide-react'
 import careersData from '../../data/careers.json'
 import { getPersonalityProfile } from '../../utils/riasecScoring'
-import {
-  getScholarshipMatchesForCareer,
-  inferUserLocationFromSchool,
-} from '../../utils/scholarshipMatcher'
+import { getScholarshipMatchesForCareer } from '../../utils/scholarshipMatcher'
 import { getUniversityMatchesForCareer } from '../../utils/universityMatcher'
 import { resultsMeta } from './resultsClasses'
 
@@ -56,8 +53,7 @@ function ScholarshipsSidePanelContent({ responses, careerId }) {
     if (!matchedCareer) return []
 
     const schools = getUniversityMatchesForCareer(profile, matchedCareer, 3)
-    const userLocation = inferUserLocationFromSchool(schools[0])
-    return getScholarshipMatchesForCareer(profile, matchedCareer, schools, null, userLocation)
+    return getScholarshipMatchesForCareer(profile, matchedCareer, schools, null, null)
   }, [responses, careerId])
 
   const [visibleCount, setVisibleCount] = useState(INITIAL_BATCH)

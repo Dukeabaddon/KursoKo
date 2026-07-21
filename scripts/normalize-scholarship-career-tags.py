@@ -134,10 +134,6 @@ FREEFORM_TO_CAREER: dict[str, str] = {
     "visual-merchandising": "sales-representative",
     "telecom-specialist": "software-engineer",
     "sanitation-specialist": "environmental-scientist",
-    "air-force-officer": "seafarer-deck-officer",
-    "army-officer": "seafarer-deck-officer",
-    "naval-officer": "seafarer-deck-officer",
-    "military-officer": "military-officer",
     "renewable-energy-specialist": "environmental-scientist",
     "technologist": "medical-technologist",
 }
@@ -217,7 +213,11 @@ def main() -> None:
                 if len(report["samples"]["dropped"]) < 15:
                     report["samples"]["dropped"].append({"scholarship": sch["id"], "tag": tag})
 
-        if not normalized and sch.get("riasecTags"):
+        if (
+            not normalized
+            and sch.get("courseScope") != "all-undergraduate"
+            and sch.get("riasecTags")
+        ):
             normalized = infer_career_tags(sch["riasecTags"], riasec_index)
             if normalized:
                 report["inferred_empty"] += 1

@@ -9,7 +9,7 @@ function prefersReducedMotion() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
-const RiasecBreakdown = ({ allDimensions, combination, primaryName, secondaryName }) => {
+const RiasecBreakdown = ({ allDimensions, combination, patternLabel }) => {
   const panelRef = useRef(null)
   const [animate, setAnimate] = useState(() => prefersReducedMotion())
 
@@ -91,9 +91,9 @@ const RiasecBreakdown = ({ allDimensions, combination, primaryName, secondaryNam
       <div className="results-riasec-summary mt-5 p-4 text-sm leading-relaxed text-landing-ink normal-case">
         <p className={`mb-1 ${resultsMeta} text-landing-accent`}>Your pattern</p>
         <p>
-          Top combo: <strong>{combination}</strong> ({primaryName} + {secondaryName}).
+          Top pattern: <strong>{patternLabel}</strong>.
         </p>
-        <p className="mt-1 text-landing-muted">Schools and scholarships below follow this mix.</p>
+        <p className="mt-1 text-landing-muted">Career matches compare the complete six-score RIASEC shape.</p>
       </div>
     </section>
   )

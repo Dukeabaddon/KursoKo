@@ -1,5 +1,14 @@
 import careersData from '../data/careers.json'
-import { blendedCareerScore, toFitPercent } from './matchScoring.js'
+import { careerAlignsWithPrimary, getProfileMatchDrivers, profileCorrelation, toFitPercent } from './matchScoring.js'
+
+const DIMENSION_NAMES = {
+  R: 'Realistic',
+  I: 'Investigative',
+  A: 'Artistic',
+  S: 'Social',
+  E: 'Enterprising',
+  C: 'Conventional',
+}
 
 const CAREER_NARRATIVES = {
   'software-engineer':
@@ -126,46 +135,56 @@ function compareCareers(a, b) {
   return (a.title ?? '').localeCompare(b.title ?? '')
 }
 
+function formatDimensionList(codes) {
+  const names = codes.map((code) => DIMENSION_NAMES[code] ?? code)
+  if (names.length <= 1) return names[0] ?? 'RIASEC'
+  if (names.length === 2) return `${names[0]} and ${names[1]}`
+  return `${names.slice(0, -1).join(', ')}, and ${names.at(-1)}`
+}
+
 /**
- * Rank careers by RIASEC cosine fit. matchPercent is a 0–100 alignment meter, not a probability.
+ * Rank careers by continuous RIASEC profile correlation.
+ * Keep only careers whose dominant Holland code matches the student's primary interest
+ * and where that primary positively drives the correlation (Careero-style gate).
  */
 export function getCareerMatches(profile, limit = 10) {
   const scores = profile.scores ?? {}
   const primaryCode = profile.primaryDimension?.code
-  const secondaryCode = profile.secondaryDimension?.code
-
-  const userTop2 = [primaryCode, secondaryCode].filter(Boolean)
 
   const ranked = careersData.careers
     .map((career) => {
-      const raw = blendedCareerScore(scores, career.riasecWeights, userTop2)
+      const raw = profileCorrelation(scores, career.riasecWeights)
       const matchPercent = toFitPercent(raw)
-      const reasons = []
-
-      if (primaryCode && (career.riasecWeights[primaryCode] ?? 0) >= 0.7) {
-        reasons.push(`Strong fit with your ${profile.primaryDimension.info.name} strength`)
-      }
-      if (secondaryCode && (career.riasecWeights[secondaryCode] ?? 0) >= 0.6) {
-        reasons.push(`Aligns with your ${profile.secondaryDimension.info.name} side`)
-      }
-      if (reasons.length === 0) {
-        reasons.push('Matches your overall interest pattern')
-      }
+      const matchDrivers = getProfileMatchDrivers(scores, career.riasecWeights)
+      const driverText = formatDimensionList(matchDrivers)
+      const reasons = matchDrivers.length
+        ? [`Your ${driverText} interests follow this career's RIASEC pattern`]
+        : ['Matches the overall shape of your six RIASEC scores']
 
       return {
         ...career,
+        riasecProvenance:
+          career.riasecProvenance ?? careersData.metadata.riasecProfileProvenance,
         matchPercent,
         fitScore: matchPercent,
         rawScore: raw,
         whyMatched: reasons,
+        matchDrivers,
         strengthsUsed: career.skills.slice(0, 2),
         narrative:
           CAREER_NARRATIVES[career.id] ??
-          `This path aligns with your ${profile.primaryDimension?.info?.name?.toLowerCase() ?? 'top'} strengths and rewards the kinds of tasks you naturally lean toward.`,
+          `This path follows your overall RIASEC interest pattern and rewards the kinds of tasks you naturally lean toward.`,
       }
     })
+    .filter((career) => careerAlignsWithPrimary(scores, career.riasecWeights, primaryCode))
+    .filter((career) => (career.rawScore ?? 0) > 0)
     .sort(compareCareers)
 
-  const sliced = limit == null ? ranked : ranked.slice(0, limit)
-  return sliced.map(({ rawScore: _raw, ...career }) => career)
+  const safeLimit = Number.isInteger(limit) ? Math.max(0, limit) : 10
+  const sliced = limit == null ? ranked : ranked.slice(0, safeLimit)
+  return sliced.map((career) => {
+    const publicCareer = { ...career }
+    Reflect.deleteProperty(publicCareer, 'rawScore')
+    return publicCareer
+  })
 }

@@ -1,0 +1,352 @@
+{
+  "metadata": {
+    "verifiedDate": "2026-07-17",
+    "rawPackage": "popularCourse.json",
+    "declaredInstitutionCount": 57,
+    "actualInstitutionCount": 40,
+    "declaredReadyCount": 35,
+    "actualIntegrateTagCount": 27,
+    "runtimeCoveredBefore": 35,
+    "additions": 5,
+    "updates": 1,
+    "targetVersion": "2.3.0",
+    "targetCount": 235,
+    "sourcePolicy": "Official institution or government sources only"
+  },
+  "coveredRuntimeIds": [
+    "up-diliman",
+    "up-manila",
+    "pup-manila",
+    "tup-manila",
+    "pnu",
+    "earist",
+    "rtu",
+    "dlsu-manila",
+    "ateneo-manila",
+    "ust",
+    "feu-manila",
+    "mapua-university",
+    "feu-institute-of-technology",
+    "tip-manila",
+    "adamson-university",
+    "nu-manila",
+    "san-beda-university",
+    "ue-manila",
+    "lpu-manila",
+    "plm",
+    "qcu",
+    "bulacan-state-university",
+    "baliuag-university",
+    "la-consolacion-university",
+    "cavite-state-university",
+    "dlsu-dasmarinas",
+    "lyceum-of-the-philippines-university-cavite",
+    "uplb",
+    "laguna-state-polytechnic-university",
+    "mcl",
+    "university-of-rizal-system",
+    "santisimo-rosario",
+    "don-honorio-ventura",
+    "hau",
+    "auf"
+  ],
+  "update": [
+    {
+      "id": "mcl",
+      "changes": {
+        "name": "Mapúa Malayan Colleges Laguna",
+        "city": "Cabuyao City, Laguna",
+        "lguId": "cabuyao-laguna",
+        "location": "Cabuyao City, Laguna",
+        "description": "Mapúa-affiliated college in Laguna offering engineering, architecture, computing, business, health science, arts, aviation, and maritime programs.",
+        "verificationSource": "https://mcl.edu.ph/",
+        "verificationDate": "2026-07-17",
+        "formerNames": [
+          "Malayan Colleges Laguna"
+        ]
+      }
+    }
+  ],
+  "add": [
+    {
+      "id": "bulacan-agricultural-state-college",
+      "name": "Bulacan Agricultural State College",
+      "type": "public",
+      "city": "San Ildefonso, Bulacan",
+      "lguId": "san-ildefonso-bulacan",
+      "region": "Central Luzon (Region III)",
+      "location": "Barangay Pinaod, San Ildefonso, Bulacan",
+      "description": "State agricultural college offering agriculture, veterinary medicine, engineering, food technology, information technology, business, hospitality, education, and development communication.",
+      "tuition": "Free tuition for eligible students under RA 10931",
+      "website": "https://basc.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "C"
+      ],
+      "strengthTags": [
+        "agriculture",
+        "veterinary-medicine",
+        "agricultural-engineering",
+        "geodetic-engineering",
+        "food-technology",
+        "information-technology",
+        "agribusiness",
+        "business-administration",
+        "hospitality-management",
+        "education",
+        "development-communication"
+      ],
+      "popularCourses": [
+        "Doctor of Veterinary Medicine",
+        "BS Agriculture",
+        "BS Agricultural and Biosystems Engineering",
+        "BS Geodetic Engineering",
+        "BS Food Technology",
+        "BS Information Technology",
+        "BS Agribusiness",
+        "BS Business Administration",
+        "BS Hospitality Management",
+        "Bachelor of Elementary Education",
+        "Bachelor of Secondary Education",
+        "BS Development Communication"
+      ],
+      "programSource": "official_website",
+      "status": "operational",
+      "conversionStatus": "RA 11783 authorizes conversion to Bulacan State Agricultural University; official implementation remains pending confirmation",
+      "legalConversionName": "Bulacan State Agricultural University",
+      "verificationSources": [
+        "https://basc.edu.ph/program-offerings/",
+        "https://basc.edu.ph/accreditation/",
+        "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95283"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "adventist-university-philippines",
+      "name": "Adventist University of the Philippines",
+      "type": "private",
+      "city": "Silang, Cavite",
+      "lguId": "silang-cavite",
+      "region": "Cavite",
+      "location": "Puting Kahoy, Silang, Cavite",
+      "description": "Private Adventist university offering arts, education, nursing, business, health sciences, dentistry, medicine, theology, and science and technology.",
+      "tuition": "See the official AY 2026-2027 program fee schedule",
+      "website": "https://www.aup.edu.ph/",
+      "riasecTags": [
+        "R",
+        "I",
+        "S"
+      ],
+      "strengthTags": [
+        "nursing",
+        "medicine",
+        "dentistry",
+        "medical-laboratory-science",
+        "nutrition",
+        "business",
+        "information-technology",
+        "electronics-engineering",
+        "biology",
+        "psychology",
+        "music",
+        "education"
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "Doctor of Medicine",
+        "Doctor of Dental Medicine",
+        "BS Medical Laboratory Science",
+        "BS Nutrition and Dietetics",
+        "BS Accountancy",
+        "BS Information Technology",
+        "BS Electronics Engineering",
+        "BS Biology",
+        "BS Psychology",
+        "Bachelor of Music in Music Education",
+        "Bachelor of Secondary Education"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://www.aup.edu.ph/?page_id=7470",
+        "https://www.aup.edu.ph/?page_id=4560"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "centro-escolar-university-malolos",
+      "name": "Centro Escolar University - Malolos",
+      "type": "private",
+      "city": "Malolos City, Bulacan",
+      "lguId": "malolos-bulacan",
+      "region": "Bulacan",
+      "location": "Km. 44 MacArthur Highway, Malolos City, Bulacan",
+      "description": "CEU's Malolos campus offering health sciences, dentistry, pharmacy, nursing, communication, business, hospitality, tourism, computing, psychology, and education.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://www.ceu.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S",
+        "C"
+      ],
+      "strengthTags": [
+        "dentistry",
+        "pharmacy",
+        "nursing",
+        "medical-technology",
+        "optometry",
+        "psychology",
+        "communication",
+        "accountancy",
+        "business",
+        "information-technology",
+        "hospitality",
+        "tourism"
+      ],
+      "popularCourses": [
+        "Doctor of Dental Medicine",
+        "BS Pharmacy",
+        "BS Nursing",
+        "BS Medical Technology",
+        "Doctor of Optometry",
+        "BS Psychology",
+        "BA Communication and Media",
+        "BS Accountancy",
+        "BS Business Administration",
+        "BS Information Technology",
+        "BS International Hospitality Management",
+        "BS International Tourism and Travel Management"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://www.ceu.edu.ph/academics/7"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "emilio-aguinaldo-college-cavite",
+      "name": "Emilio Aguinaldo College - Cavite",
+      "type": "private",
+      "city": "Dasmariñas City, Cavite",
+      "lguId": "dasmarinas-cavite",
+      "region": "Cavite",
+      "location": "Congressional East Avenue, Burol Main, Dasmariñas City, Cavite",
+      "description": "EAC's Cavite campus offering arts, business, criminology, dentistry, education, engineering, computing, hospitality, health sciences, nursing, and pharmacy.",
+      "tuition": "Contact the institution for current fees",
+      "website": "https://www.eac.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S",
+        "E"
+      ],
+      "strengthTags": [
+        "communication",
+        "psychology",
+        "business",
+        "accountancy",
+        "criminology",
+        "dentistry",
+        "computer-engineering",
+        "information-technology",
+        "hospitality",
+        "medical-technology",
+        "nursing",
+        "pharmacy"
+      ],
+      "popularCourses": [
+        "BA Communication",
+        "BS Psychology",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Criminology",
+        "Doctor of Dental Medicine",
+        "BS Computer Engineering",
+        "BS Information Technology",
+        "BS Hospitality Management",
+        "BS Medical Technology",
+        "BS Nursing",
+        "BS Pharmacy"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://www.eac.edu.ph/admsns_/"
+      ],
+      "verificationDate": "2026-07-17"
+    },
+    {
+      "id": "our-lady-fatima-antipolo",
+      "name": "Our Lady of Fatima University - Antipolo",
+      "type": "private",
+      "city": "Antipolo City, Rizal",
+      "lguId": "antipolo-rizal",
+      "region": "Rizal",
+      "location": "Antipolo City, Rizal",
+      "description": "OLFU's Antipolo campus offering nursing, pharmacy, medical laboratory science, physical therapy, psychology, business, accountancy, hospitality, tourism, computing, and education.",
+      "tuition": "AY 2026-2027 first-semester fees vary by program; verify the official schedule",
+      "website": "https://fatima.edu.ph/",
+      "riasecTags": [
+        "I",
+        "S",
+        "C"
+      ],
+      "strengthTags": [
+        "nursing",
+        "pharmacy",
+        "medical-laboratory-science",
+        "physical-therapy",
+        "psychology",
+        "business",
+        "accountancy",
+        "hospitality",
+        "tourism",
+        "information-technology",
+        "education"
+      ],
+      "popularCourses": [
+        "BS Nursing",
+        "BS Pharmacy",
+        "Bachelor in Medical Laboratory Science",
+        "BS Physical Therapy",
+        "BS Psychology",
+        "BS Business Administration",
+        "BS Accountancy",
+        "BS Accounting Information System",
+        "BS International Hospitality Management",
+        "BS International Tourism Management",
+        "BS Information Technology",
+        "Bachelor of Elementary Education"
+      ],
+      "programSource": "official_website",
+      "verificationSources": [
+        "https://fatima.edu.ph/college-undergraduate-programs-tuition-fees-antipolo-campus/",
+        "https://fatima.edu.ph/our-lady-of-fatima-university-antipolo"
+      ],
+      "verificationDate": "2026-07-17"
+    }
+  ],
+  "rejectedForRuntime": [
+    {
+      "section": "careerMatchingMatrix",
+      "reason": "Hard-coded institution recommendations would restore identity-based ranking bias. Runtime matching remains program- and RIASEC-based."
+    },
+    {
+      "section": "famousFor and qualityDesignations",
+      "reason": "Subjective reputation labels do not fit the evidence-backed runtime schema."
+    },
+    {
+      "section": "boardExamHighlights and rankings",
+      "reason": "Time-sensitive performance claims require primary-result URLs, cohort normalization, and an expiry policy before they can influence recommendations."
+    }
+  ],
+  "correctedClaims": [
+    {
+      "claim": "Bulacan Agricultural State University is the implemented current name",
+      "decision": "Keep current official operational branding as Bulacan Agricultural State College. Record RA 11783 conversion status until CHED compliance is confirmed.",
+      "sources": [
+        "https://basc.edu.ph/",
+        "https://basc.edu.ph/wp-content/uploads/2025/10/BASC-ANNUAL-REPORT-2024.pdf",
+        "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/95283"
+      ]
+    }
+  ]
+}

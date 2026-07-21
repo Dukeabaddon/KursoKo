@@ -148,6 +148,10 @@ REMOVE_RUNTIME_IDS = {
 
 # Scholarship soft-dups / branding overlaps (sch agent)
 SKIP_SCHOLARSHIP_IDS = {
+    "sch-gov-099",
+    "sch-gov-100",
+    "sch-gov-101",
+    "sch-gov-pma-cadetship",
     "sch-lgu-qcydo-acad",
     "sch-lgu-qcydo-athlete",
     "sch-lgu-qcydo-pwd",

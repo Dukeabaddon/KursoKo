@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Narrow over-broad riasecTags (5+) on universities using scored program signals.
 
-Uses strengthTags, popularCourses, and description via university_riasec_derive.narrow_riasec_tags.
-Flagship overrides are capped at 4. Schools with >=5 tags are re-scored; others unchanged unless --all.
+Uses strengthTags and popularCourses via university_riasec_derive.narrow_riasec_tags.
+Schools with >=5 tags are re-scored; --all recalculates the complete catalog.
 
 Usage:
   python3 scripts/audit-university-riasec-tags.py --dry-run
@@ -17,7 +17,7 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
-from university_riasec_derive import FLAGSHIP_OVERRIDES, narrow_riasec_tags
+from university_riasec_derive import narrow_riasec_tags
 
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME = ROOT / "src/data/universities.json"
@@ -53,7 +53,6 @@ def main() -> None:
                     "after": new,
                     "strengthCount": len(uni.get("strengthTags") or []),
                     "courseCount": len(uni.get("popularCourses") or []),
-                    "flagship": uni["id"] in FLAGSHIP_OVERRIDES,
                 }
             )
             if not args.dry_run:

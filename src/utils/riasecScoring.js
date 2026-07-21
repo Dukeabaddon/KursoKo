@@ -3,6 +3,31 @@
  * Calculates personality dimension scores from questionnaire responses
  */
 
+import questionsData from '../data/questions.json'
+
+const RIASEC_ORDER = ['R', 'I', 'A', 'S', 'E', 'C']
+const SCORE_TIE_EPSILON = 0.01
+
+const DIMENSION_OPPORTUNITIES = questionsData.questions.reduce(
+  (counts, question) => {
+    counts[question.optionA.code] += 1
+    counts[question.optionB.code] += 1
+    return counts
+  },
+  { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 }
+)
+
+const MAX_DIMENSION_OPPORTUNITIES = Math.max(...Object.values(DIMENSION_OPPORTUNITIES))
+
+export const getDimensionOpportunityCounts = () => ({ ...DIMENSION_OPPORTUNITIES })
+
+export const normalizeRiasecScores = (scores) => Object.fromEntries(
+  Object.entries(scores).map(([code, score]) => [
+    code,
+    Number(((score * MAX_DIMENSION_OPPORTUNITIES) / DIMENSION_OPPORTUNITIES[code]).toFixed(2)),
+  ])
+)
+
 export const calculateRiasecScores = (responses) => {
   // Initialize scores for all 6 RIASEC dimensions
   const scores = {
@@ -28,11 +53,44 @@ export const calculateRiasecScores = (responses) => {
 }
 
 export const getTopDimensions = (scores, count = 2) => {
-  // Sort dimensions by score (descending) and return top N
-  return Object.entries(scores)
-    .sort(([,a], [,b]) => b - a)
+  return RIASEC_ORDER.map((code, order) => ({ code, score: scores[code] ?? 0, order }))
+    .sort((a, b) => b.score - a.score || a.order - b.order)
     .slice(0, count)
-    .map(([code, score]) => ({ code, score }))
+    .map(({ code, score }) => ({ code, score }))
+}
+
+export const getDimensionPattern = (scores) => {
+  const ranked = getTopDimensions(scores, RIASEC_ORDER.length)
+  const primary = ranked[0]
+  if (!primary) return { label: '', combinationCandidates: [] }
+
+  const primaryTies = ranked.filter(
+    (row) => Math.abs(row.score - primary.score) <= SCORE_TIE_EPSILON,
+  )
+  if (primaryTies.length > 1) {
+    const codes = primaryTies.map((row) => row.code)
+    return {
+      label: `${codes.join('/')} tie`,
+      combinationCandidates: [codes.slice(0, 2).join('')],
+    }
+  }
+
+  const secondary = ranked[1]
+  if (!secondary) return { label: primary.code, combinationCandidates: [primary.code] }
+  const secondaryTies = ranked.filter(
+    (row) =>
+      row.code !== primary.code &&
+      Math.abs(row.score - secondary.score) <= SCORE_TIE_EPSILON,
+  )
+  const secondaryCodes = secondaryTies.map((row) => row.code)
+
+  return {
+    label:
+      secondaryCodes.length > 1
+        ? `${primary.code} + ${secondaryCodes.join('/')} tie`
+        : `${primary.code}${secondary.code}`,
+    combinationCandidates: secondaryCodes.map((code) => `${primary.code}${code}`),
+  }
 }
 
 export const getDimensionCombination = (topDimensions) => {
@@ -85,15 +143,20 @@ export const getDimensionInfo = () => {
 }
 
 export const getPersonalityProfile = (responses) => {
-  const scores = calculateRiasecScores(responses)
+  const rawScores = calculateRiasecScores(responses)
+  const scores = normalizeRiasecScores(rawScores)
   const topDimensions = getTopDimensions(scores, 2)
   const combination = getDimensionCombination(topDimensions)
+  const { label: patternLabel, combinationCandidates } = getDimensionPattern(scores)
   const dimensionInfo = getDimensionInfo()
   
   return {
     scores,
+    rawScores,
     topDimensions,
     combination,
+    patternLabel,
+    combinationCandidates,
     primaryDimension: {
       code: topDimensions[0]?.code,
       score: topDimensions[0]?.score,

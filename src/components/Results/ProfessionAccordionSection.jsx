@@ -6,7 +6,7 @@ import SchoolMatchCard from './SchoolMatchCard'
 import { getFitTierLabel } from '../../utils/matchScoring'
 
 const FIT_SCORE_HELP =
-  'Each career gets a simple match level—Top, Strong, or Good—and a 0–100 bar for how closely your quiz answers fit that path. Higher bar = better alignment. This is for exploring options, not your chance of getting hired or admitted.'
+  'Each career gets a match level and a 0–100 bar based on the correlation between your complete six-score RIASEC pattern and the career pattern. Higher bar = closer interest alignment, not your chance of getting hired or admitted.'
 
 function FitScoreSectionHelp() {
   const [open, setOpen] = useState(false)
@@ -156,7 +156,7 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
               <div className="results-career-card-metrics w-full shrink-0 sm:w-[180px]">
                 <AffinityBar
                   label={career.title}
-                  tierLabel={getFitTierLabel(index)}
+                  tierLabel={getFitTierLabel(career.matchPercent)}
                   percent={career.matchPercent}
                 />
               </div>
@@ -235,6 +235,15 @@ const ProfessionAccordionSection = ({ careerCards, onSeeAllSchools, onSeeAllScho
                             </li>
                           ))}
                         </ul>
+                      ) : null}
+                      {career.specialEligibility ? (
+                        <div className="mt-3 rounded-xl border border-amber-600/20 bg-amber-50 px-3 py-2 text-xs leading-relaxed text-amber-800 normal-case">
+                          <p className="font-semibold">Special eligibility applies</p>
+                          <p className="mt-1">{career.specialEligibility.summary}</p>
+                          <p className="mt-1 text-amber-700">
+                            RIASEC profile confidence: {career.riasecProvenance?.confidence ?? 'unverified'}.
+                          </p>
+                        </div>
                       ) : null}
                     </div>
 

@@ -1,43 +1,6 @@
 import universitiesData from '../data/universities.json'
 import schoolInsightsData from '../data/schoolInsights.json'
 
-const LEGACY_SCHOOL_TAGS = {
-  'pup-manila': ['pup', 'pup-system', 'public', 'business', 'technology'],
-  'pup-quezon-city': ['pup', 'pup-system', 'public', 'engineering', 'technology'],
-  'pup-paranaque': ['pup', 'pup-system', 'public', 'business'],
-  'pup-san-juan': ['pup', 'pup-system', 'public', 'technology'],
-  'pup-tagui': ['pup', 'pup-system', 'public', 'entrepreneurship'],
-  'ateneo-manila': ['ateneo', 'leadership', 'research', 'service'],
-  'feu-manila': ['feu', 'healthcare', 'business', 'arts'],
-  'dlsu-manila': ['dlsu', 'technology', 'business', 'research'],
-  'up-diliman': ['up', 'up-system', 'public', 'research', 'engineering', 'technology'],
-  'up-manila': ['up', 'up-system', 'public', 'medicine', 'health', 'research'],
-  uplb: ['up', 'up-system', 'public', 'agriculture', 'research'],
-  plm: ['plm', 'public', 'law', 'medicine', 'engineering'],
-  ust: ['ust', 'health', 'medicine', 'research'],
-}
-
-/** National / flagship SUC bonus — not a ranking claim, surfaces well-known options. */
-const PRESTIGE_TIER_BONUS = new Map([
-  ['up-diliman', 3],
-  ['up-manila', 3],
-  ['uplb', 3],
-  ['pup-manila', 2],
-  ['plm', 2],
-  ['ateneo-manila', 2],
-  ['dlsu-manila', 2],
-  ['ust', 2],
-  ['feu-manila', 1],
-])
-
-function getLegacySchoolTags(university) {
-  return LEGACY_SCHOOL_TAGS[university.id] ?? []
-}
-
-function getPrestigeBonus(university) {
-  return PRESTIGE_TIER_BONUS.get(university.id) ?? 0
-}
-
 const CAREER_KEYWORDS = {
   'software-engineer': ['computer science', 'information technology', 'technology', 'programming'],
   'mechanical-engineer': ['engineering', 'mechanical', 'technology'],
@@ -63,7 +26,7 @@ const CAREER_KEYWORDS = {
   welder: ['welding', 'metal fabrication', 'industrial technology', 'tesda', 'engineering technology'],
   'automotive-technician': ['automotive', 'automotive servicing', 'industrial technology', 'tesda', 'mechanical'],
   'hvac-technician': ['hvac', 'refrigeration', 'air conditioning', 'mechanical technology', 'tesda', 'rac servicing'],
-  'seafarer-deck-officer': ['marine transportation', 'maritime', 'nautical', 'seafaring', 'deck officer'],
+  'seafarer-deck-officer': ['marine transportation', 'maritime', 'nautical science', 'nautical studies', 'seafaring', 'deck officer'],
   'agricultural-technician': ['agriculture', 'agribusiness', 'agricultural technology', 'crop production', 'farming', 'food technology'],
   'aircraft-maintenance-technician': ['aircraft maintenance', 'aviation', 'aeronautical engineering', 'airframe', 'avionics'],
   'medical-technologist': ['medical technology', 'medical laboratory science', 'laboratory', 'diagnostics', 'health sciences'],
@@ -85,7 +48,6 @@ const CAREER_KEYWORDS = {
   'speech-language-pathologist': ['speech language pathology', 'rehabilitation sciences', 'special education', 'psychology', 'health sciences'],
   'nutritionist-dietitian': ['nutrition and dietetics', 'food technology', 'public health', 'health sciences', 'home economics'],
   'criminology-graduate': ['criminology', 'public safety', 'law enforcement', 'forensic science', 'security management'],
-  'military-officer': ['military science', 'security studies', 'national security', 'officer training', 'leadership', 'military', 'service academy'],
   'sales-representative': ['business administration', 'marketing', 'entrepreneurship', 'sales', 'communication'],
   'business-development-manager': ['business administration', 'marketing', 'economics', 'management', 'entrepreneurship', 'business analytics'],
   'real-estate-broker': ['real estate', 'business administration', 'marketing', 'property management', 'finance'],
@@ -98,11 +60,48 @@ const CAREER_KEYWORDS = {
   'quality-assurance-analyst': ['information technology', 'computer science', 'industrial engineering', 'quality assurance', 'software testing'],
   'customs-broker': ['customs administration', 'international trade', 'business administration', 'logistics', 'supply chain'],
   'administrative-assistant': ['office administration', 'business administration', 'computer systems', 'secretarial', 'administrative', 'information technology'],
+  'military-officer': ['criminology', 'public safety', 'management', 'engineering', 'military science', 'national defense'],
+  'pma-cadet': ['philippine military academy', 'military science', 'engineering', 'management', 'public safety'],
+  'pnpa-cadet': ['philippine national police academy', 'criminology', 'public safety', 'law enforcement'],
+  'coast-guard-officer': ['maritime', 'marine transportation', 'naval', 'coast guard', 'public safety'],
+  'enlisted-service-member': ['criminology', 'industrial technology', 'tesda', 'public safety', 'technical'],
+  'firefighter': ['criminology', 'public safety', 'fire technology', 'emergency management'],
+  'electrical-engineer': ['electrical engineering', 'engineering', 'power systems'],
+  'electronics-engineer': ['electronics engineering', 'ece', 'telecommunications', 'engineering'],
+  'network-administrator': ['information technology', 'computer science', 'network', 'cybersecurity'],
+  'mobile-app-developer': ['computer science', 'information technology', 'mobile development', 'software'],
+  'digital-marketer': ['marketing', 'communication', 'advertising', 'business'],
+  'animator': ['multimedia arts', 'animation', 'digital arts', 'fine arts'],
+  'radiologic-technologist': ['radiologic technology', 'medical imaging', 'health sciences'],
+  'occupational-therapist': ['occupational therapy', 'rehabilitation sciences', 'health sciences'],
+  'chemist': ['chemistry', 'biochemistry', 'science'],
+  'statistician': ['statistics', 'mathematics', 'data science', 'applied math'],
+  'civil-service-analyst': ['public administration', 'political science', 'management'],
+  'product-manager': ['business administration', 'information technology', 'management'],
+  'event-planner': ['hospitality management', 'tourism', 'business administration'],
+  'fashion-designer': ['fashion design', 'fashion', 'fine arts', 'merchandising', 'apparel'],
+  'musician-teacher': ['music', 'music education', 'performing arts'],
+  'tour-guide': ['tourism', 'hospitality management', 'communication'],
+  'call-center-team-lead': ['business administration', 'communication', 'management'],
+  'pharmacist-assistant': ['pharmacy', 'health sciences', 'tesda'],
+  'accountant-auditor': ['accountancy', 'management accounting', 'finance'],
+  'teacher-shs-stem': ['education', 'secondary education', 'mathematics', 'science'],
+  'veterinary-technologist': ['veterinary', 'animal science', 'agriculture'],
+  'architect-interior-tech': ['architecture', 'interior design', 'drafting'],
+  'lawyer-paralegal': ['legal management', 'political science', 'law'],
+  'librarian': ['library', 'library and information', 'information science', 'lis'],
 }
 
 const insightIndex = new Map(
   schoolInsightsData.insights.map((row) => [`${row.institutionId}:${row.careerId}`, row])
 )
+
+/** Specialty schools that should only appear for selected careers. */
+const SCHOOL_CAREER_ALLOWLIST = {
+  'pma-baguio': new Set(['military-officer', 'pma-cadet', 'enlisted-service-member']),
+  'pnpa-laguna': new Set(['pnpa-cadet', 'criminology-graduate', 'firefighter']),
+  'pcg-officer-path': new Set(['coast-guard-officer', 'seafarer-deck-officer', 'marine-engineer']),
+}
 
 /** Minimum relevance score to appear in school recommendations. */
 export const MIN_SCHOOL_SCORE = 8
@@ -136,8 +135,6 @@ function getProgramHaystack(university) {
   return [
     ...(university.popularCourses ?? []),
     ...(university.programHighlights ?? []),
-    ...getLegacySchoolTags(university),
-    university.description ?? '',
   ]
     .join(' ')
     .toLowerCase()
@@ -163,9 +160,6 @@ function buildMatchSignals(university, profile, career, keywordHits) {
   }
   if (keywordHits > 0) {
     signals.push(`${keywordHits} program keyword${keywordHits > 1 ? 's' : ''}`)
-  }
-  if (getPrestigeBonus(university) > 0) {
-    signals.push('Flagship option')
   }
   return signals
 }
@@ -197,45 +191,27 @@ function haystackIncludesKeyword(haystack, keyword) {
   return haystack.includes(normalized)
 }
 
-function scoreUniversity(university, profile, career) {
+export function scoreUniversity(university, profile, career, keywordHits) {
   let score = 0
   const primary = profile.primaryDimension?.code
   const secondary = profile.secondaryDimension?.code
   const tags = university.riasecTags ?? []
-  const programHaystack = getProgramHaystack(university)
-  const keywords = CAREER_KEYWORDS[career?.id] ?? []
 
   if (primary && tags.includes(primary)) score += 4
   if (secondary && tags.includes(secondary)) score += 3
   if (university.type === 'public') score += 1
-  score += getPrestigeBonus(university)
-  let keywordHits = 0
-  keywords.forEach((keyword) => {
-    if (haystackIncludesKeyword(programHaystack, keyword)) {
-      score += 2
-      keywordHits += 1
-    }
-  })
-  if (career?.id === 'software-engineer' && university.id === 'dlsu-manila') score += 2
-  if (career?.id === 'software-engineer' && university.id === 'ateneo-manila') score += 1
-  if (career?.id === 'software-engineer' && university.id === 'up-diliman') score += 2
-  if (career?.id === 'graphic-designer' && university.id === 'feu-manila') score += 2
-  if (career?.id === 'entrepreneur' && university.id === 'ateneo-manila') score += 2
-  if (career?.id === 'accountant' && university.id === 'pup-manila') score += 2
-  if (career?.id === 'nurse' && university.id === 'feu-manila') score += 3
-  if (career?.id === 'data-analyst' && university.id === 'pup-manila') score += 2
-  if (career?.id === 'lawyer' && (university.id === 'ateneo-manila' || university.id === 'plm')) score += 2
-  if (career?.id === 'criminology-graduate' && university.id === 'bestlink') score += 4
-  if (career?.id === 'criminology-graduate' && university.id === 'plm') score += 2
-  if (career?.id === 'criminology-graduate' && university.id === 'plmun') score += 3
-  if (career?.id === 'dentist' && university.id === 'nu-moa') score += 5
-  if (career?.id === 'dentist' && university.id === 'ceu') score += 4
-  if (career?.id === 'dentist' && university.id === 'ue-manila') score += 4
-  if (career?.id === 'dentist' && university.id === 'nu-manila') score += 3
-  if (career?.id === 'dentist' && university.id === 'dlsu-dasmarinas') score += 2
-  if (career?.id === 'military-officer' && university.id === 'philippine-military-academy') score += 6
-
+  if (keywordHits > 0) {
+    score += 8 + Math.min(keywordHits - 1, 2)
+  }
   if ((university.programHighlights?.length ?? 0) > 0 && keywordHits > 0) score += 1
+
+  // Specialty campus boost from strengthTags overlapping career keywords.
+  const strengths = (university.strengthTags ?? []).map((s) => s.toLowerCase().replace(/-/g, ' '))
+  const keywords = (CAREER_KEYWORDS[career?.id] ?? []).map((k) => k.toLowerCase())
+  if (strengths.length && keywords.length) {
+    const strengthHits = keywords.filter((k) => strengths.some((s) => s.includes(k) || k.includes(s))).length
+    if (strengthHits > 0) score += 3 + Math.min(strengthHits - 1, 2)
+  }
 
   const tagBreadth = tags.length
   if (keywordHits === 0) {
@@ -273,17 +249,22 @@ function resolveSchoolInsight(university, career) {
 
 function compareUniversities(a, b) {
   if (b.relevanceScore !== a.relevanceScore) return b.relevanceScore - a.relevanceScore
-  const prestigeDiff = getPrestigeBonus(b) - getPrestigeBonus(a)
-  if (prestigeDiff !== 0) return prestigeDiff
+  if (b.keywordHits !== a.keywordHits) return b.keywordHits - a.keywordHits
   return (a.name ?? '').localeCompare(b.name ?? '')
 }
 
 export function getUniversityMatchesForCareer(profile, career, limit = 3) {
+  const careerId = career?.id
   const ranked = dedupeCampuses(
     universitiesData.universities
+      .filter((uni) => {
+        const allowed = SCHOOL_CAREER_ALLOWLIST[uni.id]
+        if (!allowed) return true
+        return careerId ? allowed.has(careerId) : false
+      })
       .map((uni) => {
-        const relevanceScore = scoreUniversity(uni, profile, career)
         const keywordHits = countKeywordHits(uni, career)
+        const relevanceScore = scoreUniversity(uni, profile, career, keywordHits)
         const match = matchLabel(relevanceScore)
         const insightData = resolveSchoolInsight(uni, career)
         return {
@@ -302,8 +283,41 @@ export function getUniversityMatchesForCareer(profile, career, limit = 3) {
       .sort(compareUniversities)
   )
 
-  if (limit == null) return ranked
-  return ranked.slice(0, limit)
+  // If a new career has keywords that no campus lists yet, fall back to strong RIASEC campus fits.
+  const withFallback =
+    ranked.length > 0
+      ? ranked
+      : dedupeCampuses(
+          universitiesData.universities
+            .filter((uni) => !SCHOOL_CAREER_ALLOWLIST[uni.id])
+            .map((uni) => {
+              const keywordHits = 0
+              const relevanceScore = scoreUniversity(uni, profile, career, keywordHits)
+              const match = matchLabel(relevanceScore)
+              const insightData = resolveSchoolInsight(uni, career)
+              return {
+                ...uni,
+                relevanceScore,
+                keywordHits,
+                matchSignals: buildMatchSignals(uni, profile, career, keywordHits),
+                matchLabel: match.label,
+                matchTone: match.tone,
+                insightHeadline: insightData.headline,
+                insight: insightData.body,
+                insightSource: insightData.source,
+              }
+            })
+            .filter((uni) => {
+              if (uni.relevanceScore < MIN_SCHOOL_SCORE) return false
+              const primary = profile.primaryDimension?.code
+              const tags = uni.riasecTags ?? []
+              return Boolean(primary && tags.includes(primary)) || uni.relevanceScore >= 10
+            })
+            .sort(compareUniversities),
+        )
+
+  if (limit == null) return withFallback
+  return withFallback.slice(0, limit)
 }
 
 export function getUniversitiesMetadata() {
