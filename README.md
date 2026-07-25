@@ -94,7 +94,6 @@ src/
   data/            # JSON (careers, scholarships, universities)
   styles/          # CSS by area
   utils/           # Scoring, validation, session
-tests/e2e/         # Playwright specs
 ```
 
 ---
@@ -136,7 +135,7 @@ Local check before you PR:
 
 ```bash
 npm install
-npm run test:unit
+npm run test:unit   # Vitest
 npm run build
 ```
 
