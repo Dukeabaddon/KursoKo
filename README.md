@@ -18,24 +18,23 @@
 </div>
 
 <p align="center">
-  <a href="https://kurso-ko.vercel.app"><img src="https://img.shields.io/badge/status-live-brightgreen?style=flat-square" alt="Status: live"></a>&nbsp;
+  <a href="https://kurso-ko.vercel.app"><img src="https://img.shields.io/badge/demo-live-brightgreen?style=flat-square" alt="Demo live"></a>&nbsp;
   <img src="https://img.shields.io/badge/stack-React%2019%20%7C%20Vite%207%20%7C%20Tailwind%204-6E4FB8?style=flat-square" alt="Stack">&nbsp;
-  <img src="https://img.shields.io/badge/backend-none%20(MVP)-lightgrey?style=flat-square" alt="No backend">&nbsp;
-  <img src="https://img.shields.io/badge/repo-private-lightgrey?style=flat-square" alt="Private repo">
+  <a href="https://github.com/Dukeabaddon/KursoKo/stargazers"><img src="https://img.shields.io/github/stars/Dukeabaddon/KursoKo?style=flat-square&logo=github" alt="GitHub Stars"></a>
 </p>
 
 <p align="center">
   <a href="https://kurso-ko.vercel.app"><strong>Live demo</strong></a> ·
-  <a href="#get-started">Get started</a> ·
   <a href="#catalog">Catalog</a> ·
   <a href="#matching">Matching</a> ·
+  <a href="#contributing">Contributing</a> ·
   <a href="#privacy--security">Privacy</a> ·
   <a href="docs/00-index.md">Docs</a>
 </p>
 
 ---
 
-> **Private GitHub repo** · public demo at [kurso-ko.vercel.app](https://kurso-ko.vercel.app)
+> Try it at **[kurso-ko.vercel.app](https://kurso-ko.vercel.app)** · source on **[GitHub](https://github.com/Dukeabaddon/KursoKo)**
 
 ## Why KursoKo
 
@@ -43,23 +42,6 @@
 - **RIASEC** questionnaire → personalized results (careers, schools, scholarships)
 - **No AI black box** for matching — deterministic Holland-code rules
 - Shareable result cards (PNG export)
-
----
-
-<a id="get-started"></a>
-
-## Get started
-
-```bash
-npm install
-npm run dev      # http://localhost:5173
-npm run build
-npm run test:unit
-npm run test:e2e # Playwright (starts dev server)
-npm run knip     # unused files/deps check
-```
-
-Requires Node for Vite; Playwright browsers for e2e.
 
 ---
 
@@ -117,18 +99,6 @@ tests/e2e/         # Playwright specs
 
 ---
 
-## Deploy
-
-Single **static** deployment (Vercel / Netlify / GitLab Pages):
-
-- Build: `npm run build`
-- Output: `dist/`
-- Optional: set `VITE_SITE_URL` for canonical SEO links
-
-See [docs/02-architecture.md](./docs/02-architecture.md).
-
----
-
 ## Privacy & security
 
 - MVP scoring runs **in the browser** — no account required
@@ -143,26 +113,37 @@ Scanned working tree + recent history for common secret patterns (`sk_live`, `gh
 
 ---
 
-## Status
-
-| Surface | State |
-|---------|--------|
-| Demo | **Live** — https://kurso-ko.vercel.app |
-| GitHub | **Private** |
-
----
-
 ## Docs
 
 Start at [docs/00-index.md](./docs/00-index.md).
 
+<a id="contributing"></a>
+
 ## Contributing
 
-Repo is private. Open an issue with the maintainers if you need access.
+PRs and issues are welcome.
+
+1. Fork [Dukeabaddon/KursoKo](https://github.com/Dukeabaddon/KursoKo)
+2. Create a branch: `feat/<topic>` or `fix/<topic>`
+3. Make your change (keep PRs focused)
+4. Open a **pull request** against `main`:  
+   https://github.com/Dukeabaddon/KursoKo/compare
+5. Describe **what** changed and **why** (screenshots help for UI)
+
+Bugs / ideas: [open an issue](https://github.com/Dukeabaddon/KursoKo/issues).
+
+Local check before you PR:
+
+```bash
+npm install
+npm run test:unit
+npm run build
+```
 
 ---
 
 <p align="center">
   <a href="https://kurso-ko.vercel.app">Live</a> ·
-  <a href="https://github.com/Dukeabaddon/KursoKo">GitHub</a>
+  <a href="https://github.com/Dukeabaddon/KursoKo">GitHub</a> ·
+  <a href="https://github.com/Dukeabaddon/KursoKo/pulls">Pull requests</a>
 </p>
