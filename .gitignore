@@ -11,25 +11,55 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+src/generated/
 *.local
 
 # Editor
 .vscode/*
 !.vscode/extensions.json
 
-# Local tooling (not for git)
+# Local tooling / agents (not for public repo)
 .gate-mcp/
+.graphify/
 graphify-out/
 .agent/
 .antigravity-kit/
 .venv-assets/
+.tools/drawbridge/
+.cursor/
+.claude/
+.windsurf/
+.codex/
+.moat/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+knip.json
+.gitlab-ci.yml
+design-system/
 
-# Playwright & test artifacts
+# Playwright (local tooling — not required to run the app)
+playwright.config.js
+playwright.config.ts
 playwright-report/
 test-results/
 blob-report/
 .playwright/
-tests/e2e/screenshots/
+tests/e2e/
+
+# Internal research / planning drafts
+docs/plans/
+
+# Python cache
+scripts/__pycache__/
+**/__pycache__/
+*.pyc
+
+# Questionnaire asset staging (production PNGs live in src/assets/questionnaire/)
+src/assets/questionnaire/_inbox/
+
+# WebP delivery files (generated from PNG via npm run assets:webp)
+src/assets/**/*.webp
 
 # OS
 .DS_Store
