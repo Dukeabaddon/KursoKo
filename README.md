@@ -18,8 +18,10 @@
 </div>
 
 <p align="center">
-  <a href="https://kurso-ko.vercel.app"><img src="https://img.shields.io/badge/demo-live-brightgreen?style=flat-square" alt="Demo live"></a>&nbsp;
-  <img src="https://img.shields.io/badge/stack-React%2019%20%7C%20Vite%207%20%7C%20Tailwind%204-6E4FB8?style=flat-square" alt="Stack">&nbsp;
+  <a href="https://kurso-ko.vercel.app"><img src="https://img.shields.io/badge/status-live-brightgreen?style=flat-square" alt="Status: live"></a>&nbsp;
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white" alt="Node.js">&nbsp;
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">&nbsp;
+  <img src="https://img.shields.io/badge/stack-React%20%7C%20Vite%20%7C%20Tailwind-6E4FB8?style=flat-square" alt="Frontend stack">&nbsp;
   <a href="https://github.com/Dukeabaddon/KursoKo/stargazers"><img src="https://img.shields.io/github/stars/Dukeabaddon/KursoKo?style=flat-square&logo=github" alt="GitHub Stars"></a>
 </p>
 
